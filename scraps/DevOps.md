@@ -1,1 +1,2 @@
 - [ソフトウェアデリバリーパフォーマンスに関する考察（前編） - State of DevOps 2022では何が示されたのか](https://engineering.visional.inc/blog/463/four-keys-consideration-part1/)
+- [ソフトウェアデリバリーパフォーマンスに関する考察（後編）- Four Keysと向き合うとはどういうことか](https://engineering.visional.inc/blog/469/four-keys-consideration-part2/)

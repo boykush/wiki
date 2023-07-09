@@ -1,0 +1,1 @@
+- [Shopifyはいかにしてモジュラモノリスへ移行したか](https://www.infoq.com/jp/news/2019/10/shopify-modular-monolith/)
