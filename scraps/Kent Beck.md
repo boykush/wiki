@@ -1,0 +1,2 @@
+- [Twitter](https://twitter.com/KentBeck)
+- [Home](https://www.kentbeck.com/)

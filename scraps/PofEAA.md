@@ -1,4 +1,4 @@
-#[[Software Design]]
+#[[Software Design]] #[[Martin Fowler]]
 
 [Patterns of Enterprise Application Architecture](https://bliki-ja.github.io/pofeaa/)
 

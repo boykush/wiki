@@ -1,0 +1,2 @@
+- [Home](https://martinfowler.com/)
+- [Martin Fowler's Bliki (ja)](https://bliki-ja.github.io/)
