@@ -1,3 +1,5 @@
+![](https://pbs.twimg.com/profile_images/667433093280714754/ruHRz2GW_400x400.jpg)
+
 #[[Person]]
 
-- [Twitter](https://twitter.com/gasparnagy)
+- [X](https://twitter.com/gasparnagy)

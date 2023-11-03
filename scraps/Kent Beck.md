@@ -1,4 +1,6 @@
+![](https://pbs.twimg.com/profile_images/1457857343568244742/FVQ4hpRx_400x400.jpg)
+
 #[[Person]]
 
-- [Twitter](https://twitter.com/KentBeck)
+- [X](https://twitter.com/KentBeck)
 - [Home](https://www.kentbeck.com/)
