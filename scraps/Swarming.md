@@ -5,6 +5,7 @@
 障害にチームメンバー複数人で集中して対処するイメージを日々のスプリントにも適用していく。
 
 自身で書いたブログは以下
+
 [“群れる” アジャイルチームのベストプラクティス  | by boykush  | Medium](https://medium.com/@boykush/best-practices-for-swarming-agile-team-9e2aef20f74e)
 
 - [Agile Teams Swarm to Greatness](https://brainslink.com/2013/01/agile-teams-swarm-to-greatness/)
