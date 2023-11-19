@@ -1,10 +1,11 @@
-## Swarming
-
 #[[Agile]]
 
 重要な領域または主要な活動に焦点を置いてチームのエネルギーを集中させる。バックログに課題を積むのは最後の手段である。
 
 障害にチームメンバー複数人で集中して対処するイメージを日々のスプリントにも適用していく。
+
+自身で書いたブログは以下
+[“群れる” アジャイルチームのベストプラクティス  | by boykush  | Medium](https://medium.com/@boykush/best-practices-for-swarming-agile-team-9e2aef20f74e)
 
 - [Agile Teams Swarm to Greatness](https://brainslink.com/2013/01/agile-teams-swarm-to-greatness/)
 - ["群れる" アジャイル](https://speakerdeck.com/i35_267/swarming-in-agile)
