@@ -1,3 +1,3 @@
-#[[BDD]] #[[DDD]] #[[Dan North]]
+#[[BDD(TDD)]] #[[DDD]] #[[Dan North]]
 
-[BDDとDDD](https://digitalsoul.hatenadiary.org/entry/20091115/1258283543)
+- [Blog](https://digitalsoul.hatenadiary.org/entry/20091115/1258283543)
