@@ -1,4 +1,4 @@
-#[[クラウドインフラストラクチャ]]
+#[[Cloud Infrastructure]]
 
 Software as a Serviceを作り上げるための方法論
 
