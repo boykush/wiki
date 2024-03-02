@@ -5,7 +5,7 @@
 - クラウドインフラストラクチャ #[[Cloud Infrastructure]]
 - コードの保守性
 - 継続的デリバリー
-- 継続的インテグレーション #[[Continues Integration]]
+- 継続的インテグレーション #[[Continuous Integration]]
 - 継続的なテスト
 - データベースのチェンジマネジメント
 - デプロイの自動化
