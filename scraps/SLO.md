@@ -1,5 +1,5 @@
 ## Service level objectives
-#[[SRE]]
+#[[Site Relaiability Engineering]]
 
 サービスレベル目標の略。
 
