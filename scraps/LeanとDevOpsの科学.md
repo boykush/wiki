@@ -1,4 +1,4 @@
-#[[DevOps]] #[[SRE]] #[[Book]]
+#[[DevOps]] #[[Book]]
 
 ![](https://m.media-amazon.com/images/I/51t4VE8uuQL._SY291_BO1,204,203,200_QL40_ML2_.jpg)
 
