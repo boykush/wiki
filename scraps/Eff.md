@@ -1,5 +1,5 @@
 ## Extensible Effect
-#[[FP]]
+#[[Functional Programming]]
 
 - [Freer monads, more extensible effects.](https://okmij.org/ftp/Haskell/extensible/more.pdf)
 - [Extensible Effects in Scala](https://halcat.org/scala/extensible/index.html)
