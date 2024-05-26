@@ -1,4 +1,5 @@
 ## Behavier Driven Development
+#[[Testing]] #[[TDD]]
 
 サイクルとなるプロセスとして3項目存在する
 - 発見（Discovery）
