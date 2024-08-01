@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Page title -->
+        
+            <title>Kush&#x27;s Wiki</title>
+            <meta property="og:title" content="Kush&#x27;s Wiki" />
+        
+        <!-- Page description -->
+        
+        <!-- Page favicon -->
+        
+            <link rel="icon" type="image/png" href="https:&#x2F;&#x2F;gist.github.com&#x2F;boykush&#x2F;3bbc68b5d2580374c97d4336b87fb70f&#x2F;raw&#x2F;a838b8f3584b21bcbbe4dd53afca380fe18695a7&#x2F;boykush_icon.png" />
+        
+        <!-- Rubik font -->
+        <link href="https://fonts.cdnfonts.com/css/rubik" rel="stylesheet">
+        <!-- Noto Sans JP font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+        <!-- Code syntax highlight theme -->
+        <link href="https://unpkg.com/nord-highlightjs@0.1.0/dist/nord.css" rel="stylesheet" type="text/css" />
+        <!-- Style sheet -->
+        <link rel="stylesheet" href="./main.css">
+    </head>
+    <body>
+        <header>
+            <a href="./">
+                <h1>Kush&#x27;s Wiki</h1>
+            </a>
+        </header>
+        <main>
+            
+    <div class="index">
+        <div class="tags-block">
+            
+        </div>
+        <div class="links-block">
+            <p class="sort-key">Sort by - linked count</p>
+            
+    <ul class="scrap-links">
+        
+            <a href="./トランザクション分離レベル.html">
+                <li class="item">
+                    <p class="title">トランザクション分離レベル</p>
+                    
+                        <p class="summary">#Database
+ACIDのうち、I（Isolation）について言及するような分離性のレベル。
+RDBMS間で共通して4つの分離レベルがあるが、分離レベルの命名が異なるケースがあり曖昧になっている。
+
+Read Uncommitted
+コミットされていない未確定のデータを読み取るダーティリードが発生する
+
+
+Read Committed
+ダーティリード、ダーティライトが生じない
+
+
+Snapshot Isolation
+OracleではSERIALIZABLE、PostgreSQLやMySQLではRepeatable Readと呼ばれるため曖昧
+読み取りスキュー（nonrepeatable read）が生じない、読み取りはロックを取らず常にトランザクション開始時のスナップショットを参照する
+スナップショットとして複数のバージョンを保持するためMVCC（multi-version concurrency controll）の手法が用いられる
+
+
+Serializable
+書き込みスキュー（ファントム）が生じない、複数のレコードを跨いだ一貫性を保証する
+ユニーク制約によって書き込みスキューを防止できない際に必要となる
+全てのトランザクションが直列で実行されるように振る舞うことで直列化可能と呼ばれる
+
+
+
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="./agile-conversation.html">
+                <li class="item">
+                    <p class="title">Agile Conversation</p>
+                    
+                        <p class="summary">#Agile
+Agile Covnersation では人間中心主義での2つの価値観を原則としている。
+
+自己開示: プロセスを隠さず失敗を認める
+他者理解: 相手に関心を持ち立場を理解しようとする
+
+組織が高パフォーマンスを発揮するためにはどのような対話をするべきか、5つの対話ステップが紹介されている。
+
+信頼を築く対話
+不安を乗り越える対話
+WHYを作り上げる対話
+コミットメントを行う対話
+説明責任を果たす対話
+
+重要なのはこれらは段階的に踏んでいくステップでありそれぞれ独立していないこと。第1ステップの「信頼を築く対話」はその後のステップの基礎となる。
+
+
+アジャイルソフトウェア開発宣言
+10+ Deploys Per Day: Dev and Ops Cooperation at Flickr
+
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="./mapreduce.html">
+                <li class="item">
+                    <p class="title">MapReduce</p>
+                    
+                        <p class="summary">#Derived Data
+Unixのプロセスと同様の特徴を持つ分散ファイルシステム上のバッチ処理フレームワーク。
+MapReduceジョブは以下の2つに分かれる
+
+Mapper
+分散ファイルシステムの各レコードからキーと値のコレクションを抽出する
+
+
+Reducer
+mapperによって生成されたキーと値のコレクションからコレクションに対するイテレータとともに関数を適用し出力レコードを適用する
+
+
+
+HadoopのMapReduce実装ではHDFS(Hadoop Destributed File System)と呼ばれる分散ファイルシステムが用いられる
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="./レポーティングデータベース.html">
+                <li class="item">
+                    <p class="title">レポーティングデータベース</p>
+                    
+                        <p class="summary">#Martin Fowler #Database
+アプリケーションのドメインモデルに対応するテーブルとは別にレポート目的の中間テーブルを用意することで、レポートの関心を分離してテーブルに変更を加えることができる。
+
+ReportingDatabase
+
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="./モジュラモノリス.html">
+                <li class="item">
+                    <p class="title">モジュラモノリス</p>
+                    
+                        <p class="summary">#Software Design
+
+Shopifyはいかにしてモジュラモノリスへ移行したか
+モジュラモノリスで表現する複雑なドメイン領域と境界
+
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="./eff.html">
+                <li class="item">
+                    <p class="title">Eff</p>
+                    
+                        <p class="summary">Extensible Effect
+#Functional Programming
+
+作って学ぶ Extensible Effects
+Freer monads, more extensible effects.
+Extensible Effects in Scala
+Scala + CleanArchitectureにEffを組み込んでみた
+アルプのEff独自エフェクト集 &#x2F; Alp-original ’Eff’ pearls
+Eff（atnos-eff）による実践的なコーディング集
+
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="./スクラムガイド.html">
+                <li class="item">
+                    <p class="title">スクラムガイド</p>
+                    
+                        <p class="summary">#Scrum
+Scrum Guide(ja)
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="./gm-weinberg.html">
+                <li class="item">
+                    <p class="title">GM Weinberg</p>
+                    
+                        <p class="summary">#Person
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="./入門-監視.html">
+                <li class="item">
+                    <p class="title">入門 監視</p>
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;m.media-amazon.com&#x2F;images&#x2F;I&#x2F;41Jlj3e0CDL._SY291_BO1,204,203,200_QL40_ML2_.jpg" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="./熊とワルツを.html">
+                <li class="item">
+                    <p class="title">熊とワルツを</p>
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;m.media-amazon.com&#x2F;images&#x2F;I&#x2F;51704T9SZKL._SY291_BO1,204,203,200_QL40_ML2_.jpg" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="./スプリントレビュー-deep-dive.html">
+                <li class="item">
+                    <p class="title">スプリントレビュー Deep Dive</p>
+                    
+                        <p class="summary">#吉羽龍太郎 #スプリントレビュー
+
+Blog
+
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="./スプリントレビューの進め方.html">
+                <li class="item">
+                    <p class="title">スプリントレビューの進め方</p>
+                    
+                        <p class="summary">#スプリントレビュー #吉羽龍太郎
+
+Blog
+
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="./ライト、ついてますか.html">
+                <li class="item">
+                    <p class="title">ライト、ついてますか</p>
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;m.media-amazon.com&#x2F;images&#x2F;I&#x2F;410X6YM9F7L._SY291_BO1,204,203,200_QL40_ML2_.jpg" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="./アドレナリンジャンキー.html">
+                <li class="item">
+                    <p class="title">アドレナリンジャンキー</p>
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;m.media-amazon.com&#x2F;images&#x2F;I&#x2F;51R-aLW2flL._SY291_BO1,204,203,200_QL40_ML2_.jpg" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="./bddとddd.html">
+                <li class="item">
+                    <p class="title">BDDとDDD</p>
+                    
+                        <p class="summary">#BDD #DDD #Dan North
+
+Blog
+
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="./エラーバジェット.html">
+                <li class="item">
+                    <p class="title">エラーバジェット</p>
+                    
+                        <p class="summary">#Site Reliability Engineering
+プロダクト開発者とSRE間でリリース可否を決めるための指標となるような考え方。
+SLOを満たせない時間を名前の通り予算として管理する。
+エラーバジェットが残っていればリリース可能、エラーバジェットを使い切っていればリリースはストップしシステムの改善を行うというような運用をする。
+エラーバジェットによってプロダクト開発者とSREでイノベーションと信頼性のバランスを適切に扱う
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="./カイゼン・ジャーニー.html">
+                <li class="item">
+                    <p class="title">カイゼン・ジャーニー</p>
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;m.media-amazon.com&#x2F;images&#x2F;I&#x2F;41JLeLjY0lL.jpg" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="./エンジニアリング組織論への招待.html">
+                <li class="item">
+                    <p class="title">エンジニアリング組織論への招待</p>
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;m.media-amazon.com&#x2F;images&#x2F;I&#x2F;51zMvVL4MeL._SY291_BO1,204,203,200_QL40_ML2_.jpg" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="./実践ドメイン駆動設計.html">
+                <li class="item">
+                    <p class="title">実践ドメイン駆動設計</p>
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;m.media-amazon.com&#x2F;images&#x2F;I&#x2F;61NEeFU8lhL._SX401_BO1,204,203,200_.jpg" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="./pofeaa.html">
+                <li class="item">
+                    <p class="title">PofEAA</p>
+                    
+                        <p class="summary">#Software Design #Martin Fowler
+Patterns of Enterprise Application Architecture
+
+
+PofEAAで考えるSaaSバックエンドの作り方
+
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="./エリック・エヴァンスのドメイン駆動設計.html">
+                <li class="item">
+                    <p class="title">エリック・エヴァンスのドメイン駆動設計</p>
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;m.media-amazon.com&#x2F;images&#x2F;I&#x2F;51f7WXHJYCL._SX391_BO1,204,203,200_.jpg" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="./sre-サイトリライアビリティエンジニアリング.html">
+                <li class="item">
+                    <p class="title">SRE サイトリライアビリティエンジニアリング</p>
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;m.media-amazon.com&#x2F;images&#x2F;I&#x2F;51Ybz+6kIsL._SX389_BO1,204,203,200_.jpg" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="./agile-testing-condensed.html">
+                <li class="item">
+                    <p class="title">Agile Testing Condensed</p>
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;d2sofvawe08yqg.cloudfront.net&#x2F;agiletesting-condensed-japanese-edition&#x2F;s_hero2x?1620631141.jpg" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="./データ指向アプリケーションデザイン.html">
+                <li class="item">
+                    <p class="title">データ指向アプリケーションデザイン</p>
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;m.media-amazon.com&#x2F;images&#x2F;I&#x2F;51T+k4VRzpL._SX342_SY445_.jpg" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="./cqrs-documents-by-greg-young.html">
+                <li class="item">
+                    <p class="title">CQRS Documents by Greg Young</p>
+                    
+                        <p class="summary">#Greg Young
+
+pdf
+
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="./自動テスト実行結果の目的を整理する.html">
+                <li class="item">
+                    <p class="title">自動テスト実行結果の目的を整理する</p>
+                    
+                        <p class="summary">Organizing objectives of automated test results
+#和田卓人 #Testing
+
+Speaker Deck
+
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="./オブジェクト指向入門-第2版-原則・コンセプト.html">
+                <li class="item">
+                    <p class="title">オブジェクト指向入門 第2版 原則・コンセプト</p>
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;m.media-amazon.com&#x2F;images&#x2F;I&#x2F;41A2yC7UpOL._SX351_BO1,204,203,200_.jpg" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="./the-bdd-books---discovery.html">
+                <li class="item">
+                    <p class="title">The BDD Books - Discovery</p>
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;d2sofvawe08yqg.cloudfront.net&#x2F;bddbooks-discovery-jp&#x2F;s_hero?1650559035.jpg" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="./devopsトポロジー.html">
+                <li class="item">
+                    <p class="title">DevOpsトポロジー</p>
+                    
+                        <p class="summary">#吉羽龍太郎 #DevOps #Team Topologies
+Blog
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="./テスト駆動開発.html">
+                <li class="item">
+                    <p class="title">テスト駆動開発</p>
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;m.media-amazon.com&#x2F;images&#x2F;I&#x2F;51hsd-b1RTL._SY291_BO1,204,203,200_QL40_ML2_.jpg" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="./ピープルウエア.html">
+                <li class="item">
+                    <p class="title">ピープルウエア</p>
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;m.media-amazon.com&#x2F;images&#x2F;I&#x2F;51CFepapBZL._SY291_BO1,204,203,200_QL40_ML2_.jpg" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="./etl.html">
+                <li class="item">
+                    <p class="title">ETL</p>
+                    
+                        <p class="summary">Extract transform load
+#Derived Data
+
+ETL とは? - 抽出、変換、ロードの説明 - AWS
+
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="./アジャイル開発はwhyから始まる.html">
+                <li class="item">
+                    <p class="title">アジャイル開発はWhyから始まる</p>
+                    
+                        <p class="summary">#市谷聡啓 #Agile
+ゴールデンサークルを中心にアジャイル開発における仮説検証プロセスについて説明されている
+
+Docswell
+
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="./関数型ドメインモデリング.html">
+                <li class="item">
+                    <p class="title">関数型ドメインモデリング</p>
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;m.media-amazon.com&#x2F;images&#x2F;I&#x2F;71lPvIf0a6L._SY522_.jpg" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="./実例マッピング.html">
+                <li class="item">
+                    <p class="title">実例マッピング</p>
+                    
+                        <p class="summary">Example Mapping
+Agile Testing、BDDで紹介されるプラクティス。
+マッピングする付箋の種類には
+
+Story
+Rule
+Example
+Question
+
+の4種があり、あるStoryにおけるExample（実例）を軸に、定められるRuleと残論点としてのQuestionをマッピングする
+
+【翻訳記事+α】受け入れ基準の設定時などに役立つプラクティス「実例マッピング(Example Mapping)」
+今日から使える「実例マッピング」
+
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="./swarming.html">
+                <li class="item">
+                    <p class="title">Swarming</p>
+                    
+                        <p class="summary">#Agile
+重要な領域または主要な活動に焦点を置いてチームのエネルギーを集中させる。バックログに課題を積むのは最後の手段である。
+障害にチームメンバー複数人で集中して対処するイメージを日々のスプリントにも適用していく。
+自身で書いたブログは以下
+“群れる” アジャイルチームのベストプラクティス  | by boykush  | Medium
+
+Agile Teams Swarm to Greatness
+&quot;群れる&quot; アジャイル
+スワーミングがアジャイルチームを助ける
+ハイインテグリティコミットメントを実現するスクラム開発の進化
+
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="./bddと共通言語.html">
+                <li class="item">
+                    <p class="title">BDDと共通言語</p>
+                    
+                        <p class="summary">#Greg Young
+
+Digital Romanticism
+
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="./抽象化によるブランチ.html">
+                <li class="item">
+                    <p class="title">抽象化によるブランチ</p>
+                    
+                        <p class="summary">#Martin Fowler #Continuous Integration #Version Controll
+
+BranchByAbstraction
+
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="./ストラングラーフィグアプリケーション.html">
+                <li class="item">
+                    <p class="title">ストラングラーフィグアプリケーション</p>
+                    
+                        <p class="summary">StranglerFigApplication
+#Agile
+Martin Fowlerによる理論。既存のシステムを置き換える際、既存のシステムの周辺に新規のシステムを追加していき段階的に置き換える。
+イチジクの成長段階に似ていることからFigの命名を含んでいる。
+原文はこちら
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="./bddの導入.html">
+                <li class="item">
+                    <p class="title">BDDの導入</p>
+                    
+                        <p class="summary">#BDD #Dan North
+BDDの導入
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="./エッセンシャル-スクラム.html">
+                <li class="item">
+                    <p class="title">エッセンシャル スクラム</p>
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;m.media-amazon.com&#x2F;images&#x2F;I&#x2F;51+TWok07cL._SX399_BO1,204,203,200_.jpg" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="./テストコードにはテストの意図を込めよう.html">
+                <li class="item">
+                    <p class="title">テストコードにはテストの意図を込めよう</p>
+                    
+                        <p class="summary">#TDD #風間裕也 #Testing
+ユニットテストのテストケース名は、入力値を列挙するのではなく論理的な組み合わせとしての意図・目的を込めるようにすべき。という話
+
+SpeakerDeck
+
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="./leanとdevopsの科学.html">
+                <li class="item">
+                    <p class="title">LeanとDevOpsの科学</p>
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;m.media-amazon.com&#x2F;images&#x2F;I&#x2F;51t4VE8uuQL._SY291_BO1,204,203,200_QL40_ML2_.jpg" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="./spire.html">
+                <li class="item">
+                    <p class="title">Spire</p>
+                    
+                        <p class="summary">#Functional Programming
+Scala言語の数値型ライブラリ。汎用的で高速かつ高精度な数値と、効率的な数値コードシンタックスを提供する。
+
+
+Spire
+Introduction to Spire
+Numeric Programming in Scala with Spire
+JOTB19 - Numeric Programming with Spire by Lars Hupel
+
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="./スタッフエンジニア.html">
+                <li class="item">
+                    <p class="title">スタッフエンジニア</p>
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;m.media-amazon.com&#x2F;images&#x2F;I&#x2F;5161jidz6vL._SX594_BO1,204,203,200_.jpg" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="./正しいものを正しくつくる.html">
+                <li class="item">
+                    <p class="title">正しいものを正しくつくる</p>
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;m.media-amazon.com&#x2F;images&#x2F;I&#x2F;41txD1eZGrL._SY291_BO1,204,203,200_QL40_ML2_.jpg" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="./組織を芯からアジャイルにする「インセプションデッキ」.html">
+                <li class="item">
+                    <p class="title">組織を芯からアジャイルにする「インセプションデッキ」</p>
+                    
+                        <p class="summary">#市谷聡啓 #インセプションデッキ
+
+Docswell
+
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="./テスト駆動開発の定義.html">
+                <li class="item">
+                    <p class="title">テスト駆動開発の定義</p>
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;cdn-ak.f.st-hatena.com&#x2F;images&#x2F;fotolife&#x2F;t&#x2F;t-wada&#x2F;20240306&#x2F;20240306130540.png" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="./ソフトウェアクラフトマンシップとプログラマーの誓い.html">
+                <li class="item">
+                    <p class="title">ソフトウェアクラフトマンシップとプログラマーの誓い</p>
+                    
+                        <p class="summary">#角征典
+
+Docswell
+
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="./eric-evans氏はドメイン駆動設計(ddd)-は未完成だと述べた.html">
+                <li class="item">
+                    <p class="title">Eric Evans氏はドメイン駆動設計(DDD) は未完成だと述べた</p>
+                    
+                        <p class="summary">#DDD #Eric Evans
+
+InfoQ
+
+</p>
+                    
+                </li>
+            </a>
+        
+    </ul>
+
+        </div>
+        <div class="paging-arrows">
+            
+                <a class="prev" href=".&#x2F;">prev</a>
+            
+            
+                <a class="next" href=".&#x2F;3.html">next</a>
+            
+        </div>
+    </div>
+
+        </main>
+        <footer>
+            Generated by <a href="https://github.com/boykush/scraps" target="_blank" rel="noopener noreferrer">Scraps</a>
+        </footer>
+        <!-- Code syntax highlight -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script>
+    </body>
+</html>
