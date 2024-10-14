@@ -8,4 +8,4 @@ HTTP通信の`Authorization`ヘッダーに付与するのを推奨されてい�
 
 ---
 
-[RFC 6750 - The OAuth 2.0 Authorization Framework: Bearer Token Usage](https://datatracker.ietf.org/doc/html/rfc6750)
+[RFC 6750 - The OAuth 2.0 Authorization Framework: Bearer Token Usage](https://tex2e.github.io/rfc-translater/html/rfc6750)

@@ -6,4 +6,4 @@
 
 ---
 
-[RFC 8017 - PKCS #1: RSA Cryptography Specifications Version](https://datatracker.ietf.org/doc/html/rfc8017)
+[RFC 8017 - PKCS #1: RSA Cryptography Specifications Version](https://tex2e.github.io/rfc-translater/html/rfc8017)

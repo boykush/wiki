@@ -30,4 +30,4 @@ JWTは`.`によって3つのセクションの文字列に分割できる（署�
 
 ---
 
-[RFC 7519 - JSON Web Token (JWT)](https://datatracker.ietf.org/doc/html/rfc7519)
+[RFC 7519 - JSON Web Token (JWT)](https://tex2e.github.io/rfc-translater/html/rfc7519)

@@ -6,4 +6,4 @@
 
 ---
 
-[RFC 4648 - The Base16, Base32, and Base64 Data Encodings](https://datatracker.ietf.org/doc/html/rfc4648)
+[RFC 4648 - The Base16, Base32, and Base64 Data Encodings](https://tex2e.github.io/rfc-translater/html/rfc4648)
