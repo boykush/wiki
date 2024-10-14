@@ -1,5 +1,7 @@
 #[[Cloud Infrastructure]]
 
+![](https://kubernetes.io/images/kubernetes.png)
+
 アプリケーションコンテナのオーケストレーションを行うオープンソースのプラットフォーム
 
 ---
