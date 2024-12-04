@@ -1,5 +1,7 @@
 ## Buf Schema Registory
 
+#[[Version Controll]]
+
 [[Buf]]が提供するツール群のうちの一つ
 
 Protobufファイル群をモジュールとしてバージョン管理することができる。
