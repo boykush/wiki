@@ -3,7 +3,7 @@
 Capabilities that enable a Climate for Learning
 
 - Code maintainability
-- Documentation quality
+- Documentation quality #[[Documentation]]
 - Empowering teams to choose tools
 - Generative organizational culture
 - Job satisfaction

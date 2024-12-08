@@ -1,4 +1,6 @@
 
+#[[Documentation]]
+
 [[Open API]]仕様を元にドキュメンテーションを行いシンプルなUIで表示される
 
 CLIによるドキュメント生成またはHTMLファイルへのscript埋込が可能

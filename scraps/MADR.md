@@ -1,5 +1,7 @@
 ## Markdown Architectural Decision Records
 
+#[[Documentation]]
+
 [[ADR]]を記述するテンプレートカテゴリの一つ。マークダウンによって構造化された文書を提供する
 
 いくつかのテンプレートは以下から参照可能
