@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <!-- Page title -->
+        
+            <title>Kush&#x27;s Wiki</title>
+            <meta property="og:title" content="Kush&#x27;s Wiki" />
+            <meta name="twitter:title" content="Kush&#x27;s Wiki" />
+        
+        <!-- Page description -->
+        
+            <meta name="description" content="boykushのナレッジ置き場" />
+            <meta property="og:description" content="boykushのナレッジ置き場" />
+            <meta name="twitter:description" content="boykushのナレッジ置き場" />
+        
+        <!-- Page favicon -->
+        
+            <link rel="icon" type="image/png" href="https:&#x2F;&#x2F;gist.github.com&#x2F;boykush&#x2F;3bbc68b5d2580374c97d4336b87fb70f&#x2F;raw&#x2F;a838b8f3584b21bcbbe4dd53afca380fe18695a7&#x2F;boykush_icon.png" />
+        
+        <!-- Rubik font -->
+        <link href="https://fonts.cdnfonts.com/css/rubik" rel="stylesheet">
+        <!-- Noto Sans JP font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+        <!-- Code syntax highlight theme -->
+        <link href="https://unpkg.com/nord-highlightjs@0.1.0/dist/nord.css" rel="stylesheet" type="text/css" />
+        <!-- Style sheet -->
+        <link rel="stylesheet" href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;main.css">
+        
+        
+    </head>
+    <body>
+        <header>
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;">
+                <h1>Kush&#x27;s Wiki</h1>
+            </a>
+        </header>
+        <main>
+            
+    <div class="index">
+        <div class="tags-block">
+            
+        </div>
+        <div class="links-block">
+            <p class="sort-key">Sort by - linked count</p>
+            
+    <ul class="scrap-links">
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/kubernetes-service.html">
+                <li class="item">
+                    <p class="title">Kubernetes Service</p>
+                    
+                        <p class="summary">#Cloud Infrastructure
+Kubernetesにおいて1つ以上の実行されているPodをポート番号等を指定しアプリケーションとして公開する方法
+名前はDNSラベル標準で指定する
+
+Service | Kubernetes
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/トランザクション分離レベル.html">
+                <li class="item">
+                    <p class="title">トランザクション分離レベル</p>
+                    
+                        <p class="summary">#Database
+ACIDのうち、I（Isolation）について言及するような分離性のレベル。
+RDBMS間で共通して4つの分離レベルがあるが、分離レベルの命名が異なるケースがあり曖昧になっている。
+
+Read Uncommitted
+コミットされていない未確定のデータを読み取るダーティリードが発生する
+
+
+Read Committed
+ダーティリード、ダーティライトが生じない
+
+
+Snapshot Isolation
+OracleではSERIALIZABLE、PostgreSQLやMySQLではRepeatable Readと呼ばれるため曖昧
+読み取りスキュー（nonrepeatable read）が生じない、読み取りはロックを取らず常にトランザクション開始時のスナップショットを参照する
+スナップショットとして複数のバージョンを保持するためMVCC（multi-version concurrency controll）の手法が用いられる
+
+
+Serializable
+書き込みスキュー（ファントム）が生じない、複数のレコードを跨いだ一貫性を保証する
+ユニーク制約によって書き込みスキューを防止できない際に必要となる
+全てのトランザクションが直列で実行されるように振る舞うことで直列化可能と呼ばれる
+
+
+
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/spire.html">
+                <li class="item">
+                    <p class="title">Spire</p>
+                    
+                        <p class="summary">#Functional Programming
+Scala言語の数値型ライブラリ。汎用的で高速かつ高精度な数値と、効率的な数値コードシンタックスを提供する。
+
+
+Spire
+Introduction to Spire
+Numeric Programming in Scala with Spire
+JOTB19 - Numeric Programming with Spire by Lars Hupel
+
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/rbac.html">
+                <li class="item">
+                    <p class="title">RBAC</p>
+                    
+                        <p class="summary">Role-based access control
+#Security
+ロールごとに許可を定義する認可モデル
+これによりユーザーの部署異動等の際に即座に権限を変更できる
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/gaspar-nagy.html">
+                <li class="item">
+                    <p class="title">Gaspar Nagy</p>
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;pbs.twimg.com&#x2F;profile_images&#x2F;667433093280714754&#x2F;ruHRz2GW_400x400.jpg" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/スクラムガイド.html">
+                <li class="item">
+                    <p class="title">スクラムガイド</p>
+                    
+                        <p class="summary">スクラムのフレームワークを定義しているドキュメント、2020年版が最新
+Jeff Sutherland, Ken Schwaber によって作成された
+
+
+Scrum Guide
+Scrum Guide(ja)
+
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/seciモデル.html">
+                <li class="item">
+                    <p class="title">SECIモデル</p>
+                    
+                        <p class="summary">知識を暗黙知と形式知に分けそれらが学習サイクルに表れる過程をモデル化したもの
+以下の4つのフェーズを繰り返す
+
+共同化（Socialization）
+暗黙知から暗黙知。組織として共通の経験を積み重ねる
+
+
+表出化（Externalization）
+暗黙知から形式知。経験的知識の共通点や抽象的な構造をモデル化する
+
+
+連結化（Combination）
+形式知から形式知。複数の形式知から知識体系を作る
+
+
+内面化（Internalization）
+形式知から暗黙知。形式知を実践的に理解できた状態
+
+
+
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/eff.html">
+                <li class="item">
+                    <p class="title">Eff</p>
+                    
+                        <p class="summary">Extensible Effect
+#Functional Programming
+
+作って学ぶ Extensible Effects
+Freer monads, more extensible effects.
+Extensible Effects in Scala
+Scala + CleanArchitectureにEffを組み込んでみた
+アルプのEff独自エフェクト集 &#x2F; Alp-original ’Eff’ pearls
+Eff（atnos-eff）による実践的なコーディング集
+
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/3wayハンドシェイク.html">
+                <li class="item">
+                    <p class="title">3wayハンドシェイク</p>
+                    
+                        <p class="summary">#Network
+TCPプロトコルにおけるコネクションの確立手法、名前の通り3ステップでコネクションを確立する
+
+送信元でTCPヘッダー内のSYN（コネクションの確立要求）フラグを有効化しセグメントを送信
+送信先で1に対するACKとSYNフラグの有効化をしたセグメントを返信
+送信元で2のSYNに対するACKのセグメントを送信
+
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/mapreduce.html">
+                <li class="item">
+                    <p class="title">MapReduce</p>
+                    
+                        <p class="summary">#Derived Data
+Unixのプロセスと同様の特徴を持つ分散ファイルシステム上のバッチ処理フレームワーク。
+MapReduceジョブは以下の2つに分かれる
+
+Mapper
+分散ファイルシステムの各レコードからキーと値のコレクションを抽出する
+
+
+Reducer
+mapperによって生成されたキーと値のコレクションからコレクションに対するイテレータとともに関数を適用し出力レコードを適用する
+
+
+
+HadoopのMapReduce実装ではHDFS(Hadoop Destributed File System)と呼ばれる分散ファイルシステムが用いられる
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/vaughn-vernon.html">
+                <li class="item">
+                    <p class="title">Vaughn Vernon</p>
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;pbs.twimg.com&#x2F;profile_images&#x2F;1439030838440587270&#x2F;GW8mQETS_400x400.jpg" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/janet-gregory.html">
+                <li class="item">
+                    <p class="title">Janet Gregory</p>
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;pbs.twimg.com&#x2F;profile_images&#x2F;1577053704&#x2F;caricature_compressed_400x400.JPG" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/rsa.html">
+                <li class="item">
+                    <p class="title">RSA</p>
+                    
+                        <p class="summary">#Security
+秘密鍵と公開鍵による暗号方式
+署名に用いる際は公開鍵を用いて署名をした署名者のことを、秘密鍵によって署名付きトークンを検証できる
+
+RFC 8017 - PKCS #1: RSA Cryptography Specifications Version
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/kubernetes-volume.html">
+                <li class="item">
+                    <p class="title">Kubernetes Volume</p>
+                    
+                        <p class="summary">#Cloud Infrastructure
+KubernetesにおいてPod内のコンテナがクラッシュした際のファイル復元や、コンテナ間のファイル受け渡しをしたいケースで用いられる
+Docker Volumeよりも管理十分で多くの機能を利用できる
+AWS EBS等のいくつかのボリュームの種類をサポートしている
+
+ボリューム | Kubernetes
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/quic.html">
+                <li class="item">
+                    <p class="title">QUIC</p>
+                    
+                        <p class="summary">#Network
+インターネット上の通信で多く用いられてきたTCPの課題を解消する、Googleが開発したプロトコル
+UDPをベースし、コネクション確立によるRTTの増大を防ぎつつ、TCPと同様の高い信頼性の実現、TLSを必須とするセキュリティの考慮がされる。
+HTTP&#x2F;3で用いられるプロトコルで高速なHTTPS通信を実現する　
+コネクションID
+QUICではIPアドレス、ポート番号を抽象化する形で宛先、送信元に対応するコネクションIDが用いられる。
+コネクションIDによりモバイル機器のようなWiFi・モバイルデータ通信等が頻繁に切り替わりIPアドレスの変更がある場合でも、コネクションを途切らせずに通信を続けられる。
+QUICヘッダー
+QUICヘッダーはTCPと異なり明確にロングヘッダー、ショートヘッダーの2つに分類される。ロングヘッダーはコネクション確立時、ショートヘッダーはその後のデータ送信に用いられる
+ロングヘッダーはコネクション確立に必要な情報をまとめて送る（1-RTTハンドシェイク）ことでRTTの改善がされる
+ストリーム
+QUICでは順序制御や再送制御を管理する単位としてストリーム（ID）という概念を用いる。ストリーム同士は独立しておりHoLブロッキングのような問題の回避をする
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/bearerトークン.html">
+                <li class="item">
+                    <p class="title">Bearerトークン</p>
+                    
+                        <p class="summary">#Security
+トークンを保持するBearer（持参人）が誰であれ、そのトークンをリソースへのアクセスに使うことができる
+平文の文字列でシークレットや署名は扱わず、セキュリティはTLSのようなトランスポート層での仕組みに任せている
+HTTP通信のAuthorizationヘッダーに付与するのを推奨されている
+
+RFC 6750 - The OAuth 2.0 Authorization Framework: Bearer Token Usage
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/ユーザーストーリーマッピング.html">
+                <li class="item">
+                    <p class="title">ユーザーストーリーマッピング</p>
+                    
+                        <p class="summary">#Agile #Documentation
+
+Blog &#x2F; Agile Studio
+
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/kubernetes-job.html">
+                <li class="item">
+                    <p class="title">Kubernetes Job</p>
+                    
+                        <p class="summary">#Cloud Infrastructure
+KubernetesにおいてPodを1つ以上作成し、作成したPodがJobとして正常終了するまで再試行をすることができる。
+.spec.completions, .spec.parallelism の指定によって並列実行の制御をすることも可能
+
+Job | Kubernetes
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/martin-kleppmann.html">
+                <li class="item">
+                    <p class="title">Martin Kleppmann</p>
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;martin.kleppmann.com&#x2F;images&#x2F;martin-kleppmann.jpg" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/レプリケーション.html">
+                <li class="item">
+                    <p class="title">レプリケーション</p>
+                    
+                        <p class="summary">#Database
+書き込みまたは読み取りをリーダー、読み取りをフォロワーで行われ、リーダーへの書き込みがフォロワーに伝播される仕組みをレプリケーションと呼ぶ。
+レプリケーションの方法として
+
+ステートメントベース
+write-aheadログ
+等がある。
+
+ステートメントベースはSQLをそのまま転送する形になるため副作用を持つ関数が返す結果にズレが生じる方法で、MySQL5.1以前に採用されていた。
+write-aheadログはPostgreSQL,Oracleで使用されているが、ログが低レベルに記述されているため詳細実装と密になってしまう。
+その他レプリケーションのトポロジーとしていくつかのパターンがある
+
+マルチリーダーレプリケーション
+複数のデータセンターにリーダーが存在する。リアルタイムの同時編集がイメージに近い。
+書き込みの衝突があった際に最終的に同じ値に収束させるような方法が取られる
+
+
+リーダーレスレプリケーション
+AmazonがDynamoシステムで利用し流行しDynamoスタイルと呼ばれる。
+一部のノードが何らかの理由で利用できなくてもクオラムによって読み取りあるいは書き込みの正当性を判断する
+
+
+
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/ヘキサゴナルアーキテクチャ.html">
+                <li class="item">
+                    <p class="title">ヘキサゴナルアーキテクチャ</p>
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;blog.tai2.net&#x2F;images&#x2F;hexagonal_architecture&#x2F;2302.gif" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/jwt.html">
+                <li class="item">
+                    <p class="title">JWT</p>
+                    
+                        <p class="summary">JSON Web Token
+#Security
+トークン自体の情報（例: 期限）を自身で構造化して保持することで、共有データベースへ保持・検索をする必要がないトークン。トークンが自身の情報を持つことで外部からのトークン取り消しのような操作はできない
+JWTは.によって3つのセクションの文字列に分割できる（署名がない場合3つ目のセクションは空）
+それぞれのセクションの文字列は構造化されたJSONをBase64URLエンコードした結果となっている
+ヘッダー
+1つ目のセクションはヘッダーとして以下のような構造を持つ
+{
+    &quot;typ&quot;: &quot;JWT&quot;,
+    &quot;alg&quot;: &quot;RSA256&quot;
+}
+
+algで指定する署名アルゴリズムは3つ目の署名セクションの解読にて用いる
+ペイロード
+2つ目のセクションはトークン自体のペイロードになる。ペイロードの中身はJSONであれば自由だが、JWTクレームと呼ばれる役割が明示・明示された項目群が存在する。
+例として　iss（発行者）、sub（対象者）、exp（有効期限）などがある
+署名
+3つ目のセクションはHMACやRSAのような署名アルゴリズムを使った結果が保持される
+
+RFC 7519 - JSON Web Token (JWT)
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/basic認証.html">
+                <li class="item">
+                    <p class="title">Basic認証</p>
+                    
+                        <p class="summary">#Security
+HTTPプロトコルにおける認証方式
+ユーザー名とパスワードをコロンで連結した文字列をBase64エンコードした結果を、Authorizationヘッダーに付与することでリクエストを行う
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/仮説検証型アジャイル開発.html">
+                <li class="item">
+                    <p class="title">仮説検証型アジャイル開発</p>
+                    
+                        <p class="summary">#Agile #市谷聡啓
+
+Blog
+
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/サービスの信頼性の階層.html">
+                <li class="item">
+                    <p class="title">サービスの信頼性の階層</p>
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;lh3.googleusercontent.com&#x2F;3gX2qgys2I-9HnEIvXUA10ed3AILvg5MclnKWBquEkJKP3g5_kD6WR7Ptwp3TwAGla1DuSmHv64MdTtACNLlArFVq7BwbTrTVhigsA=s900" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/elastic-load-balancing.html">
+                <li class="item">
+                    <p class="title">Elastic Load Balancing</p>
+                    
+                        <p class="summary">#Cloud Infrastructure
+トラフィックを複数のコンピュートリソースにルーティングし分散させ、システムの可用性向上、フォールトトレランスを行うサービスの集まり
+リソースごとに以下のような種別がある
+
+Application Load Balancer
+Network Load Balancer
+Gateway Load Balancer
+
+
+What is Elastic Load Balancing? - Elastic Load Balancing
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/ストラングラーフィグアプリケーション.html">
+                <li class="item">
+                    <p class="title">ストラングラーフィグアプリケーション</p>
+                    
+                        <p class="summary">StranglerFigApplication
+#Agile
+Martin Fowlerによる理論。既存のシステムを置き換える際、既存のシステムの周辺に新規のシステムを追加していき段階的に置き換える。
+イチジクの成長段階に似ていることからFigの命名を含んでいる。
+原文はこちら
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/クリーンアーキテクチャ.html">
+                <li class="item">
+                    <p class="title">クリーンアーキテクチャ</p>
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;blog.cleancoder.com&#x2F;uncle-bob&#x2F;images&#x2F;2012-08-13-the-clean-architecture&#x2F;CleanArchitecture.jpg" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/scott-wlaschin.html">
+                <li class="item">
+                    <p class="title">Scott Wlaschin</p>
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;pbs.twimg.com&#x2F;profile_images&#x2F;802873253270319104&#x2F;qe6yYS_Z_400x400.jpg" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/hmac.html">
+                <li class="item">
+                    <p class="title">HMAC</p>
+                    
+                        <p class="summary">Hash-based Message Authentication Code
+#Security
+共有秘密鍵と暗号化ハッシュ関数による暗号方式
+共有の鍵を有するので両者ともに署名付きトークンを生成・検証できる
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/広木大地.html">
+                <li class="item">
+                    <p class="title">広木大地</p>
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;pbs.twimg.com&#x2F;profile_images&#x2F;1513349047825874946&#x2F;08JHQsNY_400x400.jpg" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/契約による設計.html">
+                <li class="item">
+                    <p class="title">契約による設計</p>
+                    
+                        <p class="summary">#OOP
+
+契約による設計事始め
+
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/オニオンアーキテクチャ.html">
+                <li class="item">
+                    <p class="title">オニオンアーキテクチャ</p>
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;i0.wp.com&#x2F;jeffreypalermo.com&#x2F;wp-content&#x2F;uploads&#x2F;2018&#x2F;06&#x2F;image257b0257d255b59255d.png?resize=366%2C259&amp;ssl=1" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/amazon-s3.html">
+                <li class="item">
+                    <p class="title">Amazon S3</p>
+                    
+                        <p class="summary">Amazon Simple Storage Service
+#Cloud Infrastructure
+AWSが提供するオブジェクトストレージサービス
+
+What is Amazon S3? - Amazon Simple Storage Service
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/メッセージキュー.html">
+                <li class="item">
+                    <p class="title">メッセージキュー</p>
+                    
+                        <p class="summary">#Derived Data
+イベントストリーム処理において、Pub&#x2F;Subの間に配置されイベントをキューイングする役割。
+基本としてイベントをコンシューマーと1対1でやりとりし処理が完了したらイベントが削除される実装がある。（Amazon SQS等）
+対しログベースのメッセージキューはコンシューマーと1対Nでやり取りし古いイベントのリプレイも可能である。（Amazon Kinesis Stream等）
+
+
+メッセージキューとは何ですか?
+
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/レポーティングデータベース.html">
+                <li class="item">
+                    <p class="title">レポーティングデータベース</p>
+                    
+                        <p class="summary">#Martin Fowler #Database
+アプリケーションのドメインモデルに対応するテーブルとは別にレポート目的の中間テーブルを用意することで、レポートの関心を分離してテーブルに変更を加えることができる。
+
+ReportingDatabase
+
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/dnsラベル標準.html">
+                <li class="item">
+                    <p class="title">DNSラベル標準</p>
+                    
+                        <p class="summary">#Network
+RFC 1123で定義されているDNSに指定可能な文字列
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/adr.html">
+                <li class="item">
+                    <p class="title">ADR</p>
+                    
+                        <p class="summary">Architectural Decision Records
+#Documentation
+アーキテクチャに関する意思決定とその理由を記録する文書。意思決定に際する文脈、根拠、その決定による成果物等を記述する
+ADRはなぜそのアーキテクチャを選出したかの意思決定を理解するのを助ける。
+ADRはチームメンバーの誰もが作成できる。ただしオーナーシップとしてAuthorは明確にする必要がある。初期ステータスは Proposed とする。
+次に他チームメンバーによるレビューを行う。修正すべき点がある場合は Proposed のままアクションのアサインを行う。このときアサインはチームメンバーの誰でもよい。ADR自体はRejectする場合はステータスを Rejected にしADRのライフサイクルは終了する。
+レビューを経て全てのアクションが完了した場合、ステータスを Accepted にする。一度AcceptされたADRはイミュータブルに扱い変更はしない。
+
+
+Architectural Decision Records (ADRs)
+ADR process - AWS Prescriptive Guidance
+
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/輻輳制御.html">
+                <li class="item">
+                    <p class="title">輻輳制御</p>
+                    
+                        <p class="summary">#Network
+TCPプロトコル等で行われるネットワークのリンク上でパケットが混線した際の制御
+輻輳制御アルゴリズムは大きく以下の3つに分類される
+
+Loss-based
+Delay-based
+ハイブリッド型
+
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/agile-conversation.html">
+                <li class="item">
+                    <p class="title">Agile Conversation</p>
+                    
+                        <p class="summary">#Agile
+Agile Covnersation では人間中心主義での2つの価値観を原則としている。
+
+自己開示: プロセスを隠さず失敗を認める
+他者理解: 相手に関心を持ち立場を理解しようとする
+
+組織が高パフォーマンスを発揮するためにはどのような対話をするべきか、5つの対話ステップが紹介されている。
+
+信頼を築く対話
+不安を乗り越える対話
+WHYを作り上げる対話
+コミットメントを行う対話
+説明責任を果たす対話
+
+重要なのはこれらは段階的に踏んでいくステップでありそれぞれ独立していないこと。第1ステップの「信頼を築く対話」はその後のステップの基礎となる。
+
+
+アジャイルソフトウェア開発宣言
+10+ Deploys Per Day: Dev and Ops Cooperation at Flickr
+
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/モノリスからマイクロサービスへ.html">
+                <li class="item">
+                    <p class="title">モノリスからマイクロサービスへ</p>
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;www.oreilly.co.jp&#x2F;books&#x2F;images&#x2F;picture_large978-4-87311-931-1.jpeg" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/bツリー.html">
+                <li class="item">
+                    <p class="title">Bツリー</p>
+                    
+                        <p class="summary">#Database
+Bツリーはデータベースを固定サイズのブロックあるいはページに分割する。固定サイズの空き容量がない状態で新しいキーが追加される場合、半分の領域が空いた2つのブロックに分割される。
+このアルゴリズムはツリーバランスが保たれ、ツリーの深さも3ないし4レベルに収まることがほとんど。
+また信頼性を高めるためにwrite-aheadログ（WAL）と呼ばれる書き込み内容の構造化データを追記して保持している。
+
+
+Wikipedia
+
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/gm-weinberg.html">
+                <li class="item">
+                    <p class="title">GM Weinberg</p>
+                    
+                        <p class="summary">#Person
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/ドメインイベント.html">
+                <li class="item">
+                    <p class="title">ドメインイベント</p>
+                    
+                        <p class="summary">#DDD
+
+ドメイン イベント: 設計と実装 - .NET
+Domain Events and Eventual Consistency
+
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/モジュラモノリス.html">
+                <li class="item">
+                    <p class="title">モジュラモノリス</p>
+                    
+                        <p class="summary">#Software Design
+
+Shopifyはいかにしてモジュラモノリスへ移行したか
+モジュラモノリスで表現する複雑なドメイン領域と境界
+
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/10+-deploys-per-day:-dev-and-ops-cooperation-at-flickr.html">
+                <li class="item">
+                    <p class="title">10+ Deploys Per Day: Dev and Ops Cooperation at Flickr</p>
+                    
+                        <p class="summary">#DevOps
+Slideshare
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/関数型ドメインモデリング.html">
+                <li class="item">
+                    <p class="title">関数型ドメインモデリング</p>
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;m.media-amazon.com&#x2F;images&#x2F;I&#x2F;71lPvIf0a6L._SY522_.jpg" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/authorization-to-implement-with-extensible-effect.html">
+                <li class="item">
+                    <p class="title">Authorization to implement with Extensible Effect</p>
+                    
+                        <p class="summary">#Security #Eff
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/swagger.html">
+                <li class="item">
+                    <p class="title">Swagger</p>
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;static1.smartbear.co&#x2F;swagger&#x2F;media&#x2F;assets&#x2F;images&#x2F;swagger_logo.svg" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/テスト駆動開発.html">
+                <li class="item">
+                    <p class="title">テスト駆動開発</p>
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;m.media-amazon.com&#x2F;images&#x2F;I&#x2F;51hsd-b1RTL._SY291_BO1,204,203,200_QL40_ML2_.jpg" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+    </ul>
+
+        </div>
+        <div class="paging-arrows">
+            
+                <a class="prev" href=".&#x2F;">prev</a>
+            
+            
+                <a class="next" href=".&#x2F;3.html">next</a>
+            
+        </div>
+    </div>
+
+        </main>
+        <footer>
+            Generated by <a href="https://github.com/boykush/scraps" target="_blank" rel="noopener noreferrer">Scraps</a>
+        </footer>
+        <!-- Code syntax highlight -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script>
+    </body>
+</html>
