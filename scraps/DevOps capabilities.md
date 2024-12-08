@@ -1,38 +1,43 @@
 #[[DevOps]]
 
-## 技術に関する能力
+Capabilities that enable a Climate for Learning
 
-- クラウドインフラストラクチャ #[[Cloud Infrastructure]]
-- コードの保守性
-- 継続的デリバリー
-- 継続的インテグレーション #[[Continuous Integration]]
-- 継続的なテスト
-- データベースのチェンジマネジメント
-- デプロイの自動化
-- チームのツール選択をサポート
-- 疎結合アーキテクチャ
-- モニタリングとオブザーバビリティ #[[Observability]]
-- セキュリティのシフトレフト
-- テストデータ管理
-- [[トランクベース開発]]
-- バージョン管理 #[[Version Controll]]
+- Code maintainability
+- Documentation quality
+- Empowering teams to choose tools
+- Generative organizational culture
+- Job satisfaction
+- Learning culture
+- Team experimentation
+- Transformational leadership
+- Well-being
 
-## プロセスに関する能力
-- お客様のフィードバック
-- システムをモニタリングして的確な判断
-- 障害の予兆通知
-- 変更承認の効率化
-- チームのテスト
-- バリューストリームでの作業の可視性
-- ビジュアル管理機能
-- 仕掛り制限
-- 小さいバッチ単位の作業　
+Capabilities that enable Fast Flow
 
-## 文化に関する能力
-- 創造的な組織文化
-- 仕事の満足度
-- 学習文化
-- 変革型リーダーシップ
+- Continuous delivery
+- Database change management
+- Deployment automation
+- Flexible infrastructure
+- Loosely coupled teams
+- Streamlining change approval
+- Trunk-based development [[トランクベース開発]]
+- Version control #[[Version Control]]
+- Visual management
+- Work in process limits
+- Working in small batches
+
+Capabilities that enable Fast Feedback
+
+- Continuous integration #[[Continuous Integration]]
+- Customer feedback
+- Monitoring and observability #[[Observability]]
+- Monitoring systems to inform business decisions
+- Pervasive security
+- Proactive failure notification
+- Test automation
+- Test data management
+- Visibility of work in the value stream
 
 ---
-- [DevOpsの能力](https://cloud.google.com/architecture/devops?hl=ja)
+
+- [DORA | Capabilities](https://dora.dev/capabilities/)

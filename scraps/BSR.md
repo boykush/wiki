@@ -1,6 +1,6 @@
 ## Buf Schema Registory
 
-#[[Version Controll]]
+#[[Version Control]]
 
 [[Buf]]が提供するツール群のうちの一つ
 
