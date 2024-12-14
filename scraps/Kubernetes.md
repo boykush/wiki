@@ -4,6 +4,8 @@
 
 アプリケーションコンテナのオーケストレーションを行うオープンソースのプラットフォーム
 
+[[CNCF]] graduatedプロジェクト
+
 ---
 
 [概要 | Kubernetes](https://kubernetes.io/ja/docs/concepts/overview/)

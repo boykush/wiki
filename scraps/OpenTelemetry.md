@@ -4,7 +4,7 @@
 
 メトリクス、ログ、トレースのようなテレメトリデータを扱い、ソフトウェアのパフォーマンス・振る舞いを分析するのを助ける
 
-[[CNCF]]のIncubating project
+[[CNCF]] incubating project
 
 ---
 

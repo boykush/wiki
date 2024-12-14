@@ -6,7 +6,7 @@
 
 [[gRPC]]と異なり内部実装に `net/http` のような標準的なライブラリを利用している。
 
-[[CNCF]]のSandbox project
+[[CNCF]] sandbox project
 
 ---
 
