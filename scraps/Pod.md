@@ -1,4 +1,4 @@
-#[[Cloud Infrastructure]]
+#[[Cloud Native]]
 
 [[Kubernetes]]内でデプロイできる最小ユニット
 

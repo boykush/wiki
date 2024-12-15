@@ -1,4 +1,4 @@
-#[[Cloud Infrastructure]]
+#[[Cloud Native]]
 
 [[Kubernetes]]において1つ以上の実行されている[[Pod]]をポート番号等を指定しアプリケーションとして公開する方法
 

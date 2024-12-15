@@ -1,6 +1,6 @@
 ## Amazon Elastic Kubernetes Service
 
-#[[Cloud Infrastructure]]
+#[[Cloud Native]]
 
 AWSクラウド上で[[Kubernetes]]を実行するマネージドサービス、Kubernetes準拠であるため既存のKubernetesアプリケーションと互換性がある
 

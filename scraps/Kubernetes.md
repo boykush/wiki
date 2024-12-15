@@ -1,10 +1,10 @@
-#[[Cloud Infrastructure]]
+#[[Cloud Native]]
 
 ![](https://kubernetes.io/images/kubernetes.png)
 
 アプリケーションコンテナのオーケストレーションを行うオープンソースのプラットフォーム
 
-[[CNCF]] graduatedプロジェクト
+[[CNCF]] graduated project
 
 ---
 

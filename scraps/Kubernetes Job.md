@@ -1,4 +1,4 @@
-#[[Cloud Infrastructure]]
+#[[Cloud Native]]
 
 [[Kubernetes]]において[[Pod]]を1つ以上作成し、作成したPodがJobとして正常終了するまで再試行をすることができる。
 

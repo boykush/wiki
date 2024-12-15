@@ -1,6 +1,6 @@
 ## Amazon Simple Storage Service
 
-#[[Cloud Infrastructure]]
+#[[Cloud Native]]
 
 AWSが提供するオブジェクトストレージサービス
 

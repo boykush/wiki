@@ -1,4 +1,4 @@
-#[[Cloud Infrastructure]]
+#[[Cloud Native]]
 
 [[Kubernetes]]においてPod内のコンテナがクラッシュした際のファイル復元や、コンテナ間のファイル受け渡しをしたいケースで用いられる
 

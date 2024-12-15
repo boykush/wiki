@@ -1,4 +1,4 @@
-#[[Cloud Infrastructure]] #[[Security]]
+#[[Cloud Native]] #[[Security]]
 
 [[Kubernetes]]において[[Pod]]とは別に独立して機密情報を定義する
 

@@ -1,4 +1,4 @@
-#[[Cloud Infrastructure]]
+#[[Cloud Native]]
 
 [[Kubernetes]] v1.21でGAに昇格した[[Kubernetes Job]]の定期実行機能。設定ファイルの `.kind` に `CronJob` を指定することで利用できる
 

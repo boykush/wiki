@@ -1,5 +1,5 @@
 ## Service level objectives
-#[[Site Reliability Engineering]]
+#[[Reliability]]
 
 サービスレベル目標の略。
 
