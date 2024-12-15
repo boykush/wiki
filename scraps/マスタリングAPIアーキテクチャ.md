@@ -4,7 +4,13 @@
 
 ![](https://m.media-amazon.com/images/I/41vC+fyZq6L._SX342_SY445_.jpg)
 
-#[[C4 model]]
-#[[ADR]] 
-#[[gRPC]]
-#[[Open API]]
+キーワード
+
+- [[C4 model]]
+- [[ADR]] 
+- [[gRPC]]
+- [[Open API]]
+- [[マイクロサービス]]
+- [[サービスメッシュ]]
+  - [[サイドカープロキシ]]
+  - [[分散コンピューティングの8つの誤謬]]
