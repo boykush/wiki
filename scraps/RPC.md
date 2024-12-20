@@ -1,6 +1,6 @@
 ## Remote Procedure Call
 
-#[[Network]]
+#[[Network]] #[[API Architecture]]
 
 リモート上のリクエスト発行をプログラミング言語の関数呼び出しのように利用できるよう抽象化したもの。
 

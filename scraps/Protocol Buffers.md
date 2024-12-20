@@ -1,6 +1,6 @@
 ## Protobuf
 
-#[[Data Encoding]] #[[Version Control]]
+#[[Version Control]] #[[API Architecture]]
 
 Googleによって開発されたインターフェース定義によるバイナリエンコーディングライブラリ。
 

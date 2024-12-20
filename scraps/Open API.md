@@ -1,4 +1,4 @@
-#[[Documentation]]
+#[[Documentation]] #[[API Architecture]]
 
 HTTP APIの動作を記述するためのオープンで標準的な仕様。リクエストからレスポンスまでAPIのライフサイクルを説明できる
 

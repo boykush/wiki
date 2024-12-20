@@ -1,4 +1,4 @@
-#[[Derived Data]]
+#[[Data Processing]]
 
 Unixのプロセスと同様の特徴を持つ分散ファイルシステム上のバッチ処理フレームワーク。
 

@@ -1,4 +1,4 @@
-#[[Functional Programming]]
+#[[Functional Programming]] #[[Security]]
 
 Scala言語の数値型ライブラリ。汎用的で高速かつ高精度な数値と、効率的な数値コードシンタックスを提供する。
 

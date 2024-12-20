@@ -1,4 +1,4 @@
-#[[Network]]
+#[[Network]] #[[API Architecture]]
 
 [[gRPC]]において、gRPC serviceをRESTful APIとして提供するためのライブラリ。HTTP+JSONのインターフェースでリバースプロキシサーバーを生成する
 
