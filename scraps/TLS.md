@@ -1,5 +1,5 @@
 ## Transport Layer Security
-#[[Network]] #[[Security]]
+#[[Network]] #[[Security]] #[[HTTP]]
 
 HTTPSへの対応に用いられる暗号化プロトコル
 

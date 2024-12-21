@@ -1,6 +1,6 @@
 #[[Cloud Native]] #[[Network]] #[[API Architecture]]
 
-![](https://iconape.com/wp-content/png_logo_vector/istio-logo.png)
+![](https://repository-images.githubusercontent.com/74175805/ed825500-65ad-11e9-821c-f6148eadb7c8)
 
 [[Kubernetes]]クラスタ上で[[サービスメッシュ]]を実装することができるOSS
 
