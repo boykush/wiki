@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <!-- Page title -->
+        
+            
+            <title>Kubernetes - Kush&#x27;s Wiki</title>
+            <meta property="og:title" content="Kubernetes - Kush&#x27;s Wiki" />
+            <meta name="twitter:title" content="Kubernetes - Kush&#x27;s Wiki" />
+        
+        <!-- Page description -->
+        
+            <meta name="description" content="boykushのナレッジ置き場" />
+            <meta property="og:description" content="boykushのナレッジ置き場" />
+            <meta name="twitter:description" content="boykushのナレッジ置き場" />
+        
+        <!-- Page favicon -->
+        
+            <link rel="icon" type="image/png" href="https:&#x2F;&#x2F;gist.github.com&#x2F;boykush&#x2F;3bbc68b5d2580374c97d4336b87fb70f&#x2F;raw&#x2F;a838b8f3584b21bcbbe4dd53afca380fe18695a7&#x2F;boykush_icon.png" />
+        
+        <!-- Rubik font -->
+        <link href="https://fonts.cdnfonts.com/css/rubik" rel="stylesheet">
+        <!-- Noto Sans JP font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+        <!-- Code syntax highlight theme -->
+        <link href="https://unpkg.com/nord-highlightjs@0.1.0/dist/nord.css" rel="stylesheet" type="text/css" />
+        <!-- Style sheet -->
+        <link rel="stylesheet" href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;main.css">
+        
+<meta property="og:url" content="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/kubernetes.html" />
+
+    <meta property="og:image" content="https:&#x2F;&#x2F;kubernetes.io&#x2F;images&#x2F;kubernetes.png" />
+    <meta name="twitter:image" content="https:&#x2F;&#x2F;kubernetes.io&#x2F;images&#x2F;kubernetes.png" />
+
+
+    </head>
+    <body>
+        <header>
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;">
+                <h1>Kush&#x27;s Wiki</h1>
+            </a>
+        </header>
+        <main>
+            
+    <div class="scrap">
+        <h1>Kubernetes</h1>
+        
+            <p class="commited-date">
+                commited date: 2024-12-20
+            </p>
+        
+        <div class="content">
+            <p>#<a href="https://boykush.github.io/wiki/scraps/cloud-native.html">Cloud Native</a></p>
+<p><img src="https://kubernetes.io/images/kubernetes.png" alt="" /></p>
+<p>アプリケーションコンテナのオーケストレーションを行うオープンソースのプラットフォーム</p>
+<p><a href="https://boykush.github.io/wiki/scraps/cncf.html">CNCF</a> graduated project</p>
+<hr />
+<p><a href="https://kubernetes.io/ja/docs/concepts/overview/">概要 | Kubernetes</a></p>
+
+        </div>
+        
+    </div>
+    
+    <ul class="scrap-links">
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/サービスメッシュ.html">
+                <li class="item">
+                    <p class="title">サービスメッシュ</p>
+                    
+                        <p class="summary">#Network #Observability #Security #API Architecture
+マイクロサービスで行われるようなサービス間通信をルーティング、監視、保護する機能を提供する
+Kubernetesにおいてはクラスタ単位でサービスメッシュを構築する
+サービスメッシュはクラスタ内の全てのサービス間通信を制御するコントロールプレーンとコントロールプレーンで指定された作業が実行されるデータプレーン（サービス）の2つの基本要素を持つ。
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/istio.html">
+                <li class="item">
+                    <p class="title">Istio</p>
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;repository-images.githubusercontent.com&#x2F;74175805&#x2F;ed825500-65ad-11e9-821c-f6148eadb7c8" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/kubernetes-cronjob.html">
+                <li class="item">
+                    <p class="title">Kubernetes CronJob</p>
+                    
+                        <p class="summary">#Cloud Native
+Kubernetes v1.21でGAに昇格したKubernetes Jobの定期実行機能。設定ファイルの .kind に CronJob を指定することで利用できる
+
+CronJobを使用して自動化タスクを実行する | Kubernetes
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/kubernetes-job.html">
+                <li class="item">
+                    <p class="title">Kubernetes Job</p>
+                    
+                        <p class="summary">#Cloud Native
+KubernetesにおいてPodを1つ以上作成し、作成したPodがJobとして正常終了するまで再試行をすることができる。
+.spec.completions, .spec.parallelism の指定によって並列実行の制御をすることも可能
+
+Job | Kubernetes
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/amazon-eks.html">
+                <li class="item">
+                    <p class="title">Amazon EKS</p>
+                    
+                        <p class="summary">Amazon Elastic Kubernetes Service
+#Cloud Native
+AWSクラウド上でKubernetesを実行するマネージドサービス、Kubernetes準拠であるため既存のKubernetesアプリケーションと互換性がある
+Kubernetes ServiceでのLoad Balancerに加え、Elastic Load Balancingの使用をサポートしている
+
+What is Amazon EKS? - Amazon EKS
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/kubernetes-volume.html">
+                <li class="item">
+                    <p class="title">Kubernetes Volume</p>
+                    
+                        <p class="summary">#Cloud Native
+KubernetesにおいてPod内のコンテナがクラッシュした際のファイル復元や、コンテナ間のファイル受け渡しをしたいケースで用いられる
+Docker Volumeよりも管理十分で多くの機能を利用できる
+AWS EBS等のいくつかのボリュームの種類をサポートしている
+
+ボリューム | Kubernetes
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/pod.html">
+                <li class="item">
+                    <p class="title">Pod</p>
+                    
+                        <p class="summary">#Cloud Native
+Kubernetes内でデプロイできる最小ユニット
+1つのPod内には1つまたは複数のコンテナがあり、ストレージやネットワークなどの共有リソースを持つ
+Pod自体の状態は phase として管理される。そしてPod内のコンテナそれぞれの状態を追跡することができる
+
+Pod | Kubernetes
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/kustomize.html">
+                <li class="item">
+                    <p class="title">kustomize</p>
+                    
+                        <p class="summary">#Cloud Native
+Kubernetesの設定ファイルをyamlで記述する際、環境ごとに共通化できる設定（base）、環境ごとの差分設定（overlays）を扱い、設定ファイルの記述を最低限にすることができる機能
+
+Declarative Management of Kubernetes Objects Using Kustomize | Kubernetes
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/kubernetes-secret.html">
+                <li class="item">
+                    <p class="title">Kubernetes Secret</p>
+                    
+                        <p class="summary">#Cloud Native #Security
+KubernetesにおいてPodとは別に独立して機密情報を定義する
+具体的にはKubernetes Volumeにファイルとして置かれるケースがある
+
+Secret | Kubernetes
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/kubernetes-service.html">
+                <li class="item">
+                    <p class="title">Kubernetes Service</p>
+                    
+                        <p class="summary">#Cloud Native
+Kubernetesにおいて1つ以上の実行されているPodをポート番号等を指定しアプリケーションとして公開する方法
+名前はDNSラベル標準で指定する
+
+Service | Kubernetes
+</p>
+                    
+                </li>
+            </a>
+        
+    </ul>
+
+
+        </main>
+        <footer>
+            Generated by <a href="https://github.com/boykush/scraps" target="_blank" rel="noopener noreferrer">Scraps</a>
+        </footer>
+        <!-- Code syntax highlight -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script>
+    </body>
+</html>
