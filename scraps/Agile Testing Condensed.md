@@ -1,4 +1,4 @@
-#[[Agile Testing]] #[[Janet Gregory]] #[[風間裕也]] #[[Book]]
+#[[Agile Testing]] #[[Janet Gregory]] #[[Lisa Crispin]] #[[風間裕也]] #[[Book]]
 
 ![](https://d2sofvawe08yqg.cloudfront.net/agiletesting-condensed-japanese-edition/s_hero2x?1620631141.jpg)
 
