@@ -1,6 +1,6 @@
 ## モノシリックからマイクロサービスへとアーキテクチャを進化させるための実践的手法
 
-#[[Book]] #[[API Architecture]] #[[Reliability]] #[[Observability]] #[[マイクロサービス]]
+#[[Book]] #[[API Architecture]] #[[Testing]] #[[Reliability]] #[[Observability]] #[[マイクロサービス]] #[[Security]]
 
 ![](https://m.media-amazon.com/images/I/41vC+fyZq6L._SX342_SY445_.jpg)
 
@@ -14,10 +14,11 @@
 - [[GraphQL]]
 - [[RPC]]/[[gRPC]]
 - [[Open API]]
-### 2章 APIのテスト #[[Testing]]
+### 2章 APIのテスト 
 - [[アジャイルテストの4象限]]
-- テストピラミッド
-- Contract Testing
+- [[テストピラミッド]]
+- [[コントラクトテスト]]
+- [[E2Eテスト]]
 ### 3章 APIゲートウェイ：外部トラフィック管理
 ### 4章 サービスメッシュ：サービス間トラフィック管理
 - [[サービスメッシュ]]/[[サイドカープロキシ]]/[[Istio]]
