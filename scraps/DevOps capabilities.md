@@ -14,7 +14,7 @@ Capabilities that enable a Climate for Learning
 
 Capabilities that enable Fast Flow
 
-- Continuous delivery
+- Continuous delivery #[[Continuous Delivery]]
 - Database change management
 - Deployment automation
 - Flexible infrastructure
