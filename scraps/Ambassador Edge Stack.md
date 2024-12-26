@@ -8,6 +8,16 @@
 
 アーキテクチャの中核には[[Envoy]] Proxyを利用しており、manifestファイルから受け取った設定をEnvoy configurationにパースする
 
+APIゲートウェイとして以下のような機能を持っている
+- トラフィック管理
+  - [[ロードバランサー]]
+  - [[サーキットブレーカー]]
+  - [[カナリアリリース]]
+- 認証
+  - SSO
+  - [[JWT]]
+- レートリミット
+
 [[Datadog]]とのインテグレーションが可能 [Ambassador API Gateway](https://docs.datadoghq.com/ja/integrations/ambassador/)
 
 ---
