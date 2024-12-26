@@ -4,6 +4,8 @@
 
 ステートレスな[[REST]]に対し実装次第で状態を持つことで高いパフォーマンスを実現できる
 
+[[Observability]]をサポートする標準プラグインとして[[OpenTelemetry]]を採用している
+
 [[CNCF]] incubating project
 
 ---
