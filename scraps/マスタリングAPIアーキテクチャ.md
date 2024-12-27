@@ -32,4 +32,4 @@
 ### 6章 セキュリティ運用：脅威モデリング
 - [[OWASP Top Ten]]
 - [[脅威モデリング]]/[[Microsoft Threat Modeling Tool]]/[[STRIDE]]
-- レートリミット
+- [[レートリミット]]

@@ -16,7 +16,7 @@ APIゲートウェイとして以下のような機能を持っている
 - 認証
   - SSO
   - [[JWT]]
-- レートリミット
+- [[レートリミット]]
 
 [[Datadog]]とのインテグレーションが可能 [Ambassador API Gateway](https://docs.datadoghq.com/ja/integrations/ambassador/)
 
