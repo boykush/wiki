@@ -1,8 +1,11 @@
 ## モノシリックからマイクロサービスへとアーキテクチャを進化させるための実践的手法
 
-#[[Book]] #[[API Architecture]] #[[Testing]] #[[Reliability]] #[[Observability]] #[[マイクロサービス]] #[[Security]]
+#[[Book]] #James Gough #Daniel Bryant #Matthew Auburn
+#[[API Architecture]] #[[Testing]] #[[Reliability]] #[[Observability]] #[[Security]] #[[Software Design]]
 
 ![](https://m.media-amazon.com/images/I/41vC+fyZq6L._SX342_SY445_.jpg)
+
+[O'Reilly Japan - マスタリングAPIアーキテクチャ](https://www.oreilly.co.jp/books/9784814400898/)
 
 ## キーワード
 
@@ -33,3 +36,13 @@
 - [[OWASP Top Ten]]
 - [[脅威モデリング]]/[[Microsoft Threat Modeling Tool]]/[[STRIDE]]
 - [[レートリミット]]
+### 7章 APIの認証と認可
+- [[OAuth2]]/[[OIDC]]
+- SAML
+### 8章 API駆動アーキテクチャへのアプリケーションの再設計
+- [[DDD]]/[[マイクロサービス]]
+- [[適応度関数]]
+- [[ストラングラーフィグアプリケーション]]
+### 9章 クラウド環境への移行
+- 6つのR
+- ゼロトラストアーキテクチャ

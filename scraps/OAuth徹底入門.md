@@ -11,6 +11,7 @@
 [OAuth徹底入門 セキュアな認可システムを適用するための原則と実践」を読んだ](https://boykush.github.io/diaries/read-oauth2-in-action/)
 
 キーワード
+- [[OAuth2]]
 - [[Basic認証]]
 - [[Bearerトークン]]
 - [[JWT]]
