@@ -1,5 +1,5 @@
 #[[Person]]
 
-![](https://pbs.twimg.com/profile_images/1577053704/caricature_compressed_400x400.JPG)
+![](https://janetgregory.ca/wp-content/uploads/2013/07/janet-gregory-large.jpg)
 
 - [X](https://twitter.com/janetgregoryca)
