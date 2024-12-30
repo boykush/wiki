@@ -1,4 +1,4 @@
-#[[Cloud Native]]
+#[[Cloud Native]] #[[Data Processing]]
 
 サーバーレスのインタラクティブな分析サービス、[[Amazon S3]]を中心に様々なデータソースを元にSQLでデータを抽出可能にする
 

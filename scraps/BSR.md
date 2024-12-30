@@ -2,7 +2,7 @@
 
 #[[Continuous Integration]] #[[Continuous Delivery]]
 
-[[Buf]]が提供するツール群のうちの一つ
+[[Buf]]が提供する[[Protocol Buffers]]ツール群のうちの一つ
 
 Protobufファイル群をモジュールとしてバージョン管理することができる。
 

@@ -4,7 +4,7 @@
 
 AWSクラウド上で[[Kubernetes]]を実行するマネージドサービス、Kubernetes準拠であるため既存のKubernetesアプリケーションと互換性がある
 
-[[Kubernetes Service]]でのLoad Balancerに加え、[[Elastic Load Balancing]]の使用をサポートしている
+[[Kubernetes Service]]での[[ロードバランサー]]に加え、[[Elastic Load Balancing]]の使用をサポートしている
 
 ---
 

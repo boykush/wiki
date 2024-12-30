@@ -1,6 +1,6 @@
 ![](https://graphql.org/_next/static/media/logo-wordmark.4eec1155.svg)
 
-#[[API Architecture]]
+#[[API Architecture]] #[[Data Processing]]
 
 APIレイヤで利用するクエリ言語
 
