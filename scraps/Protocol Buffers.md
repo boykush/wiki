@@ -1,6 +1,6 @@
 ## Protobuf
 
-#[[Version Control]] #[[API Architecture]]
+#[[API Architecture]]
 
 Googleによって開発されたインターフェース定義によるバイナリエンコーディングライブラリ。
 

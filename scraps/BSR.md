@@ -1,6 +1,6 @@
 ## Buf Schema Registory
 
-#[[Version Control]]
+#[[Continuous Integration]] #[[Continuous Delivery]]
 
 [[Buf]]が提供するツール群のうちの一つ
 

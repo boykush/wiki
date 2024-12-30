@@ -21,7 +21,7 @@ Capabilities that enable Fast Flow
 - Loosely coupled teams
 - Streamlining change approval
 - Trunk-based development [[トランクベース開発]]
-- Version control #[[Version Control]]
+- Version control
 - Visual management
 - Work in process limits
 - Working in small batches
