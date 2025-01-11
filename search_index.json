@@ -1,0 +1,1341 @@
+[
+  
+    {
+      "title": "トランクベース開発",
+      "url": "https://boykush.github.io/wiki/scraps/トランクベース開発.html"
+    }
+    ,
+  
+    {
+      "title": "スプリントレビューの進め方",
+      "url": "https://boykush.github.io/wiki/scraps/スプリントレビューの進め方.html"
+    }
+    ,
+  
+    {
+      "title": "Microservice Prerequisites",
+      "url": "https://boykush.github.io/wiki/scraps/microservice-prerequisites.html"
+    }
+    ,
+  
+    {
+      "title": "関数型ドメインモデリング",
+      "url": "https://boykush.github.io/wiki/scraps/関数型ドメインモデリング.html"
+    }
+    ,
+  
+    {
+      "title": "アジャイルテストの4象限",
+      "url": "https://boykush.github.io/wiki/scraps/アジャイルテストの4象限.html"
+    }
+    ,
+  
+    {
+      "title": "エクストリームプログラミング",
+      "url": "https://boykush.github.io/wiki/scraps/エクストリームプログラミング.html"
+    }
+    ,
+  
+    {
+      "title": "SLO",
+      "url": "https://boykush.github.io/wiki/scraps/slo.html"
+    }
+    ,
+  
+    {
+      "title": "ABAC",
+      "url": "https://boykush.github.io/wiki/scraps/abac.html"
+    }
+    ,
+  
+    {
+      "title": "エンジニアリング組織論への招待",
+      "url": "https://boykush.github.io/wiki/scraps/エンジニアリング組織論への招待.html"
+    }
+    ,
+  
+    {
+      "title": "実例マッピング",
+      "url": "https://boykush.github.io/wiki/scraps/実例マッピング.html"
+    }
+    ,
+  
+    {
+      "title": "10+ Deploys Per Day: Dev and Ops Cooperation at Flickr",
+      "url": "https://boykush.github.io/wiki/scraps/10+-deploys-per-day:-dev-and-ops-cooperation-at-flickr.html"
+    }
+    ,
+  
+    {
+      "title": "コントラクトテスト",
+      "url": "https://boykush.github.io/wiki/scraps/コントラクトテスト.html"
+    }
+    ,
+  
+    {
+      "title": "BSR",
+      "url": "https://boykush.github.io/wiki/scraps/bsr.html"
+    }
+    ,
+  
+    {
+      "title": "仮説キャンバスでプロダクトの仮説を立てよう",
+      "url": "https://boykush.github.io/wiki/scraps/仮説キャンバスでプロダクトの仮説を立てよう.html"
+    }
+    ,
+  
+    {
+      "title": "Buf CLI",
+      "url": "https://boykush.github.io/wiki/scraps/buf-cli.html"
+    }
+    ,
+  
+    {
+      "title": "リバースプロキシ",
+      "url": "https://boykush.github.io/wiki/scraps/リバースプロキシ.html"
+    }
+    ,
+  
+    {
+      "title": "モジュラモノリス",
+      "url": "https://boykush.github.io/wiki/scraps/モジュラモノリス.html"
+    }
+    ,
+  
+    {
+      "title": "Kent Beck",
+      "url": "https://boykush.github.io/wiki/scraps/kent-beck.html"
+    }
+    ,
+  
+    {
+      "title": "Kustomize",
+      "url": "https://boykush.github.io/wiki/scraps/kustomize.html"
+    }
+    ,
+  
+    {
+      "title": "HTTP",
+      "url": "https://boykush.github.io/wiki/scraps/http.html"
+    }
+    ,
+  
+    {
+      "title": "GKE",
+      "url": "https://boykush.github.io/wiki/scraps/gke.html"
+    }
+    ,
+  
+    {
+      "title": "風間裕也",
+      "url": "https://boykush.github.io/wiki/scraps/風間裕也.html"
+    }
+    ,
+  
+    {
+      "title": "ドメインイベント",
+      "url": "https://boykush.github.io/wiki/scraps/ドメインイベント.html"
+    }
+    ,
+  
+    {
+      "title": "Agile Testing Condensed",
+      "url": "https://boykush.github.io/wiki/scraps/agile-testing-condensed.html"
+    }
+    ,
+  
+    {
+      "title": "REST",
+      "url": "https://boykush.github.io/wiki/scraps/rest.html"
+    }
+    ,
+  
+    {
+      "title": "GM Weinberg",
+      "url": "https://boykush.github.io/wiki/scraps/gm-weinberg.html"
+    }
+    ,
+  
+    {
+      "title": "RPC",
+      "url": "https://boykush.github.io/wiki/scraps/rpc.html"
+    }
+    ,
+  
+    {
+      "title": "Bツリー",
+      "url": "https://boykush.github.io/wiki/scraps/bツリー.html"
+    }
+    ,
+  
+    {
+      "title": "リトライ",
+      "url": "https://boykush.github.io/wiki/scraps/リトライ.html"
+    }
+    ,
+  
+    {
+      "title": "TDD",
+      "url": "https://boykush.github.io/wiki/scraps/tdd.html"
+    }
+    ,
+  
+    {
+      "title": "エリック・エヴァンスのドメイン駆動設計",
+      "url": "https://boykush.github.io/wiki/scraps/エリック・エヴァンスのドメイン駆動設計.html"
+    }
+    ,
+  
+    {
+      "title": "Clean Craftsmanship",
+      "url": "https://boykush.github.io/wiki/scraps/clean-craftsmanship.html"
+    }
+    ,
+  
+    {
+      "title": "適応度関数",
+      "url": "https://boykush.github.io/wiki/scraps/適応度関数.html"
+    }
+    ,
+  
+    {
+      "title": "Team Topologies",
+      "url": "https://boykush.github.io/wiki/scraps/team-topologies.html"
+    }
+    ,
+  
+    {
+      "title": "モノリスからマイクロサービスへ",
+      "url": "https://boykush.github.io/wiki/scraps/モノリスからマイクロサービスへ.html"
+    }
+    ,
+  
+    {
+      "title": "アジャイル開発はWhyから始まる",
+      "url": "https://boykush.github.io/wiki/scraps/アジャイル開発はwhyから始まる.html"
+    }
+    ,
+  
+    {
+      "title": "Agile Conversation",
+      "url": "https://boykush.github.io/wiki/scraps/agile-conversation.html"
+    }
+    ,
+  
+    {
+      "title": "組織を芯からアジャイルにする「インセプションデッキ」",
+      "url": "https://boykush.github.io/wiki/scraps/組織を芯からアジャイルにする「インセプションデッキ」.html"
+    }
+    ,
+  
+    {
+      "title": "Lisa Crispin",
+      "url": "https://boykush.github.io/wiki/scraps/lisa-crispin.html"
+    }
+    ,
+  
+    {
+      "title": "Ken Schwaber",
+      "url": "https://boykush.github.io/wiki/scraps/ken-schwaber.html"
+    }
+    ,
+  
+    {
+      "title": "Datadog",
+      "url": "https://boykush.github.io/wiki/scraps/datadog.html"
+    }
+    ,
+  
+    {
+      "title": "スプリントレビュー Deep Dive",
+      "url": "https://boykush.github.io/wiki/scraps/スプリントレビュー-deep-dive.html"
+    }
+    ,
+  
+    {
+      "title": "Kubernetes",
+      "url": "https://boykush.github.io/wiki/scraps/kubernetes.html"
+    }
+    ,
+  
+    {
+      "title": "CQRS Documents by Greg Young",
+      "url": "https://boykush.github.io/wiki/scraps/cqrs-documents-by-greg-young.html"
+    }
+    ,
+  
+    {
+      "title": "Protocol Buffers",
+      "url": "https://boykush.github.io/wiki/scraps/protocol-buffers.html"
+    }
+    ,
+  
+    {
+      "title": "CNCF",
+      "url": "https://boykush.github.io/wiki/scraps/cncf.html"
+    }
+    ,
+  
+    {
+      "title": "Buf",
+      "url": "https://boykush.github.io/wiki/scraps/buf.html"
+    }
+    ,
+  
+    {
+      "title": "Ron Jeffries",
+      "url": "https://boykush.github.io/wiki/scraps/ron-jeffries.html"
+    }
+    ,
+  
+    {
+      "title": "スタッフエンジニア",
+      "url": "https://boykush.github.io/wiki/scraps/スタッフエンジニア.html"
+    }
+    ,
+  
+    {
+      "title": "サークルオブライフ",
+      "url": "https://boykush.github.io/wiki/scraps/サークルオブライフ.html"
+    }
+    ,
+  
+    {
+      "title": "BDDの導入",
+      "url": "https://boykush.github.io/wiki/scraps/bddの導入.html"
+    }
+    ,
+  
+    {
+      "title": "輻輳制御",
+      "url": "https://boykush.github.io/wiki/scraps/輻輳制御.html"
+    }
+    ,
+  
+    {
+      "title": "ADR",
+      "url": "https://boykush.github.io/wiki/scraps/adr.html"
+    }
+    ,
+  
+    {
+      "title": "DNSラベル標準",
+      "url": "https://boykush.github.io/wiki/scraps/dnsラベル標準.html"
+    }
+    ,
+  
+    {
+      "title": "OSI参照モデル",
+      "url": "https://boykush.github.io/wiki/scraps/osi参照モデル.html"
+    }
+    ,
+  
+    {
+      "title": "ソフトウェアクラフトマンシップとプログラマーの誓い",
+      "url": "https://boykush.github.io/wiki/scraps/ソフトウェアクラフトマンシップとプログラマーの誓い.html"
+    }
+    ,
+  
+    {
+      "title": "レポーティングデータベース",
+      "url": "https://boykush.github.io/wiki/scraps/レポーティングデータベース.html"
+    }
+    ,
+  
+    {
+      "title": "仮説キャンバス",
+      "url": "https://boykush.github.io/wiki/scraps/仮説キャンバス.html"
+    }
+    ,
+  
+    {
+      "title": "ACID",
+      "url": "https://boykush.github.io/wiki/scraps/acid.html"
+    }
+    ,
+  
+    {
+      "title": "ブルーグリーン戦略",
+      "url": "https://boykush.github.io/wiki/scraps/ブルーグリーン戦略.html"
+    }
+    ,
+  
+    {
+      "title": "Robert C. Martin",
+      "url": "https://boykush.github.io/wiki/scraps/robert-c.-martin.html"
+    }
+    ,
+  
+    {
+      "title": "Amazon Athena",
+      "url": "https://boykush.github.io/wiki/scraps/amazon-athena.html"
+    }
+    ,
+  
+    {
+      "title": "サーキットブレーカー",
+      "url": "https://boykush.github.io/wiki/scraps/サーキットブレーカー.html"
+    }
+    ,
+  
+    {
+      "title": "STRIDE",
+      "url": "https://boykush.github.io/wiki/scraps/stride.html"
+    }
+    ,
+  
+    {
+      "title": "テストピラミッド",
+      "url": "https://boykush.github.io/wiki/scraps/テストピラミッド.html"
+    }
+    ,
+  
+    {
+      "title": "メッセージキュー",
+      "url": "https://boykush.github.io/wiki/scraps/メッセージキュー.html"
+    }
+    ,
+  
+    {
+      "title": "ngram",
+      "url": "https://boykush.github.io/wiki/scraps/ngram.html"
+    }
+    ,
+  
+    {
+      "title": "Open API",
+      "url": "https://boykush.github.io/wiki/scraps/open-api.html"
+    }
+    ,
+  
+    {
+      "title": "サービスメッシュ",
+      "url": "https://boykush.github.io/wiki/scraps/サービスメッシュ.html"
+    }
+    ,
+  
+    {
+      "title": "Amazon S3",
+      "url": "https://boykush.github.io/wiki/scraps/amazon-s3.html"
+    }
+    ,
+  
+    {
+      "title": "リチャードソン成熟度モデル",
+      "url": "https://boykush.github.io/wiki/scraps/リチャードソン成熟度モデル.html"
+    }
+    ,
+  
+    {
+      "title": "Proto Best Practices",
+      "url": "https://boykush.github.io/wiki/scraps/proto-best-practices.html"
+    }
+    ,
+  
+    {
+      "title": "スクラム",
+      "url": "https://boykush.github.io/wiki/scraps/スクラム.html"
+    }
+    ,
+  
+    {
+      "title": "SRE サイトリライアビリティエンジニアリング",
+      "url": "https://boykush.github.io/wiki/scraps/sre-サイトリライアビリティエンジニアリング.html"
+    }
+    ,
+  
+    {
+      "title": "実践ドメイン駆動設計",
+      "url": "https://boykush.github.io/wiki/scraps/実践ドメイン駆動設計.html"
+    }
+    ,
+  
+    {
+      "title": "オニオンアーキテクチャ",
+      "url": "https://boykush.github.io/wiki/scraps/オニオンアーキテクチャ.html"
+    }
+    ,
+  
+    {
+      "title": "gRPC-Gateway",
+      "url": "https://boykush.github.io/wiki/scraps/grpc-gateway.html"
+    }
+    ,
+  
+    {
+      "title": "Eric Evans氏はドメイン駆動設計(DDD) は未完成だと述べた",
+      "url": "https://boykush.github.io/wiki/scraps/eric-evans氏はドメイン駆動設計(ddd)-は未完成だと述べた.html"
+    }
+    ,
+  
+    {
+      "title": "E2Eテスト",
+      "url": "https://boykush.github.io/wiki/scraps/e2eテスト.html"
+    }
+    ,
+  
+    {
+      "title": "OAuth徹底入門",
+      "url": "https://boykush.github.io/wiki/scraps/oauth徹底入門.html"
+    }
+    ,
+  
+    {
+      "title": "群れはなぜ同じ方向を目指すのか？ ",
+      "url": "https://boykush.github.io/wiki/scraps/群れはなぜ同じ方向を目指すのか？-.html"
+    }
+    ,
+  
+    {
+      "title": "ピープルウエア",
+      "url": "https://boykush.github.io/wiki/scraps/ピープルウエア.html"
+    }
+    ,
+  
+    {
+      "title": "ゴールデンサークル",
+      "url": "https://boykush.github.io/wiki/scraps/ゴールデンサークル.html"
+    }
+    ,
+  
+    {
+      "title": "正しいものを正しくつくる",
+      "url": "https://boykush.github.io/wiki/scraps/正しいものを正しくつくる.html"
+    }
+    ,
+  
+    {
+      "title": "契約による設計",
+      "url": "https://boykush.github.io/wiki/scraps/契約による設計.html"
+    }
+    ,
+  
+    {
+      "title": "広木大地",
+      "url": "https://boykush.github.io/wiki/scraps/広木大地.html"
+    }
+    ,
+  
+    {
+      "title": "30分で分かった気になるチームトポロジー",
+      "url": "https://boykush.github.io/wiki/scraps/30分で分かった気になるチームトポロジー.html"
+    }
+    ,
+  
+    {
+      "title": "DevOps capabilities",
+      "url": "https://boykush.github.io/wiki/scraps/devops-capabilities.html"
+    }
+    ,
+  
+    {
+      "title": "プログラマーの誓い",
+      "url": "https://boykush.github.io/wiki/scraps/プログラマーの誓い.html"
+    }
+    ,
+  
+    {
+      "title": "チームトポロジー",
+      "url": "https://boykush.github.io/wiki/scraps/チームトポロジー.html"
+    }
+    ,
+  
+    {
+      "title": "HMAC",
+      "url": "https://boykush.github.io/wiki/scraps/hmac.html"
+    }
+    ,
+  
+    {
+      "title": "Istio",
+      "url": "https://boykush.github.io/wiki/scraps/istio.html"
+    }
+    ,
+  
+    {
+      "title": "Scott Wlaschin",
+      "url": "https://boykush.github.io/wiki/scraps/scott-wlaschin.html"
+    }
+    ,
+  
+    {
+      "title": "技術的負債",
+      "url": "https://boykush.github.io/wiki/scraps/技術的負債.html"
+    }
+    ,
+  
+    {
+      "title": "Ward Cunningham",
+      "url": "https://boykush.github.io/wiki/scraps/ward-cunningham.html"
+    }
+    ,
+  
+    {
+      "title": "Dan North",
+      "url": "https://boykush.github.io/wiki/scraps/dan-north.html"
+    }
+    ,
+  
+    {
+      "title": "組織を変える5つの対話",
+      "url": "https://boykush.github.io/wiki/scraps/組織を変える5つの対話.html"
+    }
+    ,
+  
+    {
+      "title": "テストコードにはテストの意図を込めよう",
+      "url": "https://boykush.github.io/wiki/scraps/テストコードにはテストの意図を込めよう.html"
+    }
+    ,
+  
+    {
+      "title": "ETL",
+      "url": "https://boykush.github.io/wiki/scraps/etl.html"
+    }
+    ,
+  
+    {
+      "title": "Kubernetes Gateway API",
+      "url": "https://boykush.github.io/wiki/scraps/kubernetes-gateway-api.html"
+    }
+    ,
+  
+    {
+      "title": "Redoc",
+      "url": "https://boykush.github.io/wiki/scraps/redoc.html"
+    }
+    ,
+  
+    {
+      "title": "DevOpsトポロジー",
+      "url": "https://boykush.github.io/wiki/scraps/devopsトポロジー.html"
+    }
+    ,
+  
+    {
+      "title": "Connect",
+      "url": "https://boykush.github.io/wiki/scraps/connect.html"
+    }
+    ,
+  
+    {
+      "title": "クリーンアーキテクチャ",
+      "url": "https://boykush.github.io/wiki/scraps/クリーンアーキテクチャ.html"
+    }
+    ,
+  
+    {
+      "title": "Programming in Haskell 2nd edition",
+      "url": "https://boykush.github.io/wiki/scraps/programming-in-haskell-2nd-edition.html"
+    }
+    ,
+  
+    {
+      "title": "SHA",
+      "url": "https://boykush.github.io/wiki/scraps/sha.html"
+    }
+    ,
+  
+    {
+      "title": "ライト、ついてますか",
+      "url": "https://boykush.github.io/wiki/scraps/ライト、ついてますか.html"
+    }
+    ,
+  
+    {
+      "title": "分散コンピューティングの8つの誤謬",
+      "url": "https://boykush.github.io/wiki/scraps/分散コンピューティングの8つの誤謬.html"
+    }
+    ,
+  
+    {
+      "title": "Microsoft Threat Modeling Tool",
+      "url": "https://boykush.github.io/wiki/scraps/microsoft-threat-modeling-tool.html"
+    }
+    ,
+  
+    {
+      "title": "ストラングラーフィグアプリケーション",
+      "url": "https://boykush.github.io/wiki/scraps/ストラングラーフィグアプリケーション.html"
+    }
+    ,
+  
+    {
+      "title": "吉羽龍太郎",
+      "url": "https://boykush.github.io/wiki/scraps/吉羽龍太郎.html"
+    }
+    ,
+  
+    {
+      "title": "Elastic Load Balancing",
+      "url": "https://boykush.github.io/wiki/scraps/elastic-load-balancing.html"
+    }
+    ,
+  
+    {
+      "title": "技術的負債の4象限",
+      "url": "https://boykush.github.io/wiki/scraps/技術的負債の4象限.html"
+    }
+    ,
+  
+    {
+      "title": "エッセンシャル スクラム",
+      "url": "https://boykush.github.io/wiki/scraps/エッセンシャル-スクラム.html"
+    }
+    ,
+  
+    {
+      "title": "BDD",
+      "url": "https://boykush.github.io/wiki/scraps/bdd.html"
+    }
+    ,
+  
+    {
+      "title": "gRPC",
+      "url": "https://boykush.github.io/wiki/scraps/grpc.html"
+    }
+    ,
+  
+    {
+      "title": "Alistair Cockburn",
+      "url": "https://boykush.github.io/wiki/scraps/alistair-cockburn.html"
+    }
+    ,
+  
+    {
+      "title": "マスタリングAPIアーキテクチャ",
+      "url": "https://boykush.github.io/wiki/scraps/マスタリングapiアーキテクチャ.html"
+    }
+    ,
+  
+    {
+      "title": "スプリントレビュー",
+      "url": "https://boykush.github.io/wiki/scraps/スプリントレビュー.html"
+    }
+    ,
+  
+    {
+      "title": "Datadog Database Monitoring",
+      "url": "https://boykush.github.io/wiki/scraps/datadog-database-monitoring.html"
+    }
+    ,
+  
+    {
+      "title": "Datadog APM",
+      "url": "https://boykush.github.io/wiki/scraps/datadog-apm.html"
+    }
+    ,
+  
+    {
+      "title": "サービスの信頼性の階層",
+      "url": "https://boykush.github.io/wiki/scraps/サービスの信頼性の階層.html"
+    }
+    ,
+  
+    {
+      "title": "TLS",
+      "url": "https://boykush.github.io/wiki/scraps/tls.html"
+    }
+    ,
+  
+    {
+      "title": "仮説検証型アジャイル開発",
+      "url": "https://boykush.github.io/wiki/scraps/仮説検証型アジャイル開発.html"
+    }
+    ,
+  
+    {
+      "title": "スクラムにおける技術的スパイクの進め方",
+      "url": "https://boykush.github.io/wiki/scraps/スクラムにおける技術的スパイクの進め方.html"
+    }
+    ,
+  
+    {
+      "title": "自動テスト実行結果の目的を整理する",
+      "url": "https://boykush.github.io/wiki/scraps/自動テスト実行結果の目的を整理する.html"
+    }
+    ,
+  
+    {
+      "title": "BDDとDDD",
+      "url": "https://boykush.github.io/wiki/scraps/bddとddd.html"
+    }
+    ,
+  
+    {
+      "title": "Swarming をコンセプトに掲げるアジャイルチームのベストプラクティス",
+      "url": "https://boykush.github.io/wiki/scraps/swarming-をコンセプトに掲げるアジャイルチームのベストプラクティス.html"
+    }
+    ,
+  
+    {
+      "title": "Basic認証",
+      "url": "https://boykush.github.io/wiki/scraps/basic認証.html"
+    }
+    ,
+  
+    {
+      "title": "JWT",
+      "url": "https://boykush.github.io/wiki/scraps/jwt.html"
+    }
+    ,
+  
+    {
+      "title": "ヘキサゴナルアーキテクチャ",
+      "url": "https://boykush.github.io/wiki/scraps/ヘキサゴナルアーキテクチャ.html"
+    }
+    ,
+  
+    {
+      "title": "Kubernetes CronJob",
+      "url": "https://boykush.github.io/wiki/scraps/kubernetes-cronjob.html"
+    }
+    ,
+  
+    {
+      "title": "Eric Evans",
+      "url": "https://boykush.github.io/wiki/scraps/eric-evans.html"
+    }
+    ,
+  
+    {
+      "title": "レプリケーション",
+      "url": "https://boykush.github.io/wiki/scraps/レプリケーション.html"
+    }
+    ,
+  
+    {
+      "title": "Greg Young",
+      "url": "https://boykush.github.io/wiki/scraps/greg-young.html"
+    }
+    ,
+  
+    {
+      "title": "OAuth2",
+      "url": "https://boykush.github.io/wiki/scraps/oauth2.html"
+    }
+    ,
+  
+    {
+      "title": "Martin Kleppmann",
+      "url": "https://boykush.github.io/wiki/scraps/martin-kleppmann.html"
+    }
+    ,
+  
+    {
+      "title": "Twelve-Factor App",
+      "url": "https://boykush.github.io/wiki/scraps/twelve-factor-app.html"
+    }
+    ,
+  
+    {
+      "title": "OOP",
+      "url": "https://boykush.github.io/wiki/scraps/oop.html"
+    }
+    ,
+  
+    {
+      "title": "入門 監視",
+      "url": "https://boykush.github.io/wiki/scraps/入門-監視.html"
+    }
+    ,
+  
+    {
+      "title": "Kubernetes Job",
+      "url": "https://boykush.github.io/wiki/scraps/kubernetes-job.html"
+    }
+    ,
+  
+    {
+      "title": "PofEAA",
+      "url": "https://boykush.github.io/wiki/scraps/pofeaa.html"
+    }
+    ,
+  
+    {
+      "title": "サイドカープロキシ",
+      "url": "https://boykush.github.io/wiki/scraps/サイドカープロキシ.html"
+    }
+    ,
+  
+    {
+      "title": "Kubernetes Deployment",
+      "url": "https://boykush.github.io/wiki/scraps/kubernetes-deployment.html"
+    }
+    ,
+  
+    {
+      "title": "Pact",
+      "url": "https://boykush.github.io/wiki/scraps/pact.html"
+    }
+    ,
+  
+    {
+      "title": "BDDと共通言語",
+      "url": "https://boykush.github.io/wiki/scraps/bddと共通言語.html"
+    }
+    ,
+  
+    {
+      "title": "ユーザーストーリーマッピング",
+      "url": "https://boykush.github.io/wiki/scraps/ユーザーストーリーマッピング.html"
+    }
+    ,
+  
+    {
+      "title": "プレモーテム",
+      "url": "https://boykush.github.io/wiki/scraps/プレモーテム.html"
+    }
+    ,
+  
+    {
+      "title": "マイクロサービス",
+      "url": "https://boykush.github.io/wiki/scraps/マイクロサービス.html"
+    }
+    ,
+  
+    {
+      "title": "TCP",
+      "url": "https://boykush.github.io/wiki/scraps/tcp.html"
+    }
+    ,
+  
+    {
+      "title": "技術的負債という概念の生みの親 Ward Cunningham 自身による説明",
+      "url": "https://boykush.github.io/wiki/scraps/技術的負債という概念の生みの親-ward-cunningham-自身による説明.html"
+    }
+    ,
+  
+    {
+      "title": "SQLパフォーマンス詳解",
+      "url": "https://boykush.github.io/wiki/scraps/sqlパフォーマンス詳解.html"
+    }
+    ,
+  
+    {
+      "title": "オブジェクト指向入門 第2版 原則・コンセプト",
+      "url": "https://boykush.github.io/wiki/scraps/オブジェクト指向入門-第2版-原則・コンセプト.html"
+    }
+    ,
+  
+    {
+      "title": "Bearerトークン",
+      "url": "https://boykush.github.io/wiki/scraps/bearerトークン.html"
+    }
+    ,
+  
+    {
+      "title": "抽象化によるブランチ",
+      "url": "https://boykush.github.io/wiki/scraps/抽象化によるブランチ.html"
+    }
+    ,
+  
+    {
+      "title": "OIDC",
+      "url": "https://boykush.github.io/wiki/scraps/oidc.html"
+    }
+    ,
+  
+    {
+      "title": "エラーバジェット",
+      "url": "https://boykush.github.io/wiki/scraps/エラーバジェット.html"
+    }
+    ,
+  
+    {
+      "title": "熊とワルツを",
+      "url": "https://boykush.github.io/wiki/scraps/熊とワルツを.html"
+    }
+    ,
+  
+    {
+      "title": "カイゼン・ジャーニー",
+      "url": "https://boykush.github.io/wiki/scraps/カイゼン・ジャーニー.html"
+    }
+    ,
+  
+    {
+      "title": "Ambassador Edge Stack",
+      "url": "https://boykush.github.io/wiki/scraps/ambassador-edge-stack.html"
+    }
+    ,
+  
+    {
+      "title": "QUIC",
+      "url": "https://boykush.github.io/wiki/scraps/quic.html"
+    }
+    ,
+  
+    {
+      "title": "Amazon EKS",
+      "url": "https://boykush.github.io/wiki/scraps/amazon-eks.html"
+    }
+    ,
+  
+    {
+      "title": "Kubernetes Volume",
+      "url": "https://boykush.github.io/wiki/scraps/kubernetes-volume.html"
+    }
+    ,
+  
+    {
+      "title": "質とスピード",
+      "url": "https://boykush.github.io/wiki/scraps/質とスピード.html"
+    }
+    ,
+  
+    {
+      "title": "Helm",
+      "url": "https://boykush.github.io/wiki/scraps/helm.html"
+    }
+    ,
+  
+    {
+      "title": "APIゲートウェイ",
+      "url": "https://boykush.github.io/wiki/scraps/apiゲートウェイ.html"
+    }
+    ,
+  
+    {
+      "title": "XP",
+      "url": "https://boykush.github.io/wiki/scraps/xp.html"
+    }
+    ,
+  
+    {
+      "title": "Pod",
+      "url": "https://boykush.github.io/wiki/scraps/pod.html"
+    }
+    ,
+  
+    {
+      "title": "RSA",
+      "url": "https://boykush.github.io/wiki/scraps/rsa.html"
+    }
+    ,
+  
+    {
+      "title": "Janet Gregory",
+      "url": "https://boykush.github.io/wiki/scraps/janet-gregory.html"
+    }
+    ,
+  
+    {
+      "title": "Vaughn Vernon",
+      "url": "https://boykush.github.io/wiki/scraps/vaughn-vernon.html"
+    }
+    ,
+  
+    {
+      "title": "TCP:IP技術入門",
+      "url": "https://boykush.github.io/wiki/scraps/tcp:ip技術入門.html"
+    }
+    ,
+  
+    {
+      "title": "DDD",
+      "url": "https://boykush.github.io/wiki/scraps/ddd.html"
+    }
+    ,
+  
+    {
+      "title": "Jeff Sutherland",
+      "url": "https://boykush.github.io/wiki/scraps/jeff-sutherland.html"
+    }
+    ,
+  
+    {
+      "title": "データ指向アプリケーションデザイン",
+      "url": "https://boykush.github.io/wiki/scraps/データ指向アプリケーションデザイン.html"
+    }
+    ,
+  
+    {
+      "title": "Tom DeMarco",
+      "url": "https://boykush.github.io/wiki/scraps/tom-demarco.html"
+    }
+    ,
+  
+    {
+      "title": "GraphQL",
+      "url": "https://boykush.github.io/wiki/scraps/graphql.html"
+    }
+    ,
+  
+    {
+      "title": "The BDD Books - Discovery",
+      "url": "https://boykush.github.io/wiki/scraps/the-bdd-books---discovery.html"
+    }
+    ,
+  
+    {
+      "title": "Kubernetes Secret",
+      "url": "https://boykush.github.io/wiki/scraps/kubernetes-secret.html"
+    }
+    ,
+  
+    {
+      "title": "MapReduce",
+      "url": "https://boykush.github.io/wiki/scraps/mapreduce.html"
+    }
+    ,
+  
+    {
+      "title": "Martin Fowler",
+      "url": "https://boykush.github.io/wiki/scraps/martin-fowler.html"
+    }
+    ,
+  
+    {
+      "title": "アジャイルソフトウェアの12の原則",
+      "url": "https://boykush.github.io/wiki/scraps/アジャイルソフトウェアの12の原則.html"
+    }
+    ,
+  
+    {
+      "title": "市谷聡啓",
+      "url": "https://boykush.github.io/wiki/scraps/市谷聡啓.html"
+    }
+    ,
+  
+    {
+      "title": "カナリアリリース",
+      "url": "https://boykush.github.io/wiki/scraps/カナリアリリース.html"
+    }
+    ,
+  
+    {
+      "title": "MADR",
+      "url": "https://boykush.github.io/wiki/scraps/madr.html"
+    }
+    ,
+  
+    {
+      "title": "アドレナリンジャンキー",
+      "url": "https://boykush.github.io/wiki/scraps/アドレナリンジャンキー.html"
+    }
+    ,
+  
+    {
+      "title": "UDP",
+      "url": "https://boykush.github.io/wiki/scraps/udp.html"
+    }
+    ,
+  
+    {
+      "title": "Architectural Styles and the Design of Network-based Software Architectures",
+      "url": "https://boykush.github.io/wiki/scraps/architectural-styles-and-the-design-of-network-based-software-architectures.html"
+    }
+    ,
+  
+    {
+      "title": "テスト駆動開発の定義",
+      "url": "https://boykush.github.io/wiki/scraps/テスト駆動開発の定義.html"
+    }
+    ,
+  
+    {
+      "title": "A Mess is not a Technical Debt",
+      "url": "https://boykush.github.io/wiki/scraps/a-mess-is-not-a-technical-debt.html"
+    }
+    ,
+  
+    {
+      "title": "3wayハンドシェイク",
+      "url": "https://boykush.github.io/wiki/scraps/3wayハンドシェイク.html"
+    }
+    ,
+  
+    {
+      "title": "レートリミット",
+      "url": "https://boykush.github.io/wiki/scraps/レートリミット.html"
+    }
+    ,
+  
+    {
+      "title": "OWASP",
+      "url": "https://boykush.github.io/wiki/scraps/owasp.html"
+    }
+    ,
+  
+    {
+      "title": "Datadog Agent",
+      "url": "https://boykush.github.io/wiki/scraps/datadog-agent.html"
+    }
+    ,
+  
+    {
+      "title": "Swarming",
+      "url": "https://boykush.github.io/wiki/scraps/swarming.html"
+    }
+    ,
+  
+    {
+      "title": "LeanとDevOpsの科学",
+      "url": "https://boykush.github.io/wiki/scraps/leanとdevopsの科学.html"
+    }
+    ,
+  
+    {
+      "title": "Argo Rollouts",
+      "url": "https://boykush.github.io/wiki/scraps/argo-rollouts.html"
+    }
+    ,
+  
+    {
+      "title": "Agile Testing",
+      "url": "https://boykush.github.io/wiki/scraps/agile-testing.html"
+    }
+    ,
+  
+    {
+      "title": "角征典",
+      "url": "https://boykush.github.io/wiki/scraps/角征典.html"
+    }
+    ,
+  
+    {
+      "title": "OpenTelemetry",
+      "url": "https://boykush.github.io/wiki/scraps/opentelemetry.html"
+    }
+    ,
+  
+    {
+      "title": "Eff",
+      "url": "https://boykush.github.io/wiki/scraps/eff.html"
+    }
+    ,
+  
+    {
+      "title": "脅威モデリング",
+      "url": "https://boykush.github.io/wiki/scraps/脅威モデリング.html"
+    }
+    ,
+  
+    {
+      "title": "OWASP Top Ten",
+      "url": "https://boykush.github.io/wiki/scraps/owasp-top-ten.html"
+    }
+    ,
+  
+    {
+      "title": "松浦隼人",
+      "url": "https://boykush.github.io/wiki/scraps/松浦隼人.html"
+    }
+    ,
+  
+    {
+      "title": "ロードバランサー",
+      "url": "https://boykush.github.io/wiki/scraps/ロードバランサー.html"
+    }
+    ,
+  
+    {
+      "title": "Datadog RUM",
+      "url": "https://boykush.github.io/wiki/scraps/datadog-rum.html"
+    }
+    ,
+  
+    {
+      "title": "C4 model",
+      "url": "https://boykush.github.io/wiki/scraps/c4-model.html"
+    }
+    ,
+  
+    {
+      "title": "Envoy",
+      "url": "https://boykush.github.io/wiki/scraps/envoy.html"
+    }
+    ,
+  
+    {
+      "title": "Introduction to safe programming with numeric library",
+      "url": "https://boykush.github.io/wiki/scraps/introduction-to-safe-programming-with-numeric-library.html"
+    }
+    ,
+  
+    {
+      "title": "SECIモデル",
+      "url": "https://boykush.github.io/wiki/scraps/seciモデル.html"
+    }
+    ,
+  
+    {
+      "title": "スクラムガイド",
+      "url": "https://boykush.github.io/wiki/scraps/スクラムガイド.html"
+    }
+    ,
+  
+    {
+      "title": "和田卓人",
+      "url": "https://boykush.github.io/wiki/scraps/和田卓人.html"
+    }
+    ,
+  
+    {
+      "title": "テスト駆動開発",
+      "url": "https://boykush.github.io/wiki/scraps/テスト駆動開発.html"
+    }
+    ,
+  
+    {
+      "title": "Gaspar Nagy",
+      "url": "https://boykush.github.io/wiki/scraps/gaspar-nagy.html"
+    }
+    ,
+  
+    {
+      "title": "Base64",
+      "url": "https://boykush.github.io/wiki/scraps/base64.html"
+    }
+    ,
+  
+    {
+      "title": "Swagger",
+      "url": "https://boykush.github.io/wiki/scraps/swagger.html"
+    }
+    ,
+  
+    {
+      "title": "アジャイルソフトウェア開発宣言",
+      "url": "https://boykush.github.io/wiki/scraps/アジャイルソフトウェア開発宣言.html"
+    }
+    ,
+  
+    {
+      "title": "RBAC",
+      "url": "https://boykush.github.io/wiki/scraps/rbac.html"
+    }
+    ,
+  
+    {
+      "title": "インセプションデッキ",
+      "url": "https://boykush.github.io/wiki/scraps/インセプションデッキ.html"
+    }
+    ,
+  
+    {
+      "title": "Spire",
+      "url": "https://boykush.github.io/wiki/scraps/spire.html"
+    }
+    ,
+  
+    {
+      "title": "Authorization to implement with Extensible Effect",
+      "url": "https://boykush.github.io/wiki/scraps/authorization-to-implement-with-extensible-effect.html"
+    }
+    ,
+  
+    {
+      "title": "トランザクション分離レベル",
+      "url": "https://boykush.github.io/wiki/scraps/トランザクション分離レベル.html"
+    }
+    ,
+  
+    {
+      "title": "Kubernetes Service",
+      "url": "https://boykush.github.io/wiki/scraps/kubernetes-service.html"
+    }
+    
+  
+]
