@@ -4,9 +4,9 @@
 
 #[[Reliability]] #[[Observability]]
 
-![](https://m.media-amazon.com/images/I/51Ybz+6kIsL._SX389_BO1,204,203,200_.jpg)
+![](https://www.oreilly.co.jp/books/images/picture_large978-4-87311-791-1.jpeg)
 
-[SRE サイトリライアビリティエンジニアリング - O'Reilly Japan](https://www.oreilly.co.jp/books/9784873117911/)
+[O'Reilly Japan](https://www.oreilly.co.jp/books/9784873117911/)
 
 キーワード
 - [[SLO]]

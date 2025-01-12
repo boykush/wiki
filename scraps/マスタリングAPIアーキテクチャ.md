@@ -3,9 +3,9 @@
 #[[Book]] #James Gough #Daniel Bryant #Matthew Auburn
 #[[API Architecture]] #[[Testing]] #[[Reliability]] #[[Observability]] #[[Security]] #[[Software Design]]
 
-![](https://m.media-amazon.com/images/I/41vC+fyZq6L._SX342_SY445_.jpg)
+![](https://www.oreilly.co.jp/books/images/picture_large978-4-8144-0089-8.jpeg)
 
-[O'Reilly Japan - マスタリングAPIアーキテクチャ](https://www.oreilly.co.jp/books/9784814400898/)
+[O'Reilly Japan](https://www.oreilly.co.jp/books/9784814400898/)
 
 ## キーワード
 

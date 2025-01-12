@@ -2,9 +2,9 @@
 
 #[[Book]] #[[Robert C. Martin]] #[[角征典]]
 
-![](https://m.media-amazon.com/images/I/41E7wI9N9ZL._SX342_SY445_.jpg)
+![](https://64.media.tumblr.com/51e0203da0d43fc34fe675b976194c70/073598ba94bf7416-5a/s1280x1920/0ab6860608b69faa747821255e61aead502d9a49.jpg)
 
-[Clean Craftsmanship - asciidwango](https://asciidwango.jp/post/693992928727760896/clean-craftsmanship)
+[asciidwango](https://asciidwango.jp/post/693992928727760896/clean-craftsmanship)
 
 
 ### 規律

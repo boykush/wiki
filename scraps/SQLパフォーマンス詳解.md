@@ -1,5 +1,5 @@
 #[[Database]] #[[松浦隼人]] #[[Book]]
 
-![](https://m.media-amazon.com/images/I/51a7HeGO+8L._SY344_BO1,204,203,200_.jpg)
+![](https://sql-performance-explained.jp/static/9783950307849.GuXvgGvo.jpg)
 
-- [HP](https://sql-performance-explained.jp/)
+[HP](https://sql-performance-explained.jp/)
