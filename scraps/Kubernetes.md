@@ -2,7 +2,7 @@
 
 ![](https://kubernetes.io/images/kubernetes.png)
 
-アプリケーションコンテナのオーケストレーションを行うオープンソースのプラットフォーム
+[[Docker]]のようなアプリケーションコンテナのオーケストレーションを行うオープンソースのプラットフォーム
 
 [[CNCF]] graduated project
 
