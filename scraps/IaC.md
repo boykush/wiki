@@ -1,6 +1,6 @@
 ## Infrastructure as Code
 
-#[[Continuous Integration]] #[[Continuous Delivery]] #[[DevOps]]
+#[[Continuous Integration]] #[[Continuous Delivery]]
 
 インフラストラクチャとしてのプロセスや環境、設定等をコードで管理し文書化する方針
 
