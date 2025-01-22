@@ -1,4 +1,4 @@
-#[[Documantation]]
+#[[Documentation]]
 
 [[Kubernetes]]の各リソース等のアイコンを公開しているリポジトリ
 
