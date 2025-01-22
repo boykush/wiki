@@ -1,5 +1,7 @@
 #[[Cloud Native]]
 
+![](https://github.com/kubernetes/community/raw/master/icons/png/resources/labeled/vol-128.png)
+
 [[Kubernetes]]においてPod内のコンテナがクラッシュした際のファイル復元や、コンテナ間のファイル受け渡しをしたいケースで用いられる
 
 [[Docker]] Volumeよりも管理十分で多くの機能を利用できる

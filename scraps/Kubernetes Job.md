@@ -1,5 +1,7 @@
 #[[Cloud Native]]
 
+![](https://github.com/kubernetes/community/raw/master/icons/png/resources/labeled/job-128.png)
+
 [[Kubernetes]]において[[Pod]]を1つ以上作成し、作成したPodがJobとして正常終了するまで再試行をすることができる。
 
 `.spec.completions`, `.spec.parallelism` の指定によって並列実行の制御をすることも可能
