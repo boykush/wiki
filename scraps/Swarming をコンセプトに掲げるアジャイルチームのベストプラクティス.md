@@ -1,4 +1,4 @@
-#[[Swarming]] #[[Agile]]
+#[[Swarming]] #[[Agile]] #[[Team Organization]] #[[Continuous Integration]] #[[Continuous Delivery]]
 
 [XP祭り2024](https://confengine.com/conferences/xp2024/proposal/20410/swarming)での自身の発表
 
