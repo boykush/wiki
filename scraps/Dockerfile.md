@@ -1,6 +1,6 @@
 [[Docker]]においてイメージの構成を記述するファイル
 
-[[IaC]]として機能する
+[[Infrastructure as Code|IaC]]として機能する
 
 ---
 

@@ -8,5 +8,5 @@
 
 - [[Continuous Integration]]
 - [[Continuous Delivery]]
-- [[IaC]]
+- [[Infrastructure as Code]]
 - [[マイクロサービス]]

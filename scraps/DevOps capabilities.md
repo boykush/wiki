@@ -3,7 +3,7 @@
 Capabilities that enable a Climate for Learning
 
 - Code maintainability
-- Documentation quality #[[Documentation]]
+- [[Documentation]] quality
 - Empowering teams to choose tools
 - Generative organizational culture
 - Job satisfaction
@@ -14,13 +14,13 @@ Capabilities that enable a Climate for Learning
 
 Capabilities that enable Fast Flow
 
-- Continuous delivery #[[Continuous Delivery]]
+- [[Continuous Delivery|Continuous delivery]]
 - Database change management
 - Deployment automation
 - Flexible infrastructure
 - Loosely coupled teams
 - Streamlining change approval
-- Trunk-based development [[トランクベース開発]]
+- [[トランクベース開発|Trunk-based development]]
 - Version control
 - Visual management
 - Work in process limits
@@ -28,9 +28,9 @@ Capabilities that enable Fast Flow
 
 Capabilities that enable Fast Feedback
 
-- Continuous integration #[[Continuous Integration]]
+- [[Continuous Integration|Continuous integration]]
 - Customer feedback
-- Monitoring and observability #[[Observability]]
+- Monitoring and [[Observability|observability]]
 - Monitoring systems to inform business decisions
 - Pervasive security
 - Proactive failure notification
