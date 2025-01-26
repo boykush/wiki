@@ -1,5 +1,3 @@
-## Horizontal Pod Autoscaling
-
 #[[Cloud Native]]
 
 ![](https://github.com/kubernetes/community/raw/master/icons/png/resources/labeled/hpa-128.png)

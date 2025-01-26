@@ -2,7 +2,9 @@
 
 ![](https://keda.sh//img/logos/keda-icon-color.png)
 
-[[Kubernetes HPA]]等の標準の[[Kubernetes]]コンポーネントと連携して、上書きや重複なしに動作する
+イベントをトリガーにAutoscalingを行う[[Kubernetes]]の拡張ツール
+
+[[Horizontal Pod Autoscaling|HPA]]等の標準のKubernetesコンポーネントと連携して、上書きや重複なしに動作する
 
 ワークロードの `triggers` にイベントトリガーを記述可能で、トリガーのタイプには例として以下のようなものがある
 - [[Cron]]
