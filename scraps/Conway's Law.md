@@ -2,6 +2,6 @@
 
 [[コンウェイの法則]]について[[Martin Fowler]]が書いたブログ
 
-[[逆コンウェイ戦略]]や[[DDD]]との関連についても触れている
+[[逆コンウェイ戦略]]や[[ドメイン駆動設計|DDD]]との関連についても触れている
 
 - [Conway's Law](https://martinfowler.com/bliki/ConwaysLaw.html)
