@@ -1,6 +1,4 @@
-## Googleの信頼性を支えるエンジニアリングチーム
-
-#[[Book]]
+ #[[Book]]
 
 #[[Reliability]] #[[Observability]]
 
