@@ -37,7 +37,3 @@ Capabilities that enable Fast Feedback
 - Test automation
 - Test data management
 - Visibility of work in the value stream
-
----
-
-- [DORA | Capabilities](https://dora.dev/capabilities/)
