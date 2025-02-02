@@ -1,3 +1,5 @@
+## セキュアな認可システムを適用するための原則と実践
+
 #[[Security]] #[[Book]] #[[API Architecture]]
 
 ![](https://www.seshop.com/static/images/product/22242/L.png)
