@@ -1,6 +1,6 @@
  #[[Agile]]
 
-[[10+ Deploys Per Day: Dev and Ops Cooperation at Flickr]]にて初めて登場した言葉
+2009年に[[10+ Deploys Per Day: Dev and Ops Cooperation at Flickr]]にて初めて登場した言葉
 
 開発とオペレーションを一つのチーム内で両立させる
 
