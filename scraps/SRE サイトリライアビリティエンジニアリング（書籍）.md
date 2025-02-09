@@ -8,6 +8,8 @@
 
 [O'Reilly Japan](https://www.oreilly.co.jp/books/9784873117911/)
 
+[[SRE]]についてGoogleエンジニアが書いた書籍
+
 キーワード
 - [[SLO]]
 - [[サービスの信頼性の階層]]
