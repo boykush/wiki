@@ -1,0 +1,1 @@
+[[DevOps capabilities]]のうちの分類の一つ
