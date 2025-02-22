@@ -1,4 +1,8 @@
 ## {{ get_env(name="SUBTITLE", default="") }}
+
+### Author:
+{{ get_env(name="AUTHOR", default="") }}
+
 #[[Book]]
 
 ![cover]({{get_env(name="COVER", default="")}})
