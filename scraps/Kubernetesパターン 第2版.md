@@ -1,4 +1,7 @@
-#[[Book]]
+### Authors:
+Bilgin Ibryam, Roland Huß, [[松浦隼人]]
+
+#[[Book]] 
 
 ![](https://www.oreilly.co.jp/books/images/picture_large978-4-8144-0088-1.jpeg)
 [O'Reilly Japan](https://www.oreilly.co.jp/books/9784814400881/)

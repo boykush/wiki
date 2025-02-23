@@ -1,6 +1,9 @@
 ## 規律、基準、倫理 より良く働き、生産性を高め、自分が書いたものに誇りを持つ！
 
-#[[Book]] #[[Robert C. Martin]] #[[角征典]]
+### Authors:
+[[Robert C. Martin]], [[角征典]]
+
+#[[Book]]
 
 ![](https://64.media.tumblr.com/51e0203da0d43fc34fe675b976194c70/073598ba94bf7416-5a/s1280x1920/0ab6860608b69faa747821255e61aead502d9a49.jpg)
 

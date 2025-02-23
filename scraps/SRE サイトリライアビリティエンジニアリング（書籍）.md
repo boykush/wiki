@@ -1,8 +1,9 @@
 ## Googleの信頼性を支えるエンジニアリングチーム
 
-#[[Book]]
+### Authors:
+Betsy Beyer, Chris Jones, Jennifer Petoff, Niall Richard Murphy
 
-#[[Reliability]] #[[Observability]]
+#[[Book]] #[[Reliability]] #[[Observability]]
 
 ![](https://www.oreilly.co.jp/books/images/picture_large978-4-87311-791-1.jpeg)
 

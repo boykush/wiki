@@ -1,7 +1,9 @@
 ## モノシリックからマイクロサービスへとアーキテクチャを進化させるための実践的手法
 
-#[[Book]] #James Gough #Daniel Bryant #Matthew Auburn
-#[[API Architecture]] #[[Testing]] #[[Reliability]] #[[Observability]] #[[Security]] #[[Software Design]]
+### Authors:
+James Gough, Daniel Bryant, Matthew Auburn
+
+#[[Book]] #[[API Architecture]] #[[Testing]] #[[Reliability]] #[[Observability]] #[[Security]] #[[Software Design]]
 
 ![](https://www.oreilly.co.jp/books/images/picture_large978-4-8144-0089-8.jpeg)
 

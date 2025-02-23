@@ -1,4 +1,5 @@
-#[[Greg Young]]
+### Authors:
+[[Greg Young]], [[和智右桂]]
 
 [[ドメイン駆動設計|DDD]]のユビキタス言語と[[BDD（TDD）|BDD]]の共通言語の違いを論じている
 

@@ -1,5 +1,8 @@
 ## プロコルスタックの基礎×実装
 
+### Authors:
+中山悠, 丸田一輝
+
 #[[Network]] #[[Book]]
 
 ![](https://gihyo.jp/assets/images/cover/2024/thumb/TH320_9784297141578.jpg)

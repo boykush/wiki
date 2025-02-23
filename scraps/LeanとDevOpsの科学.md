@@ -1,6 +1,8 @@
 ## テクノロジーの戦略的活用が組織変革を加速する
 
-#Nicole Forsgren #Jez Humble #Gene Kim
+### Authors:
+Nicole Forsgren, Jez Humble, Gene Kim
+
 #[[DevOps]] #[[Book]]
 
 ![](https://img.ips.co.jp/ij/18/1118101029/1118101029-520x.jpg)
