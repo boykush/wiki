@@ -9,8 +9,6 @@ James Gough, Daniel Bryant, Matthew Auburn
 
 [O'Reilly Japan](https://www.oreilly.co.jp/books/9784814400898/)
 
-## キーワード
-
 ### イントロダクション
 - [[C4 model]]
 - [[ADR]] 
