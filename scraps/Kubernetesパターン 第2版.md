@@ -11,7 +11,7 @@ Bilgin Ibryam, Roland Huß, [[松浦隼人]]
 
 
 ### 序章
-- [[マイクロサービス]]/[[境界付けられたコンテキスト]]/[[集約]]
+- [[マイクロサービス]]/[[境界づけられたコンテキスト]]/[[集約]]
 - [[ドメイン駆動設計]]/[[ヘキサゴナルアーキテクチャ]]/[[Twelve-Factor App]]
 - [[コンテナ]]
 - [[Pod]]/[[Kubernetes Service|Service]]/Label/Namespace
