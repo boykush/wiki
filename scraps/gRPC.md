@@ -1,6 +1,6 @@
 #[[Network]] #[[API Architecture]]
 
-![](https://grpc.io/img/logos/grpc-icon-color.png)
+![](https://grpc.io/img/logos/grpc-logo.png)
 
 標準IDLとして[[Protocol Buffers]]を採用する[[RPC]]システム実装。通信プロトコルには[[HTTP]]/2が用いられておりストリーム通信をサポートしている
 
