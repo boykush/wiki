@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <!-- Page title -->
+        
+            <title>Kush&#x27;s Wiki</title>
+            <meta property="og:title" content="Kush&#x27;s Wiki" />
+            <meta name="twitter:title" content="Kush&#x27;s Wiki" />
+        
+        <!-- Page description -->
+        
+            <meta name="description" content="boykushのナレッジ置き場" />
+            <meta property="og:description" content="boykushのナレッジ置き場" />
+            <meta name="twitter:description" content="boykushのナレッジ置き場" />
+        
+        <!-- Page favicon -->
+        
+            <link rel="icon" type="image/png" href="https:&#x2F;&#x2F;gist.github.com&#x2F;boykush&#x2F;3bbc68b5d2580374c97d4336b87fb70f&#x2F;raw&#x2F;a838b8f3584b21bcbbe4dd53afca380fe18695a7&#x2F;boykush_icon.png" />
+        
+        <!-- Rubik font -->
+        <link href="https://fonts.cdnfonts.com/css/rubik" rel="stylesheet">
+        <!-- Noto Sans JP font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+        <!-- Code syntax highlight theme -->
+        <link href="https://unpkg.com/nord-highlightjs@0.1.0/dist/nord.css" rel="stylesheet" type="text/css" />
+        <!-- Style sheet -->
+        <link rel="stylesheet" href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;main.css">
+        
+        
+    </head>
+    <body>
+        <header>
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;">
+                <h1>Kush&#x27;s Wiki</h1>
+            </a>
+        </header>
+        <main>
+            
+    <div class="tag">
+        <h1 class="title">Cloud Native</h1>
+    </div>
+    
+    <ul class="scrap-links">
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/helm.html">
+                <li class="item">
+                    <p class="title">Helm</p>
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;helm.sh&#x2F;img&#x2F;helm.svg" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/kubernetesパターン-第2版.html">
+                <li class="item">
+                    <p class="title">Kubernetesパターン 第2版</p>
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;www.oreilly.co.jp&#x2F;books&#x2F;images&#x2F;picture_large978-4-8144-0088-1.jpeg" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/kubernetes-volume.html">
+                <li class="item">
+                    <p class="title">Kubernetes Volume</p>
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;github.com&#x2F;kubernetes&#x2F;community&#x2F;raw&#x2F;master&#x2F;icons&#x2F;png&#x2F;resources&#x2F;labeled&#x2F;vol-128.png" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/amazon-eks.html">
+                <li class="item">
+                    <p class="title">Amazon EKS</p>
+                    
+                        <p class="summary">Amazon Elastic Kubernetes Service
+#Cloud Native
+AWSクラウド上でKubernetesを実行するマネージドサービス、Kubernetes準拠であるため既存のKubernetesアプリケーションと互換性がある
+Kubernetes Serviceでのロードバランシングに加え、Elastic Load Balancingの使用をサポートしている
+
+What is Amazon EKS? - Amazon EKS
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/google-cloud-certificate-manager.html">
+                <li class="item">
+                    <p class="title">Google Cloud Certificate Manager</p>
+                    
+                        <p class="summary">#Cloud Native #Security
+Google Cloudにおいて外部ロードバランシングで必要となるようなTLS証明書を管理する
+
+Certificate Manager の概要  |  Google Cloud
+
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/kustomize.html">
+                <li class="item">
+                    <p class="title">Kustomize</p>
+                    
+                        <p class="summary">#Cloud Native
+Kubernetesの設定ファイルをyamlで記述する際、 kustomization.yaml によってリソース定義の集約等を行うことができるツール
+環境ごとに共通化できる設定（base）、環境ごとの差分設定（overlays）を扱い、設定ファイルの記述を最低限にする
+利用パターン
+Deployment等に指定するイメージを最新のバージョンで置きかえるようなケース
+&amp;gt; kustomize edit set image $BEFORE_IMAGE_NAME=$AFTER_IMAGE_NAME
+
+
+Kustomize - Kubernetes native configuration management
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/pod.html">
+                <li class="item">
+                    <p class="title">Pod</p>
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;github.com&#x2F;kubernetes&#x2F;community&#x2F;raw&#x2F;master&#x2F;icons&#x2F;png&#x2F;resources&#x2F;labeled&#x2F;pod-128.png" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/amazon-s3.html">
+                <li class="item">
+                    <p class="title">Amazon S3</p>
+                    
+                        <p class="summary">Amazon Simple Storage Service
+#Cloud Native
+AWSが提供するオブジェクトストレージサービス
+
+What is Amazon S3? - Amazon Simple Storage Service
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/kubernetes-deployment.html">
+                <li class="item">
+                    <p class="title">Kubernetes Deployment</p>
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;github.com&#x2F;kubernetes&#x2F;community&#x2F;raw&#x2F;master&#x2F;icons&#x2F;png&#x2F;resources&#x2F;labeled&#x2F;deploy-128.png" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/amazon-athena.html">
+                <li class="item">
+                    <p class="title">Amazon Athena</p>
+                    
+                        <p class="summary">#Cloud Native #Data Processing
+サーバーレスのインタラクティブな分析サービス、Amazon S3を中心に様々なデータソースを元にSQLでデータを抽出可能にする
+
+Amazon Athena とは - Amazon Athena
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/envoy.html">
+                <li class="item">
+                    <p class="title">Envoy</p>
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;www.envoyproxy.io&#x2F;docs&#x2F;envoy&#x2F;latest&#x2F;_static&#x2F;envoy-logo.png" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/ambassador-edge-stack.html">
+                <li class="item">
+                    <p class="title">Ambassador Edge Stack</p>
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;avatars.githubusercontent.com&#x2F;u&#x2F;9270257?s=200&amp;v=4" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/kubernetes-service.html">
+                <li class="item">
+                    <p class="title">Kubernetes Service</p>
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;github.com&#x2F;kubernetes&#x2F;community&#x2F;raw&#x2F;master&#x2F;icons&#x2F;png&#x2F;resources&#x2F;labeled&#x2F;svc-128.png" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/kubernetes-ingress.html">
+                <li class="item">
+                    <p class="title">Kubernetes Ingress</p>
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;github.com&#x2F;kubernetes&#x2F;community&#x2F;raw&#x2F;master&#x2F;icons&#x2F;png&#x2F;resources&#x2F;labeled&#x2F;ing-128.png" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/kubernetes-cronjob.html">
+                <li class="item">
+                    <p class="title">Kubernetes CronJob</p>
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;github.com&#x2F;kubernetes&#x2F;community&#x2F;raw&#x2F;master&#x2F;icons&#x2F;png&#x2F;resources&#x2F;labeled&#x2F;cronjob-128.png" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/コンテナ.html">
+                <li class="item">
+                    <p class="title">コンテナ</p>
+                    
+                        <p class="summary">Cloud Nativeアプリケーションの基本要素
+OOPと比較すると、コンテナイメージはクラス定義でコンテナはインスタンスのような関係性
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/kubernetes-job.html">
+                <li class="item">
+                    <p class="title">Kubernetes Job</p>
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;github.com&#x2F;kubernetes&#x2F;community&#x2F;raw&#x2F;master&#x2F;icons&#x2F;png&#x2F;resources&#x2F;labeled&#x2F;job-128.png" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/argo-rollouts.html">
+                <li class="item">
+                    <p class="title">Argo Rollouts</p>
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;argoproj.github.io&#x2F;static&#x2F;768d962efdd84a6021db7c7792f01b41&#x2F;rollouts-thumbnail.png" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/gke-gateway.html">
+                <li class="item">
+                    <p class="title">GKE Gateway</p>
+                    
+                        <p class="summary">#Cloud Native
+Google CloudのGKE上でKubernetes Gateway APIを適用する
+外部Gatewayをデプロイする時は、GatewayClassに gke-l7-global-external-managed を指定した上で、Certificate Managerのような手段でセキュリティを担保する
+Kubernetes APIの NamedAddress に静的IPアドレスを指定することができる 方法
+
+
+Gateway のデプロイ  |  Google Kubernetes Engine (GKE)  |  Google Cloud
+
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/opentelemetry.html">
+                <li class="item">
+                    <p class="title">OpenTelemetry</p>
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;opentelemetry.io&#x2F;&#x2F;img&#x2F;logos&#x2F;opentelemetry-horizontal-color.svg" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/horizontal-pod-autoscaling.html">
+                <li class="item">
+                    <p class="title">Horizontal Pod Autoscaling</p>
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;github.com&#x2F;kubernetes&#x2F;community&#x2F;raw&#x2F;master&#x2F;icons&#x2F;png&#x2F;resources&#x2F;labeled&#x2F;hpa-128.png" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/kubernetes-gateway-api.html">
+                <li class="item">
+                    <p class="title">Kubernetes Gateway API</p>
+                    
+                        <p class="summary">#API Architecture #Cloud Native #Network
+OSI参照モデルのL4&#x2F;L7を扱うKubernetes公式のAPIゲートウェイ
+
+GatewayClass
+Gateway
+HTTPRoute
+
+の3つを定義し実装する
+GatewayClassはGKEのようなクラウドサービスが用意するケースがあり、外部or内部を選択できる
+
+
+Introduction - Kubernetes Gateway API
+
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/kubernetes.html">
+                <li class="item">
+                    <p class="title">Kubernetes</p>
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;kubernetes.io&#x2F;images&#x2F;kubernetes.png" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/gke.html">
+                <li class="item">
+                    <p class="title">GKE</p>
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;encrypted-tbn0.gstatic.com&#x2F;images?q=tbn:ANd9GcRJKUMkuqNwND4ITLcurk8rjF1VgDX0sR5yUw&amp;s" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/twelve-factor-app.html">
+                <li class="item">
+                    <p class="title">Twelve-Factor App</p>
+                    
+                        <p class="summary">#Cloud Native
+Software as a Serviceを作り上げるための方法論
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/google-cloud.html">
+                <li class="item">
+                    <p class="title">Google Cloud</p>
+                    
+                        <p class="summary">#Cloud Native
+Googleが提供するクラウドコンピューティングサービスの名称
+その他ソフトウェア開発に関するソリューションをドキュメンテーション等で提供する場でもある
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/cncf.html">
+                <li class="item">
+                    <p class="title">CNCF</p>
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;www.cncf.io&#x2F;wp-content&#x2F;uploads&#x2F;2023&#x2F;04&#x2F;cncf-main-site-logo.svg" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/istio.html">
+                <li class="item">
+                    <p class="title">Istio</p>
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;repository-images.githubusercontent.com&#x2F;74175805&#x2F;ed825500-65ad-11e9-821c-f6148eadb7c8" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/kubernetes-secret.html">
+                <li class="item">
+                    <p class="title">Kubernetes Secret</p>
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;github.com&#x2F;kubernetes&#x2F;community&#x2F;raw&#x2F;master&#x2F;icons&#x2F;png&#x2F;resources&#x2F;labeled&#x2F;secret-128.png" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/elastic-load-balancing.html">
+                <li class="item">
+                    <p class="title">Elastic Load Balancing</p>
+                    
+                        <p class="summary">#Cloud Native #API Architecture
+AWSが提供するロードバランシングコンポーネント
+リソースごとに以下のような種別がある
+
+Application Load Balancer
+Network Load Balancer
+Gateway Load Balancer
+
+
+What is Elastic Load Balancing? - Elastic Load Balancing
+</p>
+                    
+                </li>
+            </a>
+        
+    </ul>
+
+
+        </main>
+        <footer>
+            Generated by <a href="https://github.com/boykush/scraps" target="_blank" rel="noopener noreferrer">Scraps</a>
+        </footer>
+        <!-- Code syntax highlight -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script>
+        <!-- Mermaid -->
+        <script type="module">
+            import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+        </script>
+        
+         
+    </body>
+</html>

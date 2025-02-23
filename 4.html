@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <!-- Page title -->
+        
+            <title>Kush&#x27;s Wiki</title>
+            <meta property="og:title" content="Kush&#x27;s Wiki" />
+            <meta name="twitter:title" content="Kush&#x27;s Wiki" />
+        
+        <!-- Page description -->
+        
+            <meta name="description" content="boykushのナレッジ置き場" />
+            <meta property="og:description" content="boykushのナレッジ置き場" />
+            <meta name="twitter:description" content="boykushのナレッジ置き場" />
+        
+        <!-- Page favicon -->
+        
+            <link rel="icon" type="image/png" href="https:&#x2F;&#x2F;gist.github.com&#x2F;boykush&#x2F;3bbc68b5d2580374c97d4336b87fb70f&#x2F;raw&#x2F;a838b8f3584b21bcbbe4dd53afca380fe18695a7&#x2F;boykush_icon.png" />
+        
+        <!-- Rubik font -->
+        <link href="https://fonts.cdnfonts.com/css/rubik" rel="stylesheet">
+        <!-- Noto Sans JP font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+        <!-- Code syntax highlight theme -->
+        <link href="https://unpkg.com/nord-highlightjs@0.1.0/dist/nord.css" rel="stylesheet" type="text/css" />
+        <!-- Style sheet -->
+        <link rel="stylesheet" href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;main.css">
+        
+        
+    </head>
+    <body>
+        <header>
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;">
+                <h1>Kush&#x27;s Wiki</h1>
+            </a>
+        </header>
+        <main>
+            
+    <div class="index">
+        
+          <div class="search-block">
+              <span class="icon" />
+              <input
+                type="text"
+                id="search-input"
+                onkeyup="doSearch()"
+                placeholder="Search by title..."
+                />
+              <ul id="search-results"></ul>
+          </div>
+        
+        <div class="tags-block">
+            
+    <ul class="tag-links">
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/agile.html">
+                <li class="item">
+                    <span class="title">Agile</span>&nbsp;<span>(32)</span>
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/book.html">
+                <li class="item">
+                    <span class="title">Book</span>&nbsp;<span>(32)</span>
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/person.html">
+                <li class="item">
+                    <span class="title">Person</span>&nbsp;<span>(31)</span>
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/cloud-native.html">
+                <li class="item">
+                    <span class="title">Cloud Native</span>&nbsp;<span>(30)</span>
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/security.html">
+                <li class="item">
+                    <span class="title">Security</span>&nbsp;<span>(27)</span>
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/observability.html">
+                <li class="item">
+                    <span class="title">Observability</span>&nbsp;<span>(26)</span>
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/team-organization.html">
+                <li class="item">
+                    <span class="title">Team Organization</span>&nbsp;<span>(25)</span>
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/software-design.html">
+                <li class="item">
+                    <span class="title">Software Design</span>&nbsp;<span>(25)</span>
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/api-architecture.html">
+                <li class="item">
+                    <span class="title">API Architecture</span>&nbsp;<span>(25)</span>
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/network.html">
+                <li class="item">
+                    <span class="title">Network</span>&nbsp;<span>(23)</span>
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/database.html">
+                <li class="item">
+                    <span class="title">Database</span>&nbsp;<span>(19)</span>
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/continuous-integration.html">
+                <li class="item">
+                    <span class="title">Continuous Integration</span>&nbsp;<span>(15)</span>
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/continuous-delivery.html">
+                <li class="item">
+                    <span class="title">Continuous Delivery</span>&nbsp;<span>(14)</span>
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/testing.html">
+                <li class="item">
+                    <span class="title">Testing</span>&nbsp;<span>(14)</span>
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/documentation.html">
+                <li class="item">
+                    <span class="title">Documentation</span>&nbsp;<span>(12)</span>
+                </li>
+            </a>
+        
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;tags/">
+                <li class="item">
+                    <span class="more-link">More...</span>
+                </li>
+            </a>
+        
+    </ul>
+
+        </div>
+        <div class="links-block">
+            <p class="sort-key">Sort by - linked count</p>
+            
+    <ul class="scrap-links">
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/spotifyモデル.html">
+                <li class="item">
+                    <p class="title">Spotifyモデル</p>
+                    
+                        <p class="summary">#Team Organization
+Scaling Agile @ Spotifyの中で語られている組織設計で、Spotifyモデルとして知られている
+自律的な職能横断型チームをスクワッドと呼び、スクワッドはトライブにまとめられる。
+トライブ内の似た職能同士はチャプターという単位でプラクティスを共有する
+
+日本語訳
+
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/infrastructure-as-code.html">
+                <li class="item">
+                    <p class="title">Infrastructure as Code</p>
+                    
+                        <p class="summary">Infrastructure as Code
+#Continuous Integration #Continuous Delivery
+インフラストラクチャとしてのプロセスや環境、設定等をコードで管理し文書化する方針
+
+
+Infrastructure as Code とは - IaC の説明 - AWS
+
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/continuous-integration(devops-capabilities).html">
+                <li class="item">
+                    <p class="title">Continuous integration(DevOps capabilities)</p>
+                    
+                        <p class="summary">#Continuous Integration
+DevOps capabilitiesの1つ、Fast Feedbackに分類される
+CIを実現するには次の要素が必要としている
+
+自動化されたビルドプロセス
+自動化されたテストスイート
+チェックイン毎の自動ビルドとテスト
+
+また次の2つも効果に繋がる
+
+Trunk-based development
+Working in small batches
+
+メンテナンス容易な自動化テストのためにはTDDを実践すると良い
+
+
+DORA | Capabilities: Continuous integration
+
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/プログラマーの誓い.html">
+                <li class="item">
+                    <p class="title">プログラマーの誓い</p>
+                    
+                        <p class="summary">#Robert C. Martin
+Clean Coder Blog
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/unknown-unknowns.html">
+                <li class="item">
+                    <p class="title">Unknown unknowns</p>
+                    
+                        <p class="summary">自分は意識も理解もしていないこと
+未知のシステム故障への対応、が該当する
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/ファシリテーションモード.html">
+                <li class="item">
+                    <p class="title">ファシリテーションモード</p>
+                    
+                        <p class="summary">#Team Organization
+チームトポロジーにて紹介される3つのチーム間インタラクションの内の1つ
+イネイブリングチームが行うような短期的な技術支援が該当し、チーム間の能力のギャップを最小化する
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/10+-deploys-per-day:-dev-and-ops-cooperation-at-flickr.html">
+                <li class="item">
+                    <p class="title">10+ Deploys Per Day: Dev and Ops Cooperation at Flickr</p>
+                    
+                        <p class="summary">#DevOps
+Slideshare
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/continuous-delivery(devops-capabilities).html">
+                <li class="item">
+                    <p class="title">Continuous delivery(DevOps capabilities)</p>
+                    
+                        <p class="summary">#Continuous Delivery
+DevOps capabilitiesの1つ、Fast Flowに分類される
+
+
+DORA | Capabilities: Continuous delivery
+
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/alistair-cockburn.html">
+                <li class="item">
+                    <p class="title">Alistair Cockburn</p>
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;alistaircockburn.com&#x2F;gallery_gen&#x2F;05d14f1bf8ddd5e692d5c44ff2f7588c_fit.png?ts=1720476187" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/work-in-process-limits.html">
+                <li class="item">
+                    <p class="title">Work in process limits</p>
+                    
+                        <p class="summary">#Agile
+DevOps capabilitiesの1つ、Fast Flowに分類される
+
+
+DORA | Capabilities: Work in process limits
+
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/振る舞い駆動開発.html">
+                <li class="item">
+                    <p class="title">振る舞い駆動開発</p>
+                    
+                        <p class="summary">振る舞いをベースにテストをし開発を進めようという考え
+Testing, TDDそれぞれの文脈で用いられている
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/testcontainers.html">
+                <li class="item">
+                    <p class="title">Testcontainers</p>
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;testcontainers.com&#x2F;images&#x2F;testcontainers-logo.svg" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/ユーザーストーリーマッピング.html">
+                <li class="item">
+                    <p class="title">ユーザーストーリーマッピング</p>
+                    
+                        <p class="summary">#Agile #Documentation
+
+Blog &#x2F; Agile Studio
+
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/elastic-load-balancing.html">
+                <li class="item">
+                    <p class="title">Elastic Load Balancing</p>
+                    
+                        <p class="summary">#Cloud Native #API Architecture
+AWSが提供するロードバランシングコンポーネント
+リソースごとに以下のような種別がある
+
+Application Load Balancer
+Network Load Balancer
+Gateway Load Balancer
+
+
+What is Elastic Load Balancing? - Elastic Load Balancing
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/マルチリーダーレプリケーション.html">
+                <li class="item">
+                    <p class="title">マルチリーダーレプリケーション</p>
+                    
+                        <p class="summary">#Database
+レプリケーションの種別の一つ
+複数のデータセンターにリーダーが存在する。リアルタイムの同時編集がイメージに近い。書き込みの衝突があった際に最終的に同じ値に収束させるような方法が取られる
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/rbac.html">
+                <li class="item">
+                    <p class="title">RBAC</p>
+                    
+                        <p class="summary">Role-based access control
+#Security
+ロールごとに許可を定義する認可モデル
+これによりユーザーの部署異動等の際に即座に権限を変更できる
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/関数型ドメインモデリング.html">
+                <li class="item">
+                    <p class="title">関数型ドメインモデリング</p>
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;64.media.tumblr.com&#x2F;c8a2317e7e796671fa2ac6deaf0d6e1b&#x2F;39ad9d2c77efd826-5b&#x2F;s2048x3072&#x2F;8b62a7a2f05481eb786b4aa92590a84a1c75f92c.jpg" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/deployment-automation.html">
+                <li class="item">
+                    <p class="title">Deployment automation</p>
+                    
+                        <p class="summary">#API Architecture
+DevOps capabilitiesの1つ、Fast Flowに分類される
+
+
+DORA | Capabilities: Deployment Automation
+
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/bertrand-meyer.html">
+                <li class="item">
+                    <p class="title">Bertrand Meyer</p>
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;bertrandmeyer.com&#x2F;wp-content&#x2F;upLoads&#x2F;Bertrand_Meyer1-1024x768.jpg" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/job-satisfaction.html">
+                <li class="item">
+                    <p class="title">Job satisfaction</p>
+                    
+                        <p class="summary">DevOps capabilitiesの1つ、Climate for Learningに分類される
+
+
+DORA | Capabilities: Job satisfaction
+
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/rolling-update.html">
+                <li class="item">
+                    <p class="title">Rolling Update</p>
+                    
+                        <p class="summary">#Continuous Delivery
+デプロイメント戦略の一種、新バージョンのデプロイ時、徐々に新バージョンのPodを追加しながら旧バージョンを削除していく
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/分散コンピューティングの8つの誤謬.html">
+                <li class="item">
+                    <p class="title">分散コンピューティングの8つの誤謬</p>
+                    
+                        <p class="summary">#Network
+分散システムを扱い際、しばしば陥りがちなネットワークへの仮定を8つリストアップしたもの
+
+ネットワークは信頼性がある
+レイテンシはゼロ
+帯域幅は無限
+ネットワークは安全
+トポロジは変わらない
+管理者は1人だけ
+転送コストはゼロ
+ネットワークは均質
+
+
+
+The Eight Fallacies of Distributed Computing
+
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/visual-management.html">
+                <li class="item">
+                    <p class="title">Visual management</p>
+                    
+                        <p class="summary">DevOps capabilitiesの1つ、Fast Flowに分類される
+WIP制限と組み合わせると良い
+
+
+DORA | Capabilities: Visual management
+
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/version-control.html">
+                <li class="item">
+                    <p class="title">Version control</p>
+                    
+                        <p class="summary">DevOps capabilitiesの1つ、Fast Flowに分類される
+アプリケーションコードだけでなく、ビルドスクリプトやコンフィギュレーションに対しても管理を行うことが推奨され、継続的インテグレーションに寄与する
+
+
+DORA | Capabilities: Version Control
+
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/devopsトポロジー.html">
+                <li class="item">
+                    <p class="title">DevOpsトポロジー</p>
+                    
+                        <p class="summary">#DevOps #Agile #Team Organization
+2013年にMatthew Skeltonによって書かれたブログ、チームトポロジーの根底にある考えがまとまったような内容になっている
+訳: 吉羽龍太郎
+
+DevOpsトポロジー | Ryuzee.com
+
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/basic認証.html">
+                <li class="item">
+                    <p class="title">Basic認証</p>
+                    
+                        <p class="summary">#Security
+HTTPプロトコルにおける認証方式
+ユーザー名とパスワードをコロンで連結した文字列をBase64エンコードした結果を、Authorizationヘッダーに付与することでリクエストを行う
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/twelve-factor-app.html">
+                <li class="item">
+                    <p class="title">Twelve-Factor App</p>
+                    
+                        <p class="summary">#Cloud Native
+Software as a Serviceを作り上げるための方法論
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/認知負荷.html">
+                <li class="item">
+                    <p class="title">認知負荷</p>
+                    
+                        <p class="summary">個人やチームの認知容量に対する負荷のこと
+認知負荷は3つに分類することができる
+課題内在性認知負荷
+問題領域のタスクの難易度に関する負荷、研修・技術選定・ペアプログラミング等で解消する
+課題外在性認知負荷
+タスクを実施する環境に関する負荷、CIによる自動化等で解消する
+学習関連負荷
+知識の構築に関する負荷、学習によって増やすべき負荷とされる
+
+
+情報過多にご用心！生産性の低下を招く「認知的過負荷」への対処法 ── 海の向こうからオピニオン その70 (1&#x2F;2) - チームの教科書｜アトラシアン株式会社
+
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/サイドカープロキシ.html">
+                <li class="item">
+                    <p class="title">サイドカープロキシ</p>
+                    
+                        <p class="summary">#Network
+サービスメッシュ内でプロキシを利用して実装される汎用パターン
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/レポーティングデータベース.html">
+                <li class="item">
+                    <p class="title">レポーティングデータベース</p>
+                    
+                        <p class="summary">#Martin Fowler #Database #Data Processing
+アプリケーションのドメインモデルに対応するテーブルとは別にレポート目的の中間テーブルを用意することで、レポートの関心を分離してテーブルに変更を加えることができる。
+
+ReportingDatabase
+
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/逸脱の常態化.html">
+                <li class="item">
+                    <p class="title">逸脱の常態化</p>
+                    
+                        <p class="summary">誤検出されやすいモニタリングアラートに慣れてしまうこと
+チャレンジャー号の事故の調査から生まれた言葉
+
+
+When Doing Wrong Feels So Right: Normalization of Deviance - PubMed
+
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/計装.html">
+                <li class="item">
+                    <p class="title">計装</p>
+                    
+                        <p class="summary">#Observability
+テレメトリーをオブザーバビリティソリューションに送信するための実装のこと
+前提としてエージェントをシステムに組み込んだ上で、アプリケーションエンドポイントへの自動計装や手動スパン埋め込み等のカスタム計装を行う
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/成瀬允宣.html">
+                <li class="item">
+                    <p class="title">成瀬允宣</p>
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;pbs.twimg.com&#x2F;profile_images&#x2F;1029963262828273665&#x2F;Zwhbiw4k_400x400.jpg" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/owasp.html">
+                <li class="item">
+                    <p class="title">OWASP</p>
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;owasp.org&#x2F;assets&#x2F;images&#x2F;logo.png" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/契約による設計.html">
+                <li class="item">
+                    <p class="title">契約による設計</p>
+                    
+                        <p class="summary">#オブジェクト指向プログラミング
+
+契約による設計事始め
+
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/shopifyはいかにしてモジュラモノリスへ移行したか.html">
+                <li class="item">
+                    <p class="title">Shopifyはいかにしてモジュラモノリスへ移行したか</p>
+                    
+                        <p class="summary">#モジュラモノリス
+
+
+Shopifyはいかにしてモジュラモノリスへ移行したか - InfoQ
+
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/ドメインイベント.html">
+                <li class="item">
+                    <p class="title">ドメインイベント</p>
+                    
+                        <p class="summary">#ドメイン駆動設計
+
+ドメイン イベント: 設計と実装 - .NET
+Domain Events and Eventual Consistency
+
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/抽象化によるブランチ.html">
+                <li class="item">
+                    <p class="title">抽象化によるブランチ</p>
+                    
+                        <p class="summary">#Martin Fowler #Continuous Integration
+
+BranchByAbstraction
+
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/技術的負債の4象限.html">
+                <li class="item">
+                    <p class="title">技術的負債の4象限</p>
+                    
+                        <p class="summary">Technical Debt Quadrant
+Martin Fowlerが技術的負債が発生するケースを4象限で分類したもの。
+
+Reckless（無謀） or Prudent（慎重）
+Deliberate（意図的） or Inadvertent（不注意）
+
+の2軸で分類する。
+例えばリリース当初はクリーンなコードを書いていたつもりだが、1年後に本来正しかった設計が見つかった。のようなケースではPrudentかつInadvertentとなる
+
+Blog
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/graphql.html">
+                <li class="item">
+                    <p class="title">GraphQL</p>
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;graphql.org&#x2F;_next&#x2F;static&#x2F;media&#x2F;logo-wordmark.4eec1155.svg" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/horizontal-pod-autoscaling.html">
+                <li class="item">
+                    <p class="title">Horizontal Pod Autoscaling</p>
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;github.com&#x2F;kubernetes&#x2F;community&#x2F;raw&#x2F;master&#x2F;icons&#x2F;png&#x2F;resources&#x2F;labeled&#x2F;hpa-128.png" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/honeycomb.html">
+                <li class="item">
+                    <p class="title">Honeycomb</p>
+                    
+                        <p class="summary">Observabilityに関するエンドツーエンドのプロダクト
+Retrieverというオブザーバビリティに最適化された独自のデータストアを備えており、Amazon S3によって実装されている
+
+
+Honeycomb.io Documentation | Honeycomb
+
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/owasp-top-ten.html">
+                <li class="item">
+                    <p class="title">OWASP Top Ten</p>
+                    
+                        <p class="summary">#Security
+OWASP Foundationが発表するセキュリティ専門家によるトップ10に含まれるべき脆弱性リスト
+定期的に更新されるため最新を追うべき
+
+
+OWASP Top Ten | OWASP Foundation
+
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/モノリスからマイクロサービスへ.html">
+                <li class="item">
+                    <p class="title">モノリスからマイクロサービスへ</p>
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;www.oreilly.co.jp&#x2F;books&#x2F;images&#x2F;picture_large978-4-87311-931-1.jpeg" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/manuel-pais.html">
+                <li class="item">
+                    <p class="title">Manuel Pais</p>
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;www.manuelpais.net&#x2F;images&#x2F;ManuelPais_2017_small-oreilly-292.jpg" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/3wayハンドシェイク.html">
+                <li class="item">
+                    <p class="title">3wayハンドシェイク</p>
+                    
+                        <p class="summary">#Network
+TCPプロトコルにおけるコネクションの確立手法、名前の通り3ステップでコネクションを確立する
+
+送信元でTCPヘッダー内のSYN（コネクションの確立要求）フラグを有効化しセグメントを送信
+送信先で1に対するACKとSYNフラグの有効化をしたセグメントを返信
+送信元で2のSYNに対するACKのセグメントを送信
+
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/transformational-leadership.html">
+                <li class="item">
+                    <p class="title">Transformational leadership</p>
+                    
+                        <p class="summary">DevOps capabilitiesの1つ、Climate for Learningに分類される
+
+
+DORA | Capabilities: Transformational leadership
+
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/startup-probe.html">
+                <li class="item">
+                    <p class="title">Startup Probe</p>
+                    
+                        <p class="summary">#Kubernetes
+Probeにおいてアプリケーションの起動にとても長い時間がかかる場合、Startup Probeが成功した後にLiveness ProbeまたはReadiness Probeを開始するような設定ができる
+
+startupProbeをいつ使うべきか？
+Startup Probeを使用して、起動の遅いコンテナを保護する
+
+</p>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/sre-サイトリライアビリティエンジニアリング（書籍）.html">
+                <li class="item">
+                    <p class="title">SRE サイトリライアビリティエンジニアリング（書籍）</p>
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;www.oreilly.co.jp&#x2F;books&#x2F;images&#x2F;picture_large978-4-87311-791-1.jpeg" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/scott-wlaschin.html">
+                <li class="item">
+                    <p class="title">Scott Wlaschin</p>
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;pbs.twimg.com&#x2F;profile_images&#x2F;802873253270319104&#x2F;qe6yYS_Z_400x400.jpg" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+    </ul>
+
+        </div>
+        <div class="paging-arrows">
+            
+                <a class="prev" href=".&#x2F;3.html">prev</a>
+            
+            
+                <a class="next" href=".&#x2F;5.html">next</a>
+            
+        </div>
+    </div>
+
+        </main>
+        <footer>
+            Generated by <a href="https://github.com/boykush/scraps" target="_blank" rel="noopener noreferrer">Scraps</a>
+        </footer>
+        <!-- Code syntax highlight -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script>
+        <!-- Mermaid -->
+        <script type="module">
+            import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+        </script>
+        
+  
+  <!-- For search scraps -->
+  <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0"></script>
+  <script type="module">
+    import search_index from './search_index.json' with { type: "json" };
+    const fuseOptions = {
+      minMatchCharLength: 3,
+      keys: ["title"]
+    };
+    const fuse = new Fuse(search_index, fuseOptions);
+    const search = function (query, numResults) {
+      return fuse.search(query).slice(0, numResults).map(result => [result.item.title, result.item.url]);
+    };
+    window.search = search;
+  </script>
+  <script>
+    function doSearch() {
+      let value = document.getElementById("search-input").value;
+      console.log(`Search query: ${value}`);
+
+      // Retrieve 5 results
+      const results = search(value, 5);
+
+      console.log(`Results: ${results}`);
+
+      let ul = document.getElementById("search-results");
+      ul.innerHTML = "";
+
+      results.forEach((result, index) => {
+        var li = document.createElement("li");
+
+        let [title, url] = result;
+        console.log(`Title: ${title}, URL: ${url}`);
+        let elemlink = document.createElement('a');
+        elemlink.innerHTML = title;
+        elemlink.setAttribute('href', url);
+        li.appendChild(elemlink);
+        li.style.top = `${(index * 30) - 16}px`;
+        ul.appendChild(li);
+      })
+    }
+  </script>
+  
+ 
+    </body>
+</html>
