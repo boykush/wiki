@@ -24,10 +24,19 @@ Bilgin Ibryam, Roland Huß, [[松浦隼人]]
 ### 4章 Health [[Probe]]
 - [[Liveness Probe]]/[[Readiness Probe]]/[[Startup Probe]]
 ### 5章 Managed Lifecycle（管理されたライフサイクル）
+- [[SIGKILL]]/[[SIGTERM]]
+- [[コンテナライフサイクルフック|postStart/preStop]]
 ### 6章 Automated Placement（自動的な配置）
+- [[kube-scheduler|スケジューリング]]
+  - [[Node affinity|ノードアフィニティ]]
+  - [[Inter-pod affinity and anti-affinity|Podアフィニティとアンチアフィニティ]]
+  - [[Topology Spread Constraint]]
+  - [[Taints and Tolerations]]
 ## 第II部 振る舞いパターン
 ### 7章 Batch Job（バッチジョブ）
+- [[Kubernetes Job|Job]]
 ### 8章 Periodic Job（定期ジョブ）
+- [[Kubernetes CronJob|CronJob]]
 ### 9章 Daemon Service（デーモンサービス）
 ### 10章 Singleton Service（シングルトンサービス）
 ### 11章 Stateless Service（ステートレスサービス）
