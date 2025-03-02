@@ -37,7 +37,7 @@ Bilgin Ibryam, Roland Huß, [[松浦隼人]]
 ### 8章 Periodic Job（定期ジョブ）
 - [[Kubernetes CronJob|CronJob]]
 ### 9章 Daemon Service（デーモンサービス）
-[[Kubernetes DaemonSet|DaemonSet]]
+- [[Kubernetes DaemonSet|DaemonSet]]
 ### 10章 Singleton Service（シングルトンサービス）
 - [[Headless Service|ヘッドドレスService]]/StatefulService
 - [[etcd]]/ZooKeeper/Dapr

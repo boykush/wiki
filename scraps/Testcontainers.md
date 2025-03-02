@@ -1,6 +1,6 @@
 ![](https://testcontainers.com/images/testcontainers-logo.svg)
 
-#[[Database]] #[[Testing]]
+#[[Data Store]] #[[Testing]]
 
 アプリケーションが依存する[[リレーショナルデータベース|RDB]]、KVS、[[メッセージキュー]]といったようなコンポーネントに対し、テスト時にテストコード上で[[コンテナ]]に対応したインスタンス変数を定義し、コンテナ実行することができるオープンソースライブラリ
 

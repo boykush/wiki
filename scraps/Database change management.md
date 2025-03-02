@@ -1,4 +1,4 @@
-#[[Database]]
+#[[Data Store]]
 
 [[DevOps capabilities]]の1つ、[[Fast Flow]]に分類される
 

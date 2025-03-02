@@ -1,4 +1,4 @@
-#[[Database]] #[[リレーショナルデータベース]]
+#[[Data Store]] #[[リレーショナルデータベース]]
 
 ![](https://www.mysql.com/common/logos/logo-mysql-170x115.png)
 
