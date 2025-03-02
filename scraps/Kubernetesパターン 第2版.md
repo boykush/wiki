@@ -39,8 +39,8 @@ Bilgin Ibryam, Roland Huß, [[松浦隼人]]
 ### 9章 Daemon Service（デーモンサービス）
 [[Kubernetes DaemonSet|DaemonSet]]
 ### 10章 Singleton Service（シングルトンサービス）
-- ヘッドレスService/StatefulService
-- etcd/ZooKeeper/Dapr
+- [[Headless Service|ヘッドドレスService]]/StatefulService
+- [[etcd]]/ZooKeeper/Dapr
 - PodDisruptionBudget
 ### 11章 Stateless Service（ステートレスサービス）
 ### 12章 Stateful Service（ステートフルサービス）
