@@ -39,8 +39,8 @@ Bilgin Ibryam, Roland Huß, [[松浦隼人]]
 ### 9章 Daemon Service（デーモンサービス）
 - [[Kubernetes DaemonSet|DaemonSet]]
 ### 10章 Singleton Service（シングルトンサービス）
-- [[Headless Service|ヘッドドレスService]]/StatefulService
-- [[etcd]]/ZooKeeper/Dapr
+- [[Headless Service|ヘッドドレスService]]/[[kube-proxy]]/StatefulService
+- [[etcd]]/ZooKeeper/[[Dapr]]
 - PodDisruptionBudget
 ### 11章 Stateless Service（ステートレスサービス）
 ### 12章 Stateful Service（ステートフルサービス）
@@ -56,7 +56,7 @@ Bilgin Ibryam, Roland Huß, [[松浦隼人]]
 ### 20章 Configuration Resource（設定リソース）
 ### 21章 Immutable Configuration（イミュータブル設定）
 ### 22章 Configuration Template（設定テンプレート）
-## 第V部 セキュリティパターン
+## 第V部 [[Security|セキュリティ]]パターン
 ### 23章 Process Containment（プロセス封じ込め）
 ### 24章 Network Segmentation（ネットワークセグメンテーション）
 ### 25章 Secure Configuration（セキュア設定）

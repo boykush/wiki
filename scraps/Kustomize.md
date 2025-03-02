@@ -1,4 +1,4 @@
-#[[Cloud Native]]
+#[[Infrastructure as Code]]
 
 [[Kubernetes]]の設定ファイルをyamlで記述する際、 `kustomization.yaml` によってリソース定義の集約等を行うことができるツール
 

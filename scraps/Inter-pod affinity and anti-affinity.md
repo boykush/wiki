@@ -1,5 +1,3 @@
-#[[Cloud Native]]
-
 [[Kubernetes]]の[[kube-scheduler]]において、Podアフィニティでは同一[[Kubernetes Nodes|ノード]]内に配置される[[Pod]]を指定することができる
 
 合わせてPodアンチアフィニティでは同一ノードに配置されるべきでないPodを指定できる

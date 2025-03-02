@@ -1,5 +1,3 @@
-#[[Cloud Native]]
-
 ![](https://github.com/kubernetes/community/raw/master/icons/png/control_plane_components/labeled/sched-128.png)
 
 [[Kubernetes]]において[[Pod]]をどの[[Kubernetes Nodes|ノード]]に配置するかを決定するルール
