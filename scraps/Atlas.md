@@ -1,4 +1,4 @@
-#[[Data Store]] #[[Continuous Integration]] #[[Continuous Delivery]]
+#[[Data Store]] #[[Continuous Integration]] #[[Continuous Delivery]] #[[Documentation]]
 
 ![](https://atlasgo.link/assets/atlas-logo.svg)
 
