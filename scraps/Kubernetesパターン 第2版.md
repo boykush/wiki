@@ -9,7 +9,6 @@ Bilgin Ibryam, Roland Huß, [[松浦隼人]]
 
 [[Kubernetes]]ベースの[[Cloud Native|クラウドネイティブ]]アプリケーションを構築するパターンとして紹介する書籍
 
-
 ### 序章
 - [[マイクロサービス]]/[[境界づけられたコンテキスト]]/[[集約]]
 - [[ドメイン駆動設計]]/[[ヘキサゴナルアーキテクチャ]]/[[Twelve-Factor App]]
@@ -38,7 +37,11 @@ Bilgin Ibryam, Roland Huß, [[松浦隼人]]
 ### 8章 Periodic Job（定期ジョブ）
 - [[Kubernetes CronJob|CronJob]]
 ### 9章 Daemon Service（デーモンサービス）
+[[Kubernetes DaemonSet|DaemonSet]]
 ### 10章 Singleton Service（シングルトンサービス）
+- ヘッドレスService/StatefulService
+- etcd/ZooKeeper/Dapr
+- PodDisruptionBudget
 ### 11章 Stateless Service（ステートレスサービス）
 ### 12章 Stateful Service（ステートフルサービス）
 ### 13章 Service Discovery（サービスディスカバリ）
