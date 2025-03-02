@@ -6,8 +6,4 @@
 - [[ログ]]
 - [[分散トレース|トレース]]
 
-[[CNCF]]によって定義されている
-
----
-
-- [tag-observability/whitepaper.md at main · cncf/tag-observability](https://github.com/cncf/tag-observability/blob/main/whitepaper.md)
+[[Observability Whitepaper]]の中で紹介されている
