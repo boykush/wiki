@@ -11,7 +11,7 @@ Bilgin Ibryam, Roland Huß, [[松浦隼人]]
 
 ### 序章
 - [[マイクロサービス]]/[[境界づけられたコンテキスト]]/[[集約]]
-- [[ドメイン駆動設計]]/[[ヘキサゴナルアーキテクチャ]]/[[Twelve-Factor App]]
+- [[ドメイン駆動設計]]/[[ヘキサゴナルアーキテクチャ]]/[[The Twelve-Factor App]]
 - [[コンテナ]]
 - [[Pod]]/[[Kubernetes Service|Service]]/Label/Namespace
 ## 第1部 基本パターン
@@ -43,7 +43,9 @@ Bilgin Ibryam, Roland Huß, [[松浦隼人]]
 - [[etcd]]/ZooKeeper/[[Dapr]]
 - PodDisruptionBudget
 ### 11章 Stateless Service（ステートレスサービス）
+- PersistentVolume/PersistentVolumeClaim
 ### 12章 Stateful Service（ステートフルサービス）
+- CustomResourceDefinition
 ### 13章 Service Discovery（サービスディスカバリ）
 ### 14章 Self Awareness（セルフアウェアネス）
 ## 第III部 構造化パターン
