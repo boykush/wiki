@@ -41,11 +41,11 @@ Bilgin Ibryam, Roland Huß, [[松浦隼人]]
 ### 10章 Singleton Service（シングルトンサービス）
 - [[Headless Service|ヘッドドレスService]]/[[kube-proxy]]/StatefulService
 - [[etcd]]/ZooKeeper/[[Dapr]]
-- PodDisruptionBudget
+- [[PodDisruptionBudget]]
 ### 11章 Stateless Service（ステートレスサービス）
-- PersistentVolume/PersistentVolumeClaim
+- [[PersistentVolume|PersistentVolume/PersistentVolumeClaim]]
 ### 12章 Stateful Service（ステートフルサービス）
-- CustomResourceDefinition
+- [[CustomResourceDefinition]]
 ### 13章 Service Discovery（サービスディスカバリ）
 ### 14章 Self Awareness（セルフアウェアネス）
 ## 第III部 構造化パターン
