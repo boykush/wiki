@@ -4,6 +4,8 @@
 
 [[Kubernetes]]のクラスタにおいて利用される、一貫性・高可用性を持つキーバリューストア
 
+[[CNCF]] graduated project
+
 ---
 
 - [Cluster Architecture | Kubernetes](https://kubernetes.io/docs/concepts/architecture/#etcd)
