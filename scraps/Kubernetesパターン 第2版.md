@@ -47,7 +47,7 @@ Bilgin Ibryam, Roland Huß, [[松浦隼人]]
 ### 12章 Stateful Service（ステートフルサービス）
 - [[CustomResourceDefinition]]
 - [[Kubernetes StatefulSet|StatefulSet]]
-### 13章 Service Discovery（サービスディスカバリ）
+### 13章 [[サービスディスカバリ|Service Discovery（サービスディスカバリ）]]
 ### 14章 Self Awareness（セルフアウェアネス）
 ## 第III部 構造化パターン
 ### 15章 Init Container（Init コンテナ）
