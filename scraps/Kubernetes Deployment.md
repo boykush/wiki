@@ -2,9 +2,9 @@
 
 ![](https://github.com/kubernetes/community/raw/master/icons/png/resources/labeled/deploy-128.png)
 
-[[Kubernetes]]において[[Pod]]とReplicaSetのアップデート機能を提供する
+[[Kubernetes]]において[[Kubernetes ReplicaSet|ReplicaSet]]の機能に加えて[[Pod]]のアップデート機能を提供する
 
-`spec.replicas` によるレプリカの数の制御やリリースバージョンのロールバック、デプロイメント戦略（デフォルトは[[Rolling Update]]）の指定を行う
+`spec.replicas` によるレプリカの数の制御に加えて、リリースバージョンのロールバック、デプロイメント戦略（デフォルトは[[Rolling Update]]）の指定を行う
 
 ---
 

@@ -46,6 +46,7 @@ Bilgin Ibryam, Roland Huß, [[松浦隼人]]
 - [[PersistentVolume|PersistentVolume/PersistentVolumeClaim]]
 ### 12章 Stateful Service（ステートフルサービス）
 - [[CustomResourceDefinition]]
+- [[Kubernetes StatefulSet|StatefulSet]]
 ### 13章 Service Discovery（サービスディスカバリ）
 ### 14章 Self Awareness（セルフアウェアネス）
 ## 第III部 構造化パターン
