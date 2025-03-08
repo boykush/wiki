@@ -19,7 +19,7 @@ Bilgin Ibryam, Roland Huß, [[松浦隼人]]
 ### 3章 Declarative Deployment（宣言的デプロイ）
 - [[Kubernetes Deployment|Deployment]]
 - [[ブルーグリーン戦略|ブルーグリーンリリース]]/[[カナリアリリース]]
-- Flagger/[[Argo Rollouts]]/Knative
+- Flagger/[[Argo Rollouts]]/[[Knative]]
 ### 4章 Health [[Probe]]
 - [[Liveness Probe]]/[[Readiness Probe]]/[[Startup Probe]]
 ### 5章 Managed Lifecycle（管理されたライフサイクル）
@@ -48,7 +48,11 @@ Bilgin Ibryam, Roland Huß, [[松浦隼人]]
 - [[CustomResourceDefinition]]
 - [[Kubernetes StatefulSet|StatefulSet]]
 ### 13章 [[サービスディスカバリ|Service Discovery（サービスディスカバリ）]]
+- [[Kubernetes Service|Service]]
+- [[Kubernetes Ingress|Ingress]]
+- [[Knative Serving]]
 ### 14章 Self Awareness（セルフアウェアネス）
+- [[Downward API]]
 ## 第III部 構造化パターン
 ### 15章 Init Container（Init コンテナ）
 ### 16章 Sidecar（サイドカー）

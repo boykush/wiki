@@ -2,7 +2,7 @@
 
 ![](https://keda.sh//img/logos/keda-icon-color.png)
 
-イベントをトリガーにAutoscalingを行う[[Kubernetes]]の拡張ツール
+イベントをトリガーにAutoscalingを行う[[サーバーレス]]な[[Kubernetes]]の拡張ツール
 
 [[Horizontal Pod Autoscaling|HPA]]等の標準のKubernetesコンポーネントと連携して、上書きや重複なしに動作する
 
