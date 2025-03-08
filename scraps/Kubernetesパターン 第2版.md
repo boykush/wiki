@@ -74,6 +74,8 @@ Bilgin Ibryam, Roland Huß, [[松浦隼人]]
 ### 22章 Configuration Template（設定テンプレート）
 ## 第V部 [[Security|セキュリティ]]パターン
 ### 23章 Process Containment（プロセス封じ込め）
+- [[Security Context]]
+- [[Pod Security Standards]]/[[Pod Security Admission]]
 ### 24章 Network Segmentation（ネットワークセグメンテーション）
 ### 25章 Secure Configuration（セキュア設定）
 ### 26章 Access Control（アクセス制御）
