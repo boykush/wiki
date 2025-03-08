@@ -55,13 +55,22 @@ Bilgin Ibryam, Roland Huß, [[松浦隼人]]
 - [[Downward API]]
 ## 第III部 構造化パターン
 ### 15章 Init Container（Init コンテナ）
+- [[Initコンテナ]]
 ### 16章 Sidecar（サイドカー）
+- [[Sidecar]]
 ### 17章 Adapter（アダプタ）
+- Prometheus
 ### 18章 Ambassador（アンバサダ）
 ## 第IV部 設定パターン
 ### 19章 EnvVar Configuration（環境変数による設定）
+- [[The Twelve-Factor App]]
 ### 20章 Configuration Resource（設定リソース）
+- [[Kubernetes ConfigMap|ConfigMap]]
+- [[Kubernetes Secret|Secret]]
 ### 21章 Immutable Configuration（イミュータブル設定）
+- [[Docker]]
+- [[Immutable Configuration]]パターン
+- OpenShift Templates
 ### 22章 Configuration Template（設定テンプレート）
 ## 第V部 [[Security|セキュリティ]]パターン
 ### 23章 Process Containment（プロセス封じ込め）
