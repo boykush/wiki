@@ -1,5 +1,5 @@
 ## Extensible Effect
-#[[Functional Programming]]
+#[[Programming]]
 
 - [作って学ぶ Extensible Effects](https://scalamatsuri.org/ja/programs/SESSION_DAY_2_04)
 - [Freer monads, more extensible effects.](https://okmij.org/ftp/Haskell/extensible/more.pdf)
