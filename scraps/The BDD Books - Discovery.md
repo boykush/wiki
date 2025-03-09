@@ -1,5 +1,5 @@
 ### Authors:
-[[Gaspar Nagy]], Seb Rose, [[風間裕也]]
+[[Gaspar Nagy]], [[Seb Rose]], [[風間裕也]]
 
 #[[BDD（Testing）]] #[[Book]]
 

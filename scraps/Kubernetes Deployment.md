@@ -9,4 +9,3 @@
 ---
 
 - [Deployment | Kubernetes](https://kubernetes.io/ja/docs/concepts/workloads/controllers/deployment/)
-
