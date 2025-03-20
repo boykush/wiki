@@ -1,4 +1,4 @@
-#[[Testing]] #[[BDD（Testing）]]
+#[[Testing]] #[[Testing/BDD]]
 
 テストシナリオを記述するにあたり意識すべき6つの観点をまとめたもの
 

@@ -1,7 +1,7 @@
 ### Authors:
 [[Seb Rose]] [[風間裕也]]
 
-#[[Testing]] #[[BDD（Testing）]]
+#[[Testing]] #[[Testing/BDD]]
 
 [[BRIEFの原則]]について紹介した記事
 
