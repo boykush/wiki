@@ -1,4 +1,4 @@
-## Datadog Application Performance Monitoring
+## Application Performance Monitoring
 
 #[[Observability]]
 
