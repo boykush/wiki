@@ -20,10 +20,10 @@ Nicole Forsgren, Jez Humble, Gene Kim
 ### 第3章　組織文化のモデル化と測定、改善の方法
 - Westrumモデル
 ### 第4章　技術的プラクティス―継続的デリバリの基本原則と効果
-- [[Continuous delivery(DevOps capabilities)|継続的デリバリ]]
+- [[DevOps capabilities/Continuous delivery|継続的デリバリ]]
 - [[Version control|バージョン管理]]
 - [[Deployment automation|デプロイメントの自動化]] 
-- [[Continuous integration(DevOps capabilities)|継続的インテグレーション]]
+- [[DevOps capabilities/Continuous integration|継続的インテグレーション]]
 - [[Trunk-based development|トランクベースの開発]]
 - [[Test automation|テストの自動化]]
 - [[Test data management|テストデータの管理]]
