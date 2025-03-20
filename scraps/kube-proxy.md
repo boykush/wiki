@@ -2,9 +2,9 @@
 
 ![](https://github.com/kubernetes/community/raw/master/icons/png/control_plane_components/labeled/k-proxy-128.png)
 
-[[Kubernetes]]において、[[Kubernetes Service|Service]]の一部を実装しているコンポーネント
+[[Kubernetes]]において、[[Kubernetes/Service]]の一部を実装しているコンポーネント
 
-[[Kubernetes Nodes|ノード]]のネットワークルールをメンテナンスする
+[[Kubernetes/Nodes]]のネットワークルールをメンテナンスする
 
 [[CNI]]に準拠するネットワークプラグインで代替可能なためオプショナルとなっている
 

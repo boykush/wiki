@@ -6,7 +6,7 @@
 
 ## 利用パターン
 
-[[Kubernetes Deployment|Deployment]]等に指定するイメージを最新のバージョンで置きかえるようなケース
+[[Kubernetes/Deployment]]等に指定するイメージを最新のバージョンで置きかえるようなケース
 ```
 > kustomize edit set image $BEFORE_IMAGE_NAME=$AFTER_IMAGE_NAME
 ```

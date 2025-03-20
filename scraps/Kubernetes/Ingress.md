@@ -4,4 +4,4 @@
 
 [[Kubernetes]]において[[APIゲートウェイ]]の役割を担う
 
-後継には[[Kubernetes Gateway API]]があり、移行が推進されている
+後継には[[Kubernetes/Gateway API]]があり、移行が推進されている

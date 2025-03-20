@@ -1,4 +1,4 @@
-[[Kubernetes]]の[[kube-scheduler]]において、必須ルールと推奨ルールを設定し[[Kubernetes Nodes|ノード]]への割り当てを決定させる
+[[Kubernetes]]の[[kube-scheduler]]において、必須ルールと推奨ルールを設定し[[Kubernetes/Nodes]]への割り当てを決定させる
 
 ---
 

@@ -1,6 +1,6 @@
-[[Kubernetes]]において、[[Kubernetes Service|Service]]の定義方法の一つ
+[[Kubernetes]]において、[[Kubernetes/Service]]の定義方法の一つ
 
-clusterIP `.spec.clusterIP` を `"None"` に指定することで、[[Pod]]のIPを直接参照するような設定にし[[kube-proxy]]はServiceに関与しなくなる
+clusterIP `.spec.clusterIP` を `"None"` に指定することで、[[Kubernetes/Pod]]のIPを直接参照するような設定にし[[kube-proxy]]はServiceに関与しなくなる
 
 ---
 

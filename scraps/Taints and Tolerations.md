@@ -1,4 +1,4 @@
-[[Kubernetes]]の[[kube-scheduler]]において、[[Node affinity]]のような[[Pod]]に対する設定ではなく[[Kubernetes Nodes|ノード]]に対する設定によってPodの配置を決定する
+[[Kubernetes]]の[[kube-scheduler]]において、[[Node affinity]]のような[[Kubernetes/Pod]]に対する設定ではなく[[Kubernetes/Nodes]]に対する設定によってPodの配置を決定する
 
 ---
 

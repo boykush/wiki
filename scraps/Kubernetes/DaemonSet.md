@@ -2,7 +2,7 @@
 
 ![](https://github.com/kubernetes/community/raw/master/icons/png/resources/labeled/ds-128.png)
 
-[[Kubernetes]]において、ある1つの[[Kubernetes Nodes|ノード]]または各ノードに常に1つデーモンとして動作していて欲しい[[Pod]]を配置する
+[[Kubernetes]]において、ある1つの[[Kubernetes/Nodes]]または各ノードに常に1つデーモンとして動作していて欲しい[[Kubernetes/Pod]]を配置する
 
 具体例として[[ログ]]収集、[[kube-proxy]]の配置等がある
 

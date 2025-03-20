@@ -2,7 +2,7 @@
 
 ![](https://github.com/kubernetes/community/raw/master/icons/png/resources/labeled/hpa-128.png)
 
-[[Kubernetes]]において[[Kubernetes Deployment|Deployment]]のようなワークロードに対し、自動で[[Pod]]数を調整するような仕組み
+[[Kubernetes]]において[[Kubernetes/Deployment]]のようなワークロードに対し、自動で[[Kubernetes/Pod]]数を調整するような仕組み
 
 ---
 

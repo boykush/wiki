@@ -13,11 +13,11 @@ Bilgin Ibryam, Roland Huß, [[松浦隼人]]
 - [[マイクロサービス]]/[[境界づけられたコンテキスト]]/[[集約]]
 - [[ドメイン駆動設計]]/[[ヘキサゴナルアーキテクチャ]]/[[The Twelve-Factor App]]
 - [[コンテナ]]
-- [[Pod]]/[[Kubernetes Service|Service]]/Label/Namespace
+- [[Kubernetes/Pod]]/[[Kubernetes/Service]]/Label/Namespace
 ## 第1部 基本パターン
 ### 2章 Predicatable Demand（予測可能な需要）
 ### 3章 Declarative Deployment（宣言的デプロイ）
-- [[Kubernetes Deployment|Deployment]]
+- [[Kubernetes/Deployment]]
 - [[ブルーグリーン戦略|ブルーグリーンリリース]]/[[カナリアリリース]]
 - Flagger/[[Argo Rollouts]]/[[Knative]]
 ### 4章 Health [[Probe]]
@@ -33,11 +33,11 @@ Bilgin Ibryam, Roland Huß, [[松浦隼人]]
   - [[Taints and Tolerations]]
 ## 第II部 振る舞いパターン
 ### 7章 Batch Job（バッチジョブ）
-- [[Kubernetes Job|Job]]
+- [[Kubernetes/Job]]
 ### 8章 Periodic Job（定期ジョブ）
-- [[Kubernetes CronJob|CronJob]]
+- [[Kubernetes/CronJob]]
 ### 9章 Daemon Service（デーモンサービス）
-- [[Kubernetes DaemonSet|DaemonSet]]
+- [[Kubernetes/DaemonSet|DaemonSet]]
 ### 10章 Singleton Service（シングルトンサービス）
 - [[Headless Service|ヘッドドレスService]]/[[kube-proxy]]/StatefulService
 - [[etcd]]/ZooKeeper/[[Dapr]]
@@ -46,10 +46,10 @@ Bilgin Ibryam, Roland Huß, [[松浦隼人]]
 - [[PersistentVolume|PersistentVolume/PersistentVolumeClaim]]
 ### 12章 Stateful Service（ステートフルサービス）
 - [[CustomResourceDefinition]]
-- [[Kubernetes StatefulSet|StatefulSet]]
+- [[Kubernetes/StatefulSet]]
 ### 13章 [[サービスディスカバリ|Service Discovery（サービスディスカバリ）]]
-- [[Kubernetes Service|Service]]
-- [[Kubernetes Ingress|Ingress]]
+- [[Kubernetes/Service]]
+- [[Kubernetes/Ingress]]
 - [[Knative Serving]]
 ### 14章 Self Awareness（セルフアウェアネス）
 - [[Downward API]]
@@ -65,8 +65,8 @@ Bilgin Ibryam, Roland Huß, [[松浦隼人]]
 ### 19章 EnvVar Configuration（環境変数による設定）
 - [[The Twelve-Factor App]]
 ### 20章 Configuration Resource（設定リソース）
-- [[Kubernetes ConfigMap|ConfigMap]]
-- [[Kubernetes Secret|Secret]]
+- [[Kubernetes/ConfigMap]]
+- [[Kubernetes/Secret|Secret]]
 ### 21章 Immutable Configuration（イミュータブル設定）
 - [[Docker]]
 - [[Immutable Configuration]]パターン

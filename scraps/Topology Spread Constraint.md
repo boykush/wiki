@@ -1,4 +1,4 @@
-[[Kubernetes]]の[[kube-scheduler]]において、[[Inter-pod affinity and anti-affinity]]では解決できないような[[Rolling Update]]時の不均等な[[Pod]]配置を許容する
+[[Kubernetes]]の[[kube-scheduler]]において、[[Inter-pod affinity and anti-affinity]]では解決できないような[[Rolling Update]]時の不均等な[[Kubernetes/Pod]]配置を許容する
 
 ---
 
