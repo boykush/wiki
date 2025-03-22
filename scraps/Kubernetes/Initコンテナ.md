@@ -1,4 +1,6 @@
-[[Kubernetes]]において[[Kubernetes/Pod]]と一緒に定義可能な初期化を行う[[コンテナ]]
+#[[Kubernetes]] #[[Cloud Native]]
+
+[[Kubernetes/Pod]]と一緒に定義可能な初期化を行う[[コンテナ]]
 
 [[Sidecar]]でも同挙動は実現可能だが、ただ一度のみ実行されるのでリソースを調整しやすい
 

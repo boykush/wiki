@@ -1,4 +1,4 @@
-#[[Cloud Native]] #[[Security]]
+#[[Security]]
 
 [[Google Cloud]]において外部[[ロードバランシング]]で必要となるような[[TLS]]証明書を管理する
 

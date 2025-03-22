@@ -49,7 +49,7 @@ Bilgin Ibryam, Roland Huß, [[松浦隼人]]
 - [[Kubernetes/StatefulSet]]
 ### 13章 [[サービスディスカバリ|Service Discovery（サービスディスカバリ）]]
 - [[Kubernetes/Service]]
-- [[Kubernetes/Kubernetes/Ingress]]
+- [[Kubernetes/Ingress]]
 - [[Knative Serving]]
 ### 14章 Self Awareness（セルフアウェアネス）
 - [[Downward API]]
@@ -92,6 +92,11 @@ Bilgin Ibryam, Roland Huß, [[松浦隼人]]
 - CSI/Secret Storage CSI Provider
 - Vault Sidecar Agent Injector
 ### 26章 Access Control（アクセス制御）
+- [[OIDC]]/[[Bearerトークン]]
+- [[RBAC]]/[[ABAC]]
+- [[Kubernetes/ServiceAccount]]/[[JWT]]
+- [[Kubernetes/Role]]/[[Kubernetes/RoleBinding]]
+- [[Kubernetes/ClusterRole]]/[[Kubernetes/ClusterRoleBinding]]
 ## 第VI部 高度なパターン
 ### 27章 Controller（コントローラ）
 ### 28章 Operator（オペレータ）

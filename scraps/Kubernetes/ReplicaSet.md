@@ -1,6 +1,6 @@
-#[[Cloud Native]]
+#[[Kubernetes]] #[[Cloud Native]]
 
-[[Kubernetes]]において `spec.replicas` の指定によって同一イメージの[[Kubernetes/Pod]]を複数起動させることができる
+`spec.replicas` の指定によって同一イメージの[[Kubernetes/Pod]]を複数起動させることができる
 
 ---
 

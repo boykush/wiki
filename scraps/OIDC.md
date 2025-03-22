@@ -11,3 +11,4 @@
 ---
 
 - [How OpenID Connect Works - OpenID Foundation](https://openid.net/foundation/how-connect-works/)
+- [Authenticating | Kubernetes](https://kubernetes.io/docs/reference/access-authn-authz/authentication/#openid-connect-tokens)

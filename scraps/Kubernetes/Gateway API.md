@@ -1,4 +1,4 @@
-#[[API Architecture]] #[[Cloud Native]] #[[Network]]
+#[[API Architecture]] #[[Network]] #[[Kubernetes]] #[[Cloud Native]]
 
 [[OSI参照モデル]]のL4/L7を扱う[[Kubernetes]]公式の[[APIゲートウェイ]]
 
