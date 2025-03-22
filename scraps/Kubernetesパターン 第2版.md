@@ -39,23 +39,23 @@ Bilgin Ibryam, Roland Huß, [[松浦隼人]]
 ### 9章 Daemon Service（デーモンサービス）
 - [[Kubernetes/DaemonSet|DaemonSet]]
 ### 10章 Singleton Service（シングルトンサービス）
-- [[Headless Service|ヘッドドレスService]]/[[kube-proxy]]/StatefulService
+- [[Kubernetes/Headless Service|ヘッドドレスService]]/[[kube-proxy]]/StatefulService
 - [[etcd]]/ZooKeeper/[[Dapr]]
 - [[PodDisruptionBudget]]
 ### 11章 Stateless Service（ステートレスサービス）
 - [[Kubernetes/PersistentVolume|PersistentVolume/PersistentVolumeClaim]]
 ### 12章 Stateful Service（ステートフルサービス）
-- [[CustomResourceDefinition]]
+- [[Kubernetes/CustomResourceDefinition]]
 - [[Kubernetes/StatefulSet]]
 ### 13章 [[サービスディスカバリ|Service Discovery（サービスディスカバリ）]]
 - [[Kubernetes/Service]]
-- [[Kubernetes/Ingress]]
+- [[Kubernetes/Kubernetes/Ingress]]
 - [[Knative Serving]]
 ### 14章 Self Awareness（セルフアウェアネス）
 - [[Downward API]]
 ## 第III部 構造化パターン
 ### 15章 Init Container（Init コンテナ）
-- [[Initコンテナ]]
+- [[Kubernetes/Initコンテナ]]
 ### 16章 Sidecar（サイドカー）
 - [[Sidecar]]
 ### 17章 Adapter（アダプタ）

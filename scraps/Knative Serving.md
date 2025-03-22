@@ -1,4 +1,4 @@
-[[Knative]]において、[[Kubernetes]]の[[CustomResourceDefinition]]によって4種類のリソースを定義しアプリケーションの提供を行う
+[[Knative]]において、[[Kubernetes]]の[[Kubernetes/CustomResourceDefinition]]によって4種類のリソースを定義しアプリケーションの提供を行う
 
 [[Kubernetes/Service]]の別APIのような[[サービスディスカバリ]]パターン
 
