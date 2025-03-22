@@ -2,7 +2,7 @@
 
 ![](https://github.com/kubernetes/community/raw/master/icons/png/resources/labeled/pod-128.png)
 
-[[Kubernetes]]内でデプロイできる最小ユニット
+[[Kubernetes]]内でデプロイできる最小ユニットの[[Kubernetes/リソース]]
 
 1つのPod内には1つまたは複数の[[コンテナ]]があり、ストレージやネットワークなどの共有リソースを持つ
 

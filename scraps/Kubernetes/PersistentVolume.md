@@ -2,7 +2,7 @@
 
 ![](https://github.com/kubernetes/community/raw/master/icons/png/resources/labeled/pv-128.png)
 
-[[Kubernetes/Volume|Volume]]で扱うことができるようなクラウド環境のストレージサービスを抽象化したもの
+[[Kubernetes/Volume|Volume]]で扱うことができるようなクラウド環境のストレージサービスを抽象化した[[Kubernetes/リソース]]
 
 PersistentVolumeへはPersistentVolumeClaimを通してアクセスが可能
 

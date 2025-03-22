@@ -2,7 +2,7 @@
 
 ![](https://github.com/kubernetes/community/raw/master/icons/png/resources/labeled/sa-128.png)
 
-[[Kubernetes/Pod]]に割り当てられる[[Authentication|認証]]・[[Authorization|認可]]目的のアイデンティティリソース
+[[Kubernetes/Pod]]に割り当てられる[[Authentication|認証]]・[[Authorization|認可]]目的のアイデンティティ[[Kubernetes/リソース]]
 
 Kubernetesによって管理された[[JWT]]を持つ
 
