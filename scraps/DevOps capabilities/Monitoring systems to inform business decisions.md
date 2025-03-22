@@ -1,4 +1,4 @@
-[[DevOps capabilities]]の1つ、[[Fast Feedback]]に分類される
+[[DevOps capabilities]]の1つ、[[DevOps capabilities/Fast Feedback]]に分類される
 
 ---
 

@@ -21,36 +21,36 @@ Nicole Forsgren, Jez Humble, Gene Kim
 - Westrumモデル
 ### 第4章　技術的プラクティス―継続的デリバリの基本原則と効果
 - [[DevOps capabilities/Continuous delivery|継続的デリバリ]]
-- [[Version control|バージョン管理]]
-- [[Deployment automation|デプロイメントの自動化]] 
+- [[DevOps capabilities/Version control|バージョン管理]]
+- [[DevOps capabilities/Deployment automation|デプロイメントの自動化]] 
 - [[DevOps capabilities/Continuous integration|継続的インテグレーション]]
-- [[Trunk-based development|トランクベースの開発]]
-- [[Test automation|テストの自動化]]
-- [[Test data management|テストデータの管理]]
-- [[Monitoring and observability|モニタリング]]
-- [[Proactive failure notification|プロアクティブ（予防的）な通知]]
+- [[DevOps capabilities/Trunk-based development|トランクベースの開発]]
+- [[DevOps capabilities/Test automation|テストの自動化]]
+- [[DevOps capabilities/Test data management|テストデータの管理]]
+- [[DevOps capabilities/Monitoring and observability|モニタリング]]
+- [[DevOps capabilities/Proactive failure notification|プロアクティブ（予防的）な通知]]
 ### 第5章　アーキテクチャのキーポイント
 - [[逆コンウェイ戦略]]
-- [[Loosely coupled teams|疎結合アーキテクチャ]]
-- [[Empowering teams to choose tools|チームによるツール選択]]
+- [[DevOps capabilities/Loosely coupled teams|疎結合アーキテクチャ]]
+- [[DevOps capabilities/Empowering teams to choose tools|チームによるツール選択]]
 ### 第6章　デリバリライフサイクルに情報セキュリティを組み込む
-- [[Pervasive security|情報セキュリティのシフトレフト]]
+- [[DevOps capabilities/Pervasive security|情報セキュリティのシフトレフト]]
 - DevSecOps/Rugged DevOps/Rugged Manifesto
 ### 第7章　ソフトウェア管理のプラクティス
-- [[Work in process limits|進行中の作業（WIP）の制限]]
-- [[Visual management|可視化（見える化）]]
-- [[Visibility of work in the value stream|ワークフローの可視化]]
-- [[Streamlining change approval|負担の軽い変更承認プロセス]]
+- [[DevOps capabilities/Work in process limits|進行中の作業（WIP）の制限]]
+- [[DevOps capabilities/Visual management|可視化（見える化）]]
+- [[DevOps capabilities/Visibility of work in the value stream|ワークフローの可視化]]
+- [[DevOps capabilities/Streamlining change approval|負担の軽い変更承認プロセス]]
 ### 第8章　製品開発のプラクティス
-- [[Working in small batches|作業の細分化]]
+- [[DevOps capabilities/Working in small batches|作業の細分化]]
 - 管理の可視化
-- [[Customer feedback|顧客フィードバックの収集と実装]]
-- [[Team experimentation|チームによる実験]]
+- [[DevOps capabilities/Customer feedback|顧客フィードバックの収集と実装]]
+- [[DevOps capabilities/Team experimentation|チームによる実験]]
 ### 第9章　作業を持続可能にする―デプロイ負荷とバーンアウトの軽減
 - バーンアウト
 ### 第10章　従業員の満足度、アイデンティティ、コミットメント
 ### 第11章　変革型リーダーシップとマネジメントの役割
-- [[Transformational leadership|変革型リーダーシップ]]
+- [[DevOps capabilities/Transformational leadership|変革型リーダーシップ]]
 
 ## 第2部　調査・分析方法
 ### 第12章　統計学的背景

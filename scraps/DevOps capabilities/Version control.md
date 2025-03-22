@@ -1,4 +1,4 @@
-[[DevOps capabilities]]の1つ、[[Fast Flow]]に分類される
+[[DevOps capabilities]]の1つ、[[DevOps capabilities/Fast Flow]]に分類される
 
 アプリケーションコードだけでなく、ビルドスクリプトやコンフィギュレーションに対しても管理を行うことが推奨され、[[DevOps capabilities/Continuous integration|継続的インテグレーション]]に寄与する
 

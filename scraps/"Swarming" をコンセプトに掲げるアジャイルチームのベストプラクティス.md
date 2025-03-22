@@ -6,6 +6,6 @@
 
 関連Scrapは以下
 - [[ストラングラーフィグアプリケーション]]
-- [[Trunk-based development|トランクベース開発]]
+- [[DevOps capabilities/Trunk-based development|トランクベース開発]]
 - [[モノリスからマイクロサービスへ]]
 - [[関数型ドメインモデリング]]

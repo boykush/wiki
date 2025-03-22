@@ -1,6 +1,6 @@
 #[[Agile]]
 
-[[DevOps capabilities]]の1つ、[[Fast Flow]]に分類される
+[[DevOps capabilities]]の1つ、[[DevOps capabilities/Fast Flow]]に分類される
 
 ---
 
