@@ -1,0 +1,1164 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <!-- Page title -->
+        
+            <title>Kush&#x27;s Wiki</title>
+            <meta property="og:title" content="Kush&#x27;s Wiki" />
+            <meta name="twitter:title" content="Kush&#x27;s Wiki" />
+        
+        <!-- Page description -->
+        
+            <meta name="description" content="boykushのナレッジ置き場" />
+            <meta property="og:description" content="boykushのナレッジ置き場" />
+            <meta name="twitter:description" content="boykushのナレッジ置き場" />
+        
+        <!-- Page favicon -->
+        
+            <link rel="icon" type="image/png" href="https:&#x2F;&#x2F;gist.github.com&#x2F;boykush&#x2F;3bbc68b5d2580374c97d4336b87fb70f&#x2F;raw&#x2F;a838b8f3584b21bcbbe4dd53afca380fe18695a7&#x2F;boykush_icon.png" />
+        
+        <!-- Rubik font -->
+        <link href="https://fonts.cdnfonts.com/css/rubik" rel="stylesheet">
+        <!-- Noto Sans JP font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+        <!-- Code syntax highlight theme -->
+        <link href="https://unpkg.com/nord-highlightjs@0.1.0/dist/nord.css" rel="stylesheet" type="text/css" />
+        <!-- Style sheet -->
+        <link rel="stylesheet" href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;main.css">
+        
+        
+    </head>
+    <body>
+        <header>
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;">
+                <h1>Kush&#x27;s Wiki</h1>
+            </a>
+        </header>
+        <main>
+            
+    <div class="index">
+        
+          <div class="search-block">
+              <span class="icon" />
+              <input
+                type="text"
+                id="search-input"
+                onkeyup="doSearch()"
+                placeholder="Search by title..."
+                />
+              <ul id="search-results"></ul>
+          </div>
+        
+        <div class="tags-block">
+            
+    <ul class="tag-links">
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/security.html">
+                <li class="item">
+                    <span class="title">Security</span>&nbsp;<span>(36)</span>
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/agile.html">
+                <li class="item">
+                    <span class="title">Agile</span>&nbsp;<span>(34)</span>
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/book.html">
+                <li class="item">
+                    <span class="title">Book</span>&nbsp;<span>(33)</span>
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/person.html">
+                <li class="item">
+                    <span class="title">Person</span>&nbsp;<span>(32)</span>
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/cloud-native.html">
+                <li class="item">
+                    <span class="title">Cloud Native</span>&nbsp;<span>(32)</span>
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/observability.html">
+                <li class="item">
+                    <span class="title">Observability</span>&nbsp;<span>(27)</span>
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/network.html">
+                <li class="item">
+                    <span class="title">Network</span>&nbsp;<span>(27)</span>
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/api-architecture.html">
+                <li class="item">
+                    <span class="title">API Architecture</span>&nbsp;<span>(25)</span>
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/team-organization.html">
+                <li class="item">
+                    <span class="title">Team Organization</span>&nbsp;<span>(25)</span>
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/software-design.html">
+                <li class="item">
+                    <span class="title">Software Design</span>&nbsp;<span>(25)</span>
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/data-store.html">
+                <li class="item">
+                    <span class="title">Data Store</span>&nbsp;<span>(23)</span>
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/testing.html">
+                <li class="item">
+                    <span class="title">Testing</span>&nbsp;<span>(19)</span>
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/programming.html">
+                <li class="item">
+                    <span class="title">Programming</span>&nbsp;<span>(18)</span>
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/continuous-delivery.html">
+                <li class="item">
+                    <span class="title">Continuous Delivery</span>&nbsp;<span>(15)</span>
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/continuous-integration.html">
+                <li class="item">
+                    <span class="title">Continuous Integration</span>&nbsp;<span>(15)</span>
+                </li>
+            </a>
+        
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;tags/">
+                <li class="item">
+                    <span class="more-link">More...</span>
+                </li>
+            </a>
+        
+    </ul>
+
+        </div>
+        <div class="links-block">
+            <p class="sort-key">Sort by - linked count</p>
+            
+    <ul class="scrap-links">
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/helm.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">Helm</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;helm.sh&#x2F;img&#x2F;helm.svg" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/vaughn-vernon.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">Vaughn Vernon</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;pbs.twimg.com&#x2F;profile_images&#x2F;1439030838440587270&#x2F;GW8mQETS_400x400.jpg" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/spire.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">Spire</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Programming #Security
+Scala言語の数値型ライブラリ。汎用的で高速かつ高精度な数値と、効率的な数値コードシンタックスを提供する。
+
+
+Spire
+Introduction to Spire
+Numeric Programming in Scala with Spire
+JOTB19 - Numeric Programming with Spire by Lars Hupel
+
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/basic認証.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">Basic認証</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Security #Authentication
+HTTPプロトコルにおける認証方式
+ユーザー名とパスワードをコロンで連結した文字列をBase64エンコードした結果を、Authorizationヘッダーに付与することでリクエストを行う
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/etcd.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">etcd</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;github.com&#x2F;kubernetes&#x2F;community&#x2F;raw&#x2F;master&#x2F;icons&#x2F;png&#x2F;infrastructure_components&#x2F;labeled&#x2F;etcd-128.png" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/honeycomb.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">Honeycomb</div>
+                        </div>
+                    
+                    
+                        <div class="summary">Observabilityに関するエンドツーエンドのプロダクト
+Retrieverというオブザーバビリティに最適化された独自のデータストアを備えており、Amazon S3によって実装されている
+
+
+Honeycomb.io Documentation | Honeycomb
+
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/bツリー.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">Bツリー</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Data Store
+Bツリーはデータベースを固定サイズのブロックあるいはページに分割する。固定サイズの空き容量がない状態で新しいキーが追加される場合、半分の領域が空いた2つのブロックに分割される。
+このアルゴリズムはツリーバランスが保たれ、ツリーの深さも3ないし4レベルに収まることがほとんど。
+また信頼性を高めるためにwrite-aheadログ（WAL）と呼ばれる書き込み内容の構造化データを追記して保持している。
+
+
+Wikipedia
+
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/テストピラミッド.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">テストピラミッド</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;images.logmi.jp&#x2F;media&#x2F;article&#x2F;330972&#x2F;images&#x2F;editor&#x2F;M7wn7kyUYrZTAXipmPJxcz.jpg" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/rsa.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">RSA</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Security
+秘密鍵と公開鍵による暗号方式
+署名に用いる際は公開鍵を用いて署名をした署名者のことを、秘密鍵によって署名付きトークンを検証できる
+
+RFC 8017 - PKCS #1: RSA Cryptography Specifications Version
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/カーディナリティ.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">カーディナリティ</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Data Store
+あるカラムの値の集合の中に重複する値がどのくらいあるかの度合い。低いと重複が多く高いと重複が少ない。
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/レポーティングデータベース.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">レポーティングデータベース</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Martin Fowler #Data Store #Data Processing
+アプリケーションのドメインモデルに対応するテーブルとは別にレポート目的の中間テーブルを用意することで、レポートの関心を分離してテーブルに変更を加えることができる。
+
+ReportingDatabase
+
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/ピープルウエア.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">ピープルウエア</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;cdn-bookplus.nikkei.com&#x2F;atcl&#x2F;catalog&#x2F;13&#x2F;P85240&#x2F;P85240_common_pc.jpg?__scale=w:150,h:221&amp;_sh=0e5090fd06" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/optimize-table.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">OPTIMIZE TABLE</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Data Store
+MySQLにおいてテーブルインデックスを再編成し最適化する命令
+
+
+MySQL :: MySQL 8.0 リファレンスマニュアル :: 13.7.3.4 OPTIMIZE TABLE ステートメント
+
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/オブジェクト指向入門-第2版-原則・コンセプト.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">オブジェクト指向入門 第2版 原則・コンセプト</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;www.seshop.com&#x2F;static&#x2F;images&#x2F;product&#x2F;7595&#x2F;L.png" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/tidb.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">TiDB</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;avatars.githubusercontent.com&#x2F;u&#x2F;11855343?s=200&amp;v=4" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/ソフトウェアクラフトマンシップとプログラマーの誓い.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">ソフトウェアクラフトマンシップとプログラマーの誓い</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#角征典 #プログラマーの誓い
+Clean Craftsmanshipの書籍について紹介しているスライド
+
+
+Docswell
+
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/組織を変える5つの対話.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">組織を変える5つの対話</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;www.oreilly.co.jp&#x2F;books&#x2F;images&#x2F;picture_large978-4-8144-0064-5.jpeg" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/authorization-to-implement-with-extensible-effect.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">Authorization to implement with Extensible Effect</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Security #Programming #Authorization
+Effによる認可実装の話
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/正しいものを正しくつくる.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">正しいものを正しくつくる</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;bnn.co.jp&#x2F;cdn&#x2F;shop&#x2F;products&#x2F;9784802511193.jpg?height=500&amp;v=1677922118" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/sqlパフォーマンス詳解.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">SQLパフォーマンス詳解</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;sql-performance-explained.jp&#x2F;static&#x2F;9783950307849.GuXvgGvo.jpg" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/カイゼン・ジャーニー.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">カイゼン・ジャーニー</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;www.seshop.com&#x2F;static&#x2F;images&#x2F;product&#x2F;21248&#x2F;L.png" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/pofeaa.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">PofEAA</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Software Design #Martin Fowler
+Patterns of Enterprise Application Architecture
+
+
+PofEAAで考えるSaaSバックエンドの作り方
+
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/kubernetes-icons-set.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">Kubernetes Icons Set</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Documentation
+Kubernetesの各リソース等のアイコンを公開しているリポジトリ
+様々なダイアグラムサービスのデータセットに利用されている
+
+community&#x2F;icons at master · kubernetes&#x2F;community
+
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/visibility-of-work-in-the-value-stream.devops-capabilities.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="context">DevOps capabilities&#47;</div>
+                            <div class="title">Visibility of work in the value stream</div>
+                        </div>
+                    
+                    
+                        <div class="summary">DevOps capabilitiesの1つ、Fast Feedbackに分類される
+
+
+DORA | Visibility of work in the value stream
+
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/monitoring-systems-to-inform-business-decisions.devops-capabilities.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="context">DevOps capabilities&#47;</div>
+                            <div class="title">Monitoring systems to inform business decisions</div>
+                        </div>
+                    
+                    
+                        <div class="summary">DevOps capabilitiesの1つ、Fast Feedbackに分類される
+
+
+[DORA | Capabilities: Monitoring systems to inform business decisions](https:&#x2F;&#x2F;dora.dev&#x2F;capabilities&#x2F;monitoring-systems-to inform-business-decisions&#x2F;)
+
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/proactive-failure-notification.devops-capabilities.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="context">DevOps capabilities&#47;</div>
+                            <div class="title">Proactive failure notification</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Observability
+DevOps capabilitiesの1つ、Fast Feedbackに分類される
+
+
+DORA | Capabilities: Proactive failure notification
+
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/deployment-automation.devops-capabilities.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="context">DevOps capabilities&#47;</div>
+                            <div class="title">Deployment automation</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#API Architecture
+DevOps capabilitiesの1つ、Fast Flowに分類される
+
+
+DORA | Capabilities: Deployment Automation
+
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/flexible-infrastructure.devops-capabilities.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="context">DevOps capabilities&#47;</div>
+                            <div class="title">Flexible infrastructure</div>
+                        </div>
+                    
+                    
+                        <div class="summary">DevOps capabilitiesの1つ、Fast Flowに分類される
+
+
+DORA | Capabilities: Flexible infrastructure
+
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/version-control.devops-capabilities.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="context">DevOps capabilities&#47;</div>
+                            <div class="title">Version control</div>
+                        </div>
+                    
+                    
+                        <div class="summary">DevOps capabilitiesの1つ、Fast Flowに分類される
+アプリケーションコードだけでなく、ビルドスクリプトやコンフィギュレーションに対しても管理を行うことが推奨され、継続的インテグレーションに寄与する
+
+
+DORA | Capabilities: Version Control
+
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/continuous-integration.devops-capabilities.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="context">DevOps capabilities&#47;</div>
+                            <div class="title">Continuous integration</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Continuous Integration
+DevOps capabilitiesの1つ、Fast Feedbackに分類される
+CIを実現するには次の要素が必要としている
+
+自動化されたビルドプロセス
+自動化されたテストスイート
+チェックイン毎の自動ビルドとテスト
+
+また次の2つも効果に繋がる
+
+Trunk-based development
+Working in small batches
+
+メンテナンス容易な自動化テストのためにはTDDを実践すると良い
+
+
+DORA | Capabilities: Continuous integration
+
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/monitoring-and-observability.devops-capabilities.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="context">DevOps capabilities&#47;</div>
+                            <div class="title">Monitoring and observability</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Observability
+DevOps capabilitiesの1つ、Fast Feedbackに分類される
+
+
+DORA | Capabilities: Monitoring and observability
+
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/continuous-delivery.devops-capabilities.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="context">DevOps capabilities&#47;</div>
+                            <div class="title">Continuous delivery</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Continuous Delivery
+DevOps capabilitiesの1つ、Fast Flowに分類される
+
+
+DORA | Capabilities: Continuous delivery
+
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/customer-feedback.devops-capabilities.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="context">DevOps capabilities&#47;</div>
+                            <div class="title">Customer feedback</div>
+                        </div>
+                    
+                    
+                        <div class="summary">DevOps capabilitiesの1つ、Fast Feedbackに分類される
+
+
+DORA | Capabilities: Customer feedback
+
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/transformational-leadership.devops-capabilities.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="context">DevOps capabilities&#47;</div>
+                            <div class="title">Transformational leadership</div>
+                        </div>
+                    
+                    
+                        <div class="summary">DevOps capabilitiesの1つ、Climate for Learningに分類される
+
+
+DORA | Capabilities: Transformational leadership
+
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/pervasive-security.devops-capabilities.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="context">DevOps capabilities&#47;</div>
+                            <div class="title">Pervasive security</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Security
+DevOps capabilitiesの1つ、Fast Feedbackに分類される
+
+
+DORA | Capabilities: Pervasive security
+
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/streamlining-change-approval.devops-capabilities.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="context">DevOps capabilities&#47;</div>
+                            <div class="title">Streamlining change approval</div>
+                        </div>
+                    
+                    
+                        <div class="summary">DevOps capabilitiesの1つ、Fast Flowに分類される
+
+
+DORA | Capabilities: Streamlining change approval
+
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/loosely-coupled-teams.devops-capabilities.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="context">DevOps capabilities&#47;</div>
+                            <div class="title">Loosely coupled teams</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Software Design
+DevOps capabilitiesの1つ、Fast Flowに分類される
+
+
+DORA | Capabilities: Loosely coupled teams
+
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/test-data-management.devops-capabilities.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="context">DevOps capabilities&#47;</div>
+                            <div class="title">Test data management</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Testing
+DevOps capabilitiesの1つ、Fast Feedbackに分類される
+
+
+DORA | Capabilities: Test data management
+
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/documentation-quality.devops-capabilities.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="context">DevOps capabilities&#47;</div>
+                            <div class="title">Documentation quality</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Documentation
+DevOps capabilitiesの1つ、Climate for Learningに分類される
+
+
+DORA | Capabilities: Documentation quality
+
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/working-in-small-batches.devops-capabilities.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="context">DevOps capabilities&#47;</div>
+                            <div class="title">Working in small batches</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Continuous Integration
+DevOps capabilitiesの1つ、Fast Flowに分類される
+価値提供フローの可視化、チームによる実験、顧客フィードバックの可視化と組み合わせることで高いソフトウェアデリバリパフォーマンスに寄与する
+バッチサイズの最小化にはINVESTの原則を用いると良い
+
+
+DORA | Capabilities: Working in small batches
+
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/well-being.devops-capabilities.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="context">DevOps capabilities&#47;</div>
+                            <div class="title">Well-being</div>
+                        </div>
+                    
+                    
+                        <div class="summary">DevOps capabilitiesの1つ、Climate for Learningに分類される
+
+
+DORA | Capabilities: Well-being
+
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/empowering-teams-to-choose-tools.devops-capabilities.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="context">DevOps capabilities&#47;</div>
+                            <div class="title">Empowering teams to choose tools</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Software Design
+DevOps capabilitiesの1つ、Climate for Learningに分類される
+仕事の満足度に寄与し、ツールやテクノロジーをチームに強制するとチームによる実験が制限されてしまう
+
+
+DORA | Capabilities: Empowering teams to choose tools
+
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/work-in-process-limits.devops-capabilities.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="context">DevOps capabilities&#47;</div>
+                            <div class="title">Work in process limits</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Agile
+DevOps capabilitiesの1つ、Fast Flowに分類される
+
+
+DORA | Capabilities: Work in process limits
+
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/trunk-based-development.devops-capabilities.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="context">DevOps capabilities&#47;</div>
+                            <div class="title">Trunk-based development</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Continuous Integration
+DevOps capabilitiesの1つ、Fast Flowに分類される
+Working in small batchesをベースに少なくとも1日に一回はトランクブランチにマージをする
+テストの自動化も重要な要素となる
+
+
+DORA | Capabilities: Trunk-based Development
+
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/climate-for-learning.devops-capabilities.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="context">DevOps capabilities&#47;</div>
+                            <div class="title">Climate for Learning</div>
+                        </div>
+                    
+                    
+                        <div class="summary">DevOps capabilitiesのうちの分類の一つ
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/generative-organizational-culture.devops-capabilities.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="context">DevOps capabilities&#47;</div>
+                            <div class="title">Generative organizational culture</div>
+                        </div>
+                    
+                    
+                        <div class="summary">DevOps capabilitiesの1つ、Climate for Learningに分類される
+
+
+DORA | Capabilities: Generative organizational culture
+
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/database-change-management.devops-capabilities.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="context">DevOps capabilities&#47;</div>
+                            <div class="title">Database change management</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Data Store
+DevOps capabilitiesの1つ、Fast Flowに分類される
+
+
+DORA | Capabilities: Database change management
+
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/job-satisfaction.devops-capabilities.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="context">DevOps capabilities&#47;</div>
+                            <div class="title">Job satisfaction</div>
+                        </div>
+                    
+                    
+                        <div class="summary">DevOps capabilitiesの1つ、Climate for Learningに分類される
+
+
+DORA | Capabilities: Job satisfaction
+
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/team-experimentation.devops-capabilities.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="context">DevOps capabilities&#47;</div>
+                            <div class="title">Team experimentation</div>
+                        </div>
+                    
+                    
+                        <div class="summary">DevOps capabilitiesの1つ、Climate for Learningに分類される
+
+
+DORA | Capabilities: Team experimentation
+
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/code-maintainability.devops-capabilities.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="context">DevOps capabilities&#47;</div>
+                            <div class="title">Code maintainability</div>
+                        </div>
+                    
+                    
+                        <div class="summary">DevOps capabilitiesの1つ、Climate for Learningに分類される
+継続的デリバリーに寄与する
+
+
+DORA | Capabilities: Code maintainability
+
+</div>
+                    
+                </li>
+            </a>
+        
+    </ul>
+
+        </div>
+        <div class="paging-arrows">
+            
+                <a class="prev" href=".&#x2F;5.html">prev</a>
+            
+            
+                <a class="next" href=".&#x2F;7.html">next</a>
+            
+        </div>
+    </div>
+
+        </main>
+        <footer>
+            Generated by <a href="https://github.com/boykush/scraps" target="_blank" rel="noopener noreferrer">Scraps</a>
+        </footer>
+        <!-- Code syntax highlight -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script>
+        <!-- Mermaid -->
+        <script type="module">
+            import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+        </script>
+        
+  
+  <!-- For search scraps -->
+  <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0"></script>
+  <script type="module">
+    import search_index from './search_index.json' with { type: "json" };
+    const fuseOptions = {
+      minMatchCharLength: 3,
+      keys: ["title"]
+    };
+    const fuse = new Fuse(search_index, fuseOptions);
+    const search = function (query, numResults) {
+      return fuse.search(query).slice(0, numResults).map(result => [result.item.title, result.item.url]);
+    };
+    window.search = search;
+  </script>
+  <script>
+    function doSearch() {
+      let value = document.getElementById("search-input").value;
+      console.log(`Search query: ${value}`);
+
+      // Retrieve 5 results
+      const results = search(value, 5);
+
+      console.log(`Results: ${results}`);
+
+      let ul = document.getElementById("search-results");
+      ul.innerHTML = "";
+
+      results.forEach((result, index) => {
+        var li = document.createElement("li");
+
+        let [title, url] = result;
+        console.log(`Title: ${title}, URL: ${url}`);
+        let elemlink = document.createElement('a');
+        elemlink.innerHTML = title;
+        elemlink.setAttribute('href', url);
+        li.appendChild(elemlink);
+        li.style.top = `${(index * 30) - 16}px`;
+        ul.appendChild(li);
+      })
+    }
+  </script>
+  
+ 
+    </body>
+</html>
