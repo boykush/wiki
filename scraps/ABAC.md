@@ -1,6 +1,6 @@
 ## Attiribute-based access control
 
-#[[Security]]
+#[[Security]] #[[Authorization]]
 
 従来の[[RBAC]]に対し、リソースに割り当てられた属性（AWSではタグ）に基づいて許可を定義する認可モデル
 

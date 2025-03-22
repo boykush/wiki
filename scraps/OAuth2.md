@@ -1,4 +1,4 @@
-#[[Security]] #[[API Architecture]]
+#[[Security]] #[[API Architecture]] #[[Authorization]]
 
 RFC6749によって定義された認可フレームワーク
 

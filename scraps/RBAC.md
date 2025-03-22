@@ -1,6 +1,6 @@
 ## Role-based access control
 
-#[[Security]]
+#[[Security]] #[[Authorization]]
 
 ロールごとに許可を定義する認可モデル
 

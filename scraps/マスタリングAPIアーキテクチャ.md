@@ -3,7 +3,7 @@
 ### Authors:
 James Gough, Daniel Bryant, Matthew Auburn
 
-#[[Book]] #[[API Architecture]] #[[Testing]] #[[Reliability]] #[[Observability]] #[[Security]] #[[Software Design]]
+#[[Book]] #[[API Architecture]]
 
 ![](https://www.oreilly.co.jp/books/images/picture_large978-4-8144-0089-8.jpeg)
 
@@ -17,7 +17,7 @@ James Gough, Daniel Bryant, Matthew Auburn
 - [[GraphQL]]
 - [[RPC]]/[[gRPC]]
 - [[Open API]]
-### 2章 APIのテスト 
+### 2章 APIのテスト #[[Testing]]
 - [[アジャイルテストの4象限]]
 - [[テストピラミッド]]
 - [[コントラクトテスト]]
@@ -26,26 +26,26 @@ James Gough, Daniel Bryant, Matthew Auburn
 ### 3章 APIゲートウェイ：外部トラフィック管理
 - [[リバースプロキシ]]/[[ロードバランシング]]
 - [[APIゲートウェイ]]/[[Envoy]]/[[Ambassador Edge Stack]]
-### 4章 サービスメッシュ：サービス間トラフィック管理
+### 4章 サービスメッシュ：サービス間トラフィック管理 #[[Reliability]]
 - [[サービスメッシュ]]/[[サイドカープロキシ]]
 - [[Istio]]/Linkerd/Consul
 - [[分散コンピューティングの8つの誤謬]]
 - [[サーキットブレーカー]]/[[リトライ]]/タイムアウト/バルクヘッド/フォールバック
-### 5章 APIの展開とリリース
+### 5章 APIの展開とリリース #[[Observability]]
 - [[カナリアリリース]]/[[ブルーグリーン戦略]]/[[Argo Rollouts]]
 - [[Progressive Delivery]]
 - トラフィックミラーリング
 - [[OpenTelemetry]]
 - [[Observability Primary Signals|オブザーバビリティの三本柱]]
-### 6章 セキュリティ運用：脅威モデリング
+### 6章 セキュリティ運用：脅威モデリング #[[Security]]
 - [[OWASP Top Ten]]
 - [[脅威モデリング]]/[[Microsoft Threat Modeling Tool]]/[[STRIDE]]
 - [[レートリミット]]
-### 7章 APIの認証と認可
+### 7章 APIの認証と認可 #[[Authentication]] #[[Authorization]]
 - [[OAuth2]]/[[OIDC]]
 - [[JWT]]
 - SAML
-### 8章 API駆動アーキテクチャへのアプリケーションの再設計
+### 8章 API駆動アーキテクチャへのアプリケーションの再設計 #[[Software Design]]
 - モノリス/サービス指向アーキテクチャ（SOA）
 - [[ドメイン駆動設計|DDD]]/[[マイクロサービス]]
 - [[適応度関数]]

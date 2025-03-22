@@ -1,4 +1,4 @@
-#[[Security]]
+#[[Security]] #[[Authorization]]
 
 トークンを保持するBearer（持参人）が誰であれ、そのトークンをリソースへのアクセスに使うことができる
 

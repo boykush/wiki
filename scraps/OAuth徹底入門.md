@@ -3,7 +3,7 @@
 ### Authors:
 Justin Richer, Antonio Sanso
 
-#[[Security]] #[[Book]] #[[API Architecture]]
+#[[Security]] #[[Book]] #[[API Architecture]] #[[Authorization]] #[[Authentication]]
 
 ![](https://www.seshop.com/static/images/product/22242/L.png)
 

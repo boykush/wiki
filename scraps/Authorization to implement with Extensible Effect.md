@@ -1,4 +1,4 @@
-#[[Security]] #[[Programming]]
+#[[Security]] #[[Programming]] #[[Authorization]]
 
 [[Eff]]による認可実装の話
 

@@ -1,4 +1,4 @@
-#[[Security]]
+#[[Security]] #[[Authentication]]
 
 [[HTTP]]プロトコルにおける認証方式
 

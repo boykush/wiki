@@ -2,7 +2,7 @@
 
 ![](https://openid.net/wp-content/uploads/2022/11/df-l-oix-l-openid_rgb-300dpi.png)
 
-#[[Security]]
+#[[Security]] #[[Authentication]] #[[Authorization]]
 
 [[OAuth2]]フレームワークにおいてクライアントがリソースオーナー（エンドユーザ）の身元を知りたいケースに利用される方法論、[[OAuth2]]の追加機能としてアイデンティティ層が足される
 
