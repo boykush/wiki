@@ -13,7 +13,7 @@ Bilgin Ibryam, Roland Huß, [[松浦隼人]]
 - [[マイクロサービス]]/[[境界づけられたコンテキスト]]/[[集約]]
 - [[ドメイン駆動設計]]/[[ヘキサゴナルアーキテクチャ]]/[[The Twelve-Factor App]]
 - [[コンテナ]]
-- [[Kubernetes/Pod]]/[[Kubernetes/Service]]/Label/Namespace
+- [[Kubernetes/Pod]]/[[Kubernetes/Service]]/Label/[[Kubernetes/Namespace]]
 ## 第1部 基本パターン
 ### 2章 Predicatable Demand（予測可能な需要）
 ### 3章 Declarative Deployment（宣言的デプロイ）
@@ -43,7 +43,7 @@ Bilgin Ibryam, Roland Huß, [[松浦隼人]]
 - [[etcd]]/ZooKeeper/[[Dapr]]
 - [[PodDisruptionBudget]]
 ### 11章 Stateless Service（ステートレスサービス）
-- [[PersistentVolume|PersistentVolume/PersistentVolumeClaim]]
+- [[Kubernetes/PersistentVolume|PersistentVolume/PersistentVolumeClaim]]
 ### 12章 Stateful Service（ステートフルサービス）
 - [[CustomResourceDefinition]]
 - [[Kubernetes/StatefulSet]]
@@ -76,8 +76,21 @@ Bilgin Ibryam, Roland Huß, [[松浦隼人]]
 ### 23章 Process Containment（プロセス封じ込め）
 - [[Security Context]]
 - [[Pod Security Standards]]/[[Pod Security Admission]]
+- シフトレフト
 ### 24章 Network Segmentation（ネットワークセグメンテーション）
+- [[Multitenancy|マルチテナント]]
+- [[Kubernetes/Network policy]]
+- Kubernetes Network Policy Recipes
+- Inspektor Gadget
+- eBPF
+- [[サービスメッシュ]]/[[Istio]]/[[AuthorizationPolicy]]
+- ソフトウェア定義ネットワーク
 ### 25章 Secure Configuration（セキュア設定）
+- [[Kubernetes/Secret]]
+- Sealed Secret/External Secret/SMS(AWS Secret Manager)/sops
+- KMS(AWS KMS)
+- CSI/Secret Storage CSI Provider
+- Vault Sidecar Agent Injector
 ### 26章 Access Control（アクセス制御）
 ## 第VI部 高度なパターン
 ### 27章 Controller（コントローラ）
