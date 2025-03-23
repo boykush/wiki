@@ -1,0 +1,1356 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <!-- Page title -->
+        
+            
+            <title>Kubernetes - Kush&#x27;s Wiki</title>
+            <meta property="og:title" content="Kubernetes - Kush&#x27;s Wiki" />
+            <meta name="twitter:title" content="Kubernetes - Kush&#x27;s Wiki" />
+        
+        <!-- Page description -->
+        
+            <meta name="description" content="boykushのナレッジ置き場" />
+            <meta property="og:description" content="boykushのナレッジ置き場" />
+            <meta name="twitter:description" content="boykushのナレッジ置き場" />
+        
+        <!-- Page favicon -->
+        
+            <link rel="icon" type="image/png" href="https:&#x2F;&#x2F;gist.github.com&#x2F;boykush&#x2F;3bbc68b5d2580374c97d4336b87fb70f&#x2F;raw&#x2F;a838b8f3584b21bcbbe4dd53afca380fe18695a7&#x2F;boykush_icon.png" />
+        
+        <!-- Rubik font -->
+        <link href="https://fonts.cdnfonts.com/css/rubik" rel="stylesheet">
+        <!-- Noto Sans JP font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+        <!-- Code syntax highlight theme -->
+        <link href="https://unpkg.com/nord-highlightjs@0.1.0/dist/nord.css" rel="stylesheet" type="text/css" />
+        <!-- Style sheet -->
+        <link rel="stylesheet" href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;main.css">
+        
+<meta property="og:url" content="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/kubernetes.html" />
+
+    <meta property="og:image" content="https:&#x2F;&#x2F;kubernetes.io&#x2F;images&#x2F;kubernetes.png" />
+    <meta name="twitter:image" content="https:&#x2F;&#x2F;kubernetes.io&#x2F;images&#x2F;kubernetes.png" />
+
+
+    </head>
+    <body>
+        <header>
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;">
+                <h1>Kush&#x27;s Wiki</h1>
+            </a>
+        </header>
+        <main>
+            
+    <div class="scrap">
+        
+        <h1>Kubernetes</h1>
+        
+            <p class="commited-date">
+                commited date: 2025-02-02
+            </p>
+        
+        <div class="content">
+            <p>#<a href="https://boykush.github.io/wiki/scraps/cloud-native.html">Cloud Native</a></p>
+<p><img src="https://kubernetes.io/images/kubernetes.png" alt="" /></p>
+<p><a href="https://boykush.github.io/wiki/scraps/docker.html">Docker</a>のようなアプリケーション<a href="https://boykush.github.io/wiki/scraps/%E3%82%B3%E3%83%B3%E3%83%86%E3%83%8A.html">コンテナ</a>のオーケストレーションを行うオープンソースのプラットフォーム</p>
+<p><a href="https://boykush.github.io/wiki/scraps/cncf.html">CNCF</a> graduated project</p>
+<hr />
+<p><a href="https://kubernetes.io/ja/docs/concepts/overview/">概要 | Kubernetes</a></p>
+
+        </div>
+        
+    </div>
+    
+    <ul class="scrap-links">
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/etcd.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">etcd</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;github.com&#x2F;kubernetes&#x2F;community&#x2F;raw&#x2F;master&#x2F;icons&#x2F;png&#x2F;infrastructure_components&#x2F;labeled&#x2F;etcd-128.png" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/helm.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">Helm</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;helm.sh&#x2F;img&#x2F;helm.svg" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/container-storage-interface.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">Container Storage Interface</div>
+                        </div>
+                    
+                    
+                        <div class="summary">CSI
+コンテナオーケストラレーション（主にKubernetes）でのコンテナ化されたワークロードから任意のストレージシステムを使用可能にするための仕様とその実体であるProtocol Buffers（gRPC通信前提）定義を提供する
+
+
+container-storage-interface&#x2F;spec
+
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/secrets-store-csi-driver.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">Secrets Store CSI Driver</div>
+                        </div>
+                    
+                    
+                        <div class="summary">Kubernetesコミュニティによってメンテナンスされているドライバ
+Container Storage Interface（CSI）のAPIを実装しており、様々なクラウドベンダーのSMSにアクセスできる
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/istio.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">Istio</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;repository-images.githubusercontent.com&#x2F;74175805&#x2F;ed825500-65ad-11e9-821c-f6148eadb7c8" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/dapr.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">Dapr</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;dapr.io&#x2F;images&#x2F;dapr.svg" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/サービスメッシュ.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">サービスメッシュ</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Network #Observability #Security #API Architecture
+マイクロサービスで行われるようなサービス間通信をルーティング、監視、保護する機能を提供する
+Kubernetesにおいてはクラスタ単位でサービスメッシュを構築する
+サービスメッシュはクラスタ内の全てのサービス間通信を制御するコントロールプレーンとコントロールプレーンで指定された作業が実行されるデータプレーン（サービス）の2つの基本要素を持つ。
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/knative-serving.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">Knative Serving</div>
+                        </div>
+                    
+                    
+                        <div class="summary">Knativeにおいて、KubernetesのCustomResourceDefinitionによって4種類のリソースを定義しアプリケーションの提供を行う
+Serviceの別APIのようなサービスディスカバリパターン
+4種類のリソースは以下
+
+Services
+Routes
+Configurations
+Revisions
+
+
+
+specs&#x2F;specs&#x2F;serving&#x2F;overview.md at main · knative&#x2F;specs
+
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/kubernetesパターン-第2版.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">Kubernetesパターン 第2版</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;www.oreilly.co.jp&#x2F;books&#x2F;images&#x2F;picture_large978-4-8144-0088-1.jpeg" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/node-affinity.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">Node affinity</div>
+                        </div>
+                    
+                    
+                        <div class="summary">Kubernetesのkube-schedulerにおいて、必須ルールと推奨ルールを設定しNodesへの割り当てを決定させる
+
+
+Assigning Pods to Nodes | Kubernetes
+
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/authorizationpolicy.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">AuthorizationPolicy</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Security #Authorization
+Istioにおいてアプリケーション（OSI参照モデルのL7レイヤ）認可の役割を担うリソース
+KubernetesのCustomResourceDefinitionによって用意されており、Network policyに比べ柔軟でHTTP特有の設定が可能
+
+
+Istio &#x2F; Authorization Policy
+
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/kustomize.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">Kustomize</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Infrastructure as Code
+Kubernetesの設定ファイルをyamlで記述する際、 kustomization.yaml によってリソース定義の集約等を行うことができるツール
+環境ごとに共通化できる設定（base）、環境ごとの差分設定（overlays）を扱い、設定ファイルの記述を最低限にする
+利用パターン
+Deployment等に指定するイメージを最新のバージョンで置きかえるようなケース
+&amp;gt; kustomize edit set image $BEFORE_IMAGE_NAME=$AFTER_IMAGE_NAME
+
+
+Kustomize - Kubernetes native configuration management
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/datadog-agent.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">Datadog Agent</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Observability
+Datadogへホストのログを送信するソフトウェア。
+各ホストの環境別にいくつかのインストール手段が用意されている
+例としてKubernetesへのインストール方法は以下
+Kubernetes に Datadog Agent をインストールする
+
+
+Agent
+
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/argo-rollouts.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">Argo Rollouts</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;argoproj.github.io&#x2F;static&#x2F;768d962efdd84a6021db7c7792f01b41&#x2F;rollouts-thumbnail.png" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/keda.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">KEDA</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;keda.sh&#x2F;&#x2F;img&#x2F;logos&#x2F;keda-icon-color.png" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/namespace.kubernetes.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="context">Kubernetes&#47;</div>
+                            <div class="title">Namespace</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Kubernetes
+1つのクラスタ内に存在するリソース群を名前空間として分離することができる機能
+Deployment,Serviceなどは名前空間内に配置できるが、PersistentVolumeなどはクラスタ全体に適用されるため名前空間内に配置できない
+
+
+Namespaces | Kubernetes
+
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/statefulset.kubernetes.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="context">Kubernetes&#47;</div>
+                            <div class="title">StatefulSet</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;github.com&#x2F;kubernetes&#x2F;community&#x2F;raw&#x2F;master&#x2F;icons&#x2F;png&#x2F;resources&#x2F;labeled&#x2F;sts-128.png" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/startup-probe.kubernetes.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="context">Kubernetes&#47;</div>
+                            <div class="title">Startup Probe</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Kubernetes
+Probeにおいてアプリケーションの起動にとても長い時間がかかる場合、Startup Probeが成功した後にLiveness ProbeまたはReadiness Probeを開始するような設定ができる
+
+startupProbeをいつ使うべきか？
+Startup Probeを使用して、起動の遅いコンテナを保護する
+
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/security-context.kubernetes.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="context">Kubernetes&#47;</div>
+                            <div class="title">Security Context</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Kubernetes
+Pod定義にセキュリティ文脈の設定を追加するAPI
+主にLinuxベースの以下のような観点に対する制御を行う
+
+Non-root User
+Linux Capabilities
+
+
+
+Configure a Security Context for a Pod or Container | Kubernetes
+
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/リソース.kubernetes.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="context">Kubernetes&#47;</div>
+                            <div class="title">リソース</div>
+                        </div>
+                    
+                    
+                        <div class="summary">RESTfulなKubernetes APIでリソースとして扱われるオブジェクト
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/ユーザ.kubernetes.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="context">Kubernetes&#47;</div>
+                            <div class="title">ユーザ</div>
+                        </div>
+                    
+                    
+                        <div class="summary">Kubernetesにおけるサブジェクト（主体）の一つ
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/probe.kubernetes.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="context">Kubernetes&#47;</div>
+                            <div class="title">Probe</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Continuous Delivery
+#Kubernetes
+Pod上で定期的に実行されるコンテナの診断、ヘルスチェック
+チェックの方法として以下の4つがある
+
+gRPC
+HTTP
+TCP Socket
+Exec
+任意のコマンドを実行し、成功の返り値0を期待する
+
+
+
+Probeには戦略を示すようないくつかの種類が存在する
+
+
+Podのライフサイクル | Kubernetes
+
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/taints-and-tolerations.kubernetes.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="context">Kubernetes&#47;</div>
+                            <div class="title">Taints and Tolerations</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Kubernetes
+kube-schedulerにおいて、Node affinityのようなPodに対する設定ではなくNodesに対する設定によってPodの配置を決定する
+
+
+Taints and Tolerations | Kubernetes
+
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/gateway-api.kubernetes.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="context">Kubernetes&#47;</div>
+                            <div class="title">Gateway API</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#API Architecture #Network #Kubernetes #Cloud Native
+OSI参照モデルのL4&#x2F;L7を扱うKubernetes公式のAPIゲートウェイ
+
+GatewayClass
+Gateway
+HTTPRoute
+
+の3つを定義し実装する
+GatewayClassはGKEのようなクラウドサービスが用意するケースがあり、外部or内部を選択できる
+
+
+Introduction - Kubernetes Gateway API
+
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/headless-service.kubernetes.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="context">Kubernetes&#47;</div>
+                            <div class="title">Headless Service</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Kubernetes
+Serviceの定義方法の一つ
+clusterIP .spec.clusterIP を &quot;None&quot; に指定することで、PodのIPを直接参照するような設定にしkube-proxyはServiceに関与しなくなる
+
+
+Service | Kubernetes
+
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/deployment.kubernetes.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="context">Kubernetes&#47;</div>
+                            <div class="title">Deployment</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;github.com&#x2F;kubernetes&#x2F;community&#x2F;raw&#x2F;master&#x2F;icons&#x2F;png&#x2F;resources&#x2F;labeled&#x2F;deploy-128.png" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/liveness-probe.kubernetes.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="context">Kubernetes&#47;</div>
+                            <div class="title">Liveness Probe</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Kubernetes
+Probeに失敗するとコンテナを再起動する
+
+livenessProbeをいつ使うべきか？
+HTTPリクエストによるLiveness Probeを定義する
+
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/nodes.kubernetes.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="context">Kubernetes&#47;</div>
+                            <div class="title">Nodes</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;github.com&#x2F;kubernetes&#x2F;community&#x2F;raw&#x2F;master&#x2F;icons&#x2F;png&#x2F;infrastructure_components&#x2F;labeled&#x2F;node-128.png" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/pod-security-admission.kubernetes.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="context">Kubernetes&#47;</div>
+                            <div class="title">Pod Security Admission</div>
+                        </div>
+                    
+                    
+                        <div class="summary">PSA
+#Security #Kubernetes
+Pod Security Standardsを違反する可能性がある際のアクションを実行する
+アクションは以下の3つ
+
+Warn
+Audit
+Enforce
+
+
+
+Pod Security Admission | Kubernetes
+
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/horizontalpodautoscalar.kubernetes.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="context">Kubernetes&#47;</div>
+                            <div class="title">HorizontalPodAutoscalar</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;github.com&#x2F;kubernetes&#x2F;community&#x2F;raw&#x2F;master&#x2F;icons&#x2F;png&#x2F;resources&#x2F;labeled&#x2F;hpa-128.png" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/ingress.kubernetes.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="context">Kubernetes&#47;</div>
+                            <div class="title">Ingress</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;github.com&#x2F;kubernetes&#x2F;community&#x2F;raw&#x2F;master&#x2F;icons&#x2F;png&#x2F;resources&#x2F;labeled&#x2F;ing-128.png" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/label.kubernetes.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="context">Kubernetes&#47;</div>
+                            <div class="title">Label</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Kubernetes
+リソースのメタデータとしてリソースを特定するために用いられる
+Labelにはインデックスが貼られるため高速な検索が可能
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/pod-security-standards.kubernetes.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="context">Kubernetes&#47;</div>
+                            <div class="title">Pod Security Standards</div>
+                        </div>
+                    
+                    
+                        <div class="summary">PSS
+#Security #Kubernetes
+Podが満たすべきセキュリティ標準
+3つのセキュリティプロファイルにグループ分けされており上から順に制限が厳しくなっていく
+
+Privileged
+Baseline
+Restricted
+
+
+
+Pod Security Standards | Kubernetes
+
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/initコンテナ.kubernetes.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="context">Kubernetes&#47;</div>
+                            <div class="title">Initコンテナ</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Kubernetes #Cloud Native
+Podと一緒に定義可能な初期化を行うコンテナ
+サイドカーでも同挙動は実現可能だが、ただ一度のみ実行されるのでリソースを調整しやすい
+Initコンテナ
+
+
+Init Containers | Kubernetes
+
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/secret.kubernetes.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="context">Kubernetes&#47;</div>
+                            <div class="title">Secret</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;github.com&#x2F;kubernetes&#x2F;community&#x2F;raw&#x2F;master&#x2F;icons&#x2F;png&#x2F;resources&#x2F;labeled&#x2F;secret-128.png" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/poddisruptionbudget.kubernetes.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="context">Kubernetes&#47;</div>
+                            <div class="title">PodDisruptionBudget</div>
+                        </div>
+                    
+                    
+                        <div class="summary">PDB
+#Kubernetes
+定常的に使用可能にしたいPod数を指定するような仕組み
+シングルトンなServiceを構築するようなケースで常に1台を使用可能にする、といった用途がある
+
+
+Disruption | Kubernetes
+
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/customresourcedefinition.kubernetes.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="context">Kubernetes&#47;</div>
+                            <div class="title">CustomResourceDefinition</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;github.com&#x2F;kubernetes&#x2F;community&#x2F;raw&#x2F;master&#x2F;icons&#x2F;png&#x2F;resources&#x2F;labeled&#x2F;crd-128.png" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/コンテナライフサイクルフック.kubernetes.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="context">Kubernetes&#47;</div>
+                            <div class="title">コンテナライフサイクルフック</div>
+                        </div>
+                    
+                    
+                        <div class="summary">Kubernetes上のコンテナのライフサイクルとして開始時（ENTRYPOINT）と終了時にフックを命令できる機能
+
+
+コンテナライフサイクルフック | Kubernetes
+
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/clusterrole.kubernetes.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="context">Kubernetes&#47;</div>
+                            <div class="title">ClusterRole</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;github.com&#x2F;kubernetes&#x2F;community&#x2F;raw&#x2F;master&#x2F;icons&#x2F;png&#x2F;resources&#x2F;labeled&#x2F;c-role-128.png" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/topology-spread-constraint.kubernetes.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="context">Kubernetes&#47;</div>
+                            <div class="title">Topology Spread Constraint</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Kubernetes
+kube-schedulerにおいて、Inter-pod affinity and anti-affinityでは解決できないようなRolling Update時の不均等なPod配置を許容する
+
+
+Pod Topology Spread Constraints | Kubernetes
+
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/job.kubernetes.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="context">Kubernetes&#47;</div>
+                            <div class="title">Job</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;github.com&#x2F;kubernetes&#x2F;community&#x2F;raw&#x2F;master&#x2F;icons&#x2F;png&#x2F;resources&#x2F;labeled&#x2F;job-128.png" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/pod.kubernetes.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="context">Kubernetes&#47;</div>
+                            <div class="title">Pod</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;github.com&#x2F;kubernetes&#x2F;community&#x2F;raw&#x2F;master&#x2F;icons&#x2F;png&#x2F;resources&#x2F;labeled&#x2F;pod-128.png" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/serviceaccount.kubernetes.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="context">Kubernetes&#47;</div>
+                            <div class="title">ServiceAccount</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;github.com&#x2F;kubernetes&#x2F;community&#x2F;raw&#x2F;master&#x2F;icons&#x2F;png&#x2F;resources&#x2F;labeled&#x2F;sa-128.png" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/volume.kubernetes.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="context">Kubernetes&#47;</div>
+                            <div class="title">Volume</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;github.com&#x2F;kubernetes&#x2F;community&#x2F;raw&#x2F;master&#x2F;icons&#x2F;png&#x2F;resources&#x2F;labeled&#x2F;vol-128.png" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/immutable-configuration.kubernetes.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="context">Kubernetes&#47;</div>
+                            <div class="title">Immutable Configuration</div>
+                        </div>
+                    
+                    
+                        <div class="summary">Kubernetesの設定管理において、設定ファイルを隠蔽する専用のコンテナを用意し、Initコンテナと emptyDir を組み合わせることでアプリケーションコンテナに設定ファイルをロードさせるパターン
+ConfigMapと異なり、設定ファイルのコンテナイメージバージョン管理によってイミュータブルに扱うことができる
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/cronjob.kubernetes.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="context">Kubernetes&#47;</div>
+                            <div class="title">CronJob</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;github.com&#x2F;kubernetes&#x2F;community&#x2F;raw&#x2F;master&#x2F;icons&#x2F;png&#x2F;resources&#x2F;labeled&#x2F;cronjob-128.png" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/rolebinding.kubernetes.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="context">Kubernetes&#47;</div>
+                            <div class="title">RoleBinding</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;github.com&#x2F;kubernetes&#x2F;community&#x2F;raw&#x2F;master&#x2F;icons&#x2F;png&#x2F;resources&#x2F;labeled&#x2F;rb-128.png" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/operator.kubernetes.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="context">Kubernetes&#47;</div>
+                            <div class="title">Operator</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Kubernetes
+CustomResourceDefinitionによるカスタムリソースとそれを操作するControllerを共に使うパターン
+
+
+Operator pattern | Kubernetes
+
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/service.kubernetes.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="context">Kubernetes&#47;</div>
+                            <div class="title">Service</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;github.com&#x2F;kubernetes&#x2F;community&#x2F;raw&#x2F;master&#x2F;icons&#x2F;png&#x2F;resources&#x2F;labeled&#x2F;svc-128.png" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/inter-pod-affinity-and-anti-affinity.kubernetes.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="context">Kubernetes&#47;</div>
+                            <div class="title">Inter-pod affinity and anti-affinity</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Kubernetes
+kube-schedulerにおいて、Podアフィニティでは同一Nodes内に配置されるPodを指定することができる
+合わせてPodアンチアフィニティでは同一ノードに配置されるべきでないPodを指定できる
+
+
+Assigning Pods to Nodes | Kubernetes
+
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/daemonset.kubernetes.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="context">Kubernetes&#47;</div>
+                            <div class="title">DaemonSet</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;github.com&#x2F;kubernetes&#x2F;community&#x2F;raw&#x2F;master&#x2F;icons&#x2F;png&#x2F;resources&#x2F;labeled&#x2F;ds-128.png" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/configmap.kubernetes.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="context">Kubernetes&#47;</div>
+                            <div class="title">ConfigMap</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;github.com&#x2F;kubernetes&#x2F;community&#x2F;raw&#x2F;master&#x2F;icons&#x2F;png&#x2F;resources&#x2F;labeled&#x2F;cm-128.png" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/controller.kubernetes.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="context">Kubernetes&#47;</div>
+                            <div class="title">Controller</div>
+                        </div>
+                    
+                    
+                        <div class="summary">Kubernetesクラスタ内でDeploymentによってシングルトンに起動され、リソースへ観察、分析、アクションを行うような役割
+コントローラの監視対象となるのは以下
+
+Label
+Annotation
+ConfigMap
+
+
+
+Controllers | Kubernetes
+
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/replicaset.kubernetes.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="context">Kubernetes&#47;</div>
+                            <div class="title">ReplicaSet</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;github.com&#x2F;kubernetes&#x2F;community&#x2F;raw&#x2F;master&#x2F;icons&#x2F;png&#x2F;resources&#x2F;labeled&#x2F;rs-128.png" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/downward-api.kubernetes.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="context">Kubernetes&#47;</div>
+                            <div class="title">Downward API</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Kubernetes
+Podのメタデータを環境変数を通じてコンテナに渡すようなケースで利用できるAPI
+
+
+Downward API | Kubernetes
+
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/network-policy.kubernetes.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="context">Kubernetes&#47;</div>
+                            <div class="title">Network policy</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;github.com&#x2F;kubernetes&#x2F;community&#x2F;raw&#x2F;master&#x2F;icons&#x2F;png&#x2F;resources&#x2F;labeled&#x2F;netpol-128.png" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/role.kubernetes.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="context">Kubernetes&#47;</div>
+                            <div class="title">Role</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;github.com&#x2F;kubernetes&#x2F;community&#x2F;raw&#x2F;master&#x2F;icons&#x2F;png&#x2F;resources&#x2F;labeled&#x2F;role-128.png" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/persistentvolume.kubernetes.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="context">Kubernetes&#47;</div>
+                            <div class="title">PersistentVolume</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;github.com&#x2F;kubernetes&#x2F;community&#x2F;raw&#x2F;master&#x2F;icons&#x2F;png&#x2F;resources&#x2F;labeled&#x2F;pv-128.png" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/readiness-probe.kubernetes.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="context">Kubernetes&#47;</div>
+                            <div class="title">Readiness Probe</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Kubernetes
+Probeに失敗するとトラフィックを受け取らないようにし、アプリケーションが自分自身で復帰するのを期待する
+
+readnessProbeをいつ使うべきか？
+Readiness Probeを定義する
+
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/clusterrolebinding.kubernetes.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="context">Kubernetes&#47;</div>
+                            <div class="title">ClusterRoleBinding</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;github.com&#x2F;kubernetes&#x2F;community&#x2F;raw&#x2F;master&#x2F;icons&#x2F;png&#x2F;resources&#x2F;labeled&#x2F;crb-128.png" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/annotation.kubernetes.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="context">Kubernetes&#47;</div>
+                            <div class="title">Annotation</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Kubernetes
+Labelの利用がそぐわないケースで代替となるメタデータの指定方法、ツールやライブラリからパラメータのように利用されることを想定している
+Labelと異なりインデックスはされない
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/kube-proxy.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">kube-proxy</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;github.com&#x2F;kubernetes&#x2F;community&#x2F;raw&#x2F;master&#x2F;icons&#x2F;png&#x2F;control_plane_components&#x2F;labeled&#x2F;k-proxy-128.png" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/gateway.google-cloud.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="context">Google Cloud&#47;</div>
+                            <div class="title">Gateway</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Cloud Native
+Google CloudのGKE上でGateway APIを適用する
+外部Gatewayをデプロイする時は、GatewayClassに gke-l7-global-external-managed を指定した上で、Certificate Managerのような手段でセキュリティを担保する
+Kubernetes APIの NamedAddress に静的IPアドレスを指定することができる 方法
+
+
+Gateway のデプロイ  |  Google Kubernetes Engine (GKE)  |  Google Cloud
+
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/gke.google-cloud.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="context">Google Cloud&#47;</div>
+                            <div class="title">GKE</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;encrypted-tbn0.gstatic.com&#x2F;images?q=tbn:ANd9GcRJKUMkuqNwND4ITLcurk8rjF1VgDX0sR5yUw&amp;s" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/kube-scheduler.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">kube-scheduler</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;github.com&#x2F;kubernetes&#x2F;community&#x2F;raw&#x2F;master&#x2F;icons&#x2F;png&#x2F;control_plane_components&#x2F;labeled&#x2F;sched-128.png" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/kubernetes-icons-set.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">Kubernetes Icons Set</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Documentation
+Kubernetesの各リソース等のアイコンを公開しているリポジトリ
+様々なダイアグラムサービスのデータセットに利用されている
+
+community&#x2F;icons at master · kubernetes&#x2F;community
+
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/ambassador-edge-stack.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">Ambassador Edge Stack</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;avatars.githubusercontent.com&#x2F;u&#x2F;9270257?s=200&amp;v=4" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/eks.aws.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="context">AWS&#47;</div>
+                            <div class="title">EKS</div>
+                        </div>
+                    
+                    
+                        <div class="summary">Elastic Kubernetes Service
+#Cloud Native
+AWSクラウド上でKubernetesを実行するマネージドサービス、Kubernetes準拠であるため既存のKubernetesアプリケーションと互換性がある
+Kubernetes Serviceでのロードバランシングに加え、Elastic Load Balancingの使用をサポートしている
+
+What is Amazon EKS? - Amazon EKS
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/kubernetes-network-policy-recipes.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">Kubernetes Network Policy Recipes</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Kubernetes
+Network policyの実装例をまとめたリポジトリ
+
+
+ahmetb&#x2F;kubernetes-network-policy-recipes
+
+</div>
+                    
+                </li>
+            </a>
+        
+    </ul>
+
+
+        </main>
+        <footer>
+            Generated by <a href="https://github.com/boykush/scraps" target="_blank" rel="noopener noreferrer">Scraps</a>
+        </footer>
+        <!-- Code syntax highlight -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script>
+        <!-- Mermaid -->
+        <script type="module">
+            import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+        </script>
+        
+         
+    </body>
+</html>
