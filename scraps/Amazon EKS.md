@@ -2,7 +2,7 @@
 
 #[[Cloud Native]]
 
-AWSクラウド上で[[Kubernetes]]を実行するマネージドサービス、Kubernetes準拠であるため既存のKubernetesアプリケーションと互換性がある
+[[AWS]]クラウド上で[[Kubernetes]]を実行するマネージドサービス、Kubernetes準拠であるため既存のKubernetesアプリケーションと互換性がある
 
 [[Kubernetes/Service|Kubernetes Service]]での[[ロードバランシング]]に加え、[[Elastic Load Balancing]]の使用をサポートしている
 

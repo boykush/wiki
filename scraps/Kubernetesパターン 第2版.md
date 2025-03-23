@@ -59,7 +59,7 @@ Bilgin Ibryam, Roland Huß, [[松浦隼人]]
 ### 16章 Sidecar（サイドカー）
 - [[Sidecar]]
 ### 17章 Adapter（アダプタ）
-- Prometheus
+- [[Prometeus]]
 ### 18章 Ambassador（アンバサダ）
 ## 第IV部 設定パターン
 ### 19章 EnvVar Configuration（環境変数による設定）
@@ -80,15 +80,14 @@ Bilgin Ibryam, Roland Huß, [[松浦隼人]]
 ### 24章 Network Segmentation（ネットワークセグメンテーション）
 - [[Multitenancy|マルチテナント]]
 - [[Kubernetes/Network policy]]
-- Kubernetes Network Policy Recipes
-- Inspektor Gadget
-- eBPF
+- [[Kubernetes Network Policy Recipes]]
+- Inspektor Gadget/[[eBPF]]/Cilium
 - [[サービスメッシュ]]/[[Istio]]/[[AuthorizationPolicy]]
 - ソフトウェア定義ネットワーク
 ### 25章 Secure Configuration（セキュア設定）
 - [[Kubernetes/Secret]]
-- Sealed Secret/External Secret/SMS(AWS Secret Manager)/sops
-- KMS(AWS KMS)
+- Sealed Secret/External Secret/SMS(AWS Secret Manager)/[[sops]]
+- [[KMS]]([[AWS KMS]])
 - CSI/Secret Storage CSI Provider
 - Vault Sidecar Agent Injector
 ### 26章 Access Control（アクセス制御）
