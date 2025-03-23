@@ -13,7 +13,7 @@ Bilgin Ibryam, Roland Huß, [[松浦隼人]]
 - [[マイクロサービス]]/[[境界づけられたコンテキスト]]/[[集約]]
 - [[ドメイン駆動設計]]/[[ヘキサゴナルアーキテクチャ]]/[[The Twelve-Factor App]]
 - [[コンテナ]]
-- [[Kubernetes/Pod]]/[[Kubernetes/Service]]/Label/[[Kubernetes/Namespace]]
+- [[Kubernetes/Pod]]/[[Kubernetes/Service]]/[[Kubernetes/Label]]/[[Kubernetes/Namespace]]
 ## 第1部 基本パターン
 ### 2章 Predicatable Demand（予測可能な需要）
 ### 3章 Declarative Deployment（宣言的デプロイ）
@@ -52,7 +52,7 @@ Bilgin Ibryam, Roland Huß, [[松浦隼人]]
 - [[Kubernetes/Ingress]]
 - [[Knative Serving]]
 ### 14章 Self Awareness（セルフアウェアネス）
-- [[Downward API]]
+- [[Kubernetes/Downward API]]
 ## 第III部 構造化パターン
 ### 15章 Init Container（Init コンテナ）
 - [[Kubernetes/Initコンテナ]]
@@ -99,6 +99,20 @@ Bilgin Ibryam, Roland Huß, [[松浦隼人]]
 - [[Kubernetes/ClusterRole]]/[[Kubernetes/ClusterRoleBinding]]
 ## 第VI部 高度なパターン
 ### 27章 Controller（コントローラ）
+- [[Kubernetes/Controller]]
 ### 28章 Operator（オペレータ）
+- [[Kubernetes/Operator]]
+- Kubebuilder/Operator Framework/Metacontroller
 ### 29章 Elastic Scale（エラスティックスケール）
+- [[Kubernetes/HorizontalPodAutoscalar]]
+- [[Knative]]/[[KEDA]]
+- VerticalPodAutoscalar
+- ClusterAutoscalar
 ### 30章 Image Builder（イメージビルダ）
+- [[Docker]]/[[Dockerfile]]/OCI
+- コンテナイメージビルダ #[[Continuous Integration]]
+  - Buildah/Podman/Kaniko/BuildKit
+  - CNB(Cloud Native Buildpacks)
+  - Jib/ko/Apko
+- ビルドオーケストレータ #[[Continuous Delivery]]
+  - OpenShift Build/kbld/[[Kubernetes/Job]]
