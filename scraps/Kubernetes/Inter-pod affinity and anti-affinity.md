@@ -1,4 +1,6 @@
-[[Kubernetes]]の[[kube-scheduler]]において、Podアフィニティでは同一[[Kubernetes/Nodes]]内に配置される[[Kubernetes/Pod]]を指定することができる
+#[[Kubernetes]]
+
+[[kube-scheduler]]において、Podアフィニティでは同一[[Kubernetes/Nodes]]内に配置される[[Kubernetes/Pod]]を指定することができる
 
 合わせてPodアンチアフィニティでは同一ノードに配置されるべきでないPodを指定できる
 

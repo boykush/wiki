@@ -4,7 +4,7 @@
 
 [[Kubernetes/Pod]]に対する接続元(ingress)、接続先(egress)のルールを定義できるリソース。[[OSI参照モデル]]のL3/L4ネットワークレイヤを扱う[[Kubernetes/リソース]]
 
-ルールは[[CNI]]プラグインによって利用される
+ルールは[[Container Network Interface|CNI]]プラグインによって利用される
 
 Podセレクタは[[Kubernetes/Namespace]]内でのみマッチする
 

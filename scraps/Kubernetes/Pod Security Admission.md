@@ -1,7 +1,7 @@
 ## PSA
-#[[Security]]
+#[[Security]] #[[Kubernetes]]
 
-[[Kubernetes]]において、[[Pod Security Standards]]を違反する可能性がある際のアクションを実行する
+[[Kubernetes/Pod Security Standards]]を違反する可能性がある際のアクションを実行する
 
 アクションは以下の3つ
 

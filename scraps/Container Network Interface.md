@@ -1,4 +1,4 @@
-## Container Network Interface
+## CNI
 
 #[[Cloud Native]] #[[Network]]
 

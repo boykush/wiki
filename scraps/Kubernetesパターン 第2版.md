@@ -20,17 +20,17 @@ Bilgin Ibryam, Roland Huß, [[松浦隼人]]
 - [[Kubernetes/Deployment]]
 - [[ブルーグリーン戦略|ブルーグリーンリリース]]/[[カナリアリリース]]
 - Flagger/[[Argo Rollouts]]/[[Knative]]
-### 4章 Health [[Probe]]
-- [[Liveness Probe]]/[[Readiness Probe]]/[[Startup Probe]]
+### 4章 Health [[Kubernetes/Probe]]
+- [[Kubernetes/Liveness Probe]]/[[Kubernetes/Readiness Probe]]/[[Kubernetes/Startup Probe]]
 ### 5章 Managed Lifecycle（管理されたライフサイクル）
 - [[SIGKILL]]/[[SIGTERM]]
-- [[コンテナライフサイクルフック|postStart/preStop]]
+- [[Kubernetes/コンテナライフサイクルフック|postStart/preStop]]
 ### 6章 Automated Placement（自動的な配置）
 - [[kube-scheduler|スケジューリング]]
   - [[Node affinity|ノードアフィニティ]]
-  - [[Inter-pod affinity and anti-affinity|Podアフィニティとアンチアフィニティ]]
-  - [[Topology Spread Constraint]]
-  - [[Taints and Tolerations]]
+  - [[Kubernetes/Inter-pod affinity and anti-affinity|Podアフィニティとアンチアフィニティ]]
+  - [[Kubernetes/Topology Spread Constraint]]
+  - [[Kubernetes/Taints and Tolerations]]
 ## 第II部 振る舞いパターン
 ### 7章 Batch Job（バッチジョブ）
 - [[Kubernetes/Job]]
@@ -41,7 +41,7 @@ Bilgin Ibryam, Roland Huß, [[松浦隼人]]
 ### 10章 Singleton Service（シングルトンサービス）
 - [[Kubernetes/Headless Service|ヘッドドレスService]]/[[kube-proxy]]/StatefulService
 - [[etcd]]/ZooKeeper/[[Dapr]]
-- [[PodDisruptionBudget]]
+- [[Kubernetes/PodDisruptionBudget]]
 ### 11章 Stateless Service（ステートレスサービス）
 - [[Kubernetes/PersistentVolume|PersistentVolume/PersistentVolumeClaim]]
 ### 12章 Stateful Service（ステートフルサービス）
@@ -69,13 +69,13 @@ Bilgin Ibryam, Roland Huß, [[松浦隼人]]
 - [[Kubernetes/Secret|Secret]]
 ### 21章 Immutable Configuration（イミュータブル設定）
 - [[Docker]]
-- [[Immutable Configuration]]パターン
+- [[Kubernetes/Immutable Configuration]]パターン
 - OpenShift Templates
 ### 22章 Configuration Template（設定テンプレート）
 ## 第V部 [[Security|セキュリティ]]パターン
 ### 23章 Process Containment（プロセス封じ込め）
-- [[Security Context]]
-- [[Pod Security Standards]]/[[Pod Security Admission]]
+- [[Kubernetes/Security Context]]
+- [[Kubernetes/Pod Security Standards]]/[[Kubernetes/Pod Security Admission]]
 - シフトレフト
 ### 24章 Network Segmentation（ネットワークセグメンテーション）
 - [[Multitenancy|マルチテナント]]
@@ -86,9 +86,9 @@ Bilgin Ibryam, Roland Huß, [[松浦隼人]]
 - ソフトウェア定義ネットワーク
 ### 25章 Secure Configuration（セキュア設定）
 - [[Kubernetes/Secret]]
-- Sealed Secret/External Secret/SMS(AWS Secret Manager)/[[sops]]
+- Sealed Secret/External Secret/[[SMS]](AWS Secret Manager)/[[sops]]
 - [[KMS]]([[AWS KMS]])
-- CSI/Secret Storage CSI Provider
+- [[Container Storage Interface]]/[[Secrets Store CSI Driver]]
 - Vault Sidecar Agent Injector
 ### 26章 Access Control（アクセス制御）
 - [[OIDC]]/[[Bearerトークン]]
@@ -108,7 +108,7 @@ Bilgin Ibryam, Roland Huß, [[松浦隼人]]
 - VerticalPodAutoscalar
 - ClusterAutoscalar
 ### 30章 Image Builder（イメージビルダ）
-- [[Docker]]/[[Dockerfile]]/OCI
+- [[Docker]]/[[Dockerfile]]/[[Open Container Initiative|OCI]]
 - コンテナイメージビルダ #[[Continuous Integration]]
   - Buildah/Podman/Kaniko/BuildKit
   - CNB(Cloud Native Buildpacks)

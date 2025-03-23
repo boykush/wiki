@@ -1,8 +1,8 @@
 ## PSS
 
-#[[Security]]
+#[[Security]] #[[Kubernetes]]
 
-[[Kubernetes]]において用意されている[[Kubernetes/Pod]]が満たすべきセキュリティ標準
+[[Kubernetes/Pod]]が満たすべきセキュリティ標準
 
 3つのセキュリティプロファイルにグループ分けされており上から順に制限が厳しくなっていく
 

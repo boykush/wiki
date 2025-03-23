@@ -1,6 +1,8 @@
 #[[Continuous Delivery]]
 
-[[Kubernetes]]の[[Kubernetes/Pod]]上で定期的に実行される[[コンテナ]]の診断、ヘルスチェック
+#[[Kubernetes]]
+
+[[Kubernetes/Pod]]上で定期的に実行される[[コンテナ]]の診断、ヘルスチェック
 
 チェックの方法として以下の4つがある
 - [[gRPC]]
