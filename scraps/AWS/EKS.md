@@ -1,4 +1,4 @@
-## Amazon Elastic Kubernetes Service
+## Elastic Kubernetes Service
 
 #[[Cloud Native]]
 

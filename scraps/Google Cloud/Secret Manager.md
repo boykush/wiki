@@ -2,7 +2,7 @@
 
 [[Google Cloud]]が提供する[[SMS]]
 
-[[Secrets Store CSI Driver]]を用いて[[GKE]]に組み込み可能
+[[Secrets Store CSI Driver]]を用いて[[Google Cloud/GKE]]に組み込み可能
 
 ---
 

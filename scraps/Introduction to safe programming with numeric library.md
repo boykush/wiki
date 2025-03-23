@@ -1,7 +1,7 @@
 ## 数値ライブラリで始める安全なプログラミング
-#[[Programming]] #[[Security]]
+#[[Programming]] #[[Security]] #[[Scala]]
 
-[Scala Matsuri 2024](https://scalamatsuri.org/ja/programs/SESSION_DAY_1_08)での自身の発表
+[Scala Matsuri 2024](https://scalamatsuri.org/ja/programs/SESSION_DAY_1_08)での発表
 
 [[Spire]]ライブラリを用いて安全な数値計算を行うテクニックを紹介している
 

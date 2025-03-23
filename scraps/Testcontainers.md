@@ -6,7 +6,7 @@
 
 [[Docker]]イメージをベースにコンテナを生成する
 
-Java、Go、Rustといったいくつかの言語向けにライブラリが用意されており、Javaでの最小の利用イメージは以下
+[[Java]]、[[Go]]、[[Rust]]といったいくつかの言語向けにライブラリが用意されており、Javaでの最小の利用イメージは以下
 
 ```java
 GenericContainer redis = new GenericContainer("redis:5.0.3-alpine")

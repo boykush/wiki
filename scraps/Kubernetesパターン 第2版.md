@@ -10,7 +10,7 @@ Bilgin Ibryam, Roland Huß, [[松浦隼人]]
 [[Kubernetes]]ベースの[[Cloud Native|クラウドネイティブ]]アプリケーションを構築するパターンとして紹介する書籍
 
 ### 序章
-- [[マイクロサービス]]/[[境界づけられたコンテキスト]]/[[集約]]
+- [[マイクロサービス]]/[[境界づけられたコンテキスト]]/[[DDD/集約]]
 - [[ドメイン駆動設計]]/[[ヘキサゴナルアーキテクチャ]]/[[The Twelve-Factor App]]
 - [[コンテナ]]
 - [[Kubernetes/Pod]]/[[Kubernetes/Service]]/[[Kubernetes/Label]]/[[Kubernetes/Namespace]]
@@ -57,7 +57,7 @@ Bilgin Ibryam, Roland Huß, [[松浦隼人]]
 ### 15章 Init Container（Init コンテナ）
 - [[Kubernetes/Initコンテナ]]
 ### 16章 Sidecar（サイドカー）
-- [[Sidecar]]
+- [[サイドカー]]
 ### 17章 Adapter（アダプタ）
 - [[Prometeus]]
 ### 18章 Ambassador（アンバサダ）
@@ -87,7 +87,7 @@ Bilgin Ibryam, Roland Huß, [[松浦隼人]]
 ### 25章 Secure Configuration（セキュア設定）
 - [[Kubernetes/Secret]]
 - Sealed Secret/External Secret/[[SMS]](AWS Secret Manager)/[[sops]]
-- [[KMS]]([[AWS KMS]])
+- [[KMS]]([[AWS/KMS]])
 - [[Container Storage Interface]]/[[Secrets Store CSI Driver]]
 - Vault Sidecar Agent Injector
 ### 26章 Access Control（アクセス制御）

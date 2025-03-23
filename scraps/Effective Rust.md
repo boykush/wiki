@@ -3,7 +3,7 @@
 ### Authors:
 David Drysdale, 中田 秀基
 
-#[[Book]] #[[Programming]]
+#[[Book]] #[[Programming]] #[[Rust]]
 
 ![cover](https://www.oreilly.co.jp/books/images/picture_large978-4-8144-0094-2.jpeg)
 

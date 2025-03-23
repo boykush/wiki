@@ -1,4 +1,4 @@
-## AWS Key Management Service
+## Key Management Service
 
 #[[Security]]
 
