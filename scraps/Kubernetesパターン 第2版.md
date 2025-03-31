@@ -87,7 +87,7 @@ Bilgin Ibryam, Roland Huß, [[松浦隼人]]
 ### 25章 Secure Configuration（セキュア設定）
 - [[Kubernetes/Secret]]
 - Sealed Secret/External Secret/[[SMS]](AWS Secret Manager)/[[sops]]
-- [[KMS]]([[AWS/KMS]])
+- [[KMS]]([[Amazon/KMS]])
 - [[Container Storage Interface]]/[[Secrets Store CSI Driver]]
 - Vault Sidecar Agent Injector
 ### 26章 Access Control（アクセス制御）
