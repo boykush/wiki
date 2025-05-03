@@ -4,4 +4,4 @@
 
 ---
 
-- [Kubernetes Scheduler | Kubernetes](https://kubernetes.io/docs/concepts/scheduling-eviction/kube-scheduler/)
+<https://kubernetes.io/docs/concepts/scheduling-eviction/kube-scheduler/>

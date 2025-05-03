@@ -4,4 +4,4 @@
 
 様々なダイアグラムサービスのデータセットに利用されている
 
-- [community/icons at master · kubernetes/community](https://github.com/kubernetes/community/tree/master/icons)
+<https://github.com/kubernetes/community/tree/master/icons>

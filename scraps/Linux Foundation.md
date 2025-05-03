@@ -2,4 +2,4 @@ Linuxのようなオープンソースソフトウェアやテクノロジーを
 
 ---
 
-- [Linux Foundation - Decentralized innovation, built with trust](https://www.linuxfoundation.org/)
+<https://www.linuxfoundation.org/>

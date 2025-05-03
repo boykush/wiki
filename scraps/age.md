@@ -4,4 +4,4 @@
 
 ---
 
-- [FiloSottile/age](https://github.com/FiloSottile/age)
+<https://github.com/FiloSottile/age>

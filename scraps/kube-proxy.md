@@ -10,4 +10,4 @@
 
 ---
 
-- [Cluster Architecture | Kubernetes](https://kubernetes.io/docs/concepts/architecture/#kube-proxy)
+<https://kubernetes.io/docs/concepts/architecture/#kube-proxy>

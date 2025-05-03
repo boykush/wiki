@@ -8,4 +8,4 @@
 
 ---
 
-[概要 | Kubernetes](https://kubernetes.io/ja/docs/concepts/overview/)
+<https://kubernetes.io/ja/docs/concepts/overview/>
