@@ -3,7 +3,7 @@
 ### Authors:
 Nicole Forsgren, Jez Humble, Gene Kim
 
-#[[DevOps]] #[[Book]]
+#[[DevOps]] #[[Book]] #[[リーン|Lean]]
 
 ![](https://img.ips.co.jp/ij/18/1118101029/1118101029-520x.jpg)
 
