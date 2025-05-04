@@ -20,4 +20,4 @@ STRIDEは以下の頭文字を取ったもの
 
 ---
 
-- [STRIDEモデル](https://learn.microsoft.com/ja-jp/azure/security/develop/threat-modeling-tool-threats#stride-model)
+- <https://learn.microsoft.com/ja-jp/azure/security/develop/threat-modeling-tool-threats#stride-model>
