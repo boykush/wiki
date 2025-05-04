@@ -3,5 +3,5 @@
 
 キーワード
 - [[SRE]]
-- Platform Engineering
+- [[Platform Engineering]]
 - [[チームトポロジー]]
