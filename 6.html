@@ -1,0 +1,1176 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <!-- Page title -->
+        
+            <title>Kush&#x27;s Wiki</title>
+            <meta property="og:title" content="Kush&#x27;s Wiki" />
+            <meta name="twitter:title" content="Kush&#x27;s Wiki" />
+        
+        <!-- Page description -->
+        
+            <meta name="description" content="boykushのナレッジ置き場" />
+            <meta property="og:description" content="boykushのナレッジ置き場" />
+            <meta name="twitter:description" content="boykushのナレッジ置き場" />
+        
+        <!-- Page favicon -->
+        
+            <link rel="icon" type="image/png" href="https:&#x2F;&#x2F;gist.github.com&#x2F;boykush&#x2F;3bbc68b5d2580374c97d4336b87fb70f&#x2F;raw&#x2F;a838b8f3584b21bcbbe4dd53afca380fe18695a7&#x2F;boykush_icon.png" />
+        
+        <!-- Rubik font -->
+        <link href="https://fonts.cdnfonts.com/css/rubik" rel="stylesheet">
+        <!-- Noto Sans JP font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+        <!-- Code syntax highlight theme -->
+        <link href="https://unpkg.com/nord-highlightjs@0.1.0/dist/nord.css" rel="stylesheet" type="text/css" />
+        <!-- Style sheet -->
+        <link rel="stylesheet" href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;main.css">
+        
+        
+    </head>
+    <body>
+        <header>
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;">
+                <h1>Kush&#x27;s Wiki</h1>
+            </a>
+        </header>
+        <main>
+            
+    <div class="index">
+        
+          <div class="search-block">
+              <span class="icon" />
+              <input
+                type="text"
+                id="search-input"
+                onkeyup="doSearch()"
+                placeholder="Search by title..."
+                />
+              <ul id="search-results"></ul>
+          </div>
+        
+        <div class="tags-block">
+            
+    <ul class="tag-links">
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/agile.html">
+                <li class="item">
+                    <span class="title">Agile</span>&nbsp;<span>(51)</span>
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/security.html">
+                <li class="item">
+                    <span class="title">Security</span>&nbsp;<span>(42)</span>
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/cloud-native.html">
+                <li class="item">
+                    <span class="title">Cloud Native</span>&nbsp;<span>(37)</span>
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/testing.html">
+                <li class="item">
+                    <span class="title">Testing</span>&nbsp;<span>(34)</span>
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/programming.html">
+                <li class="item">
+                    <span class="title">Programming</span>&nbsp;<span>(34)</span>
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/book.html">
+                <li class="item">
+                    <span class="title">Book</span>&nbsp;<span>(34)</span>
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/person.html">
+                <li class="item">
+                    <span class="title">Person</span>&nbsp;<span>(32)</span>
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/observability.html">
+                <li class="item">
+                    <span class="title">Observability</span>&nbsp;<span>(29)</span>
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/team-organization.html">
+                <li class="item">
+                    <span class="title">Team Organization</span>&nbsp;<span>(29)</span>
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/network.html">
+                <li class="item">
+                    <span class="title">Network</span>&nbsp;<span>(27)</span>
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/software-design.html">
+                <li class="item">
+                    <span class="title">Software Design</span>&nbsp;<span>(25)</span>
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/data-store.html">
+                <li class="item">
+                    <span class="title">Data Store</span>&nbsp;<span>(25)</span>
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/api-architecture.html">
+                <li class="item">
+                    <span class="title">API Architecture</span>&nbsp;<span>(25)</span>
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/continuous-integration.html">
+                <li class="item">
+                    <span class="title">Continuous Integration</span>&nbsp;<span>(18)</span>
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/continuous-delivery.html">
+                <li class="item">
+                    <span class="title">Continuous Delivery</span>&nbsp;<span>(18)</span>
+                </li>
+            </a>
+        
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;tags/">
+                <li class="item">
+                    <span class="more-link">More...</span>
+                </li>
+            </a>
+        
+    </ul>
+
+        </div>
+        <div class="links-block">
+            <p class="sort-key">Sort by - linked count</p>
+            
+    <ul class="scrap-links">
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/変更障害率.four-keys.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="context">Four Keys&#47;</div>
+                            <div class="title">変更障害率</div>
+                        </div>
+                    
+                    
+                        <div class="summary">Change Failure Rate
+#DevOps
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/container-storage-interface.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">Container Storage Interface</div>
+                        </div>
+                    
+                    
+                        <div class="summary">CSI
+コンテナオーケストラレーション（主にKubernetes）でのコンテナ化されたワークロードから任意のストレージシステムを使用可能にするための仕様とその実体であるProtocol Buffers（gRPC通信前提）定義を提供する
+
+
+container-storage-interface&#x2F;spec
+
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/adr.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">ADR</div>
+                        </div>
+                    
+                    
+                        <div class="summary">Architectural Decision Records
+#Documentation
+アーキテクチャに関する意思決定とその理由を記録する文書。意思決定に際する文脈、根拠、その決定による成果物等を記述する
+ADRはなぜそのアーキテクチャを選出したかの意思決定を理解するのを助ける。
+ADRはチームメンバーの誰もが作成できる。ただしオーナーシップとしてAuthorは明確にする必要がある。初期ステータスは Proposed とする。
+次に他チームメンバーによるレビューを行う。修正すべき点がある場合は Proposed のままアクションのアサインを行う。このときアサインはチームメンバーの誰でもよい。ADR自体はRejectする場合はステータスを Rejected にしADRのライフサイクルは終了する。
+レビューを経て全てのアクションが完了した場合、ステータスを Accepted にする。一度AcceptされたADRはイミュータブルに扱い変更はしない。
+
+
+Architectural Decision Records (ADRs)
+ADR process - AWS Prescriptive Guidance
+
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/two-pizza-team.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">two-pizza team</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Team Organization
+
+「私たちはチームの規模を、ピザ 2 枚で賄える人数以下に抑えることにしています」とベゾスは述べています。「これを 2 枚のピザチームのルールと呼んでいます。」
+
+Amazonに浸透する1チームの規模の考え
+
+
+2 枚のピザチーム - AWS での DevOps の概要
+
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/newtype.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">newtype</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Programming
+既存型をラップする形で新たな型を定義する
+型エイリアスのように使われることが多いが、型エイリアスと異なりあくまで別の型として扱う
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/リーン.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">リーン</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Agile
+トヨタが源流となるリーン生産方式をソフトウェア開発に適用している
+リーンソフトウェア開発には7つの原則がある
+
+ムダをなくす
+品質を作り込む
+知識を作り出す
+決定を遅らせる
+早く提供する
+人を尊重する
+全体を最適化する
+
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/ward-cunningham.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">Ward Cunningham</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;pbs.twimg.com&#x2F;profile_images&#x2F;1554940713&#x2F;cunningham_400x400.jpg" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/サイドカープロキシ.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">サイドカープロキシ</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Network
+サイドカーとして、サービスメッシュ内でプロキシを利用して実装される汎用パターン
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/mapreduce.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">MapReduce</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Data Processing
+Unixのプロセスと同様の特徴を持つ分散ファイルシステム上のバッチ処理フレームワーク。
+MapReduceジョブは以下の2つに分かれる
+
+Mapper
+分散ファイルシステムの各レコードからキーと値のコレクションを抽出する
+
+
+Reducer
+mapperによって生成されたキーと値のコレクションからコレクションに対するイテレータとともに関数を適用し出力レコードを適用する
+
+
+
+HadoopのMapReduce実装ではHDFS(Hadoop Destributed File System)と呼ばれる分散ファイルシステムが用いられる
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/container-network-interface.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">Container Network Interface</div>
+                        </div>
+                    
+                    
+                        <div class="summary">CNI
+#Cloud Native #Network
+LinuxおよびWindowsコンテナにおける、ネットワークインターフェースを構成するプラグインを作成するための仕様とライブラリ、およびサポートされているプラグイン
+CNCF project
+
+
+CNI
+
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/platform-engineering.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">Platform Engineering</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#DevOps
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/java.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">Java</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#[Programming]
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/クリーンアーキテクチャ.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">クリーンアーキテクチャ</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;blog.cleancoder.com&#x2F;uncle-bob&#x2F;images&#x2F;2012-08-13-the-clean-architecture&#x2F;CleanArchitecture.jpg" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/認知負荷.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">認知負荷</div>
+                        </div>
+                    
+                    
+                        <div class="summary">個人やチームの認知容量に対する負荷のこと
+認知負荷は3つに分類することができる
+課題内在性認知負荷
+問題領域のタスクの難易度に関する負荷、研修・技術選定・ペアプログラミング等で解消する
+課題外在性認知負荷
+タスクを実施する環境に関する負荷、CIによる自動化等で解消する
+学習関連負荷
+知識の構築に関する負荷、学習によって増やすべき負荷とされる
+
+
+情報過多にご用心！生産性の低下を招く「認知的過負荷」への対処法 ── 海の向こうからオピニオン その70 (1&#x2F;2) - チームの教科書｜アトラシアン株式会社
+
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/型エイリアス.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">型エイリアス</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Programming
+名前の通り型のエイリアスを定義する
+あくまでエイリアスであるためエイリアス間の値は同一の型として扱われる
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/x-as-a-serviceモード.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">X-as-a-Serviceモード</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Team Organization
+チームトポロジーにて紹介される3つのチーム間インタラクションの内の1つ
+APIインターフェース、ドキュメントを他チームに提供しソフトウェア設計と連動した疎なコミュニケーションを目指す
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/seb-rose.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">Seb Rose</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;github.com&#x2F;sebrose.png" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/関数型ドメインモデリング.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">関数型ドメインモデリング</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;64.media.tumblr.com&#x2F;c8a2317e7e796671fa2ac6deaf0d6e1b&#x2F;39ad9d2c77efd826-5b&#x2F;s2048x3072&#x2F;8b62a7a2f05481eb786b4aa92590a84a1c75f92c.jpg" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/shopifyはいかにしてモジュラモノリスへ移行したか.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">Shopifyはいかにしてモジュラモノリスへ移行したか</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#モジュラモノリス
+
+
+Shopifyはいかにしてモジュラモノリスへ移行したか - InfoQ
+
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/etl.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">ETL</div>
+                        </div>
+                    
+                    
+                        <div class="summary">Extract transform load
+#Data Processing
+
+ETL とは? - 抽出、変換、ロードの説明 - AWS
+
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/multitenancy.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">Multitenancy</div>
+                        </div>
+                    
+                    
+                        <div class="summary">分離されたユーザのグループ（テナント）を複数持つことをサポートするプラットフォームの機能
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/honeycomb.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">Honeycomb</div>
+                        </div>
+                    
+                    
+                        <div class="summary">Observabilityに関するエンドツーエンドのプロダクト
+Retrieverというオブザーバビリティに最適化された独自のデータストアを備えており、S3によって実装されている
+
+
+Honeycomb.io Documentation | Honeycomb
+
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/quic.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">QUIC</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Network #HTTP
+インターネット上の通信で多く用いられてきたTCPの課題を解消する、Googleが開発したプロトコル
+UDPをベースし、コネクション確立によるRTTの増大を防ぎつつ、TCPと同様の高い信頼性の実現、TLSを必須とするセキュリティの考慮がされる。
+HTTP&#x2F;3で用いられるプロトコルで高速なHTTPS通信を実現する　
+コネクションID
+QUICではIPアドレス、ポート番号を抽象化する形で宛先、送信元に対応するコネクションIDが用いられる。
+コネクションIDによりモバイル機器のようなWiFi・モバイルデータ通信等が頻繁に切り替わりIPアドレスの変更がある場合でも、コネクションを途切らせずに通信を続けられる。
+QUICヘッダー
+QUICヘッダーはTCPと異なり明確にロングヘッダー、ショートヘッダーの2つに分類される。ロングヘッダーはコネクション確立時、ショートヘッダーはその後のデータ送信に用いられる
+ロングヘッダーはコネクション確立に必要な情報をまとめて送る（1-RTTハンドシェイク）ことでRTTの改善がされる
+ストリーム
+QUICでは順序制御や再送制御を管理する単位としてストリーム（ID）という概念を用いる。ストリーム同士は独立しておりHoLブロッキングのような問題の回避をする
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/open-container-initiative.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">Open Container Initiative</div>
+                        </div>
+                    
+                    
+                        <div class="summary">OCI
+2015年にDockerとその他の業界リーダーによって作成された、コンテナ形式とランタイムに関するオープンな業界標準
+具体的に以下の3つの仕様を持つ
+
+runtime-spec
+image-spec
+distribution-spec
+
+Linux Foundationプロジェクト
+
+
+Open Container Initiative - Open Container Initiative
+
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/インクリメント.スクラム.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="context">スクラム&#47;</div>
+                            <div class="title">インクリメント</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Agile
+スクラムの成果物として、動作するプロダクトのこと
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/経験主義の三本柱.スクラム.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="context">スクラム&#47;</div>
+                            <div class="title">経験主義の三本柱</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#スクラム
+経験主義をベースにスクラムガイドで紹介されている三本柱
+
+透明性
+検査
+適応
+
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/5つの価値基準.スクラム.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="context">スクラム&#47;</div>
+                            <div class="title">5つの価値基準</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#スクラム
+スクラムガイドで紹介されている5つの価値基準
+
+確約(Commitment)
+集中(Focus)
+公開(Openness)
+尊敬(Respect)
+勇気(Courage)
+
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/不確実性のコーン.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">不確実性のコーン</div>
+                        </div>
+                    
+                    
+                        <div class="summary">ソフトウェアの見積もりは初期の段階ほどばらつきが大きくなるという考え
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/アジャイルソフトウェアの12の原則.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">アジャイルソフトウェアの12の原則</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Agile
+アジャイルソフトウェア開発宣言に続く原則
+
+私たちは以下の原則に従う:
+顧客満足を最優先し、
+価値のあるソフトウェアを早く継続的に提供します。
+
+
+要求の変更はたとえ開発の後期であっても歓迎します。
+変化を味方につけることによって、お客様の競争力を引き上げます。
+
+
+動くソフトウェアを、2-3週間から2-3ヶ月という
+できるだけ短い時間間隔でリリースします。
+
+
+ビジネス側の人と開発者は、プロジェクトを通して
+日々一緒に働かなければなりません。
+
+
+意欲に満ちた人々を集めてプロジェクトを構成します。
+環境と支援を与え仕事が無事終わるまで彼らを信頼します。
+
+
+情報を伝えるもっとも効率的で効果的な方法は
+フェイス・トゥ・フェイスで話をすることです。
+
+
+動くソフトウェアこそが進捗の最も重要な尺度です。
+
+
+アジャイル･プロセスは持続可能な開発を促進します。
+一定のペースを継続的に維持できるようにしなければなりません。
+
+
+技術的卓越性と優れた設計に対する
+不断の注意が機敏さを高めます。
+
+
+シンプルさ（ムダなく作れる量を最大限にすること）が本質です。
+
+
+最良のアーキテクチャ・要求・設計は、
+自己組織的なチームから生み出されます。
+
+
+チームがもっと効率を高めることができるかを定期的に振り返り、
+それに基づいて自分たちのやり方を最適に調整します。
+
+
+
+アジャイル宣言の背後にある原則
+
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/逸脱の常態化.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">逸脱の常態化</div>
+                        </div>
+                    
+                    
+                        <div class="summary">誤検出されやすいモニタリングアラートに慣れてしまうこと
+チャレンジャー号の事故の調査から生まれた言葉
+
+
+When Doing Wrong Feels So Right: Normalization of Deviance - PubMed
+
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/whole-team.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">Whole Team</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Agile #XP #Team Organization
+クロスファンクショナルチームの考えをベースとするエクストリームプログラミングで紹介されるプラクティス
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/martin-kleppmann.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">Martin Kleppmann</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;martin.kleppmann.com&#x2F;images&#x2F;martin-kleppmann.jpg" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/bertrand-meyer.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">Bertrand Meyer</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;bertrandmeyer.com&#x2F;wp-content&#x2F;upLoads&#x2F;Bertrand_Meyer1-1024x768.jpg" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/flaky-tests.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">flaky tests</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Testing #Continuous Integration
+テスト実行において偽陽性として不安定に落ちるテストのこと
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/成功循環モデル.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">成功循環モデル</div>
+                        </div>
+                    
+                    
+                        <div class="summary">ダニエル・キムによる、チームや組織の成熟度は以下4つのサイクルで向上するというモデル
+
+関係の質
+思考の質
+行動の質
+結果の質
+
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/輻輳制御.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">輻輳制御</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Network
+TCPプロトコル等で行われるネットワークのリンク上でパケットが混線した際の制御
+輻輳制御アルゴリズムは大きく以下の3つに分類される
+
+Loss-based
+Delay-based
+ハイブリッド型
+
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/adt.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">ADT</div>
+                        </div>
+                    
+                    
+                        <div class="summary">Algebraic Data Type
+代数データ型
+#Programming
+列挙（和）された値の組み合わせ（積）を定義し、無効な組み合わせを表現できないように型化する方法
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/リソース.認可.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="context">認可&#47;</div>
+                            <div class="title">リソース</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Authorization
+認可による保護対象
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/主体.認可.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="context">認可&#47;</div>
+                            <div class="title">主体</div>
+                        </div>
+                    
+                    
+                        <div class="summary">Principal
+#Authorization
+認可チェックを受ける対象
+ログインユーザーやAPIトークンなどがある
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/スコープ.認可.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="context">認可&#47;</div>
+                            <div class="title">スコープ</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Authorization
+保護対象のリソースに基づいて定める認可対象の機能範囲
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/モノリスからマイクロサービスへ.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">モノリスからマイクロサービスへ</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;www.oreilly.co.jp&#x2F;books&#x2F;images&#x2F;picture_large978-4-87311-931-1.jpeg" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/要件定義.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">要件定義</div>
+                        </div>
+                    
+                    
+                        <div class="summary">「何を作ればよいのか」を明確にするために行う
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/sops.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">sops</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Security
+GitOpsの世界においてSecretをクライアントサイドで扱うGo製のツール。YAMLやJSONのファイル上でSecretを安全にgit管理することができる
+ageを用いたローカルでのキー管理か、KMSによるキー管理のどちらを選択できる
+CNCF sandbox project
+
+
+SOPS: Secrets OPerationS
+
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/マルチリーダーレプリケーション.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">マルチリーダーレプリケーション</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Data Store
+レプリケーションの種別の一つ
+複数のデータセンターにリーダーが存在する。リアルタイムの同時編集がイメージに近い。書き込みの衝突があった際に最終的に同じ値に収束させるような方法が取られる
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/graphql.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">GraphQL</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;graphql.org&#x2F;_next&#x2F;static&#x2F;media&#x2F;logo-wordmark.4eec1155.svg" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/certificate-manager.google-cloud.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="context">Google Cloud&#47;</div>
+                            <div class="title">Certificate Manager</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Security
+Google Cloudにおいて外部ロードバランシングで必要となるようなTLS証明書を管理する
+
+Certificate Manager の概要  |  Google Cloud
+
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/anthropic.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">Anthropic</div>
+                        </div>
+                    
+                    
+                        <div class="summary">LLMに関する事業を行う企業
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/clean-craftsmanship.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">Clean Craftsmanship</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;64.media.tumblr.com&#x2F;51e0203da0d43fc34fe675b976194c70&#x2F;073598ba94bf7416-5a&#x2F;s1280x1920&#x2F;0ab6860608b69faa747821255e61aead502d9a49.jpg" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/エクストリームプログラミング.book.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="context">Book&#47;</div>
+                            <div class="title">エクストリームプログラミング</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;www.ohmsha.co.jp&#x2F;Portals&#x2F;0&#x2F;book&#x2F;large&#x2F;978-4-274-21762-3.jpg" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/sre-サイトリライアビリティエンジニアリング.book.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="context">Book&#47;</div>
+                            <div class="title">SRE サイトリライアビリティエンジニアリング</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;www.oreilly.co.jp&#x2F;books&#x2F;images&#x2F;picture_large978-4-87311-791-1.jpeg" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+    </ul>
+
+        </div>
+        <div class="paging-arrows">
+            
+                <a class="prev" href=".&#x2F;5.html">prev</a>
+            
+            
+                <a class="next" href=".&#x2F;7.html">next</a>
+            
+        </div>
+    </div>
+
+        </main>
+        <footer>
+            Generated by <a href="https://github.com/boykush/scraps" target="_blank" rel="noopener noreferrer">Scraps</a>
+        </footer>
+        <!-- Code syntax highlight -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script>
+        <!-- Mermaid -->
+        <script type="module">
+            import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+        </script>
+        
+  
+  <!-- For search scraps -->
+  <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0"></script>
+  <script type="module">
+    import search_index from './search_index.json' with { type: "json" };
+    const fuseOptions = {
+      minMatchCharLength: 3,
+      keys: ["title"]
+    };
+    const fuse = new Fuse(search_index, fuseOptions);
+    const search = function (query, numResults) {
+      return fuse.search(query).slice(0, numResults).map(result => [result.item.title, result.item.url]);
+    };
+    window.search = search;
+  </script>
+  <script>
+    function doSearch() {
+      let value = document.getElementById("search-input").value;
+      console.log(`Search query: ${value}`);
+
+      // Retrieve 5 results
+      const results = search(value, 5);
+
+      console.log(`Results: ${results}`);
+
+      let ul = document.getElementById("search-results");
+      ul.innerHTML = "";
+
+      results.forEach((result, index) => {
+        var li = document.createElement("li");
+
+        let [title, url] = result;
+        console.log(`Title: ${title}, URL: ${url}`);
+        let elemlink = document.createElement('a');
+        elemlink.innerHTML = title;
+        elemlink.setAttribute('href', url);
+        li.appendChild(elemlink);
+        li.style.top = `${(index * 30) - 16}px`;
+        ul.appendChild(li);
+      })
+    }
+  </script>
+  
+ 
+    </body>
+</html>

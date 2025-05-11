@@ -1,0 +1,1150 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <!-- Page title -->
+        
+            <title>Kush&#x27;s Wiki</title>
+            <meta property="og:title" content="Kush&#x27;s Wiki" />
+            <meta name="twitter:title" content="Kush&#x27;s Wiki" />
+        
+        <!-- Page description -->
+        
+            <meta name="description" content="boykushのナレッジ置き場" />
+            <meta property="og:description" content="boykushのナレッジ置き場" />
+            <meta name="twitter:description" content="boykushのナレッジ置き場" />
+        
+        <!-- Page favicon -->
+        
+            <link rel="icon" type="image/png" href="https:&#x2F;&#x2F;gist.github.com&#x2F;boykush&#x2F;3bbc68b5d2580374c97d4336b87fb70f&#x2F;raw&#x2F;a838b8f3584b21bcbbe4dd53afca380fe18695a7&#x2F;boykush_icon.png" />
+        
+        <!-- Rubik font -->
+        <link href="https://fonts.cdnfonts.com/css/rubik" rel="stylesheet">
+        <!-- Noto Sans JP font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+        <!-- Code syntax highlight theme -->
+        <link href="https://unpkg.com/nord-highlightjs@0.1.0/dist/nord.css" rel="stylesheet" type="text/css" />
+        <!-- Style sheet -->
+        <link rel="stylesheet" href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;main.css">
+        
+        
+    </head>
+    <body>
+        <header>
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;">
+                <h1>Kush&#x27;s Wiki</h1>
+            </a>
+        </header>
+        <main>
+            
+    <div class="index">
+        
+          <div class="search-block">
+              <span class="icon" />
+              <input
+                type="text"
+                id="search-input"
+                onkeyup="doSearch()"
+                placeholder="Search by title..."
+                />
+              <ul id="search-results"></ul>
+          </div>
+        
+        <div class="tags-block">
+            
+    <ul class="tag-links">
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/agile.html">
+                <li class="item">
+                    <span class="title">Agile</span>&nbsp;<span>(51)</span>
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/security.html">
+                <li class="item">
+                    <span class="title">Security</span>&nbsp;<span>(42)</span>
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/cloud-native.html">
+                <li class="item">
+                    <span class="title">Cloud Native</span>&nbsp;<span>(37)</span>
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/testing.html">
+                <li class="item">
+                    <span class="title">Testing</span>&nbsp;<span>(34)</span>
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/programming.html">
+                <li class="item">
+                    <span class="title">Programming</span>&nbsp;<span>(34)</span>
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/book.html">
+                <li class="item">
+                    <span class="title">Book</span>&nbsp;<span>(34)</span>
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/person.html">
+                <li class="item">
+                    <span class="title">Person</span>&nbsp;<span>(32)</span>
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/observability.html">
+                <li class="item">
+                    <span class="title">Observability</span>&nbsp;<span>(29)</span>
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/team-organization.html">
+                <li class="item">
+                    <span class="title">Team Organization</span>&nbsp;<span>(29)</span>
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/network.html">
+                <li class="item">
+                    <span class="title">Network</span>&nbsp;<span>(27)</span>
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/software-design.html">
+                <li class="item">
+                    <span class="title">Software Design</span>&nbsp;<span>(25)</span>
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/data-store.html">
+                <li class="item">
+                    <span class="title">Data Store</span>&nbsp;<span>(25)</span>
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/api-architecture.html">
+                <li class="item">
+                    <span class="title">API Architecture</span>&nbsp;<span>(25)</span>
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/continuous-integration.html">
+                <li class="item">
+                    <span class="title">Continuous Integration</span>&nbsp;<span>(18)</span>
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/continuous-delivery.html">
+                <li class="item">
+                    <span class="title">Continuous Delivery</span>&nbsp;<span>(18)</span>
+                </li>
+            </a>
+        
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;tags/">
+                <li class="item">
+                    <span class="more-link">More...</span>
+                </li>
+            </a>
+        
+    </ul>
+
+        </div>
+        <div class="links-block">
+            <p class="sort-key">Sort by - linked count</p>
+            
+    <ul class="scrap-links">
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/datadog-agent.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">Datadog Agent</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Observability
+Datadogへホストのログを送信するソフトウェア。
+各ホストの環境別にいくつかのインストール手段が用意されている
+例としてKubernetesへのインストール方法は以下
+Kubernetes に Datadog Agent をインストールする
+
+
+Agent
+
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/エンジニアリング組織論への招待.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">エンジニアリング組織論への招待</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;gihyo.jp&#x2F;assets&#x2F;images&#x2F;cover&#x2F;2018&#x2F;thumb&#x2F;TH320_9784774196053.jpg" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/エッセンシャル-スクラム.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">エッセンシャル スクラム</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;www.seshop.com&#x2F;static&#x2F;images&#x2F;product&#x2F;17008&#x2F;L.png" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/第5回　テストピラミッド-～自動テストの信頼性を中長期的に保つ最適なバランス～.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">第5回　テストピラミッド ～自動テストの信頼性を中長期的に保つ最適なバランス～</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Testing #和田卓人
+https:&#x2F;&#x2F;gihyo.jp&#x2F;dev&#x2F;serial&#x2F;01&#x2F;savanna-letter&#x2F;0005
+
+テストピラミッド
+テストサイズ
+テストダブル
+
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/ソフトウェアクラフトマンシップとプログラマーの誓い.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">ソフトウェアクラフトマンシップとプログラマーの誓い</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#角征典 #プログラマーの誓い
+Clean Craftsmanshipの書籍について紹介しているスライド
+
+
+Docswell
+
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/プレモーテム.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">プレモーテム</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#スクラム
+
+Blog
+
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/pulldown-cmark.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">pulldown-cmark</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Programming
+Rust言語のMarkdown Parser
+https:&#x2F;&#x2F;github.com&#x2F;pulldown-cmark&#x2F;pulldown-cmark
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/flipt.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">Flipt</div>
+                        </div>
+                    
+                    
+                        <div class="summary">OpenFeature準拠のフィーチャーフラグ管理ツール
+GitOpsのユースケースで活用可能で、git上でフィーチャーフラグを管理するよう構成される
+
+
+Getting Started - Flipt
+
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/第4回　テストダブル-～忠実性と決定性のトレードオフを理解する～.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">第4回　テストダブル ～忠実性と決定性のトレードオフを理解する～</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Testing #和田卓人
+https:&#x2F;&#x2F;gihyo.jp&#x2F;dev&#x2F;serial&#x2F;01&#x2F;savanna-letter&#x2F;0004
+
+テストダブル
+テストサイズ
+
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/コンウェイの法則.blog.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="context">Blog&#47;</div>
+                            <div class="title">コンウェイの法則</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Software Design #Team Organization
+コンウェイの法則についてMartin Fowlerが書いたブログ
+逆コンウェイ戦略やDDDとの関連についても触れている
+
+Conway’s Law
+
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/programming-in-haskell-2nd-edition.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">Programming in Haskell 2nd edition</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;cdn.shopify.com&#x2F;s&#x2F;files&#x2F;1&#x2F;1634&#x2F;7169&#x2F;products&#x2F;cover_530x.png?v=1564720482" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/ポリシー.認可.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="context">認可&#47;</div>
+                            <div class="title">ポリシー</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Authorization
+主体とスコープとの紐付けをルールとして扱う
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/エリート-devops-チームであることを-four-keys-プロジェクトで確認する.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">エリート DevOps チームであることを Four Keys プロジェクトで確認する</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#DevOps
+Four Keysの計測方法についてGoogle Cloudブログ上で説明されている
+指標の計算方法を以下のように定義している
+
+デプロイの頻度
+組織による正常な本番環境へのリリースの頻度。
+
+
+変更のリードタイム
+commit から本番環境稼働までの所要時間
+
+
+変更障害率
+デプロイが原因で本番環境で障害が発生する割合（%）
+
+
+サービス復元時間
+組織が本番環境での障害から回復するのにかかる時間
+
+
+
+
+
+日本語
+英語
+
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/bddと共通言語.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">BDDと共通言語</div>
+                        </div>
+                    
+                    
+                        <div class="summary">Authors:
+Greg Young, 和智右桂
+DDDのユビキタス言語とBDDの共通言語の違いを論じている
+
+Digital Romanticism
+
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/optimize-table.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">OPTIMIZE TABLE</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Data Store
+MySQLにおいてテーブルインデックスを再編成し最適化する命令
+
+
+MySQL :: MySQL 8.0 リファレンスマニュアル :: 13.7.3.4 OPTIMIZE TABLE ステートメント
+
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/bddの導入.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">BDDの導入</div>
+                        </div>
+                    
+                    
+                        <div class="summary">Authors:
+Dan North, 和智右桂
+#BDD
+BDDの導入
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/cline.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">Cline</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Programming
+VS Codeプラグインとして動作するAIアシスタント、ステップバイステップでエージェントに近い形の体験となる
+LLMのAPIキーを設定に入力して利用できる
+https:&#x2F;&#x2F;marketplace.visualstudio.com&#x2F;items?itemName=saoudrizwan.claude-dev
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/keep-your-scenarios-brief.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">Keep your scenarios BRIEF</div>
+                        </div>
+                    
+                    
+                        <div class="summary">Authors:
+Seb Rose 風間裕也
+#Testing #BDD
+BRIEFの原則について紹介した記事
+
+
+Keep your scenarios BRIEF | Cucumber
+【翻訳記事】テスト自動化の対象となるテストシナリオの整理に役立つBRIEFの原則 - ブロッコリーのブログ
+
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/監視saasの運用におけるobservability改善の歩み.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">監視SaaSの運用におけるObservability改善の歩み</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Observability
+
+キーワード
+
+Observability Primary Signals
+Unknown unknowns
+ログ&#x2F;メトリクス&#x2F;トレース
+OpenTelemetry
+オブザーバビリティ成熟度モデル
+
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/tidb.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">TiDB</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;avatars.githubusercontent.com&#x2F;u&#x2F;11855343?s=200&amp;v=4" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/effective-rust.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">Effective Rust</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;www.oreilly.co.jp&#x2F;books&#x2F;images&#x2F;picture_large978-4-8144-0094-2.jpeg" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/kubernetes-icons-set.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">Kubernetes Icons Set</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Documentation
+Kubernetesの各リソース等のアイコンを公開しているリポジトリ
+様々なダイアグラムサービスのデータセットに利用されている
+https:&#x2F;&#x2F;github.com&#x2F;kubernetes&#x2F;community&#x2F;tree&#x2F;master&#x2F;icons
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/bsr.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">BSR</div>
+                        </div>
+                    
+                    
+                        <div class="summary">Buf Schema Registory
+#Continuous Integration #Continuous Delivery
+Bufが提供するProtocol Buffersツール群のうちの一つ
+Protobufファイル群をモジュールとしてバージョン管理することができる。
+モジュールとしてのドキュメンテーションをサポートし依存関係管理も可能
+
+
+Overview - Buf Docs
+
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/マスタリングapiアーキテクチャ.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">マスタリングAPIアーキテクチャ</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;www.oreilly.co.jp&#x2F;books&#x2F;images&#x2F;picture_large978-4-8144-0089-8.jpeg" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/熊とワルツを.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">熊とワルツを</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;cdn-bookplus.nikkei.com&#x2F;atcl&#x2F;catalog&#x2F;03&#x2F;P81860&#x2F;P81860_common_pc.jpg?__scale=w:110,h:156&amp;_sh=07b0da0d90" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/スプリントレビューの進め方.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">スプリントレビューの進め方</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#スプリントレビュー #吉羽龍太郎 #Agile
+
+Blog
+
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/gateway.google-cloud.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="context">Google Cloud&#47;</div>
+                            <div class="title">Gateway</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Cloud Native
+Google CloudのGKE上でGateway APIを適用する
+外部Gatewayをデプロイする時は、GatewayClassに gke-l7-global-external-managed を指定した上で、Certificate Managerのような手段でセキュリティを担保する
+Kubernetes APIの NamedAddress に静的IPアドレスを指定することができる 方法
+
+
+Gateway のデプロイ  |  Google Kubernetes Engine (GKE)  |  Google Cloud
+
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/secret-manager.google-cloud.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="context">Google Cloud&#47;</div>
+                            <div class="title">Secret Manager</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Security
+Google Cloudが提供するSMS
+Secrets Store CSI Driverを用いてGKEに組み込み可能
+
+
+Secret Manager の概要  |  Secret Manager Documentation  |  Google Cloud
+
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/仮説キャンバスでプロダクトの仮説を立てよう.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">仮説キャンバスでプロダクトの仮説を立てよう</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#市谷聡啓 #仮説キャンバス
+
+Blog
+
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/群れはなぜ同じ方向を目指すのか？-.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">群れはなぜ同じ方向を目指すのか？ </div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;www.hakuyo-sha.co.jp&#x2F;wp&#x2F;wp-content&#x2F;uploads&#x2F;2016&#x2F;06&#x2F;569.jpg" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/claude.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">Claude</div>
+                        </div>
+                    
+                    
+                        <div class="summary">Anthropic社が提供するLLMモデル
+
+
+Claudeの紹介 - Anthropic
+
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/スタッフエンジニア.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">スタッフエンジニア</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;m.media-amazon.com&#x2F;images&#x2F;I&#x2F;5161jidz6vL._SX594_BO1,204,203,200_.jpg" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/実践クリーンアーキテクチャ.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">実践クリーンアーキテクチャ</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Software Design #成瀬允宣
+クリーンアーキテクチャを実装レベルで実践するドキュメント
+実践クリーンアーキテクチャ │ nrslib
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/テスト駆動開発.book.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="context">Book&#47;</div>
+                            <div class="title">テスト駆動開発</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;www.ohmsha.co.jp&#x2F;Portals&#x2F;0&#x2F;book&#x2F;large&#x2F;978-4-274-21788-3.jpg" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/ピープルウエア.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">ピープルウエア</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;cdn-bookplus.nikkei.com&#x2F;atcl&#x2F;catalog&#x2F;13&#x2F;P85240&#x2F;P85240_common_pc.jpg?__scale=w:150,h:221&amp;_sh=0e5090fd06" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/bdd.tdd.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="context">TDD&#47;</div>
+                            <div class="title">BDD</div>
+                        </div>
+                    
+                    
+                        <div class="summary">TDD文脈のBDD
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/30分で分かった気になるチームトポロジー.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">30分で分かった気になるチームトポロジー</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#吉羽龍太郎 #チームトポロジー #Team Organization
+チームトポロジーの邦訳者による書籍紹介スライド
+
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/serde.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">serde</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Programming
+RustのSerializationライブラリ
+
+
+Overview · Serde
+
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/discovery-and-formulation.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">Discovery and Formulation</div>
+                        </div>
+                    
+                    
+                        <div class="summary">Story Mapping, Example Mapping and Scenario Writing
+#BDD #Testing
+
+
+サークルオブライフ
+ユーザーストーリーマッピング
+実例マッピング
+BRIEFの原則
+
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/ユーザーストーリー駆動開発で行こう.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">ユーザーストーリー駆動開発で行こう</div>
+                        </div>
+                    
+                    
+                        <div class="summary">Authors:
+市谷聡啓
+#Agile
+ユーザーストーリー駆動開発で行こう。 by @papanda
+
+ユーザーストーリー
+INVEST
+ユーザーストーリーマッピング
+
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/atlas.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">Atlas</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;atlasgo.link&#x2F;assets&#x2F;atlas-logo.svg" loading="lazy" />
+                        </div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/cursor.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">Cursor</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Programming #LLM
+AIに特化したIDE。VS CodeのフォークでありGitHub Copilotに代わってCursor独自のAIアシスタントが搭載されている
+https:&#x2F;&#x2F;www.cursor.com&#x2F;ja
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/a-mess-is-not-a-technical-debt.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">A Mess is not a Technical Debt</div>
+                        </div>
+                    
+                    
+                        <div class="summary">Robert C. Martinによるブログ
+技術的負債は戦略的に適用されるものであり、ただのクリーンでないコードに対して用いる概念ではない。という主張
+負債が増えるのを意図的に捉えテストやリファクタリングを拡充すべきとしている
+Clean Coder - A Mess is not a Technical Debt.
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/pod.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">Pod</div>
+                        </div>
+                    
+                    
+                        <div class="summary">クラウドネイティブの世界において、1つまたは複数のコンテナを保持する最小ユニット
+主にKubernetes Podを指す
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/authorization-to-implement-with-extensible-effect.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">Authorization to implement with Extensible Effect</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Security #Programming #Authorization
+EffによるScala認可実装の話
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/知っておきたいプラットフォームエンジニアリングのホットなトピック.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">知っておきたいプラットフォームエンジニアリングのホットなトピック</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Platform Engineering #DevOps
+
+認知負荷
+チームトポロジー
+DevOpsトポロジー
+
+https:&#x2F;&#x2F;www.infoq.com&#x2F;jp&#x2F;articles&#x2F;platform-engineering-primer&#x2F;
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/rum.datadog.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="context">Datadog&#47;</div>
+                            <div class="title">RUM</div>
+                        </div>
+                    
+                    
+                        <div class="summary">Real User Monitoring
+#Observability
+Datadog上で個々のユーザーのアクティビティをリアルタイムで可視化する
+APMと紐づける（以下、詳細）ことでフロントエンドで収集したデータをバックエンドのトレースと相関づけて追跡できる
+Connect RUM and Traces
+
+
+RUM &amp;amp; セッションリプレイ
+
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/logs.datadog.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="context">Datadog&#47;</div>
+                            <div class="title">Logs</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Observability
+Datadog上でログを扱い、高機能な検索機能等を利用できる
+設定方法は以下
+ログの収集とインテグレーション
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/database-monitoring.datadog.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="context">Datadog&#47;</div>
+                            <div class="title">Database Monitoring</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Observability #Data Store
+Datadog上でデータベースの詳細な可視性を提供する
+Explain Plansでは実行計画を容易に把握することができる
+導入にはAPMの有効化が必須でありでクエリを呼んでいるサービスの内訳を可視化できる
+
+
+データベース モニタリング
+
+</div>
+                    
+                </li>
+            </a>
+        
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/introduction-to-safe-programming-with-numeric-library.html">
+                <li class="item">
+                    
+                        <div class="header">
+                            <div class="title">Introduction to safe programming with numeric library</div>
+                        </div>
+                    
+                    
+                        <div class="summary">数値ライブラリで始める安全なプログラミング
+#Programming #Security #Scala
+Scala Matsuri 2024での発表
+Spireライブラリを用いて安全な数値計算を行うテクニックを紹介している
+
+</div>
+                    
+                </li>
+            </a>
+        
+    </ul>
+
+        </div>
+        <div class="paging-arrows">
+            
+                <a class="prev" href=".&#x2F;8.html">prev</a>
+            
+            
+                <a class="next" href=".&#x2F;10.html">next</a>
+            
+        </div>
+    </div>
+
+        </main>
+        <footer>
+            Generated by <a href="https://github.com/boykush/scraps" target="_blank" rel="noopener noreferrer">Scraps</a>
+        </footer>
+        <!-- Code syntax highlight -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script>
+        <!-- Mermaid -->
+        <script type="module">
+            import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+        </script>
+        
+  
+  <!-- For search scraps -->
+  <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0"></script>
+  <script type="module">
+    import search_index from './search_index.json' with { type: "json" };
+    const fuseOptions = {
+      minMatchCharLength: 3,
+      keys: ["title"]
+    };
+    const fuse = new Fuse(search_index, fuseOptions);
+    const search = function (query, numResults) {
+      return fuse.search(query).slice(0, numResults).map(result => [result.item.title, result.item.url]);
+    };
+    window.search = search;
+  </script>
+  <script>
+    function doSearch() {
+      let value = document.getElementById("search-input").value;
+      console.log(`Search query: ${value}`);
+
+      // Retrieve 5 results
+      const results = search(value, 5);
+
+      console.log(`Results: ${results}`);
+
+      let ul = document.getElementById("search-results");
+      ul.innerHTML = "";
+
+      results.forEach((result, index) => {
+        var li = document.createElement("li");
+
+        let [title, url] = result;
+        console.log(`Title: ${title}, URL: ${url}`);
+        let elemlink = document.createElement('a');
+        elemlink.innerHTML = title;
+        elemlink.setAttribute('href', url);
+        li.appendChild(elemlink);
+        li.style.top = `${(index * 30) - 16}px`;
+        ul.appendChild(li);
+      })
+    }
+  </script>
+  
+ 
+    </body>
+</html>
