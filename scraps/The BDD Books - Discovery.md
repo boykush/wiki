@@ -1,7 +1,7 @@
 ### Authors:
 [[Gaspar Nagy]], [[Seb Rose]], [[風間裕也]]
 
-#[[Testing/BDD]] #[[Book]]
+#[[BDD]] #[[Book]]
 
 ![](https://d2sofvawe08yqg.cloudfront.net/bddbooks-discovery-jp/s_hero?1650559035.jpg)
 

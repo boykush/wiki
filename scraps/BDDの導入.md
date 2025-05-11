@@ -1,6 +1,6 @@
 ### Authors:
 [[Dan North]], [[和智右桂]]
 
-#[[TDD/BDD]] 
+#[[BDD]] 
 
 [BDDの導入](https://digitalsoul.hatenadiary.org/entry/20090819/1250686015)

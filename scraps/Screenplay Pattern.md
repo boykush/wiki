@@ -1,6 +1,6 @@
 #[[Testing]]
 
-[[SerenityJS]]のコアとなる[[Testing/BDD]]デザインパターン
+[[SerenityJS]]のコアとなる[[BDD]]デザインパターン
 
 [[E2Eテスト]]において、PageのようなオブジェクトではなくUserのようなアクターに焦点をあててテストを記述する
 
