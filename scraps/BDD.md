@@ -1,3 +1,3 @@
 ## Behavior Driven Development
 
-#[[TDD]] #[[Testing]]
+#[[テスト駆動開発]] #[[Testing]]
