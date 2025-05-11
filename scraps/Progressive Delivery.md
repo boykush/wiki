@@ -2,6 +2,4 @@
 
 [[Continuous Delivery]]の進化系として紹介されることが多い
 
----
-
-- [Concepts - Argo Rollouts - Kubernetes Progressive Delivery Controller](https://argo-rollouts.readthedocs.io/en/stable/concepts/#progressive-delivery)
+<https://argo-rollouts.readthedocs.io/en/stable/concepts/#progressive-delivery>
