@@ -2,4 +2,4 @@
 
 ![](https://pbs.twimg.com/profile_images/1818042518706978816/cwBDsj47_400x400.jpg)
 
-- [X](https://twitter.com/gregyoung)
+<https://twitter.com/gregyoung>

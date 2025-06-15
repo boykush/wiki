@@ -4,4 +4,4 @@
 
 ---
 
-- [DORA | Capabilities: Documentation quality](https://dora.dev/capabilities/documentation-quality/)
+<https://dora.dev/capabilities/documentation-quality/>

@@ -2,4 +2,4 @@
 
 ---
 
-- [DORA | Capabilities: Job satisfaction](https://dora.dev/capabilities/job-satisfaction/)
+<https://dora.dev/capabilities/job-satisfaction/>

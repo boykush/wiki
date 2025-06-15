@@ -8,4 +8,4 @@
 
 ---
 
-- [SOPS: Secrets OPerationS](https://getsops.io/)
+<https://getsops.io/>

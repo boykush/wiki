@@ -10,4 +10,4 @@
 
 ---
 
-- [Agent](https://docs.datadoghq.com/ja/agent/?tab=Linux)
+<https://docs.datadoghq.com/ja/agent/?tab=Linux>

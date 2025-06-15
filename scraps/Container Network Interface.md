@@ -8,4 +8,4 @@ LinuxおよびWindows[[コンテナ]]における、ネットワークインタ�
 
 ---
 
-- [CNI](https://www.cni.dev/)
+<https://www.cni.dev/>

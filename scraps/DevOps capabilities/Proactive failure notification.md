@@ -4,4 +4,4 @@
 
 ---
 
-- [DORA | Capabilities: Proactive failure notification](https://dora.dev/capabilities/proactive-failure-notification/)
+<https://dora.dev/capabilities/proactive-failure-notification/>

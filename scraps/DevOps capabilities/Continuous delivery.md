@@ -4,4 +4,4 @@
 
 ---
 
-- [DORA | Capabilities: Continuous delivery](https://dora.dev/capabilities/continuous-delivery/)
+<https://dora.dev/capabilities/continuous-delivery/>

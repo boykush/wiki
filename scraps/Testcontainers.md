@@ -15,4 +15,4 @@ GenericContainer redis = new GenericContainer("redis:5.0.3-alpine")
 
 ---
 
-- [Testcontainers](https://testcontainers.com/?language=java)
+<https://testcontainers.com/?language=java>

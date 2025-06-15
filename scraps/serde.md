@@ -4,4 +4,4 @@
 
 ---
 
-- [Overview · Serde](https://serde.rs/)
+<https://serde.rs/>

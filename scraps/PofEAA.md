@@ -4,4 +4,4 @@
 
 ---
 
-- [PofEAAで考えるSaaSバックエンドの作り方](https://speakerdeck.com/dnskimo/pofeaadekao-erusaasbatukuendofalsezuo-rifang)
+<https://speakerdeck.com/dnskimo/pofeaadekao-erusaasbatukuendofalsezuo-rifang>

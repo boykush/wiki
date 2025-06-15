@@ -6,4 +6,4 @@
 
 ---
 
-- [Overview - Buf Docs](https://buf.build/docs/cli/)
+<https://buf.build/docs/cli/>

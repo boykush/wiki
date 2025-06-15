@@ -2,4 +2,4 @@
 
 ---
 
-- [DORA | Capabilities: Generative organizational culture](https://dora.dev/capabilities/generative-organizational-culture/)
+<https://dora.dev/capabilities/generative-organizational-culture/>

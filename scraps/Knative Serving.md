@@ -10,4 +10,4 @@
 
 ---
 
-- [specs/specs/serving/overview.md at main · knative/specs](https://github.com/knative/specs/blob/main/specs/serving/overview.md)
+<https://github.com/knative/specs/blob/main/specs/serving/overview.md>

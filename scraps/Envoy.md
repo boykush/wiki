@@ -17,4 +17,4 @@ Envoyは以下のような信念から生まれており、レイヤ4（ネッ�
 
 ---
 
-- [Envoy documentation](https://www.envoyproxy.io/docs/envoy/latest/)
+<https://www.envoyproxy.io/docs/envoy/latest/>

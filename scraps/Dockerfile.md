@@ -4,4 +4,4 @@
 
 ---
 
-- [Dockerfile リファレンス — Docker-docs-ja 24.0 ドキュメント](https://docs.docker.jp/engine/reference/builder.html)
+<https://docs.docker.jp/engine/reference/builder.html>

@@ -4,4 +4,4 @@
 
 ---
 
-- [Home](https://martin.kleppmann.com/)
+<https://martin.kleppmann.com/>

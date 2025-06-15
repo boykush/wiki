@@ -6,4 +6,4 @@
 
 ---
 
-- [OWASP Top Ten | OWASP Foundation](https://owasp.org/www-project-top-ten/)
+<https://owasp.org/www-project-top-ten/>
