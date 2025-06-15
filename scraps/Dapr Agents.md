@@ -1,6 +1,6 @@
-#[[Cloud Native]]
+#[[Cloud Native]] #[[AI]]
 
-[[Kubernetes]] Nativeな[[Dapr]]プロジェクト上で[[LLM]]を利用したAIエージェントを開発できる
+[[Kubernetes]] Nativeな[[Dapr]]プロジェクト上で[[LLM]]を利用した[[AIエージェント]]を開発できる
 
 DaprのワークフローによるメッセージングベースのAIエージェント連携も可能
 

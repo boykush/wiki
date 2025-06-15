@@ -1,6 +1,8 @@
 ## Model Context Protocol
 
-[[LLM]]が様々なリソースにアクセスするための標準化プロトコル
+#[[AI]]
+
+[[LLM]]が様々なリソースにアクセスするための[[Anthropic]]社による標準化プロトコル
 
 MCPサーバーがローカルまたはリモートのリソースにアクセスし、それをMCPクライアントが利用する
 
@@ -9,6 +11,4 @@ MCPクライアントとサーバー間のトランポートレイヤでは
 - [[HTTP]] POST
 のいずれかが用いられる
 
----
-
-- [Core architecture - Model Context Protocol](https://modelcontextprotocol.io/docs/concepts/architecture)
+<https://modelcontextprotocol.io/docs/concepts/architecture>

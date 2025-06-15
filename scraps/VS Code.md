@@ -2,4 +2,4 @@
 
 #[[Programming]]
 
-Microsoftが開発しているIDE
+[[Microsoft]]が開発しているIDE

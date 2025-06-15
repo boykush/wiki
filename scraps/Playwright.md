@@ -1,6 +1,6 @@
 #[[Testing]] #[[Programming]]
 
-Microsoftが開発した[[E2Eテスト]]ツール
+[[Microsoft]]が開発した[[E2Eテスト]]ツール
 
 [[flaky tests]]を減らせるブラウザ向け機能が揃っている
 
