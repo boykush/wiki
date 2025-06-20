@@ -1,65 +1,84 @@
 # CLAUDE.md
 
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+このファイルは、Claude Code (claude.ai/code) がこのリポジトリで作業する際のガイダンスを提供します。
 
-## Architecture Overview
+## アーキテクチャ概要
 
-This is a personal wiki built with **Scraps**, a Rust-based static site generator designed for knowledge management. The system converts Markdown files into a searchable wiki with wiki-style linking, tag organization, and automated GitHub Pages deployment.
+これは**Scraps**で構築された個人用ウィキです。Scrapsは、ナレッジマネジメント用に設計されたRustベースの静的サイトジェネレーターです。このシステムは、Markdownファイルをウィキスタイルのリンク、タグ組織、および自動GitHub Pagesデプロイを備えた検索可能なウィキに変換します。
 
-Key architectural components:
-- **Content**: Markdown files in `/scraps/` directory (384+ files)
-- **Configuration**: `Config.toml` with site settings and build options
-- **Output**: Static HTML generated in `/public/` directory
-- **Deployment**: Automated via GitHub Actions to GitHub Pages
-- **Language**: Primarily Japanese content (`lang_code = "ja"`)
+主要なアーキテクチャコンポーネント：
+- **コンテンツ**: `/scraps/`ディレクトリ内のMarkdownファイル（384+ファイル）
+- **設定**: サイト設定とビルドオプションを含む`Config.toml`
+- **出力**: `/public/`ディレクトリに生成される静的HTML
+- **デプロイ**: GitHub ActionsによるGitHub Pagesへの自動デプロイ
+- **言語**: 主に日本語コンテンツ（`lang_code = "ja"`）
 
-## Common Development Commands
+## 一般的な開発コマンド
 
-### Build and Preview
+### ビルドとプレビュー
 ```bash
-# Build the static site (generates HTML from Markdown)
+# 静的サイトをビルド（MarkdownからHTMLを生成）
 scraps build
 
-# Serve locally for preview at http://127.0.0.1:1112
+# ローカルでプレビュー配信（http://127.0.0.1:1112）
 scraps serve
 
-# List all available tags in the wiki
+# ウィキ内の利用可能なタグを一覧表示
 scraps tag
 
-# Generate template files
+# テンプレートファイルを生成
 scraps template
+
+# 新しいscrapsプロジェクトを初期化（必要に応じて）
+scraps init
 ```
 
-### Installation (if needed)
+### インストール（必要に応じて）
 ```bash
-# Install via Cargo
+# Cargo経由でインストール
 cargo install scraps
 
-# Install on macOS
+# macOSでインストール
 brew install boykush/tap/scraps
 ```
 
-## Content Creation Workflow
+## コンテンツ構成
 
-1. Create/edit Markdown files in `/scraps/` directory
-2. Use `[[Internal Links]]` for wiki-style cross-references
-3. Add tags with `[[Tag Name]]` notation (becomes tag if no matching scrap exists)
-4. Preview changes with `scraps serve`
-5. Build and deploy automatically via GitHub Actions on push
+コンテンツは`/scraps/`ディレクトリに以下のように構成されています：
+- **階層構造**: 関連トピックをグループ化するサブディレクトリ（例：`Amazon/`、`Google Cloud/`、`Kubernetes/`、`DevOps capabilities/`）
+- **テンプレートシステム**: `/templates/`のテンプレートから構造化コンテンツを生成するために`scraps template`を使用
+- **利用可能なテンプレート**: 一貫したフォーマットのための`book.md`、`person.md`
 
-## Configuration Details
+## コンテンツ作成ワークフロー
 
-The `Config.toml` file controls:
-- **base_url**: Deployment URL (https://boykush.github.io/wiki/)
-- **sort_key**: "linked_count" - pages sorted by number of incoming links
-- **build_search_index**: true - enables full-text search
-- **color_scheme**: "only_dark" - dark theme only
-- **paginate_by**: 50 - pagination limit
+1. `/scraps/`ディレクトリでMarkdownファイルを作成/編集
+2. ウィキスタイルの相互参照には`[[内部リンク]]`を使用
+3. `[[タグ名]]`記法でタグを追加（対応するスクラップが存在しない場合はタグになる）
+4. `scraps serve`で変更をプレビュー
+5. プッシュ時にGitHub Actions経由で自動ビルド・デプロイ
 
-## Deployment Process
+## 設定詳細
 
-Automated deployment via GitHub Actions:
-- **Trigger**: Every push to repository
-- **Action**: `boykush/scraps-deploy-action@v2`
-- **Target**: `gh-pages` branch → GitHub Pages
-- **Requirement**: `fetch-depth: 0` for git commit date features
+`Config.toml`ファイルが制御する項目：
+- **base_url**: デプロイURL（https://boykush.github.io/wiki/）
+- **sort_key**: "linked_count" - 被リンク数でページをソート
+- **build_search_index**: true - 全文検索を有効化
+- **color_scheme**: "only_dark" - ダークテーマのみ
+- **paginate_by**: 50 - ページネーション制限
+- **timezone**: "Asia/Tokyo" - gitコミット日時機能用
+- **favicon**: カスタムアイコンURL
+
+## デプロイプロセス
+
+GitHub Actions（`.github/workflows/build-and-deploy.yml`）による自動デプロイ：
+- **トリガー**: リポジトリへのプッシュ時
+- **アクション**: `boykush/scraps-deploy-action@v2`
+- **ターゲット**: `gh-pages`ブランチ → GitHub Pages
+- **要件**: gitコミット日時機能のため`fetch-depth: 0`
+- **環境**: 認証に`GITHUB_TOKEN`を使用
+
+## 重要な制約
+
+- **積極的にドキュメントファイルを作成しない** - 明示的に要求された場合のみ作成
+- **コンテンツ構造を維持** - `/scraps/`内の既存の階層構造を尊重
+- **適切な場合はテンプレートを使用** - 一貫性のために既存テンプレートを活用
