@@ -10,4 +10,4 @@
 
 ---
 
-[Istio](https://istio.io/)
+<https://istio.io/>

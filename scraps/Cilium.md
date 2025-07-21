@@ -8,7 +8,7 @@
 
 ユースケースとして以下のような例がある
 
-L4 [[ロードバランシング]]
+[[L4]] [[ロードバランシング]]
 <https://cilium.io/use-cases/load-balancer/>
 
 [[kube-proxy]]
