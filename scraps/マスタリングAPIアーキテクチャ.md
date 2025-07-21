@@ -28,7 +28,7 @@ James Gough, Daniel Bryant, Matthew Auburn
 - [[APIゲートウェイ]]/[[Envoy]]/[[Ambassador Edge Stack]]
 ### 4章 サービスメッシュ：サービス間トラフィック管理 #[[Reliability]]
 - [[サービスメッシュ]]/[[サイドカープロキシ]]
-- [[eBPF]]/Cilium
+- [[eBPF]]/[[Cilium]]
 - [[Istio]]/Linkerd/Consul
 - [[分散コンピューティングの8つの誤謬]]
 - [[サーキットブレーカー]]/[[リトライ]]/タイムアウト/バルクヘッド/フォールバック
