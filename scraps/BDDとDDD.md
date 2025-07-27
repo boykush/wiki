@@ -1,5 +1,5 @@
 ### Authors:
-[[Dan North]], [[和智右桂]]
+[[Dan North]], [[和智 右桂]]
 
 #[[BDD]] #[[ドメイン駆動設計]] #[[Software Design]]
 

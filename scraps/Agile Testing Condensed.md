@@ -1,5 +1,5 @@
 ### Authors:
-[[Janet Gregory]], [[Lisa Crispin]], [[風間裕也]]
+[[Janet Gregory]], [[Lisa Crispin]], [[風間 裕也]]
 
 #[[Book]] #[[Agile Testing]]
 

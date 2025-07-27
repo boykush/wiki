@@ -1,5 +1,5 @@
 ### Authors:
-Markus Winand, [[松浦隼人]]
+Markus Winand, [[松浦 隼人]]
 
 #[[Data Store]] #[[Book]] #[[リレーショナルデータベース]]
 

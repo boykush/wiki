@@ -1,4 +1,4 @@
-#[[Testing]] #[[和田卓人]]
+#[[Testing]] #[[和田 卓人]]
 
 <https://logmi.jp/main/technology/330972>
 

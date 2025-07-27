@@ -1,5 +1,5 @@
 ### Authors:
-[[Seb Rose]] [[風間裕也]]
+[[Seb Rose]] [[風間 裕也]]
 
 #[[Testing]] #[[BDD]]
 

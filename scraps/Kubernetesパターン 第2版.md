@@ -1,5 +1,5 @@
 ### Authors:
-Bilgin Ibryam, Roland Huß, [[松浦隼人]]
+Bilgin Ibryam, Roland Huß, [[松浦 隼人]]
 
 #[[Book]] 
 
