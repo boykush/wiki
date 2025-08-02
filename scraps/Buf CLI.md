@@ -1,4 +1,4 @@
-#[[Continuous Integration]]
+#[[Continuous Integration]] #[[CLI]]
 
 [[Buf]]が提供する[[Protocol Buffers]]ツール群のうちの一つ
 
