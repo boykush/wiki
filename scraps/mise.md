@@ -1,0 +1,15 @@
+#[[Programming]]
+
+![](https://private-user-images.githubusercontent.com/216188/306790203-27a8ea18-9383-4d86-a445-305b9a6248c1.jpeg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTQxMTM5ODAsIm5iZiI6MTc1NDExMzY4MCwicGF0aCI6Ii8yMTYxODgvMzA2NzkwMjAzLTI3YThlYTE4LTkzODMtNGQ4Ni1hNDQ1LTMwNWI5YTYyNDhjMS5qcGVnP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI1MDgwMiUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNTA4MDJUMDU0ODAwWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9NWRkNWRhNjUzYWE4Mjk2YWFlNGJkYzQyY2MxNzBiZjgyNmI3OTQ0MmUzNjM1ZDg3MDg2NGQ1YTM1Yjg1ZmQ0NyZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ._PxW5VVYqvL1Am2cty8mCeDPmAJCcs0ruZz2GdACwlM)
+
+以下の3つの機能をグローバル、プロジェクト毎に設定可能にする[[Rust]]製ツール
+- asdf, nvm, pyenvのような言語バージョン管理
+- direnvのような環境変数管理
+- makeのようなタスクランナー
+
+プロジェクトに `mise.toml` を配置し上記3機能を記述できる
+
+---
+
+<https://github.com/jdx/mise>
+<https://mise.jdx.dev/>
