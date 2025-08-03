@@ -1,3 +1,3 @@
-[[Microsoft]]と提携している[[AI]]企業
+[[Microsoft]]と提携しているAI([[LLM]])企業
 
 <https://cognition.ai/>

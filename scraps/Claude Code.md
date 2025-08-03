@@ -1,4 +1,4 @@
-#[[Programming]] #[[AI]]
+#[[Programming]] #[[LLM]]
 
 [[CLI]]で直接動作する[[AIエージェント]]型コーディングツール
 

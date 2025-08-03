@@ -1,4 +1,4 @@
-#[[Cloud Native]] #[[AI]]
+#[[Cloud Native]]
 
 [[Kubernetes]] Nativeな[[Dapr]]プロジェクト上で[[LLM]]を利用した[[AIエージェント]]を開発できる
 

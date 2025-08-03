@@ -1,4 +1,4 @@
-#[[Documentation]] #[[AI]]
+#[[Documentation]] #[[LLM]]
 
 [[Devin]]と連携されたリポジトリの内容を説明するWikiを生成する機能
 
