@@ -18,7 +18,7 @@ Nicole Forsgren, Jez Humble, Gene Kim
 - [[ベロシティ]]
 - [[Four Keys]]
 ### 第3章　組織文化のモデル化と測定、改善の方法
-- Westrumモデル
+- [[組織文化の類型論|Westrumモデル]]
 ### 第4章　技術的プラクティス―継続的デリバリの基本原則と効果
 - [[DevOps capabilities/Continuous delivery|継続的デリバリ]]
 - [[DevOps capabilities/Version control|バージョン管理]]
