@@ -1,6 +1,8 @@
 ## Transport Layer Security
-#[[Network]] #[[Security]] #[[HTTP]]
+#[[Network]] #[[Security]]
 
-HTTPSへの対応に用いられる暗号化プロトコル
+通信暗号化プロトコル
 
 ネットワーク通信時にTLSハンドシェイクによって鍵交換を行いセキュアな通信を行う
+
+<https://developer.mozilla.org/en-US/docs/Glossary/TLS>
