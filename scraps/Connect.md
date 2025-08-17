@@ -8,6 +8,4 @@
 
 [[CNCF]] sandbox project
 
----
-
-- [Connect](https://connectrpc.com/)
+<https://connectrpc.com/>
