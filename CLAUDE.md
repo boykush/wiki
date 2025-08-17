@@ -6,6 +6,8 @@
 
 これは**Scraps**で構築された個人用ウィキです。Scrapsは、ナレッジマネジメント用に設計されたRustベースの静的サイトジェネレーターです。このシステムは、Markdownファイルをウィキスタイルのリンク、タグ組織、および自動GitHub Pagesデプロイを備えた検索可能なウィキに変換します。
 
+Scrapsの詳細な利用方法については https://boykush.github.io/scraps/ を参照してください。
+
 主要なアーキテクチャコンポーネント：
 - **コンテンツ**: `/scraps/`ディレクトリ内のMarkdownファイル（384+ファイル）
 - **設定**: サイト設定とビルドオプションを含む`Config.toml`
@@ -25,29 +27,7 @@ scraps serve
 
 # ウィキ内の利用可能なタグを一覧表示
 scraps tag
-
-# テンプレートファイルを生成
-scraps template
-
-# 新しいscrapsプロジェクトを初期化（必要に応じて）
-scraps init
 ```
-
-### インストール（必要に応じて）
-```bash
-# Cargo経由でインストール
-cargo install scraps
-
-# macOSでインストール
-brew install boykush/tap/scraps
-```
-
-## コンテンツ構成
-
-コンテンツは`/scraps/`ディレクトリに以下のように構成されています：
-- **階層構造**: 関連トピックをグループ化するサブディレクトリ（例：`Amazon/`、`Google Cloud/`、`Kubernetes/`、`DevOps capabilities/`）
-- **テンプレートシステム**: `/templates/`のテンプレートから構造化コンテンツを生成するために`scraps template`を使用
-- **利用可能なテンプレート**: 一貫したフォーマットのための`book.md`、`person.md`
 
 ## コンテンツ作成ワークフロー
 
@@ -77,8 +57,28 @@ GitHub Actions（`.github/workflows/build-and-deploy.yml`）による自動デ�
 - **要件**: gitコミット日時機能のため`fetch-depth: 0`
 - **環境**: 認証に`GITHUB_TOKEN`を使用
 
+## テンプレートシステム
+
+Scrapsには構造化コンテンツ作成のためのテンプレートシステムがあります：
+
+### 利用可能なテンプレート
+- **book.md**: 書籍情報用テンプレート
+  - 環境変数: SUBTITLE, AUTHOR, TRANSLATOR, COVER, HOME_TITLE, HOME_URL, TOC
+- **person.md**: 人物紹介用テンプレート  
+  - 環境変数: IMAGE, HOME_URL
+
+### テンプレート使用方法
+```bash
+# 対話式でテンプレートからファイルを生成
+scraps template
+
+# 環境変数を設定してテンプレート適用も可能
+SUBTITLE="サブタイトル" AUTHOR="著者名" scraps template
+```
+
 ## 重要な制約
 
 - **積極的にドキュメントファイルを作成しない** - 明示的に要求された場合のみ作成
 - **コンテンツ構造を維持** - `/scraps/`内の既存の階層構造を尊重
 - **適切な場合はテンプレートを使用** - 一貫性のために既存テンプレートを活用
+- **ウィキリンク記法の活用** - `[[内部リンク]]`で相互参照、`[[タグ名]]`でタグ付け
