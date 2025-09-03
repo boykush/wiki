@@ -1,0 +1,34 @@
+## GitHub Copilotを生んだ開発者が教える生成AIアプリケーション開発
+
+### Authors:
+John Berryman, Albert Ziegler
+服部佑樹, 佐藤直生
+
+#[[Book]] #[[LLM]]
+
+![](https://www.oreilly.co.jp/books/images/picture_large978-4-8144-0113-0.jpeg)
+
+[LLMのプロンプトエンジニアリング - O'Reilly Japan](https://www.oreilly.co.jp/books/9784814401130/)
+
+## 第I部 基礎
+
+### 1章 プロンプトエンジニアリングの世界
+
+### 2章 LLMを理解する
+
+### 3章 チャット形式への移行
+
+### 4章 LLMアプリケーションの設計
+
+## 第II部 中心的なテクニック
+
+### 5章 プロンプトのコンテンツ
+### 6章 プロンプトの組み立て
+### 7章 モデルの御
+
+## 第III部 プロンプト作成のエキスパート
+
+### 8章 会話型ージェント
+### 9章 LLMワークフロー
+### 10章 LLMアプリケーションの評価
+### 11章 未来を見据えて
