@@ -4,7 +4,7 @@
 [[Seb Rose]], [[Gaspar Nagy]]
 [[風間 裕也]]
 
-#[[Book]] #[[BDD]]
+#[[Book]] #[[BDD]] #[[Testing]]
 
 ![](https://d2sofvawe08yqg.cloudfront.net/bddbooks-formulation-jp/s_hero?1723769276)
 
