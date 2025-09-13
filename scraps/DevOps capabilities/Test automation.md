@@ -4,7 +4,7 @@
 
 <https://dora.dev/capabilities/test-automation/>
 
-- [[ユニットテスト]]/[[テスト駆動開発|TDD]]
+- [[ユニットテスト]]/[[TDD]]
 - [[受け入れテスト]]
 - [[Agile testing directions: tests and examples]]
 - [[DevOps capabilities/Loosely coupled teams]]

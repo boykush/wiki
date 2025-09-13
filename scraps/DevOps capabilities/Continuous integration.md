@@ -12,7 +12,7 @@ CIを実現するには次の要素が必要としている
 - [[DevOps capabilities/Trunk-based development]]
 - [[DevOps capabilities/Working in small batches]]
 
-メンテナンス容易な自動化テストのためには[[テスト駆動開発|TDD]]を実践すると良い
+メンテナンス容易な自動化テストのためには[[TDD]]を実践すると良い
 
 ---
 
