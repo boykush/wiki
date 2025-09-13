@@ -1,5 +1,5 @@
 #[[Person]]
 
-![person_image]({{ get_env(name="IMAGE", default="") }})
+![person_image]()
 
-- [Home]({{ get_env(name="HOME_URL", default="") }})
+<>
