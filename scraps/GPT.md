@@ -1,4 +1,5 @@
 ## Generative Pre-Trained Transformer
+## 生成的事前トレーニング済みトランスフォーマー
 
 #[[LLM]]
 
