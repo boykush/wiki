@@ -36,7 +36,7 @@ John Berryman, Albert Ziegler
 ## 第II部 中心的なテクニック
 
 ### 5章 プロンプトのコンテンツ
-- Few-shotプロンプティング
+- [[Few-shot]]プロンプティング
 - DSPy
 ### 6章 プロンプトの組み立て
 - [[RAG]]
@@ -56,6 +56,12 @@ John Berryman, Albert Ziegler
 ## 第III部 プロンプト作成のエキスパート
 
 ### 8章 会話型エージェント
+- [[CoT]]
+- [[ReAct]]
+- [[Plan-and-Solve]]
 ### 9章 LLMワークフロー
+- Assistant/UserProxy
 ### 10章 LLMアプリケーションの評価
+- SOMAアセスメント
+- A/Bテスト
 ### 11章 未来を見据えて
