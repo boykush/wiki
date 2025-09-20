@@ -1,6 +1,6 @@
 #[[Testing]] #[[Documentation]]
 
-以下のフォーマットでテストシナリオを記述する記法
+[[Chris Matts]]によって考えられた、以下のフォーマットでテストシナリオを記述する記法
 
 ```
 Scenario: Breaker joins a game
