@@ -17,7 +17,7 @@
 - [[Robert C. Martin]]/FitNesse
 - Robot Framework
 - [[Chris Matts]]/[[Gherkin]]
-- Cucumber
+- [[Cucumber]]
 - 生きているドキュメント
 
 ## 2. 古いシナリオを片付ける

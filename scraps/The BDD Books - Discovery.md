@@ -10,7 +10,7 @@
 ### 第1章 BDDとは何ですか？
 - [[TDD]]
 - [[Dan North]]/[[BDD]]
-- [[BDD/具体例]]/[[Gherkin]]/SpecFlow/Cucumber
+- [[BDD/具体例]]/[[Gherkin]]/SpecFlow/[[Cucumber]]
 - [[BDD/定式化]]
 - [[Agile Testing]]
 - 探索的テスト
