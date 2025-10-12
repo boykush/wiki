@@ -1,4 +1,4 @@
-#[[Platform Engineering]] #[[チームトポロジー]]
+#[[Platform Engineering]] #[[Team Topologies]]
 
 - 組織的センシング
 - [[ストリームアラインドチーム|SAT]]

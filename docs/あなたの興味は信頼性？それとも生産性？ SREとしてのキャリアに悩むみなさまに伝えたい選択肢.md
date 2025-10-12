@@ -7,5 +7,5 @@ Author:
 - エレガントパズル
 - [[Four Keys]]/[[DevOps]]
 - [[Platform Engineering]]
-- [[チームトポロジー]]
+- [[Team Topologies]]
 - Building Effective AI Agents

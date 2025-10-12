@@ -4,7 +4,7 @@
 
 - [[Gartner Identifies the Top 10 Strategic Technology Trends for 2024]]
 - [[認知負荷]]
-- [[チームトポロジー]]/[[プラットフォームチーム]]
+- [[Team Topologies]]/[[プラットフォームチーム]]
 - [[Golden Path]]
 - [[Platform as a Product]]
 - [[Internal Developer Portal]]/[[Internal Developer Platform]]
