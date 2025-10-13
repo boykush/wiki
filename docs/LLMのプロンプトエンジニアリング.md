@@ -48,7 +48,7 @@ John Berryman, Albert Ziegler
 - コンテキスト内学習/中間部の喪失/[[無関心の谷]]
 - [[Markdown]]
 - Anthropic/Artifacts
-- XML/YAML
+- XML/[[YAML]]
 - 加算的貪欲法/減算的貪欲法
 ### 7章 モデルの制御
 - logprob
