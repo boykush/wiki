@@ -4,4 +4,4 @@
 
 [[逆コンウェイ戦略]]や[[ドメイン駆動設計|DDD]]との関連についても触れている
 
-- [Conway's Law](https://martinfowler.com/bliki/ConwaysLaw.html)
+<https://martinfowler.com/bliki/ConwaysLaw.html>

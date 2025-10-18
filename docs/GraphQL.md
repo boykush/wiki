@@ -2,12 +2,11 @@
 
 #[[API Architecture]] #[[Data Processing]]
 
-APIレイヤで利用するクエリ言語
+[[Facebook]]社が開発したAPIレイヤで利用するクエリ言語
 
 データベースにおけるクエリと同様、必要なフィールドのみを指定してクエリを行う
 
 [[REST]]と同様にGraphQLスキーマではリソースの構造を定義するが、1回のリクエストで複数リソースを取得することができる
 
----
 
-[GraphQL | A query language for your API](https://graphql.org/)
+<https://graphql.org/>

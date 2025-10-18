@@ -57,7 +57,7 @@ John Berryman, Albert Ziegler
 
 ### 8章 会話型エージェント
 - [[CoT]]
-- [[ReAct]]
+- [[LLM/ReAct]]
 - [[Plan-and-Solve]]
 ### 9章 LLMワークフロー
 - Assistant/UserProxy
