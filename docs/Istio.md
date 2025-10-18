@@ -8,6 +8,4 @@
 
 [[CNCF]] graduated project
 
----
-
 <https://istio.io/>
