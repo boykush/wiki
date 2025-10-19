@@ -1,3 +1,3 @@
-#[[Greg Young]] #[[Software Design]]
+#[[Greg Young]] #[[Software Design]] #[[CQRS]]
 
 - [pdf](https://cqrs.files.wordpress.com/2010/11/cqrs_documents.pdf)
