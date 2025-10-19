@@ -82,7 +82,7 @@ Bilgin Ibryam, Roland Huß, [[松浦 隼人]]
 - [[Kubernetes/Network policy]]
 - [[Kubernetes Network Policy Recipes]]
 - Inspektor Gadget/[[eBPF]]/[[Cilium]]
-- [[サービスメッシュ]]/[[Istio]]/[[AuthorizationPolicy]]
+- [[サービスメッシュ]]/[[Istio]]/[[Istio/AuthorizationPolicy]]
 - ソフトウェア定義ネットワーク
 ### 25章 Secure Configuration（セキュア設定）
 - [[Kubernetes/Secret]]
