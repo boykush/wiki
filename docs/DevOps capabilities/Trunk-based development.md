@@ -1,4 +1,4 @@
-#[[Continuous Integration]]
+#[[Continuous Integration]] #[[トランクベース]]
 
 [[DevOps capabilities]]の1つ、[[DevOps capabilities/Fast Flow]]に分類される
 
