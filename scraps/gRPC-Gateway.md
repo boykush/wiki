@@ -6,6 +6,4 @@ HTTP仕様は[[Protocol Buffers]]上において `google.api.http` のような 
 
 同リポジトリには[protoc-gen-openapiv2](https://github.com/grpc-ecosystem/grpc-gateway/tree/main/protoc-gen-openapiv2)プラグインも含まれており[[Open API]]仕様を出力できる
 
----
-
-- [gRPC-Gateway | gRPC-Gateway Documentation Website](https://grpc-ecosystem.github.io/grpc-gateway/)
+<https://grpc-ecosystem.github.io/grpc-gateway/>
