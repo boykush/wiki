@@ -8,6 +8,6 @@ PostgreSQLや[[MySQL]]といった代表的なデータベース管理システ�
 
 Atlas CloudによってWeb上での可視化も可能
 
----
+[[Ariga]]社によって開発されている
 
-- [Welcome to Atlas | Atlas | Manage your database schema as code](https://atlasgo.io/docs)
+<https://atlasgo.io/docs>
