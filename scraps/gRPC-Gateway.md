@@ -1,6 +1,6 @@
-#[[Network]] #[[API Architecture]] #[[REST]]
+#[[Network]] #[[API Architecture]] #[[REST]] #[[Programming]]
 
-[[gRPC]]において、gRPC serviceをRESTful APIとして提供するためのライブラリ。[[HTTP]]+[[JSON]]のインターフェースで[[リバースプロキシ]]サーバーを生成する
+[[gRPC]]において、gRPC serviceをRESTful APIとして提供するための[[Go]]ライブラリ。[[HTTP]]+[[JSON]]のインターフェースで[[リバースプロキシ]]サーバーを生成する
 
 HTTP仕様は[[Protocol Buffers]]上において `google.api.http` のような `HttpRule` によって記述する
 
