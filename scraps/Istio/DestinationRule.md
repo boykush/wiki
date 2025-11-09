@@ -1,6 +1,6 @@
 #[[API Architecture]]
 
-[[Istio]]において、トラフィックに対するポリシーを定義する[[Kubernetes/カスタムリソース]]
+[[Istio]]において、トラフィックに対するポリシーを定義するカスタムリソース（[[Kubernetes/CRD]]）
 
 以下のようなことが実現できる
 - [[Istio/Subset]]の定義

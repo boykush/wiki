@@ -1,6 +1,6 @@
 #[[Kubernetes]]
 
-[[Kubernetes/CustomResourceDefinition]]による[[Kubernetes/カスタムリソース]]とそれを操作する[[Kubernetes/Controller]]を共に使うパターン
+[[Kubernetes/CRD]]によるカスタムリソースとそれを操作する[[Kubernetes/Controller]]を共に使うパターン
 
 ---
 

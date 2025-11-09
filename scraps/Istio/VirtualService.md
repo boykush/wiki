@@ -1,6 +1,6 @@
 #[[API Architecture]]
 
-[[Istio]]において、トラフィックルーティングルールを定義する[[Kubernetes/カスタムリソース]]。
+[[Istio]]において、トラフィックルーティングルールを定義するカスタムリソース（[[Kubernetes/CRD]]）。
 
 [[Istio/DestinationRule]]と組み合わせて[[Istio/Subset]]単位でルールを設定可能
 

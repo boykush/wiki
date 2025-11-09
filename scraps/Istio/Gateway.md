@@ -1,6 +1,6 @@
 #[[API Architecture]]
 
-[[Istio]]において、トラフィックの入り口または出口となる[[Kubernetes/カスタムリソース]]
+[[Istio]]において、トラフィックの入り口または出口となるカスタムリソース（[[Kubernetes/CRD]]）
 
 入り口として受けたトラフィックは[[Istio/VirtualService]]に流す
 

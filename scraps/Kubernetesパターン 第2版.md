@@ -45,7 +45,7 @@ Bilgin Ibryam, Roland Huß, [[松浦 隼人]]
 ### 11章 Stateless Service（ステートレスサービス）
 - [[Kubernetes/PersistentVolume|PersistentVolume/PersistentVolumeClaim]]
 ### 12章 Stateful Service（ステートフルサービス）
-- [[Kubernetes/CustomResourceDefinition]]
+- [[Kubernetes/CRD]]
 - [[Kubernetes/StatefulSet]]
 ### 13章 [[サービスディスカバリ|Service Discovery（サービスディスカバリ）]]
 - [[Kubernetes/Service]]
