@@ -1,0 +1,10 @@
+[tools]
+"npm:markdownlint-cli2" = "latest"
+
+[tasks.lint]
+description = "Run markdownlint on all markdown files"
+run = "markdownlint-cli2 \"scraps/**/*.md\" \"*.md\""
+
+[tasks.lint-fix]
+description = "Run markdownlint and auto-fix issues"
+run = "markdownlint-cli2 --fix \"scraps/**/*.md\" \"*.md\""
