@@ -19,4 +19,5 @@ Googleによって開発されたインターフェース定義によるバイ�
 またProtocol Buffersはフィールド制約である `optional` と `repeated` 間の互換性にも対応している。これはバイナリ上でフィールド情報を単純に複数回並べているため。
 
 ---
+
 - [Protocol Buffers Documentation](https://protobuf.dev/)

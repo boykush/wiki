@@ -9,6 +9,7 @@ CIを実現するには次の要素が必要としている
 - チェックイン毎の自動ビルドとテスト
 
 また次の2つも効果に繋がる
+
 - [[DevOps capabilities/Trunk-based development]]
 - [[DevOps capabilities/Working in small batches]]
 

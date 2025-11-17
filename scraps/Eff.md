@@ -1,4 +1,5 @@
 ## Extensible Effect
+
 #[[Programming]]
 
 - [作って学ぶ Extensible Effects](https://scalamatsuri.org/ja/programs/SESSION_DAY_2_04)

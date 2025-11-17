@@ -8,6 +8,7 @@
 - [[Four Keys/サービス復元時間]]
 
 [[State of DevOps Report]]では、以上の4つの尺度を用いて、
+
 - Elite
 - High
 - Medium

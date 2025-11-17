@@ -1,4 +1,5 @@
 ## 数値ライブラリで始める安全なプログラミング
+
 #[[Programming]] #[[Security]] #[[Scala]]
 
 [Scala Matsuri 2024](https://scalamatsuri.org/ja/programs/SESSION_DAY_1_08)での発表

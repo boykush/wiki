@@ -9,5 +9,3 @@
 ---
 
 - [What is TiDB Self-Managed | TiDB Docs](https://docs.pingcap.com/tidb/stable/overview/)
-
-

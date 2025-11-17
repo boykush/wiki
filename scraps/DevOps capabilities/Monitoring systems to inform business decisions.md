@@ -2,4 +2,4 @@
 
 ---
 
-- [DORA | Capabilities: Monitoring systems to inform business decisions](https://dora.dev/capabilities/monitoring-systems-to inform-business-decisions/)
+- [DORA | Capabilities: Monitoring systems to inform business decisions](<https://dora.dev/capabilities/monitoring-systems-to> inform-business-decisions/)

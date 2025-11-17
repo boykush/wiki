@@ -6,9 +6,10 @@
 
 これは**Scraps**で構築された個人用ウィキです。Scrapsは、ナレッジマネジメント用に設計されたRustベースの静的サイトジェネレーターです。このシステムは、Markdownファイルをウィキスタイルのリンク、タグ組織、および自動GitHub Pagesデプロイを備えた検索可能なウィキに変換します。
 
-Scrapsの詳細な利用方法については https://boykush.github.io/scraps/ を参照してください。
+Scrapsの詳細な利用方法については <https://boykush.github.io/scraps/> を参照してください。
 
 主要なアーキテクチャコンポーネント：
+
 - **コンテンツ**: `/docs/`ディレクトリ内のMarkdownファイル（384+ファイル）
 - **設定**: サイト設定とビルドオプションを含む`Config.toml`
 - **出力**: `/public/`ディレクトリに生成される静的HTML
@@ -18,6 +19,7 @@ Scrapsの詳細な利用方法については https://boykush.github.io/scraps/ 
 ## 一般的な開発コマンド
 
 ### ビルドとプレビュー
+
 ```bash
 # 静的サイトをビルド（MarkdownからHTMLを生成）
 scraps build
@@ -40,7 +42,8 @@ scraps tag
 ## 設定詳細
 
 `Config.toml`ファイルが制御する項目：
-- **base_url**: デプロイURL（https://boykush.github.io/wiki/）
+
+- **base_url**: デプロイURL（<https://boykush.github.io/wiki/）>
 - **sort_key**: "linked_count" - 被リンク数でページをソート
 - **build_search_index**: true - 全文検索を有効化
 - **color_scheme**: "only_dark" - ダークテーマのみ
@@ -51,6 +54,7 @@ scraps tag
 ## デプロイプロセス
 
 GitHub Actions（`.github/workflows/build-and-deploy.yml`）による自動デプロイ：
+
 - **トリガー**: リポジトリへのプッシュ時
 - **アクション**: `boykush/scraps-deploy-action@v2`
 - **ターゲット**: `gh-pages`ブランチ → GitHub Pages
@@ -62,12 +66,14 @@ GitHub Actions（`.github/workflows/build-and-deploy.yml`）による自動デ�
 Scrapsには構造化コンテンツ作成のためのテンプレートシステムがあります：
 
 ### 利用可能なテンプレート
+
 - **book.md**: 書籍情報用テンプレート
   - 環境変数: SUBTITLE, AUTHOR, TRANSLATOR, COVER, HOME_TITLE, HOME_URL, TOC
 - **person.md**: 人物紹介用テンプレート  
   - 環境変数: IMAGE, HOME_URL
 
 ### テンプレート使用方法
+
 ```bash
 # 対話式でテンプレートからファイルを生成
 scraps template

@@ -1,6 +1,7 @@
 [[Argo CD]]同期操作の各段階でカスタムスクリプトを実行できる機能
 
 各段階の種別は以下
+
 - PreSync
 - Sync
 - PostSync

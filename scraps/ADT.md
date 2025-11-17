@@ -1,4 +1,5 @@
 ## Algebraic Data Type
+
 ## 代数データ型
 
 #[[Programming]]

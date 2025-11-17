@@ -6,7 +6,8 @@
 
 いくつかのテンプレートは以下から参照可能
 
-https://github.com/adr/madr/tree/develop/template
+<https://github.com/adr/madr/tree/develop/template>
 
 ---
+
 - [About MADR | MADR](https://adr.github.io/madr/)

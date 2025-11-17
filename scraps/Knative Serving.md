@@ -3,6 +3,7 @@
 [[Kubernetes/Service]]の別APIのような[[サービスディスカバリ]]パターン
 
 4種類のリソースは以下
+
 - Services
 - Routes
 - Configurations

@@ -6,5 +6,4 @@
 
 [[Flagsmith]]のようないくつかのツールで統合が容易になっている
 
-
 <https://docs.datadoghq.com/real_user_monitoring/feature_flag_tracking/>

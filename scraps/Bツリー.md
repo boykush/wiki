@@ -7,4 +7,5 @@ Bツリーはデータベースを固定サイズのブロックあるいはペ�
 また信頼性を高めるためにwrite-aheadログ（WAL）と呼ばれる書き込み内容の構造化データを追記して保持している。
 
 ---
+
 - [Wikipedia](https://ja.wikipedia.org/wiki/B%E6%9C%A8)

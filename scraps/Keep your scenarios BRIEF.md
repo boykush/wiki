@@ -1,4 +1,5 @@
-### Authors:
+### Authors
+
 [[Seb Rose]] [[風間 裕也]]
 
 #[[Testing]] #[[BDD]]

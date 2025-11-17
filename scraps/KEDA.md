@@ -7,6 +7,7 @@
 [[Kubernetes/HorizontalPodAutoscalar|HPA]]等の標準のKubernetesコンポーネントと連携して、上書きや重複なしに動作する
 
 ワークロードの `triggers` にイベントトリガーを記述可能で、トリガーのタイプには例として以下のようなものがある
+
 - [[Cron]]
 - [[Datadog]]
 - [[MySQL]]

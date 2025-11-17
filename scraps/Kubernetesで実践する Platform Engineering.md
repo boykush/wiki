@@ -1,6 +1,7 @@
 ##
 
-### Authors:
+### Authors
+
 Mauricio Salatino
 株式会社スリーシェイク, 元内 柊也, 木曽 和則, 戸澤 涼, 長谷川 広樹
 
