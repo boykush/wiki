@@ -32,13 +32,13 @@
 
 - Fast Flow、Fast Feedback、Climate for Learning
 
-**ソフトウェア設計**
+### ソフトウェア設計
 
 - ドメイン駆動設計(DDD)
 - マイクロサービスアーキテクチャ
 - RESTful API設計
 
-**開発手法**
+### 開発手法
 
 - アジャイル、スクラム、テスト駆動開発
 - 継続的デリバリー、DevOps

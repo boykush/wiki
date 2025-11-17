@@ -2,7 +2,7 @@
 
 [[Chris Matts]]によって考えられた、以下のフォーマットでテストシナリオを記述する記法
 
-```
+```gherkin
 Scenario: Breaker joins a game
   Given the Maker has started a game with the word "silky"
   When the Breaker joins the Maker's game

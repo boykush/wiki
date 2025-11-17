@@ -8,7 +8,7 @@
 
 [[Kubernetes/Deployment]]等に指定するイメージを最新のバージョンで置きかえるようなケース
 
-```
+```bash
 > kustomize edit set image $BEFORE_IMAGE_NAME=$AFTER_IMAGE_NAME
 ```
 
