@@ -1,4 +1,9 @@
 {
+  // MD013: line-length - Line length
+  // Disabled because 80 character limit is impractical for Japanese text
+  // Reference: https://github.com/DavidAnson/markdownlint/blob/main/doc/md013.md
+  "MD013": false,
+
   // MD018: no-missing-space-atx - No space after hash on atx style heading
   // Disabled to allow Wiki-link syntax (#[[tag]]) without space after hash
   // Reference: https://github.com/DavidAnson/markdownlint/blob/main/doc/md018.md
