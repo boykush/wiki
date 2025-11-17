@@ -6,7 +6,7 @@ Justin Richer, Antonio Sanso
 
 #[[Security]] #[[Book]] #[[API Architecture]] #[[Authorization]] #[[Authentication]]
 
-![](https://www.seshop.com/static/images/product/22242/L.png)
+![OAuth徹底入門](https://www.seshop.com/static/images/product/22242/L.png)
 
 [翔泳社](https://www.shoeisha.co.jp/book/detail/9784798159294)
 

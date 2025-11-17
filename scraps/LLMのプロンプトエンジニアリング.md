@@ -7,7 +7,7 @@ John Berryman, Albert Ziegler
 
 #[[Book]] #[[LLM]]
 
-![](https://www.oreilly.co.jp/books/images/picture_large978-4-8144-0113-0.jpeg)
+![LLMのプロンプトエンジニアリング](https://www.oreilly.co.jp/books/images/picture_large978-4-8144-0113-0.jpeg)
 
 [LLMのプロンプトエンジニアリング - O'Reilly Japan](https://www.oreilly.co.jp/books/9784814401130/)
 

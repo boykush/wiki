@@ -7,7 +7,7 @@
 
 #[[Book]] #[[BDD]] #[[Testing]]
 
-![](https://d2sofvawe08yqg.cloudfront.net/bddbooks-formulation-jp/s_hero?1723769276)
+![The BDD Books - Formulation](https://d2sofvawe08yqg.cloudfront.net/bddbooks-formulation-jp/s_hero?1723769276)
 
 [The BDD Books - Formulation (Japanese Edition)](https://leanpub.com/bddbooks-formulation-jp)
 

@@ -1,6 +1,6 @@
 #[[API Architecture]] #[[Testing]]
 
-![](https://hurl.dev/assets/img/logo-dark.svg)
+![Hurl logo](https://hurl.dev/assets/img/logo-dark.svg)
 
 単純なプレーンテキストで記述されたhurlファイルの通り、[[HTTP]] requestsを行う[[Rust]]製ツール
 

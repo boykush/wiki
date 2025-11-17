@@ -1,3 +1,3 @@
 #[[Programming]]
 
-![](https://go.dev/images/go-logo-blue.svg)
+![Go logo](https://go.dev/images/go-logo-blue.svg)

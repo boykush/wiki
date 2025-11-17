@@ -1,6 +1,6 @@
 #[[Cloud Native]]
 
-![](https://dapr.io/images/dapr.svg)
+![Dapr logo](https://dapr.io/images/dapr.svg)
 
 [[マイクロサービス]]を構築するためのベストプラクティスをビルディングブロックと呼ばれる複数の独立したAPIとして提供する[[サーバーレス]]プラットフォーム
 

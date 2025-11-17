@@ -1,6 +1,6 @@
 #[[Person]]
 
-![](https://martin.kleppmann.com/images/martin-kleppmann.jpg)
+![Martin Kleppmann](https://martin.kleppmann.com/images/martin-kleppmann.jpg)
 
 ---
 

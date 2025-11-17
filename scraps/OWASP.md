@@ -1,6 +1,6 @@
 ## Open Worldwide Application Security Project
 
-![](https://owasp.org/assets/images/logo.png)
+![OWASP logo](https://owasp.org/assets/images/logo.png)
 
 #[[Security]]
 

@@ -2,7 +2,7 @@
 
 #[[DevOps]]
 
-![](https://dora.dev/img/dora-logo.svg)
+![DORA logo](https://dora.dev/img/dora-logo.svg)
 
 ソフトウェアのデリバリ、運用のパフォーマンスに関して、2014年から多くの専門家のインサイトを収集し研究しているチーム
 

@@ -6,7 +6,7 @@
 
 #[[Network]] #[[Book]]
 
-![](https://gihyo.jp/assets/images/cover/2024/thumb/TH320_9784297141578.jpg)
+![TCP:IP技術入門](https://gihyo.jp/assets/images/cover/2024/thumb/TH320_9784297141578.jpg)
 
 [技術評論社](https://gihyo.jp/book/2024/978-4-297-14157-8)
 

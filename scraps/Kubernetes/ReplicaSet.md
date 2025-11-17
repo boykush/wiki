@@ -1,6 +1,6 @@
 #[[Kubernetes]] #[[Cloud Native]]
 
-![](https://github.com/kubernetes/community/raw/master/icons/png/resources/labeled/rs-128.png)
+![ReplicaSet logo](https://github.com/kubernetes/community/raw/master/icons/png/resources/labeled/rs-128.png)
 
 `spec.replicas` の指定によって同一イメージの[[Kubernetes/Pod]]を複数起動させることができる[[Kubernetes/リソース]]
 

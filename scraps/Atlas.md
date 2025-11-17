@@ -1,6 +1,6 @@
 #[[Data Store]] #[[Continuous Integration]] #[[Continuous Delivery]] #[[Documentation]]
 
-![](https://atlasgo.link/assets/atlas-logo.svg)
+![Atlas logo](https://atlasgo.link/assets/atlas-logo.svg)
 
 データベーススキーマの最新の状態をコードとして管理し、変更時の差分を元に自動でマイグレーションクエリを生成してくれるような[[DevOps]]ツール
 

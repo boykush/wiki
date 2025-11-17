@@ -1,6 +1,6 @@
 #[[Network]] #[[Kubernetes]]
 
-![](https://github.com/kubernetes/community/raw/master/icons/png/resources/labeled/netpol-128.png)
+![Network policy logo](https://github.com/kubernetes/community/raw/master/icons/png/resources/labeled/netpol-128.png)
 
 [[Kubernetes/Pod]]に対する接続元(ingress)、接続先(egress)のルールを定義できるリソース。L3/[[L4]]ネットワークレイヤを扱う[[Kubernetes/リソース]]
 

@@ -6,7 +6,7 @@ James Gough, Daniel Bryant, Matthew Auburn
 
 #[[Book]] #[[API Architecture]]
 
-![](https://www.oreilly.co.jp/books/images/picture_large978-4-8144-0089-8.jpeg)
+![マスタリングAPIアーキテクチャ](https://www.oreilly.co.jp/books/images/picture_large978-4-8144-0089-8.jpeg)
 
 [O'Reilly Japan](https://www.oreilly.co.jp/books/9784814400898/)
 

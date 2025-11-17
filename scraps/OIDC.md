@@ -1,6 +1,6 @@
 ## OpenID Connect
 
-![](https://openid.net/wp-content/uploads/2022/11/df-l-oix-l-openid_rgb-300dpi.png)
+![OpenID Connect logo](https://openid.net/wp-content/uploads/2022/11/df-l-oix-l-openid_rgb-300dpi.png)
 
 #[[Security]] #[[Authentication]] #[[Authorization]]
 

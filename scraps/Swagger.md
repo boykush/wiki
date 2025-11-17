@@ -1,4 +1,4 @@
-![](https://static1.smartbear.co/swagger/media/assets/images/swagger_logo.svg)
+![Swagger logo](https://static1.smartbear.co/swagger/media/assets/images/swagger_logo.svg)
 
 #[[Documentation]] #[[API Architecture]]
 

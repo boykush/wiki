@@ -1,6 +1,6 @@
  #[[Kubernetes]] #[[Cloud Native]]
 
-![](https://github.com/kubernetes/community/raw/master/icons/png/resources/labeled/job-128.png)
+![Job logo](https://github.com/kubernetes/community/raw/master/icons/png/resources/labeled/job-128.png)
 
 [[Kubernetes/Pod]]を1つ以上作成しプロセスを実行する[[Kubernetes/リソース]]
 

@@ -1,6 +1,6 @@
 #[[Kubernetes]]
 
-![](https://github.com/kubernetes/community/raw/master/icons/png/resources/labeled/crd-128.png)
+![CRD logo](https://github.com/kubernetes/community/raw/master/icons/png/resources/labeled/crd-128.png)
 
 **CRD (CustomResourceDefinition)** は、[[Kubernetes/リソース]]をカスタムして定義できる機能。様々な拡張APIに利用されている。
 

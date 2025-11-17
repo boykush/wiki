@@ -1,6 +1,6 @@
 #[[Cloud Native]]
 
-![](https://kubernetes.io/images/kubernetes.png)
+![Kubernetes logo](https://kubernetes.io/images/kubernetes.png)
 
 [[Docker]]のようなアプリケーション[[コンテナ]]のオーケストレーションを行うオープンソースのプラットフォーム
 

@@ -1,6 +1,6 @@
 #[[Cloud Native]]
 
-![](https://github.com/kubernetes/community/raw/master/icons/png/resources/labeled/pod-128.png)
+![Pod logo](https://github.com/kubernetes/community/raw/master/icons/png/resources/labeled/pod-128.png)
 
 [[Kubernetes]]内でデプロイできる最小ユニットの[[Kubernetes/リソース]]
 

@@ -1,4 +1,4 @@
-![](https://testcontainers.com/images/testcontainers-logo.svg)
+![Testcontainers logo](https://testcontainers.com/images/testcontainers-logo.svg)
 
 #[[Data Store]] #[[Testing]]
 

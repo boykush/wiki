@@ -1,6 +1,6 @@
 #[[Kubernetes]]
 
-![](https://github.com/kubernetes/community/raw/master/icons/png/resources/labeled/ds-128.png)
+![DaemonSet logo](https://github.com/kubernetes/community/raw/master/icons/png/resources/labeled/ds-128.png)
 
 ある1つの[[Kubernetes/Nodes]]または各ノードに常に1つデーモンとして動作していて欲しい[[Kubernetes/Pod]]を配置する[[Kubernetes/リソース]]
 

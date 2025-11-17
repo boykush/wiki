@@ -1,6 +1,6 @@
 #[[Kubernetes]]
 
-![](https://github.com/kubernetes/community/raw/master/icons/png/resources/labeled/sa-128.png)
+![ServiceAccount logo](https://github.com/kubernetes/community/raw/master/icons/png/resources/labeled/sa-128.png)
 
 [[Kubernetes/Pod]]/[[Kubernetes/Deployment]]り当てられる[[Authentication|認証]]・[[Authorization|認可]]目的のアイデンティティ[[Kubernetes/リソース]]
 

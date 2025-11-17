@@ -1,6 +1,6 @@
 #[[Documentation]] #[[API Architecture]]
 
-![](https://www.openapis.org/wp-content/uploads/sites/3/2018/02/OpenAPI_Logo_Pantone-1.png)
+![Open API logo](https://www.openapis.org/wp-content/uploads/sites/3/2018/02/OpenAPI_Logo_Pantone-1.png)
 
 [[HTTP]] APIの動作を記述するためのオープンで標準的な仕様。リクエストからレスポンスまでAPIのライフサイクルを説明できる
 

@@ -1,6 +1,6 @@
 #[[Kubernetes]] #[[Cloud Native]]
 
-![](https://github.com/kubernetes/community/raw/master/icons/png/resources/labeled/cronjob-128.png)
+![CronJob logo](https://github.com/kubernetes/community/raw/master/icons/png/resources/labeled/cronjob-128.png)
 
 [[Kubernetes/Job]]の定期実行を定義できる[[Kubernetes/リソース]]
 

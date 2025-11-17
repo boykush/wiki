@@ -1,6 +1,6 @@
 #[[Continuous Delivery]] #[[Kubernetes]] #[[Cloud Native]]
 
-![](https://github.com/kubernetes/community/raw/master/icons/png/resources/labeled/deploy-128.png)
+![Deployment logo](https://github.com/kubernetes/community/raw/master/icons/png/resources/labeled/deploy-128.png)
 
 [[Kubernetes/ReplicaSet]]の機能に加えて[[Kubernetes/Pod]]のアップデート機能を提供する[[Kubernetes/リソース]]
 

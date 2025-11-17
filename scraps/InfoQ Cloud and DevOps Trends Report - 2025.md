@@ -1,6 +1,6 @@
 #[[Cloud Native]] #[[DevOps]]
 
-![](https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/articles/cloud-devops-trends-2025/en/resources/1Infoq-cloud-devops-trends-2025-1760961887459.jpg)
+![InfoQ Cloud and DevOps Trends Report - 2025](https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/articles/cloud-devops-trends-2025/en/resources/1Infoq-cloud-devops-trends-2025-1760961887459.jpg)
 
 InfoQが2025年の技術トレンドを[[キャズム理論]]による分類で整理したもの
 

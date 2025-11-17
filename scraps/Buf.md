@@ -1,4 +1,4 @@
-![](https://github.com/bufbuild/buf/raw/main/.github/buf-logo.svg)
+![Buf logo](https://github.com/bufbuild/buf/raw/main/.github/buf-logo.svg)
 
 [[Protocol Buffers]]を用いたAPIを効率的、効果的に作成、保守、運用するためのツール群を提供する。
 

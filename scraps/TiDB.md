@@ -1,6 +1,6 @@
 #[[Data Store]]
 
-![](https://avatars.githubusercontent.com/u/11855343?s=200&v=4)
+![TiDB logo](https://avatars.githubusercontent.com/u/11855343?s=200&v=4)
 
 [[OLTP]]・[[OLAP]]の双方の機能をハイブリッドに備える、[[MySQL]]互換のSQLデータベースOSS
 

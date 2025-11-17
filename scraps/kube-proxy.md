@@ -1,6 +1,6 @@
 #[[Network]]
 
-![](https://github.com/kubernetes/community/raw/master/icons/png/control_plane_components/labeled/k-proxy-128.png)
+![kube-proxy logo](https://github.com/kubernetes/community/raw/master/icons/png/control_plane_components/labeled/k-proxy-128.png)
 
 [[Kubernetes]]において、[[Kubernetes/Service]]の一部を実装しているコンポーネント
 

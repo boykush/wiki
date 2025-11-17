@@ -6,7 +6,7 @@
 
 #[[Book]]
 
-![](https://64.media.tumblr.com/51e0203da0d43fc34fe675b976194c70/073598ba94bf7416-5a/s1280x1920/0ab6860608b69faa747821255e61aead502d9a49.jpg)
+![Clean Craftsmanship](https://64.media.tumblr.com/51e0203da0d43fc34fe675b976194c70/073598ba94bf7416-5a/s1280x1920/0ab6860608b69faa747821255e61aead502d9a49.jpg)
 
 [asciidwango](https://asciidwango.jp/post/693992928727760896/clean-craftsmanship)
 

@@ -1,6 +1,6 @@
  #[[Kubernetes]]
 
-![](https://github.com/kubernetes/community/raw/master/icons/png/resources/labeled/pv-128.png)
+![PersistentVolume logo](https://github.com/kubernetes/community/raw/master/icons/png/resources/labeled/pv-128.png)
 
 [[Kubernetes/Volume|Volume]]で扱うことができるようなクラウド環境のストレージサービスを抽象化した[[Kubernetes/リソース]]
 

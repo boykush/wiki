@@ -1,6 +1,6 @@
 #[[Continuous Delivery]]
 
-![](https://openfeature.dev/img/logo-light.svg)
+![OpenFeature logo](https://openfeature.dev/img/logo-light.svg)
 
 [[フィーチャーフラグ]]に関するオープンな標準化
 

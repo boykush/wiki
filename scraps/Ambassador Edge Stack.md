@@ -1,6 +1,6 @@
 #[[API Architecture]] #[[Cloud Native]]
 
-![](https://avatars.githubusercontent.com/u/9270257?s=200&v=4)
+![Ambassador Edge Stack logo](https://avatars.githubusercontent.com/u/9270257?s=200&v=4)
 
 [[Kubernetes]]ネイティブな[[APIゲートウェイ]]、[[Helm]]を利用してインストールできる
 

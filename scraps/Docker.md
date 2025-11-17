@@ -1,6 +1,6 @@
 #[[Continuous Delivery]]
 
-![](https://www.docker.com/ja-jp/wp-content/uploads/2023/08/logo-guide-logos-1.svg)
+![Docker logo](https://www.docker.com/ja-jp/wp-content/uploads/2023/08/logo-guide-logos-1.svg)
 
 Linuxカーネルの機能を用いて[[Go]]言語で書かれた[[コンテナ]]仮想化技術
 

@@ -1,6 +1,6 @@
 #[[Data Store]]
 
-![](https://github.com/kubernetes/community/raw/master/icons/png/infrastructure_components/labeled/etcd-128.png)
+![etcd logo](https://github.com/kubernetes/community/raw/master/icons/png/infrastructure_components/labeled/etcd-128.png)
 
 [[Kubernetes]]のクラスタにおいて利用される、一貫性・高可用性を持つキーバリューストア
 

@@ -1,6 +1,6 @@
 #[[Testing]] #[[API Architecture]]
 
-![](https://pact.io/assets/img/logo-black.png)
+![Pact logo](https://pact.io/assets/img/logo-black.png)
 
 [[コントラクトテスト]]においてコントラクトをコード上で記述するためのライブラリ群
 

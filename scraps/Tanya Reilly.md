@@ -1,5 +1,3 @@
 #[[Person]]
 
-![person_image]()
-
-- [Home]()
+![Tanya Reilly]()

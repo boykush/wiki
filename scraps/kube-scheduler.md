@@ -1,4 +1,4 @@
-![](https://github.com/kubernetes/community/raw/master/icons/png/control_plane_components/labeled/sched-128.png)
+![kube-scheduler logo](https://github.com/kubernetes/community/raw/master/icons/png/control_plane_components/labeled/sched-128.png)
 
 [[Kubernetes]]において[[Kubernetes/Pod]]をどの[[Kubernetes/Nodes]]に配置するかを決定するルール
 

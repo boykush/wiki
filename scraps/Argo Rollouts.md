@@ -1,6 +1,6 @@
 #[[Continuous Delivery]] #[[Cloud Native]]
 
-![](https://argoproj.github.io/static/768d962efdd84a6021db7c7792f01b41/rollouts-thumbnail.png)
+![Argo Rollouts logo](https://argoproj.github.io/static/768d962efdd84a6021db7c7792f01b41/rollouts-thumbnail.png)
 
 [[Argo]]のリリースサポート拡張、[[Kubernetes]] APIを拡張できる
 

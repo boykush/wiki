@@ -1,6 +1,6 @@
 #[[Network]]
 
-![](https://www.envoyproxy.io/docs/envoy/latest/_static/envoy-logo.png)
+![Envoy logo](https://www.envoyproxy.io/docs/envoy/latest/_static/envoy-logo.png)
 
 Lyftエンジニアリングチームから生まれたサービスプロキシ、[[OSI参照モデル]]のレイヤ7（アプリケーション）を扱う高レベルな機能を提供する
 

@@ -1,4 +1,4 @@
-![](https://graphql.org/_next/static/media/logo-wordmark.4eec1155.svg)
+![GraphQL logo](https://graphql.org/_next/static/media/logo-wordmark.4eec1155.svg)
 
 #[[API Architecture]] #[[Data Processing]]
 

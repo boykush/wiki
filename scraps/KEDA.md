@@ -1,6 +1,6 @@
 ## Kubernetes Event-driven Autoscaling
 
-![](https://keda.sh//img/logos/keda-icon-color.png)
+![KEDA logo](https://keda.sh//img/logos/keda-icon-color.png)
 
 イベントをトリガーにAutoscalingを行う[[サーバーレス]]な[[Kubernetes]]の拡張ツール
 

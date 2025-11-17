@@ -1,6 +1,6 @@
 ## Cloud Native Computing Foundation
 
-![](https://www.cncf.io/wp-content/uploads/2023/04/cncf-main-site-logo.svg)
+![CNCF logo](https://www.cncf.io/wp-content/uploads/2023/04/cncf-main-site-logo.svg)
 
 [[Cloud Native]]を定義し、最先端のパターンを誰もが利用できるよう民主化するOSSコミュニティ。[[Linux Foundation]]プロジェクト
 

@@ -1,4 +1,4 @@
-![](https://danashby.co.uk/wp-content/uploads/2016/10/model-2.jpg)
+![Continuous Testing in DevOps](https://danashby.co.uk/wp-content/uploads/2016/10/model-2.jpg)
 
 #[[Testing]] #[[Continuous Testing]]
 

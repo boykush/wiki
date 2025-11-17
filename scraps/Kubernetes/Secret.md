@@ -1,6 +1,6 @@
 #[[Security]] #[[Kubernetes]]
 
-![](https://github.com/kubernetes/community/raw/master/icons/png/resources/labeled/secret-128.png)
+![Secret logo](https://github.com/kubernetes/community/raw/master/icons/png/resources/labeled/secret-128.png)
 
 [[Kubernetes/Pod]]とは別に独立して機密情報を定義する[[Kubernetes/リソース]]
 
