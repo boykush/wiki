@@ -2,7 +2,7 @@
 
 [[Seb Rose]] [[風間 裕也]]
 
-#[[Testing]] #[[BDD]]
+#[[Blog]] #[[Testing]] #[[BDD]]
 
 [[BRIEFの原則]]について紹介した記事
 

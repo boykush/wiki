@@ -1,4 +1,4 @@
-#[[Team Organization]]
+#[[Blog]] #[[Team Organization]]
 
 [Scaling Agile @ Spotify](https://blog.crisp.se/2012/11/14/henrikkniberg/scaling-agile-at-spotify)の中で語られている組織設計で、Spotifyモデルとして知られている
 

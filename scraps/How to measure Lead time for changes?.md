@@ -1,4 +1,4 @@
-#[[DevOps]]
+#[[Blog]] #[[DevOps]]
 
 [[Four Keys/変更のリードタイム|Lead time for changes]]と、Lead time, Cycle timeとの比較を紹介しているブログ記事
 

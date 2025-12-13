@@ -1,4 +1,4 @@
-#[[Software Design]] #[[Team Organization]]
+#[[Blog]] #[[Software Design]] #[[Team Organization]]
 
 [[コンウェイの法則]]について[[Martin Fowler]]が書いたブログ
 

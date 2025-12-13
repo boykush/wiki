@@ -1,4 +1,4 @@
-#[[Testing]] #[[Agile Testing]]
+#[[Blog]] #[[Testing]] #[[Agile Testing]]
 
 [[アジャイルテストの4象限]]
 

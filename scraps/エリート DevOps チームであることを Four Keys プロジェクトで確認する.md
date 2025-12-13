@@ -1,4 +1,4 @@
-#[[DevOps]]
+#[[Blog]] #[[DevOps]]
 
 [[Four Keys]]の計測方法についてGoogle Cloudブログ上で説明されている
 

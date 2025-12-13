@@ -1,4 +1,4 @@
-#[[Software Design]]
+#[[Blog]] #[[Software Design]]
 
 [[マイクロサービス]]について[[Martin Fowler]],[[James Lewis]]が2014年に書いたブログ
 

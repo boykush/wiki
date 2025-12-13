@@ -1,4 +1,4 @@
-#[[Software Design]]
+#[[Blog]] #[[Software Design]]
 
 [[Martin Fowler]]が2015年に書いたブログ
 

@@ -1,4 +1,4 @@
-#[[Data Store]]
+#[[Blog]] #[[Data Store]]
 
 [[Atlas]]をベースとしてマイグレーション[[Docker]]イメージを、[[GitHub Actions]]でビルド＆パブリッシュ、[[Kubernetes/Job|Kubernetes Job]]上の[[Argo CD]]でのマイグレーションリリースまでを自動化する記事
 
