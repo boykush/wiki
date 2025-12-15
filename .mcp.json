@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "scraps": {
+      "command": "mise",
+      "args": ["exec", "--", "scraps", "mcp", "serve"]
+    }
+  }
+}
