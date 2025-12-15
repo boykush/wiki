@@ -18,17 +18,37 @@ Scrapsの詳細な利用方法については <https://boykush.github.io/scraps/
 
 ## 一般的な開発コマンド
 
-### ビルドとプレビュー
+このプロジェクトでは[mise](https://mise.jdx.dev/)を使用してタスクとツールを管理しています。
+
+### 利用可能なタスク
 
 ```bash
-# 静的サイトをビルド（MarkdownからHTMLを生成）
-scraps build
+# タスク一覧の確認
+mise tasks
 
-# ローカルでプレビュー配信（http://127.0.0.1:1112）
-scraps serve
+# 静的サイトのビルド
+mise run build
 
-# ウィキ内の利用可能なタグを一覧表示
-scraps tag
+# ローカルでプレビュー配信
+mise run serve
+
+# Markdownファイルのlint
+mise run lint
+
+# Markdownファイルのlint（自動修正）
+mise run lint-fix
+```
+
+### mise tasksに含まれていないコマンド
+
+mise tasksに含まれていないScrapsコマンドは、`mise exec`経由で実行します：
+
+```bash
+# 例：ウィキ内のタグ一覧表示
+mise exec -- scraps tag
+
+# 例：テンプレートから対話式でファイル生成
+mise exec -- scraps template
 ```
 
 ## コンテンツ作成
@@ -89,10 +109,10 @@ Scrapsには構造化コンテンツ作成のためのテンプレートシス�
 
 ```bash
 # 対話式でテンプレートからファイルを生成
-scraps template
+mise exec -- scraps template
 
 # 環境変数を設定してテンプレート適用も可能
-SUBTITLE="サブタイトル" AUTHOR="著者名" scraps template
+SUBTITLE="サブタイトル" AUTHOR="著者名" mise exec -- scraps template
 ```
 
 ## 重要な制約

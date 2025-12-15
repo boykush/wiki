@@ -17,3 +17,18 @@ run = "markdownlint-cli2 \"scraps/**/*.md\" \"*.md\""
 [tasks.lint-fix]
 description = "Run markdownlint and auto-fix issues"
 run = "markdownlint-cli2 --fix \"scraps/**/*.md\" \"*.md\""
+
+[tasks.generate-book]
+description = "Generate a book scrap from template"
+usage = '''
+arg "<title>" help="Book title"
+'''
+run = "scraps template generate book -t \"${usage_title}\""
+[tasks.generate-book.env]
+SUBTITLE = ""
+AUTHOR = ""
+TRANSLATOR = ""
+COVER = ""
+HOME_TITLE = ""
+HOME_URL = ""
+TOC = ""
