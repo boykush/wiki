@@ -79,8 +79,7 @@ project/
 │   └── Kubernetes/
 │       └── Service.md
 └── templates/
-    ├── book.md
-    └── person.md
+    └── book.md
 ```
 
 ## Best Practices for Content Creation

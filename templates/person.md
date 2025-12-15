@@ -1,5 +1,0 @@
-#[[Person]]
-
-![person_image]()
-
-<>

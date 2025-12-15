@@ -96,23 +96,12 @@ GitHub Actions（`.github/workflows/build-and-deploy.yml`）による自動デ�
 
 ## テンプレートシステム
 
-Scrapsには構造化コンテンツ作成のためのテンプレートシステムがあります：
+Scrapsには構造化コンテンツ作成のためのテンプレートシステムがあります。
 
-### 利用可能なテンプレート
-
-- **book.md**: 書籍情報用テンプレート
-  - 環境変数: SUBTITLE, AUTHOR, TRANSLATOR, COVER, HOME_TITLE, HOME_URL, TOC
-- **person.md**: 人物紹介用テンプレート  
-  - 環境変数: IMAGE, HOME_URL
-
-### テンプレート使用方法
+利用可能なテンプレートを確認するには、以下のコマンドを実行してください：
 
 ```bash
-# 対話式でテンプレートからファイルを生成
-mise exec -- scraps template
-
-# 環境変数を設定してテンプレート適用も可能
-SUBTITLE="サブタイトル" AUTHOR="著者名" mise exec -- scraps template
+mise exec -- scraps template list
 ```
 
 ## 重要な制約
