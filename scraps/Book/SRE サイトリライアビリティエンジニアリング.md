@@ -85,13 +85,13 @@ Betsy Beyer, Chris Jones, Jennifer Petoff, Niall Richard Murphy
 
 ### 25章　データ処理のパイプライン #[[Data Processing]]
 
-### 26章　データの完全性：What You Read Is What You Wrote
+### 26章　データの[[完全性]]：What You Read Is What You Wrote
 
 - [[レプリケーション]]
 
 ### 27章　大規模なプロダクトのローンチにおける信頼性
 
-- 機能フラグ
+- [[フィーチャーフラグ|機能フラグ]]
 
 ## 第Ⅳ部　管理
 
