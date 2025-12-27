@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <!-- Page title -->
+        
+            <title>Kush&#x27;s Wiki</title>
+            <meta property="og:title" content="Kush&#x27;s Wiki" />
+            <meta name="twitter:title" content="Kush&#x27;s Wiki" />
+        
+        <!-- Page description -->
+        
+            <meta name="description" content="boykushのナレッジ置き場" />
+            <meta property="og:description" content="boykushのナレッジ置き場" />
+            <meta name="twitter:description" content="boykushのナレッジ置き場" />
+        
+        <!-- Page favicon -->
+        
+            <link rel="icon" type="image/png" href="https:&#x2F;&#x2F;gist.github.com&#x2F;boykush&#x2F;3bbc68b5d2580374c97d4336b87fb70f&#x2F;raw&#x2F;a838b8f3584b21bcbbe4dd53afca380fe18695a7&#x2F;boykush_icon.png" />
+        
+        <!-- Rubik font -->
+        <link href="https://fonts.cdnfonts.com/css/rubik" rel="stylesheet">
+        <!-- Noto Sans JP font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+        <!-- Style sheet -->
+        <link rel="stylesheet" href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;main.css">
+        
+        
+    </head>
+    <body>
+        <header>
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;">
+                <h1>Kush&#x27;s Wiki</h1>
+            </a>
+        </header>
+        <main>
+            
+    <div class="index"> 
+        
+        
+          <div class="search-block">
+              <span class="icon" />
+              <input
+                type="text"
+                id="search-input"
+                onkeyup="doSearch()"
+                placeholder="Search by title..."
+                />
+              <ul id="search-results"></ul>
+          </div>
+        
+        <div class="tags-block">
+            
+    <ul class="tag-links">
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/security.html">
+                    <span class="title">Security</span>&nbsp;<span>(67)</span>
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/agile.html">
+                    <span class="title">Agile</span>&nbsp;<span>(56)</span>
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/testing.html">
+                    <span class="title">Testing</span>&nbsp;<span>(50)</span>
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/programming.html">
+                    <span class="title">Programming</span>&nbsp;<span>(47)</span>
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/cloud-native.html">
+                    <span class="title">Cloud Native</span>&nbsp;<span>(43)</span>
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/book.html">
+                    <span class="title">Book</span>&nbsp;<span>(42)</span>
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/person.html">
+                    <span class="title">Person</span>&nbsp;<span>(41)</span>
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/observability.html">
+                    <span class="title">Observability</span>&nbsp;<span>(40)</span>
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/team-organization.html">
+                    <span class="title">Team Organization</span>&nbsp;<span>(38)</span>
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/network.html">
+                    <span class="title">Network</span>&nbsp;<span>(36)</span>
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/software-design.html">
+                    <span class="title">Software Design</span>&nbsp;<span>(34)</span>
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/api-architecture.html">
+                    <span class="title">API Architecture</span>&nbsp;<span>(33)</span>
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/data-store.html">
+                    <span class="title">Data Store</span>&nbsp;<span>(29)</span>
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/documentation.html">
+                    <span class="title">Documentation</span>&nbsp;<span>(28)</span>
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/continuous-delivery.html">
+                    <span class="title">Continuous Delivery</span>&nbsp;<span>(26)</span>
+                </a>
+            </li>
+        
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;tags/">
+                    <span class="more-link">More...</span>
+                </a>
+            </li>
+        
+    </ul>
+
+        </div>
+        <div class="links-block">
+            <p class="sort-key">Sort by - linked count</p>
+            
+    <ul class="scrap-links">
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/httpie.html">
+                    
+                        <div class="header">
+                            <div class="title">httpie</div>
+                        </div>
+                    
+                    
+                        <div class="summary">ヒューマンフレンドリーなHTTP Client
+
+
+Main features - HTTPie 3.2.4 (latest) docs
+
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/アドレナリンジャンキー.html">
+                    
+                        <div class="header">
+                            <div class="title">アドレナリンジャンキー</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;cdn-bookplus.nikkei.com&#x2F;atcl&#x2F;catalog&#x2F;09&#x2F;P84010&#x2F;P84010_common_pc.jpg?__scale=w:160,h:224&amp;_sh=0ff0570fd0" loading="lazy" />
+                        </div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/群れはなぜ同じ方向を目指すのか？.html">
+                    
+                        <div class="header">
+                            <div class="title">群れはなぜ同じ方向を目指すのか？ </div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;www.hakuyo-sha.co.jp&#x2F;wp&#x2F;wp-content&#x2F;uploads&#x2F;2016&#x2F;06&#x2F;569.jpg" loading="lazy" />
+                        </div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/セキュアなソフトウェアの設計と開発.html">
+                    
+                        <div class="header">
+                            <div class="title">セキュアなソフトウェアの設計と開発</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;www.shuwasystem.co.jp&#x2F;images&#x2F;book&#x2F;632135.jpg" loading="lazy" />
+                        </div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/redoc.html">
+                    
+                        <div class="header">
+                            <div class="title">Redoc</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Documentation
+Open API仕様を元にドキュメンテーションを行いシンプルなUIで表示される
+CLIによるドキュメント生成またはHTMLファイルへのscript埋込が可能
+
+Redoc
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/知っておきたいプラットフォームエンジニアリングのホットなトピック.html">
+                    
+                        <div class="header">
+                            <div class="title">知っておきたいプラットフォームエンジニアリングのホットなトピック</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Platform Engineering #DevOps
+
+認知負荷
+Team Topologies
+DevOpsトポロジー
+
+https:&#x2F;&#x2F;www.infoq.com&#x2F;jp&#x2F;articles&#x2F;platform-engineering-primer&#x2F;
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/oauth徹底入門.html">
+                    
+                        <div class="header">
+                            <div class="title">OAuth徹底入門</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;www.seshop.com&#x2F;static&#x2F;images&#x2F;product&#x2F;22242&#x2F;L.png" loading="lazy" />
+                        </div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/inversion-of-control-containers-and-the-dependency-injection-pattern.html">
+                    
+                        <div class="header">
+                            <div class="title">Inversion of Control Containers and the Dependency Injection pattern</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Blog #Software Design
+Martin FowlerによるDependency Injectionの概念を定義した記念碑的な記事（2004年1月23日公開）
+背景
+それまで軽量コンテナフレームワークは「Inversion of Control（IoC）」という用語で説明されていたが、Fowlerは「IoCはフレームワークの一般的な特性であり包括的すぎて混乱を招く」と指摘。IoC推進者との議論を経て、より具体的な「Dependency Injection」という用語を作成した
+主な内容
+DIの定義：別のオブジェクト（アセンブラ）が、クラスのフィールドに適切な実装を注入するアプローチ。サービス構成の責任と使用の責任を分離する
+3つの実装パターン：
+
+Constructor Injection（コンストラクタ注入）：PicoContainerで採用。オブジェクト生成時に依存関係を明示
+Setter Injection（セッター注入）：Spring Frameworkで採用。初期化後に依存関係を設定
+Interface Injection（インターフェース注入）：Avalonで使用。注入用インターフェースを実装
+
+影響
+この記事により「Dependency Injection」という用語が確立され、以降のフレームワーク設計やソフトウェアアーキテクチャに大きな影響を与えた。Spring Frameworkも当初は「IoC」を使用していたが、後に「DI」という用語を採用
+https:&#x2F;&#x2F;martinfowler.com&#x2F;articles&#x2F;injection.html
+日本語訳：https:&#x2F;&#x2F;kakutani.com&#x2F;trans&#x2F;fowler&#x2F;injection.html
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/テストコードにはテストの意図を込めよう.html">
+                    
+                        <div class="header">
+                            <div class="title">テストコードにはテストの意図を込めよう</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#TDD #風間 裕也 #Testing
+ユニットテストのテストケース名は、入力値を列挙するのではなく論理的な組み合わせとしての意図・目的を込めるようにすべき。という話
+
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/監視saasの運用におけるobservability改善の歩み.html">
+                    
+                        <div class="header">
+                            <div class="title">監視SaaSの運用におけるObservability改善の歩み</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Observability
+
+キーワード
+
+Observability Primary Signals
+Unknown unknowns
+ログ&#x2F;メトリクス&#x2F;トレース
+OpenTelemetry
+オブザーバビリティ成熟度モデル
+
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/仮説キャンバスでプロダクトの仮説を立てよう.html">
+                    
+                        <div class="header">
+                            <div class="title">仮説キャンバスでプロダクトの仮説を立てよう</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Blog #市谷 聡啓 #仮説キャンバス
+
+Blog
+
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/30分で分かった気になるチームトポロジー.html">
+                    
+                        <div class="header">
+                            <div class="title">30分で分かった気になるチームトポロジー</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#吉羽 龍太郎 #Team Topologies #Team Organization
+チームトポロジーの邦訳者による書籍紹介スライド
+
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/オブジェクト指向入門-第2版-原則・コンセプト.html">
+                    
+                        <div class="header">
+                            <div class="title">オブジェクト指向入門 第2版 原則・コンセプト</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;www.seshop.com&#x2F;static&#x2F;images&#x2F;product&#x2F;7595&#x2F;L.png" loading="lazy" />
+                        </div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/スプリントレビュー-deep-dive.html">
+                    
+                        <div class="header">
+                            <div class="title">スプリントレビュー Deep Dive</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Agile #スクラム #吉羽 龍太郎 #スプリントレビュー
+
+
+ステークホルダー
+
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/第5回-テストピラミッド-～自動テストの信頼性を中長期的に保つ最適なバランス～.html">
+                    
+                        <div class="header">
+                            <div class="title">第5回　テストピラミッド ～自動テストの信頼性を中長期的に保つ最適なバランス～</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Testing #和田 卓人
+https:&#x2F;&#x2F;gihyo.jp&#x2F;dev&#x2F;serial&#x2F;01&#x2F;savanna-letter&#x2F;0005
+
+テストピラミッド
+テストサイズ
+テストダブル
+
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/serena.html">
+                    
+                        <div class="header">
+                            <div class="title">Serena</div>
+                        </div>
+                    
+                    
+                        <div class="summary">AI駆動のソフトウェア開発を強化する、Python製の会話型エージェント向けツールキット
+LLMをコーディングエージェントとして強化しセマンティックな検索・編集を可能にしトークンを節約する。IDE並みの精度でAIモデルとの統合が可能とされている
+MCPサーバーとして動作可能で、Claude Codeとの連携例もある
+技術的にはLSPによる高度な解析を行っており、以下のような言語に対応している
+
+Rust
+Go
+Python
+TypeScript&#x2F;JavaScript
+Java
+PHP
+C#
+Elixir
+Clojure
+C&#x2F;C++
+
+
+https:&#x2F;&#x2F;github.com&#x2F;oraios&#x2F;serena
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/kyaml.html">
+                    
+                        <div class="header">
+                            <div class="title">KYAML</div>
+                        </div>
+                    
+                    
+                        <div class="summary">Kubernetes 1.34からアルファ版公開されたKubernetes向けのYAMLフォーマット
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/ngram.html">
+                    
+                        <div class="header">
+                            <div class="title">ngram</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Data Store
+MySQLに搭載されている全文検索向けの全文パーサー、日本語対応している。
+FULLTEXT と合わせて指定しインデックスを生成する
+
+MySQL :: MySQL 8.0 リファレンスマニュアル :: 12.10.8 ngram 全文パーサー
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/入門-docker.html">
+                    
+                        <div class="header">
+                            <div class="title">入門 Docker</div>
+                        </div>
+                    
+                    
+                        <div class="summary">Dockerの入門資料
+入門 Docker
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/samesite.cookie.html">
+                    
+                        <div class="header">
+                            <div class="context">Cookie&#47;</div>
+                            <div class="title">SameSite</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Security
+Cookie属性の1つ
+同一生成元ポリシーを許可するレベル
+
+Strict
+Lax
+None
+
+の3段階がある
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/path.cookie.html">
+                    
+                        <div class="header">
+                            <div class="context">Cookie&#47;</div>
+                            <div class="title">Path</div>
+                        </div>
+                    
+                    
+                        <div class="summary">Cookie属性の1つ
+Domainに加えて、アプリケーションのパスレベルでCookieの対象範囲を指定する
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/secure.cookie.html">
+                    
+                        <div class="header">
+                            <div class="context">Cookie&#47;</div>
+                            <div class="title">Secure</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Security
+Cookie属性の1つ
+HTTPS通信を強制する
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/expire.cookie.html">
+                    
+                        <div class="header">
+                            <div class="context">Cookie&#47;</div>
+                            <div class="title">Expire</div>
+                        </div>
+                    
+                    
+                        <div class="summary">Cookie属性の1つ
+Cookieに永続性を持たせる
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/httponly.cookie.html">
+                    
+                        <div class="header">
+                            <div class="context">Cookie&#47;</div>
+                            <div class="title">HttpOnly</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Security
+Cookieの属性の1つ
+JavaScriptのようなスクリプトからのCookieアクセスを無効にする
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/max-age.cookie.html">
+                    
+                        <div class="header">
+                            <div class="context">Cookie&#47;</div>
+                            <div class="title">Max-Age</div>
+                        </div>
+                    
+                    
+                        <div class="summary">Cookie属性の1つ
+Cookieに永続性を持たせる
+</div>
+                    
+                </a>
+            </li>
+        
+    </ul>
+
+        </div>
+        <div class="paging-arrows">
+            
+                <a class="prev" href=".&#x2F;14.html">prev</a>
+            
+            
+        </div>
+    </div>
+
+        </main>
+        <footer>
+            Generated by <a href="https://github.com/boykush/scraps" target="_blank" rel="noopener noreferrer">Scraps</a>
+        </footer> 
+        <!-- Code syntax highlight -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script>
+        <!-- Code syntax highlight theme -->
+        <link href="https://unpkg.com/nord-highlightjs@0.1.0/dist/nord.css" rel="stylesheet" type="text/css" />
+        <!-- Mermaid -->
+        <script type="module">
+            import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11.6.0/+esm'
+        </script>
+        
+  
+  <!-- For search scraps -->
+  <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0"></script>
+  <script type="module">
+    fetch('./search_index.json')
+      .then(response => response.json())
+      .then(data => {
+        const fuseOptions = {
+          minMatchCharLength: 3,
+          keys: ["title"]
+        };
+        const fuse = new Fuse(data, fuseOptions);
+        window.search = function (query, numResults) {
+          return fuse.search(query).slice(0, numResults).map(result => [result.item.title, result.item.url]);
+        };
+      })
+  </script>
+  <script>
+    function doSearch() {
+      let value = document.getElementById("search-input").value;
+      console.log(`Search query: ${value}`);
+
+      // Retrieve 5 results
+      const results = search(value, 5);
+
+      console.log(`Results: ${results}`);
+
+      let ul = document.getElementById("search-results");
+      ul.innerHTML = "";
+
+      results.forEach((result, index) => {
+        var li = document.createElement("li");
+
+        let [title, url] = result;
+        console.log(`Title: ${title}, URL: ${url}`);
+        let elemlink = document.createElement('a');
+        elemlink.innerHTML = title;
+        elemlink.setAttribute('href', url);
+        li.appendChild(elemlink);
+        li.style.top = `${(index * 30) - 16}px`;
+        ul.appendChild(li);
+      })
+    }
+  </script>
+  
+ 
+    </body>
+</html>
