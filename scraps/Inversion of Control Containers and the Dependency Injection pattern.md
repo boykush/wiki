@@ -11,6 +11,7 @@
 **DIの定義**：別のオブジェクト（アセンブラ）が、クラスのフィールドに適切な実装を注入するアプローチ。サービス構成の責任と使用の責任を分離する
 
 **3つの実装パターン**：
+
 - **Constructor Injection**（コンストラクタ注入）：PicoContainerで採用。オブジェクト生成時に依存関係を明示
 - **Setter Injection**（セッター注入）：Spring Frameworkで採用。初期化後に依存関係を設定
 - **Interface Injection**（インターフェース注入）：Avalonで使用。注入用インターフェースを実装
