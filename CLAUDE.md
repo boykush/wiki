@@ -8,13 +8,12 @@
 
 Scrapsの詳細な利用方法については <https://boykush.github.io/scraps/> を参照してください。
 
-主要なアーキテクチャコンポーネント：
+ディレクトリ構成：
 
-- **コンテンツ**: `/docs/`ディレクトリ内のMarkdownファイル（384+ファイル）
-- **設定**: サイト設定とビルドオプションを含む`Config.toml`
-- **出力**: `/public/`ディレクトリに生成される静的HTML
-- **デプロイ**: GitHub ActionsによるGitHub Pagesへの自動デプロイ
-- **言語**: 主に日本語コンテンツ（`lang_code = "ja"`）
+- `/scraps/` - Markdownファイル（コンテンツ）
+- `/templates/` - Scrapsテンプレートファイル
+- `/public/` - ビルド出力（静的HTML）
+- `Config.toml` - サイト設定
 
 ## 一般的な開発コマンド
 
