@@ -53,46 +53,14 @@ mise exec -- scraps template
 
 ## コンテンツ作成
 
-Markdownファイルの作成・編集時には、Scrapsの記法を理解した専門エージェントを使用してください：
+Markdownファイルの作成・編集時には、Scrapsの記法を理解した専門エージェントを使用してください。
 
-```text
-@scraps-writer <your request>
-```
+**重要な制約**:
 
-このエージェントは以下を理解しています：
-
-- ウィキリンク記法（通常リンク、エイリアスリンク、コンテキストリンク）
-- タグシステム
-- OGPカード表示
-- ベストプラクティス
-
-### ワークフロー
-
-1. `scraps/`ディレクトリでMarkdownファイルを作成/編集（エージェントを使用推奨）
-2. `scraps serve`で変更をプレビュー
-3. プッシュ時にGitHub Actions経由で自動ビルド・デプロイ
-
-## 設定詳細
-
-`Config.toml`ファイルが制御する項目：
-
-- **base_url**: デプロイURL（<https://boykush.github.io/wiki/）>
-- **sort_key**: "linked_count" - 被リンク数でページをソート
-- **build_search_index**: true - 全文検索を有効化
-- **color_scheme**: "only_dark" - ダークテーマのみ
-- **paginate_by**: 50 - ページネーション制限
-- **timezone**: "Asia/Tokyo" - gitコミット日時機能用
-- **favicon**: カスタムアイコンURL
-
-## デプロイプロセス
-
-GitHub Actions（`.github/workflows/build-and-deploy.yml`）による自動デプロイ：
-
-- **トリガー**: リポジトリへのプッシュ時
-- **アクション**: `boykush/scraps-deploy-action@v2`
-- **ターゲット**: `gh-pages`ブランチ → GitHub Pages
-- **要件**: gitコミット日時機能のため`fetch-depth: 0`
-- **環境**: 認証に`GITHUB_TOKEN`を使用
+- **各Markdownファイルは10行以内の簡潔な概要説明に収める**
+- ウィキリンク記法（通常リンク、エイリアスリンク、コンテキストリンク）を活用
+- タグシステムで適切に分類
+- 詳細な情報はリンク先に委ねる
 
 ## テンプレートシステム
 
@@ -103,10 +71,3 @@ Scrapsには構造化コンテンツ作成のためのテンプレートシス�
 ```bash
 mise exec -- scraps template list
 ```
-
-## 重要な制約
-
-- **積極的にドキュメントファイルを作成しない** - 明示的に要求された場合のみ作成
-- **コンテンツ構造を維持** - `/scraps/`内の既存の階層構造を尊重
-- **適切な場合はテンプレートを使用** - 一貫性のために既存テンプレートを活用
-- **ウィキリンク記法の活用** - `[[内部リンク]]`で相互参照、`[[タグ名]]`でタグ付け
