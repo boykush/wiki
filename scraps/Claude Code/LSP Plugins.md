@@ -1,4 +1,4 @@
-#[[Programming]] #[[Documentation]]
+#[[Programming]] #[[LLM]]
 
 [[Claude Code]]で[[LSP]]（Language Server Protocol）[[Claude Code/Plugins|プラグイン]]を追加し、リアルタイムコード知能を提供する機能
 
