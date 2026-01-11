@@ -1,6 +1,6 @@
 ## Secure Hash Algorithms
 
-#[[Security]]
+#[[Security]] #[[メッセージダイジェスト]]
 
 [[デジタル署名]]の改竄防止等で最もよく利用されているハッシュ化アルゴリズム
 
