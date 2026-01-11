@@ -7,6 +7,7 @@
 STRIDEは以下の頭文字を取ったもの
 
 - Spoofing（なりすまし）
+  - [[ブルートフォース攻撃]]
 - Tampering（改ざん）
   - インジェクション攻撃
   - マスアサインメント攻撃
@@ -18,9 +19,7 @@ STRIDEは以下の頭文字を取ったもの
   - 過剰なデータ露出
   - 不適切なインベントリ管理
 - Denial of Service（サービス拒否）
-  - Dos攻撃
+  - [[DoS攻撃]]
 - Elevation of privilege（権限昇格）
 
----
-
-- <https://learn.microsoft.com/ja-jp/azure/security/develop/threat-modeling-tool-threats#stride-model>
+<https://learn.microsoft.com/ja-jp/azure/security/develop/threat-modeling-tool-threats#stride-model>
