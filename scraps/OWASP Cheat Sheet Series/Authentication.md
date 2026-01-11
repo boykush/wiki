@@ -4,7 +4,7 @@
 - [[zxcvbn-ts]]
 - [[Pwned Passwords]]
 - [[TLS]] Client Authentication
-- [[Multi-factor Authentication]]
+- [[MFA]]
 - [[OAuth2]]
 - OpenId
 - SAML
