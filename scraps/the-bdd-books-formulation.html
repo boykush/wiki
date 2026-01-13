@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <!-- Page title -->
+        
+            
+            <title>The BDD Books - Formulation - Kush&#x27;s Wiki</title>
+            <meta property="og:title" content="The BDD Books - Formulation - Kush&#x27;s Wiki" />
+            <meta name="twitter:title" content="The BDD Books - Formulation - Kush&#x27;s Wiki" />
+        
+        <!-- Page description -->
+        
+            <meta name="description" content="boykushのナレッジ置き場" />
+            <meta property="og:description" content="boykushのナレッジ置き場" />
+            <meta name="twitter:description" content="boykushのナレッジ置き場" />
+        
+        <!-- Page favicon -->
+        
+            <link rel="icon" type="image/png" href="https:&#x2F;&#x2F;gist.github.com&#x2F;boykush&#x2F;3bbc68b5d2580374c97d4336b87fb70f&#x2F;raw&#x2F;a838b8f3584b21bcbbe4dd53afca380fe18695a7&#x2F;boykush_icon.png" />
+        
+        <!-- Rubik font -->
+        <link href="https://fonts.cdnfonts.com/css/rubik" rel="stylesheet">
+        <!-- Noto Sans JP font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+        <!-- Style sheet -->
+        <link rel="stylesheet" href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;main.css">
+        
+<meta property="og:url" content="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/the-bdd-books-formulation.html" />
+
+    <meta property="og:image" content="https:&#x2F;&#x2F;d2sofvawe08yqg.cloudfront.net&#x2F;bddbooks-formulation-jp&#x2F;s_hero?1723769276" />
+    <meta name="twitter:image" content="https:&#x2F;&#x2F;d2sofvawe08yqg.cloudfront.net&#x2F;bddbooks-formulation-jp&#x2F;s_hero?1723769276" />
+
+
+    </head>
+    <body>
+        <header>
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;">
+                <h1>Kush&#x27;s Wiki</h1>
+            </a>
+        </header>
+        <main>
+            
+    <div class="scrap">
+        
+        <h1 class="title">The BDD Books - Formulation</h1>
+        
+            <p class="commited-date">
+                commited date: 2025-11-18
+            </p>
+        
+        <div class="content">
+            <h2>BDD/ATDDの第2ステップ：Given/When/Thenを使って具体例を定式化する</h2>
+<h3>Authors</h3>
+<p><a href="https://boykush.github.io/wiki/scraps/seb-rose.html">Seb Rose</a>, <a href="https://boykush.github.io/wiki/scraps/gaspar-nagy.html">Gaspar Nagy</a>
+<a href="https://boykush.github.io/wiki/scraps/%E9%A2%A8%E9%96%93-%E8%A3%95%E4%B9%9F.html">風間 裕也</a></p>
+<p>#<a href="https://boykush.github.io/wiki/scraps/book.html">Book</a> #<a href="https://boykush.github.io/wiki/scraps/bdd.html">BDD</a> #<a href="https://boykush.github.io/wiki/scraps/testing.html">Testing</a></p>
+<p><img src="https://d2sofvawe08yqg.cloudfront.net/bddbooks-formulation-jp/s_hero?1723769276" alt="" />The BDD Books - Formulation</p>
+<p><a href="https://leanpub.com/bddbooks-formulation-jp">The BDD Books - Formulation (Japanese Edition)</a></p>
+<h2>1. 定式化とは何ですか？</h2>
+<ul>
+<li><a href="https://boykush.github.io/wiki/scraps/%E3%83%A6%E3%83%93%E3%82%AD%E3%82%BF%E3%82%B9%E8%A8%80%E8%AA%9E.html">ユビキタス言語</a></li>
+<li>事例的なシナリオ/ジャーニーシナリオ</li>
+<li><a href="https://boykush.github.io/wiki/scraps/ward-cunningham.html">Ward Cunningham</a>/FIT</li>
+<li><a href="https://boykush.github.io/wiki/scraps/robert-c.-martin.html">Robert C. Martin</a>/FitNesse</li>
+<li>Robot Framework</li>
+<li><a href="https://boykush.github.io/wiki/scraps/chris-matts.html">Chris Matts</a>/<a href="https://boykush.github.io/wiki/scraps/gherkin.html">Gherkin</a></li>
+<li><a href="https://boykush.github.io/wiki/scraps/cucumber.html">Cucumber</a></li>
+<li>生きているドキュメント</li>
+</ul>
+<h2>2. 古いシナリオを片付ける</h2>
+<ul>
+<li><a href="https://boykush.github.io/wiki/scraps/brief%E3%81%AE%E5%8E%9F%E5%89%87.html">BRIEFの原則</a></li>
+<li><a href="https://boykush.github.io/wiki/scraps/%E3%83%AB%E3%83%BC%E3%83%AB.bdd.html">Rule</a></li>
+</ul>
+<h2>3. 最初のフィーチャー</h2>
+<ul>
+<li>データテーブル/Examples</li>
+<li>Scenario Outline</li>
+</ul>
+<h2>4. 新しいユーザーストーリー</h2>
+<ul>
+<li>Background</li>
+</ul>
+<h2>5. ドキュメントの整理</h2>
+<ul>
+<li><a href="https://boykush.github.io/wiki/scraps/%E3%83%A6%E3%83%BC%E3%82%B6%E3%83%BC%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC.html">ユーザーストーリー</a></li>
+<li>ユーザージャーニー</li>
+<li><a href="https://boykush.github.io/wiki/scraps/%E3%83%A6%E3%83%BC%E3%82%B6%E3%83%BC%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC%E3%83%9E%E3%83%83%E3%83%94%E3%83%B3%E3%82%B0.html">ユーザーストーリーマッピング</a></li>
+</ul>
+<h2>6. レガシーコードへの対処</h2>
+<ul>
+<li>レガシーコード改善ガイド</li>
+</ul>
+
+        </div>
+    </div>
+    
+    <ul class="scrap-links">
+        
+    </ul>
+
+
+        </main>
+        <footer>
+            Generated by <a href="https://github.com/boykush/scraps" target="_blank" rel="noopener noreferrer">Scraps</a>
+        </footer> 
+        <!-- Code syntax highlight -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script>
+        <!-- Code syntax highlight theme -->
+        <link href="https://unpkg.com/nord-highlightjs@0.1.0/dist/nord.css" rel="stylesheet" type="text/css" />
+        <!-- Mermaid -->
+        <script type="module">
+            import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11.6.0/+esm'
+        </script>
+        
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const ogpCards = document.querySelectorAll('.ogp-card');
+
+    ogpCards.forEach(async (card) => {
+      const url = card.dataset.url;
+
+      try {
+        const proxyUrl = 'https://corsproxy.io/?url=';
+        const response = await fetch(proxyUrl + url);
+        const html = await response.text();
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, 'text/html');
+
+        const title = doc.querySelector('meta[property="og:title"]')?.content ||
+          doc.querySelector('title')?.textContent ||
+          'No title';
+        card.querySelector('.ogp-title').textContent = title;
+
+        const description = doc.querySelector('meta[property="og:description"]')?.content ||
+          doc.querySelector('meta[name="description"]')?.content ||
+          'No description';
+        card.querySelector('.ogp-description').textContent = description;
+
+        const image = doc.querySelector('meta[property="og:image"]')?.content;
+        if (image) {
+          const imageUrl = image.startsWith('/')
+            ? `https://${card.dataset.host}/${image}`
+            : image;
+          card.querySelector('.ogp-image').src = imageUrl;
+        } else {
+          card.querySelector('.ogp-image').remove();
+        }
+      } catch (error) {
+        console.error('Failed to fetch OGP data:', error);
+      }
+    });
+  });
+</script>
+ 
+    </body>
+</html>

@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <!-- Page title -->
+        
+            
+            <title>レートリミット - Kush&#x27;s Wiki</title>
+            <meta property="og:title" content="レートリミット - Kush&#x27;s Wiki" />
+            <meta name="twitter:title" content="レートリミット - Kush&#x27;s Wiki" />
+        
+        <!-- Page description -->
+        
+            <meta name="description" content="boykushのナレッジ置き場" />
+            <meta property="og:description" content="boykushのナレッジ置き場" />
+            <meta name="twitter:description" content="boykushのナレッジ置き場" />
+        
+        <!-- Page favicon -->
+        
+            <link rel="icon" type="image/png" href="https:&#x2F;&#x2F;gist.github.com&#x2F;boykush&#x2F;3bbc68b5d2580374c97d4336b87fb70f&#x2F;raw&#x2F;a838b8f3584b21bcbbe4dd53afca380fe18695a7&#x2F;boykush_icon.png" />
+        
+        <!-- Rubik font -->
+        <link href="https://fonts.cdnfonts.com/css/rubik" rel="stylesheet">
+        <!-- Noto Sans JP font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+        <!-- Style sheet -->
+        <link rel="stylesheet" href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;main.css">
+        
+<meta property="og:url" content="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/レートリミット.html" />
+
+
+    </head>
+    <body>
+        <header>
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;">
+                <h1>Kush&#x27;s Wiki</h1>
+            </a>
+        </header>
+        <main>
+            
+    <div class="scrap">
+        
+        <h1 class="title">レートリミット</h1>
+        
+            <p class="commited-date">
+                commited date: 2026-01-11
+            </p>
+        
+        <div class="content">
+            <p>#<a href="https://boykush.github.io/wiki/scraps/security.html">Security</a> #<a href="https://boykush.github.io/wiki/scraps/api-architecture.html">API Architecture</a></p>
+<p>以下のような目的でAPIの使用回数を制限する、制限を超過した時は<a href="https://boykush.github.io/wiki/scraps/http.html">HTTP</a>の場合一般に429エラーを返す処理</p>
+<ul>
+<li><a href="https://boykush.github.io/wiki/scraps/stride.html">STRIDE</a>にあるような<a href="https://boykush.github.io/wiki/scraps/dos%E6%94%BB%E6%92%83.html">Denial of Service（サービス拒否）</a>からアプリケーションを保護する</li>
+<li><a href="https://boykush.github.io/wiki/scraps/%E3%82%AB%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%89%E9%9A%9C%E5%AE%B3.html">カスケード障害</a>の可能性を制限する</li>
+<li>リソースの使用量を測定し従量課金に利用できる</li>
+</ul>
+<p>レートリミットの実装アルゴリズムには以下のようなものがある</p>
+<ul>
+<li>固定ウインドウ（Fixed window）<ul>
+<li>固定期間内の制限</li>
+</ul>
+</li>
+<li>スライディングウインドウ（Sliding window）<ul>
+<li>直近の期間内の制限</li>
+</ul>
+</li>
+<li>トークンバケット方式（Token bucket）<ul>
+<li>総リクエスト数（トークンのバケツ）を定義しリクエストごとにトークンが利用される。バケツは定期的に充填される</li>
+</ul>
+</li>
+<li>リーキーバケット方式（Leaky bucket）<ul>
+<li>リクエストが処理される速度は固定で、バケツから溢れ出るリクエストを漏れ（リーキー）として扱う</li>
+</ul>
+</li>
+</ul>
+<p><a href="https://boykush.github.io/wiki/scraps/api%E3%82%B2%E3%83%BC%E3%83%88%E3%82%A6%E3%82%A7%E3%82%A4.html">APIゲートウェイ</a>を利用している場合、ゲートウェイに配置するとよい</p>
+
+        </div>
+    </div>
+    
+    <ul class="scrap-links">
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/マスタリングapiアーキテクチャ.html">
+                    
+                        <div class="header">
+                            <div class="title">マスタリングAPIアーキテクチャ</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;www.oreilly.co.jp&#x2F;books&#x2F;images&#x2F;picture_large978-4-8144-0089-8.jpeg" loading="lazy" />
+                        </div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/envoy.html">
+                    
+                        <div class="header">
+                            <div class="title">Envoy</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;www.envoyproxy.io&#x2F;docs&#x2F;envoy&#x2F;latest&#x2F;_static&#x2F;envoy-logo.png" loading="lazy" />
+                        </div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/オブザーバビリティ・エンジニアリング.html">
+                    
+                        <div class="header">
+                            <div class="title">オブザーバビリティ・エンジニアリング</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;www.oreilly.co.jp&#x2F;books&#x2F;images&#x2F;picture_large978-4-8144-0012-6.jpeg" loading="lazy" />
+                        </div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/apiゲートウェイ.html">
+                    
+                        <div class="header">
+                            <div class="title">APIゲートウェイ</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#API Architecture #Network
+外部トラフィックに対してリバースプロキシ・ロードバランシングが持つようなネットワークのルーティング・セキュリティと可用性の向上に加え、以下のような機能横断的な要件を扱う役割
+
+認証
+認可
+レートリミット
+リトライ
+サーキットブレーカー etc.
+
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/blocking-brute-force-attacks.html">
+                    
+                        <div class="header">
+                            <div class="title">Blocking Brute Force Attacks</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Security #Authentication #Blog
+ブルートフォース攻撃を防ぐための対策をまとめたOWASP Communityの記事
+主な対策方法
+
+アカウントロックアウト機能（DoS攻撃に悪用されるリスクに注意）
+Device Cookies（デバイスごとの認証ロック機構、DoS攻撃に対して耐性がある）
+パスワード検証時の遅延追加
+IPアドレスベースのレートリミット
+CAPTCHAの導入
+複数の秘密の質問による認証強化
+
+単一の技術では回避されやすいため、複数の対策を組み合わせることが重要
+https:&#x2F;&#x2F;owasp.org&#x2F;www-community&#x2F;controls&#x2F;Blocking_Brute_Force_Attacks
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/ブルートフォース攻撃.html">
+                    
+                        <div class="header">
+                            <div class="title">ブルートフォース攻撃</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Security #Authentication
+総当たり攻撃。パスワードや暗号鍵などを、可能な組み合わせを全て試すことで解読を試みる攻撃手法
+対策として以下のような方法がある
+
+強力なパスワードポリシーの適用（zxcvbn-ts、Pwned Passwordsによる検証）
+アカウントロックアウト機能
+レートリミットによるログイン試行回数の制限
+MFAの導入
+CAPTCHAの利用
+
+https:&#x2F;&#x2F;www.ipa.go.jp&#x2F;security&#x2F;vuln&#x2F;websecurity&#x2F;brute-force.html
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/denial-of-service.owasp-cheat-sheet-series.html">
+                    
+                        <div class="header">
+                            <div class="context">OWASP Cheat Sheet Series&#47;</div>
+                            <div class="title">Denial of Service</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Security #OWASP
+DoS攻撃の防御戦略をまとめたOWASP Cheat Sheet Series
+OSIモデルに基づくCERT-EU分類を採用し、3つの攻撃層に分類している
+
+Application層：サーバリソースの枯渇またはアプリケーション機能の無効化（Slow HTTP攻撃など）
+Session&#x2F;Protocol層：サーバやファイアウォール、ロードバランサーなどのリソース消費
+Network&#x2F;Volumetric層：ネットワーク帯域幅の飽和
+
+主な防御戦略
+
+単一障害点（SPOF）の排除と冗長性確保
+グレースフルデグラデーション（部分的機能継続）の実装
+入力検証（ファイルサイズ、リクエストサイズの上限設定）
+セッションタイムアウトの適切な設定
+レートリミット（最小入信データレート、接続タイムアウト、帯域幅上限）
+ISPレベルでのIP偽装フィルタリング
+CPU集約的操作の回避
+例外処理の適切な実装
+静的リソースの別ドメイン配置
+
+https:&#x2F;&#x2F;cheatsheetseries.owasp.org&#x2F;cheatsheets&#x2F;Denial_of_Service_Cheat_Sheet.html
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/dos攻撃.html">
+                    
+                        <div class="header">
+                            <div class="title">DoS攻撃</div>
+                        </div>
+                    
+                    
+                        <div class="summary">Denial of Service
+#Security
+リソース（サイト、アプリケーション、サーバー）を本来の目的で利用不可にすることを目的とした攻撃。C-I-Aの可用性を侵害する
+ネットワークパケット操作、プログラム脆弱性の悪用、リソース枯渇など多様な手段で実行される
+主な攻撃手法
+
+メモリ枯渇（ユーザー指定オブジェクト割り当て、セッションデータ過剰蓄積）
+CPU負荷増加（ループカウンター制御、バッファオーバーフロー）
+リソース解放失敗（ファイルロック、DB接続の未解放）
+アカウントロックアウト機構の悪用
+ネットワーク帯域幅の飽和
+
+対策としてレートリミット、入力検証、冗長性確保、グレースフルデグラデーションなどがある
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/ambassador-edge-stack.html">
+                    
+                        <div class="header">
+                            <div class="title">Ambassador Edge Stack</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;avatars.githubusercontent.com&#x2F;u&#x2F;9270257?s=200&amp;v=4" loading="lazy" />
+                        </div>
+                    
+                </a>
+            </li>
+        
+    </ul>
+
+
+        </main>
+        <footer>
+            Generated by <a href="https://github.com/boykush/scraps" target="_blank" rel="noopener noreferrer">Scraps</a>
+        </footer> 
+        <!-- Code syntax highlight -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script>
+        <!-- Code syntax highlight theme -->
+        <link href="https://unpkg.com/nord-highlightjs@0.1.0/dist/nord.css" rel="stylesheet" type="text/css" />
+        <!-- Mermaid -->
+        <script type="module">
+            import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11.6.0/+esm'
+        </script>
+        
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const ogpCards = document.querySelectorAll('.ogp-card');
+
+    ogpCards.forEach(async (card) => {
+      const url = card.dataset.url;
+
+      try {
+        const proxyUrl = 'https://corsproxy.io/?url=';
+        const response = await fetch(proxyUrl + url);
+        const html = await response.text();
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, 'text/html');
+
+        const title = doc.querySelector('meta[property="og:title"]')?.content ||
+          doc.querySelector('title')?.textContent ||
+          'No title';
+        card.querySelector('.ogp-title').textContent = title;
+
+        const description = doc.querySelector('meta[property="og:description"]')?.content ||
+          doc.querySelector('meta[name="description"]')?.content ||
+          'No description';
+        card.querySelector('.ogp-description').textContent = description;
+
+        const image = doc.querySelector('meta[property="og:image"]')?.content;
+        if (image) {
+          const imageUrl = image.startsWith('/')
+            ? `https://${card.dataset.host}/${image}`
+            : image;
+          card.querySelector('.ogp-image').src = imageUrl;
+        } else {
+          card.querySelector('.ogp-image').remove();
+        }
+      } catch (error) {
+        console.error('Failed to fetch OGP data:', error);
+      }
+    });
+  });
+</script>
+ 
+    </body>
+</html>

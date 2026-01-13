@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <!-- Page title -->
+        
+            
+            <title>ブルートフォース攻撃 - Kush&#x27;s Wiki</title>
+            <meta property="og:title" content="ブルートフォース攻撃 - Kush&#x27;s Wiki" />
+            <meta name="twitter:title" content="ブルートフォース攻撃 - Kush&#x27;s Wiki" />
+        
+        <!-- Page description -->
+        
+            <meta name="description" content="boykushのナレッジ置き場" />
+            <meta property="og:description" content="boykushのナレッジ置き場" />
+            <meta name="twitter:description" content="boykushのナレッジ置き場" />
+        
+        <!-- Page favicon -->
+        
+            <link rel="icon" type="image/png" href="https:&#x2F;&#x2F;gist.github.com&#x2F;boykush&#x2F;3bbc68b5d2580374c97d4336b87fb70f&#x2F;raw&#x2F;a838b8f3584b21bcbbe4dd53afca380fe18695a7&#x2F;boykush_icon.png" />
+        
+        <!-- Rubik font -->
+        <link href="https://fonts.cdnfonts.com/css/rubik" rel="stylesheet">
+        <!-- Noto Sans JP font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+        <!-- Style sheet -->
+        <link rel="stylesheet" href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;main.css">
+        
+<meta property="og:url" content="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/ブルートフォース攻撃.html" />
+
+
+    </head>
+    <body>
+        <header>
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;">
+                <h1>Kush&#x27;s Wiki</h1>
+            </a>
+        </header>
+        <main>
+            
+    <div class="scrap">
+        
+        <h1 class="title">ブルートフォース攻撃</h1>
+        
+            <p class="commited-date">
+                commited date: 2026-01-11
+            </p>
+        
+        <div class="content">
+            <p>#<a href="https://boykush.github.io/wiki/scraps/security.html">Security</a> #<a href="https://boykush.github.io/wiki/scraps/authentication.html">Authentication</a></p>
+<p>総当たり攻撃。パスワードや暗号鍵などを、可能な組み合わせを全て試すことで解読を試みる攻撃手法</p>
+<p>対策として以下のような方法がある</p>
+<ul>
+<li>強力なパスワードポリシーの適用（<a href="https://boykush.github.io/wiki/scraps/zxcvbn-ts.html">zxcvbn-ts</a>、<a href="https://boykush.github.io/wiki/scraps/pwned-passwords.html">Pwned Passwords</a>による検証）</li>
+<li>アカウントロックアウト機能</li>
+<li><a href="https://boykush.github.io/wiki/scraps/%E3%83%AC%E3%83%BC%E3%83%88%E3%83%AA%E3%83%9F%E3%83%83%E3%83%88.html">レートリミット</a>によるログイン試行回数の制限</li>
+<li><a href="https://boykush.github.io/wiki/scraps/mfa.html">MFA</a>の導入</li>
+<li><a href="https://boykush.github.io/wiki/scraps/captcha.html">CAPTCHA</a>の利用</li>
+</ul>
+<p>
+<div class="ogp-card" data-url="https:&#x2F;&#x2F;www.ipa.go.jp&#x2F;security&#x2F;vuln&#x2F;websecurity&#x2F;brute-force.html" data-host="www.ipa.go.jp">
+    <a class="ogp-card-link" href="https:&#x2F;&#x2F;www.ipa.go.jp&#x2F;security&#x2F;vuln&#x2F;websecurity&#x2F;brute-force.html" target="_blank" rel="noopener noreferrer">
+        <img class="ogp-image" src="" alt="OGP Image" />
+        <div class="ogp-content">
+            <div class="ogp-title">Loading...</div>
+            <div class="ogp-description">Fetching description...</div>
+        </div>
+    </a>
+</div>
+</p>
+
+        </div>
+    </div>
+    
+    <ul class="scrap-links">
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/stride.html">
+                    
+                        <div class="header">
+                            <div class="title">STRIDE</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Security
+セキュリティ脆弱性をカテゴライズするような脅威モデリングでの方法論
+Microsoft Threat Modeling ToolではSTRIDEを利用していくつかの自動分析を行うことができる
+STRIDEは以下の頭文字を取ったもの
+
+Spoofing（なりすまし）
+ブルートフォース攻撃
+
+
+Tampering（改ざん）
+インジェクション攻撃
+マスアサインメント攻撃
+
+
+Repudiation（否認）
+ログ・監査証跡の不足
+デジタル署名の欠如
+タイムスタンプの不備
+
+
+Information Disclosure（情報漏洩）
+過剰なデータ露出
+不適切なインベントリ管理
+
+
+Denial of Service（サービス拒否）
+DoS攻撃
+
+
+Elevation of privilege（権限昇格）
+
+https:&#x2F;&#x2F;learn.microsoft.com&#x2F;ja-jp&#x2F;azure&#x2F;security&#x2F;develop&#x2F;threat-modeling-tool-threats#stride-model
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/アカウントロックアウト.html">
+                    
+                        <div class="header">
+                            <div class="title">アカウントロックアウト</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Security #Authentication
+一定回数の不正なパスワード入力後にアカウントを一時的または永続的にロックするブルートフォース攻撃対策
+主な問題点
+
+DoS攻撃の標的になりやすい（攻撃者が大量のアカウントをロック可能）
+ユーザー名の列挙が可能（存在するアカウントのみがロックされる）
+ヘルプデスクへの負担増加
+低速攻撃や複数ユーザー対象の攻撃に無効
+
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/device-cookies.html">
+                    
+                        <div class="header">
+                            <div class="title">Device Cookies</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Security #Authentication
+ブルートフォース攻撃を軽減するための認証ロック機構。ユーザーが正常に認証された後、そのブラウザに発行される特別なCookie
+従来のアカウントロックアウトと比較して以下の利点がある
+
+DoS攻撃に対して耐性がある
+IPアドレスではなくブラウザCookieを基準とするため予測可能で実装しやすい
+ボットネットや代理経由の攻撃に対応しやすい
+
+認証リクエスト時に有効なDevice Cookieの有無を確認し、未信頼クライアント（Device Cookieなし）からの認証試行回数を記録してロックアウトを実施する
+実装にはJWT、Redis&#x2F;Memcachedによるロックリスト管理、HMAC署名による改ざん防止などが用いられる
+https:&#x2F;&#x2F;owasp.org&#x2F;www-community&#x2F;Slow_Down_Online_Guessing_Attacks_with_Device_Cookies
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/blocking-brute-force-attacks.html">
+                    
+                        <div class="header">
+                            <div class="title">Blocking Brute Force Attacks</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Security #Authentication #Blog
+ブルートフォース攻撃を防ぐための対策をまとめたOWASP Communityの記事
+主な対策方法
+
+アカウントロックアウト機能（DoS攻撃に悪用されるリスクに注意）
+Device Cookies（デバイスごとの認証ロック機構、DoS攻撃に対して耐性がある）
+パスワード検証時の遅延追加
+IPアドレスベースのレートリミット
+CAPTCHAの導入
+複数の秘密の質問による認証強化
+
+単一の技術では回避されやすいため、複数の対策を組み合わせることが重要
+https:&#x2F;&#x2F;owasp.org&#x2F;www-community&#x2F;controls&#x2F;Blocking_Brute_Force_Attacks
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/authentication.owasp-cheat-sheet-series.html">
+                    
+                        <div class="header">
+                            <div class="context">OWASP Cheat Sheet Series&#47;</div>
+                            <div class="title">Authentication</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Security #Authentication #OWASP
+
+Session Management
+zxcvbn-ts
+Pwned Passwords
+TLS Client Authentication
+MFA
+OAuth2
+OpenId
+SAML
+Brute Force
+
+https:&#x2F;&#x2F;cheatsheetseries.owasp.org&#x2F;cheatsheets&#x2F;Authentication_Cheat_Sheet.html
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/captcha.html">
+                    
+                        <div class="header">
+                            <div class="title">CAPTCHA</div>
+                        </div>
+                    
+                    
+                        <div class="summary">Completely Automated Public Turing test to tell Computers and Humans Apart
+#Security #Authentication
+人間とボット（自動プログラム）を区別するための技術
+主な目的はブルートフォース攻撃の防止、スパムやボットによる自動投稿の防止、不正なアカウント作成の防止
+代表的な実装として、Google reCAPTCHA、hCaptcha、テキストベースCAPTCHAなどがある
+アクセシビリティの観点から、音声CAPTCHAなどの代替手段の提供が推奨される
+https:&#x2F;&#x2F;www.cloudflare.com&#x2F;ja-jp&#x2F;learning&#x2F;bots&#x2F;how-captchas-work&#x2F;
+</div>
+                    
+                </a>
+            </li>
+        
+    </ul>
+
+
+        </main>
+        <footer>
+            Generated by <a href="https://github.com/boykush/scraps" target="_blank" rel="noopener noreferrer">Scraps</a>
+        </footer> 
+        <!-- Code syntax highlight -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script>
+        <!-- Code syntax highlight theme -->
+        <link href="https://unpkg.com/nord-highlightjs@0.1.0/dist/nord.css" rel="stylesheet" type="text/css" />
+        <!-- Mermaid -->
+        <script type="module">
+            import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11.6.0/+esm'
+        </script>
+        
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const ogpCards = document.querySelectorAll('.ogp-card');
+
+    ogpCards.forEach(async (card) => {
+      const url = card.dataset.url;
+
+      try {
+        const proxyUrl = 'https://corsproxy.io/?url=';
+        const response = await fetch(proxyUrl + url);
+        const html = await response.text();
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, 'text/html');
+
+        const title = doc.querySelector('meta[property="og:title"]')?.content ||
+          doc.querySelector('title')?.textContent ||
+          'No title';
+        card.querySelector('.ogp-title').textContent = title;
+
+        const description = doc.querySelector('meta[property="og:description"]')?.content ||
+          doc.querySelector('meta[name="description"]')?.content ||
+          'No description';
+        card.querySelector('.ogp-description').textContent = description;
+
+        const image = doc.querySelector('meta[property="og:image"]')?.content;
+        if (image) {
+          const imageUrl = image.startsWith('/')
+            ? `https://${card.dataset.host}/${image}`
+            : image;
+          card.querySelector('.ogp-image').src = imageUrl;
+        } else {
+          card.querySelector('.ogp-image').remove();
+        }
+      } catch (error) {
+        console.error('Failed to fetch OGP data:', error);
+      }
+    });
+  });
+</script>
+ 
+    </body>
+</html>
