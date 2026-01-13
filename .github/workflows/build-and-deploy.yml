@@ -15,4 +15,4 @@ jobs:
         uses: boykush/scraps-deploy-action@a7282a566e7ca9cf78fca3fbe5c1bbefc2f91cb4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          pages-branch: "gh-pages"
+          pages-branch: "gh-pages2"
