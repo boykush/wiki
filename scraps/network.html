@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <!-- Page title -->
+        
+            <title>Kush&#x27;s Wiki</title>
+            <meta property="og:title" content="Kush&#x27;s Wiki" />
+            <meta name="twitter:title" content="Kush&#x27;s Wiki" />
+        
+        <!-- Page description -->
+        
+            <meta name="description" content="boykushのナレッジ置き場" />
+            <meta property="og:description" content="boykushのナレッジ置き場" />
+            <meta name="twitter:description" content="boykushのナレッジ置き場" />
+        
+        <!-- Page favicon -->
+        
+            <link rel="icon" type="image/png" href="https:&#x2F;&#x2F;gist.github.com&#x2F;boykush&#x2F;3bbc68b5d2580374c97d4336b87fb70f&#x2F;raw&#x2F;a838b8f3584b21bcbbe4dd53afca380fe18695a7&#x2F;boykush_icon.png" />
+        
+        <!-- Rubik font -->
+        <link href="https://fonts.cdnfonts.com/css/rubik" rel="stylesheet">
+        <!-- Noto Sans JP font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+        <!-- Style sheet -->
+        <link rel="stylesheet" href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;main.css">
+        
+        
+    </head>
+    <body>
+        <header>
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;">
+                <h1>Kush&#x27;s Wiki</h1>
+            </a>
+        </header>
+        <main>
+            
+    <div class="tag">
+        <h1 class="title">Network</h1>
+    </div>
+    
+    <ul class="scrap-links">
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/kube-proxy.html">
+                    
+                        <div class="header">
+                            <div class="title">kube-proxy</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;github.com&#x2F;kubernetes&#x2F;community&#x2F;raw&#x2F;master&#x2F;icons&#x2F;png&#x2F;control_plane_components&#x2F;labeled&#x2F;k-proxy-128.png" loading="lazy" />
+                        </div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/l7.html">
+                    
+                        <div class="header">
+                            <div class="title">L7</div>
+                        </div>
+                    
+                    
+                        <div class="summary">Layer 7
+#Network
+OSI参照モデルにおける第7層の通称
+アプリケーション層を指し、HTTPが代表的
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/dns.html">
+                    
+                        <div class="header">
+                            <div class="title">DNS</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Network
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/http.html">
+                    
+                        <div class="header">
+                            <div class="title">HTTP</div>
+                        </div>
+                    
+                    
+                        <div class="summary">Hypertext Transfer Protocol
+#Network
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/quic.html">
+                    
+                        <div class="header">
+                            <div class="title">QUIC</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Network #HTTP
+インターネット上の通信で多く用いられてきたTCPの課題を解消する、Googleが開発したプロトコル
+UDPをベースし、コネクション確立によるRTTの増大を防ぎつつ、TCPと同様の高い信頼性の実現、TLSを必須とするセキュリティの考慮がされる。
+HTTP&#x2F;3で用いられるプロトコルで高速なHTTPS通信を実現する
+コネクションID
+QUICではIPアドレス、ポート番号を抽象化する形で宛先、送信元に対応するコネクションIDが用いられる。
+コネクションIDによりモバイル機器のようなWiFi・モバイルデータ通信等が頻繁に切り替わりIPアドレスの変更がある場合でも、コネクションを途切らせずに通信を続けられる。
+QUICヘッダー
+QUICヘッダーはTCPと異なり明確にロングヘッダー、ショートヘッダーの2つに分類される。ロングヘッダーはコネクション確立時、ショートヘッダーはその後のデータ送信に用いられる
+ロングヘッダーはコネクション確立に必要な情報をまとめて送る（1-RTTハンドシェイク）ことでRTTの改善がされる
+ストリーム
+QUICでは順序制御や再送制御を管理する単位としてストリーム（ID）という概念を用いる。ストリーム同士は独立しておりHoLブロッキングのような問題の回避をする
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/ハイブリッド鍵システム.html">
+                    
+                        <div class="header">
+                            <div class="title">ハイブリッド鍵システム</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Network #Security
+通信の初期段階に公開鍵暗号によって共通鍵暗号の鍵交換を行い、以降の通信を共通鍵暗号によって行う鍵システム
+公開鍵暗号の計算コストの高さの課題から最小限の利用に留めている
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/分散コンピューティングの8つの誤謬.html">
+                    
+                        <div class="header">
+                            <div class="title">分散コンピューティングの8つの誤謬</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Network
+分散システムを扱い際、しばしば陥りがちなネットワークへの仮定を8つリストアップしたもの
+
+ネットワークは信頼性がある
+レイテンシはゼロ
+帯域幅は無限
+ネットワークは安全
+トポロジは変わらない
+管理者は1人だけ
+転送コストはゼロ
+ネットワークは均質
+
+
+https:&#x2F;&#x2F;nighthacks.com&#x2F;jag&#x2F;res&#x2F;Fallacies.html
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/envoy.html">
+                    
+                        <div class="header">
+                            <div class="title">Envoy</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;www.envoyproxy.io&#x2F;docs&#x2F;envoy&#x2F;latest&#x2F;_static&#x2F;envoy-logo.png" loading="lazy" />
+                        </div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/rpc.html">
+                    
+                        <div class="header">
+                            <div class="title">RPC</div>
+                        </div>
+                    
+                    
+                        <div class="summary">Remote Procedure Call
+#Network #API Architecture
+リモート上のリクエスト発行をプログラミング言語の関数呼び出しのように利用できるよう抽象化したもの。
+ただし実際に関数呼び出しと同等に利用できるわけではなく、ネットワーク上の様々な不測の事態を考慮する必要がある。
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/https.html">
+                    
+                        <div class="header">
+                            <div class="title">HTTPS</div>
+                        </div>
+                    
+                    
+                        <div class="summary">HyperText Transfer Protocol Secure
+#Network #Security
+HTTPをTLSによって暗号化した通信
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/container-network-interface.html">
+                    
+                        <div class="header">
+                            <div class="title">Container Network Interface</div>
+                        </div>
+                    
+                    
+                        <div class="summary">CNI
+#Cloud Native #Network
+LinuxおよびWindowsコンテナにおける、ネットワークインターフェースを構成するプラグインを作成するための仕様とライブラリ、およびサポートされているプラグイン
+CNCF project
+
+https:&#x2F;&#x2F;www.cni.dev&#x2F;
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/tcp.html">
+                    
+                        <div class="header">
+                            <div class="title">TCP</div>
+                        </div>
+                    
+                    
+                        <div class="summary">Transmission Control Protocol
+#Network
+L4にあたる通信プロトコル
+エンドデバイス間でコネクションを確立することで信頼性を向上させる
+データ送信は複数のパケットをシーケンス番号とともに送信し、パケットロスがないよう再送制御がされる
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/grpc-gateway.html">
+                    
+                        <div class="header">
+                            <div class="title">gRPC-Gateway</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Network #API Architecture #REST #Programming
+gRPCにおいて、gRPC serviceをRESTful APIとして提供するためのGoライブラリ。HTTP+JSONのインターフェースでリバースプロキシサーバーを生成する
+HTTP仕様はProtocol Buffers上において google.api.http のような HttpRule によって記述する
+同リポジトリにはprotoc-gen-openapiv2プラグインも含まれておりOpen API仕様を出力できる
+https:&#x2F;&#x2F;grpc-ecosystem.github.io&#x2F;grpc-gateway&#x2F;
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/apiゲートウェイ.html">
+                    
+                        <div class="header">
+                            <div class="title">APIゲートウェイ</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#API Architecture #Network
+外部トラフィックに対してリバースプロキシ・ロードバランシングが持つようなネットワークのルーティング・セキュリティと可用性の向上に加え、以下のような機能横断的な要件を扱う役割
+
+認証
+認可
+レートリミット
+リトライ
+サーキットブレーカー etc.
+
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/3wayハンドシェイク.html">
+                    
+                        <div class="header">
+                            <div class="title">3wayハンドシェイク</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Network
+TCPプロトコルにおけるコネクションの確立手法、名前の通り3ステップでコネクションを確立する
+
+送信元でTCPヘッダー内のSYN（コネクションの確立要求）フラグを有効化しセグメントを送信
+送信先で1に対するACKとSYNフラグの有効化をしたセグメントを返信
+送信元で2のSYNに対するACKのセグメントを送信
+
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/tcp-colon-ip技術入門.html">
+                    
+                        <div class="header">
+                            <div class="title">TCP:IP技術入門</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;gihyo.jp&#x2F;assets&#x2F;images&#x2F;cover&#x2F;2024&#x2F;thumb&#x2F;TH320_9784297141578.jpg" loading="lazy" />
+                        </div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/リバースプロキシ.html">
+                    
+                        <div class="header">
+                            <div class="title">リバースプロキシ</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#API Architecture #Network
+外部トラフィックに対して単一のサーバーへルーティングを行い、サーバーの保護や負荷分散を行う役割
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/istio.html">
+                    
+                        <div class="header">
+                            <div class="title">Istio</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;repository-images.githubusercontent.com&#x2F;74175805&#x2F;ed825500-65ad-11e9-821c-f6148eadb7c8" loading="lazy" />
+                        </div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/osi参照モデル.html">
+                    
+                        <div class="header">
+                            <div class="title">OSI参照モデル</div>
+                        </div>
+                    
+                    
+                        <div class="summary">Open Systems Interconnection (OSI)
+#Network
+ネットワーク通信機能（プロトコル）を7つの層に分割するフレームワーク
+
+
+OSI参照モデル - Wikipedia
+OSI モデルとは何ですか? - 7 OSI レイヤーの説明 - AWS
+
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/connect.html">
+                    
+                        <div class="header">
+                            <div class="title">Connect</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;avatars.githubusercontent.com&#x2F;u&#x2F;97258658?s=200&amp;v=4" loading="lazy" />
+                        </div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/mtls.html">
+                    
+                        <div class="header">
+                            <div class="title">mTLS</div>
+                        </div>
+                    
+                    
+                        <div class="summary">相互TLS認証
+#Security #Network #TLS
+ネットワークの両端がTLS証明書を持ち相互に認証を行うことで、双方向で安全かつ信頼できることを保証する
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/tlsハンドシェイク.html">
+                    
+                        <div class="header">
+                            <div class="title">TLSハンドシェイク</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Security #Network
+TLSプロトコルにおいて、通信初期に公開鍵暗号方式によって通信を確立すること
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/輻輳制御.html">
+                    
+                        <div class="header">
+                            <div class="title">輻輳制御</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Network
+TCPプロトコル等で行われるネットワークのリンク上でパケットが混線した際の制御
+輻輳制御アルゴリズムは大きく以下の3つに分類される
+
+Loss-based
+Delay-based
+ハイブリッド型
+
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/grpc.html">
+                    
+                        <div class="header">
+                            <div class="title">gRPC</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;grpc.io&#x2F;img&#x2F;logos&#x2F;grpc-logo.png" loading="lazy" />
+                        </div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/ssl.html">
+                    
+                        <div class="header">
+                            <div class="title">SSL</div>
+                        </div>
+                    
+                    
+                        <div class="summary">Secure Sockets Layer
+#Network #Security
+TLSの前身
+基本的にはdeprecatedだが、デジタル証明書発行等の文脈で引き続き用いられている
+https:&#x2F;&#x2F;www.cloudflare.com&#x2F;learning&#x2F;ssl&#x2F;what-is-ssl&#x2F;
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/url.html">
+                    
+                        <div class="header">
+                            <div class="title">URL</div>
+                        </div>
+                    
+                    
+                        <div class="summary">Uniform Resource Locator
+#Network
+Webネットワーク内でのリソースの場所を特定する識別子
+URIのサブセットである
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/ロードバランシング.html">
+                    
+                        <div class="header">
+                            <div class="title">ロードバランシング</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#API Architecture #Network
+外部からの大量トラフィックを捌けるよう用意された重複データを持つ多数のリソースサーバー群が均等に使用されるよう制御する役割
+アプリケーションの可用性を高め、リバースプロキシと同様にサーバーを保護するセキュリティ機能が組み込まる
+
+
+ロードバランシングとは? - ロードバランシングアルゴリズムの説明 - AWS
+
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/dns.kubernetes.html">
+                    
+                        <div class="header">
+                            <div class="context">Kubernetes&#47;</div>
+                            <div class="title">DNS</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Network #DNS
+Kubernetesにおいて、PodとServiceをスケジューリングし、Service名によってURIを解決できる
+https:&#x2F;&#x2F;kubernetes.io&#x2F;ja&#x2F;docs&#x2F;concepts&#x2F;services-networking&#x2F;dns-pod-service&#x2F;
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/gateway-api.kubernetes.html">
+                    
+                        <div class="header">
+                            <div class="context">Kubernetes&#47;</div>
+                            <div class="title">Gateway API</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#API Architecture #Network #Kubernetes #Cloud Native
+L4&#x2F;L7を扱うKubernetes公式のAPIゲートウェイ
+
+GatewayClass
+Gateway
+HTTPRoute
+
+の3つを定義し実装する
+GatewayClassはGKEのようなクラウドサービスが用意するケースがあり、外部or内部を選択できる
+
+
+Introduction - Kubernetes Gateway API
+
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/network-policy.kubernetes.html">
+                    
+                        <div class="header">
+                            <div class="context">Kubernetes&#47;</div>
+                            <div class="title">Network policy</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;github.com&#x2F;kubernetes&#x2F;community&#x2F;raw&#x2F;master&#x2F;icons&#x2F;png&#x2F;resources&#x2F;labeled&#x2F;netpol-128.png" loading="lazy" />
+                        </div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/statefulset.kubernetes.html">
+                    
+                        <div class="header">
+                            <div class="context">Kubernetes&#47;</div>
+                            <div class="title">StatefulSet</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;github.com&#x2F;kubernetes&#x2F;community&#x2F;raw&#x2F;master&#x2F;icons&#x2F;png&#x2F;resources&#x2F;labeled&#x2F;sts-128.png" loading="lazy" />
+                        </div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/サービスメッシュ.html">
+                    
+                        <div class="header">
+                            <div class="title">サービスメッシュ</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Network #Observability #Security #API Architecture
+マイクロサービスで行われるようなサービス間通信をルーティング、監視、保護する機能を提供する
+Kubernetesにおいてはクラスタ単位でサービスメッシュを構築する
+サービスメッシュはクラスタ内の全てのサービス間通信を制御するコントロールプレーンとコントロールプレーンで指定された作業が実行されるデータプレーン（サービス）の2つの基本要素を持つ。
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/ingressgateway.istio.html">
+                    
+                        <div class="header">
+                            <div class="context">Istio&#47;</div>
+                            <div class="title">ingressgateway</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Network
+Istioにおいて、Gatewayに対しデフォルトで追加されるトラフィックの入り口
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/ambient-mesh.istio.html">
+                    
+                        <div class="header">
+                            <div class="context">Istio&#47;</div>
+                            <div class="title">Ambient Mesh</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Network
+Istioにおけるサイドカープロキシモデルに代わるサービスメッシュのデータプレーンモード
+L4&#x2F;L7の機能群を提供する
+ZtunnelによってL4ゼロトラスト機能を実行し、WaypointプロキシによってL7処理を行う
+
+https:&#x2F;&#x2F;istio.io&#x2F;latest&#x2F;blog&#x2F;2022&#x2F;introducing-ambient-mesh&#x2F;
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/cookie.html">
+                    
+                        <div class="header">
+                            <div class="title">Cookie</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Security #Network
+HTTP通信において、セッション管理にいくつかのセキュリティ機能を提供する
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/l4.html">
+                    
+                        <div class="header">
+                            <div class="title">L4</div>
+                        </div>
+                    
+                    
+                        <div class="summary">Layer 4
+#Network
+OSI参照モデルにおける第4層の通称
+トランスポート層を指し、TCPやUDPが代表的
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/tls.html">
+                    
+                        <div class="header">
+                            <div class="title">TLS</div>
+                        </div>
+                    
+                    
+                        <div class="summary">Transport Layer Security
+#Network #Security
+通信暗号化プロトコル
+ネットワーク通信開始時にTLSハンドシェイクによる通信の確立後、鍵交換を行いセキュアな通信を行う（ハイブリッド鍵システム）
+https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Glossary&#x2F;TLS
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/サイドカープロキシ.html">
+                    
+                        <div class="header">
+                            <div class="title">サイドカープロキシ</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Network
+サイドカーとして、サービスメッシュ内でプロキシを利用して実装される汎用パターン
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/tls証明書.html">
+                    
+                        <div class="header">
+                            <div class="title">TLS証明書</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Network #Security
+TLSによるHTTPS通信において、TLSハンドシェイクに用いるデジタル証明書のこと
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/cilium.html">
+                    
+                        <div class="header">
+                            <div class="title">Cilium</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Network #Cloud Native #Observability #Security
+https:&#x2F;&#x2F;cilium.io&#x2F;
+eBPF技術を活用したクラウドネイティブなネットワーキングソフトウェア
+KubernetesのCNIとしてネットワークの接続、保護、監視を提供する
+ユースケースとして以下のような例がある
+L4 ロードバランシング
+https:&#x2F;&#x2F;cilium.io&#x2F;use-cases&#x2F;load-balancer&#x2F;
+kube-proxy
+https:&#x2F;&#x2F;cilium.io&#x2F;use-cases&#x2F;kube-proxy&#x2F;
+サービスメッシュ
+https:&#x2F;&#x2F;cilium.io&#x2F;use-cases&#x2F;service-mesh&#x2F;
+Gateway API
+https:&#x2F;&#x2F;cilium.io&#x2F;use-cases&#x2F;gateway-api&#x2F;
+Ingress
+https:&#x2F;&#x2F;cilium.io&#x2F;use-cases&#x2F;ingress&#x2F;
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/udp.html">
+                    
+                        <div class="header">
+                            <div class="title">UDP</div>
+                        </div>
+                    
+                    
+                        <div class="summary">User Datagram Protocol
+#Network
+L4にあたる通信プロトコル
+エンドデバイス間でコネクションを確立せず遅延の最小化を優先させる
+メッセージのロスが許容される動画配信等に用いられる
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/dnsラベル標準.html">
+                    
+                        <div class="header">
+                            <div class="title">DNSラベル標準</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Network
+RFC 1123で定義されているDNSに指定可能な文字列
+</div>
+                    
+                </a>
+            </li>
+        
+    </ul>
+
+
+        </main>
+        <footer>
+            Generated by <a href="https://github.com/boykush/scraps" target="_blank" rel="noopener noreferrer">Scraps</a>
+        </footer> 
+        <!-- Code syntax highlight -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script>
+        <!-- Code syntax highlight theme -->
+        <link href="https://unpkg.com/nord-highlightjs@0.1.0/dist/nord.css" rel="stylesheet" type="text/css" />
+        <!-- Mermaid -->
+        <script type="module">
+            import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11.6.0/+esm'
+        </script>
+        
+         
+    </body>
+</html>

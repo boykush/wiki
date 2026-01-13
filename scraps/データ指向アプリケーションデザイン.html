@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <!-- Page title -->
+        
+            
+            <title>データ指向アプリケーションデザイン - Kush&#x27;s Wiki</title>
+            <meta property="og:title" content="データ指向アプリケーションデザイン - Kush&#x27;s Wiki" />
+            <meta name="twitter:title" content="データ指向アプリケーションデザイン - Kush&#x27;s Wiki" />
+        
+        <!-- Page description -->
+        
+            <meta name="description" content="boykushのナレッジ置き場" />
+            <meta property="og:description" content="boykushのナレッジ置き場" />
+            <meta name="twitter:description" content="boykushのナレッジ置き場" />
+        
+        <!-- Page favicon -->
+        
+            <link rel="icon" type="image/png" href="https:&#x2F;&#x2F;gist.github.com&#x2F;boykush&#x2F;3bbc68b5d2580374c97d4336b87fb70f&#x2F;raw&#x2F;a838b8f3584b21bcbbe4dd53afca380fe18695a7&#x2F;boykush_icon.png" />
+        
+        <!-- Rubik font -->
+        <link href="https://fonts.cdnfonts.com/css/rubik" rel="stylesheet">
+        <!-- Noto Sans JP font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+        <!-- Style sheet -->
+        <link rel="stylesheet" href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;main.css">
+        
+<meta property="og:url" content="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/データ指向アプリケーションデザイン.html" />
+
+    <meta property="og:image" content="https:&#x2F;&#x2F;www.oreilly.co.jp&#x2F;books&#x2F;images&#x2F;picture_large978-4-87311-870-3.jpeg" />
+    <meta name="twitter:image" content="https:&#x2F;&#x2F;www.oreilly.co.jp&#x2F;books&#x2F;images&#x2F;picture_large978-4-87311-870-3.jpeg" />
+
+
+    </head>
+    <body>
+        <header>
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;">
+                <h1>Kush&#x27;s Wiki</h1>
+            </a>
+        </header>
+        <main>
+            
+    <div class="scrap">
+        
+        <h1 class="title">データ指向アプリケーションデザイン</h1>
+        
+            <p class="commited-date">
+                commited date: 2025-11-18
+            </p>
+        
+        <div class="content">
+            <h2>信頼性、拡張性、保守性の高い分散システム設計の原理</h2>
+<h3>Authors</h3>
+<p>#<a href="https://boykush.github.io/wiki/scraps/martin-kleppmann.html">Martin Kleppmann</a></p>
+<p>#<a href="https://boykush.github.io/wiki/scraps/book.html">Book</a> #<a href="https://boykush.github.io/wiki/scraps/data-processing.html">Data Processing</a> #<a href="https://boykush.github.io/wiki/scraps/data-store.html">Data Store</a></p>
+<p><img src="https://www.oreilly.co.jp/books/images/picture_large978-4-87311-870-3.jpeg" alt="" />データ指向アプリケーションデザイン</p>
+<p><a href="https://www.oreilly.co.jp/books/9784873118703/">O’Reilly Japan</a></p>
+<h2>第I部データシステムの基礎</h2>
+<h3>1章　信頼性、スケーラビリティ、メンテナンス性に優れたアプリケーション</h3>
+<ul>
+<li><a href="https://boykush.github.io/wiki/scraps/reliability.html">信頼性</a><ul>
+<li><a href="https://boykush.github.io/wiki/scraps/%E3%83%91%E3%83%BC%E3%82%BB%E3%83%B3%E3%82%BF%E3%82%A4%E3%83%AB.html">パーセンタイル</a>/<a href="https://boykush.github.io/wiki/scraps/%E3%83%86%E3%82%A4%E3%83%AB%E3%83%AC%E3%82%A4%E3%83%86%E3%83%B3%E3%82%B7.html">テイルレイテンシ</a></li>
+<li><a href="https://boykush.github.io/wiki/scraps/slo.html">SLO</a>/SLA</li>
+</ul>
+</li>
+<li>スケーラビリティ<ul>
+<li>スケールアップ/スケールアウト</li>
+</ul>
+</li>
+<li>メンテナンス性</li>
+</ul>
+<h3>2章　データモデルとクエリ言語</h3>
+<ul>
+<li><a href="https://boykush.github.io/wiki/scraps/%E3%83%AA%E3%83%AC%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%8A%E3%83%AB%E3%83%87%E3%83%BC%E3%82%BF%E3%83%99%E3%83%BC%E3%82%B9.html">リレーショナルデータベース</a></li>
+<li>ドキュメントデータベース</li>
+</ul>
+<h3>3章　ストレージと抽出</h3>
+<ul>
+<li>ハッシュインデックス</li>
+<li>SSTable/LSMツリー</li>
+<li><a href="https://boykush.github.io/wiki/scraps/b%E3%83%84%E3%83%AA%E3%83%BC.html">Bツリー</a></li>
+<li><a href="https://boykush.github.io/wiki/scraps/oltp.html">OLTP</a>/<a href="https://boykush.github.io/wiki/scraps/olap.html">OLAP</a>/<a href="https://boykush.github.io/wiki/scraps/etl.html">ETL</a></li>
+<li>列指向ストレージ</li>
+</ul>
+<h3>4章　エンコーディングと進化</h3>
+<ul>
+<li><a href="https://boykush.github.io/wiki/scraps/json.html">JSON</a>/XML</li>
+<li><a href="https://boykush.github.io/wiki/scraps/idl.html">IDL</a>/Thrift/<a href="https://boykush.github.io/wiki/scraps/protocol-buffers.html">Protocol Buffers</a></li>
+<li>Avro</li>
+<li><a href="https://boykush.github.io/wiki/scraps/rest.html">REST</a>と<a href="https://boykush.github.io/wiki/scraps/rpc.html">RPC</a></li>
+</ul>
+<h2>第II部分散データ</h2>
+<h3>5章　<a href="https://boykush.github.io/wiki/scraps/%E3%83%AC%E3%83%97%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3.html">レプリケーション</a></h3>
+<ul>
+<li><a href="https://boykush.github.io/wiki/scraps/%E3%83%9E%E3%83%AB%E3%83%81%E3%83%AA%E3%83%BC%E3%83%80%E3%83%BC%E3%83%AC%E3%83%97%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3.html">マルチリーダーレプリケーション</a></li>
+<li><a href="https://boykush.github.io/wiki/scraps/%E3%83%AA%E3%83%BC%E3%83%80%E3%83%BC%E3%83%AC%E3%82%B9%E3%83%AC%E3%83%97%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3.html">リーダーレスレプリケーション</a></li>
+<li><a href="https://boykush.github.io/wiki/scraps/dynamodb.amazon.html">DynamoDB</a>/<a href="https://boykush.github.io/wiki/scraps/dynamo%E3%82%B9%E3%82%BF%E3%82%A4%E3%83%AB.html">Dynamoスタイル</a></li>
+<li>いい加減なクオラム（sloppy quorum）</li>
+</ul>
+<h3>6章　パーティショニング</h3>
+<ul>
+<li>MongoDB</li>
+<li>Elasticsearch</li>
+</ul>
+<h3>7章　トランザクション</h3>
+<ul>
+<li><a href="https://boykush.github.io/wiki/scraps/acid.html">ACID</a></li>
+<li><a href="https://boykush.github.io/wiki/scraps/%E3%83%88%E3%83%A9%E3%83%B3%E3%82%B6%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%B3%E5%88%86%E9%9B%A2%E3%83%AC%E3%83%99%E3%83%AB.html">トランザクション分離レベル</a></li>
+<li>直列化可能性</li>
+<li>ツーフェーズ（2相）ロック（2PL）</li>
+<li>直列化可能なスナップショット分離（SSI）</li>
+<li><a href="https://boykush.github.io/wiki/scraps/mysql.html">MySQL</a></li>
+</ul>
+<h3>8章　分散システムの問題</h3>
+<ul>
+<li>ビザンチン障害</li>
+</ul>
+<h3>9章　一貫性と合意</h3>
+<ul>
+<li>線形化可能性</li>
+<li><a href="https://boykush.github.io/wiki/scraps/etcd.html">etcd</a>/ZooKeeper</li>
+<li>分散トランザクションと合意</li>
+</ul>
+<h2>第III部導出データ</h2>
+<ul>
+<li>記録のシステム（Systems of Record）</li>
+</ul>
+<h3>10章　バッチ処理</h3>
+<ul>
+<li><a href="https://boykush.github.io/wiki/scraps/mapreduce.html">MapReduce</a></li>
+<li>Hadoop</li>
+</ul>
+<h3>11章　ストリーム処理</h3>
+<ul>
+<li>イベントソーシング</li>
+<li><a href="https://boykush.github.io/wiki/scraps/%E3%83%A1%E3%83%83%E3%82%BB%E3%83%BC%E3%82%B8%E3%83%96%E3%83%AD%E3%83%BC%E3%82%AB%E3%83%BC.html">メッセージキュー</a></li>
+<li>Kinesis Streams/<a href="https://boykush.github.io/wiki/scraps/kafka.apache.html">Kafka</a></li>
+</ul>
+<h3>12章　データシステムの将来</h3>
+
+        </div>
+    </div>
+    
+    <ul class="scrap-links">
+        
+    </ul>
+
+
+        </main>
+        <footer>
+            Generated by <a href="https://github.com/boykush/scraps" target="_blank" rel="noopener noreferrer">Scraps</a>
+        </footer> 
+        <!-- Code syntax highlight -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script>
+        <!-- Code syntax highlight theme -->
+        <link href="https://unpkg.com/nord-highlightjs@0.1.0/dist/nord.css" rel="stylesheet" type="text/css" />
+        <!-- Mermaid -->
+        <script type="module">
+            import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11.6.0/+esm'
+        </script>
+        
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const ogpCards = document.querySelectorAll('.ogp-card');
+
+    ogpCards.forEach(async (card) => {
+      const url = card.dataset.url;
+
+      try {
+        const proxyUrl = 'https://corsproxy.io/?url=';
+        const response = await fetch(proxyUrl + url);
+        const html = await response.text();
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, 'text/html');
+
+        const title = doc.querySelector('meta[property="og:title"]')?.content ||
+          doc.querySelector('title')?.textContent ||
+          'No title';
+        card.querySelector('.ogp-title').textContent = title;
+
+        const description = doc.querySelector('meta[property="og:description"]')?.content ||
+          doc.querySelector('meta[name="description"]')?.content ||
+          'No description';
+        card.querySelector('.ogp-description').textContent = description;
+
+        const image = doc.querySelector('meta[property="og:image"]')?.content;
+        if (image) {
+          const imageUrl = image.startsWith('/')
+            ? `https://${card.dataset.host}/${image}`
+            : image;
+          card.querySelector('.ogp-image').src = imageUrl;
+        } else {
+          card.querySelector('.ogp-image').remove();
+        }
+      } catch (error) {
+        console.error('Failed to fetch OGP data:', error);
+      }
+    });
+  });
+</script>
+ 
+    </body>
+</html>

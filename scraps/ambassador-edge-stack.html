@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <!-- Page title -->
+        
+            
+            <title>Ambassador Edge Stack - Kush&#x27;s Wiki</title>
+            <meta property="og:title" content="Ambassador Edge Stack - Kush&#x27;s Wiki" />
+            <meta name="twitter:title" content="Ambassador Edge Stack - Kush&#x27;s Wiki" />
+        
+        <!-- Page description -->
+        
+            <meta name="description" content="boykushのナレッジ置き場" />
+            <meta property="og:description" content="boykushのナレッジ置き場" />
+            <meta name="twitter:description" content="boykushのナレッジ置き場" />
+        
+        <!-- Page favicon -->
+        
+            <link rel="icon" type="image/png" href="https:&#x2F;&#x2F;gist.github.com&#x2F;boykush&#x2F;3bbc68b5d2580374c97d4336b87fb70f&#x2F;raw&#x2F;a838b8f3584b21bcbbe4dd53afca380fe18695a7&#x2F;boykush_icon.png" />
+        
+        <!-- Rubik font -->
+        <link href="https://fonts.cdnfonts.com/css/rubik" rel="stylesheet">
+        <!-- Noto Sans JP font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+        <!-- Style sheet -->
+        <link rel="stylesheet" href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;main.css">
+        
+<meta property="og:url" content="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/ambassador-edge-stack.html" />
+
+    <meta property="og:image" content="https:&#x2F;&#x2F;avatars.githubusercontent.com&#x2F;u&#x2F;9270257?s=200&amp;v=4" />
+    <meta name="twitter:image" content="https:&#x2F;&#x2F;avatars.githubusercontent.com&#x2F;u&#x2F;9270257?s=200&amp;v=4" />
+
+
+    </head>
+    <body>
+        <header>
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;">
+                <h1>Kush&#x27;s Wiki</h1>
+            </a>
+        </header>
+        <main>
+            
+    <div class="scrap">
+        
+        <h1 class="title">Ambassador Edge Stack</h1>
+        
+            <p class="commited-date">
+                commited date: 2025-11-18
+            </p>
+        
+        <div class="content">
+            <p>#<a href="https://boykush.github.io/wiki/scraps/api-architecture.html">API Architecture</a> #<a href="https://boykush.github.io/wiki/scraps/cloud-native.html">Cloud Native</a></p>
+<p><img src="https://avatars.githubusercontent.com/u/9270257?s=200&amp;v=4" alt="" />Ambassador Edge Stack logo</p>
+<p><a href="https://boykush.github.io/wiki/scraps/kubernetes.html">Kubernetes</a>ネイティブな<a href="https://boykush.github.io/wiki/scraps/api%E3%82%B2%E3%83%BC%E3%83%88%E3%82%A6%E3%82%A7%E3%82%A4.html">APIゲートウェイ</a>、<a href="https://boykush.github.io/wiki/scraps/helm.html">Helm</a>を利用してインストールできる</p>
+<p><a href="https://boykush.github.io/wiki/scraps/cncf.html">CNCF</a> incubating projectである<a href="https://www.cncf.io/projects/emissary-ingress/">Emissary-Ingress</a>の開発者たちが継続して開発している</p>
+<p>アーキテクチャの中核には<a href="https://boykush.github.io/wiki/scraps/envoy.html">Envoy</a> Proxyを利用しており、manifestファイルから受け取った設定をEnvoy configurationにパースする</p>
+<p>APIゲートウェイとして以下のような機能を持っている</p>
+<ul>
+<li>トラフィック管理<ul>
+<li><a href="https://boykush.github.io/wiki/scraps/%E3%83%AD%E3%83%BC%E3%83%89%E3%83%90%E3%83%A9%E3%83%B3%E3%82%B7%E3%83%B3%E3%82%B0.html">ロードバランシング</a></li>
+<li><a href="https://boykush.github.io/wiki/scraps/%E3%82%B5%E3%83%BC%E3%82%AD%E3%83%83%E3%83%88%E3%83%96%E3%83%AC%E3%83%BC%E3%82%AB%E3%83%BC.html">サーキットブレーカー</a></li>
+<li><a href="https://boykush.github.io/wiki/scraps/%E3%82%AB%E3%83%8A%E3%83%AA%E3%82%A2%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9.html">カナリアリリース</a></li>
+</ul>
+</li>
+<li><a href="https://boykush.github.io/wiki/scraps/authentication.html">認証</a><ul>
+<li>SSO</li>
+<li><a href="https://boykush.github.io/wiki/scraps/jwt.html">JWT</a></li>
+</ul>
+</li>
+<li><a href="https://boykush.github.io/wiki/scraps/%E3%83%AC%E3%83%BC%E3%83%88%E3%83%AA%E3%83%9F%E3%83%83%E3%83%88.html">レートリミット</a></li>
+</ul>
+<p><a href="https://boykush.github.io/wiki/scraps/datadog.html">Datadog</a>とのインテグレーションが可能 <a href="https://docs.datadoghq.com/ja/integrations/ambassador/">Ambassador API Gateway</a></p>
+<hr />
+<ul>
+<li><a href="https://www.getambassador.io/docs/edge-stack/latest/tutorials/getting-started">Edge Stack quick start | Edge Stack</a></li>
+<li><a href="https://www.getambassador.io/docs/edge-stack/latest/topics/concepts/architecture">The Edge Stack architecture | Edge Stack</a></li>
+</ul>
+
+        </div>
+    </div>
+    
+    <ul class="scrap-links">
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/マスタリングapiアーキテクチャ.html">
+                    
+                        <div class="header">
+                            <div class="title">マスタリングAPIアーキテクチャ</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;www.oreilly.co.jp&#x2F;books&#x2F;images&#x2F;picture_large978-4-8144-0089-8.jpeg" loading="lazy" />
+                        </div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/argo-rollouts.html">
+                    
+                        <div class="header">
+                            <div class="title">Argo Rollouts</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;argoproj.github.io&#x2F;static&#x2F;768d962efdd84a6021db7c7792f01b41&#x2F;rollouts-thumbnail.png" loading="lazy" />
+                        </div>
+                    
+                </a>
+            </li>
+        
+    </ul>
+
+
+        </main>
+        <footer>
+            Generated by <a href="https://github.com/boykush/scraps" target="_blank" rel="noopener noreferrer">Scraps</a>
+        </footer> 
+        <!-- Code syntax highlight -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script>
+        <!-- Code syntax highlight theme -->
+        <link href="https://unpkg.com/nord-highlightjs@0.1.0/dist/nord.css" rel="stylesheet" type="text/css" />
+        <!-- Mermaid -->
+        <script type="module">
+            import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11.6.0/+esm'
+        </script>
+        
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const ogpCards = document.querySelectorAll('.ogp-card');
+
+    ogpCards.forEach(async (card) => {
+      const url = card.dataset.url;
+
+      try {
+        const proxyUrl = 'https://corsproxy.io/?url=';
+        const response = await fetch(proxyUrl + url);
+        const html = await response.text();
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, 'text/html');
+
+        const title = doc.querySelector('meta[property="og:title"]')?.content ||
+          doc.querySelector('title')?.textContent ||
+          'No title';
+        card.querySelector('.ogp-title').textContent = title;
+
+        const description = doc.querySelector('meta[property="og:description"]')?.content ||
+          doc.querySelector('meta[name="description"]')?.content ||
+          'No description';
+        card.querySelector('.ogp-description').textContent = description;
+
+        const image = doc.querySelector('meta[property="og:image"]')?.content;
+        if (image) {
+          const imageUrl = image.startsWith('/')
+            ? `https://${card.dataset.host}/${image}`
+            : image;
+          card.querySelector('.ogp-image').src = imageUrl;
+        } else {
+          card.querySelector('.ogp-image').remove();
+        }
+      } catch (error) {
+        console.error('Failed to fetch OGP data:', error);
+      }
+    });
+  });
+</script>
+ 
+    </body>
+</html>

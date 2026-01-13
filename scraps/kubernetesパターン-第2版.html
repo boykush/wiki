@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <!-- Page title -->
+        
+            
+            <title>Kubernetesパターン 第2版 - Kush&#x27;s Wiki</title>
+            <meta property="og:title" content="Kubernetesパターン 第2版 - Kush&#x27;s Wiki" />
+            <meta name="twitter:title" content="Kubernetesパターン 第2版 - Kush&#x27;s Wiki" />
+        
+        <!-- Page description -->
+        
+            <meta name="description" content="boykushのナレッジ置き場" />
+            <meta property="og:description" content="boykushのナレッジ置き場" />
+            <meta name="twitter:description" content="boykushのナレッジ置き場" />
+        
+        <!-- Page favicon -->
+        
+            <link rel="icon" type="image/png" href="https:&#x2F;&#x2F;gist.github.com&#x2F;boykush&#x2F;3bbc68b5d2580374c97d4336b87fb70f&#x2F;raw&#x2F;a838b8f3584b21bcbbe4dd53afca380fe18695a7&#x2F;boykush_icon.png" />
+        
+        <!-- Rubik font -->
+        <link href="https://fonts.cdnfonts.com/css/rubik" rel="stylesheet">
+        <!-- Noto Sans JP font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+        <!-- Style sheet -->
+        <link rel="stylesheet" href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;main.css">
+        
+<meta property="og:url" content="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/kubernetesパターン-第2版.html" />
+
+    <meta property="og:image" content="https:&#x2F;&#x2F;www.oreilly.co.jp&#x2F;books&#x2F;images&#x2F;picture_large978-4-8144-0088-1.jpeg" />
+    <meta name="twitter:image" content="https:&#x2F;&#x2F;www.oreilly.co.jp&#x2F;books&#x2F;images&#x2F;picture_large978-4-8144-0088-1.jpeg" />
+
+
+    </head>
+    <body>
+        <header>
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;">
+                <h1>Kush&#x27;s Wiki</h1>
+            </a>
+        </header>
+        <main>
+            
+    <div class="scrap">
+        
+        <h1 class="title">Kubernetesパターン 第2版</h1>
+        
+            <p class="commited-date">
+                commited date: 2025-11-18
+            </p>
+        
+        <div class="content">
+            <h3>Authors</h3>
+<p>Bilgin Ibryam, Roland Huß, <a href="https://boykush.github.io/wiki/scraps/%E6%9D%BE%E6%B5%A6-%E9%9A%BC%E4%BA%BA.html">松浦 隼人</a></p>
+<p>#<a href="https://boykush.github.io/wiki/scraps/book.html">Book</a></p>
+<p><img src="https://www.oreilly.co.jp/books/images/picture_large978-4-8144-0088-1.jpeg" alt="" />Kubernetesパターン 第2版</p>
+<p><a href="https://www.oreilly.co.jp/books/9784814400881/">O’Reilly Japan</a></p>
+<p><a href="https://boykush.github.io/wiki/scraps/kubernetes.html">Kubernetes</a>ベースの<a href="https://boykush.github.io/wiki/scraps/cloud-native.html">クラウドネイティブ</a>アプリケーションを構築するパターンとして紹介する書籍</p>
+<h3>序章</h3>
+<ul>
+<li><a href="https://boykush.github.io/wiki/scraps/%E3%83%9E%E3%82%A4%E3%82%AF%E3%83%AD%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9.html">マイクロサービス</a>/<a href="https://boykush.github.io/wiki/scraps/%E5%A2%83%E7%95%8C%E3%81%A5%E3%81%91%E3%82%89%E3%82%8C%E3%81%9F%E3%82%B3%E3%83%B3%E3%83%86%E3%82%AD%E3%82%B9%E3%83%88.html">境界づけられたコンテキスト</a>/<a href="https://boykush.github.io/wiki/scraps/%E9%9B%86%E7%B4%84.ddd.html">集約</a></li>
+<li><a href="https://boykush.github.io/wiki/scraps/%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3%E9%A7%86%E5%8B%95%E8%A8%AD%E8%A8%88.html">ドメイン駆動設計</a>/<a href="https://boykush.github.io/wiki/scraps/%E3%83%98%E3%82%AD%E3%82%B5%E3%82%B4%E3%83%8A%E3%83%AB%E3%82%A2%E3%83%BC%E3%82%AD%E3%83%86%E3%82%AF%E3%83%81%E3%83%A3.html">ヘキサゴナルアーキテクチャ</a>/<a href="https://boykush.github.io/wiki/scraps/the-twelve-factor-app.html">The Twelve-Factor App</a></li>
+<li><a href="https://boykush.github.io/wiki/scraps/%E3%82%B3%E3%83%B3%E3%83%86%E3%83%8A.html">コンテナ</a></li>
+<li><a href="https://boykush.github.io/wiki/scraps/pod.kubernetes.html">Pod</a>/<a href="https://boykush.github.io/wiki/scraps/service.kubernetes.html">Service</a>/<a href="https://boykush.github.io/wiki/scraps/label.kubernetes.html">Label</a>/<a href="https://boykush.github.io/wiki/scraps/namespace.kubernetes.html">Namespace</a></li>
+</ul>
+<h2>第1部 基本パターン</h2>
+<h3>2章 Predicatable Demand（予測可能な需要）</h3>
+<h3>3章 Declarative Deployment（宣言的デプロイ）</h3>
+<ul>
+<li><a href="https://boykush.github.io/wiki/scraps/deployment.kubernetes.html">Deployment</a></li>
+<li><a href="https://boykush.github.io/wiki/scraps/%E3%83%96%E3%83%AB%E3%83%BC%E3%82%B0%E3%83%AA%E3%83%BC%E3%83%B3%E6%88%A6%E7%95%A5.html">ブルーグリーンリリース</a>/<a href="https://boykush.github.io/wiki/scraps/%E3%82%AB%E3%83%8A%E3%83%AA%E3%82%A2%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9.html">カナリアリリース</a></li>
+<li>Flagger/<a href="https://boykush.github.io/wiki/scraps/argo-rollouts.html">Argo Rollouts</a>/<a href="https://boykush.github.io/wiki/scraps/knative.html">Knative</a></li>
+</ul>
+<h3>4章 Health <a href="https://boykush.github.io/wiki/scraps/probe.kubernetes.html">Probe</a></h3>
+<ul>
+<li><a href="https://boykush.github.io/wiki/scraps/liveness-probe.kubernetes.html">Liveness Probe</a>/<a href="https://boykush.github.io/wiki/scraps/readiness-probe.kubernetes.html">Readiness Probe</a>/<a href="https://boykush.github.io/wiki/scraps/startup-probe.kubernetes.html">Startup Probe</a></li>
+</ul>
+<h3>5章 Managed Lifecycle（管理されたライフサイクル）</h3>
+<ul>
+<li><a href="https://boykush.github.io/wiki/scraps/sigkill.html">SIGKILL</a>/<a href="https://boykush.github.io/wiki/scraps/sigterm.html">SIGTERM</a></li>
+<li><a href="https://boykush.github.io/wiki/scraps/%E3%82%B3%E3%83%B3%E3%83%86%E3%83%8A%E3%83%A9%E3%82%A4%E3%83%95%E3%82%B5%E3%82%A4%E3%82%AF%E3%83%AB%E3%83%95%E3%83%83%E3%82%AF.kubernetes.html">postStart/preStop</a></li>
+</ul>
+<h3>6章 Automated Placement（自動的な配置）</h3>
+<ul>
+<li><a href="https://boykush.github.io/wiki/scraps/kube-scheduler.html">スケジューリング</a><ul>
+<li><a href="https://boykush.github.io/wiki/scraps/node-affinity.html">ノードアフィニティ</a></li>
+<li><a href="https://boykush.github.io/wiki/scraps/inter-pod-affinity-and-anti-affinity.kubernetes.html">Podアフィニティとアンチアフィニティ</a></li>
+<li><a href="https://boykush.github.io/wiki/scraps/topology-spread-constraint.kubernetes.html">Topology Spread Constraint</a></li>
+<li><a href="https://boykush.github.io/wiki/scraps/taints-and-tolerations.kubernetes.html">Taints and Tolerations</a></li>
+</ul>
+</li>
+</ul>
+<h2>第II部 振る舞いパターン</h2>
+<h3>7章 Batch Job（バッチジョブ）</h3>
+<ul>
+<li><a href="https://boykush.github.io/wiki/scraps/job.kubernetes.html">Job</a></li>
+</ul>
+<h3>8章 Periodic Job（定期ジョブ）</h3>
+<ul>
+<li><a href="https://boykush.github.io/wiki/scraps/cronjob.kubernetes.html">CronJob</a></li>
+</ul>
+<h3>9章 Daemon Service（デーモンサービス）</h3>
+<ul>
+<li><a href="https://boykush.github.io/wiki/scraps/daemonset.kubernetes.html">DaemonSet</a></li>
+</ul>
+<h3>10章 Singleton Service（シングルトンサービス）</h3>
+<ul>
+<li><a href="https://boykush.github.io/wiki/scraps/headless-service.kubernetes.html">ヘッドドレスService</a>/<a href="https://boykush.github.io/wiki/scraps/kube-proxy.html">kube-proxy</a>/StatefulService</li>
+<li><a href="https://boykush.github.io/wiki/scraps/etcd.html">etcd</a>/ZooKeeper/<a href="https://boykush.github.io/wiki/scraps/dapr.html">Dapr</a></li>
+<li><a href="https://boykush.github.io/wiki/scraps/poddisruptionbudget.kubernetes.html">PodDisruptionBudget</a></li>
+</ul>
+<h3>11章 Stateless Service（ステートレスサービス）</h3>
+<ul>
+<li><a href="https://boykush.github.io/wiki/scraps/persistentvolume.kubernetes.html">PersistentVolume/PersistentVolumeClaim</a></li>
+</ul>
+<h3>12章 Stateful Service（ステートフルサービス）</h3>
+<ul>
+<li><a href="https://boykush.github.io/wiki/scraps/crd.kubernetes.html">CRD</a></li>
+<li><a href="https://boykush.github.io/wiki/scraps/statefulset.kubernetes.html">StatefulSet</a></li>
+</ul>
+<h3>13章 <a href="https://boykush.github.io/wiki/scraps/%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9%E3%83%87%E3%82%A3%E3%82%B9%E3%82%AB%E3%83%90%E3%83%AA.html">Service Discovery（サービスディスカバリ）</a></h3>
+<ul>
+<li><a href="https://boykush.github.io/wiki/scraps/service.kubernetes.html">Service</a></li>
+<li><a href="https://boykush.github.io/wiki/scraps/ingress.kubernetes.html">Ingress</a></li>
+<li><a href="https://boykush.github.io/wiki/scraps/knative-serving.html">Knative Serving</a></li>
+</ul>
+<h3>14章 Self Awareness（セルフアウェアネス）</h3>
+<ul>
+<li><a href="https://boykush.github.io/wiki/scraps/downward-api.kubernetes.html">Downward API</a></li>
+</ul>
+<h2>第III部 構造化パターン</h2>
+<h3>15章 Init Container（Init コンテナ）</h3>
+<ul>
+<li><a href="https://boykush.github.io/wiki/scraps/init%E3%82%B3%E3%83%B3%E3%83%86%E3%83%8A.kubernetes.html">Initコンテナ</a></li>
+</ul>
+<h3>16章 Sidecar（サイドカー）</h3>
+<ul>
+<li><a href="https://boykush.github.io/wiki/scraps/%E3%82%B5%E3%82%A4%E3%83%89%E3%82%AB%E3%83%BC.html">サイドカー</a></li>
+</ul>
+<h3>17章 Adapter（アダプタ）</h3>
+<ul>
+<li><a href="https://boykush.github.io/wiki/scraps/prometeus.html">Prometeus</a></li>
+</ul>
+<h3>18章 Ambassador（アンバサダ）</h3>
+<h2>第IV部 設定パターン</h2>
+<h3>19章 EnvVar Configuration（環境変数による設定）</h3>
+<ul>
+<li><a href="https://boykush.github.io/wiki/scraps/the-twelve-factor-app.html">The Twelve-Factor App</a></li>
+</ul>
+<h3>20章 Configuration Resource（設定リソース）</h3>
+<ul>
+<li><a href="https://boykush.github.io/wiki/scraps/configmap.kubernetes.html">ConfigMap</a></li>
+<li><a href="https://boykush.github.io/wiki/scraps/secret.kubernetes.html">Secret</a></li>
+</ul>
+<h3>21章 Immutable Configuration（イミュータブル設定）</h3>
+<ul>
+<li><a href="https://boykush.github.io/wiki/scraps/docker.html">Docker</a></li>
+<li><a href="https://boykush.github.io/wiki/scraps/immutable-configuration.kubernetes.html">Immutable Configuration</a>パターン</li>
+<li>OpenShift Templates</li>
+</ul>
+<h3>22章 Configuration Template（設定テンプレート）</h3>
+<h2>第V部 <a href="https://boykush.github.io/wiki/scraps/security.html">セキュリティ</a>パターン</h2>
+<h3>23章 Process Containment（プロセス封じ込め）</h3>
+<ul>
+<li><a href="https://boykush.github.io/wiki/scraps/security-context.kubernetes.html">Security Context</a></li>
+<li><a href="https://boykush.github.io/wiki/scraps/pod-security-standards.kubernetes.html">Pod Security Standards</a>/<a href="https://boykush.github.io/wiki/scraps/pod-security-admission.kubernetes.html">Pod Security Admission</a></li>
+<li>シフトレフト</li>
+</ul>
+<h3>24章 Network Segmentation（ネットワークセグメンテーション）</h3>
+<ul>
+<li><a href="https://boykush.github.io/wiki/scraps/multitenancy.html">マルチテナント</a></li>
+<li><a href="https://boykush.github.io/wiki/scraps/network-policy.kubernetes.html">Network policy</a></li>
+<li><a href="https://boykush.github.io/wiki/scraps/kubernetes-network-policy-recipes.html">Kubernetes Network Policy Recipes</a></li>
+<li>Inspektor Gadget/<a href="https://boykush.github.io/wiki/scraps/ebpf.html">eBPF</a>/<a href="https://boykush.github.io/wiki/scraps/cilium.html">Cilium</a></li>
+<li><a href="https://boykush.github.io/wiki/scraps/%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9%E3%83%A1%E3%83%83%E3%82%B7%E3%83%A5.html">サービスメッシュ</a>/<a href="https://boykush.github.io/wiki/scraps/istio.html">Istio</a>/<a href="https://boykush.github.io/wiki/scraps/authorizationpolicy.istio.html">AuthorizationPolicy</a></li>
+<li>ソフトウェア定義ネットワーク</li>
+</ul>
+<h3>25章 Secure Configuration（セキュア設定）</h3>
+<ul>
+<li><a href="https://boykush.github.io/wiki/scraps/secret.kubernetes.html">Secret</a></li>
+<li>Sealed Secret/External Secret/<a href="https://boykush.github.io/wiki/scraps/sms.html">SMS</a>(AWS Secret Manager)/<a href="https://boykush.github.io/wiki/scraps/sops.html">sops</a></li>
+<li><a href="https://boykush.github.io/wiki/scraps/kms.html">KMS</a>(<a href="https://boykush.github.io/wiki/scraps/kms.amazon.html">KMS</a>)</li>
+<li><a href="https://boykush.github.io/wiki/scraps/container-storage-interface.html">Container Storage Interface</a>/<a href="https://boykush.github.io/wiki/scraps/secrets-store-csi-driver.html">Secrets Store CSI Driver</a></li>
+<li>Vault Sidecar Agent Injector</li>
+</ul>
+<h3>26章 Access Control（アクセス制御）</h3>
+<ul>
+<li><a href="https://boykush.github.io/wiki/scraps/oidc.html">OIDC</a>/<a href="https://boykush.github.io/wiki/scraps/bearer%E3%83%88%E3%83%BC%E3%82%AF%E3%83%B3.html">Bearerトークン</a></li>
+<li><a href="https://boykush.github.io/wiki/scraps/rbac.html">RBAC</a>/<a href="https://boykush.github.io/wiki/scraps/abac.html">ABAC</a></li>
+<li><a href="https://boykush.github.io/wiki/scraps/serviceaccount.kubernetes.html">ServiceAccount</a>/<a href="https://boykush.github.io/wiki/scraps/jwt.html">JWT</a></li>
+<li><a href="https://boykush.github.io/wiki/scraps/role.kubernetes.html">Role</a>/<a href="https://boykush.github.io/wiki/scraps/rolebinding.kubernetes.html">RoleBinding</a></li>
+<li><a href="https://boykush.github.io/wiki/scraps/clusterrole.kubernetes.html">ClusterRole</a>/<a href="https://boykush.github.io/wiki/scraps/clusterrolebinding.kubernetes.html">ClusterRoleBinding</a></li>
+</ul>
+<h2>第VI部 高度なパターン</h2>
+<h3>27章 Controller（コントローラ）</h3>
+<ul>
+<li><a href="https://boykush.github.io/wiki/scraps/controller.kubernetes.html">Controller</a></li>
+</ul>
+<h3>28章 Operator（オペレータ）</h3>
+<ul>
+<li><a href="https://boykush.github.io/wiki/scraps/operator.kubernetes.html">Operator</a></li>
+<li>Kubebuilder/Operator Framework/Metacontroller</li>
+</ul>
+<h3>29章 Elastic Scale（エラスティックスケール）</h3>
+<ul>
+<li><a href="https://boykush.github.io/wiki/scraps/horizontalpodautoscalar.kubernetes.html">HorizontalPodAutoscalar</a></li>
+<li><a href="https://boykush.github.io/wiki/scraps/knative.html">Knative</a>/<a href="https://boykush.github.io/wiki/scraps/keda.html">KEDA</a></li>
+<li>VerticalPodAutoscalar</li>
+<li>ClusterAutoscalar</li>
+</ul>
+<h3>30章 Image Builder（イメージビルダ）</h3>
+<ul>
+<li><a href="https://boykush.github.io/wiki/scraps/docker.html">Docker</a>/<a href="https://boykush.github.io/wiki/scraps/dockerfile.html">Dockerfile</a>/<a href="https://boykush.github.io/wiki/scraps/open-container-initiative.html">OCI</a></li>
+<li>コンテナイメージビルダ #<a href="https://boykush.github.io/wiki/scraps/continuous-integration.html">Continuous Integration</a><ul>
+<li>Buildah/Podman/Kaniko/BuildKit</li>
+<li>CNB(Cloud Native Buildpacks)</li>
+<li>Jib/ko/Apko</li>
+</ul>
+</li>
+<li>ビルドオーケストレータ #<a href="https://boykush.github.io/wiki/scraps/continuous-delivery.html">Continuous Delivery</a><ul>
+<li>OpenShift Build/kbld/<a href="https://boykush.github.io/wiki/scraps/job.kubernetes.html">Job</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+    </div>
+    
+    <ul class="scrap-links">
+        
+    </ul>
+
+
+        </main>
+        <footer>
+            Generated by <a href="https://github.com/boykush/scraps" target="_blank" rel="noopener noreferrer">Scraps</a>
+        </footer> 
+        <!-- Code syntax highlight -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script>
+        <!-- Code syntax highlight theme -->
+        <link href="https://unpkg.com/nord-highlightjs@0.1.0/dist/nord.css" rel="stylesheet" type="text/css" />
+        <!-- Mermaid -->
+        <script type="module">
+            import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11.6.0/+esm'
+        </script>
+        
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const ogpCards = document.querySelectorAll('.ogp-card');
+
+    ogpCards.forEach(async (card) => {
+      const url = card.dataset.url;
+
+      try {
+        const proxyUrl = 'https://corsproxy.io/?url=';
+        const response = await fetch(proxyUrl + url);
+        const html = await response.text();
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, 'text/html');
+
+        const title = doc.querySelector('meta[property="og:title"]')?.content ||
+          doc.querySelector('title')?.textContent ||
+          'No title';
+        card.querySelector('.ogp-title').textContent = title;
+
+        const description = doc.querySelector('meta[property="og:description"]')?.content ||
+          doc.querySelector('meta[name="description"]')?.content ||
+          'No description';
+        card.querySelector('.ogp-description').textContent = description;
+
+        const image = doc.querySelector('meta[property="og:image"]')?.content;
+        if (image) {
+          const imageUrl = image.startsWith('/')
+            ? `https://${card.dataset.host}/${image}`
+            : image;
+          card.querySelector('.ogp-image').src = imageUrl;
+        } else {
+          card.querySelector('.ogp-image').remove();
+        }
+      } catch (error) {
+        console.error('Failed to fetch OGP data:', error);
+      }
+    });
+  });
+</script>
+ 
+    </body>
+</html>

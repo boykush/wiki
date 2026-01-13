@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <!-- Page title -->
+        
+            
+            <title>SRE サイトリライアビリティエンジニアリング - Kush&#x27;s Wiki</title>
+            <meta property="og:title" content="SRE サイトリライアビリティエンジニアリング - Kush&#x27;s Wiki" />
+            <meta name="twitter:title" content="SRE サイトリライアビリティエンジニアリング - Kush&#x27;s Wiki" />
+        
+        <!-- Page description -->
+        
+            <meta name="description" content="boykushのナレッジ置き場" />
+            <meta property="og:description" content="boykushのナレッジ置き場" />
+            <meta name="twitter:description" content="boykushのナレッジ置き場" />
+        
+        <!-- Page favicon -->
+        
+            <link rel="icon" type="image/png" href="https:&#x2F;&#x2F;gist.github.com&#x2F;boykush&#x2F;3bbc68b5d2580374c97d4336b87fb70f&#x2F;raw&#x2F;a838b8f3584b21bcbbe4dd53afca380fe18695a7&#x2F;boykush_icon.png" />
+        
+        <!-- Rubik font -->
+        <link href="https://fonts.cdnfonts.com/css/rubik" rel="stylesheet">
+        <!-- Noto Sans JP font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+        <!-- Style sheet -->
+        <link rel="stylesheet" href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;main.css">
+        
+<meta property="og:url" content="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/sre-サイトリライアビリティエンジニアリング.book.html" />
+
+    <meta property="og:image" content="https:&#x2F;&#x2F;www.oreilly.co.jp&#x2F;books&#x2F;images&#x2F;picture_large978-4-87311-791-1.jpeg" />
+    <meta name="twitter:image" content="https:&#x2F;&#x2F;www.oreilly.co.jp&#x2F;books&#x2F;images&#x2F;picture_large978-4-87311-791-1.jpeg" />
+
+
+    </head>
+    <body>
+        <header>
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;">
+                <h1>Kush&#x27;s Wiki</h1>
+            </a>
+        </header>
+        <main>
+            
+    <div class="scrap">
+        
+          <h3 class="context">Book<span>&#47;</span></h2>
+        
+        <h1 class="title">SRE サイトリライアビリティエンジニアリング</h1>
+        
+            <p class="commited-date">
+                commited date: 2025-12-26
+            </p>
+        
+        <div class="content">
+            <h2>Googleの信頼性を支えるエンジニアリングチーム</h2>
+<h3>Authors</h3>
+<p>Betsy Beyer, Chris Jones, Jennifer Petoff, Niall Richard Murphy</p>
+<p>#<a href="https://boykush.github.io/wiki/scraps/book.html">Book</a> #<a href="https://boykush.github.io/wiki/scraps/reliability.html">Reliability</a> #<a href="https://boykush.github.io/wiki/scraps/observability.html">Observability</a></p>
+<p><img src="https://www.oreilly.co.jp/books/images/picture_large978-4-87311-791-1.jpeg" alt="" />SRE サイトリライアビリティエンジニアリング</p>
+<p><a href="https://www.oreilly.co.jp/books/9784873117911/">O’Reilly Japan</a></p>
+<p><a href="https://boykush.github.io/wiki/scraps/sre.html">SRE</a>についてGoogleエンジニアが書いた書籍</p>
+<p>キーワード</p>
+<ul>
+<li><a href="https://boykush.github.io/wiki/scraps/%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9%E3%81%AE%E4%BF%A1%E9%A0%BC%E6%80%A7%E3%81%AE%E9%9A%8E%E5%B1%A4.html">サービスの信頼性の階層</a></li>
+</ul>
+<p>英語版は無料で公開されている</p>
+<p><a href="https://sre.google/sre-book/table-of-contents/">Google - Site Reliability Engineering</a></p>
+<h2>第Ⅰ部　イントロダクション</h2>
+<h3>1章　イントロダクション</h3>
+<h3>2章　SREの観点から見た Googleのプロダクション環境</h3>
+<h2>第Ⅱ部　原則</h2>
+<ul>
+<li><a href="https://boykush.github.io/wiki/scraps/%E3%82%A8%E3%83%A9%E3%83%BC%E3%83%90%E3%82%B8%E3%82%A7%E3%83%83%E3%83%88.html">エラーバジェット</a></li>
+</ul>
+<h3>4章　サービスレベル目標</h3>
+<ul>
+<li><a href="https://boykush.github.io/wiki/scraps/slo.html">SLO</a></li>
+</ul>
+<h3>5章　トイルの撲滅</h3>
+<h3>6章　分散システムのモニタリング</h3>
+<ul>
+<li><a href="https://boykush.github.io/wiki/scraps/%E3%83%A2%E3%83%8B%E3%82%BF%E3%83%AA%E3%83%B3%E3%82%B0.html">モニタリング</a></li>
+<li>4大シグナル</li>
+</ul>
+<h3>7章　Googleにおける自動化の進化</h3>
+<h3>8章　リリースエンジニアリング</h3>
+<ul>
+<li>継続的ビルド/継続的デプロイメント</li>
+</ul>
+<h3>9章　単純さ</h3>
+<h2>第Ⅲ部　実践</h2>
+<h3>10章　時系列データからの実践的なアラート</h3>
+<h3>11章　オンコール対応</h3>
+<h3>12章　効果的なトラブルシューティング</h3>
+<h3>13章　緊急対応</h3>
+<h3>14章　インシデント管理</h3>
+<h3>15章　ポストモーテムの文化：失敗からの学び</h3>
+<h3>16章　サービス障害の追跡</h3>
+<h3>17章　信頼性のためのテスト</h3>
+<h3>18章　SREにおけるソフトウェアエンジニアリング</h3>
+<h3>19章　フロントエンドにおける<a href="https://boykush.github.io/wiki/scraps/%E3%83%AD%E3%83%BC%E3%83%89%E3%83%90%E3%83%A9%E3%83%B3%E3%82%B7%E3%83%B3%E3%82%B0.html">ロードバランシング</a></h3>
+<h3>20章　データセンターでのロードバランシング</h3>
+<h3>21章　過負荷への対応</h3>
+<h3>22章　<a href="https://boykush.github.io/wiki/scraps/%E3%82%AB%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%89%E9%9A%9C%E5%AE%B3.html">カスケード障害</a>への対応</h3>
+<ul>
+<li><a href="https://boykush.github.io/wiki/scraps/%E3%83%AA%E3%83%88%E3%83%A9%E3%82%A4.html">リトライ</a></li>
+</ul>
+<h3>23章　クリティカルな状態の管理 :信頼性のための分散合意</h3>
+<h3>24章　<a href="https://boykush.github.io/wiki/scraps/cron.html">cron</a>による分散定期スケジューリング</h3>
+<h3>25章　データ処理のパイプライン #<a href="https://boykush.github.io/wiki/scraps/data-processing.html">Data Processing</a></h3>
+<h3>26章　データの<a href="https://boykush.github.io/wiki/scraps/%E5%AE%8C%E5%85%A8%E6%80%A7.html">完全性</a>：What You Read Is What You Wrote</h3>
+<ul>
+<li><a href="https://boykush.github.io/wiki/scraps/%E3%83%AC%E3%83%97%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3.html">レプリケーション</a></li>
+</ul>
+<h3>27章　大規模なプロダクトのローンチにおける信頼性</h3>
+<ul>
+<li><a href="https://boykush.github.io/wiki/scraps/%E3%83%95%E3%82%A3%E3%83%BC%E3%83%81%E3%83%A3%E3%83%BC%E3%83%95%E3%83%A9%E3%82%B0.html">機能フラグ</a></li>
+</ul>
+<h2>第Ⅳ部　管理</h2>
+<h3>28章　SREの成長を加速する方法：新人からオンコール担当、そしてその先へ</h3>
+<h3>29章　割り込みへの対処</h3>
+<h3>30章　SREの投入による運用過負荷からのリカバリ</h3>
+<h3>31章　SREにおけるコミュニケーションとコラボレーション</h3>
+<h3>32章　進化する SREのエンゲージメントモデル</h3>
+<h2>第Ｖ部　まとめ</h2>
+<h3>33章　他の業界からの教訓</h3>
+<h3>34章　まとめ</h3>
+
+        </div>
+    </div>
+    
+    <ul class="scrap-links">
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/オブザーバビリティ・エンジニアリング.html">
+                    
+                        <div class="header">
+                            <div class="title">オブザーバビリティ・エンジニアリング</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;www.oreilly.co.jp&#x2F;books&#x2F;images&#x2F;picture_large978-4-8144-0012-6.jpeg" loading="lazy" />
+                        </div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/あなたの興味は信頼性？それとも生産性？-sreとしてのキャリアに悩むみなさまに伝えたい選択肢.html">
+                    
+                        <div class="header">
+                            <div class="title">あなたの興味は信頼性？それとも生産性？ SREとしてのキャリアに悩むみなさまに伝えたい選択肢</div>
+                        </div>
+                    
+                    
+                        <div class="summary">
+Author:
+草間 一人
+
+SRE&#x2F;SRE サイトリライアビリティエンジニアリング
+エレガントパズル
+Four Keys&#x2F;DevOps
+Platform Engineering
+Team Topologies
+Building Effective AI Agents
+
+</div>
+                    
+                </a>
+            </li>
+        
+    </ul>
+
+
+        </main>
+        <footer>
+            Generated by <a href="https://github.com/boykush/scraps" target="_blank" rel="noopener noreferrer">Scraps</a>
+        </footer> 
+        <!-- Code syntax highlight -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script>
+        <!-- Code syntax highlight theme -->
+        <link href="https://unpkg.com/nord-highlightjs@0.1.0/dist/nord.css" rel="stylesheet" type="text/css" />
+        <!-- Mermaid -->
+        <script type="module">
+            import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11.6.0/+esm'
+        </script>
+        
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const ogpCards = document.querySelectorAll('.ogp-card');
+
+    ogpCards.forEach(async (card) => {
+      const url = card.dataset.url;
+
+      try {
+        const proxyUrl = 'https://corsproxy.io/?url=';
+        const response = await fetch(proxyUrl + url);
+        const html = await response.text();
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, 'text/html');
+
+        const title = doc.querySelector('meta[property="og:title"]')?.content ||
+          doc.querySelector('title')?.textContent ||
+          'No title';
+        card.querySelector('.ogp-title').textContent = title;
+
+        const description = doc.querySelector('meta[property="og:description"]')?.content ||
+          doc.querySelector('meta[name="description"]')?.content ||
+          'No description';
+        card.querySelector('.ogp-description').textContent = description;
+
+        const image = doc.querySelector('meta[property="og:image"]')?.content;
+        if (image) {
+          const imageUrl = image.startsWith('/')
+            ? `https://${card.dataset.host}/${image}`
+            : image;
+          card.querySelector('.ogp-image').src = imageUrl;
+        } else {
+          card.querySelector('.ogp-image').remove();
+        }
+      } catch (error) {
+        console.error('Failed to fetch OGP data:', error);
+      }
+    });
+  });
+</script>
+ 
+    </body>
+</html>

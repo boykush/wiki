@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <!-- Page title -->
+        
+            
+            <title>Authentication - Kush&#x27;s Wiki</title>
+            <meta property="og:title" content="Authentication - Kush&#x27;s Wiki" />
+            <meta name="twitter:title" content="Authentication - Kush&#x27;s Wiki" />
+        
+        <!-- Page description -->
+        
+            <meta name="description" content="boykushのナレッジ置き場" />
+            <meta property="og:description" content="boykushのナレッジ置き場" />
+            <meta name="twitter:description" content="boykushのナレッジ置き場" />
+        
+        <!-- Page favicon -->
+        
+            <link rel="icon" type="image/png" href="https:&#x2F;&#x2F;gist.github.com&#x2F;boykush&#x2F;3bbc68b5d2580374c97d4336b87fb70f&#x2F;raw&#x2F;a838b8f3584b21bcbbe4dd53afca380fe18695a7&#x2F;boykush_icon.png" />
+        
+        <!-- Rubik font -->
+        <link href="https://fonts.cdnfonts.com/css/rubik" rel="stylesheet">
+        <!-- Noto Sans JP font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+        <!-- Style sheet -->
+        <link rel="stylesheet" href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;main.css">
+        
+<meta property="og:url" content="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/authentication.html" />
+
+
+    </head>
+    <body>
+        <header>
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;">
+                <h1>Kush&#x27;s Wiki</h1>
+            </a>
+        </header>
+        <main>
+            
+    <div class="scrap">
+        
+        <h1 class="title">Authentication</h1>
+        
+            <p class="commited-date">
+                commited date: 2025-11-17
+            </p>
+        
+        <div class="content">
+            <h2>認証</h2>
+<p>#<a href="https://boykush.github.io/wiki/scraps/security.html">Security</a></p>
+
+        </div>
+    </div>
+    
+    <ul class="scrap-links">
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/pwned-passwords.html">
+                    
+                        <div class="header">
+                            <div class="title">Pwned Passwords</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Authentication #Security
+既知のデータ侵害で利用されたパスワードかどうかを検証できるサービス、API
+https:&#x2F;&#x2F;haveibeenpwned.com&#x2F;Passwords
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/oauth徹底入門.html">
+                    
+                        <div class="header">
+                            <div class="title">OAuth徹底入門</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;www.seshop.com&#x2F;static&#x2F;images&#x2F;product&#x2F;22242&#x2F;L.png" loading="lazy" />
+                        </div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/mfa.html">
+                    
+                        <div class="header">
+                            <div class="title">MFA</div>
+                        </div>
+                    
+                    
+                        <div class="summary">Multi Factor Authentication
+多要素認証
+#Security #Authentication
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/アカウントロックアウト.html">
+                    
+                        <div class="header">
+                            <div class="title">アカウントロックアウト</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Security #Authentication
+一定回数の不正なパスワード入力後にアカウントを一時的または永続的にロックするブルートフォース攻撃対策
+主な問題点
+
+DoS攻撃の標的になりやすい（攻撃者が大量のアカウントをロック可能）
+ユーザー名の列挙が可能（存在するアカウントのみがロックされる）
+ヘルプデスクへの負担増加
+低速攻撃や複数ユーザー対象の攻撃に無効
+
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/ゴールドスタンダード.html">
+                    
+                        <div class="header">
+                            <div class="title">ゴールドスタンダード</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Security
+ゴールドスタンダード（Gold Standard）は、セキュアなシステム設計における基本原則で、C-I-Aを保護する執行メカニズムとして機能します。
+
+認証（Authentication）: ユーザーが本人であることを証明
+認可（Authorization）: 認証されたユーザーの行動の許可・拒否を決定
+監査（Auditing）: システムアクティビティの信頼できるログを維持
+
+ラテン語で金を意味する「Aurum」の化学記号「Au」に由来し、3つの原則が「Au」で始まることからこの名称が付けられています。
+https:&#x2F;&#x2F;designingsecuresoftware.com&#x2F;text&#x2F;ch1-gold&#x2F;
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/マスタリングapiアーキテクチャ.html">
+                    
+                        <div class="header">
+                            <div class="title">マスタリングAPIアーキテクチャ</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;www.oreilly.co.jp&#x2F;books&#x2F;images&#x2F;picture_large978-4-8144-0089-8.jpeg" loading="lazy" />
+                        </div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/コンプリケイテッド・サブシステムチーム.html">
+                    
+                        <div class="header">
+                            <div class="title">コンプリケイテッド・サブシステムチーム</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Team Organization
+Team Topologiesにて紹介される4つのチームタイプの内の1つ
+認証や認可・決済等のサブシステムを構築しストリームアラインドチームにAPIを提供する
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/beyond-the-twelve-factor-app.html">
+                    
+                        <div class="header">
+                            <div class="title">Beyond the Twelve-Factor App</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Software Design #Cloud Native
+The Twelve-Factor Appを現代のクラウドネイティブ環境向けに拡張した方法論。Kevin Hoffmanによって著され、オリジナルの12要因を15要因に拡張している。
+追加された3つの新要因
+2. API First - サービス設計において、実装前にAPIインターフェースを定義し契約駆動開発を促進 API Architecture
+14. Telemetry - メトリクス、ログ、トレースの収集を通じた包括的な監視機能 Observability
+15. Authentication and Authorization - 認証・認可をアプリケーション設計の第一級の関心事として組み込む Authentication Authorization
+既存要因の改訂
+Kubernetes ConfigMap&#x2F;Secretsなどコンテナ時代の設定管理や、Infrastructure as Code（IaC）による環境構築など、現代的なベストプラクティスを反映した注釈が追加されている。
+https:&#x2F;&#x2F;www.vmware.com&#x2F;docs&#x2F;ebook-beyond-the-12-factor-app
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/let-single-quote-s-encrypt.html">
+                    
+                        <div class="header">
+                            <div class="title">Let&#x27;s Encrypt</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Security #Authentication
+簡単かつ安価にDV証明書を発行する認証局
+https:&#x2F;&#x2F;letsencrypt.org&#x2F;ja&#x2F;
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/apiゲートウェイ.html">
+                    
+                        <div class="header">
+                            <div class="title">APIゲートウェイ</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#API Architecture #Network
+外部トラフィックに対してリバースプロキシ・ロードバランシングが持つようなネットワークのルーティング・セキュリティと可用性の向上に加え、以下のような機能横断的な要件を扱う役割
+
+認証
+認可
+レートリミット
+リトライ
+サーキットブレーカー etc.
+
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/device-cookies.html">
+                    
+                        <div class="header">
+                            <div class="title">Device Cookies</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Security #Authentication
+ブルートフォース攻撃を軽減するための認証ロック機構。ユーザーが正常に認証された後、そのブラウザに発行される特別なCookie
+従来のアカウントロックアウトと比較して以下の利点がある
+
+DoS攻撃に対して耐性がある
+IPアドレスではなくブラウザCookieを基準とするため予測可能で実装しやすい
+ボットネットや代理経由の攻撃に対応しやすい
+
+認証リクエスト時に有効なDevice Cookieの有無を確認し、未信頼クライアント（Device Cookieなし）からの認証試行回数を記録してロックアウトを実施する
+実装にはJWT、Redis&#x2F;Memcachedによるロックリスト管理、HMAC署名による改ざん防止などが用いられる
+https:&#x2F;&#x2F;owasp.org&#x2F;www-community&#x2F;Slow_Down_Online_Guessing_Attacks_with_Device_Cookies
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/oidc.html">
+                    
+                        <div class="header">
+                            <div class="title">OIDC</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;openid.net&#x2F;wp-content&#x2F;uploads&#x2F;2022&#x2F;11&#x2F;df-l-oix-l-openid_rgb-300dpi.png" loading="lazy" />
+                        </div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/blocking-brute-force-attacks.html">
+                    
+                        <div class="header">
+                            <div class="title">Blocking Brute Force Attacks</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Security #Authentication #Blog
+ブルートフォース攻撃を防ぐための対策をまとめたOWASP Communityの記事
+主な対策方法
+
+アカウントロックアウト機能（DoS攻撃に悪用されるリスクに注意）
+Device Cookies（デバイスごとの認証ロック機構、DoS攻撃に対して耐性がある）
+パスワード検証時の遅延追加
+IPアドレスベースのレートリミット
+CAPTCHAの導入
+複数の秘密の質問による認証強化
+
+単一の技術では回避されやすいため、複数の対策を組み合わせることが重要
+https:&#x2F;&#x2F;owasp.org&#x2F;www-community&#x2F;controls&#x2F;Blocking_Brute_Force_Attacks
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/ブルートフォース攻撃.html">
+                    
+                        <div class="header">
+                            <div class="title">ブルートフォース攻撃</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Security #Authentication
+総当たり攻撃。パスワードや暗号鍵などを、可能な組み合わせを全て試すことで解読を試みる攻撃手法
+対策として以下のような方法がある
+
+強力なパスワードポリシーの適用（zxcvbn-ts、Pwned Passwordsによる検証）
+アカウントロックアウト機能
+レートリミットによるログイン試行回数の制限
+MFAの導入
+CAPTCHAの利用
+
+https:&#x2F;&#x2F;www.ipa.go.jp&#x2F;security&#x2F;vuln&#x2F;websecurity&#x2F;brute-force.html
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/デジタルアイデンティティのすべて.html">
+                    
+                        <div class="header">
+                            <div class="title">デジタルアイデンティティのすべて</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;www.oreilly.co.jp&#x2F;books&#x2F;images&#x2F;picture_large978-4-8144-0098-0.jpeg" loading="lazy" />
+                        </div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/zxcvbn-ts.html">
+                    
+                        <div class="header">
+                            <div class="title">zxcvbn-ts</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#TypeScript #Security #Authentication
+パスワード強度を検証するライブラリ
+https:&#x2F;&#x2F;github.com&#x2F;zxcvbn-ts&#x2F;zxcvbn
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/session-management.owasp-cheat-sheet-series.html">
+                    
+                        <div class="header">
+                            <div class="context">OWASP Cheat Sheet Series&#47;</div>
+                            <div class="title">Session Management</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Security #Authentication #OWASP
+
+HTTP
+Cookie
+
+https:&#x2F;&#x2F;cheatsheetseries.owasp.org&#x2F;cheatsheets&#x2F;Session_Management_Cheat_Sheet.html
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/authentication.owasp-cheat-sheet-series.html">
+                    
+                        <div class="header">
+                            <div class="context">OWASP Cheat Sheet Series&#47;</div>
+                            <div class="title">Authentication</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Security #Authentication #OWASP
+
+Session Management
+zxcvbn-ts
+Pwned Passwords
+TLS Client Authentication
+MFA
+OAuth2
+OpenId
+SAML
+Brute Force
+
+https:&#x2F;&#x2F;cheatsheetseries.owasp.org&#x2F;cheatsheets&#x2F;Authentication_Cheat_Sheet.html
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/serviceaccount.kubernetes.html">
+                    
+                        <div class="header">
+                            <div class="context">Kubernetes&#47;</div>
+                            <div class="title">ServiceAccount</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;github.com&#x2F;kubernetes&#x2F;community&#x2F;raw&#x2F;master&#x2F;icons&#x2F;png&#x2F;resources&#x2F;labeled&#x2F;sa-128.png" loading="lazy" />
+                        </div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/basic認証.html">
+                    
+                        <div class="header">
+                            <div class="title">Basic認証</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Security #Authentication
+HTTPプロトコルにおける認証方式
+ユーザー名とパスワードをコロンで連結した文字列をBase64エンコードした結果を、Authorizationヘッダーに付与することでリクエストを行う
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/requestauthentication.istio.html">
+                    
+                        <div class="header">
+                            <div class="context">Istio&#47;</div>
+                            <div class="title">RequestAuthentication</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Security #Authentication
+ingressgatewayに対して、JWTの検証を行うためのカスタムリソース（CRD）
+https:&#x2F;&#x2F;istio.io&#x2F;latest&#x2F;docs&#x2F;reference&#x2F;config&#x2F;security&#x2F;request_authentication&#x2F;
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/peerauthentication.istio.html">
+                    
+                        <div class="header">
+                            <div class="context">Istio&#47;</div>
+                            <div class="title">PeerAuthentication</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Security #Authentication
+Istioにおいてマイクロサービス間のmTLSを設定するカスタムリソース（CRD）
+https:&#x2F;&#x2F;istio.io&#x2F;latest&#x2F;docs&#x2F;reference&#x2F;config&#x2F;security&#x2F;peer_authentication&#x2F;
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/captcha.html">
+                    
+                        <div class="header">
+                            <div class="title">CAPTCHA</div>
+                        </div>
+                    
+                    
+                        <div class="summary">Completely Automated Public Turing test to tell Computers and Humans Apart
+#Security #Authentication
+人間とボット（自動プログラム）を区別するための技術
+主な目的はブルートフォース攻撃の防止、スパムやボットによる自動投稿の防止、不正なアカウント作成の防止
+代表的な実装として、Google reCAPTCHA、hCaptcha、テキストベースCAPTCHAなどがある
+アクセシビリティの観点から、音声CAPTCHAなどの代替手段の提供が推奨される
+https:&#x2F;&#x2F;www.cloudflare.com&#x2F;ja-jp&#x2F;learning&#x2F;bots&#x2F;how-captchas-work&#x2F;
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/デジタル証明書.html">
+                    
+                        <div class="header">
+                            <div class="title">デジタル証明書</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Security #Authentication
+公開鍵と名前や住所等の識別情報を組み合わせることで、鍵の所有者を識別し正しい鍵であることを保証する証明書
+認証局にデジタル署名をさせて発行される
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/jwt.html">
+                    
+                        <div class="header">
+                            <div class="title">JWT</div>
+                        </div>
+                    
+                    
+                        <div class="summary">JSON Web Token
+#Security #Authentication
+トークン自体の情報（例: 期限）を自身で構造化して保持することで、共有データベースへ保持・検索をする必要がないトークン。トークンが自身の情報を持つことで外部からのトークン取り消しのような操作はできない
+JWTは.によって3つのセクションの文字列に分割できる（署名がない場合3つ目のセクションは空）
+それぞれのセクションの文字列は構造化されたJSONをBase64URLエンコードした結果となっている
+ヘッダー
+1つ目のセクションはヘッダーとして以下のような構造を持つ
+{
+    &quot;typ&quot;: &quot;JWT&quot;,
+    &quot;alg&quot;: &quot;RSA256&quot;
+}
+
+algで指定する署名アルゴリズムは3つ目の署名セクションの解読にて用いる
+ペイロード
+2つ目のセクションはトークン自体のペイロードになる。ペイロードの中身はJSONであれば自由だが、JWTクレームと呼ばれる役割が明示・明示された項目群が存在する。
+例として　iss（発行者）、sub（対象者）、exp（有効期限）などがある
+署名
+3つ目のセクションはHMACやRSAのような署名アルゴリズムを使った結果が保持される
+
+RFC 7519 - JSON Web Token (JWT)
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/認証局.html">
+                    
+                        <div class="header">
+                            <div class="title">認証局</div>
+                        </div>
+                    
+                    
+                        <div class="summary">CA
+#Security #Authentication
+信頼されたデジタル証明書の発行者
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/ambassador-edge-stack.html">
+                    
+                        <div class="header">
+                            <div class="title">Ambassador Edge Stack</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;avatars.githubusercontent.com&#x2F;u&#x2F;9270257?s=200&amp;v=4" loading="lazy" />
+                        </div>
+                    
+                </a>
+            </li>
+        
+    </ul>
+
+
+        </main>
+        <footer>
+            Generated by <a href="https://github.com/boykush/scraps" target="_blank" rel="noopener noreferrer">Scraps</a>
+        </footer> 
+        <!-- Code syntax highlight -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script>
+        <!-- Code syntax highlight theme -->
+        <link href="https://unpkg.com/nord-highlightjs@0.1.0/dist/nord.css" rel="stylesheet" type="text/css" />
+        <!-- Mermaid -->
+        <script type="module">
+            import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11.6.0/+esm'
+        </script>
+        
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const ogpCards = document.querySelectorAll('.ogp-card');
+
+    ogpCards.forEach(async (card) => {
+      const url = card.dataset.url;
+
+      try {
+        const proxyUrl = 'https://corsproxy.io/?url=';
+        const response = await fetch(proxyUrl + url);
+        const html = await response.text();
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, 'text/html');
+
+        const title = doc.querySelector('meta[property="og:title"]')?.content ||
+          doc.querySelector('title')?.textContent ||
+          'No title';
+        card.querySelector('.ogp-title').textContent = title;
+
+        const description = doc.querySelector('meta[property="og:description"]')?.content ||
+          doc.querySelector('meta[name="description"]')?.content ||
+          'No description';
+        card.querySelector('.ogp-description').textContent = description;
+
+        const image = doc.querySelector('meta[property="og:image"]')?.content;
+        if (image) {
+          const imageUrl = image.startsWith('/')
+            ? `https://${card.dataset.host}/${image}`
+            : image;
+          card.querySelector('.ogp-image').src = imageUrl;
+        } else {
+          card.querySelector('.ogp-image').remove();
+        }
+      } catch (error) {
+        console.error('Failed to fetch OGP data:', error);
+      }
+    });
+  });
+</script>
+ 
+    </body>
+</html>

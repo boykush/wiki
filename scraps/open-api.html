@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <!-- Page title -->
+        
+            
+            <title>Open API - Kush&#x27;s Wiki</title>
+            <meta property="og:title" content="Open API - Kush&#x27;s Wiki" />
+            <meta name="twitter:title" content="Open API - Kush&#x27;s Wiki" />
+        
+        <!-- Page description -->
+        
+            <meta name="description" content="boykushのナレッジ置き場" />
+            <meta property="og:description" content="boykushのナレッジ置き場" />
+            <meta name="twitter:description" content="boykushのナレッジ置き場" />
+        
+        <!-- Page favicon -->
+        
+            <link rel="icon" type="image/png" href="https:&#x2F;&#x2F;gist.github.com&#x2F;boykush&#x2F;3bbc68b5d2580374c97d4336b87fb70f&#x2F;raw&#x2F;a838b8f3584b21bcbbe4dd53afca380fe18695a7&#x2F;boykush_icon.png" />
+        
+        <!-- Rubik font -->
+        <link href="https://fonts.cdnfonts.com/css/rubik" rel="stylesheet">
+        <!-- Noto Sans JP font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+        <!-- Style sheet -->
+        <link rel="stylesheet" href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;main.css">
+        
+<meta property="og:url" content="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/open-api.html" />
+
+    <meta property="og:image" content="https:&#x2F;&#x2F;www.openapis.org&#x2F;wp-content&#x2F;uploads&#x2F;sites&#x2F;3&#x2F;2018&#x2F;02&#x2F;OpenAPI_Logo_Pantone-1.png" />
+    <meta name="twitter:image" content="https:&#x2F;&#x2F;www.openapis.org&#x2F;wp-content&#x2F;uploads&#x2F;sites&#x2F;3&#x2F;2018&#x2F;02&#x2F;OpenAPI_Logo_Pantone-1.png" />
+
+
+    </head>
+    <body>
+        <header>
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;">
+                <h1>Kush&#x27;s Wiki</h1>
+            </a>
+        </header>
+        <main>
+            
+    <div class="scrap">
+        
+        <h1 class="title">Open API</h1>
+        
+            <p class="commited-date">
+                commited date: 2025-11-18
+            </p>
+        
+        <div class="content">
+            <p>#<a href="https://boykush.github.io/wiki/scraps/documentation.html">Documentation</a> #<a href="https://boykush.github.io/wiki/scraps/api-architecture.html">API Architecture</a></p>
+<p><img src="https://www.openapis.org/wp-content/uploads/sites/3/2018/02/OpenAPI_Logo_Pantone-1.png" alt="" />Open API logo</p>
+<p><a href="https://boykush.github.io/wiki/scraps/http.html">HTTP</a> APIの動作を記述するためのオープンで標準的な仕様。リクエストからレスポンスまでAPIのライフサイクルを説明できる</p>
+<p><a href="https://boykush.github.io/wiki/scraps/json.html">JSON</a>または<a href="https://boykush.github.io/wiki/scraps/yaml.html">YAML</a>でコード管理が可能</p>
+<p><a href="https://swagger.io/">Swagger</a>のようなツール群ではOpen API仕様をベースにドキュメンテーションやテストを用意に実装できる</p>
+<hr />
+<p><a href="https://www.openapis.org/what-is-openapi">What is OpenAPI? - OpenAPI Initiative</a></p>
+
+        </div>
+    </div>
+    
+    <ul class="scrap-links">
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/redoc.html">
+                    
+                        <div class="header">
+                            <div class="title">Redoc</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Documentation
+Open API仕様を元にドキュメンテーションを行いシンプルなUIで表示される
+CLIによるドキュメント生成またはHTMLファイルへのscript埋込が可能
+
+Redoc
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/マスタリングapiアーキテクチャ.html">
+                    
+                        <div class="header">
+                            <div class="title">マスタリングAPIアーキテクチャ</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;www.oreilly.co.jp&#x2F;books&#x2F;images&#x2F;picture_large978-4-8144-0089-8.jpeg" loading="lazy" />
+                        </div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/grpc-gateway.html">
+                    
+                        <div class="header">
+                            <div class="title">gRPC-Gateway</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Network #API Architecture #REST #Programming
+gRPCにおいて、gRPC serviceをRESTful APIとして提供するためのGoライブラリ。HTTP+JSONのインターフェースでリバースプロキシサーバーを生成する
+HTTP仕様はProtocol Buffers上において google.api.http のような HttpRule によって記述する
+同リポジトリにはprotoc-gen-openapiv2プラグインも含まれておりOpen API仕様を出力できる
+https:&#x2F;&#x2F;grpc-ecosystem.github.io&#x2F;grpc-gateway&#x2F;
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/schemathesis.html">
+                    
+                        <div class="header">
+                            <div class="title">Schemathesis</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;schemathesis.io&#x2F;images&#x2F;6e2d7d61d234c1604521.svg" loading="lazy" />
+                        </div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/runn.k1low.html">
+                    
+                        <div class="header">
+                            <div class="context">k1LoW&#47;</div>
+                            <div class="title">runn</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Testing #API Architecture
+Go言語のAPI Testingライブラリ・ツール
+HTTP request, gRPC requestのようないくつかの実行環境に対応し、runnbookと呼ばれる独自のシナリオを記述しテスト実行する
+Open APIと連携が可能で、静的なスキーマ検証がされた上でのシナリオ記述が可能
+https:&#x2F;&#x2F;github.com&#x2F;k1LoW&#x2F;runn
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/swagger.html">
+                    
+                        <div class="header">
+                            <div class="title">Swagger</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;static1.smartbear.co&#x2F;swagger&#x2F;media&#x2F;assets&#x2F;images&#x2F;swagger_logo.svg" loading="lazy" />
+                        </div>
+                    
+                </a>
+            </li>
+        
+    </ul>
+
+
+        </main>
+        <footer>
+            Generated by <a href="https://github.com/boykush/scraps" target="_blank" rel="noopener noreferrer">Scraps</a>
+        </footer> 
+        <!-- Code syntax highlight -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script>
+        <!-- Code syntax highlight theme -->
+        <link href="https://unpkg.com/nord-highlightjs@0.1.0/dist/nord.css" rel="stylesheet" type="text/css" />
+        <!-- Mermaid -->
+        <script type="module">
+            import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11.6.0/+esm'
+        </script>
+        
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const ogpCards = document.querySelectorAll('.ogp-card');
+
+    ogpCards.forEach(async (card) => {
+      const url = card.dataset.url;
+
+      try {
+        const proxyUrl = 'https://corsproxy.io/?url=';
+        const response = await fetch(proxyUrl + url);
+        const html = await response.text();
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, 'text/html');
+
+        const title = doc.querySelector('meta[property="og:title"]')?.content ||
+          doc.querySelector('title')?.textContent ||
+          'No title';
+        card.querySelector('.ogp-title').textContent = title;
+
+        const description = doc.querySelector('meta[property="og:description"]')?.content ||
+          doc.querySelector('meta[name="description"]')?.content ||
+          'No description';
+        card.querySelector('.ogp-description').textContent = description;
+
+        const image = doc.querySelector('meta[property="og:image"]')?.content;
+        if (image) {
+          const imageUrl = image.startsWith('/')
+            ? `https://${card.dataset.host}/${image}`
+            : image;
+          card.querySelector('.ogp-image').src = imageUrl;
+        } else {
+          card.querySelector('.ogp-image').remove();
+        }
+      } catch (error) {
+        console.error('Failed to fetch OGP data:', error);
+      }
+    });
+  });
+</script>
+ 
+    </body>
+</html>
