@@ -7,7 +7,7 @@
 - [[MFA]]
 - [[OAuth2]]
 - OpenId
-- SAML
+- [[SAML]]
 - [[ブルートフォース攻撃|Brute Force]]
 
 <https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html>

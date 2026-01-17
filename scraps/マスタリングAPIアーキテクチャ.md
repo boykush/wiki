@@ -61,7 +61,7 @@ James Gough, Daniel Bryant, Matthew Auburn
 
 - [[OAuth2]]/[[OIDC]]
 - [[JWT]]
-- SAML
+- [[SAML]]
 
 ### 8章 API駆動アーキテクチャへのアプリケーションの再設計 #[[Software Design]]
 
