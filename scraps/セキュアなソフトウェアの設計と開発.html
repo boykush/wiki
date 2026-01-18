@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <!-- Page title -->
+        
+            
+            <title>セキュアなソフトウェアの設計と開発 - Kush&#x27;s Wiki</title>
+            <meta property="og:title" content="セキュアなソフトウェアの設計と開発 - Kush&#x27;s Wiki" />
+            <meta name="twitter:title" content="セキュアなソフトウェアの設計と開発 - Kush&#x27;s Wiki" />
+        
+        <!-- Page description -->
+        
+            <meta name="description" content="boykushのナレッジ置き場" />
+            <meta property="og:description" content="boykushのナレッジ置き場" />
+            <meta name="twitter:description" content="boykushのナレッジ置き場" />
+        
+        <!-- Page favicon -->
+        
+            <link rel="icon" type="image/png" href="https:&#x2F;&#x2F;gist.github.com&#x2F;boykush&#x2F;3bbc68b5d2580374c97d4336b87fb70f&#x2F;raw&#x2F;a838b8f3584b21bcbbe4dd53afca380fe18695a7&#x2F;boykush_icon.png" />
+        
+        <!-- Rubik font -->
+        <link href="https://fonts.cdnfonts.com/css/rubik" rel="stylesheet">
+        <!-- Noto Sans JP font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+        <!-- Style sheet -->
+        <link rel="stylesheet" href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;main.css">
+        
+<meta property="og:url" content="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/セキュアなソフトウェアの設計と開発.html" />
+
+    <meta property="og:image" content="https:&#x2F;&#x2F;www.shuwasystem.co.jp&#x2F;images&#x2F;book&#x2F;632135.jpg" />
+    <meta name="twitter:image" content="https:&#x2F;&#x2F;www.shuwasystem.co.jp&#x2F;images&#x2F;book&#x2F;632135.jpg" />
+
+
+    </head>
+    <body>
+        <header>
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;">
+                <h1>Kush&#x27;s Wiki</h1>
+            </a>
+        </header>
+        <main>
+            
+    <div class="scrap">
+        
+        <h1 class="title">セキュアなソフトウェアの設計と開発</h1>
+        
+            <p class="commited-date">
+                commited date: 2026-01-11
+            </p>
+        
+        <div class="content">
+            <h2>脅威モデリングに基づく普遍的アプローチ</h2>
+<h3>Authors</h3>
+<p>Loren Kohnfelder
+秋 勇紀, 高田 新山, 小出 洋（監訳）</p>
+<p>#<a href="https://boykush.github.io/wiki/scraps/book.html">Book</a> #<a href="https://boykush.github.io/wiki/scraps/security.html">Security</a></p>
+<p><img src="https://www.shuwasystem.co.jp/images/book/632135.jpg" alt="" />セキュアなソフトウェアの設計と開発</p>
+<p><a href="https://www.shuwasystem.co.jp/book/9784798069753.html">セキュアなソフトウェアの設計と開発 - 秀和システム新社 あなたの学びをサポート！</a></p>
+<h2>第I部 コンセプト</h2>
+<h3>第1章 基礎</h3>
+<ul>
+<li><a href="https://boykush.github.io/wiki/scraps/c-i-a.html">C-I-A</a></li>
+<li><a href="https://boykush.github.io/wiki/scraps/%E3%82%B4%E3%83%BC%E3%83%AB%E3%83%89%E3%82%B9%E3%82%BF%E3%83%B3%E3%83%80%E3%83%BC%E3%83%89.html">ゴールドスタンダード</a>/<a href="https://boykush.github.io/wiki/scraps/rbac.html">RBAC</a>/<a href="https://boykush.github.io/wiki/scraps/abac.html">ABAC</a>/PBAC</li>
+<li><a href="https://boykush.github.io/wiki/scraps/%E5%90%A6%E8%AA%8D%E9%98%B2%E6%AD%A2.html">否認防止性</a>/ゴルディロックスの原理</li>
+</ul>
+<h3>第2章 脅威</h3>
+<ul>
+<li><a href="https://boykush.github.io/wiki/scraps/%E8%84%85%E5%A8%81%E3%83%A2%E3%83%87%E3%83%AA%E3%83%B3%E3%82%B0.html">脅威モデリング</a></li>
+<li>SSHデーモン</li>
+<li><a href="https://boykush.github.io/wiki/scraps/stride.html">STRIDE</a></li>
+</ul>
+<h3>第3章 軽減策</h3>
+<ul>
+<li>コードアクセスセキュリティ（CAS）</li>
+</ul>
+<h3>第4章 パターン</h3>
+<ul>
+<li>設計の特徴<ul>
+<li>無駄のない設計</li>
+<li>透明な設計</li>
+</ul>
+</li>
+<li>露出の最小化<ul>
+<li><a href="https://boykush.github.io/wiki/scraps/%E6%9C%80%E5%B0%8F%E6%A8%A9%E9%99%90%E3%81%AE%E5%8E%9F%E5%89%87.html">最小権限</a></li>
+<li>最小情報</li>
+<li>セキュア・バイ・デフォルト</li>
+<li>ブロックリストより許可リスト</li>
+<li>予測可能性を避ける</li>
+<li>セキュアに失敗する</li>
+</ul>
+</li>
+<li>強い強制力<ul>
+<li>完全な仲介</li>
+<li>共通メカニズムの最小化<ul>
+<li><a href="https://boykush.github.io/wiki/scraps/cookie.html">Cookie</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>冗長性<ul>
+<li>多層防御</li>
+<li>権限の分離</li>
+</ul>
+</li>
+<li>信頼と責任<ul>
+<li>信頼へのためらい</li>
+<li>セキュリティに責任を負う</li>
+</ul>
+</li>
+</ul>
+<h3>第5章 暗号技術</h3>
+<h2>第II部 設計</h2>
+<h3>第6章 セキュアな設計</h3>
+<h3>第7章 セキュリティ設計レビュー</h3>
+<h2>第III部 実装</h2>
+<h3>第8章 セキュアなプログラミング</h3>
+<h3>第9章 低レベルコーディングの欠陥</h3>
+<h3>第10章 信頼できない入力</h3>
+<h3>第11章 Webのセキュリティ</h3>
+<ul>
+<li><a href="https://boykush.github.io/wiki/scraps/http.html">HTTP</a>/<a href="https://boykush.github.io/wiki/scraps/url.html">URL</a></li>
+<li>REFERER</li>
+<li><a href="https://boykush.github.io/wiki/scraps/https.html">HTTPS</a></li>
+<li><a href="https://boykush.github.io/wiki/scraps/%E3%83%87%E3%82%B8%E3%82%BF%E3%83%AB%E8%A8%BC%E6%98%8E%E6%9B%B8.html">デジタル証明書</a><ul>
+<li><a href="https://boykush.github.io/wiki/scraps/let-single-quote-s-encrypt.html">Let's Encrypt</a>/Cerbot</li>
+<li><a href="https://boykush.github.io/wiki/scraps/dv%E8%A8%BC%E6%98%8E%E6%9B%B8.html">DV証明書</a>/<a href="https://boykush.github.io/wiki/scraps/ov%E8%A8%BC%E6%98%8E%E6%9B%B8.html">OV証明書</a>/<a href="https://boykush.github.io/wiki/scraps/ev%E8%A8%BC%E6%98%8E%E6%9B%B8.html">EV証明書</a></li>
+</ul>
+</li>
+<li><a href="https://boykush.github.io/wiki/scraps/%E5%90%8C%E4%B8%80%E7%94%9F%E6%88%90%E5%85%83%E3%83%9D%E3%83%AA%E3%82%B7%E3%83%BC.html">同一生成元ポリシー</a></li>
+<li>DOM</li>
+<li><a href="https://boykush.github.io/wiki/scraps/cookie.html">Cookie</a>/<a href="https://boykush.github.io/wiki/scraps/strict-transport-security.html">Strict-Transport-Security</a></li>
+<li>CORS</li>
+<li>XSS</li>
+<li>CSRF</li>
+</ul>
+<h3>第12章 セキュリティテスト</h3>
+<h3>第13章 セキュアな開発のためのベストプラクティス</h3>
+
+        </div>
+    </div>
+    
+    <ul class="scrap-links">
+        
+    </ul>
+
+
+        </main>
+        <footer>
+            Generated by <a href="https://github.com/boykush/scraps" target="_blank" rel="noopener noreferrer">Scraps</a>
+        </footer> 
+        <!-- Code syntax highlight -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script>
+        <!-- Code syntax highlight theme -->
+        <link href="https://unpkg.com/nord-highlightjs@0.1.0/dist/nord.css" rel="stylesheet" type="text/css" />
+        <!-- Mermaid -->
+        <script type="module">
+            import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11.6.0/+esm'
+        </script>
+        
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const ogpCards = document.querySelectorAll('.ogp-card');
+
+    ogpCards.forEach(async (card) => {
+      const url = card.dataset.url;
+
+      try {
+        const proxyUrl = 'https://corsproxy.io/?url=';
+        const response = await fetch(proxyUrl + url);
+        const html = await response.text();
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, 'text/html');
+
+        const title = doc.querySelector('meta[property="og:title"]')?.content ||
+          doc.querySelector('title')?.textContent ||
+          'No title';
+        card.querySelector('.ogp-title').textContent = title;
+
+        const description = doc.querySelector('meta[property="og:description"]')?.content ||
+          doc.querySelector('meta[name="description"]')?.content ||
+          'No description';
+        card.querySelector('.ogp-description').textContent = description;
+
+        const image = doc.querySelector('meta[property="og:image"]')?.content;
+        if (image) {
+          const imageUrl = image.startsWith('/')
+            ? `https://${card.dataset.host}/${image}`
+            : image;
+          card.querySelector('.ogp-image').src = imageUrl;
+        } else {
+          card.querySelector('.ogp-image').remove();
+        }
+      } catch (error) {
+        console.error('Failed to fetch OGP data:', error);
+      }
+    });
+  });
+</script>
+ 
+    </body>
+</html>

@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <!-- Page title -->
+        
+            
+            <title>ロードバランシング - Kush&#x27;s Wiki</title>
+            <meta property="og:title" content="ロードバランシング - Kush&#x27;s Wiki" />
+            <meta name="twitter:title" content="ロードバランシング - Kush&#x27;s Wiki" />
+        
+        <!-- Page description -->
+        
+            <meta name="description" content="boykushのナレッジ置き場" />
+            <meta property="og:description" content="boykushのナレッジ置き場" />
+            <meta name="twitter:description" content="boykushのナレッジ置き場" />
+        
+        <!-- Page favicon -->
+        
+            <link rel="icon" type="image/png" href="https:&#x2F;&#x2F;gist.github.com&#x2F;boykush&#x2F;3bbc68b5d2580374c97d4336b87fb70f&#x2F;raw&#x2F;a838b8f3584b21bcbbe4dd53afca380fe18695a7&#x2F;boykush_icon.png" />
+        
+        <!-- Rubik font -->
+        <link href="https://fonts.cdnfonts.com/css/rubik" rel="stylesheet">
+        <!-- Noto Sans JP font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+        <!-- Style sheet -->
+        <link rel="stylesheet" href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;main.css">
+        
+<meta property="og:url" content="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/ロードバランシング.html" />
+
+
+    </head>
+    <body>
+        <header>
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;">
+                <h1>Kush&#x27;s Wiki</h1>
+            </a>
+        </header>
+        <main>
+            
+    <div class="scrap">
+        
+        <h1 class="title">ロードバランシング</h1>
+        
+            <p class="commited-date">
+                commited date: 2025-12-26
+            </p>
+        
+        <div class="content">
+            <p>#<a href="https://boykush.github.io/wiki/scraps/api-architecture.html">API Architecture</a> #<a href="https://boykush.github.io/wiki/scraps/network.html">Network</a></p>
+<p>外部からの大量トラフィックを捌けるよう用意された重複データを持つ多数のリソースサーバー群が均等に使用されるよう制御する役割</p>
+<p>アプリケーションの<a href="https://boykush.github.io/wiki/scraps/%E5%8F%AF%E7%94%A8%E6%80%A7.html">可用性</a>を高め、<a href="https://boykush.github.io/wiki/scraps/%E3%83%AA%E3%83%90%E3%83%BC%E3%82%B9%E3%83%97%E3%83%AD%E3%82%AD%E3%82%B7.html">リバースプロキシ</a>と同様にサーバーを保護するセキュリティ機能が組み込まる</p>
+<hr />
+<ul>
+<li><a href="https://aws.amazon.com/jp/what-is/load-balancing/">ロードバランシングとは? - ロードバランシングアルゴリズムの説明 - AWS</a></li>
+</ul>
+
+        </div>
+    </div>
+    
+    <ul class="scrap-links">
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/マスタリングapiアーキテクチャ.html">
+                    
+                        <div class="header">
+                            <div class="title">マスタリングAPIアーキテクチャ</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;www.oreilly.co.jp&#x2F;books&#x2F;images&#x2F;picture_large978-4-8144-0089-8.jpeg" loading="lazy" />
+                        </div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/sre-サイトリライアビリティエンジニアリング.book.html">
+                    
+                        <div class="header">
+                            <div class="context">Book&#47;</div>
+                            <div class="title">SRE サイトリライアビリティエンジニアリング</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;www.oreilly.co.jp&#x2F;books&#x2F;images&#x2F;picture_large978-4-87311-791-1.jpeg" loading="lazy" />
+                        </div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/envoy.html">
+                    
+                        <div class="header">
+                            <div class="title">Envoy</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;www.envoyproxy.io&#x2F;docs&#x2F;envoy&#x2F;latest&#x2F;_static&#x2F;envoy-logo.png" loading="lazy" />
+                        </div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/apiゲートウェイ.html">
+                    
+                        <div class="header">
+                            <div class="title">APIゲートウェイ</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#API Architecture #Network
+外部トラフィックに対してリバースプロキシ・ロードバランシングが持つようなネットワークのルーティング・セキュリティと可用性の向上に加え、以下のような機能横断的な要件を扱う役割
+
+認証
+認可
+レートリミット
+リトライ
+サーキットブレーカー etc.
+
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/elastic-load-balancing.html">
+                    
+                        <div class="header">
+                            <div class="title">Elastic Load Balancing</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Cloud Native #API Architecture
+AWSが提供するロードバランシングコンポーネント
+リソースごとに以下のような種別がある
+
+Application Load Balancer
+Network Load Balancer
+Gateway Load Balancer
+
+
+What is Elastic Load Balancing? - Elastic Load Balancing
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/入門-監視.html">
+                    
+                        <div class="header">
+                            <div class="title">入門 監視</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;www.oreilly.co.jp&#x2F;books&#x2F;images&#x2F;picture_large978-4-87311-864-2.jpeg" loading="lazy" />
+                        </div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/ブルーグリーン戦略.html">
+                    
+                        <div class="header">
+                            <div class="title">ブルーグリーン戦略</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Continuous Delivery
+リリース時に旧環境と新環境を同時に稼働させ、リバースプロキシ&#x2F;ロードバランシング&#x2F;APIゲートウェイ相当のポイントで旧環境から新環境へ完全に切り替えるリリース手法
+旧環境をブルー、新環境をグリーンとする
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/cilium.html">
+                    
+                        <div class="header">
+                            <div class="title">Cilium</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Network #Cloud Native #Observability #Security
+https:&#x2F;&#x2F;cilium.io&#x2F;
+eBPF技術を活用したクラウドネイティブなネットワーキングソフトウェア
+KubernetesのCNIとしてネットワークの接続、保護、監視を提供する
+ユースケースとして以下のような例がある
+L4 ロードバランシング
+https:&#x2F;&#x2F;cilium.io&#x2F;use-cases&#x2F;load-balancer&#x2F;
+kube-proxy
+https:&#x2F;&#x2F;cilium.io&#x2F;use-cases&#x2F;kube-proxy&#x2F;
+サービスメッシュ
+https:&#x2F;&#x2F;cilium.io&#x2F;use-cases&#x2F;service-mesh&#x2F;
+Gateway API
+https:&#x2F;&#x2F;cilium.io&#x2F;use-cases&#x2F;gateway-api&#x2F;
+Ingress
+https:&#x2F;&#x2F;cilium.io&#x2F;use-cases&#x2F;ingress&#x2F;
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/ambassador-edge-stack.html">
+                    
+                        <div class="header">
+                            <div class="title">Ambassador Edge Stack</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;avatars.githubusercontent.com&#x2F;u&#x2F;9270257?s=200&amp;v=4" loading="lazy" />
+                        </div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/certificate-manager.google-cloud.html">
+                    
+                        <div class="header">
+                            <div class="context">Google Cloud&#47;</div>
+                            <div class="title">Certificate Manager</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Security
+Google Cloudにおいて外部ロードバランシングで必要となるようなTLS証明書を管理する
+
+Certificate Manager の概要  |  Google Cloud
+
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/eks.amazon.html">
+                    
+                        <div class="header">
+                            <div class="context">Amazon&#47;</div>
+                            <div class="title">EKS</div>
+                        </div>
+                    
+                    
+                        <div class="summary">Elastic Kubernetes Service
+#Cloud Native
+AWSクラウド上でKubernetesを実行するマネージドサービス、Kubernetes準拠であるため既存のKubernetesアプリケーションと互換性がある
+Kubernetes Serviceでのロードバランシングに加え、Elastic Load Balancingの使用をサポートしている
+
+What is Amazon EKS? - Amazon EKS
+</div>
+                    
+                </a>
+            </li>
+        
+    </ul>
+
+
+        </main>
+        <footer>
+            Generated by <a href="https://github.com/boykush/scraps" target="_blank" rel="noopener noreferrer">Scraps</a>
+        </footer> 
+        <!-- Code syntax highlight -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script>
+        <!-- Code syntax highlight theme -->
+        <link href="https://unpkg.com/nord-highlightjs@0.1.0/dist/nord.css" rel="stylesheet" type="text/css" />
+        <!-- Mermaid -->
+        <script type="module">
+            import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11.6.0/+esm'
+        </script>
+        
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const ogpCards = document.querySelectorAll('.ogp-card');
+
+    ogpCards.forEach(async (card) => {
+      const url = card.dataset.url;
+
+      try {
+        const proxyUrl = 'https://corsproxy.io/?url=';
+        const response = await fetch(proxyUrl + url);
+        const html = await response.text();
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, 'text/html');
+
+        const title = doc.querySelector('meta[property="og:title"]')?.content ||
+          doc.querySelector('title')?.textContent ||
+          'No title';
+        card.querySelector('.ogp-title').textContent = title;
+
+        const description = doc.querySelector('meta[property="og:description"]')?.content ||
+          doc.querySelector('meta[name="description"]')?.content ||
+          'No description';
+        card.querySelector('.ogp-description').textContent = description;
+
+        const image = doc.querySelector('meta[property="og:image"]')?.content;
+        if (image) {
+          const imageUrl = image.startsWith('/')
+            ? `https://${card.dataset.host}/${image}`
+            : image;
+          card.querySelector('.ogp-image').src = imageUrl;
+        } else {
+          card.querySelector('.ogp-image').remove();
+        }
+      } catch (error) {
+        console.error('Failed to fetch OGP data:', error);
+      }
+    });
+  });
+</script>
+ 
+    </body>
+</html>

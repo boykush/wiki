@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <!-- Page title -->
+        
+            
+            <title>アカウントロックアウト - Kush&#x27;s Wiki</title>
+            <meta property="og:title" content="アカウントロックアウト - Kush&#x27;s Wiki" />
+            <meta name="twitter:title" content="アカウントロックアウト - Kush&#x27;s Wiki" />
+        
+        <!-- Page description -->
+        
+            <meta name="description" content="boykushのナレッジ置き場" />
+            <meta property="og:description" content="boykushのナレッジ置き場" />
+            <meta name="twitter:description" content="boykushのナレッジ置き場" />
+        
+        <!-- Page favicon -->
+        
+            <link rel="icon" type="image/png" href="https:&#x2F;&#x2F;gist.github.com&#x2F;boykush&#x2F;3bbc68b5d2580374c97d4336b87fb70f&#x2F;raw&#x2F;a838b8f3584b21bcbbe4dd53afca380fe18695a7&#x2F;boykush_icon.png" />
+        
+        <!-- Rubik font -->
+        <link href="https://fonts.cdnfonts.com/css/rubik" rel="stylesheet">
+        <!-- Noto Sans JP font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+        <!-- Style sheet -->
+        <link rel="stylesheet" href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;main.css">
+        
+<meta property="og:url" content="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/アカウントロックアウト.html" />
+
+
+    </head>
+    <body>
+        <header>
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;">
+                <h1>Kush&#x27;s Wiki</h1>
+            </a>
+        </header>
+        <main>
+            
+    <div class="scrap">
+        
+        <h1 class="title">アカウントロックアウト</h1>
+        
+            <p class="commited-date">
+                commited date: 2026-01-11
+            </p>
+        
+        <div class="content">
+            <p>#<a href="https://boykush.github.io/wiki/scraps/security.html">Security</a> #<a href="https://boykush.github.io/wiki/scraps/authentication.html">Authentication</a></p>
+<p>一定回数の不正なパスワード入力後にアカウントを一時的または永続的にロックする<a href="https://boykush.github.io/wiki/scraps/%E3%83%96%E3%83%AB%E3%83%BC%E3%83%88%E3%83%95%E3%82%A9%E3%83%BC%E3%82%B9%E6%94%BB%E6%92%83.html">ブルートフォース攻撃</a>対策</p>
+<p>主な問題点</p>
+<ul>
+<li><a href="https://boykush.github.io/wiki/scraps/dos%E6%94%BB%E6%92%83.html">DoS攻撃</a>の標的になりやすい（攻撃者が大量のアカウントをロック可能）</li>
+<li>ユーザー名の列挙が可能（存在するアカウントのみがロックされる）</li>
+<li>ヘルプデスクへの負担増加</li>
+<li>低速攻撃や複数ユーザー対象の攻撃に無効</li>
+</ul>
+
+        </div>
+    </div>
+    
+    <ul class="scrap-links">
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/device-cookies.html">
+                    
+                        <div class="header">
+                            <div class="title">Device Cookies</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Security #Authentication
+ブルートフォース攻撃を軽減するための認証ロック機構。ユーザーが正常に認証された後、そのブラウザに発行される特別なCookie
+従来のアカウントロックアウトと比較して以下の利点がある
+
+DoS攻撃に対して耐性がある
+IPアドレスではなくブラウザCookieを基準とするため予測可能で実装しやすい
+ボットネットや代理経由の攻撃に対応しやすい
+
+認証リクエスト時に有効なDevice Cookieの有無を確認し、未信頼クライアント（Device Cookieなし）からの認証試行回数を記録してロックアウトを実施する
+実装にはJWT、Redis&#x2F;Memcachedによるロックリスト管理、HMAC署名による改ざん防止などが用いられる
+https:&#x2F;&#x2F;owasp.org&#x2F;www-community&#x2F;Slow_Down_Online_Guessing_Attacks_with_Device_Cookies
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/blocking-brute-force-attacks.html">
+                    
+                        <div class="header">
+                            <div class="title">Blocking Brute Force Attacks</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Security #Authentication #Blog
+ブルートフォース攻撃を防ぐための対策をまとめたOWASP Communityの記事
+主な対策方法
+
+アカウントロックアウト機能（DoS攻撃に悪用されるリスクに注意）
+Device Cookies（デバイスごとの認証ロック機構、DoS攻撃に対して耐性がある）
+パスワード検証時の遅延追加
+IPアドレスベースのレートリミット
+CAPTCHAの導入
+複数の秘密の質問による認証強化
+
+単一の技術では回避されやすいため、複数の対策を組み合わせることが重要
+https:&#x2F;&#x2F;owasp.org&#x2F;www-community&#x2F;controls&#x2F;Blocking_Brute_Force_Attacks
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/dos攻撃.html">
+                    
+                        <div class="header">
+                            <div class="title">DoS攻撃</div>
+                        </div>
+                    
+                    
+                        <div class="summary">Denial of Service
+#Security
+リソース（サイト、アプリケーション、サーバー）を本来の目的で利用不可にすることを目的とした攻撃。C-I-Aの可用性を侵害する
+ネットワークパケット操作、プログラム脆弱性の悪用、リソース枯渇など多様な手段で実行される
+主な攻撃手法
+
+メモリ枯渇（ユーザー指定オブジェクト割り当て、セッションデータ過剰蓄積）
+CPU負荷増加（ループカウンター制御、バッファオーバーフロー）
+リソース解放失敗（ファイルロック、DB接続の未解放）
+アカウントロックアウト機構の悪用
+ネットワーク帯域幅の飽和
+
+対策としてレートリミット、入力検証、冗長性確保、グレースフルデグラデーションなどがある
+</div>
+                    
+                </a>
+            </li>
+        
+    </ul>
+
+
+        </main>
+        <footer>
+            Generated by <a href="https://github.com/boykush/scraps" target="_blank" rel="noopener noreferrer">Scraps</a>
+        </footer> 
+        <!-- Code syntax highlight -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script>
+        <!-- Code syntax highlight theme -->
+        <link href="https://unpkg.com/nord-highlightjs@0.1.0/dist/nord.css" rel="stylesheet" type="text/css" />
+        <!-- Mermaid -->
+        <script type="module">
+            import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11.6.0/+esm'
+        </script>
+        
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const ogpCards = document.querySelectorAll('.ogp-card');
+
+    ogpCards.forEach(async (card) => {
+      const url = card.dataset.url;
+
+      try {
+        const proxyUrl = 'https://corsproxy.io/?url=';
+        const response = await fetch(proxyUrl + url);
+        const html = await response.text();
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, 'text/html');
+
+        const title = doc.querySelector('meta[property="og:title"]')?.content ||
+          doc.querySelector('title')?.textContent ||
+          'No title';
+        card.querySelector('.ogp-title').textContent = title;
+
+        const description = doc.querySelector('meta[property="og:description"]')?.content ||
+          doc.querySelector('meta[name="description"]')?.content ||
+          'No description';
+        card.querySelector('.ogp-description').textContent = description;
+
+        const image = doc.querySelector('meta[property="og:image"]')?.content;
+        if (image) {
+          const imageUrl = image.startsWith('/')
+            ? `https://${card.dataset.host}/${image}`
+            : image;
+          card.querySelector('.ogp-image').src = imageUrl;
+        } else {
+          card.querySelector('.ogp-image').remove();
+        }
+      } catch (error) {
+        console.error('Failed to fetch OGP data:', error);
+      }
+    });
+  });
+</script>
+ 
+    </body>
+</html>
