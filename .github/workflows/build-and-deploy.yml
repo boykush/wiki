@@ -12,6 +12,6 @@ jobs:
         with:
           fetch-depth: 0 # For scraps git commited date
       - name: build_and_deploy
-        uses: boykush/scraps-deploy-action@v3
+        uses: boykush/scraps-deploy-action@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
