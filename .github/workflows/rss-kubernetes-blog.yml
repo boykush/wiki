@@ -1,0 +1,13 @@
+name: RSS - Kubernetes Blog
+
+on:
+  schedule:
+    - cron: '0 9 * * *'  # 毎日18:00 JST
+  workflow_dispatch:
+
+jobs:
+  rss-to-scrap:
+    uses: ./.github/workflows/rss-to-scrap-reusable.yml
+    with:
+      feed_url: 'https://kubernetes.io/feed.xml'
+      max_articles: 5
