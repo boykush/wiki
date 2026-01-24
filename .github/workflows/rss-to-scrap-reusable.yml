@@ -26,6 +26,7 @@ jobs:
       - name: Process RSS feed
         uses: anthropics/claude-code-action@v1
         with:
+          use_oauth: true
           prompt: /rss-to-scrap ${{ inputs.feed_url }}
           claude_args: |
             --max-turns 50
