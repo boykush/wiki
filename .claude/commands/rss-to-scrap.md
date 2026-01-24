@@ -9,10 +9,12 @@ $ARGUMENTS: RSSフィードのURL
 2. XMLをパースし、過去24時間以内に公開された記事を抽出（最大5件）
 3. 各記事について:
    a. MCPツール `search_scraps` で記事タイトルを検索
-   b. 既存scrapがあればスキップ（「スキップ: {title}」と出力）
-   c. なければ `/web-to-scrap {url}` を実行
-   d. ブランチ作成、コミット、プッシュ
-   e. gh pr create でPR作成
+   b. 既存scrapがあればスキップ（「スキップ（既存scrap）: {title}」と出力）
+   c. `gh pr list --search "{title}" --state open` でオープンPRを検索
+   d. 同タイトルのPRがあればスキップ（「スキップ（オープンPR）: {title}」と出力）
+   e. なければ `/web-to-scrap {url}` を実行
+   f. ブランチ作成、コミット、プッシュ
+   g. gh pr create でPR作成
 4. 処理結果のサマリーを出力
 
 # 注意事項

@@ -38,6 +38,7 @@ jobs:
             Bash(git add*)
             Bash(git commit*)
             Bash(git push*)
+            Bash(gh pr list*)
             Bash(gh pr create*)
             Write
             Edit
