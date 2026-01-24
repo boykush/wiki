@@ -32,20 +32,6 @@ jobs:
         with:
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           prompt: /rss-to-scrap ${{ inputs.feed_url }}
-          allowed_tools: |
-            Bash(mise exec*)
-            Bash(git checkout*)
-            Bash(git add*)
-            Bash(git commit*)
-            Bash(git push*)
-            Bash(gh pr list*)
-            Bash(gh pr create*)
-            Write
-            Edit
-            Read
-            Glob
-            Grep
-            WebFetch
-            mcp__*
           claude_args: |
             --max-turns 50
+            --allowedTools "Bash(mise exec*),Bash(git checkout*),Bash(git add*),Bash(git commit*),Bash(git push*),Bash(gh pr list*),Bash(gh pr create*),Write,Edit,Read,Glob,Grep,WebFetch,mcp__*"
