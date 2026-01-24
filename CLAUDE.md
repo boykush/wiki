@@ -66,7 +66,9 @@ mise exec -- scraps template list
 
 #### 重要事項
 
-- **必ず`scraps-writer`エージェントを使用すること**
+- **必ず`scraps-writer`スキルを使用すること**
+  - 基本: `/scraps-writer`
+  - 行数指定: `/scraps-writer max-lines=10`（デフォルト: 10行）
 - **リンク依存関係の向き**: 具体→抽象、実装→概念・定義の片方向とする
   - 例: 書籍（`#[[Book]]`）から概念へリンク（OK）、概念から書籍へリンク（NG）
 
@@ -86,7 +88,7 @@ mise exec -- scraps template list
    #[[Security]] #[[Kubernetes]]
    ```
 
-3. **本文**: 簡潔な説明（10行以内）
+3. **本文**: 簡潔な説明（max-lines指定行数以内）
    - 概要を1-2文で記述
    - 箇条書きで要点を整理
    - ウィキリンク記法で関連項目を参照
