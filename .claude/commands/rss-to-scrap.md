@@ -6,7 +6,7 @@ $ARGUMENTS: RSSフィードのURL
 # 処理フロー
 
 1. $ARGUMENTS のRSSフィードをWebFetchで取得
-2. XMLをパースし、過去7日以内に公開された記事を抽出（最大5件）
+2. XMLをパースし、過去24時間以内に公開された記事を抽出（最大5件）
 3. 各記事について:
    a. MCPツール `search_scraps` で記事タイトルを検索
    b. 既存scrapがあればスキップ（「スキップ（既存scrap）: {title}」と出力）
