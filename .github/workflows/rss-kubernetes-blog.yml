@@ -11,3 +11,5 @@ jobs:
     with:
       feed_url: 'https://kubernetes.io/feed.xml'
       max_articles: 5
+    secrets:
+      CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
