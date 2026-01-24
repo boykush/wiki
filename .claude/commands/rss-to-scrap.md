@@ -22,3 +22,6 @@ $ARGUMENTS: RSSフィードのURL
 - 記事ごとに別ブランチ・別PRを作成
 - ブランチ名: rss-scrap/{タイトルのslug}
 - 既存scrapとの重複チェックは必須
+- **重要**: scrapのファイル名（タイトル）は、RSSフィードの記事タイトルと完全一致させること
+  - 例: 記事タイトルが「Headlamp in 2025: Project Highlights」なら、ファイル名は `scraps/Headlamp in 2025: Project Highlights.md`
+  - 短縮や要約は禁止
