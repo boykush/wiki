@@ -1,0 +1,58 @@
+name: Create Scrap from Issue
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  create-scrap:
+    if: github.event.issue.user.login == 'boykush'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+      issues: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup mise
+        uses: jdx/mise-action@v2
+
+      - name: Install tools
+        run: mise install
+
+      - name: Run Claude with add-scrap skill
+        uses: anthropics/claude-code-action@v1
+        with:
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          plugin_marketplaces: |
+            https://github.com/boykush/scraps
+          plugins: |
+            scraps-writer@scraps-claude-code-plugins
+          settings: ".claude/settings.json"
+          prompt: |
+            /add-scrap ${{ github.event.issue.title }}
+
+            追加情報:
+            ${{ github.event.issue.body }}
+
+      - name: Create Pull Request
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          BRANCH_NAME="add-scrap/issue-${{ github.event.issue.number }}"
+          git checkout -b "$BRANCH_NAME"
+
+          git add scraps/
+          git commit -m "Add scrap: ${{ github.event.issue.title }}"
+          git push origin "$BRANCH_NAME"
+
+          gh pr create \
+            --title "Add scrap: ${{ github.event.issue.title }}" \
+            --body "Closes #${{ github.event.issue.number }}" \
+            --base main
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
