@@ -37,4 +37,4 @@ jobs:
             重要: Bashコマンドは必ず1つずつ個別に実行すること。&&や;でチェーンしない。
           claude_args: |
             --max-turns 50
-            --allowedTools "Bash(git *),Bash(gh *),Bash(mise *),Write,Edit,Read,Glob,Grep,WebFetch,mcp__*"
+            --allowedTools "Bash(git *),Bash(gh *),Bash(mise *),Write,Edit,Read,Glob,Grep,WebFetch,mcp__plugin_scraps-writer_scraps__search_scraps,mcp__plugin_scraps-writer_scraps__list_tags"
