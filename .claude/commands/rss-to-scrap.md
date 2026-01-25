@@ -12,7 +12,7 @@ $ARGUMENTS: RSSフィードのURL
    b. 既存scrapがあればスキップ（「スキップ（既存scrap）: {title}」と出力）
    c. `gh pr list --search "{title}" --state open` でオープンPRを検索
    d. 同タイトルのPRがあればスキップ（「スキップ（オープンPR）: {title}」と出力）
-   e. なければ `/web-to-scrap {url}` を実行
+   e. なければ `/scraps-writer:web-to-scrap {url}` を実行
    f. ブランチ作成、コミット、プッシュ
    g. gh pr create でPR作成
 4. 処理結果のサマリーを出力
