@@ -1,7 +1,7 @@
 name: Create Scrap from Issue
 on:
   issues:
-    types: [opened]
+    types: [opened, reopened]
 
 jobs:
   create-scrap:
