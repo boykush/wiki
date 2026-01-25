@@ -29,8 +29,19 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Setup mise
+        uses: jdx/mise-action@v2
+
+      - name: Install scraps
+        run: mise install cargo:scraps
+
       - name: Run Claude Code
         uses: anthropics/claude-code-action@v1
         with:
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           allowed_users: "boykush"
+          plugin_marketplaces: |
+            https://github.com/boykush/scraps.git
+          plugins: |
+            scraps-writer@scraps-claude-code-plugins
+          settings: ".claude/settings.json"
