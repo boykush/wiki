@@ -3,5 +3,11 @@
     "commit-commands@claude-code-plugins": true,
     "mcp-server@scraps-claude-code-plugins": true,
     "scraps-writer@scraps-claude-code-plugins": true
+  },
+  "permissions": {
+    "allow": [
+      "mcp__plugin_mcp-server_scraps__*",
+      "mcp__plugin_scraps-writer_scraps__*"
+    ]
   }
 }
