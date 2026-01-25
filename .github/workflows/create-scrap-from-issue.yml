@@ -21,8 +21,8 @@ jobs:
       - name: Setup mise
         uses: jdx/mise-action@v2
 
-      - name: Install tools
-        run: mise install
+      - name: Install scraps
+        run: mise install cargo:scraps
 
       - name: Run Claude with add-scrap skill
         uses: anthropics/claude-code-action@v1
