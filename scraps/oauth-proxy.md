@@ -2,7 +2,7 @@
 
 #[[Security]] #[[Cloud Native]] #[[Network]]
 
-OAuth2/OIDC認証を提供するリバースプロキシ
+[[OAuth2]]/[[OIDC]]認証を提供する[[リバースプロキシ]]
 
 主な特徴:
 
