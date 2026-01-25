@@ -34,4 +34,4 @@ jobs:
           prompt: /rss-to-scrap ${{ inputs.feed_url }}
           claude_args: |
             --max-turns 50
-            --allowedTools "Bash(mise *),Bash(git *),Bash(gh *),Write,Edit,Read,Glob,Grep,WebFetch,mcp__*"
+            --allowedTools "Bash,Write,Edit,Read,Glob,Grep,WebFetch,mcp__*"
