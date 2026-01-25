@@ -46,7 +46,7 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git remote set-url origin "https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git"
 
-          BRANCH_NAME="add-scrap/${{ github.run_id }}"
+          BRANCH_NAME="add-scrap/issue-${{ github.event.issue.number }}-${{ github.run_id }}"
           git checkout -b "$BRANCH_NAME"
 
           git add scraps/
