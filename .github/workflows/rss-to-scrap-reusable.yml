@@ -31,7 +31,10 @@ jobs:
         uses: anthropics/claude-code-action@v1
         with:
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
-          prompt: /rss-to-scrap ${{ inputs.feed_url }}
+          prompt: |
+            /rss-to-scrap ${{ inputs.feed_url }}
+
+            重要: Bashコマンドは必ず1つずつ個別に実行すること。&&や;でチェーンしない。
           claude_args: |
             --max-turns 50
             --allowedTools "Bash,Write,Edit,Read,Glob,Grep,WebFetch,mcp__*"
