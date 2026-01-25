@@ -44,6 +44,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+          git remote set-url origin "https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git"
 
           BRANCH_NAME="add-scrap/issue-${{ github.event.issue.number }}"
           git checkout -b "$BRANCH_NAME"
@@ -57,4 +58,5 @@ jobs:
             --body "Closes #${{ github.event.issue.number }}" \
             --base main
         env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
