@@ -1,6 +1,6 @@
 [tools]
 "npm:markdownlint-cli2" = "latest"
-"cargo:scraps" = "0.29.0"
+"cargo:scraps" = "latest"
 
 [tasks.build]
 description = "Build static site from Markdown files"
