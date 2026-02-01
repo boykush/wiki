@@ -1,4 +1,4 @@
-#[[Data Store]]
+#[[Data Engineering]]
 
 [[MySQL]]に搭載されている全文検索向けの全文パーサー、日本語対応している。
 

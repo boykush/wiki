@@ -1,4 +1,4 @@
-#[[Data Store]] #[[リレーショナルデータベース]]
+#[[Data Engineering]] #[[リレーショナルデータベース]]
 
 ![MySQL logo](https://www.mysql.com/common/logos/logo-mysql-170x115.png)
 

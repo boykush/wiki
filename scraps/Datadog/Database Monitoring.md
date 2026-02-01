@@ -1,4 +1,4 @@
-#[[Observability]] #[[Data Store]]
+#[[Observability]] #[[Data Engineering]]
 
 [[Datadog]]上でデータベースの詳細な可視性を提供する
 

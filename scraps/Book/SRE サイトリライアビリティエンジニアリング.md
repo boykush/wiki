@@ -83,7 +83,7 @@ Betsy Beyer, Chris Jones, Jennifer Petoff, Niall Richard Murphy
 
 ### 24章　[[Cron|cron]]による分散定期スケジューリング
 
-### 25章　データ処理のパイプライン #[[Data Processing]]
+### 25章　データ処理のパイプライン #[[Data Engineering]]
 
 ### 26章　データの[[完全性]]：What You Read Is What You Wrote
 

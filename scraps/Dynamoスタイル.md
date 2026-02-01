@@ -1,3 +1,3 @@
-#[[Data Store]]
+#[[Data Engineering]]
 
 [[Amazon/DynamoDB]]によって流行した[[リーダーレスレプリケーション]]を実装したデータストアに用いられるスタイル名

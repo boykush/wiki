@@ -1,4 +1,4 @@
-#[[Data Store]]
+#[[Data Engineering]]
 
 [[MySQL]]においてテーブルインデックスを再編成し最適化する命令
 
