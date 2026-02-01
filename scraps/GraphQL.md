@@ -1,6 +1,6 @@
 ![GraphQL logo](https://graphql.org/_next/static/media/logo-wordmark.4eec1155.svg)
 
-#[[API Architecture]] #[[Data Processing]]
+#[[API Architecture]] #[[Data Engineering]]
 
 [[Facebook]]社が開発したAPIレイヤで利用するクエリ言語
 

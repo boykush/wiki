@@ -1,4 +1,4 @@
-#[[Data Store]] #[[リレーショナルデータベース]]
+#[[Data Engineering]] #[[リレーショナルデータベース]]
 
 ![PostgreSQL logo](https://www.postgresql.org/media/img/about/press/elephant.png)
 

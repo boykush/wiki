@@ -1,4 +1,4 @@
-#[[Data Store]]
+#[[Data Engineering]]
 
 Amazonが提供する[[リーダーレスレプリケーション]]によるデータストア
 
