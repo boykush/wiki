@@ -7,7 +7,7 @@ AI駆動のソフトウェア開発を強化する、[[Python]]製の[[会話型
 技術的には[[LSP]]による高度な解析を行っており、以下のような言語に対応している
 
 - [[Rust]]
-- [[Go]]
+- [[Go]]([[gopls]])
 - [[Python]]
 - [[TypeScript]]/[[JavaScript]]
 - [[Java]]
