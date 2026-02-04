@@ -1,6 +1,7 @@
 ---
 name: generate-book
 description: 書籍タイトルからscrapsファイルを生成します
+allowed-tools: WebSearch, WebFetch, Write
 ---
 
 $ARGUMENTS タイトルの書籍scrapsファイルを生成します
@@ -17,8 +18,9 @@ $ARGUMENTS タイトルの書籍scrapsファイルを生成します
    - 出版社ページのOGPタイトル
    - 出版社ページのURL
    - 目次（部、章、節）
-3. 以下のフォーマットで `scraps/{タイトル}.md` ファイルを生成
-4. 生成されたファイル全体で既存のscrapsへのリンクを貼るべき点を提案
+3. `mcp__plugin_mcp-server_scraps__list_tags` でタグ一覧を取得し、書籍の内容に適したタグを選択（Bookは必須、他は内容に応じて追加）
+4. 以下のフォーマットで `scraps/{タイトル}.md` ファイルを生成
+5. `mcp__plugin_mcp-server_scraps__search_scraps` で関連scrapsを検索し、リンクを貼るべき箇所を提案
 
 # 出力フォーマット
 
@@ -29,7 +31,7 @@ $ARGUMENTS タイトルの書籍scrapsファイルを生成します
 {著者}
 {訳者}
 
-#[[Book]]
+#[[Book]] {関連タグ}
 
 ![]({書籍画像URL})
 
@@ -44,3 +46,4 @@ $ARGUMENTS タイトルの書籍scrapsファイルを生成します
 - 訳者がない場合はその行を省略
 - 目次はh2以降の見出しを用いてレイヤを表現（部→h2、章→h3、節→h4）
 - 取得できなかった項目は省略
+- タグは `#[[Book]]` を必須とし、書籍内容に関連するタグを半角スペース区切りで追加（例: `#[[Book]] #[[Security]] #[[Testing]]`）
