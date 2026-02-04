@@ -19,8 +19,11 @@ $ARGUMENTS タイトルの書籍scrapsファイルを生成します
    - 出版社ページのURL
    - 目次（部、章、節）
 3. `mcp__plugin_mcp-server_scraps__list_tags` でタグ一覧を取得し、書籍の内容に適したタグを選択（Bookは必須、他は内容に応じて追加）
-4. 以下のフォーマットで `scraps/{タイトル}.md` ファイルを生成
-5. `mcp__plugin_mcp-server_scraps__search_scraps` で関連scrapsを検索し、リンクを貼るべき箇所を提案
+4. `mcp__plugin_mcp-server_scraps__search_scraps` でタイトルの重複を確認し、配置場所を決定
+   - 重複あり: `scraps/Book/{タイトル}.md`
+   - 重複なし: `scraps/{タイトル}.md`
+5. 以下のフォーマットでファイルを生成
+6. `mcp__plugin_mcp-server_scraps__search_scraps` で関連scrapsを検索し、リンクを貼るべき箇所を提案
 
 # 出力フォーマット
 
