@@ -1,6 +1,6 @@
 #[[Security]] #[[Cloud Native]]
 
-[[Anchore]]が開発したSBOM（Software Bill of Materials）生成のためのCLIツール・ライブラリ
+Anchoreが開発したSBOM（Software Bill of Materials）生成のためのCLIツール・ライブラリ
 
 コンテナイメージやファイルシステムから依存関係を解析し、SPDX、CycloneDX、JSON形式でSBOMを出力できる
 
