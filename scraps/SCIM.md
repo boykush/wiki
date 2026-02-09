@@ -1,6 +1,6 @@
 ## System for Cross-domain Identity Management
 
-#[[Security]] #[[Authentication]]
+#[[Authentication]]
 
 ユーザーアイデンティティ情報を異なるシステム間で自動的にプロビジョニング・管理するための標準プロトコル
 

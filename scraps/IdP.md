@@ -1,6 +1,6 @@
 ## Identity Provider
 
-#[[Security]] #[[Authentication]] #[[Authorization]]
+#[[Authentication]] #[[Authorization]]
 
 デジタルアイデンティティシステムにおいて、ユーザーの認証を行い、アイデンティティ情報を提供するサービスまたは組織
 

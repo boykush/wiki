@@ -1,6 +1,6 @@
 ## 分散型識別子
 
-#[[Security]] #[[Authentication]]
+#[[Authentication]]
 
 暗号識別子の一種である。W3Cの分散型識別子ワーキンググループによってDID仕様が定義される
 

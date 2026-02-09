@@ -1,4 +1,4 @@
-#[[Security]] #[[Authentication]]
+#[[Authentication]]
 
 [[DID]]においてスキーム部の後に続き、名前空間として機能する。名前空間に対し[[DIDドキュメント]]というメソッド固有の仕様を解決できる
 

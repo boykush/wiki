@@ -1,4 +1,4 @@
-#[[Security]] #[[Authentication]]
+#[[Authentication]]
 
 [[Istio]]においてマイクロサービス間の[[mTLS]]を設定するカスタムリソース（[[Kubernetes/CRD]]）
 
