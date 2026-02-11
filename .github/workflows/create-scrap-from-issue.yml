@@ -23,7 +23,7 @@ jobs:
         uses: jdx/mise-action@v2
 
       - name: Install scraps
-        run: mise install cargo:scraps
+        run: mise install github:boykush/scraps
 
       - name: Run Claude with add-scrap skill
         uses: anthropics/claude-code-action@v1

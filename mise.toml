@@ -1,7 +1,6 @@
 [tools]
 "npm:markdownlint-cli2" = "latest"
-"cargo:scraps" = "latest"
-rust = "latest"
+"github:boykush/scraps" = "latest"
 
 [tasks.build]
 description = "Build static site from Markdown files"
