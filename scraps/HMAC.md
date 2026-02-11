@@ -1,6 +1,6 @@
 ## Hash-based Message Authentication Code
 
-#[[Security]]
+#[[Cryptography]]
 
 共通鍵と[[メッセージダイジェスト]]による[[共通鍵暗号]]方式
 

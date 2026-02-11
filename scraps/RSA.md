@@ -1,6 +1,6 @@
 ## Rivest-Shamir-Adleman
 
-#[[Security]]
+#[[Cryptography]]
 
 [[公開鍵暗号]]方式のアルゴリズムの一種
 
