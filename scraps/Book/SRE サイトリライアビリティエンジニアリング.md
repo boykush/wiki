@@ -4,7 +4,7 @@
 
 Betsy Beyer, Chris Jones, Jennifer Petoff, Niall Richard Murphy
 
-#[[Book]] #[[Reliability]] #[[Observability]]
+#[[Book]] #[[Observability]]
 
 ![SRE サイトリライアビリティエンジニアリング](https://www.oreilly.co.jp/books/images/picture_large978-4-87311-791-1.jpeg)
 
@@ -14,6 +14,7 @@ Betsy Beyer, Chris Jones, Jennifer Petoff, Niall Richard Murphy
 
 キーワード
 
+- [[信頼性]]
 - [[サービスの信頼性の階層]]
 
 英語版は無料で公開されている

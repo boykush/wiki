@@ -35,7 +35,7 @@ James Gough, Daniel Bryant, Matthew Auburn
 - [[リバースプロキシ]]/[[ロードバランシング]]
 - [[APIゲートウェイ]]/[[Envoy]]/[[Ambassador Edge Stack]]
 
-### 4章 サービスメッシュ：サービス間トラフィック管理 #[[Reliability]]
+### 4章 サービスメッシュ：サービス間トラフィック管理 #[[信頼性]]
 
 - [[サービスメッシュ]]/[[サイドカープロキシ]]
 - [[eBPF]]/[[Cilium]]
