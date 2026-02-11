@@ -1,6 +1,6 @@
-#[[Security]] #[[Continuous Integration]]
+#[[Continuous Integration]]
 
-[[Dockerfile]]の構文チェック、ベストプラクティス検証、セキュリティ脆弱性検出を行う静的解析ツール
+[[Dockerfile]]の構文チェック、ベストプラクティス検証、セキュリティ脆弱性検出を行う[[SAST]]ツール
 
 Haskellで実装され、ShellCheckを統合することで`RUN`命令内のbashスクリプトも検証する
 
