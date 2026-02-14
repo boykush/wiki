@@ -9,6 +9,6 @@ Kiroスタイルコマンドで以下を実現する
 - Team-aligned templates: 承認プロセスのカスタマイズ
 - Project memory: アーキテクチャ、パターン、標準の記憶
 
-[[Claude Code]]、[[Cursor]]、[[GitHub Copilot]]、Gemini CLI、Codex、OpenCode、Windsurf に対応する
+[[Claude Code]]、[[Cursor]]、[[GitHub Copilot]]、Gemini CLI、Codex、OpenCode、Windsurf 等に対応する
 
 <https://github.com/gotalab/cc-sdd>
