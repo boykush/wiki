@@ -10,6 +10,6 @@
 
 認証リクエスト時に有効なDevice Cookieの有無を確認し、未信頼クライアント（Device Cookieなし）からの認証試行回数を記録してロックアウトを実施する
 
-実装には[[JWT]]、Redis/Memcachedによるロックリスト管理、[[HMAC]]署名による改ざん防止などが用いられる
+実装には[[JWT]]、[[Redis]]/Memcachedによるロックリスト管理、[[HMAC]]署名による改ざん防止などが用いられる
 
 <https://owasp.org/www-community/Slow_Down_Online_Guessing_Attacks_with_Device_Cookies>
