@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <!-- Page title -->
+        
+            
+            <title>Go - Kush&#x27;s Wiki</title>
+            <meta property="og:title" content="Go - Kush&#x27;s Wiki" />
+            <meta name="twitter:title" content="Go - Kush&#x27;s Wiki" />
+        
+        <!-- Page description -->
+        
+            <meta name="description" content="boykushのナレッジ置き場" />
+            <meta property="og:description" content="boykushのナレッジ置き場" />
+            <meta name="twitter:description" content="boykushのナレッジ置き場" />
+        
+        <!-- Page favicon -->
+        
+            <link rel="icon" type="image/png" href="https:&#x2F;&#x2F;gist.github.com&#x2F;boykush&#x2F;3bbc68b5d2580374c97d4336b87fb70f&#x2F;raw&#x2F;a838b8f3584b21bcbbe4dd53afca380fe18695a7&#x2F;boykush_icon.png" />
+        
+        <!-- Rubik font -->
+        <link href="https://fonts.cdnfonts.com/css/rubik" rel="stylesheet">
+        <!-- Noto Sans JP font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+        <!-- Style sheet -->
+        <link rel="stylesheet" href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;main.css">
+        
+<meta property="og:url" content="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/go.html" />
+
+    <meta property="og:image" content="https:&#x2F;&#x2F;go.dev&#x2F;images&#x2F;go-logo-blue.svg" />
+    <meta name="twitter:image" content="https:&#x2F;&#x2F;go.dev&#x2F;images&#x2F;go-logo-blue.svg" />
+
+
+    </head>
+    <body>
+        <header>
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;">
+                <h1>Kush&#x27;s Wiki</h1>
+            </a>
+        </header>
+        <main>
+            
+    <div class="scrap">
+        
+        <h1 class="title">Go</h1>
+        
+            <p class="commited-date">
+                commited date: 2025-11-17
+            </p>
+        
+        <div class="content">
+            <p>#<a href="https://boykush.github.io/wiki/scraps/programming.html">Programming</a></p>
+<p><img src="https://go.dev/images/go-logo-blue.svg" alt="" />Go logo</p>
+
+        </div>
+    </div>
+    
+    <ul class="scrap-links">
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/lsp-plugins.claude-code.html">
+                    
+                        <div class="header">
+                            <div class="context">Claude Code&#47;</div>
+                            <div class="title">LSP Plugins</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Programming #LLM
+Claude Codeにおいてclaude-plugin-officialが公開している
+LSP（Language Server Protocol）プラグインを追加し、リアルタイムコード知能を提供する機能
+主な特徴:
+
+言語サーバーバイナリのインストールが必須
+IDE統合時に診断情報が自動共有される
+公式マーケットプレイスから言語別プラグインを追加可能
+
+サポート言語:
+
+C&#x2F;C++
+C#
+Go(gopls)
+Java
+Lua
+PHP
+Python
+Rust
+Swift
+TypeScript
+
+設定例（.claude&#x2F;settings.json）:
+{
+  &quot;enabledPlugins&quot;: {
+    &quot;rust-analyzer-lsp@claude-plugins-official&quot;: true
+  }
+}
+
+https:&#x2F;&#x2F;code.claude.com&#x2F;docs&#x2F;en&#x2F;discover-plugins
+https:&#x2F;&#x2F;code.claude.com&#x2F;docs&#x2F;en&#x2F;plugins
+https:&#x2F;&#x2F;github.com&#x2F;anthropics&#x2F;claude-plugins-official
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/do.samber.html">
+                    
+                        <div class="header">
+                            <div class="context">samber&#47;</div>
+                            <div class="title">do</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Go #Dependency Injection
+Go言語のDependency Injection（依存性注入）ツールキット
+Go 1.18+のジェネリクス機能を基盤とした型安全なAPIを提供するDIライブラリ。uber&#x2F;digの代替として開発された
+DIライブラリとしての特徴：
+
+ジェネリクスによる型安全性: do.MustInvoke[*Engine](i) のように型パラメータを指定してサービスを取得。コンパイル時に型チェックが行われる
+柔軟なサービス登録: do.Provide()、do.ProvideNamed()、do.ProvideValue() による個別登録、または do.Package() によるパッケージ単位の一括登録
+ローディング戦略: Eager、Lazy、Transientの3種類のローディング方式をサポート
+ライフサイクル管理: ヘルスチェック、グレースフルシャットダウン、依存関係を考慮した並列シャットダウン
+循環依存検出: 依存関係の循環を自動検出
+デバッグ機能: Web UIとHTTPミドルウェアによる依存グラフの可視化
+
+コード生成不要で軽量な設計
+https:&#x2F;&#x2F;github.com&#x2F;samber&#x2F;do
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/クラウドネイティブで実現する-マイクロサービス開発・運用-実践ガイド.html">
+                    
+                        <div class="header">
+                            <div class="title">クラウドネイティブで実現する マイクロサービス開発・運用 実践ガイド</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;gihyo.jp&#x2F;assets&#x2F;images&#x2F;cover&#x2F;2023&#x2F;9784297137830.jpg" loading="lazy" />
+                        </div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/pgx.html">
+                    
+                        <div class="header">
+                            <div class="title">pgx</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Programming #Data Engineering
+Go用のPostgreSQLドライバー・ツールキット
+
+database&#x2F;sql互換インターフェースとネイティブインターフェースの両方を提供
+約60種類のPostgreSQL型をサポート（uuid, hstore, json, bytea, numericなど）
+LISTEN&#x2F;NOTIFYやCOPYなどPostgreSQL固有の機能にも対応
+
+https:&#x2F;&#x2F;github.com&#x2F;jackc&#x2F;pgx
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/serena.html">
+                    
+                        <div class="header">
+                            <div class="title">Serena</div>
+                        </div>
+                    
+                    
+                        <div class="summary">AI駆動のソフトウェア開発を強化する、Python製の会話型エージェント向けツールキット
+LLMをコーディングエージェントとして強化しセマンティックな検索・編集を可能にしトークンを節約する。IDE並みの精度でAIモデルとの統合が可能とされている
+MCPサーバーとして動作可能で、Claude Codeとの連携例もある
+技術的にはLSPによる高度な解析を行っており、以下のような言語に対応している
+
+Rust
+Go(gopls)
+Python
+TypeScript&#x2F;JavaScript
+Java
+PHP
+C#
+Elixir
+Clojure
+C&#x2F;C++
+
+
+https:&#x2F;&#x2F;github.com&#x2F;oraios&#x2F;serena
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/grpc-gateway.html">
+                    
+                        <div class="header">
+                            <div class="title">gRPC-Gateway</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Network #API Architecture #REST #Programming
+gRPCにおいて、gRPC serviceをRESTful APIとして提供するためのGoライブラリ。HTTP+JSONのインターフェースでリバースプロキシサーバーを生成する
+HTTP仕様はProtocol Buffers上において google.api.http のような HttpRule によって記述する
+同リポジトリにはprotoc-gen-openapiv2プラグインも含まれておりOpen API仕様を出力できる
+https:&#x2F;&#x2F;grpc-ecosystem.github.io&#x2F;grpc-gateway&#x2F;
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/opentelemetry-go.html">
+                    
+                        <div class="header">
+                            <div class="title">opentelemetry-go</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Observability #Programming
+OpenTelemetryのGo APIまたはSDK
+https:&#x2F;&#x2F;github.com&#x2F;open-telemetry&#x2F;opentelemetry-go
+https:&#x2F;&#x2F;opentelemetry.io&#x2F;ja&#x2F;docs&#x2F;languages&#x2F;go&#x2F;
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/testcontainers.html">
+                    
+                        <div class="header">
+                            <div class="title">Testcontainers</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;testcontainers.com&#x2F;images&#x2F;testcontainers-logo.svg" loading="lazy" />
+                        </div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/env.caarlos0.html">
+                    
+                        <div class="header">
+                            <div class="context">caarlos0&#47;</div>
+                            <div class="title">env</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Programming
+Go言語のアプリケーション設定ライブラリ
+構造体フィールドに環境変数とのマッピングを記述できる
+type config struct {
+  Home string `env:&quot;HOME&quot;`
+}
+
+&#x2F;&#x2F; parse
+var cfg config
+err := env.Parse(&amp;amp;cfg)
+
+&#x2F;&#x2F; parse with generics
+cfg, err := env.ParseAs[config]()
+
+https:&#x2F;&#x2F;github.com&#x2F;caarlos0&#x2F;env
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/cucumber.html">
+                    
+                        <div class="header">
+                            <div class="title">Cucumber</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Testing
+BDDを推進するメインコミュニティであり、そのコミュニティによるライブラリ。RSpecのコントリビューターであるAslak Hellesøyによって立ち上げられた
+Gherkin記法で書かれたfeatureファイルをStep definitionsによってテストコードへ変換し実行する
+公式では以下の言語をサポートしている Installlation
+
+Java
+JavaScript
+Ruby
+Kotlin
+Scala
+Lua
+Ocaml
+C++
+Go
+
+https:&#x2F;&#x2F;cucumber.io&#x2F;docs&#x2F;
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/apitest.steinfletcher.html">
+                    
+                        <div class="header">
+                            <div class="context">steinfletcher&#47;</div>
+                            <div class="title">apitest</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Testing #API Architecture
+Go言語のREST APIテスティングライブラリ、HTTPリクエストを容易に構築する
+https:&#x2F;&#x2F;github.com&#x2F;steinfletcher&#x2F;apitest
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/docker.html">
+                    
+                        <div class="header">
+                            <div class="title">Docker</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;www.docker.com&#x2F;ja-jp&#x2F;wp-content&#x2F;uploads&#x2F;2023&#x2F;08&#x2F;logo-guide-logos-1.svg" loading="lazy" />
+                        </div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/gosec.html">
+                    
+                        <div class="header">
+                            <div class="title">gosec</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Security #Programming
+Go言語のソースコード静的セキュリティ分析ツール
+Go AST（抽象構文木）を解析し、セキュリティ問題となりうるプログラミングミスを検出するSASTツール
+主な特徴:
+
+-includeまたは-excludeフラグで検査ルールを選択可能
+検出された問題はCWE（Common Weakness Enumeration）にマッピングされる
+AI統合によるセキュリティ修正提案（Gemini、Claudeに対応）
+GitHub Actionとしても利用可能
+
+インストール: go install github.com&#x2F;securego&#x2F;gosec&#x2F;v2&#x2F;cmd&#x2F;gosec@latest
+https:&#x2F;&#x2F;github.com&#x2F;securego&#x2F;gosec
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/aqua.html">
+                    
+                        <div class="header">
+                            <div class="title">aqua</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Programming
+CLIツール専用の宣言的バージョンマネージャー。Go製
+
+aqua.yamlでツールとバージョンを宣言的に管理
+GitHub Releasesからバイナリを自動取得
+Lazy Install: 実行時に必要なツールを自動インストール
+Checksum検証、Cosign&#x2F;SLSA Provenance対応
+
+https:&#x2F;&#x2F;aquaproj.github.io&#x2F;
+https:&#x2F;&#x2F;github.com&#x2F;aquaproj&#x2F;aqua
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/golangci-lint.html">
+                    
+                        <div class="header">
+                            <div class="title">golangci-lint</div>
+                        </div>
+                    
+                    
+                        <div class="summary">Go言語のlintを扱うCLIツール、100以上のlinterを選択可能
+https:&#x2F;&#x2F;golangci-lint.run&#x2F;
+https:&#x2F;&#x2F;github.com&#x2F;golangci&#x2F;golangci-lint
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/otelsql.xsam.html">
+                    
+                        <div class="header">
+                            <div class="context">XSAM&#47;</div>
+                            <div class="title">otelsql</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Observability #Programming #Data Engineering
+Goのdatabase&#x2F;sqlパッケージにOpenTelemetry計装を追加するライブラリ
+
+トレースとメトリクスの両方をサポート
+PostgreSQL、MySQL、SQLiteなど、database&#x2F;sqlドライバを持つ任意のDBに対応
+
+https:&#x2F;&#x2F;github.com&#x2F;XSAM&#x2F;otelsql
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/sops.html">
+                    
+                        <div class="header">
+                            <div class="title">sops</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Security
+GitOpsの世界においてSecretをクライアントサイドで扱うGo製のツール。YAMLやJSONのファイル上でSecretを安全にgit管理することができる
+ageを用いたローカルでのキー管理か、KMSによるキー管理のどちらを選択できる
+CNCF sandbox project
+
+https:&#x2F;&#x2F;getsops.io&#x2F;
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/ent.html">
+                    
+                        <div class="header">
+                            <div class="title">ent</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Programming
+Go言語のORMライブラリ
+Facebook社で開発されたのち、Linux Foundationに参画し現在はAriga社で開発が継続されている
+https:&#x2F;&#x2F;github.com&#x2F;ent&#x2F;ent
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/dev-tools.mise.html">
+                    
+                        <div class="header">
+                            <div class="context">mise&#47;</div>
+                            <div class="title">Dev Tools</div>
+                        </div>
+                    
+                    
+                        <div class="summary">miseにおいてasdfの代替となるような開発ツール管理機能
+asdf, aqua, cargo, go, npm等のバックエンドを利用可能
+https:&#x2F;&#x2F;mise.jdx.dev&#x2F;dev-tools&#x2F;
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/go-redis.html">
+                    
+                        <div class="header">
+                            <div class="title">go-redis</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Programming #Data Engineering
+Go用のRedis公式クライアントライブラリ
+
+Redis Cluster、Redis Sentinel、Redis Streamsをサポート
+自動コネクションプーリングを内蔵
+Pub&#x2F;Sub、パイプライン、トランザクションに対応
+
+https:&#x2F;&#x2F;github.com&#x2F;redis&#x2F;go-redis
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/tbls.k1low.html">
+                    
+                        <div class="header">
+                            <div class="context">k1LoW&#47;</div>
+                            <div class="title">tbls</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Data Engineering #Documentation
+Go言語で書かれたデータベースドキュメント化ツール
+データベーススキーマを自動的にMarkdown形式で記録し、CI&#x2F;CDパイプラインに統合可能
+PostgreSQL、MySQL、BigQuery、Snowflakeなど多数のデータベースに対応し、差分検出（diff）、品質チェック（lint）、ドキュメント網羅率測定（coverage）などの機能を提供
+https:&#x2F;&#x2F;github.com&#x2F;k1LoW&#x2F;tbls
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/runn.k1low.html">
+                    
+                        <div class="header">
+                            <div class="context">k1LoW&#47;</div>
+                            <div class="title">runn</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Testing #API Architecture
+Go言語のAPI Testingライブラリ・ツール
+HTTP request, gRPC requestのようないくつかの実行環境に対応し、runnbookと呼ばれる独自のシナリオを記述しテスト実行する
+Open APIと連携が可能で、静的なスキーマ検証がされた上でのシナリオ記述が可能
+https:&#x2F;&#x2F;github.com&#x2F;k1LoW&#x2F;runn
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/mock.uber-go.html">
+                    
+                        <div class="header">
+                            <div class="context">uber-go&#47;</div>
+                            <div class="title">mock</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Programming #Testing
+Go言語のモックライブラリ、Uber社製
+mockgen コマンドでモック実装ファイルを生成する
+https:&#x2F;&#x2F;github.com&#x2F;uber-go&#x2F;mock
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/gopls.html">
+                    
+                        <div class="header">
+                            <div class="title">gopls</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Programming
+Goの公式Language Server。Goチームによって開発されている
+主な特徴:
+
+コード補完、定義へのジャンプ、参照検索、フォーマット、リファクタリングなど多様なIDE機能を提供
+LSP対応エディタと自動統合されるため直接操作は不要
+Go module、multi-module、GOPATHモードのワークスペースをサポート
+
+https:&#x2F;&#x2F;go.dev&#x2F;gopls&#x2F;
+https:&#x2F;&#x2F;github.com&#x2F;golang&#x2F;tools&#x2F;tree&#x2F;master&#x2F;gopls
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/age.html">
+                    
+                        <div class="header">
+                            <div class="title">age</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Cryptography
+シンプルでモダンな暗号化ツール、Go製
+
+https:&#x2F;&#x2F;github.com&#x2F;FiloSottile&#x2F;age
+</div>
+                    
+                </a>
+            </li>
+        
+    </ul>
+
+
+        </main>
+        <footer>
+            Generated by <a href="https://github.com/boykush/scraps" target="_blank" rel="noopener noreferrer">Scraps</a>
+        </footer> 
+        <!-- Code syntax highlight -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script>
+        <!-- Code syntax highlight theme -->
+        <link href="https://unpkg.com/nord-highlightjs@0.2.0/dist/nord.css" rel="stylesheet" type="text/css" />
+        <!-- Mermaid -->
+        <script type="module">
+            import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11.12.2/+esm'
+        </script>
+        
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const ogpCards = document.querySelectorAll('.ogp-card');
+
+    ogpCards.forEach(async (card) => {
+      const url = card.dataset.url;
+
+      try {
+        const proxyUrl = 'https://corsproxy.io/?url=';
+        const response = await fetch(proxyUrl + url);
+        const html = await response.text();
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, 'text/html');
+
+        const title = doc.querySelector('meta[property="og:title"]')?.content ||
+          doc.querySelector('title')?.textContent ||
+          'No title';
+        card.querySelector('.ogp-title').textContent = title;
+
+        const description = doc.querySelector('meta[property="og:description"]')?.content ||
+          doc.querySelector('meta[name="description"]')?.content ||
+          'No description';
+        card.querySelector('.ogp-description').textContent = description;
+
+        const image = doc.querySelector('meta[property="og:image"]')?.content;
+        if (image) {
+          const imageUrl = image.startsWith('/')
+            ? `https://${card.dataset.host}/${image}`
+            : image;
+          card.querySelector('.ogp-image').src = imageUrl;
+        } else {
+          card.querySelector('.ogp-image').remove();
+        }
+      } catch (error) {
+        console.error('Failed to fetch OGP data:', error);
+      }
+    });
+  });
+</script>
+ 
+    </body>
+</html>

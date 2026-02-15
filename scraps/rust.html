@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <!-- Page title -->
+        
+            
+            <title>Rust - Kush&#x27;s Wiki</title>
+            <meta property="og:title" content="Rust - Kush&#x27;s Wiki" />
+            <meta name="twitter:title" content="Rust - Kush&#x27;s Wiki" />
+        
+        <!-- Page description -->
+        
+            <meta name="description" content="boykushのナレッジ置き場" />
+            <meta property="og:description" content="boykushのナレッジ置き場" />
+            <meta name="twitter:description" content="boykushのナレッジ置き場" />
+        
+        <!-- Page favicon -->
+        
+            <link rel="icon" type="image/png" href="https:&#x2F;&#x2F;gist.github.com&#x2F;boykush&#x2F;3bbc68b5d2580374c97d4336b87fb70f&#x2F;raw&#x2F;a838b8f3584b21bcbbe4dd53afca380fe18695a7&#x2F;boykush_icon.png" />
+        
+        <!-- Rubik font -->
+        <link href="https://fonts.cdnfonts.com/css/rubik" rel="stylesheet">
+        <!-- Noto Sans JP font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+        <!-- Style sheet -->
+        <link rel="stylesheet" href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;main.css">
+        
+<meta property="og:url" content="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/rust.html" />
+
+
+    </head>
+    <body>
+        <header>
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;">
+                <h1>Kush&#x27;s Wiki</h1>
+            </a>
+        </header>
+        <main>
+            
+    <div class="scrap">
+        
+        <h1 class="title">Rust</h1>
+        
+            <p class="commited-date">
+                commited date: 2025-11-17
+            </p>
+        
+        <div class="content">
+            <p>#<a href="https://boykush.github.io/wiki/scraps/programming.html">Programming</a></p>
+<ul>
+<li><a href="https://www.rust-lang.org/">Rust Programming Language</a></li>
+</ul>
+
+        </div>
+    </div>
+    
+    <ul class="scrap-links">
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/lsp-plugins.claude-code.html">
+                    
+                        <div class="header">
+                            <div class="context">Claude Code&#47;</div>
+                            <div class="title">LSP Plugins</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Programming #LLM
+Claude Codeにおいてclaude-plugin-officialが公開している
+LSP（Language Server Protocol）プラグインを追加し、リアルタイムコード知能を提供する機能
+主な特徴:
+
+言語サーバーバイナリのインストールが必須
+IDE統合時に診断情報が自動共有される
+公式マーケットプレイスから言語別プラグインを追加可能
+
+サポート言語:
+
+C&#x2F;C++
+C#
+Go(gopls)
+Java
+Lua
+PHP
+Python
+Rust
+Swift
+TypeScript
+
+設定例（.claude&#x2F;settings.json）:
+{
+  &quot;enabledPlugins&quot;: {
+    &quot;rust-analyzer-lsp@claude-plugins-official&quot;: true
+  }
+}
+
+https:&#x2F;&#x2F;code.claude.com&#x2F;docs&#x2F;en&#x2F;discover-plugins
+https:&#x2F;&#x2F;code.claude.com&#x2F;docs&#x2F;en&#x2F;plugins
+https:&#x2F;&#x2F;github.com&#x2F;anthropics&#x2F;claude-plugins-official
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/mise.html">
+                    
+                        <div class="header">
+                            <div class="title">mise</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;private-user-images.githubusercontent.com&#x2F;216188&#x2F;306790203-27a8ea18-9383-4d86-a445-305b9a6248c1.jpeg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTQxMTM5ODAsIm5iZiI6MTc1NDExMzY4MCwicGF0aCI6Ii8yMTYxODgvMzA2NzkwMjAzLTI3YThlYTE4LTkzODMtNGQ4Ni1hNDQ1LTMwNWI5YTYyNDhjMS5qcGVnP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI1MDgwMiUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNTA4MDJUMDU0ODAwWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9NWRkNWRhNjUzYWE4Mjk2YWFlNGJkYzQyY2MxNzBiZjgyNmI3OTQ0MmUzNjM1ZDg3MDg2NGQ1YTM1Yjg1ZmQ0NyZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ._PxW5VVYqvL1Am2cty8mCeDPmAJCcs0ruZz2GdACwlM" loading="lazy" />
+                        </div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/pulldown-cmark.html">
+                    
+                        <div class="header">
+                            <div class="title">pulldown-cmark</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Programming
+Rust言語のMarkdown Parser
+https:&#x2F;&#x2F;github.com&#x2F;pulldown-cmark&#x2F;pulldown-cmark
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/serena.html">
+                    
+                        <div class="header">
+                            <div class="title">Serena</div>
+                        </div>
+                    
+                    
+                        <div class="summary">AI駆動のソフトウェア開発を強化する、Python製の会話型エージェント向けツールキット
+LLMをコーディングエージェントとして強化しセマンティックな検索・編集を可能にしトークンを節約する。IDE並みの精度でAIモデルとの統合が可能とされている
+MCPサーバーとして動作可能で、Claude Codeとの連携例もある
+技術的にはLSPによる高度な解析を行っており、以下のような言語に対応している
+
+Rust
+Go(gopls)
+Python
+TypeScript&#x2F;JavaScript
+Java
+PHP
+C#
+Elixir
+Clojure
+C&#x2F;C++
+
+
+https:&#x2F;&#x2F;github.com&#x2F;oraios&#x2F;serena
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/anyhow.html">
+                    
+                        <div class="header">
+                            <div class="title">anyhow</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Programming
+Rustにおけるエラー型の扱いを楽にするライブラリ
+パブリックなAPIでは利用を避けて標準のエラー型を用いるのが良い
+
+
+anyhow - Rust
+
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/cargo-llvm-cov.html">
+                    
+                        <div class="header">
+                            <div class="title">cargo-llvm-cov</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Testing
+RustのLLVMソースベースコードカバレッジ（-C instrument-coverage）を簡単に利用するためのCargoサブコマンド
+https:&#x2F;&#x2F;github.com&#x2F;taiki-e&#x2F;cargo-llvm-cov
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/testcontainers.html">
+                    
+                        <div class="header">
+                            <div class="title">Testcontainers</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;testcontainers.com&#x2F;images&#x2F;testcontainers-logo.svg" loading="lazy" />
+                        </div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/effective-rust.html">
+                    
+                        <div class="header">
+                            <div class="title">Effective Rust</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;www.oreilly.co.jp&#x2F;books&#x2F;images&#x2F;picture_large978-4-8144-0094-2.jpeg" loading="lazy" />
+                        </div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/serde.html">
+                    
+                        <div class="header">
+                            <div class="title">serde</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Programming
+RustのSerializationライブラリ
+
+https:&#x2F;&#x2F;serde.rs&#x2F;
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/biome.html">
+                    
+                        <div class="header">
+                            <div class="title">Biome</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Programming
+JavaScript、TypeScript、CSS、JSON、GraphQL向けのフォーマッターとリンターを提供するWebプロジェクト用ツールチェーン
+
+Rustで実装されており、Node.jsベースのツールと比較して10-20倍高速
+Prettierとの97%の互換性を持つフォーマッター
+ESLint、TypeScript ESLint等のソースから436以上のリンタールールを搭載
+CLIとLSPで利用可能
+
+https:&#x2F;&#x2F;biomejs.dev&#x2F;
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/hurl.html">
+                    
+                        <div class="header">
+                            <div class="title">Hurl</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;hurl.dev&#x2F;assets&#x2F;img&#x2F;logo-dark.svg" loading="lazy" />
+                        </div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/codex.html">
+                    
+                        <div class="header">
+                            <div class="title">Codex</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Programming #LLM
+OpenAIが提供するオープンソースのCLIコーディングエージェント
+ターミナル上でコードの読み取り・編集・実行が可能で、Rust製
+
+MCPサーバーとの連携によりサードパーティツールと統合可能
+コードレビューエージェントによるプッシュ前のレビュー機能
+ローカルでのトランスクリプト保存による継続作業
+
+https:&#x2F;&#x2F;github.com&#x2F;openai&#x2F;codex
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/cargo.html">
+                    
+                        <div class="header">
+                            <div class="title">Cargo</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Programming
+Rustの公式パッケージマネージャ兼ビルドシステム
+
+依存関係の管理（crates.ioからのダウンロード）
+プロジェクトのビルド・テスト・実行
+パッケージの公開（cargo publish）
+ビルドプロファイル（dev&#x2F;release）による最適化制御
+
+https:&#x2F;&#x2F;doc.rust-lang.org&#x2F;cargo&#x2F;
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/tera.html">
+                    
+                        <div class="header">
+                            <div class="title">Tera</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Programming
+Rust実装のテンプレートライブラリ、Jinja2&#x2F;Djangoと同じ記法
+https:&#x2F;&#x2F;github.com&#x2F;Keats&#x2F;tera
+</div>
+                    
+                </a>
+            </li>
+        
+    </ul>
+
+
+        </main>
+        <footer>
+            Generated by <a href="https://github.com/boykush/scraps" target="_blank" rel="noopener noreferrer">Scraps</a>
+        </footer> 
+        <!-- Code syntax highlight -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script>
+        <!-- Code syntax highlight theme -->
+        <link href="https://unpkg.com/nord-highlightjs@0.2.0/dist/nord.css" rel="stylesheet" type="text/css" />
+        <!-- Mermaid -->
+        <script type="module">
+            import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11.12.2/+esm'
+        </script>
+        
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const ogpCards = document.querySelectorAll('.ogp-card');
+
+    ogpCards.forEach(async (card) => {
+      const url = card.dataset.url;
+
+      try {
+        const proxyUrl = 'https://corsproxy.io/?url=';
+        const response = await fetch(proxyUrl + url);
+        const html = await response.text();
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, 'text/html');
+
+        const title = doc.querySelector('meta[property="og:title"]')?.content ||
+          doc.querySelector('title')?.textContent ||
+          'No title';
+        card.querySelector('.ogp-title').textContent = title;
+
+        const description = doc.querySelector('meta[property="og:description"]')?.content ||
+          doc.querySelector('meta[name="description"]')?.content ||
+          'No description';
+        card.querySelector('.ogp-description').textContent = description;
+
+        const image = doc.querySelector('meta[property="og:image"]')?.content;
+        if (image) {
+          const imageUrl = image.startsWith('/')
+            ? `https://${card.dataset.host}/${image}`
+            : image;
+          card.querySelector('.ogp-image').src = imageUrl;
+        } else {
+          card.querySelector('.ogp-image').remove();
+        }
+      } catch (error) {
+        console.error('Failed to fetch OGP data:', error);
+      }
+    });
+  });
+</script>
+ 
+    </body>
+</html>

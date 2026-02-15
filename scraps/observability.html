@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <!-- Page title -->
+        
+            <title>Kush&#x27;s Wiki</title>
+            <meta property="og:title" content="Kush&#x27;s Wiki" />
+            <meta name="twitter:title" content="Kush&#x27;s Wiki" />
+        
+        <!-- Page description -->
+        
+            <meta name="description" content="boykushのナレッジ置き場" />
+            <meta property="og:description" content="boykushのナレッジ置き場" />
+            <meta name="twitter:description" content="boykushのナレッジ置き場" />
+        
+        <!-- Page favicon -->
+        
+            <link rel="icon" type="image/png" href="https:&#x2F;&#x2F;gist.github.com&#x2F;boykush&#x2F;3bbc68b5d2580374c97d4336b87fb70f&#x2F;raw&#x2F;a838b8f3584b21bcbbe4dd53afca380fe18695a7&#x2F;boykush_icon.png" />
+        
+        <!-- Rubik font -->
+        <link href="https://fonts.cdnfonts.com/css/rubik" rel="stylesheet">
+        <!-- Noto Sans JP font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+        <!-- Style sheet -->
+        <link rel="stylesheet" href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;main.css">
+        
+        
+    </head>
+    <body>
+        <header>
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;">
+                <h1>Kush&#x27;s Wiki</h1>
+            </a>
+        </header>
+        <main>
+            
+    <div class="tag">
+        <h1 class="title">Observability</h1>
+    </div>
+    
+    <ul class="scrap-links">
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/important-components-for-kubernetes.html">
+                    
+                        <div class="header">
+                            <div class="title">Important Components for Kubernetes</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Observability
+OpenTelemetry CollectorをKubernetes上で構築するコンポーネント群の説明
+Prometeus Receiverの例ではDaemonSet(agent)またはDeployment(gateway)を用いた実装のサンプルコードが置かれている
+https:&#x2F;&#x2F;opentelemetry.io&#x2F;docs&#x2F;platforms&#x2F;kubernetes&#x2F;collector&#x2F;components&#x2F;
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/オブザーバビリティ・エンジニアリング.html">
+                    
+                        <div class="header">
+                            <div class="title">オブザーバビリティ・エンジニアリング</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;www.oreilly.co.jp&#x2F;books&#x2F;images&#x2F;picture_large978-4-8144-0012-6.jpeg" loading="lazy" />
+                        </div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/適応度関数.html">
+                    
+                        <div class="header">
+                            <div class="title">適応度関数</div>
+                        </div>
+                    
+                    
+                        <div class="summary">Fitness Function
+#API Architecture
+システムの品質特性を数量化可能な指標で評価する、システムの目標を一貫して保証するためにビルドパイプラインに組み込まれる
+それぞれの特性は以下のようにカテゴライズされる
+
+コード品質（Code Quality）
+レジリエンス（Resiliency）
+オブザーバビリティ（Observability）
+パフォーマンス（Performance）
+コンプライアンス（Compliance）
+セキュリティ（Security）
+運用操作性（Operability）
+
+
+
+Fitness function-driven development | Thoughtworks
+
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/クラウドネイティブで実現する-マイクロサービス開発・運用-実践ガイド.html">
+                    
+                        <div class="header">
+                            <div class="title">クラウドネイティブで実現する マイクロサービス開発・運用 実践ガイド</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;gihyo.jp&#x2F;assets&#x2F;images&#x2F;cover&#x2F;2023&#x2F;9784297137830.jpg" loading="lazy" />
+                        </div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/honeycomb.html">
+                    
+                        <div class="header">
+                            <div class="title">Honeycomb</div>
+                        </div>
+                    
+                    
+                        <div class="summary">Observabilityに関するエンドツーエンドのプロダクト
+Retrieverというオブザーバビリティに最適化された独自のデータストアを備えており、S3によって実装されている
+
+
+Honeycomb.io Documentation | Honeycomb
+
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/opentelemetry.html">
+                    
+                        <div class="header">
+                            <div class="title">OpenTelemetry</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;opentelemetry.io&#x2F;&#x2F;img&#x2F;logos&#x2F;opentelemetry-horizontal-color.svg" loading="lazy" />
+                        </div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/sre-サイトリライアビリティエンジニアリング.book.html">
+                    
+                        <div class="header">
+                            <div class="context">Book&#47;</div>
+                            <div class="title">SRE サイトリライアビリティエンジニアリング</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;www.oreilly.co.jp&#x2F;books&#x2F;images&#x2F;picture_large978-4-87311-791-1.jpeg" loading="lazy" />
+                        </div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/入門-監視.html">
+                    
+                        <div class="header">
+                            <div class="title">入門 監視</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;www.oreilly.co.jp&#x2F;books&#x2F;images&#x2F;picture_large978-4-87311-864-2.jpeg" loading="lazy" />
+                        </div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/datadog.html">
+                    
+                        <div class="header">
+                            <div class="title">Datadog</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;datadog-docs.imgix.net&#x2F;img&#x2F;dd_logo_n_70x75.png?ch=Width,DPR&amp;fit=max&amp;auto=format&amp;w=70&amp;h=75&amp;dpr=2" loading="lazy" />
+                        </div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/cilium.html">
+                    
+                        <div class="header">
+                            <div class="title">Cilium</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Network #Cloud Native #Observability #Security
+https:&#x2F;&#x2F;cilium.io&#x2F;
+eBPF技術を活用したクラウドネイティブなネットワーキングソフトウェア
+KubernetesのCNIとしてネットワークの接続、保護、監視を提供する
+ユースケースとして以下のような例がある
+L4 ロードバランシング
+https:&#x2F;&#x2F;cilium.io&#x2F;use-cases&#x2F;load-balancer&#x2F;
+kube-proxy
+https:&#x2F;&#x2F;cilium.io&#x2F;use-cases&#x2F;kube-proxy&#x2F;
+サービスメッシュ
+https:&#x2F;&#x2F;cilium.io&#x2F;use-cases&#x2F;service-mesh&#x2F;
+Gateway API
+https:&#x2F;&#x2F;cilium.io&#x2F;use-cases&#x2F;gateway-api&#x2F;
+Ingress
+https:&#x2F;&#x2F;cilium.io&#x2F;use-cases&#x2F;ingress&#x2F;
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/ログ.html">
+                    
+                        <div class="header">
+                            <div class="title">ログ</div>
+                        </div>
+                    
+                    
+                        <div class="summary">Observabilityにおけるテキストベースの記録
+Observability Whitepaperを参考にすると、ログにはいくつかのカテゴリがある
+
+Application Logs
+Security Log
+System Log
+Audit Log
+Infrastructure Log
+
+またログレベルとして以下の4パターンがある
+
+ERROR
+WARNING
+INFO
+DEBUG
+
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/テレメトリー.html">
+                    
+                        <div class="header">
+                            <div class="title">テレメトリー</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Observability
+ログ、分散トレース、メトリクスのようなシステムの状態に関するデータ
+Datadogのようなオブザーバビリティソリューションに送信される
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/opentelemetry-go.html">
+                    
+                        <div class="header">
+                            <div class="title">opentelemetry-go</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Observability #Programming
+OpenTelemetryのGo APIまたはSDK
+https:&#x2F;&#x2F;github.com&#x2F;open-telemetry&#x2F;opentelemetry-go
+https:&#x2F;&#x2F;opentelemetry.io&#x2F;ja&#x2F;docs&#x2F;languages&#x2F;go&#x2F;
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/サービスメッシュ.html">
+                    
+                        <div class="header">
+                            <div class="title">サービスメッシュ</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Network #Observability #Security #API Architecture
+マイクロサービスで行われるようなサービス間通信をルーティング、監視、保護する機能を提供する
+Kubernetesにおいてはクラスタ単位でサービスメッシュを構築する
+サービスメッシュはクラスタ内の全てのサービス間通信を制御するコントロールプレーンとコントロールプレーンで指定された作業が実行されるデータプレーン（サービス）の2つの基本要素を持つ。
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/監視saasの運用におけるobservability改善の歩み.html">
+                    
+                        <div class="header">
+                            <div class="title">監視SaaSの運用におけるObservability改善の歩み</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Observability
+
+キーワード
+
+Observability Primary Signals
+Unknown unknowns
+ログ&#x2F;メトリクス&#x2F;トレース
+OpenTelemetry
+オブザーバビリティ成熟度モデル
+
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/rum.html">
+                    
+                        <div class="header">
+                            <div class="title">RUM</div>
+                        </div>
+                    
+                    
+                        <div class="summary">Real User Monitoring
+#Observability
+個々のユーザーのアクティビティをリアルタイムで可視化するもの
+JavaScriptのようなクライアントサイドの技術を用いて、ブラウザやアプリケーションから直接データを収集する
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/grpc.html">
+                    
+                        <div class="header">
+                            <div class="title">gRPC</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;grpc.io&#x2F;img&#x2F;logos&#x2F;grpc-logo.png" loading="lazy" />
+                        </div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/observability-primary-signals.html">
+                    
+                        <div class="header">
+                            <div class="title">Observability Primary Signals</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;github.com&#x2F;cncf&#x2F;tag-observability&#x2F;raw&#x2F;main&#x2F;assets&#x2F;primary-signals.png" loading="lazy" />
+                        </div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/分散トレース.html">
+                    
+                        <div class="header">
+                            <div class="title">分散トレース</div>
+                        </div>
+                    
+                    
+                        <div class="summary">Observabilityにおいて分散トランザクションの各コンポーネントで何が発生したかを追跡する、単にトレースと呼ばれることもある
+各コンポーネントに対応するデータポイントはスパンと呼ばれ、分散トレースはスパンの集合を扱う
+
+
+Observability Whitepaper
+
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/合成監視.html">
+                    
+                        <div class="header">
+                            <div class="title">合成監視</div>
+                        </div>
+                    
+                    
+                        <div class="summary">Synthetic Monitoring
+#Observability
+レスポンス内容が予測可能なリクエストを事前に定義し、定期的にシステムに送信し応答を監視するもの
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/マスタリングapiアーキテクチャ.html">
+                    
+                        <div class="header">
+                            <div class="title">マスタリングAPIアーキテクチャ</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;www.oreilly.co.jp&#x2F;books&#x2F;images&#x2F;picture_large978-4-8144-0089-8.jpeg" loading="lazy" />
+                        </div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/unknown-unknowns.html">
+                    
+                        <div class="header">
+                            <div class="title">Unknown unknowns</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Observability
+自分は意識も理解もしていないこと
+未知のシステム故障への対応、が該当する
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/prometeus.html">
+                    
+                        <div class="header">
+                            <div class="title">Prometeus</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;prometheus.io&#x2F;assets&#x2F;prometheus_logo_grey.svg" loading="lazy" />
+                        </div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/infoq-cloud-and-devops-trends-report-2025.html">
+                    
+                        <div class="header">
+                            <div class="title">InfoQ Cloud and DevOps Trends Report - 2025</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;imgopt.infoq.com&#x2F;fit-in&#x2F;3000x4000&#x2F;filters:quality(85)&#x2F;filters:no_upscale()&#x2F;articles&#x2F;cloud-devops-trends-2025&#x2F;en&#x2F;resources&#x2F;1Infoq-cloud-devops-trends-2025-1760961887459.jpg" loading="lazy" />
+                        </div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/monitoring-and-observability.devops-capabilities.html">
+                    
+                        <div class="header">
+                            <div class="context">DevOps capabilities&#47;</div>
+                            <div class="title">Monitoring and observability</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Observability
+DevOps capabilitiesの1つ、Fast Feedbackに分類される
+
+
+DORA | Capabilities: Monitoring and observability
+
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/proactive-failure-notification.devops-capabilities.html">
+                    
+                        <div class="header">
+                            <div class="context">DevOps capabilities&#47;</div>
+                            <div class="title">Proactive failure notification</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Observability
+DevOps capabilitiesの1つ、Fast Feedbackに分類される
+
+https:&#x2F;&#x2F;dora.dev&#x2F;capabilities&#x2F;proactive-failure-notification&#x2F;
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/ocsf.html">
+                    
+                        <div class="header">
+                            <div class="title">OCSF</div>
+                        </div>
+                    
+                    
+                        <div class="summary">Open Cybersecurity Schema Framework
+#Security #Observability
+サイバーセキュリティイベントのログ記録とデータ正規化のためのオープン標準スキーマフレームワーク
+
+AWS、Splunk、IBMなどが2022年に設立、2024年11月にLinux Foundationへ参画
+ベンダー非依存のスキーマで異なるセキュリティツール間のデータ統合を簡素化
+カテゴリ、イベントクラス、データ型、属性辞書で構成
+
+https:&#x2F;&#x2F;ocsf.io&#x2F;
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/telemetory.istio.html">
+                    
+                        <div class="header">
+                            <div class="context">Istio&#47;</div>
+                            <div class="title">Telemetory</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Observability
+Kubernetes&#x2F;Istio環境のサービスメッシュ内において、テレメトリーが生成される方法を定義するCRD
+例としてOpenTelemetryのOpenTelemetry Collectorによるプロバイダを指定することができる
+https:&#x2F;&#x2F;istio.io&#x2F;latest&#x2F;docs&#x2F;reference&#x2F;config&#x2F;telemetry&#x2F;
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/otelsql.xsam.html">
+                    
+                        <div class="header">
+                            <div class="context">XSAM&#47;</div>
+                            <div class="title">otelsql</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Observability #Programming #Data Engineering
+Goのdatabase&#x2F;sqlパッケージにOpenTelemetry計装を追加するライブラリ
+
+トレースとメトリクスの両方をサポート
+PostgreSQL、MySQL、SQLiteなど、database&#x2F;sqlドライバを持つ任意のDBに対応
+
+https:&#x2F;&#x2F;github.com&#x2F;XSAM&#x2F;otelsql
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/beyond-the-twelve-factor-app.html">
+                    
+                        <div class="header">
+                            <div class="title">Beyond the Twelve-Factor App</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Software Design #Cloud Native
+The Twelve-Factor Appを現代のクラウドネイティブ環境向けに拡張した方法論。Kevin Hoffmanによって著され、オリジナルの12要因を15要因に拡張している。
+追加された3つの新要因
+2. API First - サービス設計において、実装前にAPIインターフェースを定義し契約駆動開発を促進 API Architecture
+14. Telemetry - メトリクス、ログ、トレースの収集を通じた包括的な監視機能 Observability
+15. Authentication and Authorization - 認証・認可をアプリケーション設計の第一級の関心事として組み込む Authentication Authorization
+既存要因の改訂
+Kubernetes ConfigMap&#x2F;Secretsなどコンテナ時代の設定管理や、Infrastructure as Code（IaC）による環境構築など、現代的なベストプラクティスを反映した注釈が追加されている。
+https:&#x2F;&#x2F;www.vmware.com&#x2F;docs&#x2F;ebook-beyond-the-12-factor-app
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/collector.opentelemetry.html">
+                    
+                        <div class="header">
+                            <div class="context">OpenTelemetry&#47;</div>
+                            <div class="title">Collector</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Observability
+OpenTelemetryにおいてDatadog, Jaeger, Prometeusのような各種バックエンドへのテレメトリー送信を集約し抽象化するような役割
+https:&#x2F;&#x2F;opentelemetry.io&#x2F;docs&#x2F;collector&#x2F;
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/opentelemetrycollector.opentelemetry.html">
+                    
+                        <div class="header">
+                            <div class="context">OpenTelemetry&#47;</div>
+                            <div class="title">OpenTelemetryCollector</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Observability #OpenTelemetry
+Kubernetes上にCollectorを構築するためのCRD&#x2F;Operator
+https:&#x2F;&#x2F;github.com&#x2F;open-telemetry&#x2F;opentelemetry-operator?tab=readme-ov-file
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/logs.datadog.html">
+                    
+                        <div class="header">
+                            <div class="context">Datadog&#47;</div>
+                            <div class="title">Logs</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Observability
+Datadog上でログを扱い、高機能な検索機能等を利用できる
+設定方法は以下
+ログの収集とインテグレーション
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/feature-flag-tracking.datadog.html">
+                    
+                        <div class="header">
+                            <div class="context">Datadog&#47;</div>
+                            <div class="title">Feature Flag Tracking</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Observability #Datadog
+RUMの機能の一つとして提供されるフィーチャーフラグ可視化ツール
+フーチャーフラグ単位のグルーピングを行うことで機能リリースを安全に、迅速なトラブルシューティングが可能になる
+Flagsmithのようないくつかのツールで統合が容易になっている
+https:&#x2F;&#x2F;docs.datadoghq.com&#x2F;real_user_monitoring&#x2F;feature_flag_tracking&#x2F;
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/rum.datadog.html">
+                    
+                        <div class="header">
+                            <div class="context">Datadog&#47;</div>
+                            <div class="title">RUM</div>
+                        </div>
+                    
+                    
+                        <div class="summary">Real User Monitoring
+#Observability
+Datadog上でRUMを提供する機能
+APMと紐づける（以下、詳細）ことでフロントエンドで収集したデータをバックエンドのトレースと相関づけて追跡できる
+Connect RUM and Traces
+RUM Explorerでは、ユーザーセッションを1レコードとした探索が可能
+
+https:&#x2F;&#x2F;docs.datadoghq.com&#x2F;ja&#x2F;real_user_monitoring&#x2F;
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/error-tracking.datadog.html">
+                    
+                        <div class="header">
+                            <div class="context">Datadog&#47;</div>
+                            <div class="title">Error Tracking</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Observability
+Datadog上でエラーを追跡・管理するモニタリング機能
+すべてのイシューにはステータスが設定され、トリアージと優先順位付けに利用される
+各ステータスの説明は以下
+
+FOR REVIEW: 新規または再発したイシューで、注意が必要なもの
+REVIEWED: トリアージ済みで修正が必要なイシュー
+EXCLUDED: トラッキングから除外されたイシュー（収集・課金対象外）
+IGNORED: 無視としてマークされたイシュー
+RESOLVED: 解決済みのイシュー
+
+https:&#x2F;&#x2F;docs.datadoghq.com&#x2F;error_tracking&#x2F;
+https:&#x2F;&#x2F;docs.datadoghq.com&#x2F;error_tracking&#x2F;issue_states&#x2F;
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/apm.datadog.html">
+                    
+                        <div class="header">
+                            <div class="context">Datadog&#47;</div>
+                            <div class="title">APM</div>
+                        </div>
+                    
+                    
+                        <div class="summary">Application Performance Monitoring
+#Observability
+Datadog上で分散トレースによってアプリケーションを詳細に可視化し、パフォーマンスボトルネックを特定するのに役立てる
+設定方法は以下
+アプリケーションインスツルメンテーション
+
+
+APM
+
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/database-monitoring.datadog.html">
+                    
+                        <div class="header">
+                            <div class="context">Datadog&#47;</div>
+                            <div class="title">Database Monitoring</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Observability #Data Engineering
+Datadog上でデータベースの詳細な可視性を提供する
+Explain Plansでは実行計画を容易に把握することができる
+導入にはAPMの有効化が必須でありでクエリを呼んでいるサービスの内訳を可視化できる
+
+
+データベース モニタリング
+
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/observability-whitepaper.html">
+                    
+                        <div class="header">
+                            <div class="title">Observability Whitepaper</div>
+                        </div>
+                    
+                    
+                        <div class="summary">CNCFによるObservabilityに関する文書
+https:&#x2F;&#x2F;github.com&#x2F;cncf&#x2F;tag-observability&#x2F;blob&#x2F;main&#x2F;whitepaper.md
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/計装.html">
+                    
+                        <div class="header">
+                            <div class="title">計装</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Observability
+テレメトリーをオブザーバビリティソリューションに送信するための実装のこと
+前提としてエージェントをシステムに組み込んだ上で、アプリケーションエンドポイントへの自動計装や手動スパン埋め込み等のカスタム計装を行う
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/datadog-agent.html">
+                    
+                        <div class="header">
+                            <div class="title">Datadog Agent</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Observability
+Datadogへホストのログを送信するソフトウェア。
+各ホストの環境別にいくつかのインストール手段が用意されている
+例としてKubernetesへのインストール方法は以下
+Kubernetes に Datadog Agent をインストールする
+
+https:&#x2F;&#x2F;docs.datadoghq.com&#x2F;ja&#x2F;agent&#x2F;?tab=Linux
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/オブザーバビリティ成熟度モデル.html">
+                    
+                        <div class="header">
+                            <div class="title">オブザーバビリティ成熟度モデル</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;aws-observability.github.io&#x2F;observability-best-practices&#x2F;assets&#x2F;images&#x2F;AWS-Observability-maturity-model-14ef23c6092f5654c034cc9e91ea2d1c.png" loading="lazy" />
+                        </div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/argo-rollouts.html">
+                    
+                        <div class="header">
+                            <div class="title">Argo Rollouts</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;argoproj.github.io&#x2F;static&#x2F;768d962efdd84a6021db7c7792f01b41&#x2F;rollouts-thumbnail.png" loading="lazy" />
+                        </div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/メトリクス.html">
+                    
+                        <div class="header">
+                            <div class="title">メトリクス</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Observability
+システムの状態を表すために収集された数値、例としてログを元に時間単位のHTTPリクエスト数をメトリクスとして収集する等
+ログやトレースとは異なり詳細なデータは抜けているため、システムで何が起きているかの調査のスタート地点（アラート）となることが多い
+
+
+Observability Whitepaper
+
+
+
+システム状態を表すために収集されたスカラー値であり、オプションでタグが付与され、数値をグループ化したり検索したりすることがある
+
+オブザーバビリティ・エンジニアリング | P55
+</div>
+                    
+                </a>
+            </li>
+        
+    </ul>
+
+
+        </main>
+        <footer>
+            Generated by <a href="https://github.com/boykush/scraps" target="_blank" rel="noopener noreferrer">Scraps</a>
+        </footer> 
+        <!-- Code syntax highlight -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script>
+        <!-- Code syntax highlight theme -->
+        <link href="https://unpkg.com/nord-highlightjs@0.2.0/dist/nord.css" rel="stylesheet" type="text/css" />
+        <!-- Mermaid -->
+        <script type="module">
+            import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11.12.2/+esm'
+        </script>
+        
+         
+    </body>
+</html>
