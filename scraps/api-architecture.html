@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <!-- Page title -->
+        
+            <title>Kush&#x27;s Wiki</title>
+            <meta property="og:title" content="Kush&#x27;s Wiki" />
+            <meta name="twitter:title" content="Kush&#x27;s Wiki" />
+        
+        <!-- Page description -->
+        
+            <meta name="description" content="boykushのナレッジ置き場" />
+            <meta property="og:description" content="boykushのナレッジ置き場" />
+            <meta name="twitter:description" content="boykushのナレッジ置き場" />
+        
+        <!-- Page favicon -->
+        
+            <link rel="icon" type="image/png" href="https:&#x2F;&#x2F;gist.github.com&#x2F;boykush&#x2F;3bbc68b5d2580374c97d4336b87fb70f&#x2F;raw&#x2F;a838b8f3584b21bcbbe4dd53afca380fe18695a7&#x2F;boykush_icon.png" />
+        
+        <!-- Rubik font -->
+        <link href="https://fonts.cdnfonts.com/css/rubik" rel="stylesheet">
+        <!-- Noto Sans JP font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+        <!-- Style sheet -->
+        <link rel="stylesheet" href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;main.css">
+        
+        
+    </head>
+    <body>
+        <header>
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;">
+                <h1>Kush&#x27;s Wiki</h1>
+            </a>
+        </header>
+        <main>
+            
+    <div class="tag">
+        <h1 class="title">API Architecture</h1>
+    </div>
+    
+    <ul class="scrap-links">
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/レートリミット.html">
+                    
+                        <div class="header">
+                            <div class="title">レートリミット</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Security #API Architecture
+以下のような目的でAPIの使用回数を制限する、制限を超過した時はHTTPの場合一般に429エラーを返す処理
+
+STRIDEにあるようなDenial of Service（サービス拒否）からアプリケーションを保護する
+カスケード障害の可能性を制限する
+リソースの使用量を測定し従量課金に利用できる
+
+レートリミットの実装アルゴリズムには以下のようなものがある
+
+固定ウインドウ（Fixed window）
+固定期間内の制限
+
+
+スライディングウインドウ（Sliding window）
+直近の期間内の制限
+
+
+トークンバケット方式（Token bucket）
+総リクエスト数（トークンのバケツ）を定義しリクエストごとにトークンが利用される。バケツは定期的に充填される
+
+
+リーキーバケット方式（Leaky bucket）
+リクエストが処理される速度は固定で、バケツから溢れ出るリクエストを漏れ（リーキー）として扱う
+
+
+
+APIゲートウェイを利用している場合、ゲートウェイに配置するとよい
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/gateway-api.kubernetes.html">
+                    
+                        <div class="header">
+                            <div class="context">Kubernetes&#47;</div>
+                            <div class="title">Gateway API</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#API Architecture #Network #Kubernetes #Cloud Native
+L4&#x2F;L7を扱うKubernetes公式のAPIゲートウェイ
+
+GatewayClass
+Gateway
+HTTPRoute
+
+の3つを定義し実装する
+GatewayClassはGKEのようなクラウドサービスが用意するケースがあり、外部or内部を選択できる
+
+
+Introduction - Kubernetes Gateway API
+
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/pact.html">
+                    
+                        <div class="header">
+                            <div class="title">Pact</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;pact.io&#x2F;assets&#x2F;img&#x2F;logo-black.png" loading="lazy" />
+                        </div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/リバースプロキシ.html">
+                    
+                        <div class="header">
+                            <div class="title">リバースプロキシ</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#API Architecture #Network
+外部トラフィックに対して単一のサーバーへルーティングを行い、サーバーの保護や負荷分散を行う役割
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/適応度関数.html">
+                    
+                        <div class="header">
+                            <div class="title">適応度関数</div>
+                        </div>
+                    
+                    
+                        <div class="summary">Fitness Function
+#API Architecture
+システムの品質特性を数量化可能な指標で評価する、システムの目標を一貫して保証するためにビルドパイプラインに組み込まれる
+それぞれの特性は以下のようにカテゴライズされる
+
+コード品質（Code Quality）
+レジリエンス（Resiliency）
+オブザーバビリティ（Observability）
+パフォーマンス（Performance）
+コンプライアンス（Compliance）
+セキュリティ（Security）
+運用操作性（Operability）
+
+
+
+Fitness function-driven development | Thoughtworks
+
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/マイクロサービス.html">
+                    
+                        <div class="header">
+                            <div class="title">マイクロサービス</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Software Design #API Architecture
+DDDにおける境界づけられたコンテキストに対応する形でサービスを用意し、サービス間通信を行う設計パターン
+マイクロという名前の通り、サービスインターフェースが小さく疎結合になっていて各サービスの責務が凝集されていることが望ましい
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/rest.html">
+                    
+                        <div class="header">
+                            <div class="title">REST</div>
+                        </div>
+                    
+                    
+                        <div class="summary">Representational State Transfer
+#API Architecture
+HTTPを基礎とするアーキテクチャ上の制約、定義
+Architectural Styles and the Design of Network-based Software ArchitecturesにRESTfulとみなされるための定義が書かれている
+第一にサービス提供者と利用者のやり取りがモデル化されていること、が定義となる
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/istio.html">
+                    
+                        <div class="header">
+                            <div class="title">Istio</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;repository-images.githubusercontent.com&#x2F;74175805&#x2F;ed825500-65ad-11e9-821c-f6148eadb7c8" loading="lazy" />
+                        </div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/ロードバランシング.html">
+                    
+                        <div class="header">
+                            <div class="title">ロードバランシング</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#API Architecture #Network
+外部からの大量トラフィックを捌けるよう用意された重複データを持つ多数のリソースサーバー群が均等に使用されるよう制御する役割
+アプリケーションの可用性を高め、リバースプロキシと同様にサーバーを保護するセキュリティ機能が組み込まる
+
+
+ロードバランシングとは? - ロードバランシングアルゴリズムの説明 - AWS
+
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/grpc-gateway.html">
+                    
+                        <div class="header">
+                            <div class="title">gRPC-Gateway</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Network #API Architecture #REST #Programming
+gRPCにおいて、gRPC serviceをRESTful APIとして提供するためのGoライブラリ。HTTP+JSONのインターフェースでリバースプロキシサーバーを生成する
+HTTP仕様はProtocol Buffers上において google.api.http のような HttpRule によって記述する
+同リポジトリにはprotoc-gen-openapiv2プラグインも含まれておりOpen API仕様を出力できる
+https:&#x2F;&#x2F;grpc-ecosystem.github.io&#x2F;grpc-gateway&#x2F;
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/apiゲートウェイ.html">
+                    
+                        <div class="header">
+                            <div class="title">APIゲートウェイ</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#API Architecture #Network
+外部トラフィックに対してリバースプロキシ・ロードバランシングが持つようなネットワークのルーティング・セキュリティと可用性の向上に加え、以下のような機能横断的な要件を扱う役割
+
+認証
+認可
+レートリミット
+リトライ
+サーキットブレーカー etc.
+
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/サービスメッシュ.html">
+                    
+                        <div class="header">
+                            <div class="title">サービスメッシュ</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Network #Observability #Security #API Architecture
+マイクロサービスで行われるようなサービス間通信をルーティング、監視、保護する機能を提供する
+Kubernetesにおいてはクラスタ単位でサービスメッシュを構築する
+サービスメッシュはクラスタ内の全てのサービス間通信を制御するコントロールプレーンとコントロールプレーンで指定された作業が実行されるデータプレーン（サービス）の2つの基本要素を持つ。
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/grpc.html">
+                    
+                        <div class="header">
+                            <div class="title">gRPC</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;grpc.io&#x2F;img&#x2F;logos&#x2F;grpc-logo.png" loading="lazy" />
+                        </div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/open-api.html">
+                    
+                        <div class="header">
+                            <div class="title">Open API</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;www.openapis.org&#x2F;wp-content&#x2F;uploads&#x2F;sites&#x2F;3&#x2F;2018&#x2F;02&#x2F;OpenAPI_Logo_Pantone-1.png" loading="lazy" />
+                        </div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/elastic-load-balancing.html">
+                    
+                        <div class="header">
+                            <div class="title">Elastic Load Balancing</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Cloud Native #API Architecture
+AWSが提供するロードバランシングコンポーネント
+リソースごとに以下のような種別がある
+
+Application Load Balancer
+Network Load Balancer
+Gateway Load Balancer
+
+
+What is Elastic Load Balancing? - Elastic Load Balancing
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/oauth2.html">
+                    
+                        <div class="header">
+                            <div class="title">OAuth2</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#API Architecture #Authorization
+RFC6749によって定義された認可フレームワーク
+主に以下の定義を利用する
+リソースオーナー（Resource Owner）
+保護されたリソースへのアクセス許可を行うエンドユーザー
+リソースサーバー（Resource Server）
+保護されたリソースを所有するサーバー、アクセストークンを受け取り検証する
+クライアント（Client）
+リソースオーナーによる認可の委譲先、アクセストークンを使ってリソースサーバーへリクエスト可能
+認可サーバー（Authorization Server）
+リソースオーナーの認証・アクセス許可時に認可グランドを返却したのち、クライアントにアクセストークンを発行する
+初回アクセストークン利用までのプロトコルの流れは以下
+Protocol Flow
+リソースオーナーによるアクセス許可時に認可サーバーが返す認可グランドは、認可コードが利用されることが多い
+
+
+RFC 6749 - The OAuth 2.0 Authorization Framework
+
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/apitest.steinfletcher.html">
+                    
+                        <div class="header">
+                            <div class="context">steinfletcher&#47;</div>
+                            <div class="title">apitest</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Testing #API Architecture
+Go言語のREST APIテスティングライブラリ、HTTPリクエストを容易に構築する
+https:&#x2F;&#x2F;github.com&#x2F;steinfletcher&#x2F;apitest
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/マスタリングapiアーキテクチャ.html">
+                    
+                        <div class="header">
+                            <div class="title">マスタリングAPIアーキテクチャ</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;www.oreilly.co.jp&#x2F;books&#x2F;images&#x2F;picture_large978-4-8144-0089-8.jpeg" loading="lazy" />
+                        </div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/schemathesis.html">
+                    
+                        <div class="header">
+                            <div class="title">Schemathesis</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;schemathesis.io&#x2F;images&#x2F;6e2d7d61d234c1604521.svg" loading="lazy" />
+                        </div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/oauth徹底入門.html">
+                    
+                        <div class="header">
+                            <div class="title">OAuth徹底入門</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;www.seshop.com&#x2F;static&#x2F;images&#x2F;product&#x2F;22242&#x2F;L.png" loading="lazy" />
+                        </div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/rpc.html">
+                    
+                        <div class="header">
+                            <div class="title">RPC</div>
+                        </div>
+                    
+                    
+                        <div class="summary">Remote Procedure Call
+#Network #API Architecture
+リモート上のリクエスト発行をプログラミング言語の関数呼び出しのように利用できるよう抽象化したもの。
+ただし実際に関数呼び出しと同等に利用できるわけではなく、ネットワーク上の様々な不測の事態を考慮する必要がある。
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/deployment-automation.devops-capabilities.html">
+                    
+                        <div class="header">
+                            <div class="context">DevOps capabilities&#47;</div>
+                            <div class="title">Deployment automation</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#API Architecture
+DevOps capabilitiesの1つ、Fast Flowに分類される
+
+
+DORA | Capabilities: Deployment Automation
+
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/hurl.html">
+                    
+                        <div class="header">
+                            <div class="title">Hurl</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;hurl.dev&#x2F;assets&#x2F;img&#x2F;logo-dark.svg" loading="lazy" />
+                        </div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/subset.istio.html">
+                    
+                        <div class="header">
+                            <div class="context">Istio&#47;</div>
+                            <div class="title">Subset</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#API Architecture
+Istioにおいて、Labelを用いてPodのまとまりを定義する方法
+https:&#x2F;&#x2F;istio.io&#x2F;latest&#x2F;docs&#x2F;reference&#x2F;config&#x2F;networking&#x2F;destination-rule&#x2F;#Subset
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/virtualservice.istio.html">
+                    
+                        <div class="header">
+                            <div class="context">Istio&#47;</div>
+                            <div class="title">VirtualService</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#API Architecture
+Istioにおいて、トラフィックルーティングルールを定義するカスタムリソース（CRD）。
+DestinationRuleと組み合わせてSubset単位でルールを設定可能
+以下のようなことが実現できる
+
+Subsetの切り替えによるブルーグリーン戦略
+weightの設定によるカナリアリリース
+timeoutの設定によるタイムアウト
+
+https:&#x2F;&#x2F;istio.io&#x2F;latest&#x2F;docs&#x2F;reference&#x2F;config&#x2F;networking&#x2F;virtual-service&#x2F;
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/destinationrule.istio.html">
+                    
+                        <div class="header">
+                            <div class="context">Istio&#47;</div>
+                            <div class="title">DestinationRule</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#API Architecture
+Istioにおいて、トラフィックに対するポリシーを定義するカスタムリソース（CRD）
+以下のようなことが実現できる
+
+Subsetの定義
+サーキットブレーカーの設定
+
+https:&#x2F;&#x2F;istio.io&#x2F;latest&#x2F;docs&#x2F;reference&#x2F;config&#x2F;networking&#x2F;destination-rule&#x2F;
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/gateway.istio.html">
+                    
+                        <div class="header">
+                            <div class="context">Istio&#47;</div>
+                            <div class="title">Gateway</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#API Architecture
+Istioにおいて、トラフィックの入り口または出口となるカスタムリソース（CRD）
+入り口として受けたトラフィックはVirtualServiceに流す
+https:&#x2F;&#x2F;istio.io&#x2F;latest&#x2F;docs&#x2F;reference&#x2F;config&#x2F;networking&#x2F;gateway&#x2F;
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/リチャードソン成熟度モデル.html">
+                    
+                        <div class="header">
+                            <div class="title">リチャードソン成熟度モデル</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#API Architecture
+Leonard RechardsonによるREST APIの観点からAPI実装の成熟度をレベルに分類したもの
+各レベルのタイトルは以下
+
+レベル0 HTTP&#x2F;RPC
+レベル1 リソース
+レベル2 動詞（メソッド）
+レベル3 ハイパーメディアコントロール
+
+QCon 2008での発表は以下
+Justice Will Take Us Millions Of Intricate Moves
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/graphql.html">
+                    
+                        <div class="header">
+                            <div class="title">GraphQL</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;graphql.org&#x2F;_next&#x2F;static&#x2F;media&#x2F;logo-wordmark.4eec1155.svg" loading="lazy" />
+                        </div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/beyond-the-twelve-factor-app.html">
+                    
+                        <div class="header">
+                            <div class="title">Beyond the Twelve-Factor App</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Software Design #Cloud Native
+The Twelve-Factor Appを現代のクラウドネイティブ環境向けに拡張した方法論。Kevin Hoffmanによって著され、オリジナルの12要因を15要因に拡張している。
+追加された3つの新要因
+2. API First - サービス設計において、実装前にAPIインターフェースを定義し契約駆動開発を促進 API Architecture
+14. Telemetry - メトリクス、ログ、トレースの収集を通じた包括的な監視機能 Observability
+15. Authentication and Authorization - 認証・認可をアプリケーション設計の第一級の関心事として組み込む Authentication Authorization
+既存要因の改訂
+Kubernetes ConfigMap&#x2F;Secretsなどコンテナ時代の設定管理や、Infrastructure as Code（IaC）による環境構築など、現代的なベストプラクティスを反映した注釈が追加されている。
+https:&#x2F;&#x2F;www.vmware.com&#x2F;docs&#x2F;ebook-beyond-the-12-factor-app
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/ambassador-edge-stack.html">
+                    
+                        <div class="header">
+                            <div class="title">Ambassador Edge Stack</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;avatars.githubusercontent.com&#x2F;u&#x2F;9270257?s=200&amp;v=4" loading="lazy" />
+                        </div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/swagger.html">
+                    
+                        <div class="header">
+                            <div class="title">Swagger</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;static1.smartbear.co&#x2F;swagger&#x2F;media&#x2F;assets&#x2F;images&#x2F;swagger_logo.svg" loading="lazy" />
+                        </div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/runn.k1low.html">
+                    
+                        <div class="header">
+                            <div class="context">k1LoW&#47;</div>
+                            <div class="title">runn</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Testing #API Architecture
+Go言語のAPI Testingライブラリ・ツール
+HTTP request, gRPC requestのようないくつかの実行環境に対応し、runnbookと呼ばれる独自のシナリオを記述しテスト実行する
+Open APIと連携が可能で、静的なスキーマ検証がされた上でのシナリオ記述が可能
+https:&#x2F;&#x2F;github.com&#x2F;k1LoW&#x2F;runn
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/protocol-buffers.html">
+                    
+                        <div class="header">
+                            <div class="title">Protocol Buffers</div>
+                        </div>
+                    
+                    
+                        <div class="summary">Protobuf
+#API Architecture #Programming
+Googleによって開発されたインターフェース定義によるバイナリエンコーディングライブラリ。インターフェース定義言語に分類される
+フィールド名のエイリアスとして扱うフィールドタグ（数値）によってバイトを節約している。
+フィールドタグによる互換性に関する仕様の要点は以下。
+
+フィールドの追加
+未使用のタグ番号を割り当てることで前方互換あり
+必須でなければ後方互換あり
+
+
+フィールドの変更
+フィールド名の変更は前方・後方互換あり
+
+
+フィールドの削除
+追加時の前方・後方と逆
+
+
+
+またProtocol Buffersはフィールド制約である optional と repeated 間の互換性にも対応している。これはバイナリ上でフィールド情報を単純に複数回並べているため。
+
+
+Protocol Buffers Documentation
+
+</div>
+                    
+                </a>
+            </li>
+        
+    </ul>
+
+
+        </main>
+        <footer>
+            Generated by <a href="https://github.com/boykush/scraps" target="_blank" rel="noopener noreferrer">Scraps</a>
+        </footer> 
+        <!-- Code syntax highlight -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script>
+        <!-- Code syntax highlight theme -->
+        <link href="https://unpkg.com/nord-highlightjs@0.2.0/dist/nord.css" rel="stylesheet" type="text/css" />
+        <!-- Mermaid -->
+        <script type="module">
+            import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11.12.2/+esm'
+        </script>
+        
+         
+    </body>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <!-- Page title -->
+        
+            
+            <title>Argo CD - Kush&#x27;s Wiki</title>
+            <meta property="og:title" content="Argo CD - Kush&#x27;s Wiki" />
+            <meta name="twitter:title" content="Argo CD - Kush&#x27;s Wiki" />
+        
+        <!-- Page description -->
+        
+            <meta name="description" content="boykushのナレッジ置き場" />
+            <meta property="og:description" content="boykushのナレッジ置き場" />
+            <meta name="twitter:description" content="boykushのナレッジ置き場" />
+        
+        <!-- Page favicon -->
+        
+            <link rel="icon" type="image/png" href="https:&#x2F;&#x2F;gist.github.com&#x2F;boykush&#x2F;3bbc68b5d2580374c97d4336b87fb70f&#x2F;raw&#x2F;a838b8f3584b21bcbbe4dd53afca380fe18695a7&#x2F;boykush_icon.png" />
+        
+        <!-- Rubik font -->
+        <link href="https://fonts.cdnfonts.com/css/rubik" rel="stylesheet">
+        <!-- Noto Sans JP font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+        <!-- Style sheet -->
+        <link rel="stylesheet" href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;main.css">
+        
+<meta property="og:url" content="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/argo-cd.html" />
+
+    <meta property="og:image" content="https:&#x2F;&#x2F;argoproj.github.io&#x2F;static&#x2F;7be772ca35570178d9cd85ad8b4696ff&#x2F;gitops-cd-thumbnail.png" />
+    <meta name="twitter:image" content="https:&#x2F;&#x2F;argoproj.github.io&#x2F;static&#x2F;7be772ca35570178d9cd85ad8b4696ff&#x2F;gitops-cd-thumbnail.png" />
+
+
+    </head>
+    <body>
+        <header>
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;">
+                <h1>Kush&#x27;s Wiki</h1>
+            </a>
+        </header>
+        <main>
+            
+    <div class="scrap">
+        
+        <h1 class="title">Argo CD</h1>
+        
+            <p class="commited-date">
+                commited date: 2025-11-17
+            </p>
+        
+        <div class="content">
+            <p>#<a href="https://boykush.github.io/wiki/scraps/cloud-native.html">Cloud Native</a></p>
+<p><img src="https://argoproj.github.io/static/7be772ca35570178d9cd85ad8b4696ff/gitops-cd-thumbnail.png" alt="" />Argo CD logo</p>
+<p><a href="https://boykush.github.io/wiki/scraps/argo.html">Argo</a>の<a href="https://boykush.github.io/wiki/scraps/continuous-delivery.html">Continuous Delivery</a>ツール</p>
+<p><a href="https://boykush.github.io/wiki/scraps/kubernetes.html">Kubernetes</a> APIによって実装されたGUIを提供する</p>
+<p>
+<div class="ogp-card" data-url="https:&#x2F;&#x2F;argo-cd.readthedocs.io&#x2F;en&#x2F;stable&#x2F;" data-host="argo-cd.readthedocs.io">
+    <a class="ogp-card-link" href="https:&#x2F;&#x2F;argo-cd.readthedocs.io&#x2F;en&#x2F;stable&#x2F;" target="_blank" rel="noopener noreferrer">
+        <img class="ogp-image" src="" alt="OGP Image" />
+        <div class="ogp-content">
+            <div class="ogp-title">Loading...</div>
+            <div class="ogp-description">Fetching description...</div>
+        </div>
+    </a>
+</div>
+</p>
+
+        </div>
+    </div>
+    
+    <ul class="scrap-links">
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/クラウドネイティブで実現する-マイクロサービス開発・運用-実践ガイド.html">
+                    
+                        <div class="header">
+                            <div class="title">クラウドネイティブで実現する マイクロサービス開発・運用 実践ガイド</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;gihyo.jp&#x2F;assets&#x2F;images&#x2F;cover&#x2F;2023&#x2F;9784297137830.jpg" loading="lazy" />
+                        </div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/resource-hooks.argo-cd.html">
+                    
+                        <div class="header">
+                            <div class="context">Argo CD&#47;</div>
+                            <div class="title">Resource Hooks</div>
+                        </div>
+                    
+                    
+                        <div class="summary">Argo CD同期操作の各段階でカスタムスクリプトを実行できる機能
+各段階の種別は以下
+
+PreSync
+Sync
+PostSync
+SyncFail
+PostDelete
+
+JobやArgo Workflowsを組み合わせることが多い。
+ユースケース例として、アプリケーションリリース前にDBマイグレーションが挙げられる
+https:&#x2F;&#x2F;argo-cd.readthedocs.io&#x2F;en&#x2F;release-2.14&#x2F;user-guide&#x2F;resource_hooks&#x2F;
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/atlasとargocdでdbマイグレーションの仕組みを構築してみた.html">
+                    
+                        <div class="header">
+                            <div class="title">AtlasとArgoCDでDBマイグレーションの仕組みを構築してみた</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Blog #Data Engineering
+AtlasをベースとしてマイグレーションDockerイメージを、GitHub Actionsでビルド＆パブリッシュ、Kubernetes Job上のArgo CDでのマイグレーションリリースまでを自動化する記事
+https:&#x2F;&#x2F;tech-blog.rakus.co.jp&#x2F;entry&#x2F;20250526&#x2F;dbmigration
+</div>
+                    
+                </a>
+            </li>
+        
+    </ul>
+
+
+        </main>
+        <footer>
+            Generated by <a href="https://github.com/boykush/scraps" target="_blank" rel="noopener noreferrer">Scraps</a>
+        </footer> 
+        <!-- Code syntax highlight -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script>
+        <!-- Code syntax highlight theme -->
+        <link href="https://unpkg.com/nord-highlightjs@0.2.0/dist/nord.css" rel="stylesheet" type="text/css" />
+        <!-- Mermaid -->
+        <script type="module">
+            import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11.12.2/+esm'
+        </script>
+        
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const ogpCards = document.querySelectorAll('.ogp-card');
+
+    ogpCards.forEach(async (card) => {
+      const url = card.dataset.url;
+
+      try {
+        const proxyUrl = 'https://corsproxy.io/?url=';
+        const response = await fetch(proxyUrl + url);
+        const html = await response.text();
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, 'text/html');
+
+        const title = doc.querySelector('meta[property="og:title"]')?.content ||
+          doc.querySelector('title')?.textContent ||
+          'No title';
+        card.querySelector('.ogp-title').textContent = title;
+
+        const description = doc.querySelector('meta[property="og:description"]')?.content ||
+          doc.querySelector('meta[name="description"]')?.content ||
+          'No description';
+        card.querySelector('.ogp-description').textContent = description;
+
+        const image = doc.querySelector('meta[property="og:image"]')?.content;
+        if (image) {
+          const imageUrl = image.startsWith('/')
+            ? `https://${card.dataset.host}/${image}`
+            : image;
+          card.querySelector('.ogp-image').src = imageUrl;
+        } else {
+          card.querySelector('.ogp-image').remove();
+        }
+      } catch (error) {
+        console.error('Failed to fetch OGP data:', error);
+      }
+    });
+  });
+</script>
+ 
+    </body>
+</html>

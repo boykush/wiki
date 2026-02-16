@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <!-- Page title -->
+        
+            
+            <title>HTTP - Kush&#x27;s Wiki</title>
+            <meta property="og:title" content="HTTP - Kush&#x27;s Wiki" />
+            <meta name="twitter:title" content="HTTP - Kush&#x27;s Wiki" />
+        
+        <!-- Page description -->
+        
+            <meta name="description" content="boykushのナレッジ置き場" />
+            <meta property="og:description" content="boykushのナレッジ置き場" />
+            <meta name="twitter:description" content="boykushのナレッジ置き場" />
+        
+        <!-- Page favicon -->
+        
+            <link rel="icon" type="image/png" href="https:&#x2F;&#x2F;gist.github.com&#x2F;boykush&#x2F;3bbc68b5d2580374c97d4336b87fb70f&#x2F;raw&#x2F;a838b8f3584b21bcbbe4dd53afca380fe18695a7&#x2F;boykush_icon.png" />
+        
+        <!-- Rubik font -->
+        <link href="https://fonts.cdnfonts.com/css/rubik" rel="stylesheet">
+        <!-- Noto Sans JP font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+        <!-- Style sheet -->
+        <link rel="stylesheet" href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;main.css">
+        
+<meta property="og:url" content="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/http.html" />
+
+
+    </head>
+    <body>
+        <header>
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;">
+                <h1>Kush&#x27;s Wiki</h1>
+            </a>
+        </header>
+        <main>
+            
+    <div class="scrap">
+        
+        <h1 class="title">HTTP</h1>
+        
+            <p class="commited-date">
+                commited date: 2025-11-17
+            </p>
+        
+        <div class="content">
+            <h2>Hypertext Transfer Protocol</h2>
+<p>#<a href="https://boykush.github.io/wiki/scraps/network.html">Network</a></p>
+
+        </div>
+    </div>
+    
+    <ul class="scrap-links">
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/レートリミット.html">
+                    
+                        <div class="header">
+                            <div class="title">レートリミット</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Security #API Architecture
+以下のような目的でAPIの使用回数を制限する、制限を超過した時はHTTPの場合一般に429エラーを返す処理
+
+STRIDEにあるようなDenial of Service（サービス拒否）からアプリケーションを保護する
+カスケード障害の可能性を制限する
+リソースの使用量を測定し従量課金に利用できる
+
+レートリミットの実装アルゴリズムには以下のようなものがある
+
+固定ウインドウ（Fixed window）
+固定期間内の制限
+
+
+スライディングウインドウ（Sliding window）
+直近の期間内の制限
+
+
+トークンバケット方式（Token bucket）
+総リクエスト数（トークンのバケツ）を定義しリクエストごとにトークンが利用される。バケツは定期的に充填される
+
+
+リーキーバケット方式（Leaky bucket）
+リクエストが処理される速度は固定で、バケツから溢れ出るリクエストを漏れ（リーキー）として扱う
+
+
+
+APIゲートウェイを利用している場合、ゲートウェイに配置するとよい
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/probe.kubernetes.html">
+                    
+                        <div class="header">
+                            <div class="context">Kubernetes&#47;</div>
+                            <div class="title">Probe</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Continuous Delivery
+#Kubernetes
+Pod上で定期的に実行されるコンテナの診断、ヘルスチェック
+チェックの方法として以下の4つがある
+
+gRPC
+HTTP
+TCP Socket
+Exec
+任意のコマンドを実行し、成功の返り値0を期待する
+
+
+
+Probeには戦略を示すようないくつかの種類が存在する
+
+
+Podのライフサイクル | Kubernetes
+
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/オブザーバビリティ・エンジニアリング.html">
+                    
+                        <div class="header">
+                            <div class="title">オブザーバビリティ・エンジニアリング</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;www.oreilly.co.jp&#x2F;books&#x2F;images&#x2F;picture_large978-4-8144-0012-6.jpeg" loading="lazy" />
+                        </div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/envoy.html">
+                    
+                        <div class="header">
+                            <div class="title">Envoy</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;www.envoyproxy.io&#x2F;docs&#x2F;envoy&#x2F;latest&#x2F;_static&#x2F;envoy-logo.png" loading="lazy" />
+                        </div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/cookie.html">
+                    
+                        <div class="header">
+                            <div class="title">Cookie</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Security #Network
+HTTP通信において、セッション管理にいくつかのセキュリティ機能を提供する
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/httpie.html">
+                    
+                        <div class="header">
+                            <div class="title">httpie</div>
+                        </div>
+                    
+                    
+                        <div class="summary">ヒューマンフレンドリーなHTTP Client
+
+
+Main features - HTTPie 3.2.4 (latest) docs
+
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/rest.html">
+                    
+                        <div class="header">
+                            <div class="title">REST</div>
+                        </div>
+                    
+                    
+                        <div class="summary">Representational State Transfer
+#API Architecture
+HTTPを基礎とするアーキテクチャ上の制約、定義
+Architectural Styles and the Design of Network-based Software ArchitecturesにRESTfulとみなされるための定義が書かれている
+第一にサービス提供者と利用者のやり取りがモデル化されていること、が定義となる
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/x-frame-options.html">
+                    
+                        <div class="header">
+                            <div class="title">X-Frame-Options</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Security #Network
+クリックジャッキング攻撃を防ぐためのHTTPレスポンスヘッダー
+ページが&amp;lt;frame&amp;gt;、&amp;lt;iframe&amp;gt;、&amp;lt;embed&amp;gt;、&amp;lt;object&amp;gt;内で表示されることを制御する
+設定値は以下の3つ
+
+DENY: すべてのフレーム表示を禁止
+SAMEORIGIN: 同一オリジンのみフレーム表示を許可
+ALLOW-FROM URI: 特定のURIからのフレーム表示を許可（非推奨）
+
+現在はCSPのframe-ancestorsディレクティブの使用が推奨されている
+https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;HTTP&#x2F;Reference&#x2F;Headers&#x2F;X-Frame-Options
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/pekko-http.html">
+                    
+                        <div class="header">
+                            <div class="title">Pekko HTTP</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Programming #Network
+PekkoのストリーミングファーストHTTPサーバー・クライアントモジュール。Java&#x2F;ScalaでHTTPベースのサービス構築・消費のための汎用ツールキット
+https:&#x2F;&#x2F;pekko.apache.org&#x2F;docs&#x2F;pekko-http&#x2F;current&#x2F;
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/grpc-gateway.html">
+                    
+                        <div class="header">
+                            <div class="title">gRPC-Gateway</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Network #API Architecture #REST #Programming
+gRPCにおいて、gRPC serviceをRESTful APIとして提供するためのGoライブラリ。HTTP+JSONのインターフェースでリバースプロキシサーバーを生成する
+HTTP仕様はProtocol Buffers上において google.api.http のような HttpRule によって記述する
+同リポジトリにはprotoc-gen-openapiv2プラグインも含まれておりOpen API仕様を出力できる
+https:&#x2F;&#x2F;grpc-ecosystem.github.io&#x2F;grpc-gateway&#x2F;
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/session-management.owasp-cheat-sheet-series.html">
+                    
+                        <div class="header">
+                            <div class="context">OWASP Cheat Sheet Series&#47;</div>
+                            <div class="title">Session Management</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Security #Authentication #OWASP
+
+HTTP
+Cookie
+
+https:&#x2F;&#x2F;cheatsheetseries.owasp.org&#x2F;cheatsheets&#x2F;Session_Management_Cheat_Sheet.html
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/セキュアなソフトウェアの設計と開発.html">
+                    
+                        <div class="header">
+                            <div class="title">セキュアなソフトウェアの設計と開発</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;www.shuwasystem.co.jp&#x2F;images&#x2F;book&#x2F;632135.jpg" loading="lazy" />
+                        </div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/grpc.html">
+                    
+                        <div class="header">
+                            <div class="title">gRPC</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;grpc.io&#x2F;img&#x2F;logos&#x2F;grpc-logo.png" loading="lazy" />
+                        </div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/open-api.html">
+                    
+                        <div class="header">
+                            <div class="title">Open API</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;www.openapis.org&#x2F;wp-content&#x2F;uploads&#x2F;sites&#x2F;3&#x2F;2018&#x2F;02&#x2F;OpenAPI_Logo_Pantone-1.png" loading="lazy" />
+                        </div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/basic認証.html">
+                    
+                        <div class="header">
+                            <div class="title">Basic認証</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Authentication
+HTTPプロトコルにおける認証方式
+ユーザー名とパスワードをコロンで連結した文字列をBase64エンコードした結果を、Authorizationヘッダーに付与することでリクエストを行う
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/apitest.steinfletcher.html">
+                    
+                        <div class="header">
+                            <div class="context">steinfletcher&#47;</div>
+                            <div class="title">apitest</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Testing #API Architecture
+Go言語のREST APIテスティングライブラリ、HTTPリクエストを容易に構築する
+https:&#x2F;&#x2F;github.com&#x2F;steinfletcher&#x2F;apitest
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/tcp-colon-ip技術入門.html">
+                    
+                        <div class="header">
+                            <div class="title">TCP:IP技術入門</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;gihyo.jp&#x2F;assets&#x2F;images&#x2F;cover&#x2F;2024&#x2F;thumb&#x2F;TH320_9784297141578.jpg" loading="lazy" />
+                        </div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/マスタリングapiアーキテクチャ.html">
+                    
+                        <div class="header">
+                            <div class="title">マスタリングAPIアーキテクチャ</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;www.oreilly.co.jp&#x2F;books&#x2F;images&#x2F;picture_large978-4-8144-0089-8.jpeg" loading="lazy" />
+                        </div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/bearerトークン.html">
+                    
+                        <div class="header">
+                            <div class="title">Bearerトークン</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Authorization
+トークンを保持するBearer（持参人）が誰であれ、そのトークンをリソースへのアクセスに使うことができる
+平文の文字列でシークレットや署名は扱わず、セキュリティはTLSのようなトランスポート層での仕組みに任せている
+HTTP通信のAuthorizationヘッダーに付与するのを推奨されている
+
+RFC 6750 - The OAuth 2.0 Authorization Framework: Bearer Token Usage
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/l7.html">
+                    
+                        <div class="header">
+                            <div class="title">L7</div>
+                        </div>
+                    
+                    
+                        <div class="summary">Layer 7
+#Network
+OSI参照モデルにおける第7層の通称
+アプリケーション層を指し、HTTPが代表的
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/hurl.html">
+                    
+                        <div class="header">
+                            <div class="title">Hurl</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;hurl.dev&#x2F;assets&#x2F;img&#x2F;logo-dark.svg" loading="lazy" />
+                        </div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/https.html">
+                    
+                        <div class="header">
+                            <div class="title">HTTPS</div>
+                        </div>
+                    
+                    
+                        <div class="summary">HyperText Transfer Protocol Secure
+#Network #Security
+HTTPをTLSによって暗号化した通信
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/authorizationpolicy.istio.html">
+                    
+                        <div class="header">
+                            <div class="context">Istio&#47;</div>
+                            <div class="title">AuthorizationPolicy</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Authorization
+Istioにおいてアプリケーション（L7）認可の役割を担うリソース
+KubernetesのCRDによって用意されており、Network policyに比べ柔軟でHTTP特有の設定が可能
+
+
+Istio &#x2F; Authorization Policy
+
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/リチャードソン成熟度モデル.html">
+                    
+                        <div class="header">
+                            <div class="title">リチャードソン成熟度モデル</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#API Architecture
+Leonard RechardsonによるREST APIの観点からAPI実装の成熟度をレベルに分類したもの
+各レベルのタイトルは以下
+
+レベル0 HTTP&#x2F;RPC
+レベル1 リソース
+レベル2 動詞（メソッド）
+レベル3 ハイパーメディアコントロール
+
+QCon 2008での発表は以下
+Justice Will Take Us Millions Of Intricate Moves
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/dapr.html">
+                    
+                        <div class="header">
+                            <div class="title">Dapr</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;dapr.io&#x2F;images&#x2F;dapr.svg" loading="lazy" />
+                        </div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/モノリスからマイクロサービスへ.html">
+                    
+                        <div class="header">
+                            <div class="title">モノリスからマイクロサービスへ</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;www.oreilly.co.jp&#x2F;books&#x2F;images&#x2F;picture_large978-4-87311-931-1.jpeg" loading="lazy" />
+                        </div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/mcp.html">
+                    
+                        <div class="header">
+                            <div class="title">MCP</div>
+                        </div>
+                    
+                    
+                        <div class="summary">Model Context Protocol
+LLMが様々なリソースにアクセスするためのAnthropic社による標準化プロトコル
+MCPサーバーがローカルまたはリモートのリソースにアクセスし、それをMCPクライアントが利用する
+MCPクライアントとサーバー間のトランポートレイヤでは
+
+stdio（標準入出力）
+HTTP POST
+のいずれかが用いられる
+
+https:&#x2F;&#x2F;modelcontextprotocol.io&#x2F;docs&#x2F;concepts&#x2F;architecture
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/runn.k1low.html">
+                    
+                        <div class="header">
+                            <div class="context">k1LoW&#47;</div>
+                            <div class="title">runn</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Testing #API Architecture
+Go言語のAPI Testingライブラリ・ツール
+HTTP request, gRPC requestのようないくつかの実行環境に対応し、runnbookと呼ばれる独自のシナリオを記述しテスト実行する
+Open APIと連携が可能で、静的なスキーマ検証がされた上でのシナリオ記述が可能
+https:&#x2F;&#x2F;github.com&#x2F;k1LoW&#x2F;runn
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/ダウングレード攻撃.html">
+                    
+                        <div class="header">
+                            <div class="title">ダウングレード攻撃</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Security　#HTTP
+HTTPS利用サーバーに対してHTTPリクエストを行う、または暗号アルゴリズムを脆弱なもので指定することで攻撃を行う
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/strict-transport-security.html">
+                    
+                        <div class="header">
+                            <div class="title">Strict-Transport-Security</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Security
+HTTPレスポンスヘッダの一つ、Webサイトが常にHTTPSを使用していることをWebブラウザに認識させる
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/quic.html">
+                    
+                        <div class="header">
+                            <div class="title">QUIC</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Network #HTTP
+インターネット上の通信で多く用いられてきたTCPの課題を解消する、Googleが開発したプロトコル
+UDPをベースし、コネクション確立によるRTTの増大を防ぎつつ、TCPと同様の高い信頼性の実現、TLSを必須とするセキュリティの考慮がされる。
+HTTP&#x2F;3で用いられるプロトコルで高速なHTTPS通信を実現する
+コネクションID
+QUICではIPアドレス、ポート番号を抽象化する形で宛先、送信元に対応するコネクションIDが用いられる。
+コネクションIDによりモバイル機器のようなWiFi・モバイルデータ通信等が頻繁に切り替わりIPアドレスの変更がある場合でも、コネクションを途切らせずに通信を続けられる。
+QUICヘッダー
+QUICヘッダーはTCPと異なり明確にロングヘッダー、ショートヘッダーの2つに分類される。ロングヘッダーはコネクション確立時、ショートヘッダーはその後のデータ送信に用いられる
+ロングヘッダーはコネクション確立に必要な情報をまとめて送る（1-RTTハンドシェイク）ことでRTTの改善がされる
+ストリーム
+QUICでは順序制御や再送制御を管理する単位としてストリーム（ID）という概念を用いる。ストリーム同士は独立しておりHoLブロッキングのような問題の回避をする
+</div>
+                    
+                </a>
+            </li>
+        
+    </ul>
+
+
+        </main>
+        <footer>
+            Generated by <a href="https://github.com/boykush/scraps" target="_blank" rel="noopener noreferrer">Scraps</a>
+        </footer> 
+        <!-- Code syntax highlight -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script>
+        <!-- Code syntax highlight theme -->
+        <link href="https://unpkg.com/nord-highlightjs@0.2.0/dist/nord.css" rel="stylesheet" type="text/css" />
+        <!-- Mermaid -->
+        <script type="module">
+            import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11.12.2/+esm'
+        </script>
+        
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const ogpCards = document.querySelectorAll('.ogp-card');
+
+    ogpCards.forEach(async (card) => {
+      const url = card.dataset.url;
+
+      try {
+        const proxyUrl = 'https://corsproxy.io/?url=';
+        const response = await fetch(proxyUrl + url);
+        const html = await response.text();
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, 'text/html');
+
+        const title = doc.querySelector('meta[property="og:title"]')?.content ||
+          doc.querySelector('title')?.textContent ||
+          'No title';
+        card.querySelector('.ogp-title').textContent = title;
+
+        const description = doc.querySelector('meta[property="og:description"]')?.content ||
+          doc.querySelector('meta[name="description"]')?.content ||
+          'No description';
+        card.querySelector('.ogp-description').textContent = description;
+
+        const image = doc.querySelector('meta[property="og:image"]')?.content;
+        if (image) {
+          const imageUrl = image.startsWith('/')
+            ? `https://${card.dataset.host}/${image}`
+            : image;
+          card.querySelector('.ogp-image').src = imageUrl;
+        } else {
+          card.querySelector('.ogp-image').remove();
+        }
+      } catch (error) {
+        console.error('Failed to fetch OGP data:', error);
+      }
+    });
+  });
+</script>
+ 
+    </body>
+</html>

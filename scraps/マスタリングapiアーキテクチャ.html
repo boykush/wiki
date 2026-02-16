@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <!-- Page title -->
+        
+            
+            <title>マスタリングAPIアーキテクチャ - Kush&#x27;s Wiki</title>
+            <meta property="og:title" content="マスタリングAPIアーキテクチャ - Kush&#x27;s Wiki" />
+            <meta name="twitter:title" content="マスタリングAPIアーキテクチャ - Kush&#x27;s Wiki" />
+        
+        <!-- Page description -->
+        
+            <meta name="description" content="boykushのナレッジ置き場" />
+            <meta property="og:description" content="boykushのナレッジ置き場" />
+            <meta name="twitter:description" content="boykushのナレッジ置き場" />
+        
+        <!-- Page favicon -->
+        
+            <link rel="icon" type="image/png" href="https:&#x2F;&#x2F;gist.github.com&#x2F;boykush&#x2F;3bbc68b5d2580374c97d4336b87fb70f&#x2F;raw&#x2F;a838b8f3584b21bcbbe4dd53afca380fe18695a7&#x2F;boykush_icon.png" />
+        
+        <!-- Rubik font -->
+        <link href="https://fonts.cdnfonts.com/css/rubik" rel="stylesheet">
+        <!-- Noto Sans JP font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+        <!-- Style sheet -->
+        <link rel="stylesheet" href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;main.css">
+        
+<meta property="og:url" content="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/マスタリングapiアーキテクチャ.html" />
+
+    <meta property="og:image" content="https:&#x2F;&#x2F;www.oreilly.co.jp&#x2F;books&#x2F;images&#x2F;picture_large978-4-8144-0089-8.jpeg" />
+    <meta name="twitter:image" content="https:&#x2F;&#x2F;www.oreilly.co.jp&#x2F;books&#x2F;images&#x2F;picture_large978-4-8144-0089-8.jpeg" />
+
+
+    </head>
+    <body>
+        <header>
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;">
+                <h1>Kush&#x27;s Wiki</h1>
+            </a>
+        </header>
+        <main>
+            
+    <div class="scrap">
+        
+        <h1 class="title">マスタリングAPIアーキテクチャ</h1>
+        
+            <p class="commited-date">
+                commited date: 2026-02-11
+            </p>
+        
+        <div class="content">
+            <h2>モノシリックからマイクロサービスへとアーキテクチャを進化させるための実践的手法</h2>
+<h3>Authors</h3>
+<p>James Gough, Daniel Bryant, Matthew Auburn</p>
+<p>#<a href="https://boykush.github.io/wiki/scraps/book.html">Book</a> #<a href="https://boykush.github.io/wiki/scraps/api-architecture.html">API Architecture</a></p>
+<p><img src="https://www.oreilly.co.jp/books/images/picture_large978-4-8144-0089-8.jpeg" alt="" />マスタリングAPIアーキテクチャ</p>
+<p><a href="https://www.oreilly.co.jp/books/9784814400898/">O’Reilly Japan</a></p>
+<h3>イントロダクション</h3>
+<ul>
+<li><a href="https://boykush.github.io/wiki/scraps/c4-model.html">C4 model</a></li>
+<li><a href="https://boykush.github.io/wiki/scraps/adr.html">ADR</a></li>
+</ul>
+<h3>1章 APIの設計・構築・仕様化</h3>
+<ul>
+<li><a href="https://boykush.github.io/wiki/scraps/http.html">HTTP</a>/<a href="https://boykush.github.io/wiki/scraps/rest.html">REST</a>/<a href="https://boykush.github.io/wiki/scraps/%E3%83%AA%E3%83%81%E3%83%A3%E3%83%BC%E3%83%89%E3%82%BD%E3%83%B3%E6%88%90%E7%86%9F%E5%BA%A6%E3%83%A2%E3%83%87%E3%83%AB.html">リチャードソン成熟度モデル</a></li>
+<li><a href="https://boykush.github.io/wiki/scraps/graphql.html">GraphQL</a></li>
+<li><a href="https://boykush.github.io/wiki/scraps/rpc.html">RPC</a>/<a href="https://boykush.github.io/wiki/scraps/grpc.html">gRPC</a></li>
+<li><a href="https://boykush.github.io/wiki/scraps/open-api.html">Open API</a></li>
+</ul>
+<h3>2章 APIのテスト #<a href="https://boykush.github.io/wiki/scraps/testing.html">Testing</a></h3>
+<ul>
+<li><a href="https://boykush.github.io/wiki/scraps/%E3%82%A2%E3%82%B8%E3%83%A3%E3%82%A4%E3%83%AB%E3%83%86%E3%82%B9%E3%83%88%E3%81%AE4%E8%B1%A1%E9%99%90.html">アジャイルテストの4象限</a></li>
+<li><a href="https://boykush.github.io/wiki/scraps/%E3%83%86%E3%82%B9%E3%83%88%E3%83%94%E3%83%A9%E3%83%9F%E3%83%83%E3%83%89.html">テストピラミッド</a></li>
+<li><a href="https://boykush.github.io/wiki/scraps/%E3%82%B3%E3%83%B3%E3%83%88%E3%83%A9%E3%82%AF%E3%83%88%E3%83%86%E3%82%B9%E3%83%88.html">コントラクトテスト</a></li>
+<li><a href="https://boykush.github.io/wiki/scraps/testcontainers.html">Testcontainers</a></li>
+<li><a href="https://boykush.github.io/wiki/scraps/e2e%E3%83%86%E3%82%B9%E3%83%88.html">E2Eテスト</a></li>
+</ul>
+<h3>3章 APIゲートウェイ：外部トラフィック管理</h3>
+<ul>
+<li><a href="https://boykush.github.io/wiki/scraps/%E3%83%AA%E3%83%90%E3%83%BC%E3%82%B9%E3%83%97%E3%83%AD%E3%82%AD%E3%82%B7.html">リバースプロキシ</a>/<a href="https://boykush.github.io/wiki/scraps/%E3%83%AD%E3%83%BC%E3%83%89%E3%83%90%E3%83%A9%E3%83%B3%E3%82%B7%E3%83%B3%E3%82%B0.html">ロードバランシング</a></li>
+<li><a href="https://boykush.github.io/wiki/scraps/api%E3%82%B2%E3%83%BC%E3%83%88%E3%82%A6%E3%82%A7%E3%82%A4.html">APIゲートウェイ</a>/<a href="https://boykush.github.io/wiki/scraps/envoy.html">Envoy</a>/<a href="https://boykush.github.io/wiki/scraps/ambassador-edge-stack.html">Ambassador Edge Stack</a></li>
+</ul>
+<h3>4章 サービスメッシュ：サービス間トラフィック管理 #<a href="https://boykush.github.io/wiki/scraps/%E4%BF%A1%E9%A0%BC%E6%80%A7.html">信頼性</a></h3>
+<ul>
+<li><a href="https://boykush.github.io/wiki/scraps/%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9%E3%83%A1%E3%83%83%E3%82%B7%E3%83%A5.html">サービスメッシュ</a>/<a href="https://boykush.github.io/wiki/scraps/%E3%82%B5%E3%82%A4%E3%83%89%E3%82%AB%E3%83%BC%E3%83%97%E3%83%AD%E3%82%AD%E3%82%B7.html">サイドカープロキシ</a></li>
+<li><a href="https://boykush.github.io/wiki/scraps/ebpf.html">eBPF</a>/<a href="https://boykush.github.io/wiki/scraps/cilium.html">Cilium</a></li>
+<li><a href="https://boykush.github.io/wiki/scraps/istio.html">Istio</a>/Linkerd/Consul</li>
+<li><a href="https://boykush.github.io/wiki/scraps/%E5%88%86%E6%95%A3%E3%82%B3%E3%83%B3%E3%83%94%E3%83%A5%E3%83%BC%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE8%E3%81%A4%E3%81%AE%E8%AA%A4%E8%AC%AC.html">分散コンピューティングの8つの誤謬</a></li>
+<li><a href="https://boykush.github.io/wiki/scraps/%E3%82%B5%E3%83%BC%E3%82%AD%E3%83%83%E3%83%88%E3%83%96%E3%83%AC%E3%83%BC%E3%82%AB%E3%83%BC.html">サーキットブレーカー</a>/<a href="https://boykush.github.io/wiki/scraps/%E3%83%AA%E3%83%88%E3%83%A9%E3%82%A4.html">リトライ</a>/タイムアウト/バルクヘッド/フォールバック</li>
+</ul>
+<h3>5章 APIの展開とリリース #<a href="https://boykush.github.io/wiki/scraps/observability.html">Observability</a></h3>
+<ul>
+<li><a href="https://boykush.github.io/wiki/scraps/%E3%82%AB%E3%83%8A%E3%83%AA%E3%82%A2%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9.html">カナリアリリース</a>/<a href="https://boykush.github.io/wiki/scraps/%E3%83%96%E3%83%AB%E3%83%BC%E3%82%B0%E3%83%AA%E3%83%BC%E3%83%B3%E6%88%A6%E7%95%A5.html">ブルーグリーン戦略</a>/<a href="https://boykush.github.io/wiki/scraps/argo-rollouts.html">Argo Rollouts</a></li>
+<li><a href="https://boykush.github.io/wiki/scraps/progressive-delivery.html">Progressive Delivery</a></li>
+<li>トラフィックミラーリング</li>
+<li><a href="https://boykush.github.io/wiki/scraps/opentelemetry.html">OpenTelemetry</a></li>
+<li><a href="https://boykush.github.io/wiki/scraps/observability-primary-signals.html">オブザーバビリティの三本柱</a></li>
+</ul>
+<h3>6章 セキュリティ運用：脅威モデリング #<a href="https://boykush.github.io/wiki/scraps/security.html">Security</a></h3>
+<ul>
+<li><a href="https://boykush.github.io/wiki/scraps/owasp-top-ten.html">OWASP Top Ten</a></li>
+<li><a href="https://boykush.github.io/wiki/scraps/%E8%84%85%E5%A8%81%E3%83%A2%E3%83%87%E3%83%AA%E3%83%B3%E3%82%B0.html">脅威モデリング</a>/<a href="https://boykush.github.io/wiki/scraps/microsoft-threat-modeling-tool.html">Microsoft Threat Modeling Tool</a>/<a href="https://boykush.github.io/wiki/scraps/stride.html">STRIDE</a></li>
+<li><a href="https://boykush.github.io/wiki/scraps/%E3%83%AC%E3%83%BC%E3%83%88%E3%83%AA%E3%83%9F%E3%83%83%E3%83%88.html">レートリミット</a></li>
+</ul>
+<h3>7章 APIの認証と認可 #<a href="https://boykush.github.io/wiki/scraps/authentication.html">Authentication</a> #<a href="https://boykush.github.io/wiki/scraps/authorization.html">Authorization</a></h3>
+<ul>
+<li><a href="https://boykush.github.io/wiki/scraps/oauth2.html">OAuth2</a>/<a href="https://boykush.github.io/wiki/scraps/oidc.html">OIDC</a></li>
+<li><a href="https://boykush.github.io/wiki/scraps/jwt.html">JWT</a></li>
+<li><a href="https://boykush.github.io/wiki/scraps/saml.html">SAML</a></li>
+</ul>
+<h3>8章 API駆動アーキテクチャへのアプリケーションの再設計 #<a href="https://boykush.github.io/wiki/scraps/software-design.html">Software Design</a></h3>
+<ul>
+<li>モノリス/サービス指向アーキテクチャ（SOA）</li>
+<li><a href="https://boykush.github.io/wiki/scraps/%E3%83%89%E3%83%A1%E3%82%A4%E3%83%B3%E9%A7%86%E5%8B%95%E8%A8%AD%E8%A8%88.html">DDD</a>/<a href="https://boykush.github.io/wiki/scraps/%E3%83%9E%E3%82%A4%E3%82%AF%E3%83%AD%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9.html">マイクロサービス</a></li>
+<li><a href="https://boykush.github.io/wiki/scraps/%E9%81%A9%E5%BF%9C%E5%BA%A6%E9%96%A2%E6%95%B0.html">適応度関数</a></li>
+<li><a href="https://boykush.github.io/wiki/scraps/%E3%82%B9%E3%83%88%E3%83%A9%E3%83%B3%E3%82%B0%E3%83%A9%E3%83%BC%E3%83%95%E3%82%A3%E3%82%B0%E3%82%A2%E3%83%97%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3.html">ストラングラーフィグ</a></li>
+</ul>
+<h3>9章 クラウド環境への移行</h3>
+<ul>
+<li>6つのR</li>
+<li>ゼロトラストアーキテクチャ</li>
+</ul>
+
+        </div>
+    </div>
+    
+    <ul class="scrap-links">
+        
+    </ul>
+
+
+        </main>
+        <footer>
+            Generated by <a href="https://github.com/boykush/scraps" target="_blank" rel="noopener noreferrer">Scraps</a>
+        </footer> 
+        <!-- Code syntax highlight -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script>
+        <!-- Code syntax highlight theme -->
+        <link href="https://unpkg.com/nord-highlightjs@0.2.0/dist/nord.css" rel="stylesheet" type="text/css" />
+        <!-- Mermaid -->
+        <script type="module">
+            import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11.12.2/+esm'
+        </script>
+        
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const ogpCards = document.querySelectorAll('.ogp-card');
+
+    ogpCards.forEach(async (card) => {
+      const url = card.dataset.url;
+
+      try {
+        const proxyUrl = 'https://corsproxy.io/?url=';
+        const response = await fetch(proxyUrl + url);
+        const html = await response.text();
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, 'text/html');
+
+        const title = doc.querySelector('meta[property="og:title"]')?.content ||
+          doc.querySelector('title')?.textContent ||
+          'No title';
+        card.querySelector('.ogp-title').textContent = title;
+
+        const description = doc.querySelector('meta[property="og:description"]')?.content ||
+          doc.querySelector('meta[name="description"]')?.content ||
+          'No description';
+        card.querySelector('.ogp-description').textContent = description;
+
+        const image = doc.querySelector('meta[property="og:image"]')?.content;
+        if (image) {
+          const imageUrl = image.startsWith('/')
+            ? `https://${card.dataset.host}/${image}`
+            : image;
+          card.querySelector('.ogp-image').src = imageUrl;
+        } else {
+          card.querySelector('.ogp-image').remove();
+        }
+      } catch (error) {
+        console.error('Failed to fetch OGP data:', error);
+      }
+    });
+  });
+</script>
+ 
+    </body>
+</html>
