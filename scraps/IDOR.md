@@ -12,6 +12,6 @@
 - リクエストボディ操作: POSTやPUTリクエストのID部分を改ざん
 - ファイルアクセス: 静的ファイルのパス操作による機密情報の取得
 
-対策として[[Authorization]]チェックの実装とUUIDのような推測困難なIDの利用が重要
+対策として[[Authorization|認可]]チェックの実装とUUIDのような推測困難なIDの利用が重要
 
 <https://cheatsheetseries.owasp.org/cheatsheets/Insecure_Direct_Object_Reference_Prevention_Cheat_Sheet.html>
