@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <!-- Page title -->
+        
+            
+            <title>Knative - Kush&#x27;s Wiki</title>
+            <meta property="og:title" content="Knative - Kush&#x27;s Wiki" />
+            <meta name="twitter:title" content="Knative - Kush&#x27;s Wiki" />
+        
+        <!-- Page description -->
+        
+            <meta name="description" content="boykushのナレッジ置き場" />
+            <meta property="og:description" content="boykushのナレッジ置き場" />
+            <meta name="twitter:description" content="boykushのナレッジ置き場" />
+        
+        <!-- Page favicon -->
+        
+            <link rel="icon" type="image/png" href="https:&#x2F;&#x2F;gist.github.com&#x2F;boykush&#x2F;3bbc68b5d2580374c97d4336b87fb70f&#x2F;raw&#x2F;a838b8f3584b21bcbbe4dd53afca380fe18695a7&#x2F;boykush_icon.png" />
+        
+        <!-- Rubik font -->
+        <link href="https://fonts.cdnfonts.com/css/rubik" rel="stylesheet">
+        <!-- Noto Sans JP font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+        <!-- Style sheet -->
+        <link rel="stylesheet" href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;main.css">
+        
+<meta property="og:url" content="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/knative.html" />
+
+    <meta property="og:image" content="https:&#x2F;&#x2F;knative.dev&#x2F;docs&#x2F;images&#x2F;logo&#x2F;rgb&#x2F;knative-logo-rgb.png" />
+    <meta name="twitter:image" content="https:&#x2F;&#x2F;knative.dev&#x2F;docs&#x2F;images&#x2F;logo&#x2F;rgb&#x2F;knative-logo-rgb.png" />
+
+
+    </head>
+    <body>
+        <header>
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;">
+                <h1>Kush&#x27;s Wiki</h1>
+            </a>
+        </header>
+        <main>
+            
+    <div class="scrap">
+        
+        <h1 class="title">Knative</h1>
+        
+            <p class="commited-date">
+                commited date: 2025-11-17
+            </p>
+        
+        <div class="content">
+            <p>#<a href="https://boykush.github.io/wiki/scraps/cloud-native.html">Cloud Native</a></p>
+<p><img src="https://knative.dev/docs/images/logo/rgb/knative-logo-rgb.png" alt="" />Knative logo</p>
+<p>組み込みインストール可能なイベント駆動の<a href="https://boykush.github.io/wiki/scraps/%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E3%83%AC%E3%82%B9.html">サーバーレス</a>プラットフォームOSS</p>
+<p><a href="https://boykush.github.io/wiki/scraps/cncf.html">CNCF</a> <del>incubating project</del> <a href="https://www.cncf.io/announcements/2025/10/08/cloud-native-computing-foundation-announces-knatives-graduation/">2025年9月からgraduated projectになった</a></p>
+<hr />
+<ul>
+<li><a href="https://knative.dev/docs/concepts/">Overview - Knative</a></li>
+</ul>
+
+        </div>
+    </div>
+    
+    <ul class="scrap-links">
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/knative-serving.html">
+                    
+                        <div class="header">
+                            <div class="title">Knative Serving</div>
+                        </div>
+                    
+                    
+                        <div class="summary">Knativeにおいて、KubernetesのCRDによって4種類のリソースを定義しアプリケーションの提供を行う
+Serviceの別APIのようなサービスディスカバリパターン
+Scale to zeroや自動スケーリングによるリソース効率の最適化が主な目的
+
+https:&#x2F;&#x2F;github.com&#x2F;knative&#x2F;specs&#x2F;blob&#x2F;main&#x2F;specs&#x2F;serving&#x2F;overview.md
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/kubernetesパターン-第2版.html">
+                    
+                        <div class="header">
+                            <div class="title">Kubernetesパターン 第2版</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;www.oreilly.co.jp&#x2F;books&#x2F;images&#x2F;picture_large978-4-8144-0088-1.jpeg" loading="lazy" />
+                        </div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/knative-eventing.html">
+                    
+                        <div class="header">
+                            <div class="title">Knative Eventing</div>
+                        </div>
+                    
+                    
+                        <div class="summary">Knativeにおいて、KubernetesのCRDによってイベント駆動アーキテクチャを実現するコンポーネント
+イベントはCloudEvents仕様に準拠し、標準のHTTP POSTリクエストで送受信される
+
+https:&#x2F;&#x2F;knative.dev&#x2F;docs&#x2F;eventing&#x2F;
+</div>
+                    
+                </a>
+            </li>
+        
+    </ul>
+
+
+        </main>
+        <footer>
+            Generated by <a href="https://github.com/boykush/scraps" target="_blank" rel="noopener noreferrer">Scraps</a>
+        </footer> 
+        <!-- Code syntax highlight -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script>
+        <!-- Code syntax highlight theme -->
+        <link href="https://unpkg.com/nord-highlightjs@0.2.0/dist/nord.css" rel="stylesheet" type="text/css" />
+        <!-- Mermaid -->
+        <script type="module">
+            import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11.12.2/+esm'
+        </script>
+        
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const ogpCards = document.querySelectorAll('.ogp-card');
+
+    ogpCards.forEach(async (card) => {
+      const url = card.dataset.url;
+
+      try {
+        const proxyUrl = 'https://corsproxy.io/?url=';
+        const response = await fetch(proxyUrl + url);
+        const html = await response.text();
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, 'text/html');
+
+        const title = doc.querySelector('meta[property="og:title"]')?.content ||
+          doc.querySelector('title')?.textContent ||
+          'No title';
+        card.querySelector('.ogp-title').textContent = title;
+
+        const description = doc.querySelector('meta[property="og:description"]')?.content ||
+          doc.querySelector('meta[name="description"]')?.content ||
+          'No description';
+        card.querySelector('.ogp-description').textContent = description;
+
+        const image = doc.querySelector('meta[property="og:image"]')?.content;
+        if (image) {
+          const imageUrl = image.startsWith('/')
+            ? `https://${card.dataset.host}/${image}`
+            : image;
+          card.querySelector('.ogp-image').src = imageUrl;
+        } else {
+          card.querySelector('.ogp-image').remove();
+        }
+      } catch (error) {
+        console.error('Failed to fetch OGP data:', error);
+      }
+    });
+  });
+</script>
+ 
+    </body>
+</html>

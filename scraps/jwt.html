@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <!-- Page title -->
+        
+            
+            <title>JWT - Kush&#x27;s Wiki</title>
+            <meta property="og:title" content="JWT - Kush&#x27;s Wiki" />
+            <meta name="twitter:title" content="JWT - Kush&#x27;s Wiki" />
+        
+        <!-- Page description -->
+        
+            <meta name="description" content="boykushのナレッジ置き場" />
+            <meta property="og:description" content="boykushのナレッジ置き場" />
+            <meta name="twitter:description" content="boykushのナレッジ置き場" />
+        
+        <!-- Page favicon -->
+        
+            <link rel="icon" type="image/png" href="https:&#x2F;&#x2F;gist.github.com&#x2F;boykush&#x2F;3bbc68b5d2580374c97d4336b87fb70f&#x2F;raw&#x2F;a838b8f3584b21bcbbe4dd53afca380fe18695a7&#x2F;boykush_icon.png" />
+        
+        <!-- Rubik font -->
+        <link href="https://fonts.cdnfonts.com/css/rubik" rel="stylesheet">
+        <!-- Noto Sans JP font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+        <!-- Style sheet -->
+        <link rel="stylesheet" href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;main.css">
+        
+<meta property="og:url" content="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/jwt.html" />
+
+
+    </head>
+    <body>
+        <header>
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;">
+                <h1>Kush&#x27;s Wiki</h1>
+            </a>
+        </header>
+        <main>
+            
+    <div class="scrap">
+        
+        <h1 class="title">JWT</h1>
+        
+            <p class="commited-date">
+                commited date: 2026-01-11
+            </p>
+        
+        <div class="content">
+            <h2>JSON Web Token</h2>
+<p>#<a href="https://boykush.github.io/wiki/scraps/security.html">Security</a> #<a href="https://boykush.github.io/wiki/scraps/authentication.html">Authentication</a></p>
+<p>トークン自体の情報（例: 期限）を自身で構造化して保持することで、共有データベースへ保持・検索をする必要がないトークン。トークンが自身の情報を持つことで外部からのトークン取り消しのような操作はできない</p>
+<p>JWTは<code>.</code>によって3つのセクションの文字列に分割できる（署名がない場合3つ目のセクションは空）</p>
+<p>それぞれのセクションの文字列は構造化された<a href="https://boykush.github.io/wiki/scraps/json.html">JSON</a>を<a href="https://boykush.github.io/wiki/scraps/base64.html">Base64</a>URLエンコードした結果となっている</p>
+<h2>ヘッダー</h2>
+<p>1つ目のセクションはヘッダーとして以下のような構造を持つ</p>
+<pre><code class="language-json">{
+    "typ": "JWT",
+    "alg": "RSA256"
+}
+</code></pre>
+<p><code>alg</code>で指定する署名アルゴリズムは3つ目の署名セクションの解読にて用いる</p>
+<h2>ペイロード</h2>
+<p>2つ目のセクションはトークン自体のペイロードになる。ペイロードの中身はJSONであれば自由だが、JWTクレームと呼ばれる役割が明示・明示された項目群が存在する。</p>
+<p>例として　<code>iss</code>（発行者）、<code>sub</code>（対象者）、<code>exp</code>（有効期限）などがある</p>
+<h2><a href="https://boykush.github.io/wiki/scraps/%E3%83%87%E3%82%B8%E3%82%BF%E3%83%AB%E7%BD%B2%E5%90%8D.html">署名</a></h2>
+<p>3つ目のセクションは<a href="https://boykush.github.io/wiki/scraps/hmac.html">HMAC</a>や<a href="https://boykush.github.io/wiki/scraps/rsa.html">RSA</a>のような署名アルゴリズムを使った結果が保持される</p>
+<hr />
+<p><a href="https://tex2e.github.io/rfc-translater/html/rfc7519">RFC 7519 - JSON Web Token (JWT)</a></p>
+
+        </div>
+    </div>
+    
+    <ul class="scrap-links">
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/デジタルアイデンティティのすべて.html">
+                    
+                        <div class="header">
+                            <div class="title">デジタルアイデンティティのすべて</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;www.oreilly.co.jp&#x2F;books&#x2F;images&#x2F;picture_large978-4-8144-0098-0.jpeg" loading="lazy" />
+                        </div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/serviceaccount.kubernetes.html">
+                    
+                        <div class="header">
+                            <div class="context">Kubernetes&#47;</div>
+                            <div class="title">ServiceAccount</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;github.com&#x2F;kubernetes&#x2F;community&#x2F;raw&#x2F;master&#x2F;icons&#x2F;png&#x2F;resources&#x2F;labeled&#x2F;sa-128.png" loading="lazy" />
+                        </div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/クラウドネイティブで実現する-マイクロサービス開発・運用-実践ガイド.html">
+                    
+                        <div class="header">
+                            <div class="title">クラウドネイティブで実現する マイクロサービス開発・運用 実践ガイド</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;gihyo.jp&#x2F;assets&#x2F;images&#x2F;cover&#x2F;2023&#x2F;9784297137830.jpg" loading="lazy" />
+                        </div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/kubernetesパターン-第2版.html">
+                    
+                        <div class="header">
+                            <div class="title">Kubernetesパターン 第2版</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;www.oreilly.co.jp&#x2F;books&#x2F;images&#x2F;picture_large978-4-8144-0088-1.jpeg" loading="lazy" />
+                        </div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/oidc.html">
+                    
+                        <div class="header">
+                            <div class="title">OIDC</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;openid.net&#x2F;wp-content&#x2F;uploads&#x2F;2022&#x2F;11&#x2F;df-l-oix-l-openid_rgb-300dpi.png" loading="lazy" />
+                        </div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/device-cookies.html">
+                    
+                        <div class="header">
+                            <div class="title">Device Cookies</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Security #Authentication
+ブルートフォース攻撃を軽減するための認証ロック機構。ユーザーが正常に認証された後、そのブラウザに発行される特別なCookie
+従来のアカウントロックアウトと比較して以下の利点がある
+
+DoS攻撃に対して耐性がある
+IPアドレスではなくブラウザCookieを基準とするため予測可能で実装しやすい
+ボットネットや代理経由の攻撃に対応しやすい
+
+認証リクエスト時に有効なDevice Cookieの有無を確認し、未信頼クライアント（Device Cookieなし）からの認証試行回数を記録してロックアウトを実施する
+実装にはJWT、Redis&#x2F;Memcachedによるロックリスト管理、HMAC署名による改ざん防止などが用いられる
+https:&#x2F;&#x2F;owasp.org&#x2F;www-community&#x2F;Slow_Down_Online_Guessing_Attacks_with_Device_Cookies
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/マスタリングapiアーキテクチャ.html">
+                    
+                        <div class="header">
+                            <div class="title">マスタリングAPIアーキテクチャ</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;www.oreilly.co.jp&#x2F;books&#x2F;images&#x2F;picture_large978-4-8144-0089-8.jpeg" loading="lazy" />
+                        </div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/oauth徹底入門.html">
+                    
+                        <div class="header">
+                            <div class="title">OAuth徹底入門</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;www.seshop.com&#x2F;static&#x2F;images&#x2F;product&#x2F;22242&#x2F;L.png" loading="lazy" />
+                        </div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/requestauthentication.istio.html">
+                    
+                        <div class="header">
+                            <div class="context">Istio&#47;</div>
+                            <div class="title">RequestAuthentication</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Authentication
+ingressgatewayに対して、JWTの検証を行うためのカスタムリソース（CRD）
+https:&#x2F;&#x2F;istio.io&#x2F;latest&#x2F;docs&#x2F;reference&#x2F;config&#x2F;security&#x2F;request_authentication&#x2F;
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/ambassador-edge-stack.html">
+                    
+                        <div class="header">
+                            <div class="title">Ambassador Edge Stack</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;avatars.githubusercontent.com&#x2F;u&#x2F;9270257?s=200&amp;v=4" loading="lazy" />
+                        </div>
+                    
+                </a>
+            </li>
+        
+    </ul>
+
+
+        </main>
+        <footer>
+            Generated by <a href="https://github.com/boykush/scraps" target="_blank" rel="noopener noreferrer">Scraps</a>
+        </footer> 
+        <!-- Code syntax highlight -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script>
+        <!-- Code syntax highlight theme -->
+        <link href="https://unpkg.com/nord-highlightjs@0.2.0/dist/nord.css" rel="stylesheet" type="text/css" />
+        <!-- Mermaid -->
+        <script type="module">
+            import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11.12.2/+esm'
+        </script>
+        
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const ogpCards = document.querySelectorAll('.ogp-card');
+
+    ogpCards.forEach(async (card) => {
+      const url = card.dataset.url;
+
+      try {
+        const proxyUrl = 'https://corsproxy.io/?url=';
+        const response = await fetch(proxyUrl + url);
+        const html = await response.text();
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, 'text/html');
+
+        const title = doc.querySelector('meta[property="og:title"]')?.content ||
+          doc.querySelector('title')?.textContent ||
+          'No title';
+        card.querySelector('.ogp-title').textContent = title;
+
+        const description = doc.querySelector('meta[property="og:description"]')?.content ||
+          doc.querySelector('meta[name="description"]')?.content ||
+          'No description';
+        card.querySelector('.ogp-description').textContent = description;
+
+        const image = doc.querySelector('meta[property="og:image"]')?.content;
+        if (image) {
+          const imageUrl = image.startsWith('/')
+            ? `https://${card.dataset.host}/${image}`
+            : image;
+          card.querySelector('.ogp-image').src = imageUrl;
+        } else {
+          card.querySelector('.ogp-image').remove();
+        }
+      } catch (error) {
+        console.error('Failed to fetch OGP data:', error);
+      }
+    });
+  });
+</script>
+ 
+    </body>
+</html>

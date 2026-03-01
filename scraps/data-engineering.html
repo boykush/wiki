@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <!-- Page title -->
+        
+            <title>Kush&#x27;s Wiki</title>
+            <meta property="og:title" content="Kush&#x27;s Wiki" />
+            <meta name="twitter:title" content="Kush&#x27;s Wiki" />
+        
+        <!-- Page description -->
+        
+            <meta name="description" content="boykushのナレッジ置き場" />
+            <meta property="og:description" content="boykushのナレッジ置き場" />
+            <meta name="twitter:description" content="boykushのナレッジ置き場" />
+        
+        <!-- Page favicon -->
+        
+            <link rel="icon" type="image/png" href="https:&#x2F;&#x2F;gist.github.com&#x2F;boykush&#x2F;3bbc68b5d2580374c97d4336b87fb70f&#x2F;raw&#x2F;a838b8f3584b21bcbbe4dd53afca380fe18695a7&#x2F;boykush_icon.png" />
+        
+        <!-- Rubik font -->
+        <link href="https://fonts.cdnfonts.com/css/rubik" rel="stylesheet">
+        <!-- Noto Sans JP font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+        <!-- Style sheet -->
+        <link rel="stylesheet" href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;main.css">
+        
+        
+    </head>
+    <body>
+        <header>
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;">
+                <h1>Kush&#x27;s Wiki</h1>
+            </a>
+        </header>
+        <main>
+            
+    <div class="tag">
+        <h1 class="title">Data Engineering</h1>
+    </div>
+    
+    <ul class="scrap-links">
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/bツリー.html">
+                    
+                        <div class="header">
+                            <div class="title">Bツリー</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Data Engineering
+Bツリーはデータベースを固定サイズのブロックあるいはページに分割する。固定サイズの空き容量がない状態で新しいキーが追加される場合、半分の領域が空いた2つのブロックに分割される。
+このアルゴリズムはツリーバランスが保たれ、ツリーの深さも3ないし4レベルに収まることがほとんど。
+また信頼性を高めるためにwrite-aheadログ（WAL）と呼ばれる書き込み内容の構造化データを追記して保持している。
+
+
+Wikipedia
+
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/pgx.html">
+                    
+                        <div class="header">
+                            <div class="title">pgx</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Programming #Data Engineering
+Go用のPostgreSQLドライバー・ツールキット
+
+database&#x2F;sql互換インターフェースとネイティブインターフェースの両方を提供
+約60種類のPostgreSQL型をサポート（uuid, hstore, json, bytea, numericなど）
+LISTEN&#x2F;NOTIFYやCOPYなどPostgreSQL固有の機能にも対応
+
+https:&#x2F;&#x2F;github.com&#x2F;jackc&#x2F;pgx
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/tidb.html">
+                    
+                        <div class="header">
+                            <div class="title">TiDB</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;avatars.githubusercontent.com&#x2F;u&#x2F;11855343?s=200&amp;v=4" loading="lazy" />
+                        </div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/sre-サイトリライアビリティエンジニアリング.book.html">
+                    
+                        <div class="header">
+                            <div class="context">Book&#47;</div>
+                            <div class="title">SRE サイトリライアビリティエンジニアリング</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;www.oreilly.co.jp&#x2F;books&#x2F;images&#x2F;picture_large978-4-87311-791-1.jpeg" loading="lazy" />
+                        </div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/optimize-table.html">
+                    
+                        <div class="header">
+                            <div class="title">OPTIMIZE TABLE</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Data Engineering
+MySQLにおいてテーブルインデックスを再編成し最適化する命令
+
+
+MySQL :: MySQL 8.0 リファレンスマニュアル :: 13.7.3.4 OPTIMIZE TABLE ステートメント
+
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/atlasとargocdでdbマイグレーションの仕組みを構築してみた.html">
+                    
+                        <div class="header">
+                            <div class="title">AtlasとArgoCDでDBマイグレーションの仕組みを構築してみた</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Blog #Data Engineering
+AtlasをベースとしてマイグレーションDockerイメージを、GitHub Actionsでビルド＆パブリッシュ、Kubernetes Job上のArgo CDでのマイグレーションリリースまでを自動化する記事
+https:&#x2F;&#x2F;tech-blog.rakus.co.jp&#x2F;entry&#x2F;20250526&#x2F;dbmigration
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/データ指向アプリケーションデザイン.html">
+                    
+                        <div class="header">
+                            <div class="title">データ指向アプリケーションデザイン</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;www.oreilly.co.jp&#x2F;books&#x2F;images&#x2F;picture_large978-4-87311-870-3.jpeg" loading="lazy" />
+                        </div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/mysql.html">
+                    
+                        <div class="header">
+                            <div class="title">MySQL</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;www.mysql.com&#x2F;common&#x2F;logos&#x2F;logo-mysql-170x115.png" loading="lazy" />
+                        </div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/トランザクション分離レベル.html">
+                    
+                        <div class="header">
+                            <div class="title">トランザクション分離レベル</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Data Engineering
+ACIDのうち、I（Isolation）について言及するような分離性のレベル。
+RDBMS間で共通して4つの分離レベルがあるが、分離レベルの命名が異なるケースがあり曖昧になっている。
+
+Read Uncommitted
+コミットされていない未確定のデータを読み取るダーティリードが発生する
+
+
+Read Committed
+ダーティリード、ダーティライトが生じない
+
+
+Snapshot Isolation
+OracleではSERIALIZABLE、PostgreSQLやMySQLではRepeatable Readと呼ばれるため曖昧
+読み取りスキュー（nonrepeatable read）が生じない、読み取りはロックを取らず常にトランザクション開始時のスナップショットを参照する
+スナップショットとして複数のバージョンを保持するためMVCC（multi-version concurrency controll）の手法が用いられる
+
+
+Serializable
+書き込みスキュー（ファントム）が生じない、複数のレコードを跨いだ一貫性を保証する
+ユニーク制約によって書き込みスキューを防止できない際に必要となる
+全てのトランザクションが直列で実行されるように振る舞うことで直列化可能と呼ばれる
+
+
+
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/acid.html">
+                    
+                        <div class="header">
+                            <div class="title">ACID</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Data Engineering
+トランザクションが保証する安全性について以下の4つの頭文字を取ったもの
+
+原子性（Atomicity）
+一貫性（Consistency）
+分離性（Isolation）
+永続性（Durability）
+
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/athena.amazon.html">
+                    
+                        <div class="header">
+                            <div class="context">Amazon&#47;</div>
+                            <div class="title">Athena</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Data Engineering
+AWSのサーバーレスのインタラクティブな分析サービス、S3を中心に様々なデータソースを元にSQLでデータを抽出可能にする
+
+Amazon Athena とは - Amazon Athena
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/dynamodb.amazon.html">
+                    
+                        <div class="header">
+                            <div class="context">Amazon&#47;</div>
+                            <div class="title">DynamoDB</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Data Engineering
+Amazonが提供するリーダーレスレプリケーションによるデータストア
+
+
+What is Amazon DynamoDB? - Amazon DynamoDB
+
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/s3.amazon.html">
+                    
+                        <div class="header">
+                            <div class="context">Amazon&#47;</div>
+                            <div class="title">S3</div>
+                        </div>
+                    
+                    
+                        <div class="summary">Simple Storage Service
+#Data Engineering
+AWSが提供するオブジェクトストレージサービス
+
+What is Amazon S3? - Amazon Simple Storage Service
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/postgresql.html">
+                    
+                        <div class="header">
+                            <div class="title">PostgreSQL</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;www.postgresql.org&#x2F;media&#x2F;img&#x2F;about&#x2F;press&#x2F;elephant.png" loading="lazy" />
+                        </div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/etcd.html">
+                    
+                        <div class="header">
+                            <div class="title">etcd</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;github.com&#x2F;kubernetes&#x2F;community&#x2F;raw&#x2F;master&#x2F;icons&#x2F;png&#x2F;infrastructure_components&#x2F;labeled&#x2F;etcd-128.png" loading="lazy" />
+                        </div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/レプリケーション.html">
+                    
+                        <div class="header">
+                            <div class="title">レプリケーション</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Data Engineering
+書き込みまたは読み取りをリーダー、読み取りをフォロワーで行われ、リーダーへの書き込みがフォロワーに伝播される仕組みをレプリケーションと呼ぶ。
+レプリケーションの方法として
+
+ステートメントベース
+write-aheadログ
+等がある。
+
+ステートメントベースはSQLをそのまま転送する形になるため副作用を持つ関数が返す結果にズレが生じる方法で、MySQL5.1以前に採用されていた。
+write-aheadログはPostgreSQL,Oracleで使用されているが、ログが低レベルに記述されているため詳細実装と密になってしまう。
+レプリケーションのトポロジーとしていくつかのパターンがある
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/testcontainers.html">
+                    
+                        <div class="header">
+                            <div class="title">Testcontainers</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;testcontainers.com&#x2F;images&#x2F;testcontainers-logo.svg" loading="lazy" />
+                        </div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/レポーティングデータベース.html">
+                    
+                        <div class="header">
+                            <div class="title">レポーティングデータベース</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Martin Fowler #Data Engineering
+アプリケーションのドメインモデルに対応するテーブルとは別にレポート目的の中間テーブルを用意することで、レポートの関心を分離してテーブルに変更を加えることができる。
+https:&#x2F;&#x2F;bliki-ja.github.io&#x2F;ReportingDatabase
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/ngram.html">
+                    
+                        <div class="header">
+                            <div class="title">ngram</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Data Engineering
+MySQLに搭載されている全文検索向けの全文パーサー、日本語対応している。
+FULLTEXT と合わせて指定しインデックスを生成する
+
+MySQL :: MySQL 8.0 リファレンスマニュアル :: 12.10.8 ngram 全文パーサー
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/dynamoスタイル.html">
+                    
+                        <div class="header">
+                            <div class="title">Dynamoスタイル</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Data Engineering
+DynamoDBによって流行したリーダーレスレプリケーションを実装したデータストアに用いられるスタイル名
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/kafka.apache.html">
+                    
+                        <div class="header">
+                            <div class="context">Apache&#47;</div>
+                            <div class="title">Kafka</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Data Engineering
+イベントストリーミングプラットフォームのメッセージブローカーOSS
+イベントのPub&#x2F;Sub、ストリーミングの保持を行う
+https:&#x2F;&#x2F;kafka.apache.org&#x2F;documentation&#x2F;#intro_streaming
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/カーディナリティ.html">
+                    
+                        <div class="header">
+                            <div class="title">カーディナリティ</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Data Engineering
+あるカラムの値の集合の中に重複する値がどのくらいあるかの度合い。低いと重複が多く高いと重複が少ない。
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/etl.html">
+                    
+                        <div class="header">
+                            <div class="title">ETL</div>
+                        </div>
+                    
+                    
+                        <div class="summary">Extract transform load
+#Data Engineering
+
+ETL とは? - 抽出、変換、ロードの説明 - AWS
+
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/olap.html">
+                    
+                        <div class="header">
+                            <div class="title">OLAP</div>
+                        </div>
+                    
+                    
+                        <div class="summary">Online Analytics Processing
+#Data Engineering
+データ分析を目的として多次元データを扱うシステムに対して用いられる言葉
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/sqlパフォーマンス詳解.html">
+                    
+                        <div class="header">
+                            <div class="title">SQLパフォーマンス詳解</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;sql-performance-explained.jp&#x2F;static&#x2F;9783950307849.GuXvgGvo.jpg" loading="lazy" />
+                        </div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/atlas.html">
+                    
+                        <div class="header">
+                            <div class="title">Atlas</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;atlasgo.link&#x2F;assets&#x2F;atlas-logo.svg" loading="lazy" />
+                        </div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/orm.html">
+                    
+                        <div class="header">
+                            <div class="title">ORM</div>
+                        </div>
+                    
+                    
+                        <div class="summary">Object-Relational Mapping
+#Data Engineering
+オブジェクト指向プログラミングアプリケーションとリレーショナルデータベース間のレイヤを抽象化するプロセス
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/database-change-management.devops-capabilities.html">
+                    
+                        <div class="header">
+                            <div class="context">DevOps capabilities&#47;</div>
+                            <div class="title">Database change management</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Data Engineering
+DevOps capabilitiesの1つ、Fast Flowに分類される
+
+
+DORA | Capabilities: Database change management
+
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/redis.html">
+                    
+                        <div class="header">
+                            <div class="title">Redis</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Data Engineering
+インメモリデータストア。キャッシュ、メッセージブローカー、データベースとして利用される
+
+キーバリュー型のNoSQLデータベース
+文字列、ハッシュ、リスト、セット、ソート済みセットなどのデータ構造をサポート
+
+https:&#x2F;&#x2F;redis.io&#x2F;
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/oltp.html">
+                    
+                        <div class="header">
+                            <div class="title">OLTP</div>
+                        </div>
+                    
+                    
+                        <div class="summary">Online Transactional Processing
+#Data Engineering
+ACIDを遵守し、高い可用性・信頼性を満たすべきシステムに対して用いられる言葉
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/otelsql.xsam.html">
+                    
+                        <div class="header">
+                            <div class="context">XSAM&#47;</div>
+                            <div class="title">otelsql</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Observability #Programming #Data Engineering
+Goのdatabase&#x2F;sqlパッケージにOpenTelemetry計装を追加するライブラリ
+
+トレースとメトリクスの両方をサポート
+PostgreSQL、MySQL、SQLiteなど、database&#x2F;sqlドライバを持つ任意のDBに対応
+
+https:&#x2F;&#x2F;github.com&#x2F;XSAM&#x2F;otelsql
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/graphql.html">
+                    
+                        <div class="header">
+                            <div class="title">GraphQL</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;graphql.org&#x2F;_next&#x2F;static&#x2F;media&#x2F;logo-wordmark.4eec1155.svg" loading="lazy" />
+                        </div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/モノリスからマイクロサービスへ.html">
+                    
+                        <div class="header">
+                            <div class="title">モノリスからマイクロサービスへ</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;www.oreilly.co.jp&#x2F;books&#x2F;images&#x2F;picture_large978-4-87311-931-1.jpeg" loading="lazy" />
+                        </div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/database-monitoring.datadog.html">
+                    
+                        <div class="header">
+                            <div class="context">Datadog&#47;</div>
+                            <div class="title">Database Monitoring</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Observability #Data Engineering
+Datadog上でデータベースの詳細な可視性を提供する
+Explain Plansでは実行計画を容易に把握することができる
+導入にはAPMの有効化が必須でありでクエリを呼んでいるサービスの内訳を可視化できる
+
+
+データベース モニタリング
+
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/cloudnativepg.html">
+                    
+                        <div class="header">
+                            <div class="title">CloudNativePG</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Cloud Native #Data Engineering
+Kubernetes上でPostgreSQLクラスタのライフサイクルを管理するOperator
+
+プライマリ&#x2F;スタンバイ構成によるストリーミングレプリケーションで高可用性を実現
+外部HAツール（Patroni等）に依存せずKubernetes APIと直接統合
+CNCF sandbox project
+
+https:&#x2F;&#x2F;cloudnative-pg.io&#x2F;
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/メッセージブローカー.html">
+                    
+                        <div class="header">
+                            <div class="title">メッセージブローカー</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Data Engineering
+イベントストリーム処理において、Pub&#x2F;Subの間に配置されイベントをキューイングする役割。
+基本としてイベントをコンシューマーと1対1でやりとりし処理が完了したらイベントが削除される実装がある。
+対しログベースのメッセージキューはコンシューマーと1対Nでやり取りし古いイベントのリプレイも可能である。
+
+https:&#x2F;&#x2F;aws.amazon.com&#x2F;jp&#x2F;message-queue&#x2F;
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/リレーショナルデータベース.html">
+                    
+                        <div class="header">
+                            <div class="title">リレーショナルデータベース</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Data Engineering
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/リーダーレスレプリケーション.html">
+                    
+                        <div class="header">
+                            <div class="title">リーダーレスレプリケーション</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Data Engineering
+AmazonがDynamoシステムで利用し流行しDynamoスタイルと呼ばれる。 一部のノードが何らかの理由で利用できなくてもクオラムによって読み取りあるいは書き込みの正当性を判断する
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/マルチリーダーレプリケーション.html">
+                    
+                        <div class="header">
+                            <div class="title">マルチリーダーレプリケーション</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Data Engineering
+レプリケーションの種別の一つ
+複数のデータセンターにリーダーが存在する。リアルタイムの同時編集がイメージに近い。書き込みの衝突があった際に最終的に同じ値に収束させるような方法が取られる
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/go-redis.html">
+                    
+                        <div class="header">
+                            <div class="title">go-redis</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Programming #Data Engineering
+Go用のRedis公式クライアントライブラリ
+
+Redis Cluster、Redis Sentinel、Redis Streamsをサポート
+自動コネクションプーリングを内蔵
+Pub&#x2F;Sub、パイプライン、トランザクションに対応
+
+https:&#x2F;&#x2F;github.com&#x2F;redis&#x2F;go-redis
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/tbls.k1low.html">
+                    
+                        <div class="header">
+                            <div class="context">k1LoW&#47;</div>
+                            <div class="title">tbls</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Data Engineering #Documentation
+Go言語で書かれたデータベースドキュメント化ツール
+データベーススキーマを自動的にMarkdown形式で記録し、CI&#x2F;CDパイプラインに統合可能
+PostgreSQL、MySQL、BigQuery、Snowflakeなど多数のデータベースに対応し、差分検出（diff）、品質チェック（lint）、ドキュメント網羅率測定（coverage）などの機能を提供
+https:&#x2F;&#x2F;github.com&#x2F;k1LoW&#x2F;tbls
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/mapreduce.html">
+                    
+                        <div class="header">
+                            <div class="title">MapReduce</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Data Engineering
+Unixのプロセスと同様の特徴を持つ分散ファイルシステム上のバッチ処理フレームワーク。
+MapReduceジョブは以下の2つに分かれる
+
+Mapper
+分散ファイルシステムの各レコードからキーと値のコレクションを抽出する
+
+
+Reducer
+mapperによって生成されたキーと値のコレクションからコレクションに対するイテレータとともに関数を適用し出力レコードを適用する
+
+
+
+HadoopのMapReduce実装ではHDFS(Hadoop Destributed File System)と呼ばれる分散ファイルシステムが用いられる
+</div>
+                    
+                </a>
+            </li>
+        
+    </ul>
+
+
+        </main>
+        <footer>
+            Generated by <a href="https://github.com/boykush/scraps" target="_blank" rel="noopener noreferrer">Scraps</a>
+        </footer> 
+        <!-- Code syntax highlight -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script>
+        <!-- Code syntax highlight theme -->
+        <link href="https://unpkg.com/nord-highlightjs@0.2.0/dist/nord.css" rel="stylesheet" type="text/css" />
+        <!-- Mermaid -->
+        <script type="module">
+            import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11.12.2/+esm'
+        </script>
+        
+         
+    </body>
+</html>

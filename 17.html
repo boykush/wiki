@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <!-- Page title -->
+        
+            <title>Kush&#x27;s Wiki</title>
+            <meta property="og:title" content="Kush&#x27;s Wiki" />
+            <meta name="twitter:title" content="Kush&#x27;s Wiki" />
+        
+        <!-- Page description -->
+        
+            <meta name="description" content="boykushのナレッジ置き場" />
+            <meta property="og:description" content="boykushのナレッジ置き場" />
+            <meta name="twitter:description" content="boykushのナレッジ置き場" />
+        
+        <!-- Page favicon -->
+        
+            <link rel="icon" type="image/png" href="https:&#x2F;&#x2F;gist.github.com&#x2F;boykush&#x2F;3bbc68b5d2580374c97d4336b87fb70f&#x2F;raw&#x2F;a838b8f3584b21bcbbe4dd53afca380fe18695a7&#x2F;boykush_icon.png" />
+        
+        <!-- Rubik font -->
+        <link href="https://fonts.cdnfonts.com/css/rubik" rel="stylesheet">
+        <!-- Noto Sans JP font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+        <!-- Style sheet -->
+        <link rel="stylesheet" href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;main.css">
+        
+        
+    </head>
+    <body>
+        <header>
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;">
+                <h1>Kush&#x27;s Wiki</h1>
+            </a>
+        </header>
+        <main>
+            
+    <div class="index"> 
+        
+        
+          <div class="search-block">
+              <span class="icon" />
+              <input
+                type="text"
+                id="search-input"
+                onkeyup="doSearch()"
+                placeholder="Search by title..."
+                />
+              <ul id="search-results"></ul>
+          </div>
+        
+        <div class="tags-block">
+            
+    <ul class="tag-links">
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/security.html">
+                    <span class="title">Security</span>&nbsp;<span>(86)</span>
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/programming.html">
+                    <span class="title">Programming</span>&nbsp;<span>(68)</span>
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/agile.html">
+                    <span class="title">Agile</span>&nbsp;<span>(58)</span>
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/testing.html">
+                    <span class="title">Testing</span>&nbsp;<span>(53)</span>
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/cloud-native.html">
+                    <span class="title">Cloud Native</span>&nbsp;<span>(52)</span>
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/network.html">
+                    <span class="title">Network</span>&nbsp;<span>(45)</span>
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/observability.html">
+                    <span class="title">Observability</span>&nbsp;<span>(44)</span>
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/data-engineering.html">
+                    <span class="title">Data Engineering</span>&nbsp;<span>(42)</span>
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/team-organization.html">
+                    <span class="title">Team Organization</span>&nbsp;<span>(40)</span>
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/software-design.html">
+                    <span class="title">Software Design</span>&nbsp;<span>(35)</span>
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/api-architecture.html">
+                    <span class="title">API Architecture</span>&nbsp;<span>(34)</span>
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/continuous-delivery.html">
+                    <span class="title">Continuous Delivery</span>&nbsp;<span>(29)</span>
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/documentation.html">
+                    <span class="title">Documentation</span>&nbsp;<span>(28)</span>
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/continuous-integration.html">
+                    <span class="title">Continuous Integration</span>&nbsp;<span>(26)</span>
+                </a>
+            </li>
+        
+        
+    </ul>
+
+        </div>
+        <div class="links-block">
+            <p class="sort-key">Sort by - linked count</p>
+            
+    <ul class="scrap-links">
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/secret-manager.google-cloud.html">
+                    
+                        <div class="header">
+                            <div class="context">Google Cloud&#47;</div>
+                            <div class="title">Secret Manager</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Security
+Google Cloudが提供するSMS
+Secrets Store CSI Driverを用いてGKEに組み込み可能
+
+
+Secret Manager の概要  |  Secret Manager Documentation  |  Google Cloud
+
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/pulldown-cmark.html">
+                    
+                        <div class="header">
+                            <div class="title">pulldown-cmark</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Programming
+Rust言語のMarkdown Parser
+https:&#x2F;&#x2F;github.com&#x2F;pulldown-cmark&#x2F;pulldown-cmark
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/do.samber.html">
+                    
+                        <div class="header">
+                            <div class="context">samber&#47;</div>
+                            <div class="title">do</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Go #Dependency Injection
+Go言語のDependency Injection（依存性注入）ツールキット
+Go 1.18+のジェネリクス機能を基盤とした型安全なAPIを提供するDIライブラリ。uber&#x2F;digの代替として開発された
+DIライブラリとしての特徴：
+
+ジェネリクスによる型安全性: do.MustInvoke[*Engine](i) のように型パラメータを指定してサービスを取得。コンパイル時に型チェックが行われる
+柔軟なサービス登録: do.Provide()、do.ProvideNamed()、do.ProvideValue() による個別登録、または do.Package() によるパッケージ単位の一括登録
+ローディング戦略: Eager、Lazy、Transientの3種類のローディング方式をサポート
+ライフサイクル管理: ヘルスチェック、グレースフルシャットダウン、依存関係を考慮した並列シャットダウン
+循環依存検出: 依存関係の循環を自動検出
+デバッグ機能: Web UIとHTTPミドルウェアによる依存グラフの可視化
+
+コード生成不要で軽量な設計
+https:&#x2F;&#x2F;github.com&#x2F;samber&#x2F;do
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/ピープルウエア.html">
+                    
+                        <div class="header">
+                            <div class="title">ピープルウエア</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;cdn-bookplus.nikkei.com&#x2F;atcl&#x2F;catalog&#x2F;13&#x2F;P85240&#x2F;P85240_common_pc.jpg?__scale=w:150,h:221&amp;_sh=0e5090fd06" loading="lazy" />
+                        </div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/スタッフエンジニアの道.html">
+                    
+                        <div class="header">
+                            <div class="title">スタッフエンジニアの道</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;www.oreilly.co.jp&#x2F;books&#x2F;images&#x2F;picture_large978-4-8144-0086-7.jpeg" loading="lazy" />
+                        </div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/スタートアップが山型クロスファンクショナルチームでデリバリスピードを安定させる話.html">
+                    
+                        <div class="header">
+                            <div class="title">スタートアップが山型クロスファンクショナルチームでデリバリスピードを安定させる話</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Team Organization
+
+キーワード
+
+クロスファンクショナルチーム
+Whole Team
+
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/lead-time-comma-cycle-time-and-change-lead-time.html">
+                    
+                        <div class="header">
+                            <div class="title">Lead Time, Cycle Time &amp; Change Lead Time</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;cdn.prod.website-files.com&#x2F;655b544bd3bde25e54062eda&#x2F;655da6da786209502a58f5a5_6230807e58e18d5a1deebe71_Lead_Time_Cycle_Time__Change_Lead_Time.jpeg" loading="lazy" />
+                        </div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/自動テスト実行結果の目的を整理する.html">
+                    
+                        <div class="header">
+                            <div class="title">自動テスト実行結果の目的を整理する</div>
+                        </div>
+                    
+                    
+                        <div class="summary">Organizing objectives of automated test results
+#和田 卓人 #Testing
+
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/pact.html">
+                    
+                        <div class="header">
+                            <div class="title">Pact</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;pact.io&#x2F;assets&#x2F;img&#x2F;logo-black.png" loading="lazy" />
+                        </div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/recommended-labels.kubernetes.html">
+                    
+                        <div class="header">
+                            <div class="context">Kubernetes&#47;</div>
+                            <div class="title">Recommended Labels</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Kubernetes #Cloud Native
+Kubernetesリソースを標準的な方法で記述するための共通Labelセット
+ツール間の相互運用性を実現し、アプリケーションをクエリ可能な方法で記述する
+標準ラベル
+app.kubernetes.io プレフィックスを使用
+
+app.kubernetes.io&#x2F;name - アプリケーション名
+app.kubernetes.io&#x2F;instance - 一意なインスタンス識別子
+app.kubernetes.io&#x2F;version - 現在のバージョン
+app.kubernetes.io&#x2F;component - アーキテクチャ内のコンポーネント
+app.kubernetes.io&#x2F;part-of - 上位レベルのアプリケーション名
+app.kubernetes.io&#x2F;managed-by - 管理ツール
+
+https:&#x2F;&#x2F;kubernetes.io&#x2F;docs&#x2F;concepts&#x2F;overview&#x2F;working-with-objects&#x2F;common-labels&#x2F;
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/graceperiod.kubernetes.html">
+                    
+                        <div class="header">
+                            <div class="context">Kubernetes&#47;</div>
+                            <div class="title">GracePeriod</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Kubernetes
+Podを終了する際、プロセスがSIGTERMシグナルを受け取ってからSIGKILLで強制終了されるまでの猶予期間
+デフォルトは30秒で、terminationGracePeriodSecondsで設定可能
+主な処理フロー:
+
+Podが「Terminating」状態になりSIGTERMシグナルが送信される
+アプリケーションがGracePeriod内に終了すれば即座に次の段階へ
+GracePeriod経過後も実行中の場合、SIGKILLで強制終了
+preStopフックもGracePeriod内で実行される
+
+https:&#x2F;&#x2F;kubernetes.io&#x2F;docs&#x2F;concepts&#x2F;workloads&#x2F;pods&#x2F;pod-lifecycle&#x2F;#pod-termination
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/security.kubernetes.html">
+                    
+                        <div class="header">
+                            <div class="context">Kubernetes&#47;</div>
+                            <div class="title">Security</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Security #Kubernetes
+Kubernetesクラスタとワークロードを保護するためのセキュリティ対策の総称
+4Csセキュリティモデルに基づき、Cloud、Cluster、Container、Codeの各レイヤーで多層防御を実装する
+主なセキュリティ機能:
+
+アクセス制御: ServiceAccount、Role、RBAC
+Pod保護: Security Context、Pod Security Standards、Pod Security Admission
+ネットワーク: Network policy、サービスメッシュ
+シークレット管理: Secret
+
+https:&#x2F;&#x2F;kubernetes.io&#x2F;docs&#x2F;concepts&#x2F;security&#x2F;
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/テストコードにはテストの意図を込めよう.html">
+                    
+                        <div class="header">
+                            <div class="title">テストコードにはテストの意図を込めよう</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#TDD #風間 裕也 #Testing
+ユニットテストのテストケース名は、入力値を列挙するのではなく論理的な組み合わせとしての意図・目的を込めるようにすべき。という話
+
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/important-components-for-kubernetes.html">
+                    
+                        <div class="header">
+                            <div class="title">Important Components for Kubernetes</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Observability
+OpenTelemetry CollectorをKubernetes上で構築するコンポーネント群の説明
+Prometeus Receiverの例ではDaemonSet(agent)またはDeployment(gateway)を用いた実装のサンプルコードが置かれている
+https:&#x2F;&#x2F;opentelemetry.io&#x2F;docs&#x2F;platforms&#x2F;kubernetes&#x2F;collector&#x2F;components&#x2F;
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/デジタルアイデンティティのすべて.html">
+                    
+                        <div class="header">
+                            <div class="title">デジタルアイデンティティのすべて</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;www.oreilly.co.jp&#x2F;books&#x2F;images&#x2F;picture_large978-4-8144-0098-0.jpeg" loading="lazy" />
+                        </div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/remote-control.claude-code.html">
+                    
+                        <div class="header">
+                            <div class="context">Claude Code&#47;</div>
+                            <div class="title">Remote Control</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#LLM
+Claude Codeセッションをスマートフォンやタブレットからリモート操作できる機能。claude remote-controlコマンドでセッションを起動し、QRコードまたはセッションURLで接続する
+コード実行やファイルアクセスはすべてローカルマシン上で行われる
+https:&#x2F;&#x2F;code.claude.com&#x2F;docs&#x2F;en&#x2F;remote-control
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/tasks.claude-code.html">
+                    
+                        <div class="header">
+                            <div class="context">Claude Code&#47;</div>
+                            <div class="title">Tasks</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#LLM
+Claude Codeの組み込みタスク管理システムで、Todoの後継機能
+タスク間の依存関係（blocks&#x2F;blockedBy）をDAGで管理し、CLAUDE_CODE_TASK_LIST_ID環境変数で複数セッション間の共有が可能
+https:&#x2F;&#x2F;code.claude.com&#x2F;docs&#x2F;en&#x2F;interactive-mode#task-list
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/claude-code-security.claude-code.html">
+                    
+                        <div class="header">
+                            <div class="context">Claude Code&#47;</div>
+                            <div class="title">Claude Code Security</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Security
+Claude Code on the webに統合されたAI脆弱性スキャン機能。SASTのようなパターンマッチングではなくコードベース全体を推論し、ビジネスロジックの欠陥やアクセス制御の不備を検出する。多段階検証で偽陽性を除外し修正パッチを提案するが適用には人間の承認が必要
+https:&#x2F;&#x2F;www.anthropic.com&#x2F;news&#x2F;claude-code-security
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/opus-plan-mode.claude-code.html">
+                    
+                        <div class="header">
+                            <div class="context">Claude Code&#47;</div>
+                            <div class="title">Opus Plan Mode</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#LLM
+Claude CodeのPlan Modeにおいて、Opusモデルを利用し、計画の承認後は自動でSonnetモデルに切り替えるモード
+https:&#x2F;&#x2F;docs.anthropic.com&#x2F;en&#x2F;docs&#x2F;claude-code&#x2F;model-config#opusplan-model-setting
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/lsp-plugins.claude-code.html">
+                    
+                        <div class="header">
+                            <div class="context">Claude Code&#47;</div>
+                            <div class="title">LSP Plugins</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Programming #LLM
+Claude Codeにおいてclaude-plugin-officialが公開している
+LSP（Language Server Protocol）プラグインを追加し、リアルタイムコード知能を提供する機能
+主な特徴:
+
+言語サーバーバイナリのインストールが必須
+IDE統合時に診断情報が自動共有される
+公式マーケットプレイスから言語別プラグインを追加可能
+
+サポート言語:
+
+C&#x2F;C++
+C#
+Go(gopls)
+Java
+Lua
+PHP
+Python
+Rust
+Swift
+TypeScript
+
+設定例（.claude&#x2F;settings.json）:
+{
+  &quot;enabledPlugins&quot;: {
+    &quot;rust-analyzer-lsp@claude-plugins-official&quot;: true
+  }
+}
+
+https:&#x2F;&#x2F;code.claude.com&#x2F;docs&#x2F;en&#x2F;discover-plugins
+https:&#x2F;&#x2F;code.claude.com&#x2F;docs&#x2F;en&#x2F;plugins
+https:&#x2F;&#x2F;github.com&#x2F;anthropics&#x2F;claude-plugins-official
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/worktree.claude-code.html">
+                    
+                        <div class="header">
+                            <div class="context">Claude Code&#47;</div>
+                            <div class="title">worktree</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#LLM
+Claude Codeで--worktreeフラグによりGitのworktreeを作成し、複数セッションの並行実行を可能にする分離環境。サブエージェントもisolation: worktreeで利用可能
+https:&#x2F;&#x2F;code.claude.com&#x2F;docs&#x2F;en&#x2F;common-workflows#run-parallel-claude-code-sessions-with-git-worktrees
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/github-actions.claude-code.html">
+                    
+                        <div class="header">
+                            <div class="context">Claude Code&#47;</div>
+                            <div class="title">GitHub Actions</div>
+                        </div>
+                    
+                    
+                        <div class="summary">Claude CodeをGitHubリポジトリ上で呼び出すのを容易にするGitHub Actions
+GitHub Issue、PR上で @claude メンションを用いて起動が可能になる
+https:&#x2F;&#x2F;github.com&#x2F;anthropics&#x2F;claude-code-action
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/スプリントレビューの進め方.html">
+                    
+                        <div class="header">
+                            <div class="title">スプリントレビューの進め方</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Blog #スプリントレビュー #吉羽 龍太郎 #Agile
+
+Blog
+
+</div>
+                    
+                </a>
+            </li>
+        
+    </ul>
+
+        </div>
+        <div class="paging-arrows">
+            
+                <a class="prev" href=".&#x2F;16.html">prev</a>
+            
+            
+        </div>
+    </div>
+
+        </main>
+        <footer>
+            Generated by <a href="https://github.com/boykush/scraps" target="_blank" rel="noopener noreferrer">Scraps</a>
+        </footer> 
+        <!-- Code syntax highlight -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script>
+        <!-- Code syntax highlight theme -->
+        <link href="https://unpkg.com/nord-highlightjs@0.2.0/dist/nord.css" rel="stylesheet" type="text/css" />
+        <!-- Mermaid -->
+        <script type="module">
+            import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11.12.2/+esm'
+        </script>
+        
+  
+  <!-- For search scraps -->
+  <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.1.0"></script>
+  <script type="module">
+    fetch('./search_index.json')
+      .then(response => response.json())
+      .then(data => {
+        const fuseOptions = {
+          minMatchCharLength: 3,
+          keys: ["title"]
+        };
+        const fuse = new Fuse(data, fuseOptions);
+        window.search = function (query, numResults) {
+          return fuse.search(query).slice(0, numResults).map(result => [result.item.title, result.item.url]);
+        };
+      })
+  </script>
+  <script>
+    function doSearch() {
+      let value = document.getElementById("search-input").value;
+      console.log(`Search query: ${value}`);
+
+      // Retrieve 5 results
+      const results = search(value, 5);
+
+      console.log(`Results: ${results}`);
+
+      let ul = document.getElementById("search-results");
+      ul.innerHTML = "";
+
+      results.forEach((result, index) => {
+        var li = document.createElement("li");
+
+        let [title, url] = result;
+        console.log(`Title: ${title}, URL: ${url}`);
+        let elemlink = document.createElement('a');
+        elemlink.innerHTML = title;
+        elemlink.setAttribute('href', url);
+        li.appendChild(elemlink);
+        li.style.top = `${(index * 30) - 16}px`;
+        ul.appendChild(li);
+      })
+    }
+  </script>
+  
+ 
+    </body>
+</html>

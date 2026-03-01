@@ -1,0 +1,1833 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <!-- Page title -->
+        
+            <title>Kush&#x27;s Wiki</title>
+            <meta property="og:title" content="Kush&#x27;s Wiki" />
+            <meta name="twitter:title" content="Kush&#x27;s Wiki" />
+        
+        <!-- Page description -->
+        
+            <meta name="description" content="boykushのナレッジ置き場" />
+            <meta property="og:description" content="boykushのナレッジ置き場" />
+            <meta name="twitter:description" content="boykushのナレッジ置き場" />
+        
+        <!-- Page favicon -->
+        
+            <link rel="icon" type="image/png" href="https:&#x2F;&#x2F;gist.github.com&#x2F;boykush&#x2F;3bbc68b5d2580374c97d4336b87fb70f&#x2F;raw&#x2F;a838b8f3584b21bcbbe4dd53afca380fe18695a7&#x2F;boykush_icon.png" />
+        
+        <!-- Rubik font -->
+        <link href="https://fonts.cdnfonts.com/css/rubik" rel="stylesheet">
+        <!-- Noto Sans JP font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+        <!-- Style sheet -->
+        <link rel="stylesheet" href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;main.css">
+        
+        
+    </head>
+    <body>
+        <header>
+            <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;">
+                <h1>Kush&#x27;s Wiki</h1>
+            </a>
+        </header>
+        <main>
+            
+    <div class="tag">
+        <h1 class="title">Security</h1>
+    </div>
+    
+    <ul class="scrap-links">
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/claude-code-security.claude-code.html">
+                    
+                        <div class="header">
+                            <div class="context">Claude Code&#47;</div>
+                            <div class="title">Claude Code Security</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Security
+Claude Code on the webに統合されたAI脆弱性スキャン機能。SASTのようなパターンマッチングではなくコードベース全体を推論し、ビジネスロジックの欠陥やアクセス制御の不備を検出する。多段階検証で偽陽性を除外し修正パッチを提案するが適用には人間の承認が必要
+https:&#x2F;&#x2F;www.anthropic.com&#x2F;news&#x2F;claude-code-security
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/レートリミット.html">
+                    
+                        <div class="header">
+                            <div class="title">レートリミット</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Security #API Architecture
+以下のような目的でAPIの使用回数を制限する、制限を超過した時はHTTPの場合一般に429エラーを返す処理
+
+STRIDEにあるようなDenial of Service（サービス拒否）からアプリケーションを保護する
+カスケード障害の可能性を制限する
+リソースの使用量を測定し従量課金に利用できる
+
+レートリミットの実装アルゴリズムには以下のようなものがある
+
+固定ウインドウ（Fixed window）
+固定期間内の制限
+
+
+スライディングウインドウ（Sliding window）
+直近の期間内の制限
+
+
+トークンバケット方式（Token bucket）
+総リクエスト数（トークンのバケツ）を定義しリクエストごとにトークンが利用される。バケツは定期的に充填される
+
+
+リーキーバケット方式（Leaky bucket）
+リクエストが処理される速度は固定で、バケツから溢れ出るリクエストを漏れ（リーキー）として扱う
+
+
+
+APIゲートウェイを利用している場合、ゲートウェイに配置するとよい
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/secret.kubernetes.html">
+                    
+                        <div class="header">
+                            <div class="context">Kubernetes&#47;</div>
+                            <div class="title">Secret</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;github.com&#x2F;kubernetes&#x2F;community&#x2F;raw&#x2F;master&#x2F;icons&#x2F;png&#x2F;resources&#x2F;labeled&#x2F;secret-128.png" loading="lazy" />
+                        </div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/security.kubernetes.html">
+                    
+                        <div class="header">
+                            <div class="context">Kubernetes&#47;</div>
+                            <div class="title">Security</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Security #Kubernetes
+Kubernetesクラスタとワークロードを保護するためのセキュリティ対策の総称
+4Csセキュリティモデルに基づき、Cloud、Cluster、Container、Codeの各レイヤーで多層防御を実装する
+主なセキュリティ機能:
+
+アクセス制御: ServiceAccount、Role、RBAC
+Pod保護: Security Context、Pod Security Standards、Pod Security Admission
+ネットワーク: Network policy、サービスメッシュ
+シークレット管理: Secret
+
+https:&#x2F;&#x2F;kubernetes.io&#x2F;docs&#x2F;concepts&#x2F;security&#x2F;
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/pod-security-standards.kubernetes.html">
+                    
+                        <div class="header">
+                            <div class="context">Kubernetes&#47;</div>
+                            <div class="title">Pod Security Standards</div>
+                        </div>
+                    
+                    
+                        <div class="summary">PSS
+#Security #Kubernetes
+Podが満たすべきセキュリティ標準
+3つのセキュリティプロファイルにグループ分けされており上から順に制限が厳しくなっていく
+
+Privileged
+Baseline
+Restricted
+
+
+
+Pod Security Standards | Kubernetes
+
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/security-context.kubernetes.html">
+                    
+                        <div class="header">
+                            <div class="context">Kubernetes&#47;</div>
+                            <div class="title">Security Context</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Kubernetes
+Pod定義にセキュリティ文脈の設定を追加するAPI
+主にLinuxベースの以下のような観点に対する制御を行う
+
+Non-root User
+Linux Capabilities
+
+
+
+Configure a Security Context for a Pod or Container | Kubernetes
+
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/pod-security-admission.kubernetes.html">
+                    
+                        <div class="header">
+                            <div class="context">Kubernetes&#47;</div>
+                            <div class="title">Pod Security Admission</div>
+                        </div>
+                    
+                    
+                        <div class="summary">PSA
+#Security #Kubernetes
+Pod Security Standardsを違反する可能性がある際のアクションを実行する
+アクションは以下の3つ
+
+Warn
+Audit
+Enforce
+
+
+
+Pod Security Admission | Kubernetes
+
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/完全性.html">
+                    
+                        <div class="header">
+                            <div class="title">完全性</div>
+                        </div>
+                    
+                    
+                        <div class="summary">Integrity
+#Security
+データを正確に管理する、不正な変更や削除を許さない
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/mtls.html">
+                    
+                        <div class="header">
+                            <div class="title">mTLS</div>
+                        </div>
+                    
+                    
+                        <div class="summary">相互TLS認証
+#Security #Network #TLS
+ネットワークの両端がTLS証明書を持ち相互に認証を行うことで、双方向で安全かつ信頼できることを保証する
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/owasp-top-ten.html">
+                    
+                        <div class="header">
+                            <div class="title">OWASP Top Ten</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Security
+OWASP Foundationが発表するセキュリティ専門家によるトップ10に含まれるべき脆弱性リスト
+定期的に更新されるため最新を追うべき
+
+https:&#x2F;&#x2F;owasp.org&#x2F;www-project-top-ten&#x2F;
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/secret-manager.google-cloud.html">
+                    
+                        <div class="header">
+                            <div class="context">Google Cloud&#47;</div>
+                            <div class="title">Secret Manager</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Security
+Google Cloudが提供するSMS
+Secrets Store CSI Driverを用いてGKEに組み込み可能
+
+
+Secret Manager の概要  |  Secret Manager Documentation  |  Google Cloud
+
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/certificate-manager.google-cloud.html">
+                    
+                        <div class="header">
+                            <div class="context">Google Cloud&#47;</div>
+                            <div class="title">Certificate Manager</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Security
+Google Cloudにおいて外部ロードバランシングで必要となるようなTLS証明書を管理する
+
+Certificate Manager の概要  |  Google Cloud
+
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/cryptography.html">
+                    
+                        <div class="header">
+                            <div class="title">Cryptography</div>
+                        </div>
+                    
+                    
+                        <div class="summary">暗号
+#Security
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/jwt.html">
+                    
+                        <div class="header">
+                            <div class="title">JWT</div>
+                        </div>
+                    
+                    
+                        <div class="summary">JSON Web Token
+#Security #Authentication
+トークン自体の情報（例: 期限）を自身で構造化して保持することで、共有データベースへ保持・検索をする必要がないトークン。トークンが自身の情報を持つことで外部からのトークン取り消しのような操作はできない
+JWTは.によって3つのセクションの文字列に分割できる（署名がない場合3つ目のセクションは空）
+それぞれのセクションの文字列は構造化されたJSONをBase64URLエンコードした結果となっている
+ヘッダー
+1つ目のセクションはヘッダーとして以下のような構造を持つ
+{
+    &quot;typ&quot;: &quot;JWT&quot;,
+    &quot;alg&quot;: &quot;RSA256&quot;
+}
+
+algで指定する署名アルゴリズムは3つ目の署名セクションの解読にて用いる
+ペイロード
+2つ目のセクションはトークン自体のペイロードになる。ペイロードの中身はJSONであれば自由だが、JWTクレームと呼ばれる役割が明示・明示された項目群が存在する。
+例として　iss（発行者）、sub（対象者）、exp（有効期限）などがある
+署名
+3つ目のセクションはHMACやRSAのような署名アルゴリズムを使った結果が保持される
+
+RFC 7519 - JSON Web Token (JWT)
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/ev証明書.html">
+                    
+                        <div class="header">
+                            <div class="title">EV証明書</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Security
+OV証明書の内容に加えて、組織の情報と場所（extended validation）を認証局が証明するデジタル証明書
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/introduction-to-safe-programming-with-numeric-library.html">
+                    
+                        <div class="header">
+                            <div class="title">Introduction to safe programming with numeric library</div>
+                        </div>
+                    
+                    
+                        <div class="summary">数値ライブラリで始める安全なプログラミング
+#Programming #Security #Scala
+Scala Matsuri 2024での発表
+Spireライブラリを用いて安全な数値計算を行うテクニックを紹介している
+
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/linux-capabilities.html">
+                    
+                        <div class="header">
+                            <div class="title">Linux Capabilities</div>
+                        </div>
+                    
+                    
+                        <div class="summary">rootユーザーが持つ特権を細分化したもの
+Non-root Userへ必要最小限のケイパビリティを割り当てる方法は、Dockerのセキュリティベストプラクティスとして紹介されている
+Linux Capabilities
+
+
+Docker のセキュリティ — Docker-docs-ja 1.12.RC2 ドキュメント
+
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/適応度関数.html">
+                    
+                        <div class="header">
+                            <div class="title">適応度関数</div>
+                        </div>
+                    
+                    
+                        <div class="summary">Fitness Function
+#API Architecture
+システムの品質特性を数量化可能な指標で評価する、システムの目標を一貫して保証するためにビルドパイプラインに組み込まれる
+それぞれの特性は以下のようにカテゴライズされる
+
+コード品質（Code Quality）
+レジリエンス（Resiliency）
+オブザーバビリティ（Observability）
+パフォーマンス（Performance）
+コンプライアンス（Compliance）
+セキュリティ（Security）
+運用操作性（Operability）
+
+
+
+Fitness function-driven development | Thoughtworks
+
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/cookie.html">
+                    
+                        <div class="header">
+                            <div class="title">Cookie</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Security #Network
+HTTP通信において、セッション管理にいくつかのセキュリティ機能を提供する
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/ゴールドスタンダード.html">
+                    
+                        <div class="header">
+                            <div class="title">ゴールドスタンダード</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Security
+ゴールドスタンダード（Gold Standard）は、セキュアなシステム設計における基本原則で、C-I-Aを保護する執行メカニズムとして機能します。
+
+認証（Authentication）: ユーザーが本人であることを証明
+認可（Authorization）: 認証されたユーザーの行動の許可・拒否を決定
+監査（Auditing）: システムアクティビティの信頼できるログを維持
+
+ラテン語で金を意味する「Aurum」の化学記号「Au」に由来し、3つの原則が「Au」で始まることからこの名称が付けられています。
+https:&#x2F;&#x2F;designingsecuresoftware.com&#x2F;text&#x2F;ch1-gold&#x2F;
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/quay.io.html">
+                    
+                        <div class="header">
+                            <div class="title">Quay.io</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Cloud Native #Security #Continuous Integration
+Red Hatが提供するコンテナイメージレジストリサービス
+コンテナイメージの保存・配布を行い、SAST脆弱性スキャナーClairによる自動セキュリティスキャンを統合している
+3つの提供形態がある
+
+Quay.io - Red Hatが運用するホスト型サービス。パブリックリポジトリは無料
+Red Hat Quay - オンプレミスまたはプライベートクラウドにデプロイ可能。Operatorとしても提供
+Project Quay - Apache 2.0ライセンスのOSS版
+
+Docker Hubの代替として、エンタープライズ向けのアクセス制御やイメージ署名機能を備える
+https:&#x2F;&#x2F;quay.io&#x2F;
+https:&#x2F;&#x2F;www.projectquay.io&#x2F;
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/kubernetesパターン-第2版.html">
+                    
+                        <div class="header">
+                            <div class="title">Kubernetesパターン 第2版</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;www.oreilly.co.jp&#x2F;books&#x2F;images&#x2F;picture_large978-4-8144-0088-1.jpeg" loading="lazy" />
+                        </div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/可用性.html">
+                    
+                        <div class="header">
+                            <div class="title">可用性</div>
+                        </div>
+                    
+                    
+                        <div class="summary">Availability
+#Security
+データを利用可能な状態に保つこと。大幅な遅延や不正なシャットダウンを許さない
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/owasp.html">
+                    
+                        <div class="header">
+                            <div class="title">OWASP</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;owasp.org&#x2F;assets&#x2F;images&#x2F;logo.png" loading="lazy" />
+                        </div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/x-frame-options.html">
+                    
+                        <div class="header">
+                            <div class="title">X-Frame-Options</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Security #Network
+クリックジャッキング攻撃を防ぐためのHTTPレスポンスヘッダー
+ページが&amp;lt;frame&amp;gt;、&amp;lt;iframe&amp;gt;、&amp;lt;embed&amp;gt;、&amp;lt;object&amp;gt;内で表示されることを制御する
+設定値は以下の3つ
+
+DENY: すべてのフレーム表示を禁止
+SAMEORIGIN: 同一オリジンのみフレーム表示を許可
+ALLOW-FROM URI: 特定のURIからのフレーム表示を許可（非推奨）
+
+現在はCSPのframe-ancestorsディレクティブの使用が推奨されている
+https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Web&#x2F;HTTP&#x2F;Reference&#x2F;Headers&#x2F;X-Frame-Options
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/the-laws-of-identity.html">
+                    
+                        <div class="header">
+                            <div class="title">The Laws of Identity</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Security
+Kim Cameronが提唱したデジタルアイデンティティシステムの設計原則
+アイデンティティメタシステムが満たすべき7つの法則：
+
+User Control and Consent（ユーザー制御と同意）: ユーザーがアイデンティティ情報の開示を制御できる
+Minimal Disclosure for a Constrained Use（最小限の開示）: 特定の目的に必要な最小限の情報のみを開示
+Justifiable Parties（正当な当事者）: アイデンティティ情報は正当な目的を持つ当事者にのみ開示
+Directed Identity（指向性アイデンティティ）: ユニバーサル識別子と方向性識別子の両方をサポート
+Pluralism of Operators and Technologies（多元性）: 複数のアイデンティティ技術とプロバイダーの共存
+Human Integration（人間との統合）: ユーザーが理解し判断できるシステム設計
+Consistent Experience Across Contexts（一貫した体験）: コンテキスト間で一貫したユーザー体験を提供
+
+https:&#x2F;&#x2F;www.identityblog.com&#x2F;?p=352
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/blocking-brute-force-attacks.html">
+                    
+                        <div class="header">
+                            <div class="title">Blocking Brute Force Attacks</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Security #Authentication #Blog
+ブルートフォース攻撃を防ぐための対策をまとめたOWASP Communityの記事
+主な対策方法
+
+アカウントロックアウト機能（DoS攻撃に悪用されるリスクに注意）
+Device Cookies（デバイスごとの認証ロック機構、DoS攻撃に対して耐性がある）
+パスワード検証時の遅延追加
+IPアドレスベースのレートリミット
+CAPTCHAの導入
+複数の秘密の質問による認証強化
+
+単一の技術では回避されやすいため、複数の対策を組み合わせることが重要
+https:&#x2F;&#x2F;owasp.org&#x2F;www-community&#x2F;controls&#x2F;Blocking_Brute_Force_Attacks
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/authentication.html">
+                    
+                        <div class="header">
+                            <div class="title">Authentication</div>
+                        </div>
+                    
+                    
+                        <div class="summary">認証
+#Security
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/sast.html">
+                    
+                        <div class="header">
+                            <div class="title">SAST</div>
+                        </div>
+                    
+                    
+                        <div class="summary">Static Application Security Testing
+#Security #Testing
+ソースコード、バイトコード、バイナリを解析してセキュリティ脆弱性を検出するテスト手法
+ホワイトボックステストとも呼ばれ、アプリケーションを実行せずにコードを分析する
+特徴
+
+DevSecOpsのシフトレフトを実現
+CIパイプラインに統合可能
+SQLインジェクション、XSS、バッファオーバーフロー等を検出
+
+DAST（動的テスト）と組み合わせて使用されることが多い
+https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Static_application_security_testing
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/devsecops.html">
+                    
+                        <div class="header">
+                            <div class="title">DevSecOps</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Security #Continuous Integration #Continuous Delivery
+DevOpsにセキュリティを統合したアプローチ
+ソフトウェア開発ライフサイクル（SDLC）の全段階にセキュリティを組み込む
+主要な原則
+
+シフトレフトセキュリティ
+開発初期段階からセキュリティを考慮
+
+
+自動化
+CI&#x2F;CDパイプラインへのセキュリティテストの統合
+SAST
+
+
+コラボレーション
+開発・セキュリティ・運用チームの協働
+
+
+
+https:&#x2F;&#x2F;www.devsecops.org&#x2F;
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/cilium.html">
+                    
+                        <div class="header">
+                            <div class="title">Cilium</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Network #Cloud Native #Observability #Security
+https:&#x2F;&#x2F;cilium.io&#x2F;
+eBPF技術を活用したクラウドネイティブなネットワーキングソフトウェア
+KubernetesのCNIとしてネットワークの接続、保護、監視を提供する
+ユースケースとして以下のような例がある
+L4 ロードバランシング
+https:&#x2F;&#x2F;cilium.io&#x2F;use-cases&#x2F;load-balancer&#x2F;
+kube-proxy
+https:&#x2F;&#x2F;cilium.io&#x2F;use-cases&#x2F;kube-proxy&#x2F;
+サービスメッシュ
+https:&#x2F;&#x2F;cilium.io&#x2F;use-cases&#x2F;service-mesh&#x2F;
+Gateway API
+https:&#x2F;&#x2F;cilium.io&#x2F;use-cases&#x2F;gateway-api&#x2F;
+Ingress
+https:&#x2F;&#x2F;cilium.io&#x2F;use-cases&#x2F;ingress&#x2F;
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/mfa.html">
+                    
+                        <div class="header">
+                            <div class="title">MFA</div>
+                        </div>
+                    
+                    
+                        <div class="summary">Multi Factor Authentication
+多要素認証
+#Security #Authentication
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/captcha.html">
+                    
+                        <div class="header">
+                            <div class="title">CAPTCHA</div>
+                        </div>
+                    
+                    
+                        <div class="summary">Completely Automated Public Turing test to tell Computers and Humans Apart
+#Security #Authentication
+人間とボット（自動プログラム）を区別するための技術
+主な目的はブルートフォース攻撃の防止、スパムやボットによる自動投稿の防止、不正なアカウント作成の防止
+代表的な実装として、Google reCAPTCHA、hCaptcha、テキストベースCAPTCHAなどがある
+アクセシビリティの観点から、音声CAPTCHAなどの代替手段の提供が推奨される
+https:&#x2F;&#x2F;www.cloudflare.com&#x2F;ja-jp&#x2F;learning&#x2F;bots&#x2F;how-captchas-work&#x2F;
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/アカウントロックアウト.html">
+                    
+                        <div class="header">
+                            <div class="title">アカウントロックアウト</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Security #Authentication
+一定回数の不正なパスワード入力後にアカウントを一時的または永続的にロックするブルートフォース攻撃対策
+主な問題点
+
+DoS攻撃の標的になりやすい（攻撃者が大量のアカウントをロック可能）
+ユーザー名の列挙が可能（存在するアカウントのみがロックされる）
+ヘルプデスクへの負担増加
+低速攻撃や複数ユーザー対象の攻撃に無効
+
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/ssl.html">
+                    
+                        <div class="header">
+                            <div class="title">SSL</div>
+                        </div>
+                    
+                    
+                        <div class="summary">Secure Sockets Layer
+#Network #Security
+TLSの前身
+基本的にはdeprecatedだが、デジタル証明書発行等の文脈で引き続き用いられている
+https:&#x2F;&#x2F;www.cloudflare.com&#x2F;learning&#x2F;ssl&#x2F;what-is-ssl&#x2F;
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/kms.amazon.html">
+                    
+                        <div class="header">
+                            <div class="context">Amazon&#47;</div>
+                            <div class="title">KMS</div>
+                        </div>
+                    
+                    
+                        <div class="summary">Key Management Service
+#Security
+AWSが提供するKMS
+
+
+AWS Key Management Service
+
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/サービスメッシュ.html">
+                    
+                        <div class="header">
+                            <div class="title">サービスメッシュ</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Network #Observability #Security #API Architecture
+マイクロサービスで行われるようなサービス間通信をルーティング、監視、保護する機能を提供する
+Kubernetesにおいてはクラスタ単位でサービスメッシュを構築する
+サービスメッシュはクラスタ内の全てのサービス間通信を制御するコントロールプレーンとコントロールプレーンで指定された作業が実行されるデータプレーン（サービス）の2つの基本要素を持つ。
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/microsoft-threat-modeling-tool.html">
+                    
+                        <div class="header">
+                            <div class="title">Microsoft Threat Modeling Tool</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Security
+脅威モデリングを行うためのツール群、Microsoftによって提供されている
+
+https:&#x2F;&#x2F;learn.microsoft.com&#x2F;ja-jp&#x2F;azure&#x2F;security&#x2F;develop&#x2F;threat-modeling-tool
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/tls.html">
+                    
+                        <div class="header">
+                            <div class="title">TLS</div>
+                        </div>
+                    
+                    
+                        <div class="summary">Transport Layer Security
+#Network #Security
+通信暗号化プロトコル
+ネットワーク通信開始時にTLSハンドシェイクによる通信の確立後、鍵交換を行いセキュアな通信を行う（ハイブリッド鍵システム）
+https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Glossary&#x2F;TLS
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/authorization.html">
+                    
+                        <div class="header">
+                            <div class="title">Authorization</div>
+                        </div>
+                    
+                    
+                        <div class="summary">認可
+#Security
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/c-i-a.html">
+                    
+                        <div class="header">
+                            <div class="title">C-I-A</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Security
+
+機密性(Confidentiality)
+完全性(Integrity)
+可用性(Availability)
+
+の頭文字を取ったセキュリティの3つの柱
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/denial-of-service.owasp-cheat-sheet-series.html">
+                    
+                        <div class="header">
+                            <div class="context">OWASP Cheat Sheet Series&#47;</div>
+                            <div class="title">Denial of Service</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Security #OWASP
+DoS攻撃の防御戦略をまとめたOWASP Cheat Sheet Series
+OSIモデルに基づくCERT-EU分類を採用し、3つの攻撃層に分類している
+
+Application層：サーバリソースの枯渇またはアプリケーション機能の無効化（Slow HTTP攻撃など）
+Session&#x2F;Protocol層：サーバやファイアウォール、ロードバランサーなどのリソース消費
+Network&#x2F;Volumetric層：ネットワーク帯域幅の飽和
+
+主な防御戦略
+
+単一障害点（SPOF）の排除と冗長性確保
+グレースフルデグラデーション（部分的機能継続）の実装
+入力検証（ファイルサイズ、リクエストサイズの上限設定）
+セッションタイムアウトの適切な設定
+レートリミット（最小入信データレート、接続タイムアウト、帯域幅上限）
+ISPレベルでのIP偽装フィルタリング
+CPU集約的操作の回避
+例外処理の適切な実装
+静的リソースの別ドメイン配置
+
+https:&#x2F;&#x2F;cheatsheetseries.owasp.org&#x2F;cheatsheets&#x2F;Denial_of_Service_Cheat_Sheet.html
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/authentication.owasp-cheat-sheet-series.html">
+                    
+                        <div class="header">
+                            <div class="context">OWASP Cheat Sheet Series&#47;</div>
+                            <div class="title">Authentication</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Security #Authentication #OWASP
+
+Session Management
+zxcvbn-ts
+Pwned Passwords
+TLS Client Authentication
+MFA
+OAuth2
+OpenId
+SAML
+Brute Force
+
+https:&#x2F;&#x2F;cheatsheetseries.owasp.org&#x2F;cheatsheets&#x2F;Authentication_Cheat_Sheet.html
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/session-management.owasp-cheat-sheet-series.html">
+                    
+                        <div class="header">
+                            <div class="context">OWASP Cheat Sheet Series&#47;</div>
+                            <div class="title">Session Management</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Security #Authentication #OWASP
+
+HTTP
+Cookie
+
+https:&#x2F;&#x2F;cheatsheetseries.owasp.org&#x2F;cheatsheets&#x2F;Session_Management_Cheat_Sheet.html
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/セキュアなソフトウェアの設計と開発.html">
+                    
+                        <div class="header">
+                            <div class="title">セキュアなソフトウェアの設計と開発</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;www.shuwasystem.co.jp&#x2F;images&#x2F;book&#x2F;632135.jpg" loading="lazy" />
+                        </div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/ov証明書.html">
+                    
+                        <div class="header">
+                            <div class="title">OV証明書</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Security
+組織が法的に登録されたビジネスである（organization validation）ことを認証局が証明するデジタル証明書
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/否認防止.html">
+                    
+                        <div class="header">
+                            <div class="title">否認防止</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Security
+メッセージが送信または受信を攻撃者が否認した際に、否認できないように保証すること
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/ブルートフォース攻撃.html">
+                    
+                        <div class="header">
+                            <div class="title">ブルートフォース攻撃</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Security #Authentication
+総当たり攻撃。パスワードや暗号鍵などを、可能な組み合わせを全て試すことで解読を試みる攻撃手法
+対策として以下のような方法がある
+
+強力なパスワードポリシーの適用（zxcvbn-ts、Pwned Passwordsによる検証）
+アカウントロックアウト機能
+レートリミットによるログイン試行回数の制限
+MFAの導入
+CAPTCHAの利用
+
+https:&#x2F;&#x2F;www.ipa.go.jp&#x2F;security&#x2F;vuln&#x2F;websecurity&#x2F;brute-force.html
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/device-cookies.html">
+                    
+                        <div class="header">
+                            <div class="title">Device Cookies</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Security #Authentication
+ブルートフォース攻撃を軽減するための認証ロック機構。ユーザーが正常に認証された後、そのブラウザに発行される特別なCookie
+従来のアカウントロックアウトと比較して以下の利点がある
+
+DoS攻撃に対して耐性がある
+IPアドレスではなくブラウザCookieを基準とするため予測可能で実装しやすい
+ボットネットや代理経由の攻撃に対応しやすい
+
+認証リクエスト時に有効なDevice Cookieの有無を確認し、未信頼クライアント（Device Cookieなし）からの認証試行回数を記録してロックアウトを実施する
+実装にはJWT、Redis&#x2F;Memcachedによるロックリスト管理、HMAC署名による改ざん防止などが用いられる
+https:&#x2F;&#x2F;owasp.org&#x2F;www-community&#x2F;Slow_Down_Online_Guessing_Attacks_with_Device_Cookies
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/マスタリングapiアーキテクチャ.html">
+                    
+                        <div class="header">
+                            <div class="title">マスタリングAPIアーキテクチャ</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;www.oreilly.co.jp&#x2F;books&#x2F;images&#x2F;picture_large978-4-8144-0089-8.jpeg" loading="lazy" />
+                        </div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/脅威モデリング.html">
+                    
+                        <div class="header">
+                            <div class="title">脅威モデリング</div>
+                        </div>
+                    
+                    
+                        <div class="summary">Threat Modeling
+#Security
+アプリケーションに影響を与える脅威、攻撃、脆弱性、対策を特定する技術
+モデリング手法として5つのステップを繰り返すよう紹介している
+
+Defining security requirements.
+Creating an application diagram.
+Identifying threats.
+Mitigating threats.
+Validating that threats have been mitigated.
+
+
+https:&#x2F;&#x2F;www.microsoft.com&#x2F;en-us&#x2F;securityengineering&#x2F;sdl&#x2F;threatmodeling
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/アイデンティティの階層.html">
+                    
+                        <div class="header">
+                            <div class="title">アイデンティティの階層</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Security
+2002年にAndre Durandが提唱した「Three Tiers of Identity」というフレームワーク。デジタルアイデンティティを3つの階層に分類する。
+T1 - Personal Identity（個人アイデンティティ）: 時間を超えて不変で無条件。真の個人的デジタルアイデンティティであり、完全に本人が所有・管理し、本人の利益のためだけに存在する。
+T2 - Corporate Identity（共有アイデンティティ）: 条件付きで一時的に割り当てられる。本人または発行した企業のいずれかによって取り消し可能。通常、ビジネス関係のコンテキストで本人を指す。
+T3 - Marketing Identity（抽象化されたアイデンティティ）: 通常、人口統計やビジネスとのやり取りにおける行動に基づく。
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/httponly.cookie.html">
+                    
+                        <div class="header">
+                            <div class="context">Cookie&#47;</div>
+                            <div class="title">HttpOnly</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Security
+Cookieの属性の1つ
+JavaScriptのようなスクリプトからのCookieアクセスを無効にする
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/samesite.cookie.html">
+                    
+                        <div class="header">
+                            <div class="context">Cookie&#47;</div>
+                            <div class="title">SameSite</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Security
+Cookie属性の1つ
+同一生成元ポリシーを許可するレベル
+
+Strict
+Lax
+None
+
+の3段階がある
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/secure.cookie.html">
+                    
+                        <div class="header">
+                            <div class="context">Cookie&#47;</div>
+                            <div class="title">Secure</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Security
+Cookie属性の1つ
+HTTPS通信を強制する
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/oauth徹底入門.html">
+                    
+                        <div class="header">
+                            <div class="title">OAuth徹底入門</div>
+                        </div>
+                    
+                    
+                        <div class="thumbnail">
+                            <img class="thumbnail-image" alt="thumbnail" src="https:&#x2F;&#x2F;www.seshop.com&#x2F;static&#x2F;images&#x2F;product&#x2F;22242&#x2F;L.png" loading="lazy" />
+                        </div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/pervasive-security.devops-capabilities.html">
+                    
+                        <div class="header">
+                            <div class="context">DevOps capabilities&#47;</div>
+                            <div class="title">Pervasive security</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Security
+DevOps capabilitiesの1つ、Fast Feedbackに分類される
+
+
+DORA | Capabilities: Pervasive security
+
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/oauth-proxy.html">
+                    
+                        <div class="header">
+                            <div class="title">oauth-proxy</div>
+                        </div>
+                    
+                    
+                        <div class="summary">oauth-proxy
+#Security #Cloud Native #Network
+OAuth2&#x2F;OIDC認証を提供するリバースプロキシ
+主な特徴:
+
+Google、Azure、GitHub等の複数のIDプロバイダーに対応
+Kubernetesクラスタ内のアプリケーション保護に利用可能
+メール、ドメイン、グループ単位での認証制御
+CNCF Sandboxプロジェクト
+distrolessベースイメージで高セキュリティ
+
+https:&#x2F;&#x2F;github.com&#x2F;oauth2-proxy&#x2F;oauth2-proxy
+https:&#x2F;&#x2F;oauth2-proxy.github.io&#x2F;oauth2-proxy&#x2F;
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/gosec.html">
+                    
+                        <div class="header">
+                            <div class="title">gosec</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Security #Programming
+Go言語のソースコード静的セキュリティ分析ツール
+Go AST（抽象構文木）を解析し、セキュリティ問題となりうるプログラミングミスを検出するSASTツール
+主な特徴:
+
+-includeまたは-excludeフラグで検査ルールを選択可能
+検出された問題はCWE（Common Weakness Enumeration）にマッピングされる
+AI統合によるセキュリティ修正提案（Gemini、Claudeに対応）
+GitHub Actionとしても利用可能
+
+インストール: go install github.com&#x2F;securego&#x2F;gosec&#x2F;v2&#x2F;cmd&#x2F;gosec@latest
+https:&#x2F;&#x2F;github.com&#x2F;securego&#x2F;gosec
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/デジタル証明書.html">
+                    
+                        <div class="header">
+                            <div class="title">デジタル証明書</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Security #Authentication
+公開鍵と名前や住所等の識別情報を組み合わせることで、鍵の所有者を識別し正しい鍵であることを保証する証明書
+認証局にデジタル署名をさせて発行される
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/dv証明書.html">
+                    
+                        <div class="header">
+                            <div class="title">DV証明書</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Security
+組織が当該ドメインを制御（domain validation）していることを認証局が証明するデジタル証明書
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/署名検証.html">
+                    
+                        <div class="header">
+                            <div class="title">署名検証</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Security #完全性 #否認防止
+デジタル署名されたメッセージを受信者が複合すること
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/ocsf.html">
+                    
+                        <div class="header">
+                            <div class="title">OCSF</div>
+                        </div>
+                    
+                    
+                        <div class="summary">Open Cybersecurity Schema Framework
+#Security #Observability
+サイバーセキュリティイベントのログ記録とデータ正規化のためのオープン標準スキーマフレームワーク
+
+AWS、Splunk、IBMなどが2022年に設立、2024年11月にLinux Foundationへ参画
+ベンダー非依存のスキーマで異なるセキュリティツール間のデータ統合を簡素化
+カテゴリ、イベントクラス、データ型、属性辞書で構成
+
+https:&#x2F;&#x2F;ocsf.io&#x2F;
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/https.html">
+                    
+                        <div class="header">
+                            <div class="title">HTTPS</div>
+                        </div>
+                    
+                    
+                        <div class="summary">HyperText Transfer Protocol Secure
+#Network #Security
+HTTPをTLSによって暗号化した通信
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/sops.html">
+                    
+                        <div class="header">
+                            <div class="title">sops</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Security
+GitOpsの世界においてSecretをクライアントサイドで扱うGo製のツール。YAMLやJSONのファイル上でSecretを安全にgit管理することができる
+ageを用いたローカルでのキー管理か、KMSによるキー管理のどちらを選択できる
+CNCF sandbox project
+
+https:&#x2F;&#x2F;getsops.io&#x2F;
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/sonarqube.html">
+                    
+                        <div class="header">
+                            <div class="title">SonarQube</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Security #Testing #Continuous Integration #Programming
+コード品質とセキュリティを継続的に検査するオープンソースの静的解析プラットフォーム
+35以上のプログラミング言語に対応し、バグ、脆弱性、セキュリティホットスポット、コードスメルを検出する
+主な機能
+
+Quality Gates - デプロイ可否を判断するカスタマイズ可能な品質基準
+SAST機能 - 静的コード解析によるセキュリティ脆弱性の検出
+AI CodeFix - AIによるコード品質・セキュリティ問題の自動修正提案
+IDE統合 - リアルタイムフィードバックと修正提案
+
+DevSecOpsのシフトレフトセキュリティを実現し、適応度関数のコード品質カテゴリに該当する
+https:&#x2F;&#x2F;www.sonarsource.com&#x2F;products&#x2F;sonarqube&#x2F;
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/non-root-user.html">
+                    
+                        <div class="header">
+                            <div class="title">Non-root User</div>
+                        </div>
+                    
+                    
+                        <div class="summary">主にDockerfileなどにおいて、非rootユーザーでのログインを推奨するセキュリティベストプラクティス
+
+
+Dockerfile ベストプラクティス
+docker-node&#x2F;docs&#x2F;BestPractices.md at main · nodejs&#x2F;docker-node
+
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/secrets.mise.html">
+                    
+                        <div class="header">
+                            <div class="context">mise&#47;</div>
+                            <div class="title">Secrets</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Security
+miseのEnvironment機能における機密情報管理について、mise開発元のfnoxまたはsops, ageを用いて解決する方法
+https:&#x2F;&#x2F;mise.jdx.dev&#x2F;environments&#x2F;secrets&#x2F;
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/同一生成元ポリシー.html">
+                    
+                        <div class="header">
+                            <div class="title">同一生成元ポリシー</div>
+                        </div>
+                    
+                    
+                        <div class="summary">Same Origin Policy
+#Security
+ホストドメインとポート番号が一致する場合にのみ、リソース間の相互交流を許可する
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/機密性.html">
+                    
+                        <div class="header">
+                            <div class="title">機密性</div>
+                        </div>
+                    
+                    
+                        <div class="summary">Confidentiality
+#Security
+プライベートな情報を許可された方法のみで開示すること
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/idor.html">
+                    
+                        <div class="header">
+                            <div class="title">IDOR</div>
+                        </div>
+                    
+                    
+                        <div class="summary">Insecure Direct Object Reference
+#Security
+アクセス制御の不備により、URLやパラメータのID等を変更するだけで他のユーザーのデータにアクセスできてしまう脆弱性
+OWASP Top Tenにおける代表的な脆弱性の一つで、Broken Access Controlの典型例
+主な攻撃パターン
+
+URL操作: &#x2F;user&#x2F;123を&#x2F;user&#x2F;124に変更して他ユーザーの情報にアクセス
+リクエストボディ操作: POSTやPUTリクエストのID部分を改ざん
+ファイルアクセス: 静的ファイルのパス操作による機密情報の取得
+
+対策として認可チェックの実装とUUIDのような推測困難なIDの利用が重要
+https:&#x2F;&#x2F;cheatsheetseries.owasp.org&#x2F;cheatsheets&#x2F;Insecure_Direct_Object_Reference_Prevention_Cheat_Sheet.html
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/peer-did.html">
+                    
+                        <div class="header">
+                            <div class="title">Peer DID</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Security #Authentication #Authorization
+DIDにおいて自己証明自律型識別子を提供する did:peer DIDメソッド定義
+DIDドキュメント相当の情報をパブリックに公開しないため、安価でありセキュリティ強化に繋がる
+authorization セクションによる認可制御が可能
+https:&#x2F;&#x2F;identity.foundation&#x2F;peer-did-method-spec&#x2F;
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/authorization-to-implement-with-extensible-effect.html">
+                    
+                        <div class="header">
+                            <div class="title">Authorization to implement with Extensible Effect</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Security #Programming #Authorization
+EffによるScala認可実装の話
+
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/spire.html">
+                    
+                        <div class="header">
+                            <div class="title">Spire</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Programming #Security
+Scala言語の数値型ライブラリ。汎用的で高速かつ高精度な数値と、効率的な数値コードシンタックスを提供する。
+
+
+Spire
+Introduction to Spire
+Numeric Programming in Scala with Spire
+JOTB19 - Numeric Programming with Spire by Lars Hupel
+
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/最小権限の原則.html">
+                    
+                        <div class="header">
+                            <div class="title">最小権限の原則</div>
+                        </div>
+                    
+                    
+                        <div class="summary">Principle of Least Privilege
+#Security
+ユーザーやプロセスに対して、その役割を遂行するために必要な最小限の権限のみを付与する原則
+不要な権限を排除することで攻撃面を削減し、セキュリティ侵害時の影響範囲を制限する
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/ダウングレード攻撃.html">
+                    
+                        <div class="header">
+                            <div class="title">ダウングレード攻撃</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Security　#HTTP
+HTTPS利用サーバーに対してHTTPリクエストを行う、または暗号アルゴリズムを脆弱なもので指定することで攻撃を行う
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/sms.html">
+                    
+                        <div class="header">
+                            <div class="title">SMS</div>
+                        </div>
+                    
+                    
+                        <div class="summary">Secret Management System
+#Security
+Secretの保存とアクセスを行うAPIを提供する、Secretをユーザが扱う段階では常に暗号化された状態になる
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/dos攻撃.html">
+                    
+                        <div class="header">
+                            <div class="title">DoS攻撃</div>
+                        </div>
+                    
+                    
+                        <div class="summary">Denial of Service
+#Security
+リソース（サイト、アプリケーション、サーバー）を本来の目的で利用不可にすることを目的とした攻撃。C-I-Aの可用性を侵害する
+ネットワークパケット操作、プログラム脆弱性の悪用、リソース枯渇など多様な手段で実行される
+主な攻撃手法
+
+メモリ枯渇（ユーザー指定オブジェクト割り当て、セッションデータ過剰蓄積）
+CPU負荷増加（ループカウンター制御、バッファオーバーフロー）
+リソース解放失敗（ファイルロック、DB接続の未解放）
+アカウントロックアウト機構の悪用
+ネットワーク帯域幅の飽和
+
+対策としてレートリミット、入力検証、冗長性確保、グレースフルデグラデーションなどがある
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/saml.html">
+                    
+                        <div class="header">
+                            <div class="title">SAML</div>
+                        </div>
+                    
+                    
+                        <div class="summary">Security Assertion Markup Language
+#Security #Authentication
+XMLベースの認証・認可データ交換標準規格。IdPとSP（Service Provider）間で認証情報をやり取りし、SSO（Single Sign-On）を実現する。
+https:&#x2F;&#x2F;docs.oasis-open.org&#x2F;security&#x2F;saml&#x2F;Post2.0&#x2F;sstc-saml-tech-overview-2.0.html
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/strict-transport-security.html">
+                    
+                        <div class="header">
+                            <div class="title">Strict-Transport-Security</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Security
+HTTPレスポンスヘッダの一つ、Webサイトが常にHTTPSを使用していることをWebブラウザに認識させる
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/stride.html">
+                    
+                        <div class="header">
+                            <div class="title">STRIDE</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Security
+セキュリティ脆弱性をカテゴライズするような脅威モデリングでの方法論
+Microsoft Threat Modeling ToolではSTRIDEを利用していくつかの自動分析を行うことができる
+STRIDEは以下の頭文字を取ったもの
+
+Spoofing（なりすまし）
+ブルートフォース攻撃
+
+
+Tampering（改ざん）
+インジェクション攻撃
+マスアサインメント攻撃
+
+
+Repudiation（否認）
+ログ・監査証跡の不足
+デジタル署名の欠如
+タイムスタンプの不備
+
+
+Information Disclosure（情報漏洩）
+過剰なデータ露出
+不適切なインベントリ管理
+
+
+Denial of Service（サービス拒否）
+DoS攻撃
+
+
+Elevation of privilege（権限昇格）
+
+https:&#x2F;&#x2F;learn.microsoft.com&#x2F;ja-jp&#x2F;azure&#x2F;security&#x2F;develop&#x2F;threat-modeling-tool-threats#stride-model
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/tlsハンドシェイク.html">
+                    
+                        <div class="header">
+                            <div class="title">TLSハンドシェイク</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Security #Network
+TLSプロトコルにおいて、通信初期に公開鍵暗号方式によって通信を確立すること
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/trivy.html">
+                    
+                        <div class="header">
+                            <div class="title">Trivy</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Security #Cloud Native #Continuous Integration
+コンテナイメージ、Kubernetes、IaC、リポジトリを対象とした包括的な脆弱性・設定ミス・シークレットスキャナー
+Aqua Securityによって開発されたオープンソースツール
+主な機能:
+
+脆弱性スキャン - コンテナイメージ、ファイルシステム、gitリポジトリ
+IaC設定ミス検出 - Dockerfile、Kubernetesマニフェスト、Terraformなど
+シークレット検出 - APIキー、パスワード等の機密情報
+SBOM生成 - ソフトウェア部品表の作成と検出
+ライセンススキャン
+
+DevSecOpsのシフトレフトセキュリティを実現し、CI&#x2F;CDパイプラインに統合可能
+SASTツールの一種として静的解析を実行する
+https:&#x2F;&#x2F;trivy.dev&#x2F;
+https:&#x2F;&#x2F;github.com&#x2F;aquasecurity&#x2F;trivy
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/slowloris.html">
+                    
+                        <div class="header">
+                            <div class="title">Slowloris</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Security
+DoS攻撃の一種で、HTTPの不完全なリクエストを送り続けることでWebサーバーの接続を占有するApplication層攻撃。少ない帯域幅で単一マシンからサーバーをダウンさせることが可能で、スレッドベースのWebサーバー（Apache等）に対して特に有効
+https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Slowloris_(cyber_attack)
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/sha.html">
+                    
+                        <div class="header">
+                            <div class="title">SHA</div>
+                        </div>
+                    
+                    
+                        <div class="summary">Secure Hash Algorithms
+#Security #メッセージダイジェスト
+デジタル署名の改竄防止等で最もよく利用されているハッシュ化アルゴリズム
+異なる元データから同一のハッシュ値が生成される可能性が低いことを求められ、SHA-2, SHA-256 等の種類がある
+
+RFC 6234 - US Secure Hash Algorithms (SHA and SHA-based HMAC and HKDF)
+</div>
+                    
+                </a>
+            </li>
+        
+            <li class="item">
+                <a href="https:&#x2F;&#x2F;boykush.github.io&#x2F;wiki&#x2F;scraps/tls証明書.html">
+                    
+                        <div class="header">
+                            <div class="title">TLS証明書</div>
+                        </div>
+                    
+                    
+                        <div class="summary">#Network #Security
+TLSによるHTTPS通信において、TLSハンドシェイクに用いるデジタル証明書のこと
+</div>
+                    
+                </a>
+            </li>
+        
+    </ul>
+
+
+        </main>
+        <footer>
+            Generated by <a href="https://github.com/boykush/scraps" target="_blank" rel="noopener noreferrer">Scraps</a>
+        </footer> 
+        <!-- Code syntax highlight -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script>
+        <!-- Code syntax highlight theme -->
+        <link href="https://unpkg.com/nord-highlightjs@0.2.0/dist/nord.css" rel="stylesheet" type="text/css" />
+        <!-- Mermaid -->
+        <script type="module">
+            import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11.12.2/+esm'
+        </script>
+        
+         
+    </body>
+</html>
