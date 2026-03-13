@@ -1,10 +1,7 @@
-#[[LLM]]
+#[[Programming]] #[[LLM]]
 
-[[Claude Code]]において、メインタスクの実行中にサイドチャットとして質問できる軽量コマンド
+[[Claude Code]]のメインタスク実行中でも使えるサイドチャットコマンド
 
-- 現在の会話コンテキストにアクセスできるが、ツールアクセスは持たない（read-only）
-- 会話履歴には保存されない（ephemeral）
-- メインタスクを中断せず、フローティングウィンドウで回答を表示する
-- [[Claude Code/サブエージェント]]より軽量で、独立したサブタスクではなく簡単な質問向け
-
-<https://code.claude.com/docs/en/overview>
+- 会話コンテキストを参照して回答するが、ツールアクセスはない
+- 質問と回答はephemeralで会話履歴に残らない
+<https://code.claude.com/docs/en/interactive-mode#side-questions-with-%2Fbtw>
