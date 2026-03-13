@@ -75,7 +75,7 @@ Bilgin Ibryam, Roland Huß, [[松浦 隼人]]
 
 ### 13章 [[サービスディスカバリ|Service Discovery（サービスディスカバリ）]]
 
-- [[Kubernetes/Service]]
+- Service
 - [[Kubernetes/Ingress]]
 - [[Knative Serving]]
 
@@ -103,7 +103,7 @@ Bilgin Ibryam, Roland Huß, [[松浦 隼人]]
 
 ### 19章 EnvVar Configuration（環境変数による設定）
 
-- [[The Twelve-Factor App]]
+- The Twelve-Factor App
 
 ### 20章 Configuration Resource（設定リソース）
 
@@ -137,7 +137,7 @@ Bilgin Ibryam, Roland Huß, [[松浦 隼人]]
 
 ### 25章 Secure Configuration（セキュア設定）
 
-- [[Kubernetes/Secret]]
+- Secret
 - Sealed Secret/External Secret/[[SMS]](AWS Secret Manager)/[[sops]]
 - [[KMS]]([[Amazon/KMS]])
 - [[Container Storage Interface]]/[[Secrets Store CSI Driver]]
@@ -165,16 +165,16 @@ Bilgin Ibryam, Roland Huß, [[松浦 隼人]]
 ### 29章 Elastic Scale（エラスティックスケール）
 
 - [[Kubernetes/HorizontalPodAutoscalar]]
-- [[Knative]]/[[KEDA]]
+- Knative/[[KEDA]]
 - VerticalPodAutoscalar
 - ClusterAutoscalar
 
 ### 30章 Image Builder（イメージビルダ）
 
-- [[Docker]]/[[Dockerfile]]/[[Open Container Initiative|OCI]]
+- Docker/[[Dockerfile]]/[[Open Container Initiative|OCI]]
 - コンテナイメージビルダ #[[Continuous Integration]]
   - Buildah/Podman/Kaniko/BuildKit
   - CNB(Cloud Native Buildpacks)
   - Jib/ko/Apko
 - ビルドオーケストレータ #[[Continuous Delivery]]
-  - OpenShift Build/kbld/[[Kubernetes/Job]]
+  - OpenShift Build/kbld/Job

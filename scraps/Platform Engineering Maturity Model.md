@@ -2,7 +2,7 @@
 
 #[[Platform Engineering]] #[[Cloud Native]] #[[Team Organization]]
 
-[[CNCF]]が提供する[[Platform Engineering]]の成熟度を評価するフレームワーク
+[[CNCF]]が提供するPlatform Engineeringの成熟度を評価するフレームワーク
 
 5つの評価軸で組織のプラットフォーム進捗を測定する
 

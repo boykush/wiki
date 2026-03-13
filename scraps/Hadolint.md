@@ -9,7 +9,7 @@ Haskellで実装され、ShellCheckを統合することで`RUN`命令内のbash
 - Dockerfileの構文エラー検出
 - ベストプラクティス違反の警告（例: [[Non-root User]]、[[マルチステージビルド]]）
 - セキュリティ脆弱性の検出
-- [[Continuous Integration|CI]]パイプラインへの統合が容易
+- CIパイプラインへの統合が容易
 
 [[Docker]]イメージとしても配布されており、ローカル環境へのインストール不要で実行可能
 

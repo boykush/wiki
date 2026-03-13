@@ -25,7 +25,7 @@ John Berryman, Albert Ziegler
 - [[LLM/トークン]]/[[LLM/トークナイザー]]
 - [[コンテキストウインドウ]]
 - temperature
-- [[トランスフォーマー]]
+- トランスフォーマー
 
 ### 3章 チャット形式への移行
 
@@ -47,7 +47,7 @@ John Berryman, Albert Ziegler
 
 ### 6章 プロンプトの組み立て
 
-- [[RAG]]
+- RAG
 - [[チェーホフの銃の誤謬]]
 - 語彙検索/ジャッカード類似度
 - TF-IDF/BM25

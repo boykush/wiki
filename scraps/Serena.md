@@ -8,7 +8,7 @@ AI駆動のソフトウェア開発を強化する、[[Python]]製の[[会話型
 
 - [[Rust]]
 - [[Go]]([[gopls]])
-- [[Python]]
+- Python
 - [[TypeScript]]/[[JavaScript]]
 - [[Java]]
 - PHP

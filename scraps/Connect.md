@@ -4,7 +4,7 @@
 
 [[Protocol Buffers]]を用いる[[gRPC]]互換を持つ[[RPC]]ライブラリ、作成元は[[Buf]]と同じ
 
-[[gRPC]]と異なり内部実装に `net/http` のような標準的なライブラリを利用している。
+gRPCと異なり内部実装に `net/http` のような標準的なライブラリを利用している。
 
 [[CNCF]] sandbox project
 

@@ -1,6 +1,6 @@
 #[[Security]] #[[OWASP]]
 
-[[DoS攻撃]]の防御戦略をまとめた[[OWASP]] Cheat Sheet Series
+[[DoS攻撃]]の防御戦略をまとめたOWASP Cheat Sheet Series
 
 OSIモデルに基づくCERT-EU分類を採用し、3つの攻撃層に分類している
 

@@ -1,6 +1,6 @@
 #[[API Architecture]] #[[Network]] #[[Kubernetes]] #[[Cloud Native]]
 
-[[L4]]/[[L7]]を扱う[[Kubernetes]]公式の[[APIゲートウェイ]]
+[[L4]]/[[L7]]を扱うKubernetes公式の[[APIゲートウェイ]]
 
 - GatewayClass
 - Gateway

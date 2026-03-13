@@ -22,7 +22,7 @@ did:example:123456789abcdefghij
 - `did`
   - スキーム部、 `did` で固定
 - `example`
-  - [[DIDメソッド|メソッド]]部
+  - メソッド部
 - `123456789abcdefghij`
   - メソッド固有識別子部
 
