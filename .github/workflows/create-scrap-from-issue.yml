@@ -35,7 +35,7 @@ jobs:
             scraps-writer@scraps-claude-code-plugins
           settings: ".claude/settings.json"
           prompt: |
-            /add-scrap ${{ github.event.issue.title }} max-lines=15
+            /add-scrap ${{ github.event.issue.title }}
 
             追加情報:
             ${{ github.event.issue.body }}
