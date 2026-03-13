@@ -13,7 +13,7 @@ Scrapsの詳細な利用方法については <https://boykush.github.io/scraps/
 - `/scraps/` - Markdownファイル（コンテンツ）
 - `/templates/` - Scrapsテンプレートファイル
 - `/public/` - ビルド出力（静的HTML）
-- `Config.toml` - サイト設定
+- `.scraps.toml` - サイト設定
 
 ## 一般的な開発コマンド
 
@@ -22,6 +22,9 @@ Scrapsの詳細な利用方法については <https://boykush.github.io/scraps/
 ### 利用可能なタスク
 
 ```bash
+# 初回セットアップ（ツールのインストール）
+mise install
+
 # タスク一覧の確認
 mise tasks
 
