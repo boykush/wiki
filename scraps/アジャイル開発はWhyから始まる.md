@@ -1,4 +1,4 @@
-#[[市谷 聡啓]] #[[Agile]]
+#[[市谷 聡啓]] #[[Agile]] #[[Product Management]]
 
 - [Docswell](https://www.docswell.com/s/papanda/ZR8GJK-why-84153441#p1)
 

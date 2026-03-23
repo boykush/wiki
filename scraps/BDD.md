@@ -1,6 +1,6 @@
 ## Behavior-Driven Development
 
-#[[Testing]] #[[Agile]]
+#[[Testing]] #[[Agile]] #[[Product Management]]
 
 [[Dan North]]が[[TDD]]のビジネス要件との乖離の課題を解消するために名付けた考え、2006年に[Introducing BDD](https://dannorth.net/blog/introducing-bdd/)によって紹介された
 

@@ -1,6 +1,6 @@
 ## Product Requirements Document
 
-#[[Documentation]] #[[Agile]]
+#[[Documentation]] #[[Product Management]]
 
 プロダクトに必要な機能・振る舞いを定義する文書。開発チームとステークホルダーの間で「何を作るか」の共通認識を形成する
 

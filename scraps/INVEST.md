@@ -1,4 +1,4 @@
-#[[Agile]]
+#[[Agile]] #[[Product Management]]
 
 作業バッチサイズを最小化させるための観点の頭文字を略称にしたもの
 

@@ -1,6 +1,6 @@
 ## State of AI-assisted Software Development
 
-#[[Blog]] #[[DevOps]] #[[Agile]]
+#[[Blog]] #[[DevOps]]
 
 [[DORA]]による2025年のレポート。AI支援ソフトウェア開発に焦点を当てている
 

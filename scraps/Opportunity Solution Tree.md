@@ -1,6 +1,6 @@
 ## OST
 
-#[[Agile]]
+#[[Product Management]]
 
 Teresa Torresが提唱したプロダクトディスカバリーのためのビジュアルフレームワーク。ツリー構造で意思決定を整理する
 
