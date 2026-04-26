@@ -15,6 +15,11 @@ Scrapsの詳細な利用方法については <https://boykush.github.io/scraps/
 - `/public/` - ビルド出力（静的HTML）
 - `.scraps.toml` - サイト設定
 
+## ワークフロー
+
+- **作業ブランチは `main`**: 新しいブランチを切らず、`main` 上で直接コミット・push する
+- コミット後はそのまま `git push` で `origin/main` に反映する
+
 ## 一般的な開発コマンド
 
 このプロジェクトでは[mise](https://mise.jdx.dev/)を使用してタスクとツールを管理しています。
