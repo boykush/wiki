@@ -1,0 +1,4 @@
+# RSS feeds to ingest into the wiki.
+# Each entry is a URL string. Use a trailing `# name` comment to label each feed.
+feeds:
+  - https://github.blog/category/security/feed/   # GitHub Security Blog
