@@ -1,6 +1,7 @@
 [tools]
 "npm:markdownlint-cli2" = "latest"
 "github:boykush/scraps" = "latest"
+uv = "latest"
 
 [tasks.build]
 description = "Build static site from Markdown files"
