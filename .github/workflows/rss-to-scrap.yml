@@ -65,6 +65,7 @@ jobs:
           plugins: |
             scraps-writer@scraps-claude-code-plugins
           settings: ".claude/settings.json"
+          claude_args: --allowed-tools "WebFetch,Read,Write,Edit,Glob,Bash,Skill,mcp__plugin_scraps-writer_scraps__*"
           prompt: |
             /web-to-scrap ${{ matrix.article.url }}
 
