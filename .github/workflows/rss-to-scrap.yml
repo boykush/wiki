@@ -2,7 +2,7 @@ name: RSS to Scrap PR
 
 on:
   schedule:
-    - cron: '0 23 * * *'  # 08:00 JST daily (target = previous JST day)
+    - cron: '0 0 * * *'  # 09:00 JST daily (target = previous JST day)
   workflow_dispatch:
     inputs:
       date:
