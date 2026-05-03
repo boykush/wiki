@@ -2,3 +2,4 @@
 # Each entry is a URL string. Use a trailing `# name` comment to label each feed.
 feeds:
   - https://github.blog/category/security/feed/   # GitHub Security Blog
+  - https://blog.flatt.tech/feed   # GMO Flatt Security Blog
