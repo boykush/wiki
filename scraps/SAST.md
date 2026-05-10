@@ -9,7 +9,7 @@
 ## 特徴
 
 - [[DevSecOps]]のシフトレフトを実現
-- [[Continuous Integration|CI]]パイプラインに統合可能
+- #[[Continuous Integration]]パイプラインに統合可能
 - SQLインジェクション、XSS、バッファオーバーフロー等を検出
 
 DAST（動的テスト）と組み合わせて使用されることが多い

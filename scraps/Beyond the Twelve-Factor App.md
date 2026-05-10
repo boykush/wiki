@@ -4,9 +4,9 @@
 
 ## 追加された3つの新要因
 
-**2. API First** - サービス設計において、実装前にAPIインターフェースを定義し契約駆動開発を促進 [[API Architecture]]
+**2. API First** - サービス設計において、実装前にAPIインターフェースを定義し契約駆動開発を促進 #[[API Architecture]]
 
-**14. Telemetry** - メトリクス、ログ、トレースの収集を通じた包括的な監視機能 [[Observability]]
+**14. Telemetry** - メトリクス、ログ、トレースの収集を通じた包括的な監視機能 #[[Observability]]
 
 **15. Authentication and Authorization** - 認証・認可をアプリケーション設計の第一級の関心事として組み込む [[Authentication]] [[Authorization]]
 

@@ -8,7 +8,7 @@ Bilgin Ibryam, Roland Huß, [[松浦 隼人]]
 
 [O'Reilly Japan](https://www.oreilly.co.jp/books/9784814400881/)
 
-[[Kubernetes]]ベースの[[Cloud Native|クラウドネイティブ]]アプリケーションを構築するパターンとして紹介する書籍
+[[Kubernetes]]ベースの#[[Cloud Native]]アプリケーションを構築するパターンとして紹介する書籍
 
 ### 序章
 
@@ -118,7 +118,7 @@ Bilgin Ibryam, Roland Huß, [[松浦 隼人]]
 
 ### 22章 Configuration Template（設定テンプレート）
 
-## 第V部 [[Security|セキュリティ]]パターン
+## 第V部 #[[Security]]パターン
 
 ### 23章 Process Containment（プロセス封じ込め）
 

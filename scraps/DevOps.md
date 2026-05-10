@@ -4,7 +4,7 @@
 
 広義な用語ではあるが、共通して以下のような手法が定義されることが多い
 
-- [[Continuous Integration]]
-- [[Continuous Delivery]]
+- #[[Continuous Integration]]
+- #[[Continuous Delivery]]
 - [[Infrastructure as Code]]
 - [[マイクロサービス]]
