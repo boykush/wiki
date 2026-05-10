@@ -25,17 +25,17 @@ jobs:
       - name: Install scraps
         run: mise install github:boykush/scraps
 
-      - name: Run Claude with add-scrap skill
+      - name: Run Claude with ingest skill
         uses: anthropics/claude-code-action@v1
         with:
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           plugin_marketplaces: |
             https://github.com/boykush/scraps.git
           plugins: |
-            scraps-writer@scraps-claude-code-plugins
+            scraps@scraps-claude-code-plugins
           settings: ".claude/settings.json"
           prompt: |
-            /add-scrap ${{ github.event.issue.title }}
+            /ingest ${{ github.event.issue.title }}
 
             追加情報:
             ${{ github.event.issue.body }}

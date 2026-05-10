@@ -56,18 +56,18 @@ jobs:
 
       - uses: jdx/mise-action@v4
 
-      - name: Run Claude with web-to-scrap skill
+      - name: Run Claude with ingest skill
         uses: anthropics/claude-code-action@v1
         with:
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           plugin_marketplaces: |
             https://github.com/boykush/scraps.git
           plugins: |
-            scraps-writer@scraps-claude-code-plugins
+            scraps@scraps-claude-code-plugins
           settings: ".claude/settings.json"
-          claude_args: --allowed-tools "WebFetch,Read,Write,Edit,Glob,Bash,Skill,mcp__plugin_scraps-writer_scraps__*"
+          claude_args: --allowed-tools "WebFetch,Read,Write,Edit,Glob,Bash,Skill"
           prompt: |
-            /web-to-scrap ${{ matrix.article.url }}
+            /ingest ${{ matrix.article.url }}
 
       - name: Create Pull Request
         env:

@@ -1,6 +1,6 @@
-# CLAUDE.md
+# AGENTS.md
 
-このファイルは、Claude Code (claude.ai/code) がこのリポジトリで作業する際のガイダンスを提供します。
+このファイルは、Codex (Codex.ai/code) がこのリポジトリで作業する際のガイダンスを提供します。
 
 ## アーキテクチャ概要
 
@@ -16,9 +16,9 @@ Scrapsの詳細な利用方法については <https://boykush.github.io/scraps/
 
 ## ワークフロー
 
-- **ローカル作業は `main` 上で行う**: Claude Code等のローカル環境では新しいブランチを切らず、`main` 上で直接コミット・pushする
+- **ローカル作業は `main` 上で行う**: Codex等のローカル環境では新しいブランチを切らず、`main` 上で直接コミット・pushする
 - コミット後はそのまま `git push` で `origin/main` に反映する
-- ※ Claude GitHub Actionsなどリモート実行時は別ブランチ＋PR運用となるため対象外
+- ※ Codex GitHub Actionsなどリモート実行時は別ブランチ＋PR運用となるため対象外
 
 ## 一般的な開発コマンド
 

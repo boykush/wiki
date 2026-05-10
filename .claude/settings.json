@@ -1,11 +1,11 @@
 {
   "enabledPlugins": {
     "commit-commands@claude-code-plugins": true,
-    "scraps-writer@scraps-claude-code-plugins": true
+    "scraps@scraps-claude-code-plugins": true
   },
   "permissions": {
     "allow": [
-      "mcp__plugin_scraps-writer_scraps__*"
+      "Bash(scraps:*)"
     ]
   }
 }
