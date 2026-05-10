@@ -34,6 +34,7 @@ jobs:
           plugins: |
             scraps@scraps-claude-code-plugins
           settings: ".claude/settings.json"
+          claude_args: --allowed-tools "WebFetch,Read,Write,Edit,Glob,Bash,Skill"
           prompt: |
             /ingest ${{ github.event.issue.title }}
 
@@ -41,21 +42,27 @@ jobs:
             ${{ github.event.issue.body }}
 
       - name: Create Pull Request
+        env:
+          ISSUE_TITLE: ${{ github.event.issue.title }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git remote set-url origin "https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git"
 
-          BRANCH_NAME="add-scrap/issue-${{ github.event.issue.number }}-${{ github.run_id }}"
+          BRANCH_NAME="add-scrap/issue-${ISSUE_NUMBER}-${{ github.run_id }}"
           git checkout -b "$BRANCH_NAME"
 
           git add scraps/
-          git commit -m "Add scrap: ${{ github.event.issue.title }}"
+          if git diff --cached --quiet; then
+            echo "No changes to commit (ingest may have skipped)"
+            exit 0
+          fi
+          git commit -m "Add scrap: ${ISSUE_TITLE}"
           git push origin "$BRANCH_NAME"
 
           gh pr create \
-            --title "Add scrap: ${{ github.event.issue.title }}" \
-            --body "Closes #${{ github.event.issue.number }}" \
+            --title "Add scrap: ${ISSUE_TITLE}" \
+            --body "Closes #${ISSUE_NUMBER}" \
             --base main
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
