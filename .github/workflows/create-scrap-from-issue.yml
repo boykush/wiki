@@ -26,6 +26,8 @@ jobs:
         run: mise install github:boykush/scraps
 
       - name: Run Claude with ingest skill
+        env:
+          SCRAPS_DIRECTORY: scraps
         uses: anthropics/claude-code-action@v1
         with:
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
