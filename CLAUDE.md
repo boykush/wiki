@@ -14,12 +14,6 @@ Scrapsの詳細な利用方法については <https://boykush.github.io/scraps/
 - `/scraps/.scraps.toml` - サイト設定（v1: ファイルが存在するディレクトリが wiki root）
 - `/scraps/_site/` - ビルド出力（静的HTML、gitignore）
 
-## ワークフロー
-
-- **ローカル作業は `main` 上で行う**: Claude Code等のローカル環境では新しいブランチを切らず、`main` 上で直接コミット・pushする
-- コミット後はそのまま `git push` で `origin/main` に反映する
-- ※ Claude GitHub Actionsなどリモート実行時は別ブランチ＋PR運用となるため対象外
-
 ## 一般的な開発コマンド
 
 このプロジェクトでは[mise](https://mise.jdx.dev/)を使用してタスクとツールを管理しています。
