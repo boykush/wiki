@@ -1,6 +1,6 @@
 [tools]
 "npm:markdownlint-cli2" = "latest"
-"github:boykush/scraps" = "v1.0.0-rc.2"
+"github:boykush/scraps" = "v1.0.0"
 uv = "latest"
 
 [tasks.build]
