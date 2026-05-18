@@ -3,13 +3,16 @@
 "github:boykush/scraps" = "v1.0.0"
 uv = "latest"
 
+[env]
+SCRAPS_DIRECTORY = "{{config_root}}/scraps"
+
 [tasks.build]
 description = "Build static site from Markdown files"
-run = '"$(mise which scraps)" build -C scraps'
+run = '"$(mise which scraps)" build'
 
 [tasks.serve]
 description = "Serve the wiki locally at http://127.0.0.1:1112"
-run = '"$(mise which scraps)" serve -C scraps'
+run = '"$(mise which scraps)" serve'
 
 [tasks.lint]
 description = "Run markdownlint on all markdown files"

@@ -42,14 +42,14 @@ mise run lint-fix
 
 ### mise tasksに含まれていないコマンド
 
-mise tasksに含まれていないScrapsコマンドは、`mise exec`経由で `-C scraps` を付けて実行します：
+mise tasksに含まれていないScrapsコマンドは、`mise exec` 経由で実行します。`mise.toml` で `SCRAPS_DIRECTORY` を `scraps/` に指定済みのため、`-C scraps` の指定は不要です：
 
 ```bash
 # 例：ウィキ内のタグ一覧表示
-mise exec -- scraps tag list -C scraps
+mise exec -- scraps tag list
 
 # 例：lint 実行
-mise exec -- scraps lint -C scraps
+mise exec -- scraps lint
 ```
 
 v1 で `scraps template` は廃止されました（テンプレート＋frontmatter は v1 で削除）。

@@ -8,7 +8,7 @@
 
 **14. Telemetry** - メトリクス、ログ、トレースの収集を通じた包括的な監視機能 #[[Observability]]
 
-**15. Authentication and Authorization** - 認証・認可をアプリケーション設計の第一級の関心事として組み込む [[Authentication]] [[Authorization]]
+**15. Authentication and Authorization** - 認証・認可をアプリケーション設計の第一級の関心事として組み込む Authentication / Authorization
 
 ## 既存要因の改訂
 
