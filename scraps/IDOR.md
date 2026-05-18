@@ -1,6 +1,6 @@
 ## Insecure Direct Object Reference
 
-#[[Security]] #[[Security/Authorization]]
+#[[Security/Authorization]]
 
 アクセス制御の不備により、URLやパラメータのID等を変更するだけで他のユーザーのデータにアクセスできてしまう脆弱性
 

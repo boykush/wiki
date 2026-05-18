@@ -1,4 +1,4 @@
-#[[Security]] #[[Security/Authentication]] #[[OWASP]]
+#[[Security/Authentication]] #[[OWASP]]
 
 - [[HTTP]]
 - [[Cookie]]

@@ -1,6 +1,6 @@
 ## Security Assertion Markup Language
 
-#[[Security]] #[[Security/Authentication]]
+#[[Security/Authentication]]
 
 XMLベースの認証・認可データ交換標準規格。[[IdP]]とSP（Service Provider）間で認証情報をやり取りし、SSO（Single Sign-On）を実現する。
 

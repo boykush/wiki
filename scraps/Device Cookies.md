@@ -1,4 +1,4 @@
-#[[Security]] #[[Security/Authentication]]
+#[[Security/Authentication]]
 
 [[ブルートフォース攻撃]]を軽減するための認証ロック機構。ユーザーが正常に認証された後、そのブラウザに発行される特別な[[Cookie]]
 

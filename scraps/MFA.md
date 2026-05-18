@@ -2,4 +2,4 @@
 
 ## 多要素認証
 
-#[[Security]] #[[Security/Authentication]]
+#[[Security/Authentication]]
