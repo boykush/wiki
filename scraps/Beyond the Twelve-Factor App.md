@@ -1,4 +1,4 @@
-#[[Software Design]] #[[Cloud Native]]
+#[[Software Design]] #[[Cloud Native]] #[[Security/Authentication]] #[[Security/Authorization]]
 
 [[The Twelve-Factor App]]を現代のクラウドネイティブ環境向けに拡張した方法論。Kevin Hoffmanによって著され、オリジナルの12要因を15要因に拡張している。
 

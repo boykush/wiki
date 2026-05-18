@@ -1,4 +1,4 @@
-#[[Kubernetes]]
+#[[Kubernetes]] #[[Security/Authentication]] #[[Security/Authorization]]
 
 ![ServiceAccount logo](https://github.com/kubernetes/community/raw/master/icons/png/resources/labeled/sa-128.png)
 

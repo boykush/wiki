@@ -1,4 +1,4 @@
-#[[API Architecture]] #[[Network]]
+#[[API Architecture]] #[[Network]] #[[Security/Authentication]] #[[Security/Authorization]]
 
 外部トラフィックに対して[[リバースプロキシ]]・[[ロードバランシング]]が持つようなネットワークのルーティング・セキュリティと[[可用性]]の向上に加え、以下のような機能横断的な要件を扱う役割
 
