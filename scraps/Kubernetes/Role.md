@@ -1,4 +1,4 @@
-#[[Authorization]] #[[Kubernetes]]
+#[[Security/Authorization]] #[[Kubernetes]]
 
 ![Role logo](https://github.com/kubernetes/community/raw/master/icons/png/resources/labeled/role-128.png)
 

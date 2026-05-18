@@ -1,6 +1,6 @@
 ## Completely Automated Public Turing test to tell Computers and Humans Apart
 
-#[[Security]] #[[Authentication]]
+#[[Security]] #[[Security/Authentication]]
 
 人間とボット（自動プログラム）を区別するための技術
 

@@ -1,4 +1,4 @@
-#[[TypeScript]] #[[Authentication]]
+#[[TypeScript]] #[[Security/Authentication]]
 
 パスワード強度を検証するライブラリ
 

@@ -1,6 +1,6 @@
 ## Transport Layer Security
 
-#[[Network]] #[[Security]]
+#[[Network]] #[[Security/Cryptography]]
 
 通信暗号化プロトコル
 

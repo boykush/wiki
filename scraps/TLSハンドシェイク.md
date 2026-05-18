@@ -1,3 +1,3 @@
-#[[Security]] #[[Network]]
+#[[Security/Cryptography]] #[[Network]]
 
 [[TLS]]プロトコルにおいて、通信初期に[[公開鍵暗号]]方式によって通信を確立すること

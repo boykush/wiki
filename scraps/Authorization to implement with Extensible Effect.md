@@ -1,4 +1,4 @@
-#[[Security]] #[[Programming]] #[[Authorization]]
+#[[Security]] #[[Programming]] #[[Security/Authorization]]
 
 [[Eff]]による[[Scala]]認可実装の話
 

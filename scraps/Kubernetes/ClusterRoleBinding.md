@@ -1,4 +1,4 @@
-#[[Authorization]] #[[Kubernetes]]
+#[[Security/Authorization]] #[[Kubernetes]]
 
 ![ClusterRoleBinding logo](https://github.com/kubernetes/community/raw/master/icons/png/resources/labeled/crb-128.png)
 

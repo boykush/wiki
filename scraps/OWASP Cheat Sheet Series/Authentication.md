@@ -1,4 +1,4 @@
-#[[Security]] #[[Authentication]] #[[OWASP]]
+#[[Security]] #[[Security/Authentication]] #[[OWASP]]
 
 - [[OWASP Cheat Sheet Series/Session Management]]
 - [[zxcvbn-ts]]

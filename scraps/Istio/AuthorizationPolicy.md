@@ -1,4 +1,4 @@
-#[[Authorization]]
+#[[Security/Authorization]]
 
 [[Istio]]においてアプリケーション（[[L7]]）認可の役割を担うリソース
 

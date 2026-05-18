@@ -1,4 +1,4 @@
-#[[Authorization]] #[[Kubernetes]]
+#[[Security/Authorization]] #[[Kubernetes]]
 
 ![RoleBinding logo](https://github.com/kubernetes/community/raw/master/icons/png/resources/labeled/rb-128.png)
 

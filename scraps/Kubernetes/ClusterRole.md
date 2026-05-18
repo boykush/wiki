@@ -1,4 +1,4 @@
-#[[Authorization]] #[[Kubernetes]]
+#[[Security/Authorization]] #[[Kubernetes]]
 
 ![ClusterRole logo](https://github.com/kubernetes/community/raw/master/icons/png/resources/labeled/c-role-128.png)
 

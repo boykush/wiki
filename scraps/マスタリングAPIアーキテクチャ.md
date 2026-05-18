@@ -57,7 +57,7 @@ James Gough, Daniel Bryant, Matthew Auburn
 - [[脅威モデリング]]/[[Microsoft Threat Modeling Tool]]/[[STRIDE]]
 - [[レートリミット]]
 
-### 7章 APIの認証と認可 #[[Authentication]] #[[Authorization]]
+### 7章 APIの認証と認可 #[[Security/Authentication]] #[[Security/Authorization]]
 
 - [[OAuth2]]/[[OIDC]]
 - [[JWT]]

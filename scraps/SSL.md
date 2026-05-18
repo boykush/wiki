@@ -1,6 +1,6 @@
 ## Secure Sockets Layer
 
-#[[Network]] #[[Security]]
+#[[Network]] #[[Security/Cryptography]]
 
 [[TLS]]の前身
 

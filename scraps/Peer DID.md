@@ -1,4 +1,4 @@
-#[[Security]] #[[Authentication]] #[[Authorization]]
+#[[Security]] #[[Security/Authentication]] #[[Security/Authorization]]
 
 [[DID]]において自己証明自律型識別子を提供する `did:peer` [[DIDメソッド]]定義
 
