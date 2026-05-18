@@ -60,6 +60,28 @@ mise exec -- scraps lint
 
 v1 で `scraps template` は廃止されました（テンプレート＋frontmatter は v1 で削除）。
 
+## scrapsファイル参照ルール
+
+`/scraps/` 配下のMarkdownファイルの内容にアクセスする際は、`grep` / `find` / `cat` / `head` 等のシェルコマンドで直接読まず、**必ず `scraps` CLI 経由でクエリする**こと。
+
+理由: Scrapsはwiki-link / tag / backlink を構造化データとして扱う。CLI経由で取得することで構造（見出し・リンク・タグ）を保ったまま必要な部分だけを取得でき、関連scrapも追跡できる。`--json` のフィールド射影でコンテキストも節約できる。
+
+| 目的 | コマンド例 |
+| --- | --- |
+| 本文を取得 | `mise exec -- scraps get "<title>" --json title,body` |
+| 見出し構造だけ取得 | `mise exec -- scraps get "<title>" --json title,headings` |
+| 特定見出しの内容 | `mise exec -- scraps get "<title>" --heading "<heading>" --json body` |
+| outboundリンク一覧 | `mise exec -- scraps links "<title>" --json` |
+| backlink一覧 | `mise exec -- scraps backlinks "<title>" --json` |
+| キーワード検索 | `mise exec -- scraps search "<query>" --json` |
+| タグの被参照 | `mise exec -- scraps tag backlinks "<tag>" --json` |
+| タグ一覧 | `mise exec -- scraps tag list --json` |
+| lint違反 | `mise exec -- scraps lint -r <rule>` |
+
+ctx (`Kubernetes/Pod` 等) で曖昧性が出る場合は `--ctx <ctx>` で絞り込む。
+
+例外: scraps CLI で対象ファイル群が既に特定できており、機械的な一括編集を行う場合のみ Read / Edit / Write を直接使ってよい。**「scraps内のどこかにある何か」を探すための grep は禁止** — `scraps search` を使う。
+
 ## コンテンツ作成
 
 ### デフォルトのScrap記述形式
