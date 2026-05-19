@@ -1,5 +1,5 @@
 #[[Person]]
 
-![Vaughn Vernon](https://pbs.twimg.com/profile_images/1439030838440587270/GW8mQETS_400x400.jpg)
+![Vaughn Vernon](https://avatars.githubusercontent.com/u/2637036?s=200&v=4)
 
 - [X](https://twitter.com/VaughnVernon)

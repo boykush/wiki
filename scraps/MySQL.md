@@ -1,7 +1,5 @@
 #[[Data Engineering]] #[[リレーショナルデータベース]]
 
-![MySQL logo](https://www.mysql.com/common/logos/logo-mysql-170x115.png)
-
 実務において主流の一つであるデータベース管理システム
 
 ---
