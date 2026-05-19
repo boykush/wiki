@@ -14,6 +14,32 @@ Scrapsの詳細な利用方法については <https://boykush.github.io/scraps/
 - `/scraps/.scraps.toml` - サイト設定（v1: ファイルが存在するディレクトリが wiki root）
 - `/scraps/_site/` - ビルド出力（静的HTML、gitignore）
 
+## LLM Wiki としての運用思想
+
+このリポジトリは Andrej Karpathy が提唱する **LLM Wiki** の考え方に沿って運用する。LLM がその場限りの retrieval を繰り返すのではなく、永続的・構造化された wiki を能動的に育て、知識を累積させる。ingest 時点で要約・クロスリンク更新・健全性チェックまでを完了させ、保守の bookkeeping コストを LLM 側に寄せる。
+
+参考: <https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f>
+
+### 3 層アーキテクチャ
+
+| 層 | このリポジトリでの対応 | 役割 |
+| --- | --- | --- |
+| Raw sources | 外部 URL / 書籍 / 論文（autolink で参照） | 不変の一次情報。LLM は読むが書き換えない |
+| The Wiki | `/scraps/*.md` | LLM が生成・保守する markdown。wiki-link / tag / backlink で相互参照 |
+| The Schema | `CLAUDE.md` / `AGENTS.md` | 運用規約・記述形式・ワークフロー（このファイル自身） |
+
+### 中核オペレーションと使用ツール
+
+オリジナルの LLM Wiki では `index.md` / `log.md` がナビゲーションを担うが、このリポジトリでは **Scraps CLI** が wiki-link / tag / backlink を構造化データとして扱えるため、明示的なインデックスファイルは置かない。
+
+| オペレーション | 使用するもの | 概要 |
+| --- | --- | --- |
+| Ingest | `/ingest` skill（`scraps` プラグイン配布） | 新しいソースを取り込み、scrap を作成し、関連 scrap のクロスリンクを更新する |
+| Query | `/query` skill（`scraps` プラグイン配布） | 関連 scrap を横断検索・統合して回答する。価値ある回答は `/ingest` で wiki に戻せる |
+| Lint | `scraps lint` CLI ／ `scraps:lint-rule-handler` agent | 孤立 scrap・古い記述・欠落クロスリンク等を検出し、必要に応じ自動修正する |
+
+CLI コマンドの詳細は後述の「scrapsファイル参照ルール」を参照。
+
 ## 一般的な開発コマンド
 
 このプロジェクトでは[mise](https://mise.jdx.dev/)を使用してタスクとツールを管理しています。
