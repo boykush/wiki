@@ -1,6 +1,6 @@
 #[[Kubernetes]] #[[Security/Authentication]] #[[Security/Authorization]]
 
-![ServiceAccount logo](https://github.com/kubernetes/community/raw/master/icons/png/resources/labeled/sa-128.png)
+![ServiceAccount logo](https://raw.githubusercontent.com/kubernetes/community/master/icons/png/resources/labeled/sa-128.png)
 
 [[Kubernetes/Pod]]/[[Kubernetes/Deployment]]り当てられる認証・認可目的のアイデンティティ[[Kubernetes/リソース]]
 

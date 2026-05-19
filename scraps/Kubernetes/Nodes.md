@@ -1,6 +1,6 @@
 #[[Kubernetes]]
 
-![Nodes logo](https://github.com/kubernetes/community/raw/master/icons/png/infrastructure_components/labeled/node-128.png)
+![Nodes logo](https://raw.githubusercontent.com/kubernetes/community/master/icons/png/infrastructure_components/labeled/node-128.png)
 
 Kubernetesクラスタアーキテクチャ内で管理される1つのVMまたは物理的なマシン
 

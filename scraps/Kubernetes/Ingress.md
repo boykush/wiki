@@ -1,6 +1,6 @@
 #[[Kubernetes]] #[[Cloud Native]]
 
-![Ingress logo](https://github.com/kubernetes/community/raw/master/icons/png/resources/labeled/ing-128.png)
+![Ingress logo](https://raw.githubusercontent.com/kubernetes/community/master/icons/png/resources/labeled/ing-128.png)
 
 [[APIゲートウェイ]]の役割を担う[[Kubernetes/リソース]]
 

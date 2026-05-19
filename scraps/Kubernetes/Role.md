@@ -1,6 +1,6 @@
 #[[Security/Authorization]] #[[Kubernetes]]
 
-![Role logo](https://github.com/kubernetes/community/raw/master/icons/png/resources/labeled/role-128.png)
+![Role logo](https://raw.githubusercontent.com/kubernetes/community/master/icons/png/resources/labeled/role-128.png)
 
 [[RBAC]]を実現する[[Kubernetes/リソース]]
 
