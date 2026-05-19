@@ -1,6 +1,6 @@
 #[[Observability]]
 
-![Prometheus logo](https://prometheus.io/assets/prometheus_logo_grey.svg)
+![Prometheus logo](https://raw.githubusercontent.com/cncf/artwork/main/projects/prometheus/icon/color/prometheus-icon-color.svg)
 
 [[モニタリング]]オープンソース
 

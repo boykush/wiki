@@ -1,6 +1,6 @@
 #[[Cloud Native]]
 
-![Knative logo](https://knative.dev/docs/images/logo/rgb/knative-logo-rgb.png)
+![Knative logo](https://raw.githubusercontent.com/cncf/artwork/main/projects/knative/icon/color/knative-icon-color.png)
 
 組み込みインストール可能なイベント駆動の[[サーバーレス]]プラットフォームOSS
 
