@@ -3,6 +3,14 @@
     "commit-commands@claude-code-plugins": true,
     "scraps@scraps-claude-code-plugins": true
   },
+  "extraKnownMarketplaces": {
+    "scraps-claude-code-plugins": {
+      "source": {
+        "source": "github",
+        "repo": "boykush/scraps"
+      }
+    }
+  },
   "permissions": {
     "allow": [
       "Bash(scraps:*)"

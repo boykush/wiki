@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "scraps serve",
+      "runtimeExecutable": "mise",
+      "runtimeArgs": ["run", "serve"],
+      "port": 1112
+    }
+  ]
+}
