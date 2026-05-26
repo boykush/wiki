@@ -30,14 +30,25 @@ if ! command -v mise &> /dev/null; then
   export PATH="$HOME/.local/bin:$PATH"
 fi
 
-# Install tools defined in mise configuration. Only scraps (pinned, one
-# tag lookup) touches api.github.com. Keeping the config lean avoids
-# exhausting the 60 req/hour limit for unauthenticated api.github.com
-# access. If that limit is hit anyway, warn rather than fail.
+# Pin MISE_ENV=remote so mise loads mise.remote.toml in addition to the base
+# config. That overlay installs scraps via the cargo backend (crates.io build),
+# avoiding api.github.com which is blocked / rate-limited here. The base github
+# backend stays declared but its install attempt 403s harmlessly; once cargo
+# finishes, `mise which scraps` resolves to it. Persist MISE_ENV so the rest of
+# the session (build/serve tasks) keeps resolving the cargo build too.
+export MISE_ENV=remote
+if [ -n "$CLAUDE_ENV_FILE" ]; then
+  echo 'export MISE_ENV=remote' >> "$CLAUDE_ENV_FILE"
+fi
+
 echo "Running mise install..."
 mise trust
-if ! mise install; then
-  echo "WARN: mise install failed (api.github.com rate limit or blocked by the network policy)." >&2
+# mise install returns non-zero because the base github backend always 403s
+# here; that is expected. What matters is the cargo build, so judge success by
+# whether scraps actually resolves rather than by the install exit code.
+mise install || true
+if ! mise which scraps >/dev/null 2>&1; then
+  echo "WARN: scraps unavailable after mise install (cargo build or network policy)." >&2
 fi
 
 echo "Remote setup complete."
