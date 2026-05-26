@@ -1,5 +1,4 @@
 [tools]
-"npm:markdownlint-cli2" = "latest"
 "github:boykush/scraps" = "v1.0.0"
 
 [env]
@@ -12,12 +11,4 @@ run = '"$(mise which scraps)" build'
 [tasks.serve]
 description = "Serve the wiki locally at http://127.0.0.1:1112"
 run = '"$(mise which scraps)" serve'
-
-[tasks.lint]
-description = "Run markdownlint on all markdown files"
-run = "markdownlint-cli2 \"scraps/**/*.md\" \"*.md\""
-
-[tasks.lint-fix]
-description = "Run markdownlint and auto-fix issues"
-run = "markdownlint-cli2 --fix \"scraps/**/*.md\" \"*.md\""
 

@@ -31,9 +31,9 @@ if ! command -v mise &> /dev/null; then
 fi
 
 # Install tools defined in mise configuration. Only scraps (pinned, one
-# tag lookup) touches api.github.com; markdownlint comes from npm. Keeping
-# the config lean avoids exhausting the 60 req/hour limit for unauthenticated
-# api.github.com access. If that limit is hit anyway, warn rather than fail.
+# tag lookup) touches api.github.com. Keeping the config lean avoids
+# exhausting the 60 req/hour limit for unauthenticated api.github.com
+# access. If that limit is hit anyway, warn rather than fail.
 echo "Running mise install..."
 mise trust
 if ! mise install; then
