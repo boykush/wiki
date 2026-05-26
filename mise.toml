@@ -1,7 +1,6 @@
 [tools]
 "npm:markdownlint-cli2" = "latest"
 "github:boykush/scraps" = "v1.0.0"
-uv = "latest"
 
 [env]
 SCRAPS_DIRECTORY = "{{config_root}}/scraps"

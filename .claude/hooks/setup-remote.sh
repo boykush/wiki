@@ -30,14 +30,14 @@ if ! command -v mise &> /dev/null; then
   export PATH="$HOME/.local/bin:$PATH"
 fi
 
-# Install tools defined in mise configuration.
-# Resolving tool versions requires api.github.com; if the environment's
-# network policy blocks it, this step is skipped with a warning rather
-# than failing the whole setup.
+# Install tools defined in mise configuration. Only scraps (pinned, one
+# tag lookup) touches api.github.com; markdownlint comes from npm. Keeping
+# the config lean avoids exhausting the 60 req/hour limit for unauthenticated
+# api.github.com access. If that limit is hit anyway, warn rather than fail.
 echo "Running mise install..."
 mise trust
 if ! mise install; then
-  echo "WARN: mise install failed (api.github.com may be blocked by the network policy)." >&2
+  echo "WARN: mise install failed (api.github.com rate limit or blocked by the network policy)." >&2
 fi
 
 echo "Remote setup complete."
