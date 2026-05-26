@@ -1,6 +1,6 @@
 #[[Security]] #[[Blog]]
 
-npmパッケージ`@bitwarden/cli@2026.4.0`がマルウェア混入により侵害された事例
+npmパッケージ`@bitwarden/cli@2026.4.0`がマルウェア混入により侵害された[[サプライチェーン攻撃]]事例
 
 - 多段ペイロード構成
   - Stage1: `bw_setup.js`がBunランタイムをDL
