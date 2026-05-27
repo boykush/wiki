@@ -1,8 +1,8 @@
 #[[Security]]
 
-npm / pip など各種パッケージマネージャの download をローカルプロキシで intercept し、マルウェアを含むパッケージのインストールを未然にブロックする OSS
+[[npm]] / pip など各種パッケージマネージャの download をローカルプロキシで intercept し、マルウェアを含むパッケージのインストールを未然にブロックする OSS
 
-対応 PM: npm, npx, yarn, pnpm, pnpx, rush, rushx, bun, bunx, pip, pip3, uv, poetry, uvx, pipx, pdm
+対応 PM: [[npm]], npx, yarn, pnpm, pnpx, rush, rushx, bun, bunx, pip, pip3, uv, poetry, uvx, pipx, pdm
 
 ## 特徴
 

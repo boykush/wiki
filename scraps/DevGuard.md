@@ -8,7 +8,7 @@
 
 - 標準準拠スキャナ（[[Trivy]] / Grype / Semgrep）の出力を取り込み
 - CVSS + EPSS + component depth に基づくリスク優先順位付け
-- SBOM / VEX のライブ管理、依存パッケージの Dependency Firewall（npm / [[Go]] / [[Python]]）
+- SBOM / VEX のライブ管理、依存パッケージの Dependency Firewall（[[npm]] / [[Go]] / [[Python]]）
 - OPA/Rego によるポリシー強制、GitHub / GitLab / Jira との双方向同期
 
 オープン標準（SBOM / VEX / [[SARIF]] / SLSA / in-toto）を中核に据える
