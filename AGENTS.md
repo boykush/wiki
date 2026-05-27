@@ -31,5 +31,8 @@ Scraps の **default LLM Wiki schema** は `scraps:scraps-llm-wiki-schema` agent
 
 - **必ず `/ingest` skill 経由で作成**。関連 scrap を `/query` で確認してから ingest する流れも可
 - **リンクの向き**: 具体→抽象、実装→概念の片方向（例: 書籍→概念 OK、概念→書籍 NG）
+- **概念 scrap は "それが何か" に絞る**: use case 列挙（「X 対策にも、Y 管理にも、Z にも使える」）は anti-pattern。具体側からの backlink に任せる
+- **「たまたま使われる」程度の弱い関連は wiki-link しない**: 直接の依存・所属・派生でない関係は plain text のままに留める
+- **検証済み事実のみ記述**: 製品カテゴリ自称や他製品との比較は公式 source で明示確認できた範囲のみ。「ソースに書かれていない」は「そうではない」の根拠にならない (absence ≠ negative fact)
 - **タグにエイリアス不可**: v1 のタグは discriminator。`#[[Tag|alias]]` 形式は scrap link 専用
 - **本文構成**: 略語があれば冒頭 h2 (`## XYZ`)、続いてタグ行 (`#[[A]] #[[B]]`)、本文（概要 1–2 文＋箇条書き、関連は wiki-link、外部 URL は autolink）。詳細形式と例は公式 Doc 参照
