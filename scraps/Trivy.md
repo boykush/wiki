@@ -14,7 +14,7 @@ Aqua Securityによって開発されたオープンソースツール
 
 [[DevSecOps]]のシフトレフトセキュリティを実現し、CI/#[[Continuous Delivery]]パイプラインに統合可能
 
-[[SAST]]ツールの一種として静的解析を実行する
+[[SAST]]ツールの一種として静的解析を実行する。`--format sarif` で [[SARIF]] 出力に対応し GitHub Code Scanning に取り込める
 
 <https://trivy.dev/>
 <https://github.com/aquasecurity/trivy>
