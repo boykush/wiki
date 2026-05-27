@@ -15,5 +15,6 @@
     "allow": [
       "Bash(scraps:*)"
     ]
-  }
+  },
+  "autoMemoryEnabled": false
 }
