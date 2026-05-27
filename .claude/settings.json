@@ -15,19 +15,5 @@
     "allow": [
       "Bash(scraps:*)"
     ]
-  },
-  "hooks": {
-    "SessionStart": [
-      {
-        "matcher": "startup",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "\"$CLAUDE_PROJECT_DIR\"/.claude/hooks/setup-remote.sh",
-            "timeout": 300
-          }
-        ]
-      }
-    ]
   }
 }

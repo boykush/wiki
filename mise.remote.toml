@@ -1,8 +1,0 @@
-# Config environment overlay for remote Claude Code sessions (MISE_ENV=remote).
-# The base mise.toml pins scraps via the github backend (fast prebuilt binary
-# for local dev). In remote sessions api.github.com is blocked / rate-limited,
-# so we additionally install scraps from crates.io via the cargo backend. Both
-# entries stay active; `mise which scraps` resolves to whichever installed, so
-# the cargo build wins even though the github lookup fails.
-[tools]
-"cargo:scraps" = "1.0.0"
