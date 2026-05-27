@@ -12,6 +12,4 @@
 - #[[Continuous Integration]]パイプラインに統合可能
 - SQLインジェクション、XSS、バッファオーバーフロー等を検出
 
-DAST（動的テスト）と組み合わせて使用されることが多い
-
-<https://en.wikipedia.org/wiki/Static_application_security_testing>
+<https://owasp.org/www-project-devsecops-guideline/latest/02a-Static-Application-Security-Testing>
