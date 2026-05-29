@@ -1,4 +1,9 @@
 {
+  "permissions": {
+    "allow": [
+      "Bash(scraps:*)"
+    ]
+  },
   "enabledPlugins": {
     "commit-commands@claude-code-plugins": true,
     "scraps@scraps-claude-code-plugins": true
@@ -10,11 +15,6 @@
         "repo": "boykush/scraps"
       }
     }
-  },
-  "permissions": {
-    "allow": [
-      "Bash(scraps:*)"
-    ]
   },
   "autoMemoryEnabled": false
 }
