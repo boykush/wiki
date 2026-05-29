@@ -6,7 +6,7 @@
 
 主な特徴:
 
-- Google、Azure、GitHub等の複数のIDプロバイダーに対応
+- Google、Azure、[[GitHub]]等の複数のIDプロバイダーに対応
 - Kubernetesクラスタ内のアプリケーション保護に利用可能
 - メール、ドメイン、グループ単位での認証制御
 - CNCF Sandboxプロジェクト

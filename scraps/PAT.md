@@ -2,7 +2,7 @@
 
 #[[Security/Authentication]]
 
-GitHub のユーザー本人として API / Git 認証に使う個人向けアクセストークン。パスワードの代わりとなる認証情報で、HTTPS での Git 操作や `gh` CLI、外部サービスからの GitHub 連携に用いる
+[[GitHub]] のユーザー本人として API / Git 認証に使う個人向けアクセストークン。パスワードの代わりとなる認証情報で、HTTPS での Git 操作や `gh` CLI、外部サービスからの GitHub 連携に用いる
 
 ## 特徴
 

@@ -1,6 +1,6 @@
 #[[Continuous Integration]]
 
-[[GitHub Actions]] が各 workflow run の開始時に自動発行する組み込みトークン。`secrets.GITHUB_TOKEN` または `github.token` で参照でき、その run 内で GitHub API / Git 認証に使う
+[[GitHub Actions]] が各 workflow run の開始時に自動発行する組み込みトークン。`secrets.GITHUB_TOKEN` または `github.token` で参照でき、その run 内で [[GitHub]] API / Git 認証に使う
 
 実体は `github-actions[bot]` という [[GitHub App]] のインストールアクセストークンで、job が終わると失効する短命トークン（最長 24 時間）
 
