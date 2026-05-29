@@ -1,6 +1,6 @@
-#[[Agile]] #[[WIP制限]]
+#[[Agile]]
 
-[[DevOps capabilities]]の1つ、[[DevOps capabilities/Fast Flow]]に分類される
+[[WIP制限]]（Work in Process limits）。[[DevOps capabilities]]の1つで、[[DevOps capabilities/Fast Flow]]に分類される
 
 ---
 

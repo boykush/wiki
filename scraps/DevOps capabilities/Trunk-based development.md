@@ -1,6 +1,6 @@
-#[[Continuous Integration]] #[[トランクベース]]
+#[[Continuous Integration]]
 
-[[DevOps capabilities]]の1つ、[[DevOps capabilities/Fast Flow]]に分類される
+[[トランクベース]]開発。[[DevOps capabilities]]の1つで、[[DevOps capabilities/Fast Flow]]に分類される
 
 [[DevOps capabilities/Working in small batches]]をベースに少なくとも1日に一回はトランクブランチにマージをする
 

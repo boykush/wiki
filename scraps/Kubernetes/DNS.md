@@ -1,4 +1,4 @@
-#[[Network]] #[[DNS]]
+#[[Network]]
 
 [[Kubernetes]]において、[[Kubernetes/Pod]]と[[Kubernetes/Service]]をスケジューリングし、Service名によって[[URI]]を解決できる
 

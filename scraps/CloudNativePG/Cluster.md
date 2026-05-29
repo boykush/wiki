@@ -1,6 +1,4 @@
-#[[CloudNativePG]]
-
-[[PostgreSQL]]クラスタを宣言的に定義する[[Kubernetes/CRD|カスタムリソース]]
+[[CloudNativePG]]で[[PostgreSQL]]クラスタを宣言的に定義する[[Kubernetes/CRD|カスタムリソース]]
 
 - インスタンス数、ストレージ、PostgreSQL設定をマニフェストで管理
 - Backup、ScheduledBackup、Poolerと連携して運用を構成

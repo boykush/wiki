@@ -1,8 +1,8 @@
 ![Continuous Testing in DevOps](https://danashby.co.uk/wp-content/uploads/2016/10/model-2.jpg)
 
-#[[Testing]] #[[Continuous Testing]]
+#[[Testing]]
 
-[[DevOps]]のサイクルのどこでテストをするのか？という問に対し全てのプロセスでテストができる、という主張を書いた記事
+[[DevOps]]のサイクルのどこでテストをするのか？という問に対し全てのプロセスでテストができる、という[[Continuous Testing]]の主張を書いた記事
 
 ---
 

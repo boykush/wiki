@@ -4,13 +4,13 @@
 
 Nicole Forsgren, Jez Humble, Gene Kim
 
-#[[DevOps]] #[[Book]] #[[リーン|Lean]]
+#[[DevOps]] #[[Book]]
 
 ![LeanとDevOpsの科学](https://img.ips.co.jp/ij/18/1118101029/1118101029-520x.jpg)
 
 [インプレスブックス](https://book.impress.co.jp/books/1118101029)
 
-2018年に初版が出された、[[State of DevOps Report]]に報告されているような内容をまとめている本
+2018年に初版が出された、[[リーン|Lean]]の考え方を背景に[[State of DevOps Report]]に報告されているような内容をまとめている本
 
 ## 第1部　調査結果から見えてきたもの
 

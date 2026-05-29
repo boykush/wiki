@@ -1,10 +1,10 @@
-## Rustコードを改善し、エコシステムを最大限に活用するための35項目
+## [[Rust]]コードを改善し、エコシステムを最大限に活用するための35項目
 
 ### Authors
 
 David Drysdale, 中田 秀基
 
-#[[Book]] #[[Programming]] #[[Rust]]
+#[[Book]] #[[Programming]]
 
 ![cover](https://www.oreilly.co.jp/books/images/picture_large978-4-8144-0094-2.jpeg)
 
