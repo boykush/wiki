@@ -4,7 +4,7 @@
 
 ## LLM Wiki schema
 
-Scraps の **default LLM Wiki schema** は `scraps:scraps-llm-wiki-schema` agent が提供する。Andrej Karpathy の [LLM Wiki](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f) を Scraps 向けに grounding し、`/ingest` / `/query` / `scraps:lint-rule-handler` への意図ルーティングと公式 Doc ベースのツール解説を担う。このファイルは default schema への **ローカル拡張**としてリポジトリ固有の運用規約のみを記述する。
+Scraps の **default LLM Wiki schema** は `scraps:scraps-llm-wiki-schema` agent が提供する。Andrej Karpathy の [LLM Wiki](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f) を Scraps 向けに grounding し、`/ingest` / `/query` / `scraps:lint-rule-handler` への意図ルーティング、対話レイヤー（catch-up・取り込み前の検討）、公式 Doc ベースのツール解説を担う。このファイルは default schema への **ローカル拡張**としてリポジトリ固有の運用規約のみを記述する。
 
 ## アーキテクチャ
 
@@ -24,10 +24,9 @@ Scraps の **default LLM Wiki schema** は `scraps:scraps-llm-wiki-schema` agent
 
 ## Scrap 記述のローカル規約
 
-- **必ず `/ingest` skill 経由で作成**。関連 scrap を `/query` で確認してから ingest する流れも可
-- **リンクの向き**: 具体→抽象、実装→概念の片方向（例: 書籍→概念 OK、概念→書籍 NG）
+- **必ず `/ingest` skill 経由で作成**。`/query` での確認や `scraps:scraps-llm-wiki-schema` agent での議論（catch-up・取り込み前の検討）を挟んでから ingest する流れも可
+- **リンク／相互リンクの規律は default schema に委譲**: 向き（具体→抽象の片方向）・既存言及のみのリンク化・関連の捏造禁止は `/ingest` の cross-link step が定義する。ローカルでは再記述しない
 - **概念 scrap は "それが何か" に絞る**: use case 列挙（「X 対策にも、Y 管理にも、Z にも使える」）は anti-pattern。具体側からの backlink に任せる
-- **「たまたま使われる」程度の弱い関連は wiki-link しない**: 直接の依存・所属・派生でない関係は plain text のままに留める
 - **検証済み事実のみ記述**: 製品カテゴリ自称や他製品との比較は公式 source で明示確認できた範囲のみ。「ソースに書かれていない」は「そうではない」の根拠にならない (absence ≠ negative fact)
 - **タグにエイリアス不可**: v1 のタグは discriminator。`#[[Tag|alias]]` 形式は scrap link 専用
 - **本文構成**: 略語があれば冒頭 h2 (`## XYZ`)、続いてタグ行 (`#[[A]] #[[B]]`)、本文（概要 1–2 文＋箇条書き、関連は wiki-link、外部 URL は autolink）。詳細形式と例は公式 Doc 参照
