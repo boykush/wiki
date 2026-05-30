@@ -1,4 +1,4 @@
-#[[Data Engineering]] #[[リレーショナルデータベース]]
+#[[Data Engineering]]
 
 [[Google Cloud]]が提供するフルマネージドな[[リレーショナルデータベース]]サービス
 

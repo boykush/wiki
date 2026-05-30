@@ -2,7 +2,9 @@
 
 [[Gaspar Nagy]], [[Seb Rose]], [[風間 裕也]]
 
-#[[BDD]] #[[Book]]
+#[[Book]]
+
+[[BDD]]の[[BDD/発見|発見]]プラクティスを扱った書籍
 
 ![The BDD Books - Discovery](https://d2sofvawe08yqg.cloudfront.net/bddbooks-discovery-jp/s_hero?1650559035.jpg)
 

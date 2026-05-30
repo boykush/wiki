@@ -1,6 +1,6 @@
-#[[Infrastructure as Code]] #[[DevOps]]
+#[[DevOps]]
 
-Helmfileは、[[Helm]]チャートをデプロイするための宣言的な仕様を提供するツールです。宣言的な構成管理により[[GitOps]]ワークフローに適し、複数のHelmリリースを効率的に管理することができます。
+Helmfileは、[[Helm]]チャートをデプロイするための宣言的な仕様を提供するツールです。宣言的な構成管理は[[Infrastructure as Code]]の実践であり、[[GitOps]]ワークフローに適し、複数のHelmリリースを効率的に管理することができます。
 
 ## 概要
 

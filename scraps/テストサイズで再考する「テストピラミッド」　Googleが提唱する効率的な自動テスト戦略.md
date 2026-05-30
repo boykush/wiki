@@ -1,4 +1,6 @@
-#[[Testing]] #[[和田 卓人]]
+#[[Testing]]
+
+[[和田 卓人]]による講演の書き起こし記事
 
 <https://logmi.jp/main/technology/330972>
 

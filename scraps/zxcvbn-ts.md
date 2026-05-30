@@ -1,5 +1,5 @@
-#[[TypeScript]] #[[Security/Authentication]]
+#[[Security/Authentication]]
 
-パスワード強度を検証するライブラリ
+[[TypeScript]]で書かれた、パスワード強度を検証するライブラリ
 
 <https://github.com/zxcvbn-ts/zxcvbn>

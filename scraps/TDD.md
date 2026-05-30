@@ -1,3 +1,5 @@
 ## Test-Driven Development
 
-#[[エクストリームプログラミング]] #[[Programming]] #[[Testing]]
+#[[Programming]] #[[Testing]]
+
+[[エクストリームプログラミング]]のエンジニアリングプラクティスの一つ

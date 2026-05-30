@@ -1,4 +1,6 @@
-#[[Security/Authentication]] #[[OWASP]]
+#[[Security/Authentication]]
+
+セッション管理の実装指針をまとめた[[OWASP]] Cheat Sheet Series
 
 - [[HTTP]]
 - [[Cookie]]

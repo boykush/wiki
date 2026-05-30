@@ -1,4 +1,6 @@
-#[[Testing]] #[[和田 卓人]]
+#[[Testing]]
+
+[[和田 卓人]]による連載記事
 
 <https://gihyo.jp/dev/serial/01/savanna-letter/0003>
 

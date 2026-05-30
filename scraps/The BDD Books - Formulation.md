@@ -5,7 +5,9 @@
 [[Seb Rose]], [[Gaspar Nagy]]
 [[風間 裕也]]
 
-#[[Book]] #[[BDD]] #[[Testing]]
+#[[Book]] #[[Testing]]
+
+[[BDD]]の[[BDD/定式化|定式化]]プラクティスを扱った書籍
 
 ![The BDD Books - Formulation](https://d2sofvawe08yqg.cloudfront.net/bddbooks-formulation-jp/s_hero?1723769276)
 
