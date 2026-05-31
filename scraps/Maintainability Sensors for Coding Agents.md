@@ -1,4 +1,4 @@
-#[[Testing]] #[[LLM]]
+#[[Testing]] #[[LLM]] #[[Blog]]
 
 Birgitta Böckeler（Thoughtworks）による、コーディングエージェントがコードのメンテナビリティを維持するためのセンサー体系。コーディング中・CI・定期実行の3ステージに分類。
 
