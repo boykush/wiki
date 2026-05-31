@@ -10,5 +10,3 @@ feeds:
   - https://kubernetes.io/feed.xml   # Kubernetes Blog
   # Software Design / API Architecture / Agile
   - https://martinfowler.com/feed.atom   # martinfowler.com
-  # Network / Security / Data infrastructure
-  - https://blog.cloudflare.com/rss/   # Cloudflare Blog
