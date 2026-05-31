@@ -1,4 +1,4 @@
-#[[Network]] #[[Kubernetes]]
+#[[Network]]
 
 ![Network policy logo](https://raw.githubusercontent.com/kubernetes/community/master/icons/png/resources/labeled/netpol-128.png)
 
@@ -11,3 +11,5 @@ Podセレクタは[[Kubernetes/Namespace]]内でのみマッチする
 ---
 
 - [Network Policies | Kubernetes](https://kubernetes.io/docs/concepts/services-networking/network-policies/)
+
+[[Kubernetes]]

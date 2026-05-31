@@ -1,4 +1,4 @@
-#[[Kubernetes]] #[[Cloud Native]]
+#[[Cloud Native]]
 
 [[Kubernetes/Pod]]と一緒に定義可能な初期化を行う[[コンテナ]]
 
@@ -7,3 +7,5 @@
 ---
 
 - [Init Containers | Kubernetes](https://kubernetes.io/docs/concepts/workloads/pods/init-containers/)
+
+[[Kubernetes]]

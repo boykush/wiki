@@ -1,6 +1,6 @@
-#[[Security/Authentication]] #[[Blog]]
+#[[Security/Authentication]]
 
-[[ブルートフォース攻撃]]を防ぐための対策をまとめた[[OWASP]] Communityの記事
+[[ブルートフォース攻撃]]を防ぐための対策をまとめた[[OWASP]] Communityの[[Blog|記事]]
 
 主な対策方法
 

@@ -2,9 +2,7 @@
 
 [[Janet Gregory]], [[Lisa Crispin]], [[風間 裕也]]
 
-#[[Book]]
-
-[[Agile Testing]]の考え方を凝縮してまとめた書籍
+[[Agile Testing]]の考え方を凝縮してまとめた[[Book|書籍]]
 
 ![Agile Testing Condensed](https://d2sofvawe08yqg.cloudfront.net/agiletesting-condensed-japanese-edition/s_hero2x?1620631141.jpg)
 

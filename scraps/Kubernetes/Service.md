@@ -1,4 +1,4 @@
-#[[Kubernetes]] #[[Cloud Native]]
+#[[Cloud Native]]
 
 ![Service logo](https://raw.githubusercontent.com/kubernetes/community/master/icons/png/resources/labeled/svc-128.png)
 
@@ -9,3 +9,5 @@
 ---
 
 [Service | Kubernetes](https://kubernetes.io/ja/docs/concepts/services-networking/service/)
+
+[[Kubernetes]]

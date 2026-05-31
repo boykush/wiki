@@ -1,5 +1,5 @@
-#[[Blog]] #[[Data Engineering]]
+#[[Data Engineering]]
 
-[[Atlas]]をベースとしてマイグレーション[[Docker]]イメージを、[[GitHub Actions]]でビルド＆パブリッシュ、[[Kubernetes/Job|Kubernetes Job]]上の[[Argo CD]]でのマイグレーションリリースまでを自動化する記事
+[[Atlas]]をベースとしてマイグレーション[[Docker]]イメージを、[[GitHub Actions]]でビルド＆パブリッシュ、[[Kubernetes/Job|Kubernetes Job]]上の[[Argo CD]]でのマイグレーションリリースまでを自動化する[[Blog|記事]]
 
 <https://tech-blog.rakus.co.jp/entry/20250526/dbmigration>

@@ -1,8 +1,6 @@
-#[[Blog]]
-
 Author:
 [[Tanya Reilly]]
 
-[[Glue Work]]について論じているブログ
+[[Glue Work]]について論じている[[Blog|ブログ]]
 
 <https://www.noidea.dog/glue/>

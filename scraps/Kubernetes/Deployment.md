@@ -1,4 +1,4 @@
-#[[Continuous Delivery]] #[[Kubernetes]] #[[Cloud Native]]
+#[[Continuous Delivery]] #[[Cloud Native]]
 
 ![Deployment logo](https://raw.githubusercontent.com/kubernetes/community/master/icons/png/resources/labeled/deploy-128.png)
 
@@ -9,3 +9,5 @@
 ---
 
 - [Deployment | Kubernetes](https://kubernetes.io/ja/docs/concepts/workloads/controllers/deployment/)
+
+[[Kubernetes]]

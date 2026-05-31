@@ -2,13 +2,11 @@
 
 Bilgin Ibryam, Roland Huß, [[松浦 隼人]]
 
-#[[Book]]
-
 ![Kubernetesパターン 第2版](https://www.oreilly.co.jp/books/images/picture_large978-4-8144-0088-1.jpeg)
 
 [O'Reilly Japan](https://www.oreilly.co.jp/books/9784814400881/)
 
-[[Kubernetes]]ベースの#[[Cloud Native]]アプリケーションを構築するパターンとして紹介する書籍
+[[Kubernetes]]ベースの#[[Cloud Native]]アプリケーションを構築するパターンとして紹介する[[Book|書籍]]
 
 ### 序章
 

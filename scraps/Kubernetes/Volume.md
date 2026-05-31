@@ -1,5 +1,3 @@
-#[[Kubernetes]]
-
 ![Volume logo](https://raw.githubusercontent.com/kubernetes/community/master/icons/png/resources/labeled/vol-128.png)
 
 [[Kubernetes/Pod]]内の[[コンテナ]]がクラッシュした際のファイル復元や、コンテナ間のファイル受け渡しをしたいケースで用いられる[[Kubernetes/リソース]]
@@ -11,3 +9,5 @@ AWS EBS等のいくつかのボリュームの種類をサポートしている
 ---
 
 [ボリューム | Kubernetes](https://kubernetes.io/ja/docs/concepts/storage/volumes/)
+
+[[Kubernetes]]

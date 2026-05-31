@@ -1,4 +1,4 @@
- #[[Kubernetes]] #[[Cloud Native]]
+#[[Cloud Native]]
 
 ![Job logo](https://raw.githubusercontent.com/kubernetes/community/master/icons/png/resources/labeled/job-128.png)
 
@@ -10,3 +10,5 @@
 
 ---
 [Job | Kubernetes](https://kubernetes.io/ja/docs/concepts/workloads/controllers/job/)
+
+[[Kubernetes]]

@@ -1,4 +1,4 @@
-#[[Documentation]] #[[Blog]]
+#[[Documentation]]
 
 [[Write the Docs]]コミュニティの2025年7月ニュースレター
 
@@ -8,3 +8,5 @@
 - **AI/[[LLM]]の活用**: オリジナルコンテンツ作成には不向きだが、テンプレート生成・スタイルガイドレビュー・要約・反復編集に有効。有効な場面を明確にした戦略策定が重要
 
 <https://www.writethedocs.org/blog/newsletter-july-2025/>
+
+[[Blog|ブログ]]

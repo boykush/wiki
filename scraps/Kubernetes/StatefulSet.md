@@ -1,4 +1,4 @@
-#[[Kubernetes]] #[[Cloud Native]]
+#[[Cloud Native]]
 
 ![StatefulSet logo](https://raw.githubusercontent.com/kubernetes/community/master/icons/png/resources/labeled/sts-128.png)
 
@@ -9,3 +9,5 @@
 ---
 
 - [StatefulSets | Kubernetes](https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/)
+
+[[Kubernetes]]

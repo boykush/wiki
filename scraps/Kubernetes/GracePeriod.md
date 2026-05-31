@@ -1,5 +1,3 @@
-#[[Kubernetes]]
-
 [[Kubernetes/Pod]]を終了する際、プロセスが[[SIGTERM]]シグナルを受け取ってから[[SIGKILL]]で強制終了されるまでの猶予期間
 
 デフォルトは30秒で、`terminationGracePeriodSeconds`で設定可能
@@ -12,3 +10,5 @@
 - [[Kubernetes/コンテナライフサイクルフック|preStop]]フックもGracePeriod内で実行される
 
 <https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#pod-termination>
+
+[[Kubernetes]]

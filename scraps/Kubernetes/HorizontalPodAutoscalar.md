@@ -1,6 +1,6 @@
 ## HPA
 
-#[[Kubernetes]] #[[Cloud Native]]
+#[[Cloud Native]]
 
 ![HorizontalPodAutoscalar logo](https://raw.githubusercontent.com/kubernetes/community/master/icons/png/resources/labeled/hpa-128.png)
 
@@ -9,3 +9,5 @@
 ---
 
 - [Horizontal Pod Autoscaling | Kubernetes](https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/)
+
+[[Kubernetes]]

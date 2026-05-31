@@ -4,13 +4,13 @@
 
 Betsy Beyer, Chris Jones, Jennifer Petoff, Niall Richard Murphy
 
-#[[Book]] #[[Observability]]
+#[[Observability]]
 
 ![SRE サイトリライアビリティエンジニアリング](https://www.oreilly.co.jp/books/images/picture_large978-4-87311-791-1.jpeg)
 
 [O'Reilly Japan](https://www.oreilly.co.jp/books/9784873117911/)
 
-[[SRE]]についてGoogleエンジニアが書いた書籍
+[[SRE]]についてGoogleエンジニアが書いた[[Book|書籍]]
 
 キーワード
 

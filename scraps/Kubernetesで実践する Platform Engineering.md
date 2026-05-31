@@ -5,7 +5,7 @@
 Mauricio Salatino
 株式会社スリーシェイク, 元内 柊也, 木曽 和則, 戸澤 涼, 長谷川 広樹
 
-#[[Book]] #[[Platform Engineering]] #[[Kubernetes]] #[[Cloud Native]]
+#[[Platform Engineering]] #[[Cloud Native]]
 
 ![Kubernetesで実践する Platform Engineering](https://www.seshop.com/static/images/product/26726/L.png)
 
@@ -30,3 +30,7 @@ Mauricio Salatino
 ## 第9章　プラットフォームの測定
 
 ## 補章　クラウドネイティブ・コミュニティへの参加
+
+[[Book|書籍]]
+
+[[Kubernetes]]

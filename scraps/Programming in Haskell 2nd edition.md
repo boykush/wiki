@@ -2,7 +2,7 @@
 
 Graham Hutton
 
-#[[Programming]] #[[Book]]
+#[[Programming]]
 
 ![Programming in Haskell 2nd edition](https://cdn.shopify.com/s/files/1/1634/7169/products/cover_530x.png?v=1564720482)
 
@@ -47,3 +47,5 @@ Graham Hutton
 ### 第16章 プログラムの論証
 
 ### 第17章 コンパイラーの算出
+
+[[Book|書籍]]

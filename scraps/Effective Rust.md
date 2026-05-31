@@ -4,7 +4,7 @@
 
 David Drysdale, 中田 秀基
 
-#[[Book]] #[[Programming]]
+#[[Programming]]
 
 ![cover](https://www.oreilly.co.jp/books/images/picture_large978-4-8144-0094-2.jpeg)
 
@@ -26,3 +26,5 @@ David Drysdale, 中田 秀基
 ### 5章　ツール
 
 ### 6章　標準Rustの向こうへ
+
+[[Book|書籍]]

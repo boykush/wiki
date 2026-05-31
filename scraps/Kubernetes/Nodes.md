@@ -1,8 +1,6 @@
-#[[Kubernetes]]
-
 ![Nodes logo](https://raw.githubusercontent.com/kubernetes/community/master/icons/png/infrastructure_components/labeled/node-128.png)
 
-Kubernetesクラスタアーキテクチャ内で管理される1つのVMまたは物理的なマシン
+[[Kubernetes]]クラスタアーキテクチャ内で管理される1つのVMまたは物理的なマシン
 
 通常は1つのクラスタ内に複数のノードを持つ
 
