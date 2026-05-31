@@ -1,5 +1,17 @@
 # RSS feeds to ingest into the wiki.
 # Each entry is a URL string. Use a trailing `# name` comment to label each feed.
 feeds:
+  # Security
   - https://github.blog/category/security/feed/   # GitHub Security Blog
   - https://blog.flatt.tech/feed   # GMO Flatt Security Blog
+  # Observability / Cloud Native / Platform Engineering
+  - https://opentelemetry.io/blog/index.xml   # OpenTelemetry Blog
+  - https://www.cncf.io/feed/   # CNCF Blog
+  - https://kubernetes.io/feed.xml   # Kubernetes Blog
+  # Software Design / API Architecture / Agile
+  - https://martinfowler.com/feed.atom   # martinfowler.com
+  # Network / Security / Data infrastructure
+  - https://blog.cloudflare.com/rss/   # Cloudflare Blog
+  # AI coding agents (release notes)
+  - https://github.com/anthropics/claude-code/releases.atom   # Claude Code releases
+  - https://github.com/openai/codex/releases.atom   # Codex releases
