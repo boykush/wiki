@@ -42,3 +42,4 @@ jobs:
           plugins: |
             scraps@scraps-claude-code-plugins
           settings: ".claude/settings.json"
+          claude_args: --allowed-tools "WebFetch,Read,Write,Edit,Glob,Bash,Skill"
