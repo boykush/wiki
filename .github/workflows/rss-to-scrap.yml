@@ -9,6 +9,9 @@ on:
         description: 'Target date (YYYY-MM-DD, JST). Default: yesterday.'
         required: false
 
+permissions:
+  contents: read
+
 jobs:
   list-articles:
     runs-on: ubuntu-latest
@@ -17,6 +20,8 @@ jobs:
       count: ${{ steps.fetch.outputs.count }}
     steps:
       - uses: actions/checkout@1af3b93b6815bc44a9784bd300feb67ff0d1eeb3 # v6.0.0
+        with:
+          persist-credentials: false
 
       - uses: jdx/mise-action@c1ecc8f748cd28cdeabf76dab3cccde4ce692fe4 # v4.0.0
 
@@ -53,6 +58,7 @@ jobs:
         with:
           fetch-depth: 0
           token: ${{ secrets.GITHUB_TOKEN }}
+          persist-credentials: false
 
       - name: Setup Scraps
         uses: boykush/scraps@a8bf05b091898d347535c052707d7b77b2a74274 # v1.0.1

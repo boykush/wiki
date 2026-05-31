@@ -18,6 +18,7 @@ jobs:
         with:
           fetch-depth: 0
           token: ${{ secrets.GITHUB_TOKEN }}
+          persist-credentials: false
 
       - name: Setup Scraps
         uses: boykush/scraps@a8bf05b091898d347535c052707d7b77b2a74274 # v1.0.1
