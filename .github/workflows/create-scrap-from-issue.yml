@@ -1,4 +1,4 @@
-name: Create Scrap from Issue
+name: Ingest from Issue
 on:
   issues:
     types: [labeled]
