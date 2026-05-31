@@ -1,4 +1,4 @@
-#[[Security]] #[[Kubernetes]]
+#[[Security]] [[Kubernetes]]
 
 Kubernetes Security Response Committee (SRC) による、修正されない古い CVE のレコード訂正を発表したブログ記事（変更は 2026-06-01 に反映）
 
