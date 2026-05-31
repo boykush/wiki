@@ -1,4 +1,4 @@
-#[[Kubernetes]] #[[Cloud Native]]
+#[[Cloud Native]]
 
 ![CronJob logo](https://raw.githubusercontent.com/kubernetes/community/master/icons/png/resources/labeled/cronjob-128.png)
 
@@ -9,3 +9,5 @@
 ---
 
 [CronJobを使用して自動化タスクを実行する | Kubernetes](https://kubernetes.io/ja/docs/tasks/job/automated-tasks-with-cron-jobs/)
+
+[[Kubernetes]]

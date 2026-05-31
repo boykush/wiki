@@ -1,6 +1,6 @@
 ## PSS
 
-#[[Security]] #[[Kubernetes]]
+#[[Security]]
 
 [[Kubernetes/Pod]]が満たすべきセキュリティ標準
 
@@ -13,3 +13,5 @@
 ---
 
 - [Pod Security Standards | Kubernetes](https://kubernetes.io/docs/concepts/security/pod-security-standards/)
+
+[[Kubernetes]]

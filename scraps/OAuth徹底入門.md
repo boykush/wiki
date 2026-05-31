@@ -4,7 +4,7 @@
 
 Justin Richer, Antonio Sanso
 
-#[[Book]] #[[API Architecture]] #[[Security/Authorization]] #[[Security/Authentication]]
+#[[API Architecture]] #[[Security/Authorization]] #[[Security/Authentication]]
 
 ![OAuth徹底入門](https://www.seshop.com/static/images/product/22242/L.png)
 
@@ -66,3 +66,5 @@ Justin Richer, Antonio Sanso
 - [[TLS]]トークン・バインディング
 
 ### Chapter 16　まとめと結論
+
+[[Book|書籍]]

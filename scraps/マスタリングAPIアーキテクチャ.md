@@ -4,7 +4,7 @@
 
 James Gough, Daniel Bryant, Matthew Auburn
 
-#[[Book]] #[[API Architecture]]
+#[[API Architecture]]
 
 ![マスタリングAPIアーキテクチャ](https://www.oreilly.co.jp/books/images/picture_large978-4-8144-0089-8.jpeg)
 
@@ -74,3 +74,5 @@ James Gough, Daniel Bryant, Matthew Auburn
 
 - 6つのR
 - ゼロトラストアーキテクチャ
+
+[[Book|書籍]]

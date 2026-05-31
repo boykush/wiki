@@ -1,6 +1,6 @@
 ## PSA
 
-#[[Security]] #[[Kubernetes]]
+#[[Security]]
 
 [[Kubernetes/Pod Security Standards]]を違反する可能性がある際のアクションを実行する
 
@@ -13,3 +13,5 @@
 ---
 
 - [Pod Security Admission | Kubernetes](https://kubernetes.io/docs/concepts/security/pod-security-admission/)
+
+[[Kubernetes]]

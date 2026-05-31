@@ -1,1 +1,3 @@
-#[[Agile]] #[[DevOps]] #[[Testing]]
+#[[Agile]] #[[Testing]]
+
+[[DevOps]]

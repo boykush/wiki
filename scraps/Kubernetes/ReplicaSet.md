@@ -1,4 +1,4 @@
-#[[Kubernetes]] #[[Cloud Native]]
+#[[Cloud Native]]
 
 ![ReplicaSet logo](https://raw.githubusercontent.com/kubernetes/community/master/icons/png/resources/labeled/rs-128.png)
 
@@ -7,3 +7,5 @@
 ---
 
 - [ReplicaSet | Kubernetes](https://kubernetes.io/docs/concepts/workloads/controllers/replicaset/)
+
+[[Kubernetes]]

@@ -1,6 +1,6 @@
-#[[Blog]] #[[Software Design]]
+#[[Software Design]]
 
-[[Martin Fowler]]による[[Dependency Injection]]の概念を定義した記念碑的な記事（2004年1月23日公開）
+[[Martin Fowler]]による[[Dependency Injection]]の概念を定義した記念碑的な[[Blog|記事]]（2004年1月23日公開）
 
 ### 背景
 

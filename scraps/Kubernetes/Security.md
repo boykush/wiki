@@ -1,6 +1,6 @@
-#[[Security]] #[[Kubernetes]]
+#[[Security]]
 
-Kubernetesクラスタとワークロードを保護するためのセキュリティ対策の総称
+[[Kubernetes]]クラスタとワークロードを保護するためのセキュリティ対策の総称
 
 4Csセキュリティモデルに基づき、Cloud、Cluster、Container、Codeの各レイヤーで多層防御を実装する
 

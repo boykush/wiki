@@ -4,7 +4,7 @@
 
 中山悠, 丸田一輝
 
-#[[Network]] #[[Book]]
+#[[Network]]
 
 ![TCP:IP技術入門](https://gihyo.jp/assets/images/cover/2024/thumb/TH320_9784297141578.jpg)
 
@@ -44,3 +44,5 @@
 ### 第8章　［比較&評価で見えてくる］HTTP/3
 
 ### 第9章　［大規模/高速化］通信環境とプロトコルの技術動向
+
+[[Book|書籍]]

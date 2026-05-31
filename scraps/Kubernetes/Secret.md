@@ -1,4 +1,4 @@
-#[[Security]] #[[Kubernetes]]
+#[[Security]]
 
 ![Secret logo](https://raw.githubusercontent.com/kubernetes/community/master/icons/png/resources/labeled/secret-128.png)
 
@@ -9,3 +9,5 @@
 ---
 
 [Secret | Kubernetes](https://kubernetes.io/ja/docs/concepts/configuration/secret/)
+
+[[Kubernetes]]

@@ -5,7 +5,7 @@
 John Berryman, Albert Ziegler
 服部佑樹, 佐藤直生
 
-#[[Book]] #[[LLM]]
+#[[LLM]]
 
 ![LLMのプロンプトエンジニアリング](https://www.oreilly.co.jp/books/images/picture_large978-4-8144-0113-0.jpeg)
 
@@ -81,3 +81,5 @@ John Berryman, Albert Ziegler
 - A/Bテスト
 
 ### 11章 未来を見据えて
+
+[[Book|書籍]]
