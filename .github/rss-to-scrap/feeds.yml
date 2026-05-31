@@ -12,6 +12,3 @@ feeds:
   - https://martinfowler.com/feed.atom   # martinfowler.com
   # Network / Security / Data infrastructure
   - https://blog.cloudflare.com/rss/   # Cloudflare Blog
-  # AI coding agents (release notes)
-  - https://github.com/anthropics/claude-code/releases.atom   # Claude Code releases
-  - https://github.com/openai/codex/releases.atom   # Codex releases
