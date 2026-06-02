@@ -10,7 +10,7 @@ Scraps の **default LLM Wiki schema** は `scraps:scraps-llm-wiki-schema` agent
 
 - **Scraps**（Rust 製の静的サイトジェネレーター）で構築する個人ウィキ。利用方法は公式 Doc: <https://boykush.github.io/scraps/>
 - `/scraps/` が wiki root（`.scraps.toml` と Markdown を配置）、`/scraps/_site/` はビルド出力で gitignore
-- Raw source の intake は GitHub Issue / RSS / ローカル `/ingest` の 3 経路（[create-scrap-from-issue.yml](.github/workflows/create-scrap-from-issue.yml) / [rss-to-scrap.yml](.github/workflows/rss-to-scrap.yml)）
+- Raw source の intake は GitHub Issue / RSS / ローカル `/ingest` の 3 経路（[ingest-from-issue.yml](.github/workflows/ingest-from-issue.yml) / [rss-to-scrap.yml](.github/workflows/rss-to-scrap.yml)）
 
 ## ワークフロー
 
