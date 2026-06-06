@@ -1,6 +1,6 @@
 #[[Security]]
 
-[[GitHub Actions]]の人気 action `tj-actions/changed-files` が侵害された[[サプライチェーン攻撃]]事例 [[CVE-2025-30066]]
+[[GitHub Actions]]の人気 action [[tj-actions/changed-files]] が侵害された[[サプライチェーン攻撃]]事例 [[CVE-2025-30066]]
 
 - 発覚: 2025-03-14 09:00 PT (16:00 UTC)、StepSecurity が Harden-Runner の挙動監視で検知
 - 侵害手法:
