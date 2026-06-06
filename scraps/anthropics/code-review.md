@@ -1,4 +1,4 @@
-#[[LLM]]
+#[[Claude Code]]
 
 Pull Requestのコードレビューを自動化する[[Anthropic]]公式の[[Claude Code/Plugins]]。[[anthropics/claude-plugin-official]]で配布される
 
