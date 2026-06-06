@@ -4,7 +4,7 @@
 
 - 標準アノテーション (`uuid = true` / `email = true` / `max_len = 64` 等) で一般的な制約を宣言
 - カスタムルールはCEL (Common Expression Language) で記述
-- サポート言語: Go / TypeScript / Java / Python / C++
+- サポート言語: [[Go]] / [[TypeScript]] / [[Java]] / [[Python]] / C++
 
 ---
 
