@@ -6,9 +6,9 @@
 
 主なセキュリティ機能:
 
-- アクセス制御: [[Kubernetes/ServiceAccount]]、[[Kubernetes/Role]]、[[RBAC]]
-- Pod保護: [[Kubernetes/Security Context]]、[[Kubernetes/Pod Security Standards]]、[[Kubernetes/Pod Security Admission]]
-- ネットワーク: [[Kubernetes/Network policy]]、[[サービスメッシュ]]
-- シークレット管理: [[Kubernetes/Secret]]
+- アクセス制御: ServiceAccount、Role、RBAC
+- Pod保護: Security Context、Pod Security Standards、Pod Security Admission
+- ネットワーク: Network policy、サービスメッシュ
+- シークレット管理: Secret
 
 <https://kubernetes.io/docs/concepts/security/>
