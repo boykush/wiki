@@ -7,7 +7,7 @@ Aqua Securityによって開発されたオープンソースツール
 主な機能:
 
 - 脆弱性スキャン - コンテナイメージ、ファイルシステム、gitリポジトリ
-- IaC設定ミス検出 - [[Dockerfile]]、Kubernetesマニフェスト、Terraformなど
+- IaC設定ミス検出 - [[Dockerfile]]、Kubernetesマニフェスト、[[Terraform]]など
 - シークレット検出 - APIキー、パスワード等の機密情報
 - SBOM生成 - ソフトウェア部品表の作成と検出
 - ライセンススキャン
