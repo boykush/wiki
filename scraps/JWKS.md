@@ -6,8 +6,6 @@
 
 [[OIDC]]プロバイダーは`/.well-known/jwks.json`のようなエンドポイントで公開し、リライングパーティはJWTヘッダーの`kid`で該当キーを選択して署名を検証する。鍵ローテーションは新旧キーの並存で実現する
 
-[[go-oidc]]のようなライブラリはJWKSの取得・キャッシュ・自動更新を担う
-
 ---
 
 [RFC 7517 - JSON Web Key (JWK)](https://datatracker.ietf.org/doc/html/rfc7517)
