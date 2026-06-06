@@ -4,6 +4,6 @@
 
 - プロバイダーのDiscoveryエンドポイントから自動設定
 - IDトークン（[[JWT]]）の署名検証とクレーム抽出
-- リモートJWKsの取得とキャッシュ管理
+- リモートの[[JWKS]]取得とキャッシュ管理
 
 <https://github.com/coreos/go-oidc>
