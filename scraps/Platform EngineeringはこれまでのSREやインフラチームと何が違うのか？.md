@@ -1,4 +1,4 @@
-#[[Platform Engineering]]
+[[Platform Engineering]]
 
 - [[SRE]]
 - SLI/[[SLO]]/SLA

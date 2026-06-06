@@ -1,4 +1,4 @@
-#[[Platform Engineering]]
+[[Platform Engineering]]
 
 - [[Internal Developer Portal]]
 - [[Backstage]]

@@ -1,4 +1,4 @@
-#[[Platform Engineering]]
+[[Platform Engineering]]
 
 Spotify社が開発する[[Internal Developer Portal]]
 

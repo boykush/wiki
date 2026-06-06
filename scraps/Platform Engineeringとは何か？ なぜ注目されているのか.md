@@ -1,4 +1,4 @@
-#[[Platform Engineering]]
+[[Platform Engineering]]
 
 Author:
 [[草間 一人]]

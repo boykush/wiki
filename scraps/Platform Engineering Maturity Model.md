@@ -1,6 +1,6 @@
 ## PEMM
 
-#[[Platform Engineering]] #[[Cloud Native]] #[[Team Organization]]
+[[Platform Engineering]] #[[Cloud Native]] #[[Team Organization]]
 
 [[CNCF]]が提供するPlatform Engineeringの成熟度を評価するフレームワーク
 

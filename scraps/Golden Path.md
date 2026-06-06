@@ -1,3 +1,3 @@
-#[[Platform Engineering]]
+[[Platform Engineering]]
 
 技術選定が多く必要とされるケースで、会社として利用するものはどれでどのように使えばよいか道筋を立てること

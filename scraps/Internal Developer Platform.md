@@ -1,4 +1,4 @@
-#[[Platform Engineering]]
+[[Platform Engineering]]
 
 [[プラットフォームチーム]]が内部開発者向けに提供するプラットフォーム
 
