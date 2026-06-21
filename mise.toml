@@ -1,7 +1,6 @@
 [tools]
 "github:boykush/scraps" = "v1.0.1"
 uv = "latest"
-zizmor = "1.25.2"
 
 [env]
 SCRAPS_DIRECTORY = "{{config_root}}/scraps"
@@ -13,8 +12,4 @@ run = '"$(mise which scraps)" build'
 [tasks.serve]
 description = "Serve the wiki locally at http://127.0.0.1:1112"
 run = '"$(mise which scraps)" serve'
-
-[tasks."actions:audit"]
-description = "Audit GitHub Actions workflows for security issues with zizmor"
-run = "zizmor .github/workflows/"
 
