@@ -1,7 +1,7 @@
 [tools]
 "github:boykush/scraps" = "v1.0.1"
 uv = "latest"
-zizmor = "1.25.2"
+zizmor = "1.26.1"
 
 [env]
 SCRAPS_DIRECTORY = "{{config_root}}/scraps"
