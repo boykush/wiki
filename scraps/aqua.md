@@ -1,6 +1,6 @@
 #[[Programming]]
 
-CLIツール専用の宣言的バージョンマネージャー。[[Go]]製
+CLIツール専用の宣言的バージョンマネージャー。[[Go]]製、[[suzuki-shunsuke|@suzuki-shunsuke]] による
 
 - `aqua.yaml`でツールとバージョンを宣言的に管理
 - [[GitHub Releases]]からバイナリを自動取得
