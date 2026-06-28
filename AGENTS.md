@@ -12,11 +12,6 @@ Scraps の **default LLM Wiki schema** は `scraps:scraps-llm-wiki-schema` agent
 - `/scraps/` が wiki root（`.scraps.toml` と Markdown を配置）、`/scraps/_site/` はビルド出力で gitignore
 - Raw source の intake は GitHub Issue / RSS / ローカル `/ingest` の 3 経路（[ingest-from-issue.yml](.github/workflows/ingest-from-issue.yml) / [rss-to-scrap.yml](.github/workflows/rss-to-scrap.yml)）
 
-## ワークフロー
-
-- **ローカル作業は `main` 上で行う**: Codex 等のローカル環境では新しいブランチを切らず、`main` 上で直接コミット・push する
-- ※ Codex GitHub Actions などリモート実行時は別ブランチ＋PR 運用となるため対象外
-
 ## 開発コマンド
 
 [mise](https://mise.jdx.dev/) でツール／タスクを管理する。タスク一覧は `mise tasks`、未登録の Scraps コマンドは `mise exec -- scraps ...` で実行（`SCRAPS_DIRECTORY=scraps` 設定済みのため `-C` は不要）。
