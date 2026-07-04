@@ -1,4 +1,4 @@
-#[[Security]] #[[Continuous Integration]]
+#[[Security]] #[[Continuous Integration]] #[[Blog]]
 
 [[GitHub]] リポジトリのメンテナーが今すぐ有効化すべき 6 つの無料セキュリティ設定をまとめた GitHub Blog 記事。
 
