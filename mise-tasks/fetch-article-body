@@ -1,0 +1,74 @@
+#!/usr/bin/env -S uv run --script
+# /// script
+# requires-python = ">=3.11"
+# dependencies = ["feedparser", "pyyaml", "html2text"]
+# ///
+"""Fetch the full article body for a URL from the configured RSS feeds.
+
+Looks up the entry whose link matches --url across every feed in
+`.github/rss-to-scrap/feeds.yml`, picks the richer of content:encoded /
+summary, converts it to Markdown, and prints it to stdout. Prints nothing
+(exit 0) when the URL is absent or carries no body, so the caller can fall
+back to WebFetch for excerpt-only feeds.
+
+Usage:
+    mise run fetch-article-body -- --url https://...
+"""
+import argparse
+import sys
+from pathlib import Path
+
+import feedparser
+import html2text
+import yaml
+
+CONFIG_PATH = Path(".github/rss-to-scrap/feeds.yml")
+
+
+def parse_args() -> argparse.Namespace:
+    p = argparse.ArgumentParser(description=__doc__)
+    p.add_argument("--url", required=True, help="Article URL (entry.link) to look up.")
+    return p.parse_args()
+
+
+def find_body_html(url: str) -> str:
+    config = yaml.safe_load(CONFIG_PATH.read_text()) or {}
+    feeds = config.get("feeds") or []
+    for feed_url in feeds:
+        parsed = feedparser.parse(feed_url)
+        for entry in parsed.entries:
+            if getattr(entry, "link", None) != url:
+                continue
+            content = entry.content[0].value if getattr(entry, "content", None) else ""
+            summary = getattr(entry, "summary", "") or ""
+            # content:encoded is usually the full article; summary may be an
+            # excerpt. Keep whichever carries more text.
+            return content if len(content) >= len(summary) else summary
+    return ""
+
+
+def to_markdown(html: str) -> str:
+    h = html2text.HTML2Text()
+    h.body_width = 0        # preserve original line structure; no hard-wrap
+    h.ignore_images = True
+    return h.handle(html).strip()
+
+
+# Below this many Markdown chars the feed body is an excerpt, not the full
+# article, so emit nothing and let the caller fall back to WebFetch. The
+# configured full-text feeds yield 7K-37K chars; excerpt-only feeds < 1K.
+MIN_BODY_CHARS = 1500
+
+
+def main() -> None:
+    args = parse_args()
+    body_html = find_body_html(args.url)
+    if not body_html.strip():
+        return
+    markdown = to_markdown(body_html)
+    if len(markdown) >= MIN_BODY_CHARS:
+        sys.stdout.write(markdown)
+
+
+if __name__ == "__main__":
+    main()
