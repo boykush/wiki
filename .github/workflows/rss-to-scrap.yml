@@ -60,8 +60,17 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           persist-credentials: false
 
+      - uses: jdx/mise-action@e6a8b3978addb5a52f2b4cd9d91eafa7f0ab959d # v4.2.0
+
       - name: Setup Scraps
         uses: boykush/scraps@a8bf05b091898d347535c052707d7b77b2a74274 # v1.0.1
+
+      - name: Fetch article body
+        env:
+          ARTICLE_URL: ${{ matrix.article.url }}
+        run: |
+          mise run fetch-article-body -- --url "$ARTICLE_URL" > article-body.md
+          echo "fetched $(wc -c < article-body.md) bytes"
 
       - name: Run Claude with ingest skill
         uses: anthropics/claude-code-action@a92e7c70a4da9793dc164451d829089dc057a464 # v1.0.159
@@ -75,6 +84,14 @@ jobs:
           claude_args: --allowed-tools "WebFetch,Read,Write,Edit,Glob,Bash,Skill"
           prompt: |
             /ingest ${{ matrix.article.url }}
+
+            これは RSS 由来のブログ記事です。記事本文を作業ディレクトリの `article-body.md` に保存済み。
+            まず Read で全文を読み、これを正確な情報源とすること（WebFetch の要約に頼らない）。
+            `article-body.md` が空または極端に短い場合のみ WebFetch で全文を取得する。
+            取り込み時のローカル規約:
+            - タイトルは記事タイトル「${{ matrix.article.title }}」をそのまま使う（ファイル名に使えない文字のみ最小変換）
+            - 記事内容を既存の概念 scrap に混ぜ込まず、独立した記事 scrap を作る
+            - 本文末尾に `[[Blog|ブログ]]` を置いて [[Blog]] に集約する
 
       - name: Create Pull Request
         env:
