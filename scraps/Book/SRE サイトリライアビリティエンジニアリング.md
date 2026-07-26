@@ -10,7 +10,7 @@ Betsy Beyer, Chris Jones, Jennifer Petoff, Niall Richard Murphy
 
 [O'Reilly Japan](https://www.oreilly.co.jp/books/9784873117911/)
 
-[[SRE]]についてGoogleエンジニアが書いた[[Book|書籍]]
+[[SRE]]について[[Google]]エンジニアが書いた[[Book|書籍]]
 
 キーワード
 
