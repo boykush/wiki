@@ -2,8 +2,6 @@
 
 [[Argo CD]]が管理する[[Kubernetes]]ワークロードの[[コンテナ]]イメージを、レジストリを監視して自動更新する argoproj-labs のツール（Apache-2.0）。公式は "under active development" として critical な本番ワークロードでの利用をまだ推奨していない
 
-対象は[[Kustomize]] / [[Helm]] / Config Management Plugin でマニフェストをレンダリングするアプリケーションに限られ、プレーンな[[YAML]]は対象外
-
 更新するイメージと更新戦略（`semver` / `newest-build` / `alphabetical` / `digest`）は `ImageUpdater` [[Kubernetes/CRD|CRD]] で指定する
 
 - `argocd` — クラスタ上の Application リソースのパラメータを直接書き換える。リソースを作り直すと消える
