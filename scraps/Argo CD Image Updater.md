@@ -6,8 +6,6 @@
 
 更新するイメージと更新戦略（`semver` / `newest-build` / `alphabetical` / `digest`）は `ImageUpdater` [[Kubernetes/CRD|CRD]] で指定する
 
-## write back method
-
 - `argocd` — クラスタ上の Application リソースのパラメータを直接書き換える。リソースを作り直すと消える
 - `git` — `.argocd-source-<appName>.yaml` 等をリポジトリにコミットして永続化する。[[GitOps]]で運用するならこちら
 - `git` + `pullRequest` — 直接 push せず head branch から PR / MR を開く。protected branch やレビューを挟みたい場合に使い、SCM API を叩くため PAT か [[GitHub App]] が必要
