@@ -22,9 +22,17 @@ Scraps の **default LLM Wiki schema** は `scraps:scraps-llm-wiki-schema` agent
 
 例外: 対象が既に特定できており機械的な一括編集を行う場合のみ Read / Edit / Write を直接使ってよい。**「どこかにある何か」を探す grep は禁止** — `scraps search` を使う。
 
+## Ingest フロー（ローカル運用）
+
+ユーザーが「知っている」ものは既存 scrap そのもの。新規 scrap の価値は説明の分量ではなく既存知識への接続にある。md を書くのは AI のままだが、理解の代筆者に滑らない境界を保つのがこのフローの役割。ローカル対話セッションでの ingest に適用し、Issue / RSS 経由の自動 intake は対象外。
+
+1. **対話**: md を生成する前に、source の要点と既存 scrap への接続案（何であって、どの scrap に繋がるか）を提示し、ユーザーの言語化・確定を待つ。一回の ingest で対話を飛ばして md を書き出さない（default schema の draft step に優先）
+2. **書き出し**: 対話で確立した内容だけを md にする。「それが何か」1–2 文＋既存 scrap への `[[link]]`＋source autolink のアンカー構成。仕様詳細（オプション列挙・構文・SLA・比較表）は転記しない — 詳細は URL を開く方が常に新しい
+3. **familiarity はリンクに使う**: 関連 scrap が多いほど厚くするのはリンクであって説明ではない。説明行数は familiarity で増やさない（default schema の max-lines heuristic に優先）
+
 ## Scrap 記述のローカル規約
 
-- **必ず `/ingest` skill 経由で作成**。`/query` での確認や `scraps:scraps-llm-wiki-schema` agent での議論（catch-up・取り込み前の検討）を挟んでから ingest する流れも可
+- **必ず `/ingest` skill 経由で作成**し、上記 Ingest フローに従う。`/query` での確認や `scraps:scraps-llm-wiki-schema` agent での議論（catch-up・取り込み前の検討）から入る流れも可
 - **リンク／相互リンクの規律は default schema に委譲**: 向き（具体→抽象の片方向）・既存言及のみのリンク化・関連の捏造禁止は `/ingest` の cross-link step が定義する。ローカルでは再記述しない
 - **概念 scrap は "それが何か" に絞る**: use case 列挙（「X 対策にも、Y 管理にも、Z にも使える」）は anti-pattern。具体側からの backlink に任せる
 - **検証済み事実のみ記述**: 製品カテゴリ自称や他製品との比較は公式 source で明示確認できた範囲のみ。「ソースに書かれていない」は「そうではない」の根拠にならない (absence ≠ negative fact)
