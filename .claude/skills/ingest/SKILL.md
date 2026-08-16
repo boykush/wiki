@@ -1,9 +1,9 @@
 ---
 name: ingest
-description: 対話を経てから書き出す二段階 ingest。source（prompt / URL / term）の要点と既存 scrap への接続をユーザーと確定した後、アンカー構成の scrap を作成し cross-link と sanity check を行う。このリポジトリの正規 ingest 経路（CI からは --headless で呼ばれる）。
-allowed-tools: Read, Write, Edit, Bash, WebFetch, WebSearch, Glob, Grep
+description: 対話を経てから書き出す二段階 ingest。source（prompt / URL / term）の要点と既存 scrap への接続をユーザーと確定した後、アンカー構成の scrap を作成し cross-link と sanity check を行う。このリポジトリの正規 ingest 経路。
+allowed-tools: Read, Write, Edit, Bash, WebFetch, WebSearch, AskUserQuestion
 user-invocable: true
-argument-hint: [--headless] [source]
+argument-hint: [source]
 ---
 
 # Ingest（対話ファースト）
@@ -15,8 +15,6 @@ argument-hint: [--headless] [source]
 ## 全体フロー
 
 Phase 1（対話）→ Phase 2（書き出し）の二段階。一回の応答で md 生成まで進めない。ユーザーが明示的に対話省略を指示した場合のみ Phase 1 の確認を省略できる。
-
-`--headless`（CI の Issue / RSS intake 用）: 対話相手がいないため Phase 1 の提示・確認を行わず、現状調査 → 書き出し → cross-link → sanity check を一括実行する。アンカー構成・転記禁止・リンク規律は対話モードと同一で、対話による確立がない分、本文は保守的に短くする。呼び出し prompt に追加のローカル規約があればそれに従う。
 
 ## Source types
 
@@ -52,10 +50,14 @@ Phase 1（対話）→ Phase 2（書き出し）の二段階。一回の応答�
 
 ## Cross-link（既存 scrap からの inbound リンク化）
 
-- タイトル確定後、`Grep` で literal title を `*.md` 横断検索する（`scraps search` は fuzzy で位置も返さないため discovery には使わない）
-- 各ヒットを文脈で判定し、standalone な言及のみ `[[新タイトル]]` に変換する（`[[新タイトル|表層形]]` で活用形に対応）。長い複合語の一部は対象外 — 日本語は語境界がないため文脈判定必須
-- `[[...]]` / `#[[...]]` 内と新 scrap 自身の file は skip。Grep が見つけていない言及を捏造しない
-- 生き残った**全て**の scrap を変換する。backlink は自動計算されるため逆リンクは書かない
+リンク化するかの最終判定はユーザーが行う。AI は候補を集めて見立てを添えるところまで。
+
+1. **候補収集** — タイトル確定後、`scraps search "<新タイトル>" --json` で言及していそうな scrap を挙げ、各候補を `scraps get "<title>" [--ctx <ctx>] --json body` で読んで literal な言及箇所を特定する。search は fuzzy なので無関係なヒットが混ざる。body に literal な言及が無い候補、既に `[[...]]` / `#[[...]]` になっている箇所、新 scrap 自身は機械的に除外する。body で読んでいない言及を候補に足さない
+2. **ユーザー判定** — 残った候補を `AskUserQuestion`（`multiSelect: true`）に並べる
+   - label は scrap のタイトル（同一 scrap 内に複数箇所あれば区別が付く語を足す）、description に言及を含む一文と AI の見立て（standalone な言及か、長い複合語の一部か）を書く
+   - 日本語は語境界がないためこの切り分けこそユーザーに渡す。AI が先に落とすのは 1 の機械的除外だけ
+   - 1 回の呼び出しは 4 問 × 4 option が上限。超える分は次の `AskUserQuestion` に回し、勝手に打ち切らない
+3. **変換** — 選ばれた候補**だけ**を `Edit` で `[[新タイトル]]` に変換する（`[[新タイトル|表層形]]` で活用形に対応）。選ばれなかった候補は触らず、全て非選択なら cross-link を行わない。backlink は自動計算されるため逆リンクは書かない
 
 ## Sanity check
 
