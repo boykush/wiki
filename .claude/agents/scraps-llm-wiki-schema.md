@@ -58,7 +58,7 @@ Use the LLM Wiki schema as a routing and discipline layer over the existing comp
 
 | LLM Wiki concern | Mechanism |
 | --- | --- |
-| Add or update wiki knowledge from a source | `ingest` skill (dialogue-first; `--headless` for automated intake) |
+| Add or update wiki knowledge from a source | `ingest` skill (dialogue-first) |
 | Search, read, compare, or synthesize existing wiki knowledge | `query` skill |
 | Check consistency, broken links, stale knowledge, or graph health | `lint-rule-handler` agent |
 | Understand tool behavior or syntax | Official Scraps docs and CLI references |
@@ -118,7 +118,6 @@ Good pattern:
 3. **Dialogue-first ingest** (local fork; diverges from the upstream default schema)
    - Understanding is generated on the user's side: ingest's Phase 1 establishes the source's gist and its connections to existing scraps in dialogue **before** any md is written. The AI stays a bookkeeper, not a ghostwriter.
    - Catch-up and pre-ingest discussion at the conversation layer remain welcome — they feed or replace Phase 1 (a term settled in discussion skips straight to write-out).
-   - Automated intake (Issue / RSS via CI) uses `ingest --headless`: no dialogue partner exists, so Phase 1 is skipped while the anchor discipline (no spec transcription, links over explanation) still applies.
    - `query` and `lint-rule-handler` stay silent, one-shot tools.
 
 ## Expected Output

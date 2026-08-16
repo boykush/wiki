@@ -6,7 +6,7 @@
 
 LLM Wiki schema（Andrej Karpathy の [LLM Wiki](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f) を Scraps 向けに grounding したもの）は**このリポジトリがローカルに所有する**。公式 plugin `scraps@scraps-claude-code-plugins` (0.1.7) からの fork で、plugin には CI 含め依存しない。構成:
 
-- [ingest skill](.claude/skills/ingest/SKILL.md) — 対話ファーストの取り込み。CI の自動 intake は `--headless`
+- [ingest skill](.claude/skills/ingest/SKILL.md) — 対話ファーストの取り込み
 - [query skill](.claude/skills/query/SKILL.md) — `[[Title]]` 引用付きの検索・合成
 - [scraps-llm-wiki-schema agent](.claude/agents/scraps-llm-wiki-schema.md) — 意図ルーティング・対話レイヤー・公式 Doc ベースのツール解説
 - [lint-rule-handler agent](.claude/agents/lint-rule-handler.md) — purpose-driven な lint 運用
@@ -17,7 +17,7 @@ Claude Code 以外のエージェントは各定義ファイルを直接読ん�
 
 - **Scraps**（Rust 製の静的サイトジェネレーター）で構築する個人ウィキ。利用方法は公式 Doc: <https://boykush.github.io/scraps/>
 - `/scraps/` が wiki root（`.scraps.toml` と Markdown を配置）、`/scraps/_site/` はビルド出力で gitignore
-- Raw source の intake は GitHub Issue / RSS / ローカル `/ingest` の 3 経路（[ingest-from-issue.yml](.github/workflows/ingest-from-issue.yml) / [rss-to-scrap.yml](.github/workflows/rss-to-scrap.yml)）
+- Raw source の intake はローカル `/ingest`（対話）のみ。RSS の記事一覧・本文取得は `mise run fetch-rss` / `mise run fetch-article-body` を手動で使う
 
 ## 開発コマンド
 
@@ -31,7 +31,7 @@ Claude Code 以外のエージェントは各定義ファイルを直接読ん�
 
 ## Ingest フロー（ローカル運用）
 
-ingest 作業はリポジトリローカルの [.claude/skills/ingest/SKILL.md](.claude/skills/ingest/SKILL.md) のフローに従う（Claude Code では `/ingest` として呼び出せる。他エージェントは同ファイルを読んで手動で従う。upstream の one-shot 設計が対話ファースト運用と合わないため fork）。要点: 対話で理解を確定してから書き出す二段階、本文は接続メインのアンカー構成、仕様詳細の転記禁止。Issue / RSS 経由の自動 intake は `--headless` で Phase 1 を省略しつつ同じアンカー規律に従う。
+ingest 作業はリポジトリローカルの [.claude/skills/ingest/SKILL.md](.claude/skills/ingest/SKILL.md) のフローに従う（Claude Code では `/ingest` として呼び出せる。他エージェントは同ファイルを読んで手動で従う。upstream の one-shot 設計が対話ファースト運用と合わないため fork）。要点: 対話で理解を確定してから書き出す二段階、本文は接続メインのアンカー構成、仕様詳細の転記禁止。
 
 ## Scrap 記述のローカル規約
 
