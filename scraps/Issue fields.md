@@ -1,4 +1,4 @@
-[[GitHub]]の organization レベルで定義する Issue のメタデータフィールド（2026 public preview）。org 内の全リポジトリの Issue に自動適用される
+[[GitHub]]の organization レベルで定義する Issue のメタデータフィールド（2026-07 GA）。org 内の全リポジトリの Issue に自動適用される
 
 - フィールド型は single select / text / number / date の4種で、issue type ごとに表示を pin できる
 - 値は Issue 自体に保存され、organization 全体で一貫したメタデータを与える
