@@ -1,9 +1,9 @@
 ---
 name: ingest
-description: 対話を経てから書き出す二段階 ingest。source（prompt / URL / term）の要点と既存 scrap への接続をユーザーと確定した後、アンカー構成の scrap を作成し cross-link と sanity check を行う。このリポジトリでは plugin の scraps:ingest ではなくこちらを使う。
+description: 対話を経てから書き出す二段階 ingest。source（prompt / URL / term）の要点と既存 scrap への接続をユーザーと確定した後、アンカー構成の scrap を作成し cross-link と sanity check を行う。このリポジトリの正規 ingest 経路（CI からは --headless で呼ばれる）。
 allowed-tools: Read, Write, Edit, Bash, WebFetch, WebSearch, Glob, Grep
 user-invocable: true
-argument-hint: [source]
+argument-hint: [--headless] [source]
 ---
 
 # Ingest（対話ファースト）
@@ -15,6 +15,8 @@ argument-hint: [source]
 ## 全体フロー
 
 Phase 1（対話）→ Phase 2（書き出し）の二段階。一回の応答で md 生成まで進めない。ユーザーが明示的に対話省略を指示した場合のみ Phase 1 の確認を省略できる。
+
+`--headless`（CI の Issue / RSS intake 用）: 対話相手がいないため Phase 1 の提示・確認を行わず、現状調査 → 書き出し → cross-link → sanity check を一括実行する。アンカー構成・転記禁止・リンク規律は対話モードと同一で、対話による確立がない分、本文は保守的に短くする。呼び出し prompt に追加のローカル規約があればそれに従う。
 
 ## Source types
 

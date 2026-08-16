@@ -76,14 +76,10 @@ jobs:
         uses: anthropics/claude-code-action@6b082c41935b4c8a3b8b0ef85ba4ba4d9eeb8975 # v1.0.189
         with:
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
-          plugin_marketplaces: |
-            https://github.com/boykush/scraps.git
-          plugins: |
-            scraps@scraps-claude-code-plugins
           settings: ".claude/settings.json"
           claude_args: --allowed-tools "WebFetch,Read,Write,Edit,Glob,Bash,Skill"
           prompt: |
-            /ingest ${{ matrix.article.url }}
+            /ingest --headless ${{ matrix.article.url }}
 
             これは RSS 由来のブログ記事です。記事本文を作業ディレクトリの `article-body.md` に保存済み。
             まず Read で全文を読み、これを正確な情報源とすること（WebFetch の要約に頼らない）。
