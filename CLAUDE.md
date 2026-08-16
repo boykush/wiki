@@ -24,11 +24,7 @@ Scraps の **default LLM Wiki schema** は `scraps:scraps-llm-wiki-schema` agent
 
 ## Ingest フロー（ローカル運用）
 
-ユーザーが「知っている」ものは既存 scrap そのもの。新規 scrap の価値は説明の分量ではなく既存知識への接続にある。md を書くのは AI のままだが、理解の代筆者に滑らない境界を保つのがこのフローの役割。ローカル対話セッションでの ingest に適用し、Issue / RSS 経由の自動 intake は対象外。
-
-1. **対話**: md を生成する前に、source の要点と既存 scrap への接続案（何であって、どの scrap に繋がるか）を提示し、ユーザーの言語化・確定を待つ。一回の ingest で対話を飛ばして md を書き出さない（default schema の draft step に優先）
-2. **書き出し**: 対話で確立した内容だけを md にする。「それが何か」1–2 文＋既存 scrap への `[[link]]`＋source autolink のアンカー構成。仕様詳細（オプション列挙・構文・SLA・比較表）は転記しない — 詳細は URL を開く方が常に新しい
-3. **familiarity はリンクに使う**: 関連 scrap が多いほど厚くするのはリンクであって説明ではない。説明行数は familiarity で増やさない（default schema の max-lines heuristic に優先）
+ingest はリポジトリローカルの [ingest skill](.claude/skills/ingest/SKILL.md) を使い、plugin の `scraps:ingest` は使わない（one-shot 生成の設計が対話ファースト運用と合わないため fork した）。フロー定義は skill 側を正とし、ここでは再記述しない。要点: 対話で理解を確定してから書き出す二段階、本文は接続メインのアンカー構成、仕様詳細の転記禁止。Issue / RSS 経由の自動 intake はこのフローの対象外。
 
 ## Scrap 記述のローカル規約
 
