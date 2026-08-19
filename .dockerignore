@@ -1,0 +1,4 @@
+# Allowlist: only the wiki content may reach the image, and never the built site.
+*
+!scraps
+scraps/_site
