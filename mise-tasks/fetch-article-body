@@ -11,10 +11,15 @@ summary, converts it to Markdown, and prints it to stdout. Prints nothing
 (exit 0) when the URL is absent or carries no body, so the caller can fall
 back to WebFetch for excerpt-only feeds.
 
+Feeds that fail to fetch or parse are reported to stderr. Exits non-zero
+when every feed failed, since absence cannot be concluded from zero
+readable feeds.
+
 Usage:
     mise run fetch-article-body -- --url https://...
 """
 import argparse
+import socket
 import sys
 from pathlib import Path
 
@@ -23,6 +28,9 @@ import html2text
 import yaml
 
 CONFIG_PATH = Path(".github/rss-to-scrap/feeds.yml")
+# feedparser has no timeout of its own; without a socket default an
+# unresponsive feed hangs the run indefinitely.
+FEED_TIMEOUT_SECONDS = 30
 
 
 def parse_args() -> argparse.Namespace:
@@ -31,11 +39,30 @@ def parse_args() -> argparse.Namespace:
     return p.parse_args()
 
 
+def feed_error(parsed) -> str | None:
+    """Return a short reason when the fetch yielded nothing usable.
+
+    bozo alone is not fatal: feedparser sets it for recoverable issues
+    (e.g. a wrong encoding declaration) while still returning entries.
+    """
+    status = parsed.get("status")
+    if status is not None and status >= 400:
+        return f"HTTP {status}"
+    if parsed.bozo and not parsed.entries:
+        return f"fetch/parse failed: {parsed.get('bozo_exception')}"
+    return None
+
+
 def find_body_html(url: str) -> str:
     config = yaml.safe_load(CONFIG_PATH.read_text()) or {}
     feeds = config.get("feeds") or []
+    failed = 0
     for feed_url in feeds:
         parsed = feedparser.parse(feed_url)
+        if error := feed_error(parsed):
+            print(f"feed failed: {feed_url}: {error}", file=sys.stderr)
+            failed += 1
+            continue
         for entry in parsed.entries:
             if getattr(entry, "link", None) != url:
                 continue
@@ -44,6 +71,8 @@ def find_body_html(url: str) -> str:
             # content:encoded is usually the full article; summary may be an
             # excerpt. Keep whichever carries more text.
             return content if len(content) >= len(summary) else summary
+    if feeds and failed == len(feeds):
+        sys.exit("all feeds failed")
     return ""
 
 
@@ -62,6 +91,7 @@ MIN_BODY_CHARS = 1500
 
 def main() -> None:
     args = parse_args()
+    socket.setdefaulttimeout(FEED_TIMEOUT_SECONDS)
     body_html = find_body_html(args.url)
     if not body_html.strip():
         return

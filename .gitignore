@@ -1,2 +1,4 @@
 _site
 article-body.md
+.claude/settings.local.json
+.claude/worktrees/
