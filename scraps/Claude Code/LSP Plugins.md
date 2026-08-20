@@ -1,37 +1,9 @@
 #[[Programming]] #[[LLM]]
 
-[[Claude Code]]において[[anthropics/claude-plugin-official]]が公開している
+[[Claude Code]]において[[anthropics/claude-plugin-official]]が公開している、[[LSP]]（Language Server Protocol）[[Claude Code/Plugins|プラグイン]]を追加しリアルタイムコード知能を提供する機能
 
-[[LSP]]（Language Server Protocol）[[Claude Code/Plugins|プラグイン]]を追加し、リアルタイムコード知能を提供する機能
-
-主な特徴:
-
-- 言語サーバーバイナリのインストールが必須
-- IDE統合時に診断情報が自動共有される
-- 公式マーケットプレイスから言語別プラグインを追加可能
-
-サポート言語:
-
-- C/C++
-- C#
-- [[Go]]([[gopls]])
-- [[Java]]
-- Lua
-- PHP
-- [[Python]]
-- [[Rust]]
-- Swift
-- [[TypeScript]]
-
-設定例（.claude/settings.json）:
-
-```json
-{
-  "enabledPlugins": {
-    "rust-analyzer-lsp@claude-plugins-official": true
-  }
-}
-```
+- 言語サーバーバイナリのインストールが必須で、IDE統合時は診断情報が自動共有される
+- [[Go]]（[[gopls]]）、[[Java]]、[[Python]]、[[Rust]]、[[TypeScript]] など10言語のプラグインを公式マーケットプレイスから追加できる
 
 <https://code.claude.com/docs/en/discover-plugins>
 <https://code.claude.com/docs/en/plugins>

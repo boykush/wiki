@@ -4,19 +4,7 @@
 
 Finance と [[DevOps]] を組み合わせた造語で、エンジニアリング・財務・ビジネスチームの協働を促進する
 
-## 3つのフェーズ
-
-- Inform: クラウド支出データの収集・分析によるコスト可視化
-- Optimize: リソースの適正化や予約インスタンス活用による最適化
-- Operate: ガバナンスポリシーの実装と継続的モニタリング
-
-## 主要な原則
-
-- チーム間のコラボレーション
-- ビジネス価値が技術的意思決定を駆動
-- 全員がクラウド利用に責任を持つ
-- データはアクセス可能でタイムリーかつ正確に
-
-FinOps Foundationは[[Linux Foundation]]がホストする非営利団体
+- Inform（コスト可視化）→ Optimize（最適化）→ Operate（運用）の3フェーズで実践する
+- FinOps Foundationは[[Linux Foundation]]がホストする非営利団体
 
 <https://www.finops.org/>
