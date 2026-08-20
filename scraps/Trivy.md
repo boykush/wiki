@@ -1,20 +1,10 @@
-#[[Security]] #[[Cloud Native]] #[[Continuous Integration]]
+#[[Security]] #[[Cloud Native]] #[[Continuous Integration]] #[[Continuous Delivery]]
 
-[[コンテナ]]イメージ、[[Kubernetes]]、[[Infrastructure as Code|IaC]]、リポジトリを対象とした包括的な脆弱性・設定ミス・シークレットスキャナー
+Aqua Securityが開発するオープンソースの脆弱性・設定ミス・シークレットスキャナー。[[コンテナ]]イメージ、[[Kubernetes]]、[[Infrastructure as Code|IaC]]、gitリポジトリを対象とする
 
-Aqua Securityによって開発されたオープンソースツール
-
-主な機能:
-
-- 脆弱性スキャン - コンテナイメージ、ファイルシステム、gitリポジトリ
-- IaC設定ミス検出 - [[Dockerfile]]、Kubernetesマニフェスト、[[Terraform]]など
-- シークレット検出 - APIキー、パスワード等の機密情報
-- SBOM生成 - ソフトウェア部品表の作成と検出
-- ライセンススキャン
-
-[[DevSecOps]]のシフトレフトセキュリティを実現し、CI/#[[Continuous Delivery]]パイプラインに統合可能
-
-[[SAST]]ツールの一種として静的解析を実行する。`--format sarif` で [[SARIF]] 出力に対応し GitHub Code Scanning に取り込める
+- [[SAST]]ツールの一種として[[DevSecOps]]のシフトレフトセキュリティを担い、CIパイプラインに統合できる
+- [[Dockerfile]]や[[Terraform]]の設定ミス検出、シークレット検出、SBOM生成にも対応する
+- `--format sarif` で [[SARIF]] 出力に対応し GitHub Code Scanning に取り込める
 
 <https://trivy.dev/>
 <https://github.com/aquasecurity/trivy>
