@@ -1,16 +1,9 @@
-# oauth-proxy
-
 #[[Security]] #[[Cloud Native]] #[[Network]]
 
-[[OAuth2]]/[[OIDC]]認証を提供する[[リバースプロキシ]]
+[[OAuth2]]/[[OIDC]]認証を提供する[[リバースプロキシ]]。[[CNCF]] Sandboxプロジェクト
 
-主な特徴:
-
-- [[Google]]、Azure、[[GitHub]]等の複数のIDプロバイダーに対応
-- Kubernetesクラスタ内のアプリケーション保護に利用可能
-- メール、ドメイン、グループ単位での認証制御
-- [[CNCF]] Sandboxプロジェクト
-- [[distroless]]ベースイメージで高セキュリティ
+- [[Google]]、Azure、[[GitHub]]等の複数のIDプロバイダーに対応し、メール、ドメイン、グループ単位で認証を制御できる
+- Kubernetesクラスタ内のアプリケーション保護に利用でき、[[distroless]]ベースイメージで配布される
 
 <https://github.com/oauth2-proxy/oauth2-proxy>
 <https://oauth2-proxy.github.io/oauth2-proxy/>
