@@ -1,0 +1,44 @@
+name: PR check
+
+# main への push でしかビルドされないと、壊れた scrap は公開時に初めて発覚する。
+on:
+  pull_request:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pr-check-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0 # For scraps git committed date
+          persist-credentials: false
+      - name: Setup Scraps
+        uses: boykush/scraps@b8da11e2943a9c20bbc444a3061aab5ce7dbb752 # v1.1.0
+      - name: Build
+        run: scraps build -C scraps
+      - name: Lint
+        # 違反 0 件を保てているルールだけをゲートにする。lint は違反があっても
+        # exit 0 で stderr にだけ出すため、出力の有無で判定する。
+        run: |
+          failed=0
+          for rule in broken-link self-link broken-heading-ref; do
+            output=$(scraps lint -C scraps -r "$rule" 2>&1 >/dev/null)
+            if [ -n "$output" ]; then
+              echo "::error::scraps lint -r ${rule} に違反があります"
+              echo "$output"
+              failed=1
+            fi
+          done
+          exit $failed
