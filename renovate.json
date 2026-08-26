@@ -2,5 +2,20 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "config:recommended"
+  ],
+  "packageRules": [
+    {
+      "description": "SHA pin 済み action の patch/digest 更新には判断の余地がなく、zizmor が gate として効く。公開直後の版を避けるため cooldown を置く。",
+      "matchManagers": [
+        "github-actions"
+      ],
+      "matchUpdateTypes": [
+        "pin",
+        "digest",
+        "patch"
+      ],
+      "minimumReleaseAge": "3 days",
+      "automerge": true
+    }
   ]
 }
