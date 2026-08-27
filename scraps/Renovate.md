@@ -4,7 +4,6 @@
 
 [[Mend.io]] が維持する OSS（AGPL-3.0-only）で、GitHub / GitLab など 9 つの Git プラットフォームで動く
 
-- 設定は `renovate.json` などのリポジトリ内ファイルと再利用可能な preset で行い、Dependency Dashboard・grouping・automerge を備える
 - [[npm]] パッケージ / [[Docker]] イメージとしてセルフホストするほか、Mend Renovate App（ホスト型）も使える
 
 <https://docs.renovatebot.com/>
