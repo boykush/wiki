@@ -1,7 +1,7 @@
 # scraps ships a statically linked musl build, so the runtime image needs nothing
 # but the binary. The wiki content is baked in as well: the deployed artifact is
 # the wiki itself, and scraps reads it from disk on every request.
-FROM alpine:3.22 AS fetch
+FROM alpine:3.24 AS fetch
 ARG SCRAPS_VERSION
 RUN apk add --no-cache curl \
  && curl -fsSL "https://github.com/boykush/scraps/releases/download/${SCRAPS_VERSION}/scraps-x86_64-unknown-linux-musl.tar.gz" \

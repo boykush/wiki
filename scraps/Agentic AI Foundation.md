@@ -10,6 +10,6 @@ Agentic AI 分野のオープン標準・OSS プロジェクトを中立的に�
 - AGENTS.md（[[OpenAI]] 寄贈）: コーディングエージェント向けプロジェクト指示書の標準
 - goose（Block 寄贈）: ローカルファーストのエージェントフレームワーク
 
-プラチナメンバーは [[AWS]]・[[Anthropic]]・Block・Bloomberg・[[Cloudflare]]・[[Google]]・[[Microsoft]]・[[OpenAI]] の8社
+プラチナメンバーは [[AWS]]・Anthropic・Block・Bloomberg・[[Cloudflare]]・[[Google]]・[[Microsoft]]・OpenAI の8社
 
 <https://aaif.io>
