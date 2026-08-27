@@ -6,7 +6,6 @@
 
 - **Scraps**（Rust製の静的サイトジェネレーター）で構築する個人ウィキ。利用方法は公式文書: <https://boykush.github.io/scraps/>
 - `/scraps/` がウィキの基準ディレクトリ（`.scraps.toml` とMarkdownを配置）、`/scraps/_site/` は生成結果のためGitの管理対象外
-- RSSの記事一覧・本文取得は `mise run fetch-rss` / `mise run fetch-article-body` を手動で使う
 - `Dockerfile` は remote MCP サーバーの image 用（末尾の節）
 
 ## 開発コマンド

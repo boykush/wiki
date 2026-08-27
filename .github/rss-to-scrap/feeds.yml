@@ -1,8 +1,0 @@
-# RSS feeds to ingest into the wiki.
-# Each entry is a URL string. Use a trailing `# name` comment to label each feed.
-feeds:
-  # Security
-  - https://github.blog/category/security/feed/   # GitHub Security Blog
-  - https://blog.flatt.tech/feed   # GMO Flatt Security Blog
-  # Supply Chain / Open Source Security
-  - https://openssf.org/feed/   # OpenSSF Blog
