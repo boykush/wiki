@@ -1,10 +1,10 @@
 #[[Observability]]
 
-[[Datadog]]へホストのログを送信するソフトウェア。
+各ホストやコンテナに常駐し、[[テレメトリー]]を収集して[[Datadog]]へ送るソフトウェア
 
 各ホストの環境別にいくつかのインストール手段が用意されている
 
-例として[[Kubernetes]]へのインストール方法は以下
+[[Kubernetes]]では[[Kubernetes/DaemonSet]]として各ノードへ配置し、クラスタ全体を担当するCluster Agentと組みで動かす
 
 [Kubernetes に Datadog Agent をインストールする](https://docs.datadoghq.com/ja/containers/kubernetes/installation/?tab=datadogoperator)
 
