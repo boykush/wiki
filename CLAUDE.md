@@ -22,6 +22,7 @@
 ## AIによる操作
 
 - 新しいページの作成には [.claude/skills/ingest/SKILL.md](.claude/skills/ingest/SKILL.md) を使う。
+- 記事・登壇資料のURLからページを作るときは [.claude/skills/digest/SKILL.md](.claude/skills/digest/SKILL.md) を使う。対話なしで1件書き切り、既存ページは変更しない。
 - その他のウィキ操作は通常のリポジトリ作業として扱い、存在しない上位の設計、振り分け役、スキルを仮定しない。
 - AI向け文書では、固有名詞、コマンド名、実際のフィールド名を除き、英単語を使わず日本語で書く。
 
