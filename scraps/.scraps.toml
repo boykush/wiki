@@ -7,5 +7,4 @@ favicon = "https://gist.github.com/boykush/3bbc68b5d2580374c97d4336b87fb70f/raw/
 timezone="Asia/Tokyo"
 color_scheme="only_dark"
 build_search_index = true
-sort_key="linked_count"
 paginate_by=50
