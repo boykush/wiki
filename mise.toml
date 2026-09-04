@@ -1,6 +1,6 @@
 [tools]
 "github:boykush/scraps" = "v2.0.0"
-uv = "0.12.6"
+uv = "0.12.9"
 
 [env]
 SCRAPS_DIRECTORY = "{{config_root}}/scraps"
