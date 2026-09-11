@@ -32,7 +32,7 @@ jobs:
           persist-credentials: false
 
       - name: Setup Scraps
-        uses: boykush/scraps@cc9f3dec3fe060d578306f0146f780174f0b7fae # v2.0.0
+        uses: boykush/scraps@d2e28fed9ca6c75909ef14aa28e5458621cafa1f # v2.2
 
       - name: Run Claude Code
         uses: anthropics/claude-code-action@9c5ddab2e6d17b83ea679153b31f1d5f023cf636 # v1.0.217

@@ -69,7 +69,7 @@ jobs:
         uses: jdx/mise-action@c2a87611a18de5b3828c5652fe268e992400cb5c # v4.3.0
 
       - name: Setup Scraps
-        uses: boykush/scraps@cc9f3dec3fe060d578306f0146f780174f0b7fae # v2.0.0
+        uses: boykush/scraps@d2e28fed9ca6c75909ef14aa28e5458621cafa1f # v2.2
 
       # digest は自分でも本文を取りに行くが、全文は数万字になりうる。
       # ファイルに落として Read させたほうが取りこぼしが無い。
