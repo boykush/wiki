@@ -1,5 +1,5 @@
 [tools]
-"github:boykush/scraps" = "v2.0.0"
+"github:boykush/scraps" = "v2.3.1"
 uv = "0.12.13"
 
 [env]
