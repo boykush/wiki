@@ -7,4 +7,4 @@
 - [[Claude Code/Hooks]]
 - [[Claude Code/MCP servers]]
 
-<https://docs.claude.com/en/docs/claude-code/plugins#quickstart>
+<https://code.claude.com/docs/en/plugins#quickstart>

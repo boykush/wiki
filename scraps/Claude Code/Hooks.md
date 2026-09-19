@@ -4,4 +4,4 @@
 
 `.claude/settings.json` に記述する
 
-<https://docs.anthropic.com/ja/docs/claude-code/hooks-guide>
+<https://code.claude.com/docs/ja/hooks-guide>

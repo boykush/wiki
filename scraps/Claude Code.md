@@ -6,4 +6,4 @@
 
 [[IDE]]との統合が可能
 
-<https://docs.anthropic.com/ja/docs/claude-code/overview>
+<https://code.claude.com/docs/ja/overview>
