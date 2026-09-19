@@ -2,7 +2,7 @@
 
 ![ServiceAccount logo](https://raw.githubusercontent.com/kubernetes/community/master/icons/png/resources/labeled/sa-128.png)
 
-[[Kubernetes/Pod]]/[[Kubernetes/Deployment]]り当てられる認証・認可目的のアイデンティティ[[Kubernetes/リソース]]
+[[Kubernetes/Pod]]/[[Kubernetes/Deployment]]に割り当てられる認証・認可目的のアイデンティティ[[Kubernetes/リソース]]
 
 [[Kubernetes]]によって管理された[[JWT]]を持つ
 

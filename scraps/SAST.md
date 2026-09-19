@@ -12,4 +12,4 @@
 - #[[Continuous Integration]]パイプラインに統合可能
 - SQLインジェクション、XSS、バッファオーバーフロー等を検出
 
-<https://owasp.org/www-project-devsecops-guideline/latest/02a-Static-Application-Security-Testing>
+<https://owasp.github.io/www-project-devsecops-guideline/latest/02a-Static-Application-Security-Testing>

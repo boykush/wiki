@@ -1,4 +1,4 @@
-## Online Analytics Processing
+## Online Analytical Processing
 
 #[[Data Engineering]]
 

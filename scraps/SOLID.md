@@ -3,7 +3,7 @@
 - [[単一責任の原則|Single responsibility principle]]
 - Open/Closed principle
 - Liskov substitution principle
-- Interface segmentation principle
+- Interface segregation principle
 - Dependency inversion principle
 
 の頭文字を取った原則。[[オブジェクト指向プログラミング]]の文脈で語られる

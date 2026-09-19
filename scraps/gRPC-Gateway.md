@@ -4,6 +4,6 @@
 
 HTTP仕様は[[Protocol Buffers]]上において `google.api.http` のような `HttpRule` によって記述する
 
-同リポジトリには[protoc-gen-openapiv2](https://github.com/grpc-ecosystem/grpc-gateway/tree/main/protoc-gen-openapiv2)プラグインも含まれており[[Open API]]仕様を出力できる
+同リポジトリには[protoc-gen-openapiv2](https://github.com/grpc-ecosystem/grpc-gateway/tree/main/protoc-gen-openapiv2)プラグインも含まれており[[OpenAPI]]仕様を出力できる
 
 <https://grpc-ecosystem.github.io/grpc-gateway/>

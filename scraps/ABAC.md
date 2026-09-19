@@ -1,4 +1,4 @@
-## Attiribute-based access control
+## Attribute-based access control
 
 #[[Security/Authorization]]
 

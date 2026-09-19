@@ -7,4 +7,4 @@
 - [[DevSecOps]]の継続的セキュリティテストを担い、認証、セッション管理、入力検証などランタイムの脆弱性を検出する
 - 検出結果を [[SARIF]] 形式で出力するツールも多い
 
-<https://owasp.org/www-project-devsecops-guideline/latest/02b-Dynamic-Application-Security-Testing>
+<https://owasp.github.io/www-project-devsecops-guideline/latest/02b-Dynamic-Application-Security-Testing>

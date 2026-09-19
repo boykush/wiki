@@ -1,4 +1,4 @@
-## モノシリックからマイクロサービスへとアーキテクチャを進化させるための実践的手法
+## モノリシックからマイクロサービスへとアーキテクチャを進化させるための実践的手法
 
 ### Authors
 
@@ -20,7 +20,7 @@ James Gough, Daniel Bryant, Matthew Auburn
 - [[HTTP]]/[[REST]]/[[リチャードソン成熟度モデル]]
 - [[GraphQL]]
 - [[RPC]]/[[gRPC]]
-- [[Open API]]
+- [[OpenAPI]]
 
 ### 2章 APIのテスト #[[Testing]]
 

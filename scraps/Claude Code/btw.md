@@ -4,4 +4,5 @@
 
 - 会話コンテキストを参照して回答するが、ツールアクセスはない
 - 質問と回答はephemeralで会話履歴に残らない
+
 <https://code.claude.com/docs/en/interactive-mode#side-questions-with-%2Fbtw>

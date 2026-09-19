@@ -6,4 +6,4 @@
 
 ---
 
-<https://docs.flipt.io/introduction>
+<https://docs.flipt.io/v1/introduction>

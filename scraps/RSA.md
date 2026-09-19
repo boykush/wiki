@@ -7,4 +7,4 @@
 現実的に解読できない素因数分解によって高い信頼性を持つ
 
 
-[RFC 8017 - PKCS #1: RSA Cryptography Specifications Version](https://tex2e.github.io/rfc-translater/html/rfc8017)
+[RFC 8017 - PKCS #1: RSA Cryptography Specifications Version 2.2](https://tex2e.github.io/rfc-translater/html/rfc8017)
