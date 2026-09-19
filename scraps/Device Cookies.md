@@ -12,4 +12,4 @@
 
 実装には[[JWT]]、[[Redis]]/Memcachedによるロックリスト管理、[[HMAC]]署名による改ざん防止などが用いられる
 
-<https://owasp.org/www-community/Slow_Down_Online_Guessing_Attacks_with_Device_Cookies>
+<https://community.owasp.org/Slow_Down_Online_Guessing_Attacks_with_Device_Cookies>

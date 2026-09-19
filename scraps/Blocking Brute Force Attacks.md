@@ -7,4 +7,4 @@
 - [[アカウントロックアウト]]は[[DoS攻撃]]に悪用されるリスクがあり、[[Device Cookies]]はそれに耐性を持つ
 - ほかにIPアドレスベースの[[レートリミット]]や[[CAPTCHA]]の導入などを挙げる
 
-<https://owasp.org/www-community/controls/Blocking_Brute_Force_Attacks>
+<https://community.owasp.org/controls/Blocking_Brute_Force_Attacks>

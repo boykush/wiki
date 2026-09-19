@@ -4,4 +4,4 @@
 
 - 認証はOAuth2 (PKCE) によるブラウザ認証。APIキー環境変数にも対応
 
-<https://github.com/datadog-labs/pup>
+<https://github.com/DataDog/pup>
