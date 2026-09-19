@@ -7,6 +7,7 @@
 - **Scraps**（Rust製の静的サイトジェネレーター）で構築する個人ウィキ。利用方法は公式文書: <https://boykush.github.io/scraps/>
 - `/scraps/` がウィキの基準ディレクトリ（`.scraps.toml` とMarkdownを配置）、`/scraps/_site/` は生成結果のためGitの管理対象外
 - RSSの記事一覧・本文取得は `mise run fetch-rss` / `mise run fetch-article-body` を手動で使う
+- 外部リンクの検査は `mise run check-links` を使う（結果は JSON で標準出力に出る）
 - `Dockerfile` は remote MCP サーバーの image 用（末尾の節）
 
 ## 開発コマンド
@@ -23,6 +24,7 @@
 
 - 新しいページの作成には [.claude/skills/ingest/SKILL.md](.claude/skills/ingest/SKILL.md) を使う。Claude Code以外のエージェントは同ファイルを直接読んで従う。
 - 記事・登壇資料のURLからページを作るときは [.claude/skills/digest/SKILL.md](.claude/skills/digest/SKILL.md) を使う。対話なしで1件書き切り、既存ページは変更しない。
+- 外部リンクのリンク切れ・移転・転送・アンカー違いを検査して直すときは [.claude/skills/linkcheck/SKILL.md](.claude/skills/linkcheck/SKILL.md) を使う。直すのはリンク先だけで、理由ごとの小さなPRにする。
 - その他のウィキ操作は通常のリポジトリ作業として扱い、存在しない上位の設計、振り分け役、スキルを仮定しない。
 - AI向け文書では、固有名詞、コマンド名、実際のフィールド名を除き、英単語を使わず日本語で書く。
 
