@@ -8,5 +8,5 @@
 
 ---
 
-- <https://cloud.google.com/sql/docs/mysql/sql-proxy>
+- <https://docs.cloud.google.com/sql/docs/mysql/sql-proxy>
 - <https://github.com/GoogleCloudPlatform/cloud-sql-proxy>
