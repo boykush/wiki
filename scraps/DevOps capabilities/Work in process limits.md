@@ -4,4 +4,4 @@
 
 ---
 
-<https://dora.dev/capabilities/work-in-process-limits/>
+<https://dora.dev/capabilities/wip-limits/>

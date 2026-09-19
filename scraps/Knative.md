@@ -8,4 +8,4 @@
 
 ---
 
-- [Overview - Knative](https://knative.dev/docs/concepts/)
+- [Overview - Knative](https://knative.dev/docs/)
