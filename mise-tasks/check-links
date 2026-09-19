@@ -1,0 +1,270 @@
+#!/usr/bin/env -S uv run --script
+# /// script
+# requires-python = ">=3.11"
+# ///
+"""Check the external links in the wiki and report the ones that need a look.
+
+Collects the URLs of Markdown links, images, autolinks and raw HTML
+attributes outside code, requests each unique URL once with curl following
+redirects, and prints a JSON array of findings to stdout with a summary on
+stderr. Each finding lists every page, line and link text that uses the URL.
+
+`status` is one of:
+    dead         404 / 410, or another 4xx that is not an access denial
+    dns          the host name does not resolve (curl exit 6)
+    unreachable  timeout, TLS failure or 5xx; may be temporary
+    blocked      401 / 403 / 429; the site refuses scripted clients
+    redirected   answered 2xx, but at a different URL than the one linked
+    ok           reported only with --all
+Links with a #fragment also carry `anchor` (found / missing / skipped) and,
+when found, `anchor_heading` to compare against the link text.
+
+Usage:
+    mise run check-links [-- [--all] [path ...]]
+"""
+import argparse
+import json
+import os
+import re
+import subprocess
+import sys
+import tempfile
+import threading
+import time
+import unicodedata
+from collections import defaultdict
+from concurrent.futures import ThreadPoolExecutor
+from html import unescape
+from pathlib import Path
+from urllib.parse import parse_qsl, unquote, urlsplit
+
+# Many docs sites and CDNs answer 403 to non-browser user agents.
+USER_AGENT = (
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
+    "(KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+)
+WORKERS = 16
+# Requests to one host run one at a time with a gap, so hosts with many
+# links (docs.github.com, kubernetes.io) do not rate-limit the run.
+HOST_INTERVAL_SECONDS = 0.7
+TIMEOUT_SECONDS = 25
+# Locale parameters a site appends on its own; not a move of the resource.
+LOCALE_QUERY_KEYS = {"hl", "lang", "locale"}
+
+FENCE = re.compile(r"^\s*(```|~~~)")
+INLINE_CODE = re.compile(r"`[^`\n]*`")
+LINK_OPEN = re.compile(r"!?\[([^\[\]]*)\]\(")
+AUTOLINK = re.compile(r"<(https?://[^>\s]+)>")
+HTML_ATTR = re.compile(r"""\b(?:src|href)\s*=\s*["'](https?://[^"']+)["']""")
+BARE = re.compile(r"https?://[^\s<>\"'`]+")
+TRAILING = ".,;:!?、。」』】"
+# Fragments that name a line, a text match or UI state rather than an id.
+NON_ANCHOR = re.compile(r"^(:~:|L\d+(-L\d+)?$)|[=&]")
+
+
+def parse_args() -> argparse.Namespace:
+    p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    p.add_argument("paths", nargs="*", help="Markdown files or directories. Default: the whole wiki.")
+    p.add_argument("--all", action="store_true", help="Also report URLs that answered normally.")
+    return p.parse_args()
+
+
+def wiki_root() -> Path:
+    return Path(os.environ.get("SCRAPS_DIRECTORY", "scraps"))
+
+
+def markdown_files(root: Path, paths: list[str]) -> list[Path]:
+    targets = [Path(p) for p in paths] or [root]
+    files = []
+    for t in targets:
+        if t.is_file():
+            files.append(t)
+            continue
+        files.extend(p for p in t.rglob("*.md") if "_site" not in p.relative_to(t).parts)
+    return sorted(files)
+
+
+def page_name(path: Path, root: Path) -> str:
+    try:
+        rel = path.resolve().relative_to(root.resolve())
+    except ValueError:
+        rel = path
+    # macOS may hand back decomposed (NFD) file names.
+    return unicodedata.normalize("NFC", str(rel.with_suffix("")))
+
+
+def link_destination(line: str, start: int) -> tuple[str, int]:
+    """Read a Markdown link destination that begins at `start` (just after "(")."""
+    if line.startswith("<", start):
+        end = line.find(">", start)
+        return (line[start + 1:end], end + 1) if end > 0 else ("", start)
+    depth, i = 0, start
+    while i < len(line) and not line[i].isspace():
+        if line[i] == "(":
+            depth += 1
+        elif line[i] == ")":
+            if depth == 0:
+                break
+            depth -= 1
+        i += 1
+    return line[start:i], i
+
+
+def trim_bare(url: str) -> str:
+    url = url.rstrip(TRAILING)
+    while url.endswith(")") and url.count("(") < url.count(")"):
+        url = url[:-1].rstrip(TRAILING)
+    return url
+
+
+def extract(line: str) -> list[tuple[str, str]]:
+    """Return (url, link text) pairs found on one line of prose."""
+    found, spans = [], []
+    for m in LINK_OPEN.finditer(line):
+        url, end = link_destination(line, m.end())
+        if url.startswith(("http://", "https://")):
+            found.append((url, m.group(1)))
+        spans.append((m.start(), end))
+    for rx in (AUTOLINK, HTML_ATTR):
+        for m in rx.finditer(line):
+            if not any(s <= m.start() < e for s, e in spans):
+                found.append((unescape(m.group(1)), ""))
+            spans.append((m.start(), m.end()))
+    for m in BARE.finditer(line):
+        if not any(s <= m.start() < e for s, e in spans):
+            found.append((trim_bare(m.group(0)), ""))
+    return found
+
+
+def collect(files: list[Path], root: Path) -> dict[str, list[dict]]:
+    uses = defaultdict(list)
+    for path in files:
+        in_fence = False
+        for number, line in enumerate(path.read_text(encoding="utf-8").split("\n"), 1):
+            if FENCE.match(line):
+                in_fence = not in_fence
+                continue
+            if in_fence:
+                continue
+            prose = INLINE_CODE.sub(lambda m: " " * len(m.group(0)), line)
+            for url, text in extract(prose):
+                uses[url].append({"page": page_name(path, root), "line": number, "text": text})
+    return uses
+
+
+host_locks = defaultdict(threading.Lock)
+host_last = defaultdict(float)
+
+
+def request(url: str, want_body: bool) -> tuple[dict, str]:
+    host = urlsplit(url).netloc.lower()
+    with host_locks[host], tempfile.NamedTemporaryFile() as body:
+        wait = HOST_INTERVAL_SECONDS - (time.monotonic() - host_last[host])
+        if wait > 0:
+            time.sleep(wait)
+        proc = subprocess.run(
+            ["curl", "-sS", "-L", "--compressed", "--max-time", str(TIMEOUT_SECONDS), "--max-redirs", "10",
+             "--max-filesize", str(20 * 1024 * 1024), "-A", USER_AGENT,
+             "-o", body.name if want_body else os.devnull,
+             "-w", "%{http_code}\t%{url_effective}\t%{content_type}", url],
+            capture_output=True, text=True,
+        )
+        host_last[host] = time.monotonic()
+        code, final, ctype = (proc.stdout.split("\t") + ["", "", ""])[:3]
+        html = Path(body.name).read_bytes().decode("utf-8", "replace") if want_body and "html" in ctype else ""
+    result = {"http": int(code) if code.isdigit() else 0, "final": final, "curl_exit": proc.returncode}
+    if proc.stderr.strip():
+        result["error"] = proc.stderr.strip()[:200]
+    return result, html
+
+
+def comparable(url: str) -> tuple:
+    parts = urlsplit(url)
+    query = sorted((k, v) for k, v in parse_qsl(parts.query) if k not in LOCALE_QUERY_KEYS)
+    return (parts.scheme, parts.netloc.lower().removeprefix("www."), parts.path.rstrip("/") or "/", tuple(query))
+
+
+def classify(url: str, result: dict) -> str:
+    code = result["http"]
+    if result["curl_exit"] == 6:
+        return "dns"
+    if code in (401, 403, 429, 999):
+        return "blocked"
+    if code == 0 or code >= 500:
+        return "unreachable"
+    if code >= 400:
+        return "dead"
+    if result["final"] and comparable(url.split("#")[0]) != comparable(result["final"].split("#")[0]):
+        return "redirected"
+    return "ok"
+
+
+HEADING = re.compile(r"<(h[1-6])\b[^>]*>(.*?)</\1>", re.S)
+
+
+def heading_text(html: str, fragment: str) -> str | None:
+    """Return the heading the fragment lands on, "" if none, None if absent."""
+    m = re.search(r"""(?<![\w-])(?:id|name)\s*=\s*["']?%s["'\s>]""" % re.escape(fragment), html)
+    if not m:
+        return None
+    tag = html.rfind("<", 0, m.start())
+    start = tag
+    if not re.match(r"<h[1-6]\b", html[tag:]):
+        # An id on an anchor inside a heading belongs to that heading; an id
+        # on a marker element before one belongs to the next heading.
+        opening = max((h.start() for h in re.finditer(r"<h[1-6]\b", html[:tag])), default=-1)
+        closing = max((h.start() for h in re.finditer(r"</h[1-6]>", html[:tag])), default=-1)
+        start = opening if opening > closing else tag
+    h = HEADING.search(html[start:start + 4000])
+    if not h:
+        return ""
+    text = unescape(re.sub(r"<[^>]+>", "", h.group(2))).replace("​", "")
+    # Docs generators append a permalink mark (Sphinx ¶, mkdocs 🔗) to headings.
+    return re.sub(r"\s+", " ", text).strip().rstrip("¶🔗#").strip()
+
+
+def check_anchor(fragment: str, html: str) -> tuple[str, str | None]:
+    if NON_ANCHOR.search(fragment) or not html:
+        return "skipped", None
+    for candidate in (fragment, unquote(fragment), "user-content-" + unquote(fragment)):
+        heading = heading_text(html, candidate)
+        if heading is not None:
+            return "found", heading
+    return "missing", None
+
+
+def main() -> None:
+    args = parse_args()
+    root = wiki_root()
+    files = markdown_files(root, args.paths)
+    uses = collect(files, root)
+    bases = sorted({u.split("#")[0] for u in uses})
+    with_fragment = {u.split("#")[0] for u in uses if "#" in u}
+
+    with ThreadPoolExecutor(max_workers=WORKERS) as pool:
+        fetched = dict(zip(bases, pool.map(lambda b: request(b, b in with_fragment), bases)))
+
+    findings = []
+    for url in sorted(uses):
+        base, _, fragment = url.partition("#")
+        result, html = fetched[base]
+        finding = {"url": url, "status": classify(url, result), **result}
+        if fragment:
+            finding["anchor"], finding["anchor_heading"] = check_anchor(fragment, html)
+        finding["where"] = uses[url]
+        if args.all or finding["status"] != "ok" or finding.get("anchor") in ("found", "missing"):
+            findings.append(finding)
+
+    json.dump(findings, sys.stdout, ensure_ascii=False, indent=1)
+    print()
+    counts = defaultdict(int)
+    for url in uses:
+        base, _, fragment = url.partition("#")
+        counts[classify(url, fetched[base][0])] += 1
+    summary = " ".join(f"{k}={counts[k]}" for k in ("dead", "dns", "unreachable", "blocked", "redirected", "ok"))
+    missing = sum(1 for f in findings if f.get("anchor") == "missing")
+    print(f"pages={len(files)} urls={len(uses)} {summary} anchor_missing={missing}", file=sys.stderr)
+
+
+if __name__ == "__main__":
+    main()
