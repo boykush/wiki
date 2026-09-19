@@ -32,7 +32,8 @@
 
 ウィキを scraps の remote MCP サーバーとして動かすための image。このリポジトリの責務は **image のビルドと公開まで**で、Kubernetes の manifest は置かない。
 
-- `Dockerfile` — scraps の musl リリースバイナリと `scraps/` のコンテンツを distroless static に載せる。build context はリポジトリ直下で、`.dockerignore` は `scraps/` だけを通す許可リスト（`_site` は除外）。
+- `Dockerfile` — scraps の musl リリースバイナリと `scraps/` のコンテンツを distroless static に載せる。build context はリポジトリ直下で、`.dockerignore` は `scraps/` だけを通す許可リスト（`_site` と手元の `.scraps` は除外）。
+- scraps の IR（`scraps/.scraps/ir.json`）は image のビルド中に作って同梱する。実行時の scraps は `/wiki/scraps` に書き込めないため、IR が無いとリクエストのたびに全 scrap をパースし直す。
 - image が受け取る引数は listen アドレスだけで、既定は `0.0.0.0:1113`。`mcp serve --http` までが ENTRYPOINT なので、ポートを変える側は `0.0.0.0:<port>` を渡す。distroless に shell が無いため環境変数からは展開できない。
 - 同梱する scraps の version は workflow が `mise.toml` の pin から読む。**version を上げる場所は `mise.toml` だけ**で、Renovate が上げれば image も再ビルドされる。
 - image は `ghcr.io/boykush/wiki-mcp-server`。push する tag は `<scraps の version>-<commit>`（不変）と `main`（可変）の2つ。**tag の付け方は image を追う側の更新戦略と対になっている**ので、変えるときは追う側も揃える。

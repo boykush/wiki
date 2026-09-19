@@ -9,9 +9,17 @@ RUN apk add --no-cache curl \
  && chmod +x /usr/local/bin/scraps \
  && /usr/local/bin/scraps --version
 
+# At runtime scraps runs as nonroot over root-owned files, so it can never save its
+# IR next to the content and would re-parse every scrap on each request. Any command
+# that reads the wiki writes .scraps/ir.json, and the build fails if it ever does not.
+FROM fetch AS compile
+COPY scraps/ /wiki/scraps/
+RUN /usr/local/bin/scraps -C /wiki/scraps tag list > /dev/null \
+ && test -f /wiki/scraps/.scraps/ir.json
+
 FROM gcr.io/distroless/static-debian12:nonroot
 COPY --from=fetch /usr/local/bin/scraps /usr/local/bin/scraps
-COPY scraps/ /wiki/scraps/
+COPY --from=compile /wiki/scraps/ /wiki/scraps/
 # Same layout as a checkout: the markdown lives under <root>/scraps, not at the root.
 ENV SCRAPS_DIRECTORY=/wiki/scraps
 EXPOSE 1113
