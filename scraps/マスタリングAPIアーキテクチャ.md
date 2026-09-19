@@ -20,7 +20,7 @@ James Gough, Daniel Bryant, Matthew Auburn
 - [[HTTP]]/[[REST]]/[[リチャードソン成熟度モデル]]
 - [[GraphQL]]
 - [[RPC]]/[[gRPC]]
-- [[Open API]]
+- [[OpenAPI]]
 
 ### 2章 APIのテスト #[[Testing]]
 
