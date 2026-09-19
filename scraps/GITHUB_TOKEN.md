@@ -6,4 +6,4 @@
 
 - GITHUB_TOKEN で起こしたイベントは新たな workflow run をトリガしない（再帰実行の防止）。このため bot 起点で後続 CI を回すには GitHub App トークンや [[PAT]] が必要になる
 
-<https://docs.github.com/en/actions/security-for-github-actions/security-guides/automatic-token-authentication>
+<https://docs.github.com/en/actions/tutorials/authenticate-with-github_token>

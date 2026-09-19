@@ -7,4 +7,4 @@
 - スキャンは[[GitHub Actions]]上で実行され、Actions minutes を消費する
 - [[適応度関数]]のコード品質カテゴリに該当する
 
-<https://docs.github.com/en/code-security/concepts/about-code-quality>
+<https://docs.github.com/en/code-security/concepts/code-quality/code-quality>

@@ -11,4 +11,4 @@ MCPクライアントとサーバー間のトランスポートレイヤでは
 
 のいずれかが用いられる
 
-<https://modelcontextprotocol.io/docs/concepts/architecture>
+<https://modelcontextprotocol.io/docs/learn/architecture>
