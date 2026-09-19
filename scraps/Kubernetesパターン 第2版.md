@@ -58,7 +58,7 @@ Bilgin Ibryam, Roland Huß, [[松浦 隼人]]
 
 ### 10章 Singleton Service（シングルトンサービス）
 
-- [[Kubernetes/Headless Service|ヘッドドレスService]]/[[kube-proxy]]/StatefulService
+- [[Kubernetes/Headless Service|ヘッドレスService]]/[[kube-proxy]]/StatefulService
 - [[etcd]]/ZooKeeper/[[Dapr]]
 - [[Kubernetes/PodDisruptionBudget]]
 
