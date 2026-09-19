@@ -4,4 +4,4 @@
 
 - [[Claude Code Templates]]
 
-<https://www.anthropic.com/news/claude-code-plugins>
+<https://claude.com/blog/claude-code-plugins>
