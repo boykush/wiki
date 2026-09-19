@@ -6,5 +6,4 @@
 - ベストプラクティス違反の警告は[[Non-root User]]や[[マルチステージビルド]]などの実践に対応する
 - [[Docker]]イメージとしても配布されており、ローカル環境へのインストール不要で実行可能
 
-<https://hadolint.dev/>
 <https://github.com/hadolint/hadolint>

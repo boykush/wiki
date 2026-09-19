@@ -13,5 +13,4 @@
 
 RESTful APIベースで、[[IdP]]とSP（Service Provider）間のユーザー情報同期を効率化する
 
-<https://scimcloud.com/>
 <https://datatracker.ietf.org/doc/html/rfc7644>
