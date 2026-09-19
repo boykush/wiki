@@ -4,4 +4,4 @@
 
 DaprのワークフローによるメッセージングベースのAIエージェント連携も可能
 
-<https://dapr.github.io/dapr-agents/>
+<https://docs.dapr.io/developing-ai/dapr-agents/>

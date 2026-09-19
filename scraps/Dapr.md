@@ -12,4 +12,4 @@ Daprの[[サイドカープロキシ]]は[[Envoy]] proxyと異なり、全ての
 
 ---
 
-<https://docs.dapr.io/concepts/overview/>
+<https://docs.dapr.io/overview/>
