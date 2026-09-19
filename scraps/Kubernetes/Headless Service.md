@@ -4,6 +4,6 @@ clusterIP `.spec.clusterIP` を `"None"` に指定することで、[[Kubernetes
 
 ---
 
-- [Service | Kubernetes](https://kubernetes.io/ja/docs/concepts/services-networking/service/#headless-service)
+- [Service | Kubernetes](https://kubernetes.io/ja/docs/concepts/services-networking/service/#headless-services)
 
 [[Kubernetes]]
