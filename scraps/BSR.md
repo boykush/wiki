@@ -1,4 +1,4 @@
-## Buf Schema Registory
+## Buf Schema Registry
 
 #[[Continuous Integration]] #[[Continuous Delivery]]
 
