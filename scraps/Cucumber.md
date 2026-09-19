@@ -12,7 +12,7 @@
 - Kotlin
 - [[Scala]]
 - Lua
-- Ocaml
+- OCaml
 - C++
 - [[Go]]
 
