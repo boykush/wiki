@@ -6,4 +6,4 @@
 
 ---
 
-- [Secret Manager の概要  |  Secret Manager Documentation  |  Google Cloud](https://cloud.google.com/secret-manager/docs/overview?hl=ja)
+- [Secret Manager の概要  |  Secret Manager Documentation  |  Google Cloud](https://docs.cloud.google.com/secret-manager/docs/overview?hl=ja)

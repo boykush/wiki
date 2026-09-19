@@ -8,4 +8,4 @@
 
 ---
 
-- [Artifact Registry のドキュメント  |  Google Cloud](https://cloud.google.com/artifact-registry/docs?hl=ja)
+- [Artifact Registry のドキュメント  |  Google Cloud](https://docs.cloud.google.com/artifact-registry/docs?hl=ja)
