@@ -23,5 +23,5 @@ APIゲートウェイとして以下のような機能を持っている
 
 ---
 
-- [Edge Stack quick start | Edge Stack](https://www.getambassador.io/docs/edge-stack/latest/tutorials/getting-started)
-- [The Edge Stack architecture | Edge Stack](https://www.getambassador.io/docs/edge-stack/latest/topics/concepts/architecture)
+- [Edge Stack quick start | Edge Stack](https://documentation.gravitee.io/edge-stack)
+- [The Edge Stack architecture | Edge Stack](https://documentation.gravitee.io/edge-stack/core-concepts/ambassador-edge-stack-architecture)
