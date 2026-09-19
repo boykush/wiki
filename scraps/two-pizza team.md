@@ -6,4 +6,4 @@ Amazonに浸透する1チームの規模の考え
 
 ---
 
-- [2 枚のピザチーム - AWS での DevOps の概要](https://docs.aws.amazon.com/ja_jp/whitepapers/latest/introduction-devops-aws/two-pizza-teams.html)
+- [2 枚のピザチーム - AWS での DevOps の概要](https://docs.aws.amazon.com/ja_jp/whitepapers/latest/introduction-devops-aws/communication-collaboration.html)
