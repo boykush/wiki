@@ -93,7 +93,7 @@ Bilgin Ibryam, Roland Huß, [[松浦 隼人]]
 
 ### 17章 Adapter（アダプタ）
 
-- [[Prometeus]]
+- [[Prometheus]]
 
 ### 18章 Ambassador（アンバサダ）
 
@@ -162,7 +162,7 @@ Bilgin Ibryam, Roland Huß, [[松浦 隼人]]
 
 ### 29章 Elastic Scale（エラスティックスケール）
 
-- [[Kubernetes/HorizontalPodAutoscalar]]
+- [[Kubernetes/HorizontalPodAutoscaler]]
 - Knative/[[KEDA]]
 - VerticalPodAutoscalar
 - ClusterAutoscalar
