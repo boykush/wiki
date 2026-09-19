@@ -4,4 +4,4 @@
 
 検索対象は自動でインデックスされる
 
-<https://docs.devin.ai/work-with-devin/devin-search>
+<https://web.archive.org/web/20250507125729/https://docs.devin.ai/work-with-devin/devin-search>
