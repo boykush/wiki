@@ -6,7 +6,7 @@
 
 [[JSON]]または[[YAML]]でコード管理が可能
 
-[Swagger](https://swagger.io/)のようなツール群ではOpen API仕様をベースにドキュメンテーションやテストを用意に実装できる
+[Swagger](https://swagger.io/)のようなツール群ではOpen API仕様をベースにドキュメンテーションやテストを容易に実装できる
 
 ---
 
