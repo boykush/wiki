@@ -1,5 +1,3 @@
-##
-
 ### Authors
 
 Mauricio Salatino
