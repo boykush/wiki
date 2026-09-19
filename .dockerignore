@@ -1,4 +1,6 @@
-# Allowlist: only the wiki content may reach the image, and never the built site.
+# Allowlist: only the wiki content may reach the image, and never the built site
+# or a local IR, which the image compiles for itself.
 *
 !scraps
 scraps/_site
+scraps/.scraps
