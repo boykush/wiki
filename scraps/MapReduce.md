@@ -9,4 +9,4 @@ MapReduceジョブは以下の2つに分かれる
 - Reducer
   - mapperによって生成されたキーと値のコレクションからコレクションに対するイテレータとともに関数を適用し出力レコードを適用する
 
-HadoopのMapReduce実装ではHDFS(Hadoop Destributed File System)と呼ばれる分散ファイルシステムが用いられる
+HadoopのMapReduce実装ではHDFS(Hadoop Distributed File System)と呼ばれる分散ファイルシステムが用いられる

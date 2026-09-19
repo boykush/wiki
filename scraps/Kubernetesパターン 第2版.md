@@ -17,7 +17,7 @@ Bilgin Ibryam, Roland Huß, [[松浦 隼人]]
 
 ## 第1部 基本パターン
 
-### 2章 Predicatable Demand（予測可能な需要）
+### 2章 Predictable Demand（予測可能な需要）
 
 ### 3章 Declarative Deployment（宣言的デプロイ）
 
@@ -136,7 +136,7 @@ Bilgin Ibryam, Roland Huß, [[松浦 隼人]]
 ### 25章 Secure Configuration（セキュア設定）
 
 - Secret
-- Sealed Secret/External Secret/[[SMS]](AWS Secret Manager)/[[sops]]
+- Sealed Secret/External Secret/[[SMS]](AWS Secrets Manager)/[[sops]]
 - [[KMS]]([[Amazon/KMS]])
 - [[Container Storage Interface]]/[[Secrets Store CSI Driver]]
 - Vault Sidecar Agent Injector
@@ -164,8 +164,8 @@ Bilgin Ibryam, Roland Huß, [[松浦 隼人]]
 
 - [[Kubernetes/HorizontalPodAutoscaler]]
 - Knative/[[KEDA]]
-- VerticalPodAutoscalar
-- ClusterAutoscalar
+- VerticalPodAutoscaler
+- ClusterAutoscaler
 
 ### 30章 Image Builder（イメージビルダ）
 
