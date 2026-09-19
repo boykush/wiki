@@ -6,4 +6,4 @@
 
 ---
 
-<https://owasp.org/www-project-top-ten/>
+<https://owasp.org/projects/top-ten>

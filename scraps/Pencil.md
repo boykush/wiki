@@ -7,4 +7,4 @@
 - [[VS Code]]やCursorなどのIDEに対応
 - Figmaからのコピー&ペーストをサポート
 
-<https://www.pencil.dev/>
+<https://www.pen.dev/>
