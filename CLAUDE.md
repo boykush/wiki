@@ -26,6 +26,7 @@
 - 記事・登壇資料のURLからページを作るときは [.claude/skills/digest/SKILL.md](.claude/skills/digest/SKILL.md) を使う。対話なしで1件書き切り、既存ページは変更しない。
 - 外部リンクのリンク切れ・移転・転送・アンカー違いを検査して直すときは [.claude/skills/linkcheck/SKILL.md](.claude/skills/linkcheck/SKILL.md) を使う。直すのはリンク先だけで、理由ごとの小さなPRにする。
 - その他のウィキ操作は通常のリポジトリ作業として扱い、存在しない上位の設計、振り分け役、スキルを仮定しない。
+- ウィキのページ名に `CLAUDE` / `AGENTS` は使わない（大文字小文字を区別しない macOS では `scraps/CLAUDE.md` として指示ファイルに誤読されるため。Claude Code は `.claude/settings.json` の `claudeMdExcludes` で `scraps/` 配下を除外済みだが、Codex に同等の設定は無い）。
 - AI向け文書では、固有名詞、コマンド名、実際のフィールド名を除き、英単語を使わず日本語で書く。
 
 ## remote MCP サーバーの image
