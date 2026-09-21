@@ -7,4 +7,4 @@
 [[Google Cloud]]のデータクラウドチームが公開した
 
 <https://cloud.google.com/blog/ja/products/data-analytics/how-the-open-knowledge-format-can-improve-data-sharing/>
-<https://github.com/GoogleCloudPlatform/knowledge-catalog/tree/main/okf>
+<https://github.com/GoogleCloudPlatform/open-knowledge-format>
