@@ -34,9 +34,16 @@ jobs:
       - name: Setup Scraps
         uses: boykush/scraps@9a627afc4d09daa8d1daf40b14fda62ecbc27aa7 # v3.0
 
+      # Reads the token from Parameter Store with this run's own OIDC identity,
+      # so this repository holds no Claude credential of its own. Re-pin to a
+      # main SHA once boykush/infrastructure-as-code#35 is merged.
+      - name: Fetch the Claude Code token
+        id: claude-token
+        uses: boykush/infrastructure-as-code/.github/actions/claude-code-token@bba756b6d51d7d0c28c2add66f2e3d15524b771e
+
       - name: Run Claude Code
         uses: anthropics/claude-code-action@cfc3eb22bfed5c26ef66e3223c982af27e4524de # v1.0.231
         with:
-          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          claude_code_oauth_token: ${{ steps.claude-token.outputs.token }}
           settings: ".claude/settings.json"
           claude_args: --allowed-tools "WebFetch,Read,Write,Edit,Glob,Bash,Skill"
