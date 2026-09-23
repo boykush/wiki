@@ -4,9 +4,6 @@
       "Bash(scraps:*)"
     ]
   },
-  "enabledPlugins": {
-    "commit-commands@claude-code-plugins": true
-  },
   "autoMemoryEnabled": false,
   "claudeMdExcludes": [
     "**/scraps/**"
