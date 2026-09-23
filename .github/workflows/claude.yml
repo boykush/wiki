@@ -39,7 +39,7 @@ jobs:
       # main SHA once boykush/infrastructure-as-code#35 is merged.
       - name: Fetch the Claude Code token
         id: claude-token
-        uses: boykush/infrastructure-as-code/.github/actions/claude-code-token@bba756b6d51d7d0c28c2add66f2e3d15524b771e
+        uses: boykush/infrastructure-as-code/.github/actions/claude-code-token@63d18b9ca8f6efd275126605a9b35acb921f8fe7
 
       - name: Run Claude Code
         uses: anthropics/claude-code-action@cfc3eb22bfed5c26ef66e3223c982af27e4524de # v1.0.231
