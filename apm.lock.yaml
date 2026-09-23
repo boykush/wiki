@@ -1,6 +1,24 @@
 lockfile_version: '1'
 apm_version: 0.31.0
 dependencies:
+- repo_url: anthropics/claude-code
+  name: commit-commands
+  host: github.com
+  resolved_commit: 56f36532530f88b572854538d685fcf781141e8c
+  resolved_ref: 56f36532530f88b572854538d685fcf781141e8c
+  version: 1.0.0
+  virtual_path: plugins/commit-commands
+  is_virtual: true
+  package_type: marketplace_plugin
+  deployed_files:
+  - .claude/commands/clean_gone.md
+  - .claude/commands/commit-push-pr.md
+  - .claude/commands/commit.md
+  deployed_file_hashes:
+    .claude/commands/clean_gone.md: sha256:24ce5c79da87b481d346d26b297cbe327862f1e4bbee05406589f4b5468c7fa3
+    .claude/commands/commit-push-pr.md: sha256:63ee94bcf2a60101d542ec46bf2afa18b31565105ebfc63f1a38e4d308d3cd2f
+    .claude/commands/commit.md: sha256:366740b9d9f45e05bf7cc5b703156f95fe28180012899ceb90d89d34d4110e47
+  content_hash: sha256:53646e99d801fb183607389b779f731e4bb2473cfd03d64b547990095cc2aa9a
 - repo_url: boykush/ai-plugins
   name: adr-remote-mcp
   host: github.com
@@ -12,6 +30,33 @@ dependencies:
   package_type: apm_package
   content_hash: sha256:6745a096e1cc71a877b44ad80a430b066a5939c20103dccf83f419ad194b61ed
 deployments:
+- kind: project-relative
+  target: claude
+  value: .claude/commands/clean_gone.md
+  runtime: null
+  scope: project
+  owners:
+  - anthropics/claude-code/plugins/commit-commands
+  active_owner: anthropics/claude-code/plugins/commit-commands
+  content_hash: sha256:24ce5c79da87b481d346d26b297cbe327862f1e4bbee05406589f4b5468c7fa3
+- kind: project-relative
+  target: claude
+  value: .claude/commands/commit-push-pr.md
+  runtime: null
+  scope: project
+  owners:
+  - anthropics/claude-code/plugins/commit-commands
+  active_owner: anthropics/claude-code/plugins/commit-commands
+  content_hash: sha256:63ee94bcf2a60101d542ec46bf2afa18b31565105ebfc63f1a38e4d308d3cd2f
+- kind: project-relative
+  target: claude
+  value: .claude/commands/commit.md
+  runtime: null
+  scope: project
+  owners:
+  - anthropics/claude-code/plugins/commit-commands
+  active_owner: anthropics/claude-code/plugins/commit-commands
+  content_hash: sha256:366740b9d9f45e05bf7cc5b703156f95fe28180012899ceb90d89d34d4110e47
 - kind: uri
   target: mcp
   value: adr

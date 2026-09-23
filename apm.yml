@@ -8,4 +8,5 @@ targets:
 dependencies:
   apm:
     - boykush/ai-plugins/plugins/adr-remote-mcp#4b9ae00c41111225446cd063da0f38a89ae76164
+    - anthropics/claude-code/plugins/commit-commands#56f36532530f88b572854538d685fcf781141e8c
   mcp: []
