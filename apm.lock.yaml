@@ -27,6 +27,16 @@ dependencies:
     .claude/skills/ade-rule-dsl/references/LICENSE: sha256:c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4
     .claude/skills/ade-rule-dsl/references/dsl-reference.md: sha256:f1902a0e36446191ca0bdfe6542360c58ff3374e4285fec3a2c87f119ae42a84
   content_hash: sha256:d10ac5ae6d1ae738a2706ab92bd3136b1d8dbb17382996c92ded71c947bfd589
+- repo_url: boykush/ai-plugins
+  name: catalog-remote-mcp
+  host: github.com
+  resolved_commit: 67ad19d989df993a5e879e60aa781fe920355858
+  resolved_ref: 67ad19d989df993a5e879e60aa781fe920355858
+  version: 0.1.0
+  virtual_path: plugins/catalog-remote-mcp
+  is_virtual: true
+  package_type: apm_package
+  content_hash: sha256:85c6674a2220650d28eef0b3b833899f7cc44c1bfe54208584ae8078e4c814ac
 deployments:
 - kind: project-relative
   target: claude
@@ -111,7 +121,25 @@ deployments:
   content_hash: null
 - kind: uri
   target: mcp
+  value: catalog
+  runtime: claude
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: null
+- kind: uri
+  target: mcp
   value: adr
+  runtime: codex
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: null
+- kind: uri
+  target: mcp
+  value: catalog
   runtime: codex
   scope: project
   owners:
@@ -120,16 +148,25 @@ deployments:
   content_hash: null
 mcp_servers:
 - adr
+- catalog
 mcp_configs:
   adr:
     name: adr
     transport: http
     registry: false
     url: https://adr-mcp.boykush.com/mcp
+  catalog:
+    name: catalog
+    transport: http
+    registry: false
+    url: https://backstage.boykush.com/api/mcp-actions/v1/catalog
 mcp_target_servers:
   claude:
   - adr
+  - catalog
   codex:
   - adr
+  - catalog
 mcp_config_provenance:
   adr: adr-remote-mcp
+  catalog: catalog-remote-mcp
