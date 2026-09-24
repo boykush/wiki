@@ -7,6 +7,6 @@ targets:
 # .mcp.json と .codex/config.toml は apm install がここから生成する。直接は書き換えない。
 dependencies:
   apm:
-    - boykush/ai-plugins/plugins/adr-remote-mcp#67ad19d989df993a5e879e60aa781fe920355858
-    - boykush/ai-plugins/plugins/catalog-remote-mcp#67ad19d989df993a5e879e60aa781fe920355858
+    - boykush/ai-plugins/plugins/adr-remote-mcp#0a6dd936c8be229cae095eaf40c0170db59bf45b
+    - boykush/ai-plugins/plugins/catalog-remote-mcp#0a6dd936c8be229cae095eaf40c0170db59bf45b
   mcp: []
