@@ -57,7 +57,7 @@ jobs:
     permissions:
       contents: write # push the branch
       pull-requests: write # open the PR
-      id-token: write # claude-code-action OIDC
+      id-token: write # claude-code-token and claude-code-action OIDC
     steps:
       - name: Checkout
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
@@ -80,10 +80,18 @@ jobs:
           mise run fetch-article-body -- --url "$ARTICLE_URL" > article-body.md
           echo "fetched $(wc -c < article-body.md) bytes"
 
+      # Reads the token from Parameter Store with this run's own OIDC identity,
+      # so this repository holds no Claude credential of its own. Pinned to this
+      # revision because it refuses a token containing whitespace: the part
+      # after a line break would otherwise reach the public job log unmasked.
+      - name: Fetch the Claude Code token
+        id: claude-token
+        uses: boykush/infrastructure-as-code/.github/actions/claude-code-token@63d18b9ca8f6efd275126605a9b35acb921f8fe7
+
       - name: Run Claude with digest skill
         uses: anthropics/claude-code-action@cfc3eb22bfed5c26ef66e3223c982af27e4524de # v1.0.231
         with:
-          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          claude_code_oauth_token: ${{ steps.claude-token.outputs.token }}
           settings: ".claude/settings.json"
           # Grep / Glob を渡さないことで、ウィキの照会が scraps CLI に限られる
           claude_args: --allowed-tools "WebFetch,Read,Write,Edit,Bash,Skill"

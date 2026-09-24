@@ -35,8 +35,9 @@ jobs:
         uses: boykush/scraps@9a627afc4d09daa8d1daf40b14fda62ecbc27aa7 # v3.0
 
       # Reads the token from Parameter Store with this run's own OIDC identity,
-      # so this repository holds no Claude credential of its own. Re-pin to a
-      # main SHA once boykush/infrastructure-as-code#35 is merged.
+      # so this repository holds no Claude credential of its own. Pinned to this
+      # revision because it refuses a token containing whitespace: the part
+      # after a line break would otherwise reach the public job log unmasked.
       - name: Fetch the Claude Code token
         id: claude-token
         uses: boykush/infrastructure-as-code/.github/actions/claude-code-token@63d18b9ca8f6efd275126605a9b35acb921f8fe7
