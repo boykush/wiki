@@ -9,5 +9,8 @@ Kaspar von Grünberg（『Thinking in Platforms』著者）による Keynote（P
     - 02 On the loop
     - 03 Orchestrating
     - 04 Outside the loop
+    - 段階の違いは、ループの中に人間と AI がどう配置されるか
+        - 00〜01 は人間が実行者
+        - 02 は人間が検証者（validator）
 
 <https://www.cnia.io/pek2026/sessions/keynote>
