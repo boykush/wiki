@@ -1,6 +1,6 @@
 [[Platform Engineering]]
 
-[[Internal Developer Platform]]の参照アーキテクチャを構成する5つのプレーンの1つで、プラットフォームの利用者が設定し、操作する入口。アプリとプラットフォームのソースを置くバージョン管理、ワークロードの仕様、[[Internal Developer Portal|開発者向けのポータル]]からなる
+[[Internal Developer Platform]]の[[Internal Developer Platform/Reference architecture|参照アーキテクチャ]]を構成する5つのプレーンの1つで、プラットフォームの利用者が設定し、操作する入口。アプリとプラットフォームのソースを置くバージョン管理、ワークロードの仕様、[[Internal Developer Portal|開発者向けのポータル]]からなる
 
 - プラットフォームのソースは[[Terraform]]などの[[Infrastructure as Code]]で書く
 - ポータルには[[Backstage]]も使える
