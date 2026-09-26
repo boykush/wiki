@@ -5,3 +5,4 @@
 - 設定は[[Infrastructure as Code]]で宣言的に持つ
 
 <https://weaveintelligence.io/blog/what-is-an-agentic-development-platform>
+<https://weaveintelligence.io/research/ref-arch-aws>
