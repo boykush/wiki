@@ -5,7 +5,7 @@
 - 設定は[[Infrastructure as Code]]で宣言的に持つ
 - 開発の領域でのプレーン
   - [[Internal Developer Platform/Developer Control Plane|Developer control plane]]
-  - Integration & delivery
+  - [[Internal Developer Platform/Integration and Delivery Plane|Integration & delivery]]
   - Resources
   - Observability
   - Security
