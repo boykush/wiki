@@ -1,5 +1,5 @@
 [[Platform Engineering]] #[[LLM]]
 
-AIエージェントがエンジニアに代わって判断と実行を担う前提で、エージェントが動く道筋とガードレールをプラットフォーム側で定める Platform Engineering の実践。エージェントはインフラの状態・ポリシー・[[テレメトリー]]を読み、その制約の内側で動く
+人間を置き換えるのではなく、プラットフォームそのものに観測・判断・実行の力を持たせる Platform Engineering の実践。主導権は人間が握ったままにする
 
-<https://platformengineering.org/blog/the-rise-of-agentic-platforms-scaling-beyond-automation>
+<https://devblogs.microsoft.com/all-things-azure/agentic-platform-engineering-with-github-copilot/>
