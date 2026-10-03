@@ -22,8 +22,8 @@
 
 ## AIによる操作
 
-- 新しいページの作成には [plugins/pkm/skills/learn/SKILL.md](plugins/pkm/skills/learn/SKILL.md) を使う。説明と理解度チェックを経て、ユーザーが理解できた内容だけを書く。
-- 記事・登壇資料のURLを要約して残すときは [plugins/pkm/skills/digest/SKILL.md](plugins/pkm/skills/digest/SKILL.md) を使う。対話なしで1件書き切り、既存ページは変更しない。feed に載っている記事の本文は `mise run fetch-article-body` で取る。
+- 新しいページの作成には [plugins/pkm/.apm/skills/learn/SKILL.md](plugins/pkm/.apm/skills/learn/SKILL.md) を使う。説明と理解度チェックを経て、ユーザーが理解できた内容だけを書く。
+- 記事・登壇資料のURLを要約して残すときは [plugins/pkm/.apm/skills/digest/SKILL.md](plugins/pkm/.apm/skills/digest/SKILL.md) を使う。対話なしで1件書き切り、既存ページは変更しない。feed に載っている記事の本文は `mise run fetch-article-body` で取る。
 - 記事や登壇資料そのものを主題とするページでは、技術ブログとニュース記事に限り最終行へ `[[Blog|ブログ]]` を置く。同名のページがあるときだけ、記事は `scraps/Blog/`、登壇資料は `scraps/Slide/` に置く。
 - 外部リンクのリンク切れ・移転・転送・アンカー違いを検査して直すときは [.claude/skills/linkcheck/SKILL.md](.claude/skills/linkcheck/SKILL.md) を使う。直すのはリンク先だけで、理由ごとの小さなPRにする。
 - その他のウィキ操作は通常のリポジトリ作業として扱い、存在しない上位の設計、振り分け役、スキルを仮定しない。
