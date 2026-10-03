@@ -1,6 +1,26 @@
 lockfile_version: '1'
-apm_version: 0.31.0
+apm_version: 0.32.0
 dependencies:
+- repo_url: _local/pkm
+  name: pkm
+  version: 0.1.0
+  package_type: marketplace_plugin
+  deployed_files:
+  - .agents/skills/digest
+  - .agents/skills/digest/SKILL.md
+  - .agents/skills/learn
+  - .agents/skills/learn/SKILL.md
+  - .claude/skills/digest
+  - .claude/skills/digest/SKILL.md
+  - .claude/skills/learn
+  - .claude/skills/learn/SKILL.md
+  deployed_file_hashes:
+    .agents/skills/digest/SKILL.md: sha256:5b0479494c69bc9844daf65bbddb33486b7007286c407d2a46dd1db9d34009e3
+    .agents/skills/learn/SKILL.md: sha256:8094adaeacc42cfdcadf6af902b403bb0a9dbe720449a07238226ee480d38462
+    .claude/skills/digest/SKILL.md: sha256:5b0479494c69bc9844daf65bbddb33486b7007286c407d2a46dd1db9d34009e3
+    .claude/skills/learn/SKILL.md: sha256:8094adaeacc42cfdcadf6af902b403bb0a9dbe720449a07238226ee480d38462
+  source: local
+  local_path: ./plugins/pkm
 - repo_url: boykush/ai-plugins
   name: adr-remote-mcp
   host: github.com
@@ -123,6 +143,42 @@ deployments:
   active_owner: boykush/ai-plugins/plugins/adr-remote-mcp
   content_hash: sha256:7db35c60c4f6922baaf1118445ef6282dc4ed01454ea1ebab4ef6f358790eb67
 - kind: project-relative
+  target: claude
+  value: .claude/skills/digest
+  runtime: null
+  scope: project
+  owners:
+  - ./plugins/pkm
+  active_owner: ./plugins/pkm
+  content_hash: null
+- kind: project-relative
+  target: claude
+  value: .claude/skills/digest/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - ./plugins/pkm
+  active_owner: ./plugins/pkm
+  content_hash: sha256:5b0479494c69bc9844daf65bbddb33486b7007286c407d2a46dd1db9d34009e3
+- kind: project-relative
+  target: claude
+  value: .claude/skills/learn
+  runtime: null
+  scope: project
+  owners:
+  - ./plugins/pkm
+  active_owner: ./plugins/pkm
+  content_hash: null
+- kind: project-relative
+  target: claude
+  value: .claude/skills/learn/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - ./plugins/pkm
+  active_owner: ./plugins/pkm
+  content_hash: sha256:8094adaeacc42cfdcadf6af902b403bb0a9dbe720449a07238226ee480d38462
+- kind: project-relative
   target: codex
   value: .agents/skills/ade-rule-dsl
   runtime: null
@@ -194,6 +250,42 @@ deployments:
   - boykush/ai-plugins/plugins/adr-remote-mcp
   active_owner: boykush/ai-plugins/plugins/adr-remote-mcp
   content_hash: sha256:7db35c60c4f6922baaf1118445ef6282dc4ed01454ea1ebab4ef6f358790eb67
+- kind: project-relative
+  target: codex
+  value: .agents/skills/digest
+  runtime: null
+  scope: project
+  owners:
+  - ./plugins/pkm
+  active_owner: ./plugins/pkm
+  content_hash: null
+- kind: project-relative
+  target: codex
+  value: .agents/skills/digest/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - ./plugins/pkm
+  active_owner: ./plugins/pkm
+  content_hash: sha256:5b0479494c69bc9844daf65bbddb33486b7007286c407d2a46dd1db9d34009e3
+- kind: project-relative
+  target: codex
+  value: .agents/skills/learn
+  runtime: null
+  scope: project
+  owners:
+  - ./plugins/pkm
+  active_owner: ./plugins/pkm
+  content_hash: null
+- kind: project-relative
+  target: codex
+  value: .agents/skills/learn/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - ./plugins/pkm
+  active_owner: ./plugins/pkm
+  content_hash: sha256:8094adaeacc42cfdcadf6af902b403bb0a9dbe720449a07238226ee480d38462
 - kind: uri
   target: mcp
   value: adr
