@@ -7,3 +7,5 @@
 - [[GitHub App]] private key は secrets ストアに置かずクラウド KMS で管理する
 
 <https://blog.flatt.tech/entry/2026-github-actions-security-part2>
+
+[[Blog|ブログ]]
