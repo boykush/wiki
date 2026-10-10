@@ -52,12 +52,12 @@ dependencies:
 - repo_url: boykush/scraps
   name: pkm
   host: github.com
-  resolved_commit: add82362fd11e98d1d6c400ad230220fedf52aa9
-  resolved_ref: add82362fd11e98d1d6c400ad230220fedf52aa9
+  resolved_commit: b93899ff5b1909977bf2c4f64fd30bb0b6b43297
+  resolved_ref: b93899ff5b1909977bf2c4f64fd30bb0b6b43297
   version: 0.1.0
   virtual_path: plugins/pkm
   is_virtual: true
-  package_type: skill_bundle
+  package_type: marketplace_plugin
   deployed_files:
   - .agents/skills/digest
   - .agents/skills/digest/SKILL.md
