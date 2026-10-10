@@ -28,7 +28,7 @@ The existing pages are the list of what the user already understands. Reading th
 
 1. Read the source and identify its central terms and claims. For a URL, fetch the primary source; given only a term, find a primary source for it. If only part of a source can be read (slide hosts such as Speaker Deck often yield just the title and abstract), work from what you could read and say what was missing instead of filling the gap by guessing.
 2. Search with varied wording using `scraps search "<query>" --json`, then read the 3–8 most related pages with `scraps get "<title>" [--ctx "<ctx>"] --json`.
-3. Split the central terms into those that already have a page and those that do not. The former are known ground to build on. Fill in the latter only as far as this run needs, and keep them as candidates for later runs.
+3. Split the central terms into those that already have a page and those that do not. A term has a page only when that thing is the page's subject. A page about a source (an article, a talk, one entry of a report or catalog) is not the page for the term in its title, even when the title is exactly the term; read the body to tell, and link such a page only when you mean that source. The former are known ground to build on. Fill in the latter only as far as this run needs, and keep them as candidates for later runs.
 4. Decide the points that may be recorded: one gist saying what the thing is, and up to three connections saying how it relates to existing pages. With no related pages, the gist alone is enough.
 
 ## 2. Explain
