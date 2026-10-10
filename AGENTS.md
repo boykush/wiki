@@ -25,6 +25,7 @@
 - 新しいページの作成には [plugins/pkm/.apm/skills/learn/SKILL.md](plugins/pkm/.apm/skills/learn/SKILL.md) を使う。説明と理解度チェックを経て、ユーザーが理解できた内容だけを書く。
 - 記事・登壇資料のURLを要約して残すときは [plugins/pkm/.apm/skills/digest/SKILL.md](plugins/pkm/.apm/skills/digest/SKILL.md) を使う。対話なしで1件書き切り、既存ページは変更しない。feed に載っている記事の本文は `mise run fetch-article-body` で取る。
 - 記事や登壇資料そのものを主題とするページでは、技術ブログとニュース記事に限り最終行へ `[[Blog|ブログ]]` を置く。同名のページがあるときだけ、記事は `scraps/Blog/`、登壇資料は `scraps/Slide/` に置く。
+- `scraps/DevOps capabilities/` 配下は、DORA のケイパビリティ1件を主題とする記事であり、題名と同じ語の概念ページではない。配下の外からはリンクせず、リンク先や既知の語の候補にも数えない。概念に触れるなら概念自身のページ（`[[トランクベース]]`、`[[WIP制限]]` など）へ張り、無ければ地の文のままにする。例外は、DORA のケイパビリティそのものを列挙するページ（`[[LeanとDevOpsの科学]]` など）だけ。ケイパビリティ全体を指すなら `[[DevOps capabilities]]` へ張る。
 - 外部リンクのリンク切れ・移転・転送・アンカー違いを検査して直すときは [.claude/skills/linkcheck/SKILL.md](.claude/skills/linkcheck/SKILL.md) を使う。直すのはリンク先だけで、理由ごとの小さなPRにする。
 - その他のウィキ操作は通常のリポジトリ作業として扱い、存在しない上位の設計、振り分け役、スキルを仮定しない。
 - ウィキのページ名に `CLAUDE` / `AGENTS` は使わない（大文字小文字を区別しない macOS では `scraps/CLAUDE.md` として指示ファイルに誤読されるため。Claude Code は `.claude/settings.json` の `claudeMdExcludes` で `scraps/` 配下を除外済みだが、Codex に同等の設定は無い）。
