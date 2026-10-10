@@ -1,6 +1,6 @@
 #[[Data Engineering]] #[[Continuous Integration]] #[[Continuous Delivery]] #[[Documentation]]
 
-データベーススキーマの最新の状態をコードとして管理し、変更時の差分を元に自動でマイグレーションクエリを生成してくれるような[[DevOps]]ツール
+[[Declarative schema migration]]を行う[[DevOps]]ツール
 
 [[PostgreSQL]]や[[MySQL]]といった代表的なデータベース管理システムに対応している
 
