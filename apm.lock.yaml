@@ -1,26 +1,6 @@
 lockfile_version: '1'
 apm_version: 0.32.0
 dependencies:
-- repo_url: _local/pkm
-  name: pkm
-  version: 0.1.0
-  package_type: marketplace_plugin
-  deployed_files:
-  - .agents/skills/digest
-  - .agents/skills/digest/SKILL.md
-  - .agents/skills/learn
-  - .agents/skills/learn/SKILL.md
-  - .claude/skills/digest
-  - .claude/skills/digest/SKILL.md
-  - .claude/skills/learn
-  - .claude/skills/learn/SKILL.md
-  deployed_file_hashes:
-    .agents/skills/digest/SKILL.md: sha256:dc1fd36b7176cf35f77a8b8f4e3a059c27bce65a6176554042bd84c3bdd768b4
-    .agents/skills/learn/SKILL.md: sha256:6f95f7d89d74cc54521abfb8bb6e1edf20193267b6d3a25d04099bc6c11b4a3f
-    .claude/skills/digest/SKILL.md: sha256:dc1fd36b7176cf35f77a8b8f4e3a059c27bce65a6176554042bd84c3bdd768b4
-    .claude/skills/learn/SKILL.md: sha256:6f95f7d89d74cc54521abfb8bb6e1edf20193267b6d3a25d04099bc6c11b4a3f
-  source: local
-  local_path: ./plugins/pkm
 - repo_url: boykush/ai-plugins
   name: adr-remote-mcp
   host: github.com
@@ -69,6 +49,30 @@ dependencies:
   is_virtual: true
   package_type: apm_package
   content_hash: sha256:85c6674a2220650d28eef0b3b833899f7cc44c1bfe54208584ae8078e4c814ac
+- repo_url: boykush/scraps
+  name: pkm
+  host: github.com
+  resolved_commit: add82362fd11e98d1d6c400ad230220fedf52aa9
+  resolved_ref: add82362fd11e98d1d6c400ad230220fedf52aa9
+  version: 0.1.0
+  virtual_path: plugins/pkm
+  is_virtual: true
+  package_type: skill_bundle
+  deployed_files:
+  - .agents/skills/digest
+  - .agents/skills/digest/SKILL.md
+  - .agents/skills/learn
+  - .agents/skills/learn/SKILL.md
+  - .claude/skills/digest
+  - .claude/skills/digest/SKILL.md
+  - .claude/skills/learn
+  - .claude/skills/learn/SKILL.md
+  deployed_file_hashes:
+    .agents/skills/digest/SKILL.md: sha256:dc1fd36b7176cf35f77a8b8f4e3a059c27bce65a6176554042bd84c3bdd768b4
+    .agents/skills/learn/SKILL.md: sha256:6f95f7d89d74cc54521abfb8bb6e1edf20193267b6d3a25d04099bc6c11b4a3f
+    .claude/skills/digest/SKILL.md: sha256:dc1fd36b7176cf35f77a8b8f4e3a059c27bce65a6176554042bd84c3bdd768b4
+    .claude/skills/learn/SKILL.md: sha256:6f95f7d89d74cc54521abfb8bb6e1edf20193267b6d3a25d04099bc6c11b4a3f
+  content_hash: sha256:7914b2fb54c5e4a8fd6f8813e36cd3e4b339ac1b9cdab244f671521cf2975d0f
 deployments:
 - kind: project-relative
   target: claude
@@ -148,8 +152,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - ./plugins/pkm
-  active_owner: ./plugins/pkm
+  - boykush/scraps/plugins/pkm
+  active_owner: boykush/scraps/plugins/pkm
   content_hash: null
 - kind: project-relative
   target: claude
@@ -157,8 +161,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - ./plugins/pkm
-  active_owner: ./plugins/pkm
+  - boykush/scraps/plugins/pkm
+  active_owner: boykush/scraps/plugins/pkm
   content_hash: sha256:dc1fd36b7176cf35f77a8b8f4e3a059c27bce65a6176554042bd84c3bdd768b4
 - kind: project-relative
   target: claude
@@ -166,8 +170,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - ./plugins/pkm
-  active_owner: ./plugins/pkm
+  - boykush/scraps/plugins/pkm
+  active_owner: boykush/scraps/plugins/pkm
   content_hash: null
 - kind: project-relative
   target: claude
@@ -175,8 +179,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - ./plugins/pkm
-  active_owner: ./plugins/pkm
+  - boykush/scraps/plugins/pkm
+  active_owner: boykush/scraps/plugins/pkm
   content_hash: sha256:6f95f7d89d74cc54521abfb8bb6e1edf20193267b6d3a25d04099bc6c11b4a3f
 - kind: project-relative
   target: codex
@@ -256,8 +260,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - ./plugins/pkm
-  active_owner: ./plugins/pkm
+  - boykush/scraps/plugins/pkm
+  active_owner: boykush/scraps/plugins/pkm
   content_hash: null
 - kind: project-relative
   target: codex
@@ -265,8 +269,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - ./plugins/pkm
-  active_owner: ./plugins/pkm
+  - boykush/scraps/plugins/pkm
+  active_owner: boykush/scraps/plugins/pkm
   content_hash: sha256:dc1fd36b7176cf35f77a8b8f4e3a059c27bce65a6176554042bd84c3bdd768b4
 - kind: project-relative
   target: codex
@@ -274,8 +278,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - ./plugins/pkm
-  active_owner: ./plugins/pkm
+  - boykush/scraps/plugins/pkm
+  active_owner: boykush/scraps/plugins/pkm
   content_hash: null
 - kind: project-relative
   target: codex
@@ -283,8 +287,8 @@ deployments:
   runtime: null
   scope: project
   owners:
-  - ./plugins/pkm
-  active_owner: ./plugins/pkm
+  - boykush/scraps/plugins/pkm
+  active_owner: boykush/scraps/plugins/pkm
   content_hash: sha256:6f95f7d89d74cc54521abfb8bb6e1edf20193267b6d3a25d04099bc6c11b4a3f
 - kind: uri
   target: mcp

@@ -9,6 +9,5 @@ dependencies:
   apm:
     - boykush/ai-plugins/plugins/adr-remote-mcp#a29aa379e5a893c66f0f9ed7a597490bc7841628
     - boykush/ai-plugins/plugins/catalog-remote-mcp#a29aa379e5a893c66f0f9ed7a597490bc7841628
-    # 上流の scraps へ移すまでの置き場。直したら apm install で .claude/skills/ と .agents/skills/ へ展開し直す。
-    - ./plugins/pkm
+    - boykush/scraps/plugins/pkm#add82362fd11e98d1d6c400ad230220fedf52aa9
   mcp: []
