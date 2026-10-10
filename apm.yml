@@ -9,5 +9,5 @@ dependencies:
   apm:
     - boykush/ai-plugins/plugins/adr-remote-mcp#868d0cdb830fc794ee657146a4d6ead129a6e25c
     - boykush/ai-plugins/plugins/catalog-remote-mcp#868d0cdb830fc794ee657146a4d6ead129a6e25c
-    - boykush/scraps/plugins/pkm#add82362fd11e98d1d6c400ad230220fedf52aa9
+    - boykush/scraps/plugins/pkm#b93899ff5b1909977bf2c4f64fd30bb0b6b43297
   mcp: []
