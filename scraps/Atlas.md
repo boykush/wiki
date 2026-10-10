@@ -6,6 +6,6 @@
 
 Atlas CloudによってWeb上での可視化も可能
 
-[[Ariga]]社によって開発されている
+[[Ariga]]社によって開発されている。Apache 2.0の[[Atlas/Community Edition|Community Edition]]と、プロプライエタリな機能を足した標準配布の二層で配布される
 
 <https://atlasgo.io/docs>
