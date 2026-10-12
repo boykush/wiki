@@ -1,0 +1,52 @@
+name: scraps check
+
+on:
+  # No paths filter: this job is a required check on main, so a pull request that
+  # skipped it would wait forever for a run that never starts. Changes outside the
+  # wiki are skipped by the steps below instead, which still lets the job succeed.
+  pull_request:
+
+permissions: {}
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    name: scraps check
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read # checkout
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+          # The PR is checked out as its merge commit; its first parent is the base.
+          fetch-depth: 2
+
+      - name: Detect changes to the wiki
+        id: changes
+        run: |
+          # Fail open: without a readable diff, check rather than skip.
+          if ! files=$(git diff --name-only HEAD^1 HEAD); then
+            echo "relevant=true" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          pattern='^(scraps/|\.github/workflows/scraps-check\.yml$)'
+          if grep -qE "$pattern" <<< "$files"; then
+            echo "relevant=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "relevant=false" >> "$GITHUB_OUTPUT"
+            echo "No change under scraps/; skipping." >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+      - name: Setup Scraps
+        if: steps.changes.outputs.relevant == 'true'
+        uses: boykush/scraps@497785483bbef6f256270176ba1fe653eb646190 # v3.3.0
+
+      - name: Check
+        if: steps.changes.outputs.relevant == 'true'
+        run: scraps check -C scraps
