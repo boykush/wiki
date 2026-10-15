@@ -1,4 +1,8 @@
-[[Four Keys]]の計測方法についてGoogle Cloud[[Blog|ブログ]]上で説明されている
+---
+type: Blog
+---
+
+[[Four Keys]]の計測方法についてGoogle Cloudブログ上で説明されている
 
 指標の計算方法を以下のように定義している
 

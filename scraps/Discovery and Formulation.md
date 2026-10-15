@@ -1,3 +1,7 @@
+---
+type: Slide
+---
+
 ## Story Mapping, Example Mapping and Scenario Writing
 
 #[[Testing]]

@@ -1,3 +1,7 @@
+---
+type: Blog
+---
+
 #[[Security]] #[[Continuous Integration]]
 
 [[GitHub Actions]] で OIDC や Trusted Publishing を導入しても runner 上の認証情報漏洩リスクは構造的に残る、という限界を解説した Flatt Security ブログ記事（Part 3）
@@ -8,5 +12,3 @@
 - **検知と対応**: 一時クレデンシャル（有効期間 ~1.5h）の悪用を前提に CloudTrail・Cloud Audit Logs・GuardDuty 等で検知体制を整備
 
 <https://blog.flatt.tech/entry/2026-github-actions-security-part3>
-
-[[Blog]]

@@ -1,6 +1,10 @@
+---
+type: Blog
+---
+
 #[[Security/Authentication]]
 
-[[ブルートフォース攻撃]]を防ぐための対策をまとめた[[OWASP]] Communityの[[Blog|記事]]
+[[ブルートフォース攻撃]]を防ぐための対策をまとめた[[OWASP]] Communityの記事
 
 単一の技術では回避されやすいため、複数の対策を組み合わせることが重要
 

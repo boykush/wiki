@@ -1,3 +1,7 @@
+---
+type: Slide
+---
+
 ## 数値ライブラリで始める安全なプログラミング
 
 #[[Programming]] #[[Security]]

@@ -1,6 +1,10 @@
+---
+type: Blog
+---
+
 ![Lead Time, Cycle Time & Change Lead Time diagram](https://cdn.prod.website-files.com/655b544bd3bde25e54062eda/655da6da786209502a58f5a5_6230807e58e18d5a1deebe71_Lead_Time_Cycle_Time__Change_Lead_Time.jpeg)
 
-HayStackの[[Blog|ブログ]]記事。ソフトウェア開発ライフサイクルには
+HayStackのブログ記事。ソフトウェア開発ライフサイクルには
 
 - Lead Time
 - Cycle Time

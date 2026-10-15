@@ -1,3 +1,7 @@
+---
+type: Blog
+---
+
 #[[Security]]
 
 2026年7月14日に `@asyncapi` エコシステムの [[npm]] パッケージ群が侵害された[[サプライチェーン攻撃]]事例。ワーム型マルウェア「Miasma」が注入され、窃取トークンを使って npm / PyPI / crates.io へ自己拡散する
@@ -9,5 +13,3 @@
 - 対応: 侵害前バージョン（`@asyncapi/specs@6.11.1` 以前）へ切り替え後クレデンシャル全ローテーション、永続化ファイル除去（`~/.local/share/NodeJS/sync.js`・`~/.config/.miasma/` 等）、`min-release-age=7`（`.npmrc`）設定を推奨。`npm ci --ignore-scripts` は本件には無効（malicious コードが `index.js` 本体に注入されているため）
 
 <https://blog.flatt.tech/entry/asyncapi_compromise>
-
-[[Blog|ブログ]]

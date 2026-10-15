@@ -1,3 +1,7 @@
+---
+type: Blog
+---
+
 #[[Security]]
 
 [[GitHub Advisory Database]] のレビュー済みアドバイザリ発行量が2026年に過去最高を更新した状況と、キュレーションチームの対応を伝える [[GitHub]] の記事。脆弱性の流入が急増し、レビューが追いつかず遅延が発生している。
@@ -8,5 +12,3 @@
 - 背景: private vulnerability reporting を有効化したリポジトリは 170 万超
 
 <https://github.blog/security/supply-chain-security/inside-the-advisory-database-and-what-happens-when-vulnerability-volume-breaks-records/>
-
-[[Blog|ブログ]]

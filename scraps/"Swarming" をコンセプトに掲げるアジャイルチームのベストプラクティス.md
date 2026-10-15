@@ -1,3 +1,7 @@
+---
+type: Slide
+---
+
 #[[Agile]] #[[Team Organization]] #[[Continuous Integration]] #[[Continuous Delivery]]
 
 [[Swarming]]をコンセプトに掲げたアジャイルチームのベストプラクティスについての、[XP祭り2024](https://confengine.com/conferences/xp2024/proposal/20410/swarming)での自身の発表

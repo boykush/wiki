@@ -1,3 +1,7 @@
+---
+type: Blog
+---
+
 #[[Security]] #[[Continuous Integration]]
 
 [[GitHub Actions]] ワークフロー脆弱性の検知ツール比較と、ツールに任せられる範囲・人が見極めるべきリスクを整理した Flatt Security ブログ記事（シリーズ Vol.4 最終回）
@@ -9,5 +13,3 @@
 - **対策の3軸**: 侵害の抑止 / 被害の局所化（fine-grained PAT・Environments 保護）/ 追跡可能性（runner 上の挙動記録）
 
 <https://blog.flatt.tech/entry/2026-github-actions-security-part4>
-
-[[Blog|ブログ]]

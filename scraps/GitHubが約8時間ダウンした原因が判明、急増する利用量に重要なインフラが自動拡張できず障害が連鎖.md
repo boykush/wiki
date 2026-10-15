@@ -1,3 +1,7 @@
+---
+type: Blog
+---
+
 #[[Cloud Native]] #[[Observability]]
 
 2026年8月17日に発生した [[GitHub]] の7時間47分にわたる障害の原因を伝える記事。コード変更ではなく、過去最高のトラフィックによる容量不足が起点となっている
@@ -6,5 +10,3 @@
 - 容量不足は内部の認証経路へ波及し、多数のサービスが認証に依存するため github.com や [[GitHub Actions]] へ広がる[[カスケード障害]]となった
 
 <https://gigazine.net/news/20260821-why-github-down/>
-
-[[Blog|ブログ]]

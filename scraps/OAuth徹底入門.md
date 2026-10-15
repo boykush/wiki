@@ -1,3 +1,7 @@
+---
+type: Book
+---
+
 ## セキュアな認可システムを適用するための原則と実践
 
 ### Authors
@@ -66,5 +70,3 @@ Justin Richer, Antonio Sanso
 - [[TLS]]トークン・バインディング
 
 ### Chapter 16　まとめと結論
-
-[[Book|書籍]]

@@ -1,3 +1,7 @@
+---
+type: Blog
+---
+
 #[[Security]] #[[Continuous Integration]]
 
 [[GitHub Actions]] における権限昇格を引き起こす 3 パターンと対策を解説した Flatt Security ブログ記事（2026 後編）
@@ -7,5 +11,3 @@
 - [[GitHub App]] private key は secrets ストアに置かずクラウド KMS で管理する
 
 <https://blog.flatt.tech/entry/2026-github-actions-security-part2>
-
-[[Blog|ブログ]]

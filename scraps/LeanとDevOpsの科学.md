@@ -1,3 +1,7 @@
+---
+type: Book
+---
+
 ## テクノロジーの戦略的活用が組織変革を加速する
 
 ### Authors
@@ -8,7 +12,7 @@ Nicole Forsgren, Jez Humble, Gene Kim
 
 [インプレスブックス](https://book.impress.co.jp/books/1118101029)
 
-2018年に初版が出された、[[リーン|Lean]]の考え方を背景に[[State of DevOps Report]]に報告されているような内容をまとめている[[Book|本]]
+2018年に初版が出された、[[リーン|Lean]]の考え方を背景に[[State of DevOps Report]]に報告されているような内容をまとめている本
 
 ## 第1部　調査結果から見えてきたもの
 

@@ -1,3 +1,7 @@
+---
+type: Book
+---
+
 ### Authors
 
 Bilgin Ibryam, Roland Huß, [[松浦 隼人]]
@@ -6,7 +10,7 @@ Bilgin Ibryam, Roland Huß, [[松浦 隼人]]
 
 [O'Reilly Japan](https://www.oreilly.co.jp/books/9784814400881/)
 
-[[Kubernetes]]ベースの#[[Cloud Native]]アプリケーションを構築するパターンとして紹介する[[Book|書籍]]
+[[Kubernetes]]ベースの#[[Cloud Native]]アプリケーションを構築するパターンとして紹介する書籍
 
 ### 序章
 

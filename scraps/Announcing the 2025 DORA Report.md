@@ -1,3 +1,7 @@
+---
+type: Blog
+---
+
 ## State of AI-assisted Software Development
 
 [[DORA]]による2025年のレポート。AI支援ソフトウェア開発に焦点を当てている
@@ -8,7 +12,5 @@
 - 新たにDORA AI Capabilities Modelと7つのチームアーキタイプを導入
 
 <https://cloud.google.com/blog/products/ai-machine-learning/announcing-the-2025-dora-report/>
-
-[[Blog|ブログ]]
 
 [[DevOps]]

@@ -1,3 +1,7 @@
+---
+type: Book
+---
+
 ### Authors
 
 Graham Hutton
@@ -47,5 +51,3 @@ Graham Hutton
 ### 第16章 プログラムの論証
 
 ### 第17章 コンパイラーの算出
-
-[[Book|書籍]]

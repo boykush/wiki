@@ -1,3 +1,7 @@
-[[スポンサーシップ]]について論じている[[Blog|ブログ]]
+---
+type: Blog
+---
+
+[[スポンサーシップ]]について論じているブログ
 
 <https://larahogan.me/blog/what-sponsorship-looks-like/>

@@ -1,3 +1,7 @@
+---
+type: Blog
+---
+
 #[[Security]]
 
 [[GitHub]] 社内のリポジトリオーナーシップ刷新事例記事。14,000+ リポジトリのうち約 11,000 のアクティブリポジトリに対し、45日以内に全リポジトリへ検証済みオーナーを付与し、約 8,000 リポジトリをアーカイブした取り組みを公開している
@@ -9,5 +13,3 @@
 - 成果: アクティブリポジトリ約 3,000 件に整理し新規作成時もオーナーシップを必須化
 
 <https://github.blog/security/application-security/how-github-gave-every-repository-a-durable-owner/>
-
-[[Blog|ブログ]]

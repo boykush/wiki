@@ -1,3 +1,7 @@
+---
+type: Book
+---
+
 ## BDD/ATDDの第2ステップ：Given/When/Thenを使って具体例を定式化する
 
 ### Authors
@@ -7,7 +11,7 @@
 
 #[[Testing]]
 
-[[BDD]]の[[BDD/定式化|定式化]]プラクティスを扱った[[Book|書籍]]
+[[BDD]]の[[BDD/定式化|定式化]]プラクティスを扱った書籍
 
 ![The BDD Books - Formulation](https://d2sofvawe08yqg.cloudfront.net/bddbooks-formulation-jp/s_hero?1723769276)
 
