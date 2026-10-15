@@ -1,3 +1,7 @@
+---
+type: Slide
+---
+
 #[[Agile]] #[[Product Management]]
 
 [[市谷 聡啓]]によるアジャイル開発はWhyから始まるというスライド

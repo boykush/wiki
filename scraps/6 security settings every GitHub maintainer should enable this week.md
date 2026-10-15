@@ -1,3 +1,7 @@
+---
+type: Blog
+---
+
 #[[Security]] #[[Continuous Integration]]
 
 [[GitHub]] リポジトリのメンテナーが今すぐ有効化すべき 6 つの無料セキュリティ設定をまとめた GitHub Blog 記事。
@@ -10,5 +14,3 @@
 - **Branch protection**: デフォルトブランチへの直接 push を禁止し PR 承認を必須化。[[require status checks]] と組み合わせ [[safe-settings]] で組織全体に適用可
 
 <https://github.blog/security/6-security-settings-every-github-maintainer-should-enable-this-week/>
-
-[[Blog|ブログ]]

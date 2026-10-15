@@ -1,3 +1,7 @@
+---
+type: Book
+---
+
 ### Authors
 
 Mauricio Salatino
@@ -28,7 +32,5 @@ Mauricio Salatino
 ## 第9章　プラットフォームの測定
 
 ## 補章　クラウドネイティブ・コミュニティへの参加
-
-[[Book|書籍]]
 
 [[Kubernetes]]

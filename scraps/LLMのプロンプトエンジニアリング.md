@@ -1,3 +1,7 @@
+---
+type: Book
+---
+
 ## GitHub Copilotを生んだ開発者が教える生成AIアプリケーション開発
 
 ### Authors
@@ -81,5 +85,3 @@ John Berryman, Albert Ziegler
 - A/Bテスト
 
 ### 11章 未来を見据えて
-
-[[Book|書籍]]

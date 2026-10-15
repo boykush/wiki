@@ -1,4 +1,8 @@
-[[Four Keys/変更のリードタイム|Lead time for changes]]と、Lead time, Cycle timeとの比較を紹介している[[Blog|ブログ]]記事
+---
+type: Blog
+---
+
+[[Four Keys/変更のリードタイム|Lead time for changes]]と、Lead time, Cycle timeとの比較を紹介しているブログ記事
 
 Lead time for changesはあくまで概算であることを示している
 

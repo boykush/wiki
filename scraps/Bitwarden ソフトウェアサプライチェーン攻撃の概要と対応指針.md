@@ -1,3 +1,7 @@
+---
+type: Blog
+---
+
 #[[Security]]
 
 npmパッケージ`@bitwarden/cli@2026.4.0`がマルウェア混入により侵害された[[サプライチェーン攻撃]]事例
@@ -11,5 +15,3 @@ npmパッケージ`@bitwarden/cli@2026.4.0`がマルウェア混入により侵�
 - 対策: `2026.4.1`へ更新、資格情報ローテーション、`npm ci --ignore-scripts`、`min-release-age`の設定
 
 <https://blog.flatt.tech/entry/bitwarden_compromise>
-
-[[Blog|ブログ]]

@@ -1,3 +1,7 @@
+---
+type: Slide
+---
+
 [[Platform Engineering]] #[[Team Organization]]
 
 井上翔太（MIXI）による、一人 [[SRE]] が小規模から Platform Engineering を実践した経験報告（クラウドネイティブ会議, 2026）。「Platform Engineering は大規模チームの専売特許ではない」と説く

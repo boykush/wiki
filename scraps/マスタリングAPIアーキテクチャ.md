@@ -1,3 +1,7 @@
+---
+type: Book
+---
+
 ## モノリシックからマイクロサービスへとアーキテクチャを進化させるための実践的手法
 
 ### Authors
@@ -74,5 +78,3 @@ James Gough, Daniel Bryant, Matthew Auburn
 
 - 6つのR
 - ゼロトラストアーキテクチャ
-
-[[Book|書籍]]
