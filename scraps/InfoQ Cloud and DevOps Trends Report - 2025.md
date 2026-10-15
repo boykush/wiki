@@ -24,6 +24,6 @@ InfoQが2025年の技術トレンドを[[キャズム理論]]による分類で�
 
 - FinOps
 - Enterprise [[DevOps]] Toolchain
-- #[[Observability]]
+- Observability
 
 <https://www.infoq.com/articles/cloud-devops-trends-2025/>

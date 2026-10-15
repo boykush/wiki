@@ -9,7 +9,7 @@
 ## 特徴
 
 - [[DevSecOps]]のシフトレフトを実現
-- #[[Continuous Integration]]パイプラインに統合可能
+- Continuous Integrationパイプラインに統合可能
 - SQLインジェクション、XSS、バッファオーバーフロー等を検出
 
 <https://owasp.github.io/www-project-devsecops-guideline/latest/02a-Static-Application-Security-Testing>

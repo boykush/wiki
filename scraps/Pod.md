@@ -1,3 +1,5 @@
-#[[Cloud Native]]の世界において、1つまたは複数の[[コンテナ]]を保持する最小ユニット
+#[[Cloud Native]]
+
+Cloud Nativeの世界において、1つまたは複数の[[コンテナ]]を保持する最小ユニット
 
 主に[[Kubernetes/Pod|Kubernetes Pod]]を指す

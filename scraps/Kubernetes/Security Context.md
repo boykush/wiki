@@ -1,4 +1,6 @@
-[[Kubernetes/Pod]]定義に#[[Security]]文脈の設定を追加するAPI
+#[[Security]]
+
+[[Kubernetes/Pod]]定義にSecurity文脈の設定を追加するAPI
 
 主にLinuxベースの以下のような観点に対する制御を行う
 

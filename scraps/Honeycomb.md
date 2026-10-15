@@ -1,4 +1,6 @@
-#[[Observability]]に関するエンドツーエンドのプロダクト
+#[[Observability]]
+
+Observabilityに関するエンドツーエンドのプロダクト
 
 Retrieverというオブザーバビリティに最適化された独自のデータストアを備えており、[[Amazon/S3]]によって実装されている
 

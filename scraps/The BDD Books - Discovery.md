@@ -38,4 +38,4 @@ type: Book
 
 ### 第5章 ビジネスチームのメンバーを参加させる方法
 
-- #[[Continuous Delivery]]
+- Continuous Delivery

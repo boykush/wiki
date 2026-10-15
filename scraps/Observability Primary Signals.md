@@ -1,6 +1,8 @@
+#[[Observability]]
+
 ![Observability Primary Signals diagram](https://github.com/cncf/tag-observability/raw/main/assets/primary-signals.png)
 
-#[[Observability]]において優先される3つのシグナル
+Observabilityにおいて優先される3つのシグナル
 
 - [[メトリクス]]
 - [[ログ]]
