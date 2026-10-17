@@ -1,5 +1,5 @@
 ---
-type: Tool
+type: CLI
 ---
 
 ## Architectural Decision Guidance

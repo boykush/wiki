@@ -1,7 +1,3 @@
----
-type: Tool
----
-
 #[[Data Engineering]]
 
 [[Redis]] OSSからフォークしたBSDライセンスのキーバリュー型インメモリデータストア

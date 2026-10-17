@@ -1,5 +1,5 @@
 ---
-type: Tool
+type: Library
 ---
 
 ![Testcontainers logo](https://testcontainers.com/images/testcontainers-logo.svg)

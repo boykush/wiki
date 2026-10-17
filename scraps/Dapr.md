@@ -1,7 +1,3 @@
----
-type: Tool
----
-
 #[[Cloud Native]]
 
 ![Dapr logo](https://dapr.io/images/dapr.svg)

@@ -1,7 +1,3 @@
----
-type: Tool
----
-
 #[[Cloud Native]]
 
 [[Kubernetes]]クラスタのコストを namespace や label などの単位で見えるようにするオープンソース。[[CNCF]] incubating project

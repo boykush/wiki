@@ -1,7 +1,3 @@
----
-type: Tool
----
-
 #[[Documentation]]
 
 [[OpenAPI]]仕様を元にドキュメンテーションを行いシンプルなUIで表示される

@@ -1,7 +1,3 @@
----
-type: Tool
----
-
 #[[Observability]] #[[Cloud Native]]
 
 Kubernetes上で[[Datadog Agent]]のデプロイと構成を管理する[[Kubernetes/Operator]]。公式がAgent導入の推奨手段としている

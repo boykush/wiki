@@ -1,7 +1,3 @@
----
-type: Tool
----
-
 #[[Data Engineering]]
 
 ![etcd logo](https://raw.githubusercontent.com/kubernetes/community/master/icons/png/infrastructure_components/labeled/etcd-128.png)

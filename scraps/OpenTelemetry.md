@@ -1,7 +1,3 @@
----
-type: Tool
----
-
 #[[Cloud Native]]
 
 ![OpenTelemetry logo](https://opentelemetry.io//img/logos/opentelemetry-horizontal-color.svg)

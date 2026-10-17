@@ -1,5 +1,5 @@
 ---
-type: Tool
+type: CLI
 ---
 
 [[Kubernetes]]の設定ファイルを[[YAML]]で記述する際、 `kustomization.yaml` によってリソース定義の集約等を行うことができる[[Infrastructure as Code]]ツール

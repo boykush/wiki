@@ -1,7 +1,3 @@
----
-type: Tool
----
-
 #[[Cloud Native]]
 
 ![Argo CD logo](https://argoproj.github.io/static/7be772ca35570178d9cd85ad8b4696ff/gitops-cd-thumbnail.png)

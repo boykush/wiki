@@ -1,5 +1,5 @@
 ---
-type: Tool
+type: CLI
 ---
 
 #[[API Architecture]] #[[Testing]]
