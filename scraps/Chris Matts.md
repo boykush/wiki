@@ -1,3 +1,5 @@
-<https://papachrismatts.uk/>
+---
+type: Person
+---
 
-[[Person|人物]]
+<https://papachrismatts.uk/>

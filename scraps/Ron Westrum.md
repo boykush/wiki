@@ -1,1 +1,5 @@
-[[Person|人物]]
+---
+type: Person
+---
+
+

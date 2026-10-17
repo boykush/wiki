@@ -1,5 +1,5 @@
 ---
+type: Person
+---
 
 - [Home](https://ronjeffries.com/)
-
-[[Person|人物]]

@@ -1,3 +1,5 @@
-<https://jpattonassociates.com/>
+---
+type: Person
+---
 
-[[Person|人物]]
+<https://jpattonassociates.com/>
