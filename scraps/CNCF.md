@@ -1,6 +1,9 @@
-## Cloud Native Computing Foundation
+---
+tags:
+  - Cloud Native
+---
 
-#[[Cloud Native]]
+## Cloud Native Computing Foundation
 
 ![CNCF logo](https://www.cncf.io/wp-content/uploads/2023/04/cncf-main-site-logo.svg)
 

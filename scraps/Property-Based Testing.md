@@ -1,4 +1,7 @@
-#[[Testing]]
+---
+tags:
+  - Testing
+---
 
 Testingにおいて、[[Known unknowns]]を[[Known knowns]]にできるよう、プロパティとして指定されうる多数パターンを自動生成するようなテスト手法
 

@@ -1,4 +1,7 @@
-#[[Observability]]
+---
+tags:
+  - Observability
+---
 
 [[CNCF]]によるObservabilityに関する文書
 

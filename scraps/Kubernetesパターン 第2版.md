@@ -1,12 +1,12 @@
 ---
 type: Book
+tags:
+  - Cloud Native
 ---
 
 ### Authors
 
 Bilgin Ibryam, Roland Huß, [[松浦 隼人]]
-
-#[[Cloud Native]]
 
 ![Kubernetesパターン 第2版](https://www.oreilly.co.jp/books/images/picture_large978-4-8144-0088-1.jpeg)
 

@@ -1,4 +1,7 @@
-#[[Observability]]
+---
+tags:
+  - Observability
+---
 
 ![Observability Primary Signals diagram](https://github.com/cncf/tag-observability/raw/main/assets/primary-signals.png)
 

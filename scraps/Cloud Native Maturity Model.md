@@ -1,6 +1,9 @@
-## CNMM
+---
+tags:
+  - Cloud Native
+---
 
-#[[Cloud Native]]
+## CNMM
 
 Cloud Nativeの成熟度に関して、各成熟度レベルをビジネスとテクノロジの双方で主要領域を定義するモデル
 

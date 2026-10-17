@@ -1,4 +1,7 @@
-#[[Observability]]
+---
+tags:
+  - Observability
+---
 
 Observabilityに関するエンドツーエンドのプロダクト
 
