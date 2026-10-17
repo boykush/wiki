@@ -1,7 +1,3 @@
----
-type: Tool
----
-
 ## Elastic Kubernetes Service
 
 #[[Cloud Native]]

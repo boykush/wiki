@@ -1,7 +1,3 @@
----
-type: Tool
----
-
 #[[Security/Authentication]]
 
 [[Cloudflare]] を経由するアプリケーションに、任意の認証手段を提供できる仕組み。

@@ -1,7 +1,3 @@
----
-type: Tool
----
-
 #[[Security]]
 
 [[Google Cloud]]が提供する[[SMS]]

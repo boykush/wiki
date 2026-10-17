@@ -1,7 +1,3 @@
----
-type: Tool
----
-
 #[[Observability]]
 
 "developer-first application monitoring platform" を標榜する商用 SaaS。エラー追跡を起点に、エラー監視・[[ログ|Logs]]・Session Replay・[[分散トレース|Tracing]]・Profiling・Cron Monitoring・Uptime Monitoring を単一プラットフォームで提供する

@@ -1,7 +1,3 @@
----
-type: Tool
----
-
 #[[Programming]]
 
 [[VS Code]]にビルトインで搭載されている[[AIアシスタント]]

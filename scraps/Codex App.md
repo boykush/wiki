@@ -1,7 +1,3 @@
----
-type: Tool
----
-
 #[[Programming]] #[[LLM]]
 
 [[OpenAI]]が提供するコーディングエージェントのデスクトップ/Webアプリケーション
