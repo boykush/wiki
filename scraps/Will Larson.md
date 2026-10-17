@@ -1,3 +1,5 @@
-<https://lethain.com/about/>
+---
+type: Person
+---
 
-[[Person|人物]]
+<https://lethain.com/about/>

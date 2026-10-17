@@ -1,5 +1,7 @@
+---
+type: Person
+---
+
 ![Eric Evans](https://pbs.twimg.com/profile_images/768528083070705666/mIFI3WYo_400x400.jpg)
 
 - [X](https://twitter.com/ericevans0?lang=ja)
-
-[[Person|人物]]
