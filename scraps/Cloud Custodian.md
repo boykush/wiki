@@ -1,3 +1,7 @@
+---
+type: Tool
+---
+
 #[[Cloud Native]]
 
 クラウド上のリソースに対する policy を記述し、制御できるオープンソース。たとえば未使用のまま放置されているリソースを検知して削除できる。[[CNCF]] incubating project

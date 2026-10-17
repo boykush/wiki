@@ -1,3 +1,7 @@
+---
+type: Tool
+---
+
 #[[Cloud Native]] #[[Continuous Integration]]
 
 [[Google Cloud]]が提供するフルマネージドな[[コンテナ]]イメージおよび言語パッケージのレジストリサービス

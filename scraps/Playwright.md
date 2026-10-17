@@ -1,3 +1,7 @@
+---
+type: Tool
+---
+
 #[[Testing]] #[[Programming]]
 
 [[Microsoft]]が開発した[[E2Eテスト]]ツール

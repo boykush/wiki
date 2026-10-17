@@ -1,3 +1,7 @@
+---
+type: Tool
+---
+
 ## Architectural Decision Guidance
 
 #[[Documentation]] #[[LLM]]

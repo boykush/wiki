@@ -1,3 +1,7 @@
+---
+type: Tool
+---
+
 #[[Cloud Native]] #[[Network]] #[[API Architecture]]
 
 ![Istio logo](https://repository-images.githubusercontent.com/74175805/ed825500-65ad-11e9-821c-f6148eadb7c8)

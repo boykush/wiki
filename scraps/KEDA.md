@@ -1,3 +1,7 @@
+---
+type: Tool
+---
+
 ## Kubernetes Event-driven Autoscaling
 
 ![KEDA logo](https://keda.sh//img/logos/keda-icon-color.png)

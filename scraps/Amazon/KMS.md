@@ -1,3 +1,7 @@
+---
+type: Tool
+---
+
 ## Key Management Service
 
 #[[Security]]

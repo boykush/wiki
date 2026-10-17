@@ -1,3 +1,7 @@
+---
+type: Tool
+---
+
 #[[Data Engineering]]
 
 ![TiDB logo](https://avatars.githubusercontent.com/u/11855343?s=200&v=4)

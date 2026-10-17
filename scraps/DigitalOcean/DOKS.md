@@ -1,3 +1,7 @@
+---
+type: Tool
+---
+
 ## DigitalOcean Kubernetes
 
 #[[Cloud Native]]

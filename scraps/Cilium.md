@@ -1,3 +1,7 @@
+---
+type: Tool
+---
+
 #[[Network]] #[[Cloud Native]] #[[Observability]] #[[Security]]
 
 <https://cilium.io/>

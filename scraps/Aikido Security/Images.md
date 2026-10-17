@@ -1,3 +1,7 @@
+---
+type: Tool
+---
+
 #[[Security]] #[[Cloud Native]]
 
 CRITICAL / HIGH の脆弱性を持つライブラリを patch 済みに差し替えた "zero-CVE base images" のレジストリ。ディストリのメジャーバージョンを上げず backport で修正するため drop-in replacement として使える

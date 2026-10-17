@@ -1,3 +1,7 @@
+---
+type: Tool
+---
+
 #[[Continuous Integration]]
 
 [[Terraform]] の実行結果を [[GitHub]] の Pull Request にコメントとラベルで通知する CLI ツール（[[suzuki-shunsuke|@suzuki-shunsuke]] 製）。

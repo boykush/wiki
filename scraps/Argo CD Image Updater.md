@@ -1,3 +1,7 @@
+---
+type: Tool
+---
+
 #[[Cloud Native]] #[[Continuous Delivery]]
 
 [[Argo CD]]が管理する[[Kubernetes]]ワークロードの[[コンテナ]]イメージを、レジストリを監視して自動更新する argoproj-labs のツール（Apache-2.0）。公式は "under active development" として critical な本番ワークロードでの利用をまだ推奨していない

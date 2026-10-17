@@ -1,3 +1,7 @@
+---
+type: Tool
+---
+
 #[[LLM]]
 
 [[Daniel Avila]]が公開する[[Claude Code]]の[[Claude Code/Plugins]]群

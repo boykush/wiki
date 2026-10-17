@@ -1,3 +1,7 @@
+---
+type: Tool
+---
+
 #[[Continuous Delivery]]
 
 [[フィーチャーフラグ]]管理を行うOSSツール

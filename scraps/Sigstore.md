@@ -1,3 +1,7 @@
+---
+type: Tool
+---
+
 #[[Security]]
 
 release file / container image / binary / SBOM 等の software artifact を署名・検証し、ソフトウェアサプライチェーンの安全性向上を目的とする OSS プロジェクト

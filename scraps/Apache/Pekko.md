@@ -1,3 +1,7 @@
+---
+type: Tool
+---
+
 #[[Programming]]
 
 Akka 2.6.xからフォークされたApache Software Foundation管理の並行・分散アプリケーションフレームワーク。[[Java]]/[[Scala]]で利用可能

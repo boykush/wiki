@@ -1,3 +1,7 @@
+---
+type: Tool
+---
+
 #[[Observability]] #[[Programming]]
 
 [[OpenTelemetry]]の[[Go]] APIまたはSDK

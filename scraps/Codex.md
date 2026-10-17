@@ -1,3 +1,7 @@
+---
+type: Tool
+---
+
 #[[Programming]] #[[LLM]]
 
 [[OpenAI]]が提供するオープンソースの[[CLI]]コーディングエージェント

@@ -1,3 +1,7 @@
+---
+type: Tool
+---
+
 ## Buf Schema Registry
 
 #[[Continuous Integration]] #[[Continuous Delivery]]

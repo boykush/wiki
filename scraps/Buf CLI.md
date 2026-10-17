@@ -1,3 +1,7 @@
+---
+type: Tool
+---
+
 #[[Continuous Integration]]
 
 [[Buf]]が提供する[[Protocol Buffers]]ツール群のうちの[[CLI]]ツール

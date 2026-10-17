@@ -1,3 +1,7 @@
+---
+type: Tool
+---
+
 #[[API Architecture]] #[[Testing]]
 
 ![Schemathesis logo](https://avatars.githubusercontent.com/u/55582020?s=200&v=4)

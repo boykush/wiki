@@ -1,3 +1,7 @@
+---
+type: Tool
+---
+
 #[[Programming]]
 
 CLIツール専用の宣言的バージョンマネージャー。[[Go]]製、[[suzuki-shunsuke|@suzuki-shunsuke]] による

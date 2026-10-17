@@ -1,3 +1,7 @@
+---
+type: Tool
+---
+
 [[Backstage]]
 
 Spotifyが本体とは別に販売する有料プラグイン束。Soundcheck / Insights / RBAC / Skill Exchange の4つからなり、個別購入はできない。セルフホストのBackstageにそのまま載せて使う

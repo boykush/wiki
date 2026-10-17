@@ -1,3 +1,7 @@
+---
+type: Tool
+---
+
 #[[Cloud Native]]
 
 ![Knative logo](https://raw.githubusercontent.com/cncf/artwork/main/projects/knative/icon/color/knative-icon-color.png)

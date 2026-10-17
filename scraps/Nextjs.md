@@ -1,3 +1,7 @@
+---
+type: Tool
+---
+
 #[[Programming]]
 
 Vercel社が開発した[[React]]ベースのフルスタックWebフレームワーク
