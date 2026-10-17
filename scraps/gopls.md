@@ -1,3 +1,7 @@
+---
+type: Tool
+---
+
 #[[Programming]]
 
 [[Go]]の公式[[LSP|Language Server]]。Goチームによって開発されている

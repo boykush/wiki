@@ -1,3 +1,7 @@
+---
+type: Tool
+---
+
 ## Visual Studio Code
 
 #[[Programming]]

@@ -1,4 +1,4 @@
 ---
-type: CLI
+type: Tool
 ---
 
