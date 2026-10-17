@@ -1,7 +1,3 @@
----
-type: Tool
----
-
 #[[Security/Cryptography]]
 
 シンプルでモダンな暗号化ツール、[[Go]]製

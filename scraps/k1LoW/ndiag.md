@@ -1,7 +1,3 @@
----
-type: Tool
----
-
 #[[Documentation]]
 
 [[Go]]言語で書かれたhigh-level architectureダイアグラム/ドキュメント化ツール

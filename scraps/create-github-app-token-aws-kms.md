@@ -1,7 +1,3 @@
----
-type: Tool
----
-
 #[[Security]] #[[Continuous Integration]]
 
 [[GitHub App]] の private key を [[Amazon/KMS]] に取り出せない形で入れておき、[[JWT]] の署名だけを KMS に任せてインストールアクセストークンを発行する [[GitHub Actions]] の Action（[[suzuki-shunsuke|@suzuki-shunsuke]] 製）。secrets に置いた private key には期限がなく、漏れると無期限にトークンを発行され続けるので、その経路を塞ぐ

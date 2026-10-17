@@ -1,7 +1,3 @@
----
-type: Tool
----
-
 # Mock Service Worker
 
 #[[Testing]] #[[Programming]]

@@ -1,7 +1,3 @@
----
-type: Tool
----
-
 #[[Continuous Integration]] [[Platform Engineering]]
 
 [[Go]] 言語で書かれた、多数の [[Git]] リポジトリへ一括で変更を加える CLI ツール。[[マイクロサービス]] のように小さなリポジトリが多数に分かれた構成で有用と公式は述べている

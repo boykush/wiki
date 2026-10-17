@@ -1,7 +1,3 @@
----
-type: Tool
----
-
 #[[LLM]]
 
 [[Anthropic]]公式が公開している[[Claude Code/Plugins]]群

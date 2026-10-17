@@ -1,7 +1,3 @@
----
-type: Tool
----
-
 #[[Data Engineering]]
 
 [[Declarative schema migration]]を行うツール。スキーマ定義は素のSQLで書く

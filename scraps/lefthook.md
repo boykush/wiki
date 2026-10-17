@@ -1,7 +1,3 @@
----
-type: Tool
----
-
 #[[Continuous Integration]]
 
 [[Git]] hooks マネージャ。[[Go]] 製単一バイナリで `lefthook.yml` に hook 定義を書き、`lefthook install` で `.git/hooks/` に展開する。Evil Martians がメンテナンス

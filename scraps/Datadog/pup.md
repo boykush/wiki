@@ -1,7 +1,3 @@
----
-type: Tool
----
-
 #[[Observability]]
 
 [[Datadog]]の[[メトリクス]]、[[Datadog/Logs]]、[[Datadog/APM]]等をターミナルから操作するための[[CLI]]ツール。AIエージェントからの利用にも対応している

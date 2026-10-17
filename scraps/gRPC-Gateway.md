@@ -1,7 +1,3 @@
----
-type: Tool
----
-
 #[[Network]] #[[API Architecture]] #[[Programming]]
 
 [[gRPC]]において、gRPC serviceを[[REST|RESTful]] APIとして提供するための[[Go]]ライブラリ。[[HTTP]]+[[JSON]]のインターフェースで[[リバースプロキシ]]サーバーを生成する

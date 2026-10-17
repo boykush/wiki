@@ -1,7 +1,3 @@
----
-type: Tool
----
-
 [[Platform Engineering]]
 
 Spotify社が開発する[[Internal Developer Portal]]。[[CNCF]] incubating project

@@ -1,7 +1,3 @@
----
-type: Tool
----
-
 #[[Data Engineering]]
 
 ![PostgreSQL logo](https://www.postgresql.org/media/img/about/press/elephant.png)

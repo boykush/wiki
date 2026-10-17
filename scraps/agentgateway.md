@@ -1,7 +1,3 @@
----
-type: Tool
----
-
 #[[LLM]] #[[Network]]
 
 [[Agentic AI Foundation|AAIF]]に含まれるゲートウェイ実装。[[Kubernetes]]上に組み込み可能で、[[MCP]]等の通信の経路を集約できる

@@ -1,7 +1,3 @@
----
-type: Tool
----
-
 #[[Programming]]
 
 [[JavaScript]]、[[TypeScript]]、[[CSS]]、[[JSON]]、[[GraphQL]]向けのフォーマッターとリンターを提供するWebプロジェクト用ツールチェーン

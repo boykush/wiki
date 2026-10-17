@@ -1,7 +1,3 @@
----
-type: Tool
----
-
 #[[Programming]] #[[Testing]]
 
 [[Go]]言語のモックライブラリ、[[Uber]]社製

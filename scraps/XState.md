@@ -1,7 +1,3 @@
----
-type: Tool
----
-
 #[[Programming]]
 
 [[Finite State Machine]]をコンセプトとした[[JavaScript]]/[[TypeScript]]ライブラリ

@@ -1,7 +1,3 @@
----
-type: Tool
----
-
 #[[Continuous Integration]]
 
 [[Dockerfile]]の構文チェック、ベストプラクティス検証、セキュリティ脆弱性検出を行う[[SAST]]ツール

@@ -1,7 +1,3 @@
----
-type: Tool
----
-
 #[[Security]]
 
 "Unified Security Platform" を標榜する商用 SaaS（カテゴリは ASPM / Application Security Posture Management）。10 種類超のセキュリティスキャンを単一 UI に集約する

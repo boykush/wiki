@@ -1,7 +1,3 @@
----
-type: Tool
----
-
 #[[Programming]]
 
 [[Go]]言語の[[ORM]]ライブラリ

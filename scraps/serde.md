@@ -1,7 +1,3 @@
----
-type: Tool
----
-
 #[[Programming]]
 
 [[Rust]]のSerializationライブラリ

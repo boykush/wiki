@@ -1,7 +1,3 @@
----
-type: Tool
----
-
 #[[Data Engineering]]
 
 [[Google Cloud]]が提供するフルマネージドな[[リレーショナルデータベース]]サービス

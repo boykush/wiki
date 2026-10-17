@@ -1,7 +1,3 @@
----
-type: Tool
----
-
 #[[Cloud Native]] #[[Security]] #[[Continuous Integration]]
 
 Red Hatが提供する[[コンテナ]]イメージレジストリサービス

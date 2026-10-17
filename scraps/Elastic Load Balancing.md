@@ -1,7 +1,3 @@
----
-type: Tool
----
-
 #[[Cloud Native]] #[[API Architecture]]
 
 AWSが提供する[[ロードバランシング]]コンポーネント

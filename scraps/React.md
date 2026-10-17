@@ -1,7 +1,3 @@
----
-type: Tool
----
-
 #[[Programming]]
 
 [[Facebook]]社が開発した[[JavaScript]]ライブラリ

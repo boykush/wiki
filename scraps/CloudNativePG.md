@@ -1,7 +1,3 @@
----
-type: Tool
----
-
 #[[Cloud Native]] #[[Data Engineering]]
 
 [[Kubernetes]]上で[[PostgreSQL]]クラスタのライフサイクルを管理する[[Kubernetes/Operator]]

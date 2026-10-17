@@ -1,7 +1,3 @@
----
-type: Tool
----
-
 #[[Testing]] #[[Continuous Integration]]
 
 [[Go]]言語で書かれたコードメトリクス収集ツール（公式には "a toolkit for collecting code metrics"）

@@ -1,7 +1,3 @@
----
-type: Tool
----
-
 #[[API Architecture]] #[[Testing]]
 
 ![Hurl logo](https://hurl.dev/assets/img/logo-dark.svg)

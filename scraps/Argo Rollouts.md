@@ -1,7 +1,3 @@
----
-type: Tool
----
-
 #[[Continuous Delivery]] #[[Cloud Native]]
 
 ![Argo Rollouts logo](https://argoproj.github.io/static/768d962efdd84a6021db7c7792f01b41/rollouts-thumbnail.png)
