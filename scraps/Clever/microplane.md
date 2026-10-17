@@ -1,5 +1,5 @@
 ---
-type: CLI
+type: Tool
 ---
 
 #[[Continuous Integration]] [[Platform Engineering]]

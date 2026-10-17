@@ -1,5 +1,5 @@
 ---
-type: CLI
+type: Tool
 ---
 
 #[[Data Engineering]] #[[Continuous Integration]] #[[Continuous Delivery]] #[[Documentation]]

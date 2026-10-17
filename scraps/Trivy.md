@@ -1,5 +1,5 @@
 ---
-type: CLI
+type: Tool
 ---
 
 #[[Security]] #[[Cloud Native]] #[[Continuous Integration]] #[[Continuous Delivery]]

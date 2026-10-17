@@ -1,5 +1,5 @@
 ---
-type: CLI
+type: Tool
 ---
 
 #[[Security/Cryptography]]
