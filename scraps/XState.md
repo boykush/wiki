@@ -1,3 +1,7 @@
+---
+type: Library
+---
+
 #[[Programming]]
 
 [[Finite State Machine]]をコンセプトとした[[JavaScript]]/[[TypeScript]]ライブラリ

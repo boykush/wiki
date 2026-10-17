@@ -1,3 +1,7 @@
+---
+type: Library
+---
+
 #[[Programming]]
 
 [[Rust]]言語の[[Markdown]] Parser

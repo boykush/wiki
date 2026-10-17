@@ -1,3 +1,7 @@
+---
+type: CLI
+---
+
 #[[Continuous Integration]]
 
 [[Rust]] 製 [[Git]] hook manager。[[pre-commit]] や `pre-push` などのフック契機で linter / formatter を実行する

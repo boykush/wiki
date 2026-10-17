@@ -1,3 +1,7 @@
+---
+type: Library
+---
+
 #[[Programming]]
 
 Vercel社が開発した[[React]]ベースのフルスタックWebフレームワーク

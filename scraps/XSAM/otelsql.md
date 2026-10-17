@@ -1,3 +1,7 @@
+---
+type: Library
+---
+
 #[[Observability]] #[[Programming]] #[[Data Engineering]]
 
 [[Go]]の`database/sql`パッケージに[[OpenTelemetry]]計装を追加するライブラリ

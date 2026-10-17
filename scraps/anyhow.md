@@ -1,3 +1,7 @@
+---
+type: Library
+---
+
 #[[Programming]]
 
 [[Rust]]におけるエラー型の扱いを楽にするライブラリ

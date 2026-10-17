@@ -1,3 +1,7 @@
+---
+type: CLI
+---
+
 #[[Continuous Delivery]]
 
 ![Docker logo](https://www.docker.com/ja-jp/wp-content/uploads/2023/08/logo-guide-logos-1.svg)

@@ -1,3 +1,7 @@
+---
+type: CLI
+---
+
 #[[Testing]]
 
 [[Rust]]のLLVMソースベースコードカバレッジ（`-C instrument-coverage`）を簡単に利用するための[[Cargo]]サブコマンド

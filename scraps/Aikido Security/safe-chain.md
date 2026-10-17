@@ -1,3 +1,7 @@
+---
+type: CLI
+---
+
 #[[Security]]
 
 [[npm]] / pip など各種パッケージマネージャの download をローカルプロキシで intercept し、マルウェアを含むパッケージのインストールを未然にブロックする OSS

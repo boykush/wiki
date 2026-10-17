@@ -1,3 +1,7 @@
+---
+type: Library
+---
+
 #[[Programming]]
 
 [[Rust]]のSerializationライブラリ

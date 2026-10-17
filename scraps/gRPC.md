@@ -1,3 +1,7 @@
+---
+type: Library
+---
+
 #[[Network]] #[[API Architecture]]
 
 ![gRPC logo](https://grpc.io/img/logos/grpc-logo.png)

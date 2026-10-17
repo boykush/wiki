@@ -1,3 +1,7 @@
+---
+type: CLI
+---
+
 #[[Security]] #[[Programming]]
 
 [[Go]]言語のソースコード静的セキュリティ分析ツール

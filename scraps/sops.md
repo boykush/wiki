@@ -1,3 +1,7 @@
+---
+type: CLI
+---
+
 #[[Security]]
 
 [[GitOps]]の世界においてSecretをクライアントサイドで扱う[[Go]]製のツール。[[YAML]]や[[JSON]]のファイル上でSecretを安全にgit管理することができる

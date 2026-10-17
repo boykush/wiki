@@ -1,3 +1,7 @@
+---
+type: Library
+---
+
 #[[Programming]]
 
 [[Rust]]実装のテンプレートライブラリ、Jinja2/Djangoと同じ記法

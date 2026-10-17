@@ -1,3 +1,7 @@
+---
+type: CLI
+---
+
 #[[Cloud Native]] #[[Continuous Delivery]]
 
 [[CNCF]] sandboxプロジェクトの[[Kubernetes]]インフラ自動化ツールチェーン

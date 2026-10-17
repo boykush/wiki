@@ -1,3 +1,7 @@
+---
+type: CLI
+---
+
 #[[Programming]]
 
 [[JavaScript]] パッケージマネージャ。公式は "Fast, disk space efficient package manager" を標榜し、monorepo / workspace 用途を主軸に据える

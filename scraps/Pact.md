@@ -1,3 +1,7 @@
+---
+type: Library
+---
+
 #[[Testing]] #[[API Architecture]]
 
 ![Pact logo](https://pact.io/assets/img/logo-black.png)

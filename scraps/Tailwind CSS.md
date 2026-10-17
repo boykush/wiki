@@ -1,3 +1,7 @@
+---
+type: Library
+---
+
 #[[Programming]]
 
 HTMLから離れずにユーティリティクラスを組み合わせてデザインを構築するUtility-Firstの[[CSS]]フレームワーク

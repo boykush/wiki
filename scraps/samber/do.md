@@ -1,3 +1,7 @@
+---
+type: Library
+---
+
 [[Go]]言語の[[Dependency Injection]]（依存性注入）ツールキット
 
 Go 1.18+のジェネリクス機能を基盤とした型安全なAPIを提供するDIライブラリ。uber/digの代替として開発された

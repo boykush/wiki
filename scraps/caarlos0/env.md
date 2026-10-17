@@ -1,3 +1,7 @@
+---
+type: Library
+---
+
 #[[Programming]]
 
 [[Go]]言語のアプリケーション設定ライブラリ

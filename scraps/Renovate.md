@@ -1,3 +1,7 @@
+---
+type: CLI
+---
+
 #[[Continuous Integration]]
 
 依存とロックファイルの更新 Pull Request を自動生成するツール。公式は "Automated dependency updates. Multi-platform and multi-language." を標榜し、90+ のパッケージマネージャに対応する

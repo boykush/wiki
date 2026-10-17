@@ -1,3 +1,7 @@
+---
+type: CLI
+---
+
 #[[Security]] #[[Cloud Native]] #[[Continuous Integration]] #[[Continuous Delivery]]
 
 Aqua Securityが開発するオープンソースの脆弱性・設定ミス・シークレットスキャナー。[[コンテナ]]イメージ、[[Kubernetes]]、[[Infrastructure as Code|IaC]]、gitリポジトリを対象とする

@@ -1,3 +1,7 @@
+---
+type: CLI
+---
+
 #[[Cloud Native]]
 
 ![Helm logo](https://helm.sh/img/helm.svg)

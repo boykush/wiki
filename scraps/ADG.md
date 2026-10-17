@@ -1,3 +1,7 @@
+---
+type: CLI
+---
+
 ## Architectural Decision Guidance
 
 #[[Documentation]] #[[LLM]]
