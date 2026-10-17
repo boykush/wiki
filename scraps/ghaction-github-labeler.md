@@ -1,3 +1,7 @@
+---
+type: Tool
+---
+
 #[[Continuous Integration]]
 
 GitHub の label を YAML の定義へ収束させる [[GitHub Actions]] の action。label に絞った [[Infrastructure as Code]]

@@ -1,3 +1,7 @@
+---
+type: Tool
+---
+
 #[[Continuous Integration]]
 
 [[GitHub Actions]] の workflow 内で [[GitHub App]] のインストールアクセストークンを発行する公式 Action `actions/create-github-app-token`。App の ID と private key を渡すと、対象を絞ったトークンを払い出す

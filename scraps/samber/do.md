@@ -1,5 +1,5 @@
 ---
-type: Library
+type: Tool
 ---
 
 [[Go]]言語の[[Dependency Injection]]（依存性注入）ツールキット

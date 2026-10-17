@@ -1,5 +1,5 @@
 ---
-type: Library
+type: Tool
 ---
 
 #[[Security/Authentication]]
