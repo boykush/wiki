@@ -1,7 +1,3 @@
----
-type: Tool
----
-
 #[[LLM]]
 
 [[Anthropic]]が配る、[[Agent Skills]]そのものを作り、直し、評価するスキル
