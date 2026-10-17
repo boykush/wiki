@@ -1,3 +1,7 @@
+---
+type: Tool
+---
+
 #[[Security]] #[[Testing]] #[[Continuous Integration]] #[[Programming]]
 
 コード品質とセキュリティを継続的に検査するオープンソースの静的解析プラットフォーム

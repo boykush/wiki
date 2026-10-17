@@ -1,3 +1,7 @@
+---
+type: Tool
+---
+
 #[[Security/Authentication]]
 
 既知のデータ侵害で利用されたパスワードかどうかを検証できるサービス、API

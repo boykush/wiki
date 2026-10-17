@@ -1,3 +1,7 @@
+---
+type: Tool
+---
+
 #[[Security]]
 
 [[AWS]]の Systems Manager が持つ設定値の保管庫。型は `String` / `StringList` / `SecureString` の3つで、`SecureString` は[[Amazon/KMS]]で暗号化されるため[[SMS]]としても使える

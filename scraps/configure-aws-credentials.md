@@ -1,3 +1,7 @@
+---
+type: Tool
+---
+
 #[[Security]] #[[Continuous Integration]]
 
 [[GitHub Actions]] から [[AWS]] の一時認証情報を取る公式 Action。GitHub が署名した [[OIDC]] トークンを受け取り、`sts:AssumeRoleWithWebIdentity` で role と交換して後続の step に渡す。長命な access key を secrets に置かずに済む。job に `permissions: id-token: write` が要る

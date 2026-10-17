@@ -1,3 +1,7 @@
+---
+type: Tool
+---
+
 #[[Programming]] #[[Security/Authentication]]
 
 [[Go]]用の[[OIDC]]ライブラリ、`golang.org/x/oauth2`パッケージと統合される

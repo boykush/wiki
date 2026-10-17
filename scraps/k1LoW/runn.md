@@ -1,3 +1,7 @@
+---
+type: Tool
+---
+
 #[[Testing]] #[[API Architecture]]
 
 [[Go]]言語のAPI Testingライブラリ・ツール

@@ -1,3 +1,7 @@
+---
+type: Tool
+---
+
 #[[Data Engineering]] #[[Documentation]]
 
 [[Go]]言語で書かれたデータベースドキュメント化ツール

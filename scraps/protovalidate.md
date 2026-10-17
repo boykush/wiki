@@ -1,3 +1,7 @@
+---
+type: Tool
+---
+
 #[[API Architecture]]
 
 [[Buf]]が提供する[[Protocol Buffers]]向けのセマンティックバリデーションライブラリ。`.proto`ファイル上のアノテーションでフィールド制約を表現し、`protoc-gen-validate`の次世代として位置付けられている。

@@ -1,3 +1,7 @@
+---
+type: Tool
+---
+
 #[[Security]] #[[Cloud Native]] #[[Network]]
 
 [[OAuth2]]/[[OIDC]]認証を提供する[[リバースプロキシ]]。[[CNCF]] Sandboxプロジェクト

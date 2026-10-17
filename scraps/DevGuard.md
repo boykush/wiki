@@ -1,3 +1,7 @@
+---
+type: Tool
+---
+
 #[[Security]]
 
 [[OWASP]] Incubating Project の開発者向け統合セキュリティプラットフォーム。AGPL-3.0、[[Go]] + [[PostgreSQL]] 実装

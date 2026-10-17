@@ -1,3 +1,7 @@
+---
+type: Tool
+---
+
 #[[Programming]]
 
 SQLを書くと型安全な[[Go]]コードを自動生成するツール

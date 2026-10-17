@@ -1,3 +1,7 @@
+---
+type: Tool
+---
+
 ## O2
 
 #[[Observability]] #[[Cloud Native]]

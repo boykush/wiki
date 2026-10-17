@@ -1,3 +1,7 @@
+---
+type: Tool
+---
+
 #[[Data Engineering]]
 
 Amazonが提供する[[リーダーレスレプリケーション]]によるデータストア

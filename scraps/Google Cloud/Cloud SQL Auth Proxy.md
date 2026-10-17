@@ -1,3 +1,7 @@
+---
+type: Tool
+---
+
 #[[Security]] #[[Network]]
 
 [[Google Cloud/Cloud SQL]]への接続を仲介するローカルプロキシ

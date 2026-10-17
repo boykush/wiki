@@ -1,3 +1,7 @@
+---
+type: Tool
+---
+
 #[[Cloud Native]]
 
 ![Kubernetes logo](https://kubernetes.io/images/kubernetes.png)

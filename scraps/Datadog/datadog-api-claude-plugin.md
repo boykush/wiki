@@ -1,3 +1,7 @@
+---
+type: Tool
+---
+
 #[[Observability]]
 
 [[Datadog]]のAPIを[[Claude Code]]から直接操作するための[[Claude Code/Plugins]]。[[Datadog/pup]] CLIをバックエンドとして利用する

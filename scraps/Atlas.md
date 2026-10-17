@@ -1,3 +1,7 @@
+---
+type: Tool
+---
+
 #[[Data Engineering]] #[[Continuous Integration]] #[[Continuous Delivery]] #[[Documentation]]
 
 [[Declarative schema migration]]を行う[[DevOps]]ツール

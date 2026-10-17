@@ -1,3 +1,7 @@
+---
+type: Tool
+---
+
 #[[Network]]
 
 ![Connect logo](https://avatars.githubusercontent.com/u/97258658?s=200&v=4)

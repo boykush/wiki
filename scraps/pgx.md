@@ -1,3 +1,7 @@
+---
+type: Tool
+---
+
 #[[Programming]] #[[Data Engineering]]
 
 [[Go]]用の[[PostgreSQL]]ドライバー・ツールキット

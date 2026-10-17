@@ -1,3 +1,7 @@
+---
+type: Tool
+---
+
 #[[Programming]]
 
 [[Rust]]言語の[[Markdown]] Parser

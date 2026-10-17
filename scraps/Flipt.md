@@ -1,3 +1,7 @@
+---
+type: Tool
+---
+
 #[[Continuous Delivery]]
 
 [[OpenFeature]]準拠の[[フィーチャーフラグ]]管理ツール

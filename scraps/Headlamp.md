@@ -1,3 +1,7 @@
+---
+type: Tool
+---
+
 #[[Cloud Native]]
 
 [[Kubernetes]]クラスタのリソースを見て操作する Web UI。Kubernetes プロジェクトのサブプロジェクトで、Metrics Server があればリソースの使用量も表示できる

@@ -1,3 +1,7 @@
+---
+type: Tool
+---
+
 #[[Security]] #[[Continuous Integration]]
 
 [[GitHub Actions]]ワークフローの静的解析を行う[[SAST]]ツール。[[サプライチェーン攻撃]]や認証情報窃取につながる workflow 設定の不備を検出する
