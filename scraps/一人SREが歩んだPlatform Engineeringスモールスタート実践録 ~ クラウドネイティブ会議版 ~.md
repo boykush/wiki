@@ -1,5 +1,6 @@
 ---
 type: Slide
+resource: "https://speakerdeck.com/syossan27/ren-sregabu-ndaplatform-engineeringsumorusutatoshi-jian-lu-kuraudoneiteibuhui-yi-ban"
 sources:
   - resource: "https://speakerdeck.com/syossan27/ren-sregabu-ndaplatform-engineeringsumorusutatoshi-jian-lu-kuraudoneiteibuhui-yi-ban"
 ---

@@ -1,5 +1,6 @@
 ---
 type: Blog
+resource: "https://netflixtechblog.com/migrating-critical-traffic-at-scale-with-no-downtime-part-1-ba1c7a1c7835"
 sources:
   - resource: "https://netflixtechblog.com/migrating-critical-traffic-at-scale-with-no-downtime-part-1-ba1c7a1c7835"
 ---

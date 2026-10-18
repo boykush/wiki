@@ -1,5 +1,6 @@
 ---
 type: Blog
+resource: "https://www.noidea.dog/glue/"
 sources:
   - resource: "https://www.noidea.dog/glue/"
 ---

@@ -1,5 +1,6 @@
 ---
 type: Blog
+resource: "https://github.blog/security/6-security-settings-every-github-maintainer-should-enable-this-week/"
 sources:
   - resource: "https://github.blog/security/6-security-settings-every-github-maintainer-should-enable-this-week/"
 ---

@@ -1,5 +1,6 @@
 ---
 type: Blog
+resource: "https://entgo.io/ja/blog/2021/09/01/ent-joins-the-linux-foundation/"
 sources:
   - resource: "https://entgo.io/ja/blog/2021/09/01/ent-joins-the-linux-foundation/"
 ---

@@ -1,5 +1,6 @@
 ---
 type: Blog
+resource: "https://cucumber.io/blog/bdd/keep-your-scenarios-brief/"
 sources:
   - resource: "https://cucumber.io/blog/bdd/keep-your-scenarios-brief/"
     title: "Keep your scenarios BRIEF | Cucumber"

@@ -1,5 +1,6 @@
 ---
 type: Blog
+resource: "https://community.owasp.org/controls/Blocking_Brute_Force_Attacks"
 sources:
   - resource: "https://community.owasp.org/controls/Blocking_Brute_Force_Attacks"
 ---

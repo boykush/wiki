@@ -1,5 +1,6 @@
 ---
 type: Blog
+resource: "https://martinfowler.com/articles/injection.html"
 sources:
   - resource: "https://martinfowler.com/articles/injection.html"
 ---

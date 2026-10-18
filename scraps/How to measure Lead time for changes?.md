@@ -1,5 +1,6 @@
 ---
 type: Blog
+resource: "https://blog.codacy.com/how-to-measure-lead-time-for-changes"
 sources:
   - resource: "https://blog.codacy.com/how-to-measure-lead-time-for-changes"
 ---

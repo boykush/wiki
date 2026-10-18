@@ -1,5 +1,6 @@
 ---
 type: Blog
+resource: "https://blog.crisp.se/2012/11/14/henrikkniberg/scaling-agile-at-spotify"
 sources:
   - resource: "https://leantrenches.wordpress.com/2013/10/16/scaling-agile-at-spotify-ja/"
     title: "日本語訳"

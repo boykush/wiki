@@ -1,5 +1,6 @@
 ---
 type: Blog
+resource: "https://martinfowler.com/articles/microservices.html"
 sources:
   - resource: "https://martinfowler.com/articles/microservices.html"
 ---

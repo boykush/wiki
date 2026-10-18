@@ -1,5 +1,6 @@
 ---
 type: Book
+resource: "https://book.impress.co.jp/books/1118101029"
 sources:
   - resource: "https://book.impress.co.jp/books/1118101029"
     title: "インプレスブックス"

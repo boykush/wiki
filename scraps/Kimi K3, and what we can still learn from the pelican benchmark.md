@@ -1,5 +1,6 @@
 ---
 type: Blog
+resource: "https://simonwillison.net/2026/Jul/16/kimi-k3/"
 sources:
   - resource: "https://simonwillison.net/2026/Jul/16/kimi-k3/"
 ---

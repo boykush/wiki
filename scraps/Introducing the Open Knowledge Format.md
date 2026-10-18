@@ -1,5 +1,6 @@
 ---
 type: Blog
+resource: "https://cloud.google.com/blog/ja/products/data-analytics/how-the-open-knowledge-format-can-improve-data-sharing/"
 sources:
   - resource: "https://cloud.google.com/blog/ja/products/data-analytics/how-the-open-knowledge-format-can-improve-data-sharing/"
 ---

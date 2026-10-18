@@ -1,5 +1,6 @@
 ---
 type: Book
+resource: "https://www.shoeisha.co.jp/book/detail/9784798159294"
 sources:
   - resource: "https://www.shoeisha.co.jp/book/detail/9784798159294"
     title: "翔泳社"

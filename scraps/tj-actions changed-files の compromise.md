@@ -1,5 +1,6 @@
 ---
 type: Blog
+resource: "https://www.stepsecurity.io/blog/harden-runner-detection-tj-actions-changed-files-action-is-compromised"
 sources:
   - resource: "https://www.stepsecurity.io/blog/harden-runner-detection-tj-actions-changed-files-action-is-compromised"
 ---

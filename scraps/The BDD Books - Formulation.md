@@ -1,5 +1,6 @@
 ---
 type: Book
+resource: "https://leanpub.com/bddbooks-formulation-jp"
 sources:
   - resource: "https://leanpub.com/bddbooks-formulation-jp"
     title: "The BDD Books - Formulation (Japanese Edition)"

@@ -1,5 +1,6 @@
 ---
 type: Blog
+resource: "https://t-wada.hatenablog.jp/entry/ward-explains-debt-metaphor"
 sources:
   - resource: "https://t-wada.hatenablog.jp/entry/ward-explains-debt-metaphor"
     title: "【翻訳】技術的負債という概念の生みの親 Ward Cunningham 自身による説明 - t-wadaのブログ"

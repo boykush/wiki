@@ -1,5 +1,6 @@
 ---
 type: Book
+resource: "https://asciidwango.jp/post/693992928727760896/clean-craftsmanship"
 sources:
   - resource: "https://asciidwango.jp/post/693992928727760896/clean-craftsmanship"
     title: "asciidwango"

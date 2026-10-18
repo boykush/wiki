@@ -1,5 +1,6 @@
 ---
 type: Blog
+resource: "https://martinfowler.com/bliki/MicroservicePrerequisites.html"
 sources:
   - resource: "https://martinfowler.com/bliki/MicroservicePrerequisites.html"
     title: "Microservice Prerequisites"

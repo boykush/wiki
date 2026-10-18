@@ -1,5 +1,6 @@
 ---
 type: Blog
+resource: "https://blog.flatt.tech/entry/2026-github-actions-security-part2"
 sources:
   - resource: "https://blog.flatt.tech/entry/2026-github-actions-security-part2"
 ---

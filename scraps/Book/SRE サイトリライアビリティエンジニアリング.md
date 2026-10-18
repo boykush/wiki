@@ -1,5 +1,6 @@
 ---
 type: Book
+resource: "https://www.oreilly.co.jp/books/9784873117911/"
 sources:
   - resource: "https://www.oreilly.co.jp/books/9784873117911/"
     title: "O'Reilly Japan"

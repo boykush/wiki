@@ -1,5 +1,6 @@
 ---
 type: Slide
+resource: "https://speakerdeck.com/legalontechnologies/agent-ready-golden-path-with-gke"
 sources:
   - resource: "https://speakerdeck.com/legalontechnologies/agent-ready-golden-path-with-gke"
 ---

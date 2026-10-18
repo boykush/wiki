@@ -51,6 +51,7 @@ The page has this form:
 ```
 ---
 type: <Blog or Slide>
+resource: "<URL>"
 sources:
   - resource: "<URL>"
 ---
@@ -62,7 +63,7 @@ sources:
 - <A bullet that carries a connection to an existing page. Zero to three.>
 ```
 
-The source URL goes in the frontmatter `sources`, not in the body: the site lists it after the body. This page becomes the source's page, which other pages point at by path (see the project instructions).
+The source URL goes in the frontmatter `resource` and `sources`, not in the body: the site lists the sources after the body. This page becomes the source's page, which other pages point at by path (see the project instructions).
 
 Place the page without a context folder by default, and add one only when step 1 found a page with the same title. Project instructions may add local conventions for source pages, such as a category link or the context folder to use; follow them.
 

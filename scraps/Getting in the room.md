@@ -1,5 +1,6 @@
 ---
 type: Blog
+resource: "https://lethain.com/getting-in-the-room/"
 sources:
   - resource: "https://lethain.com/getting-in-the-room/"
 ---

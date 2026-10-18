@@ -1,5 +1,6 @@
 ---
 type: Blog
+resource: "https://sites.google.com/site/unclebobconsultingllc/a-mess-is-not-a-technical-debt"
 sources:
   - resource: "https://sites.google.com/site/unclebobconsultingllc/a-mess-is-not-a-technical-debt"
     title: "Clean Coder - A Mess is not a Technical Debt."

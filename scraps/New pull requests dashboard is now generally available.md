@@ -1,5 +1,6 @@
 ---
 type: Blog
+resource: "https://github.blog/changelog/2026-07-09-new-pull-requests-dashboard-is-now-generally-available/"
 sources:
   - resource: "https://github.blog/changelog/2026-07-09-new-pull-requests-dashboard-is-now-generally-available/"
   - resource: "https://docs.github.com/en/issues/tracking-your-work-with-issues/using-issues/viewing-all-of-your-issues-and-pull-requests"

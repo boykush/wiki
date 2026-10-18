@@ -1,5 +1,6 @@
 ---
 type: Slide
+resource: "https://speakerdeck.com/nihonbuson/bdd"
 sources:
   - resource: "https://speakerdeck.com/nihonbuson/bdd"
 ---

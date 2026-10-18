@@ -1,5 +1,6 @@
 ---
 type: Blog
+resource: "https://opentelemetry.io/blog/2026/deprecating-span-events/"
 sources:
   - resource: "https://opentelemetry.io/blog/2026/deprecating-span-events/"
 ---

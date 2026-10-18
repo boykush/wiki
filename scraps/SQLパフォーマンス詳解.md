@@ -1,5 +1,6 @@
 ---
 type: Book
+resource: "https://sql-performance-explained.jp/"
 sources:
   - resource: "https://sql-performance-explained.jp/"
     title: "HP"

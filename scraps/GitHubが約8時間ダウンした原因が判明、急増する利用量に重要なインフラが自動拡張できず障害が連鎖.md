@@ -1,5 +1,6 @@
 ---
 type: Blog
+resource: "https://gigazine.net/news/20260821-why-github-down/"
 sources:
   - resource: "https://gigazine.net/news/20260821-why-github-down/"
 ---

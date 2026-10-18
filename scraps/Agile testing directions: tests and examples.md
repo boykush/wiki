@@ -1,5 +1,6 @@
 ---
 type: Blog
+resource: "http://www.exampler.com/old-blog/2003/08/22/#agile-testing-project-2"
 sources:
   - resource: "http://www.exampler.com/old-blog/2003/08/22/#agile-testing-project-2"
 ---

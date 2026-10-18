@@ -1,5 +1,6 @@
 ---
 type: Book
+resource: "https://leanpub.com/bddbooks-discovery-jp"
 sources:
   - resource: "https://leanpub.com/bddbooks-discovery-jp"
     title: "Leanpub"

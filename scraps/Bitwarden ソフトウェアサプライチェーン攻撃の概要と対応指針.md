@@ -1,5 +1,6 @@
 ---
 type: Blog
+resource: "https://blog.flatt.tech/entry/bitwarden_compromise"
 sources:
   - resource: "https://blog.flatt.tech/entry/bitwarden_compromise"
 ---

@@ -1,5 +1,6 @@
 ---
 type: Book
+resource: "https://www.oreilly.co.jp/books/9784814401130/"
 sources:
   - resource: "https://www.oreilly.co.jp/books/9784814401130/"
     title: "LLMのプロンプトエンジニアリング - O'Reilly Japan"

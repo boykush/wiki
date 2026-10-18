@@ -1,5 +1,6 @@
 ---
 type: Blog
+resource: "https://www.usehaystack.io/blog/lead-time-cycle-time-change-lead-time"
 sources:
   - resource: "https://www.usehaystack.io/blog/lead-time-cycle-time-change-lead-time"
 ---

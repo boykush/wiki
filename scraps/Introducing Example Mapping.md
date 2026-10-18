@@ -1,5 +1,6 @@
 ---
 type: Blog
+resource: "https://nihonbuson.hatenadiary.jp/entry/ExampleMapping"
 sources:
   - resource: "https://nihonbuson.hatenadiary.jp/entry/ExampleMapping"
 ---
