@@ -110,7 +110,7 @@ Wait for the user to confirm or correct the plan.
 
 - Write only what passed the check.
 - Order: if the title is an abbreviation, its expansion as a second-level heading; then the tag line, the gist, and bullets if any. Do not embed slides or videos.
-- Record the source in the frontmatter `sources`, not in the body, choosing between the source's URL and the path of its page by the rule in the project instructions (`AGENTS.md`).
+- Record the source in the frontmatter, not in the body, by the rule in the project instructions (`AGENTS.md`): `resource` on a page about the source itself, `sources` on any other page.
 - The gist alone is the default. Add bullets only to state connections to existing pages. An explanation that carries no link is left out, even if the source has it.
 - Link terms that have a page instead of explaining them. For terms without one, phrase the sentence so the term needs no explanation.
 - Do not copy specification details, procedures, or exhaustive usage examples. That turns the page into a summary of the source.

@@ -1,9 +1,6 @@
 ---
 type: Book
 resource: "https://www.oreilly.co.jp/books/9784814400881/"
-sources:
-  - resource: "https://www.oreilly.co.jp/books/9784814400881/"
-    title: "O'Reilly Japan"
 ---
 
 ### Authors

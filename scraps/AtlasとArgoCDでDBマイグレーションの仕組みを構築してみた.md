@@ -1,8 +1,6 @@
 ---
 type: Blog
 resource: "https://tech-blog.rakus.co.jp/entry/20250526/dbmigration"
-sources:
-  - resource: "https://tech-blog.rakus.co.jp/entry/20250526/dbmigration"
 ---
 
 #[[Data Engineering]]

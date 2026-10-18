@@ -1,9 +1,6 @@
 ---
 type: Book
 resource: "https://www.oreilly.co.jp/books/9784814400942/"
-sources:
-  - resource: "https://www.oreilly.co.jp/books/9784814400942/"
-    title: "O'Reilly Japan"
 ---
 
 ## [[Rust]]コードを改善し、エコシステムを最大限に活用するための35項目

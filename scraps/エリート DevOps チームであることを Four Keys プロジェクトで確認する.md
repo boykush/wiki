@@ -2,8 +2,6 @@
 type: Blog
 resource: "https://cloud.google.com/blog/ja/products/gcp/using-the-four-keys-to-measure-your-devops-performance"
 sources:
-  - resource: "https://cloud.google.com/blog/ja/products/gcp/using-the-four-keys-to-measure-your-devops-performance"
-    title: "日本語"
   - resource: "https://cloud.google.com/blog/products/devops-sre/using-the-four-keys-to-measure-your-devops-performance?hl=en"
     title: "英語"
 ---

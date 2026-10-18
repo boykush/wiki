@@ -1,8 +1,6 @@
 ---
 type: Blog
 resource: "https://weaveintelligence.io/blog/what-is-an-agentic-development-platform"
-sources:
-  - resource: "https://weaveintelligence.io/blog/what-is-an-agentic-development-platform"
 ---
 
 [[Agentic Engineering Platform]] #[[LLM]]

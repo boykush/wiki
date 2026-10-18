@@ -1,9 +1,6 @@
 ---
 type: Book
 resource: "https://book.impress.co.jp/books/1118101029"
-sources:
-  - resource: "https://book.impress.co.jp/books/1118101029"
-    title: "インプレスブックス"
 ---
 
 ## テクノロジーの戦略的活用が組織変革を加速する

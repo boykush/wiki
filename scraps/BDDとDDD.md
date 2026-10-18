@@ -1,9 +1,6 @@
 ---
 type: Blog
 resource: "https://digitalsoul.hatenadiary.org/entry/20091115/1258283543"
-sources:
-  - resource: "https://digitalsoul.hatenadiary.org/entry/20091115/1258283543"
-    title: "Blog"
 ---
 
 ### Authors

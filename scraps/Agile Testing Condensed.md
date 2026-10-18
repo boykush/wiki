@@ -1,9 +1,6 @@
 ---
 type: Book
 resource: "https://leanpub.com/agiletesting-condensed-japanese-edition"
-sources:
-  - resource: "https://leanpub.com/agiletesting-condensed-japanese-edition"
-    title: "Leanpub"
 ---
 
 ### Authors

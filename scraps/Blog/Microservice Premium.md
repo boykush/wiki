@@ -1,8 +1,6 @@
 ---
 type: Blog
 resource: "https://martinfowler.com/bliki/MicroservicePremium.html"
-sources:
-  - resource: "https://martinfowler.com/bliki/MicroservicePremium.html"
 ---
 
 #[[Software Design]]

@@ -1,8 +1,6 @@
 ---
 type: Blog
 resource: "https://blog.codacy.com/how-to-measure-lead-time-for-changes"
-sources:
-  - resource: "https://blog.codacy.com/how-to-measure-lead-time-for-changes"
 ---
 
 [[Four Keys/変更のリードタイム|Lead time for changes]]と、Lead time, Cycle timeとの比較を紹介しているブログ記事

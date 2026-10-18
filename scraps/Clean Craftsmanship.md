@@ -1,9 +1,6 @@
 ---
 type: Book
 resource: "https://asciidwango.jp/post/693992928727760896/clean-craftsmanship"
-sources:
-  - resource: "https://asciidwango.jp/post/693992928727760896/clean-craftsmanship"
-    title: "asciidwango"
 ---
 
 ## 規律、基準、倫理 より良く働き、生産性を高め、自分が書いたものに誇りを持つ

@@ -1,8 +1,6 @@
 ---
 type: Blog
 resource: "https://martinfowler.com/bliki/ConwaysLaw.html"
-sources:
-  - resource: "https://martinfowler.com/bliki/ConwaysLaw.html"
 ---
 
 #[[Software Design]] #[[Team Organization]]

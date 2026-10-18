@@ -1,8 +1,6 @@
 ---
 type: Blog
 resource: "https://github.blog/security/application-security/how-github-gave-every-repository-a-durable-owner/"
-sources:
-  - resource: "https://github.blog/security/application-security/how-github-gave-every-repository-a-durable-owner/"
 ---
 
 #[[Security]]

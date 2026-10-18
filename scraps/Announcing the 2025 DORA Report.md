@@ -1,8 +1,6 @@
 ---
 type: Blog
 resource: "https://cloud.google.com/blog/products/ai-machine-learning/announcing-the-2025-dora-report/"
-sources:
-  - resource: "https://cloud.google.com/blog/products/ai-machine-learning/announcing-the-2025-dora-report/"
 ---
 
 ## State of AI-assisted Software Development

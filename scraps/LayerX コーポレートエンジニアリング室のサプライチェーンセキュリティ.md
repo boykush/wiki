@@ -1,8 +1,6 @@
 ---
 type: Slide
 resource: "https://speakerdeck.com/yuyatakeyama/supply-chain-security-at-layerx-corporate-engineering"
-sources:
-  - resource: "https://speakerdeck.com/yuyatakeyama/supply-chain-security-at-layerx-corporate-engineering"
 ---
 
 #[[Security]] #[[Continuous Integration]]

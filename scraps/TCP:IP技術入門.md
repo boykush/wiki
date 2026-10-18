@@ -1,9 +1,6 @@
 ---
 type: Book
 resource: "https://gihyo.jp/book/2024/978-4-297-14157-8"
-sources:
-  - resource: "https://gihyo.jp/book/2024/978-4-297-14157-8"
-    title: "技術評論社"
 ---
 
 ## プロトコルスタックの基礎×実装

@@ -1,8 +1,6 @@
 ---
 type: Blog
 resource: "https://blog.flatt.tech/entry/2026-github-actions-security-part3"
-sources:
-  - resource: "https://blog.flatt.tech/entry/2026-github-actions-security-part3"
 ---
 
 #[[Security]] #[[Continuous Integration]]

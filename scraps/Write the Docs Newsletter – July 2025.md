@@ -1,8 +1,6 @@
 ---
 type: Blog
 resource: "https://www.writethedocs.org/blog/newsletter-july-2025/"
-sources:
-  - resource: "https://www.writethedocs.org/blog/newsletter-july-2025/"
 ---
 
 #[[Documentation]]

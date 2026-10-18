@@ -1,9 +1,6 @@
 ---
 type: Book
 resource: "https://www.lambdanote.com/collections/haskell"
-sources:
-  - resource: "https://www.lambdanote.com/collections/haskell"
-    title: "Lambda Note"
 ---
 
 ### Authors

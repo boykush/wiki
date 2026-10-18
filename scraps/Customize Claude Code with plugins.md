@@ -1,8 +1,6 @@
 ---
 type: Blog
 resource: "https://claude.com/blog/claude-code-plugins"
-sources:
-  - resource: "https://claude.com/blog/claude-code-plugins"
 ---
 
 #[[LLM]]

@@ -1,9 +1,6 @@
 ---
 type: Book
 resource: "https://www.oreilly.co.jp/books/9784814400898/"
-sources:
-  - resource: "https://www.oreilly.co.jp/books/9784814400898/"
-    title: "O'Reilly Japan"
 ---
 
 ## モノリシックからマイクロサービスへとアーキテクチャを進化させるための実践的手法

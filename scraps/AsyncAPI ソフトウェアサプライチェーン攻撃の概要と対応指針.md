@@ -1,8 +1,6 @@
 ---
 type: Blog
 resource: "https://blog.flatt.tech/entry/asyncapi_compromise"
-sources:
-  - resource: "https://blog.flatt.tech/entry/asyncapi_compromise"
 ---
 
 #[[Security]]

@@ -1,9 +1,6 @@
 ---
 type: Slide
 resource: "https://www.docswell.com/s/papanda/ZR8GJK-why-84153441#p1"
-sources:
-  - resource: "https://www.docswell.com/s/papanda/ZR8GJK-why-84153441#p1"
-    title: "Docswell"
 ---
 
 #[[Agile]] #[[Product Management]]

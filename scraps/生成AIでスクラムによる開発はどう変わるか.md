@@ -1,8 +1,6 @@
 ---
 type: Blog
 resource: "https://www.ryuzee.com/contents/blog/14605"
-sources:
-  - resource: "https://www.ryuzee.com/contents/blog/14605"
 ---
 
 #[[Agile]]

@@ -1,9 +1,6 @@
 ---
 type: Book
 resource: "https://www.oreilly.co.jp/books/9784814401130/"
-sources:
-  - resource: "https://www.oreilly.co.jp/books/9784814401130/"
-    title: "LLMのプロンプトエンジニアリング - O'Reilly Japan"
 ---
 
 ## GitHub Copilotを生んだ開発者が教える生成AIアプリケーション開発

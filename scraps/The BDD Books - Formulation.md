@@ -1,9 +1,6 @@
 ---
 type: Book
 resource: "https://leanpub.com/bddbooks-formulation-jp"
-sources:
-  - resource: "https://leanpub.com/bddbooks-formulation-jp"
-    title: "The BDD Books - Formulation (Japanese Edition)"
 ---
 
 ## BDD/ATDDの第2ステップ：Given/When/Thenを使って具体例を定式化する

@@ -1,8 +1,6 @@
 ---
 type: Blog
 resource: "https://github.blog/changelog/2026-09-17-workflow-execution-protections-in-github-actions-generally-available/"
-sources:
-  - resource: "https://github.blog/changelog/2026-09-17-workflow-execution-protections-in-github-actions-generally-available/"
 ---
 
 #[[Security]] #[[Continuous Integration]]
