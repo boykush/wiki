@@ -26,6 +26,10 @@
 - 記事・登壇資料のURLを要約して残すときは [.claude/skills/digest/SKILL.md](.claude/skills/digest/SKILL.md) を使う。対話なしで1件書き切り、既存ページは変更しない。feed に載っている記事の本文は `mise run fetch-article-body` で取る。
 - やりたいことに合う道具や機能を探すときは [.claude/skills/discover/SKILL.md](.claude/skills/discover/SKILL.md) を使う。候補を比べて推すところまでで、ページは書かず、選んだものは learn に渡す。
 - 記事・書籍・登壇資料・人物・道具そのものを主題とするページには、frontmatter の `type` で種別を1つ付ける。技術ブログとニュース記事は `Blog`、書籍は `Book`、登壇資料（Speaker Deck などで公開されたスライド）は `Slide`、人物は `Person`、開発者が手元や CI で使う道具（CLI・ライブラリ・フレームワーク・GitHub の Action・エディタとその拡張・手元で動かす MCP サーバーなど）は `Tool`。動かし続けて運用する基盤（サーバー・ミドルウェア・Kubernetes とその拡張・GitHub の App）、SaaS やクラウドのマネージドサービス、エージェント向けのスキル、道具群の総称（`Buf`、`Sigstore` など）、概念、言語・仕様・プロトコル・形式、企業・団体、LLM のモデルのページには付けない。道具の機能・構成要素・設定項目・リソース・配布形態を主題とするページ（`Kubernetes/Pod`、`Claude Code/Hooks`、`Renovate/minimumReleaseAge` など）にも付けない。所有者名の文脈に置いた道具（`k1LoW/runn` など）には付ける。種別を示すためだけのリンクは置かない。同名のページがあるときだけ、記事は `scraps/Blog/`、書籍は `scraps/Book/`、登壇資料は `scraps/Slide/` に置く。
+- 出典は本文ではなく frontmatter の `sources` に書く。`resource` の書き方で、出典が wiki の外か中かを区別する。
+  - 外部の URL（`"https://..."`）: その資料を主題とするページ（`type` が `Blog` / `Book` / `Slide`）がまだ無いとき。出典のページ自身の `sources` もこれ。
+  - wiki のページのパス（`"/<key>.md"`）: その資料を主題とするページがあるとき。URL を書かず、そのページを指す。scraps はこれを種類 `source` のリンクとして読む。
+  - 依存の向きは「概念のページ → 出典のページ → 外部の資料」。出典のページから概念のページへは `sources` を張らない（本文のリンクで足りる）。
 - `scraps/DevOps capabilities/` 配下は、DORA のケイパビリティ1件を主題とする記事であり、題名と同じ語の概念ページではない。概念の語が出たときのリンク先や既知の語の候補には数えない。概念に触れるなら概念自身のページ（`[[トランクベース]]`、`[[WIP制限]]` など）へ張り、無ければ地の文のままにする。配下へ張ってよいのは、DORA がそのケイパビリティについて述べている内容に触れる文だけ（`[[LeanとDevOpsの科学]]` の列挙など）。ケイパビリティ全体を指すなら `[[DevOps capabilities]]` へ張る。
 - 外部リンクのリンク切れ・移転・転送・アンカー違いを検査して直すときは [.claude/skills/linkcheck/SKILL.md](.claude/skills/linkcheck/SKILL.md) を使う。直すのはリンク先だけで、理由ごとの小さなPRにする。
 - その他のウィキ操作は通常のリポジトリ作業として扱い、存在しない上位の設計、振り分け役、スキルを仮定しない。
