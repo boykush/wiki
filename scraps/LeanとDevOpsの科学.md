@@ -1,5 +1,8 @@
 ---
 type: Book
+sources:
+  - resource: "https://book.impress.co.jp/books/1118101029"
+    title: "インプレスブックス"
 ---
 
 ## テクノロジーの戦略的活用が組織変革を加速する
@@ -9,8 +12,6 @@ type: Book
 Nicole Forsgren, Jez Humble, Gene Kim
 
 ![LeanとDevOpsの科学](https://img.ips.co.jp/ij/18/1118101029/1118101029-520x.jpg)
-
-[インプレスブックス](https://book.impress.co.jp/books/1118101029)
 
 2018年に初版が出された、[[リーン|Lean]]の考え方を背景に[[State of DevOps Report]]に報告されているような内容をまとめている本
 

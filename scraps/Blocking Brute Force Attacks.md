@@ -1,5 +1,7 @@
 ---
 type: Blog
+sources:
+  - resource: "https://community.owasp.org/controls/Blocking_Brute_Force_Attacks"
 ---
 
 #[[Security/Authentication]]
@@ -10,5 +12,3 @@ type: Blog
 
 - [[アカウントロックアウト]]は[[DoS攻撃]]に悪用されるリスクがあり、[[Device Cookies]]はそれに耐性を持つ
 - ほかにIPアドレスベースの[[レートリミット]]や[[CAPTCHA]]の導入などを挙げる
-
-<https://community.owasp.org/controls/Blocking_Brute_Force_Attacks>

@@ -1,5 +1,8 @@
 ---
 type: Book
+sources:
+  - resource: "https://www.oreilly.co.jp/books/9784814401130/"
+    title: "LLMのプロンプトエンジニアリング - O'Reilly Japan"
 ---
 
 ## GitHub Copilotを生んだ開発者が教える生成AIアプリケーション開発
@@ -12,8 +15,6 @@ John Berryman, Albert Ziegler
 #[[LLM]]
 
 ![LLMのプロンプトエンジニアリング](https://www.oreilly.co.jp/books/images/picture_large978-4-8144-0113-0.jpeg)
-
-[LLMのプロンプトエンジニアリング - O'Reilly Japan](https://www.oreilly.co.jp/books/9784814401130/)
 
 ## 第I部 基礎
 

@@ -1,5 +1,7 @@
 ---
 type: Blog
+sources:
+  - resource: "https://www.noidea.dog/glue/"
 ---
 
 Author:
@@ -9,5 +11,3 @@ Author:
 
 - 昇進制度は可視的な技術成果を評価し、関係性・組織的な労働を見落とす
 - 対策: マネージャと昇進基準を会話する／Tech Lead 等の肩書きで正当化する／成果を可視化する／技術力も意図的に伸ばす（[[スタッフエンジニアの道]] の IC パス）
-
-<https://www.noidea.dog/glue/>

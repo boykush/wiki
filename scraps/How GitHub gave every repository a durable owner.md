@@ -1,5 +1,7 @@
 ---
 type: Blog
+sources:
+  - resource: "https://github.blog/security/application-security/how-github-gave-every-repository-a-durable-owner/"
 ---
 
 #[[Security]]
@@ -11,5 +13,3 @@ type: Blog
 - 実装: [[GitHub App]] + Kubernetes CronJob で定期実行。30日猶予後もオーナーなしのリポジトリは自動アーカイブ（可逆・非破壊）
 - 教訓: 土曜朝の初回実行は失敗（グローバル企業は常時オンライン）。low water mark（一括アーカイブ数の上限閾値）と @-mention 通知の追加はインシデントから学んだ設計
 - 成果: アクティブリポジトリ約 3,000 件に整理し新規作成時もオーナーシップを必須化
-
-<https://github.blog/security/application-security/how-github-gave-every-repository-a-durable-owner/>

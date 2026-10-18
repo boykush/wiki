@@ -1,5 +1,8 @@
 ---
 type: Blog
+sources:
+  - resource: "https://leantrenches.wordpress.com/2013/10/16/scaling-agile-at-spotify-ja/"
+    title: "日本語訳"
 ---
 
 #[[Team Organization]]
@@ -9,5 +12,3 @@ type: Blog
 自律的な[[クロスファンクショナルチーム|職能横断型チーム]]をスクワッドと呼び、スクワッドはトライブにまとめられる。
 
 トライブ内の似た職能同士はチャプターという単位でプラクティスを共有する
-
-- [日本語訳](https://leantrenches.wordpress.com/2013/10/16/scaling-agile-at-spotify-ja/)

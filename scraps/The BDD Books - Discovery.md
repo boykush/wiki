@@ -1,5 +1,8 @@
 ---
 type: Book
+sources:
+  - resource: "https://leanpub.com/bddbooks-discovery-jp"
+    title: "Leanpub"
 ---
 
 ### Authors
@@ -9,8 +12,6 @@ type: Book
 [[BDD]]の[[BDD/発見|発見]]プラクティスを扱った書籍
 
 ![The BDD Books - Discovery](https://d2sofvawe08yqg.cloudfront.net/bddbooks-discovery-jp/s_hero?1650559035.jpg)
-
-[Leanpub](https://leanpub.com/bddbooks-discovery-jp)
 
 ### 第1章 BDDとは何ですか？
 

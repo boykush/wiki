@@ -1,5 +1,8 @@
 ---
 type: Book
+sources:
+  - resource: "https://www.shoeisha.co.jp/book/detail/9784798159294"
+    title: "翔泳社"
 ---
 
 ## セキュアな認可システムを適用するための原則と実践
@@ -11,8 +14,6 @@ Justin Richer, Antonio Sanso
 #[[API Architecture]] #[[Security/Authorization]] #[[Security/Authentication]]
 
 ![OAuth徹底入門](https://www.seshop.com/static/images/product/22242/L.png)
-
-[翔泳社](https://www.shoeisha.co.jp/book/detail/9784798159294)
 
 ## 第1部　はじめの一歩
 

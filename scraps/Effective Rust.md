@@ -1,5 +1,8 @@
 ---
 type: Book
+sources:
+  - resource: "https://www.oreilly.co.jp/books/9784814400942/"
+    title: "O'Reilly Japan"
 ---
 
 ## [[Rust]]コードを改善し、エコシステムを最大限に活用するための35項目
@@ -11,8 +14,6 @@ David Drysdale, 中田 秀基
 #[[Programming]]
 
 ![cover](https://www.oreilly.co.jp/books/images/picture_large978-4-8144-0094-2.jpeg)
-
-[O'Reilly Japan](https://www.oreilly.co.jp/books/9784814400942/)
 
 ### 1章　型
 
