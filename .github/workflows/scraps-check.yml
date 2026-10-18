@@ -45,7 +45,7 @@ jobs:
 
       - name: Setup Scraps
         if: steps.changes.outputs.relevant == 'true'
-        uses: boykush/scraps@fac231f0b1f8f13756d2e163b355c6b5733e4815 # v5.0.0
+        uses: boykush/scraps@2083bd0bfdc92f1ed9e6f5d44597f0389af0cae1 # v5.1.0
 
       - name: Check
         if: steps.changes.outputs.relevant == 'true'
