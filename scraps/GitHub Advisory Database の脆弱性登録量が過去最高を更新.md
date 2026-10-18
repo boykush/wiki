@@ -1,5 +1,6 @@
 ---
 type: Blog
+resource: "https://github.blog/security/supply-chain-security/inside-the-advisory-database-and-what-happens-when-vulnerability-volume-breaks-records/"
 ---
 
 #[[Security]]
@@ -10,5 +11,3 @@ type: Blog
 - 流入増: Private Vulnerability Reports が週〜550 件（1月）→ 週 3,000 件超（5月）、CVE 申請は5月単月で約 4,000 件（前年比ほぼ10倍）
 - 影響: 4月中旬以降、相当数のレビューに数週間を要するように。一方で CVE 採番率は 91〜94% を維持
 - 背景: private vulnerability reporting を有効化したリポジトリは 170 万超
-
-<https://github.blog/security/supply-chain-security/inside-the-advisory-database-and-what-happens-when-vulnerability-volume-breaks-records/>

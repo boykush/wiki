@@ -1,5 +1,6 @@
 ---
 type: Book
+resource: "https://www.lambdanote.com/collections/haskell"
 ---
 
 ### Authors
@@ -9,8 +10,6 @@ Graham Hutton
 #[[Programming]]
 
 ![Programming in Haskell 2nd edition](https://cdn.shopify.com/s/files/1/1634/7169/products/cover_530x.png?v=1564720482)
-
-[Lambda Note](https://www.lambdanote.com/collections/haskell)
 
 ## 第I部 基礎概念
 

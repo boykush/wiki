@@ -1,5 +1,6 @@
 ---
 type: Book
+resource: "https://www.shoeisha.co.jp/book/detail/9784798188379"
 ---
 
 ### Authors
@@ -10,8 +11,6 @@ Mauricio Salatino
 [[Platform Engineering]] #[[Cloud Native]]
 
 ![Kubernetesで実践する Platform Engineering](https://www.seshop.com/static/images/product/26726/L.png)
-
-[Kubernetesで実践する Platform Engineering（Mauricio Salatino 株式会社スリーシェイク 元内 柊也 木曽 和則 戸澤 涼 長谷川 広樹）｜翔泳社の本](https://www.shoeisha.co.jp/book/detail/9784798188379)
 
 ## 第1章　Kubernetes上のプラットフォーム（の台頭）
 

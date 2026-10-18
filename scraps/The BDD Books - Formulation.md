@@ -1,5 +1,6 @@
 ---
 type: Book
+resource: "https://leanpub.com/bddbooks-formulation-jp"
 ---
 
 ## BDD/ATDDの第2ステップ：Given/When/Thenを使って具体例を定式化する
@@ -14,8 +15,6 @@ type: Book
 [[BDD]]の[[BDD/定式化|定式化]]プラクティスを扱った書籍
 
 ![The BDD Books - Formulation](https://d2sofvawe08yqg.cloudfront.net/bddbooks-formulation-jp/s_hero?1723769276)
-
-[The BDD Books - Formulation (Japanese Edition)](https://leanpub.com/bddbooks-formulation-jp)
 
 ## 1. 定式化とは何ですか？
 

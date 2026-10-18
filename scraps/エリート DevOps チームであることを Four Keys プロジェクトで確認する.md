@@ -1,5 +1,9 @@
 ---
 type: Blog
+resource: "https://cloud.google.com/blog/ja/products/gcp/using-the-four-keys-to-measure-your-devops-performance"
+sources:
+  - resource: "https://cloud.google.com/blog/products/devops-sre/using-the-four-keys-to-measure-your-devops-performance?hl=en"
+    title: "英語"
 ---
 
 [[Four Keys]]の計測方法についてGoogle Cloudブログ上で説明されている
@@ -14,10 +18,5 @@ type: Blog
   - デプロイが原因で本番環境で障害が発生する割合（%）
 - [[Four Keys/サービス復元時間]]
   - 組織が本番環境での障害から回復するのにかかる時間
-
----
-
-- [日本語](https://cloud.google.com/blog/ja/products/gcp/using-the-four-keys-to-measure-your-devops-performance)
-- [英語](https://cloud.google.com/blog/products/devops-sre/using-the-four-keys-to-measure-your-devops-performance?hl=en)
 
 [[DevOps]]

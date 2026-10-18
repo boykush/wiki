@@ -1,5 +1,6 @@
 ---
 type: Blog
+resource: "https://blog.flatt.tech/entry/2026-github-actions-security-part4"
 ---
 
 #[[Security]] #[[Continuous Integration]]
@@ -11,5 +12,3 @@ type: Blog
 - **トリアージの課題**: 数百件規模の検知が積み上がりやすく、Severity はカテゴリ固定で組織文脈を反映しない；複数ツールが同一箇所を別ルール名で重複報告する
 - **リスク評価の視点**: 単一脆弱性ではなく「連鎖」で評価する（`pull_request_target` + `contents: write` が組み合わさって [[サプライチェーン攻撃]] に至るかを組織全体で確認）
 - **対策の3軸**: 侵害の抑止 / 被害の局所化（fine-grained PAT・Environments 保護）/ 追跡可能性（runner 上の挙動記録）
-
-<https://blog.flatt.tech/entry/2026-github-actions-security-part4>

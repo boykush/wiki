@@ -1,5 +1,6 @@
 ---
 type: Blog
+resource: "https://blog.flatt.tech/entry/bitwarden_compromise"
 ---
 
 #[[Security]]
@@ -13,5 +14,3 @@ npmパッケージ`@bitwarden/cli@2026.4.0`がマルウェア混入により侵�
 - 発火点: `npm install`時の`preinstall`フック、および`bw`コマンド実行時
 - 窃取対象: SSH鍵 / [[PAT|GitHub PAT]] / npmトークン / クラウド資格情報 / `~/.claude.json`等のAI設定 / `.env`
 - 対策: `2026.4.1`へ更新、資格情報ローテーション、`npm ci --ignore-scripts`、`min-release-age`の設定
-
-<https://blog.flatt.tech/entry/bitwarden_compromise>

@@ -1,5 +1,6 @@
 ---
 type: Book
+resource: "https://leanpub.com/agiletesting-condensed-japanese-edition"
 ---
 
 ### Authors
@@ -9,8 +10,6 @@ type: Book
 [[Agile Testing]]の考え方を凝縮してまとめた書籍
 
 ![Agile Testing Condensed](https://d2sofvawe08yqg.cloudfront.net/agiletesting-condensed-japanese-edition/s_hero2x?1620631141.jpg)
-
-[Leanpub](https://leanpub.com/agiletesting-condensed-japanese-edition)
 
 ## セクション 1 基礎
 

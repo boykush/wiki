@@ -1,5 +1,6 @@
 ---
 type: Blog
+resource: "https://gigazine.net/news/20260821-why-github-down/"
 ---
 
 #[[Cloud Native]] #[[Observability]]
@@ -8,5 +9,3 @@ type: Blog
 
 - [[Istio]] の[[サイドカープロキシ|サイドカー]]が同時処理数の上限に達したが、オートスケールはサイドカーの容量を考慮していなかった
 - 容量不足は内部の認証経路へ波及し、多数のサービスが認証に依存するため github.com や [[GitHub Actions]] へ広がる[[カスケード障害]]となった
-
-<https://gigazine.net/news/20260821-why-github-down/>

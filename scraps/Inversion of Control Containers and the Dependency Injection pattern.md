@@ -1,5 +1,6 @@
 ---
 type: Blog
+resource: "https://martinfowler.com/articles/injection.html"
 ---
 
 #[[Software Design]]
@@ -23,7 +24,5 @@ type: Blog
 ### 影響
 
 この記事により「Dependency Injection」という用語が確立され、以降のフレームワーク設計やソフトウェアアーキテクチャに大きな影響を与えた。Spring Frameworkも当初は「IoC」を使用していたが、後に「DI」という用語を採用
-
-<https://martinfowler.com/articles/injection.html>
 
 日本語訳：<https://kakutani.com/trans/fowler/injection.html>

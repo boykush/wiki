@@ -1,5 +1,6 @@
 ---
 type: Book
+resource: "https://www.oreilly.co.jp/books/9784814400898/"
 ---
 
 ## モノリシックからマイクロサービスへとアーキテクチャを進化させるための実践的手法
@@ -11,8 +12,6 @@ James Gough, Daniel Bryant, Matthew Auburn
 #[[API Architecture]]
 
 ![マスタリングAPIアーキテクチャ](https://www.oreilly.co.jp/books/images/picture_large978-4-8144-0089-8.jpeg)
-
-[O'Reilly Japan](https://www.oreilly.co.jp/books/9784814400898/)
 
 ### イントロダクション
 

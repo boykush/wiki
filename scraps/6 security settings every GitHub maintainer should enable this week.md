@@ -1,5 +1,6 @@
 ---
 type: Blog
+resource: "https://github.blog/security/6-security-settings-every-github-maintainer-should-enable-this-week/"
 ---
 
 #[[Security]] #[[Continuous Integration]]
@@ -12,5 +13,3 @@ type: Blog
 - **[[Dependabot]] + dependency review**: 依存の既知脆弱性をアラートし、PR レビュー画面でセキュリティ情報を表示
 - **Code scanning**: PR ごとに [[SAST]] を自動実行、SQL インジェクション・コマンドインジェクション等を検出。結果は [[SARIF]] 形式で Security タブに集約
 - **Branch protection**: デフォルトブランチへの直接 push を禁止し PR 承認を必須化。[[require status checks]] と組み合わせ [[safe-settings]] で組織全体に適用可
-
-<https://github.blog/security/6-security-settings-every-github-maintainer-should-enable-this-week/>

@@ -1,5 +1,6 @@
 ---
 type: Slide
+resource: "https://speakerdeck.com/syossan27/ren-sregabu-ndaplatform-engineeringsumorusutatoshi-jian-lu-kuraudoneiteibuhui-yi-ban"
 ---
 
 [[Platform Engineering]] #[[Team Organization]]
@@ -9,5 +10,3 @@ type: Slide
 - アプリエンジニア→SRE→PE と段階的に守備範囲を広げた実践録
 - Platform as Code（[[Terraform]] / [[Infrastructure as Code|IaC]]）、AI 付き Slack bot によるセルフサービス権限管理、[[Golden Path]] 改善、Workload Identity 導入
 - 制約はリソース不足と設計の相談相手不在。AI が一人実践のイネーブラーになった
-
-<https://speakerdeck.com/syossan27/ren-sregabu-ndaplatform-engineeringsumorusutatoshi-jian-lu-kuraudoneiteibuhui-yi-ban>

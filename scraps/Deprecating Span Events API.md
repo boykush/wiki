@@ -1,5 +1,6 @@
 ---
 type: Blog
+resource: "https://opentelemetry.io/blog/2026/deprecating-span-events/"
 ---
 
 #[[Observability]] #[[Cloud Native]]
@@ -8,5 +9,3 @@ type: Blog
 
 - Span Eventsとログベースイベントの重複を解消し、「イベント = 名前付き[[ログ]]」としてLogs APIで記録する
 - 既存のSpan Eventデータは引き続き有効で、SDK互換レイヤーによりスパン上のイベント可視性も維持される
-
-<https://opentelemetry.io/blog/2026/deprecating-span-events/>

@@ -1,5 +1,6 @@
 ---
 type: Blog
+resource: "https://www.ryuzee.com/contents/blog/14605"
 ---
 
 #[[Agile]]
@@ -23,5 +24,3 @@ type: Blog
 - 学習に投資し続ける
 
 前提として[[Announcing the 2025 DORA Report]]を参照している
-
-<https://www.ryuzee.com/contents/blog/14605>

@@ -1,5 +1,6 @@
 ---
 type: Blog
+resource: "https://weaveintelligence.io/blog/what-is-an-agentic-development-platform"
 ---
 
 [[Agentic Engineering Platform]] #[[LLM]]
@@ -8,5 +9,3 @@ type: Blog
 
 - パスという語の起点として、[[Charity Majors]]の[[Golden Path]]の記事を挙げる
 - 求められる AEP の成熟度は、組織が [[Four levels of agentic software development|agentic なソフトウェア開発の4段階]]のどこにいるかで決まるとし、段階が上がるほど Agent Infrastructure に要るものが増える（[[Agentic SDLC]]）
-
-<https://weaveintelligence.io/blog/what-is-an-agentic-development-platform>

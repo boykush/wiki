@@ -1,5 +1,9 @@
 ---
 type: Book
+resource: "https://www.oreilly.co.jp/books/9784873117911/"
+sources:
+  - resource: "https://sre.google/sre-book/table-of-contents/"
+    title: "Google - Site Reliability Engineering"
 ---
 
 ## Googleの信頼性を支えるエンジニアリングチーム
@@ -12,8 +16,6 @@ Betsy Beyer, Chris Jones, Jennifer Petoff, Niall Richard Murphy
 
 ![SRE サイトリライアビリティエンジニアリング](https://www.oreilly.co.jp/books/images/picture_large978-4-87311-791-1.jpeg)
 
-[O'Reilly Japan](https://www.oreilly.co.jp/books/9784873117911/)
-
 [[SRE]]について[[Google]]エンジニアが書いた書籍
 
 キーワード
@@ -22,8 +24,6 @@ Betsy Beyer, Chris Jones, Jennifer Petoff, Niall Richard Murphy
 - [[サービスの信頼性の階層]]
 
 英語版は無料で公開されている
-
-[Google - Site Reliability Engineering](https://sre.google/sre-book/table-of-contents/)
 
 ## 第Ⅰ部　イントロダクション
 

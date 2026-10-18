@@ -1,5 +1,6 @@
 ---
 type: Blog
+resource: "https://blog.flatt.tech/entry/asyncapi_compromise"
 ---
 
 #[[Security]]
@@ -11,5 +12,3 @@ type: Blog
 - Miasma の機能: C2（`85.137.53.71:8080`）へ 30 秒間隔ビーコン・12 種の遠隔指令（ShellExec 含む）、IPFS / Nostr / libp2p / BitTorrent DHT / Ethereum マルチチャネル通信、LAN スキャン横展開、AI ツール設定汚染（`.claude/settings.json` / `.vscode/tasks.json` / `.gemini/settings.json` / `.cursor/rules/setup.mdc`）、スポーン証明書チェーンによる最大 4 世代の制御拡散
 - 窃取対象: AWS / Kubernetes / Git / npm / CI/CD クレデンシャルと環境変数シークレット
 - 対応: 侵害前バージョン（`@asyncapi/specs@6.11.1` 以前）へ切り替え後クレデンシャル全ローテーション、永続化ファイル除去（`~/.local/share/NodeJS/sync.js`・`~/.config/.miasma/` 等）、`min-release-age=7`（`.npmrc`）設定を推奨。`npm ci --ignore-scripts` は本件には無効（malicious コードが `index.js` 本体に注入されているため）
-
-<https://blog.flatt.tech/entry/asyncapi_compromise>
