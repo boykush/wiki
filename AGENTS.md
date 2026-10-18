@@ -20,6 +20,8 @@
 
 例外: 対象が既に特定できており機械的な一括編集を行う場合のみ Read / Edit / Write を直接使ってよい。**「どこかにある何か」を探す grep は禁止** — `scraps search` を使う。
 
+ただし `scraps search` が照合するのは key・title・description・tags だけで、本文は見ない。本文中の文字列（新しいページへの言及など）を探すときに限り、`scraps/` の `*.md` を grep してよい。
+
 ## AIによる操作
 
 - 新しいページの作成には [.claude/skills/learn/SKILL.md](.claude/skills/learn/SKILL.md) を使う。説明と理解度チェックを経て、ユーザーが理解できた内容だけを書く。
