@@ -1,5 +1,5 @@
 lockfile_version: '1'
-apm_version: 0.31.0
+apm_version: 0.33.0
 dependencies:
 - repo_url: boykush/ai-plugins
   name: adr-remote-mcp
@@ -52,9 +52,9 @@ dependencies:
 - repo_url: boykush/scraps
   name: pkm
   host: github.com
-  resolved_commit: dc03aa9ea49cb8275907c19b8827e7d8632c5618
-  resolved_ref: dc03aa9ea49cb8275907c19b8827e7d8632c5618
-  version: 0.3.1
+  resolved_commit: 94582f30cf00f73a39ffdbe0c40f279df5d65894
+  resolved_ref: 94582f30cf00f73a39ffdbe0c40f279df5d65894
+  version: 0.3.2
   virtual_path: plugins/pkm
   is_virtual: true
   package_type: marketplace_plugin
@@ -68,11 +68,11 @@ dependencies:
   - .claude/skills/learn
   - .claude/skills/learn/SKILL.md
   deployed_file_hashes:
-    .agents/skills/digest/SKILL.md: sha256:e6c4f8cf93680d7375302324d05911079a3feda58050a9a240e33b481edd5921
-    .agents/skills/learn/SKILL.md: sha256:d933c3bc0e654f6ae263c5a9742431f1a3a0da3dafd6bfa54a4c341d920e7a6f
-    .claude/skills/digest/SKILL.md: sha256:e6c4f8cf93680d7375302324d05911079a3feda58050a9a240e33b481edd5921
-    .claude/skills/learn/SKILL.md: sha256:d933c3bc0e654f6ae263c5a9742431f1a3a0da3dafd6bfa54a4c341d920e7a6f
-  content_hash: sha256:2cc328937be408ad28e566c6314e3c223e562d4e6c675ec3bcad218777da4f99
+    .agents/skills/digest/SKILL.md: sha256:9e13d519e66221f0f71d4cb4b8f95353234bcf1cf896b8c1a7ef855369db6c78
+    .agents/skills/learn/SKILL.md: sha256:acc1931fe2c46f98888aad511968363fc3926550dff2fbaef0ca066c6ea12f59
+    .claude/skills/digest/SKILL.md: sha256:9e13d519e66221f0f71d4cb4b8f95353234bcf1cf896b8c1a7ef855369db6c78
+    .claude/skills/learn/SKILL.md: sha256:acc1931fe2c46f98888aad511968363fc3926550dff2fbaef0ca066c6ea12f59
+  content_hash: sha256:95ac381a6a766a466560e18b6f26333709885ff4839c0dfca83d9a12efcaa5e8
 deployments:
 - kind: project-relative
   target: claude
@@ -163,7 +163,7 @@ deployments:
   owners:
   - boykush/scraps/plugins/pkm
   active_owner: boykush/scraps/plugins/pkm
-  content_hash: sha256:e6c4f8cf93680d7375302324d05911079a3feda58050a9a240e33b481edd5921
+  content_hash: sha256:9e13d519e66221f0f71d4cb4b8f95353234bcf1cf896b8c1a7ef855369db6c78
 - kind: project-relative
   target: claude
   value: .claude/skills/learn
@@ -181,7 +181,7 @@ deployments:
   owners:
   - boykush/scraps/plugins/pkm
   active_owner: boykush/scraps/plugins/pkm
-  content_hash: sha256:d933c3bc0e654f6ae263c5a9742431f1a3a0da3dafd6bfa54a4c341d920e7a6f
+  content_hash: sha256:acc1931fe2c46f98888aad511968363fc3926550dff2fbaef0ca066c6ea12f59
 - kind: project-relative
   target: codex
   value: .agents/skills/ade-rule-dsl
@@ -271,7 +271,7 @@ deployments:
   owners:
   - boykush/scraps/plugins/pkm
   active_owner: boykush/scraps/plugins/pkm
-  content_hash: sha256:e6c4f8cf93680d7375302324d05911079a3feda58050a9a240e33b481edd5921
+  content_hash: sha256:9e13d519e66221f0f71d4cb4b8f95353234bcf1cf896b8c1a7ef855369db6c78
 - kind: project-relative
   target: codex
   value: .agents/skills/learn
@@ -289,7 +289,7 @@ deployments:
   owners:
   - boykush/scraps/plugins/pkm
   active_owner: boykush/scraps/plugins/pkm
-  content_hash: sha256:d933c3bc0e654f6ae263c5a9742431f1a3a0da3dafd6bfa54a4c341d920e7a6f
+  content_hash: sha256:acc1931fe2c46f98888aad511968363fc3926550dff2fbaef0ca066c6ea12f59
 - kind: uri
   target: mcp
   value: adr
