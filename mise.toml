@@ -2,7 +2,7 @@
 "github:boykush/scraps" = "v5.1.1"
 uv = "0.12.18"
 # Scans the MCP server image in CI (.github/workflows/wiki-mcp-server-image.yml).
-trivy = "0.75.0"
+trivy = "0.76.1"
 
 [env]
 SCRAPS_DIRECTORY = "{{config_root}}/scraps"
