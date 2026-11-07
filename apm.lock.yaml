@@ -52,8 +52,8 @@ dependencies:
 - repo_url: boykush/scraps
   name: pkm
   host: github.com
-  resolved_commit: b5047af0c6b6b18bec5f7debb567de80a7962d80
-  resolved_ref: b5047af0c6b6b18bec5f7debb567de80a7962d80
+  resolved_commit: 647ac2067af802e17902fd41e10e84112f1bc2ef
+  resolved_ref: 647ac2067af802e17902fd41e10e84112f1bc2ef
   version: 0.3.3
   virtual_path: plugins/pkm
   is_virtual: true
