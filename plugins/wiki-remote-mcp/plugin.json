@@ -1,0 +1,9 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "author": {
+    "name": "boykush"
+  },
+  "description": "Remote MCP server for boykush's Scraps wiki. Search and read the wiki from any repository without restating the server in each one.",
+  "name": "wiki-remote-mcp",
+  "version": "0.1.0"
+}

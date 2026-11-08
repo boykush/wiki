@@ -42,8 +42,8 @@ metadata:
     boykush/wiki（Scraps wiki）を検索・参照する remote MCP サーバー。読み取り専用・無認証。公開エンドポイントは
     infrastructure-as-code が持つ
   links:
-    - url: https://github.com/boykush/ai-plugins/blob/main/plugins/wiki-remote-mcp/apm.yml
-      title: 接続先の持ち主（ai-plugins）
+    - url: https://github.com/boykush/wiki/blob/main/plugins/wiki-remote-mcp/mcp.json
+      title: 接続先の持ち主（plugin wiki-remote-mcp）
       icon: github
 spec:
   type: mcp-server
@@ -53,3 +53,20 @@ spec:
   remotes:
     - type: streamable-http
       url: https://wiki-mcp.boykush.com/mcp
+---
+apiVersion: backstage.io/v1alpha1
+kind: AiResource
+metadata:
+  name: wiki-remote-mcp
+  description: >-
+    wiki-mcp への参照を1つ持つだけの plugin（Agent Plugins の形）。apm の package にして配るのは ai-plugins
+  links:
+    - url: https://backstage.boykush.com/catalog/default/api/wiki-mcp
+      title: MCP サーバー（wiki-mcp）
+      icon: kind:api
+spec:
+  type: plugin
+  lifecycle: production
+  owner: user:boykush
+  system: knowledge
+  skills: []
