@@ -24,9 +24,9 @@ dependencies:
 - repo_url: boykush/scraps
   name: pkm
   host: github.com
-  resolved_commit: 647ac2067af802e17902fd41e10e84112f1bc2ef
-  resolved_ref: 647ac2067af802e17902fd41e10e84112f1bc2ef
-  version: 0.3.3
+  resolved_commit: 720f0d78a4ad5f95c817164270a3e6182cbebbfb
+  resolved_ref: 720f0d78a4ad5f95c817164270a3e6182cbebbfb
+  version: 0.3.4
   virtual_path: plugins/pkm
   is_virtual: true
   package_type: marketplace_plugin
@@ -40,11 +40,11 @@ dependencies:
   - .claude/skills/learn
   - .claude/skills/learn/SKILL.md
   deployed_file_hashes:
-    .agents/skills/digest/SKILL.md: sha256:9e13d519e66221f0f71d4cb4b8f95353234bcf1cf896b8c1a7ef855369db6c78
+    .agents/skills/digest/SKILL.md: sha256:bebd3d345be6fc0f860b7469c983a13040a16005fea565cfbede7c75138de075
     .agents/skills/learn/SKILL.md: sha256:0bbf4d5dba5a42d45b63f1c8550dafa317d3ef68cbadcf8374ac09200969bc17
-    .claude/skills/digest/SKILL.md: sha256:9e13d519e66221f0f71d4cb4b8f95353234bcf1cf896b8c1a7ef855369db6c78
+    .claude/skills/digest/SKILL.md: sha256:bebd3d345be6fc0f860b7469c983a13040a16005fea565cfbede7c75138de075
     .claude/skills/learn/SKILL.md: sha256:0bbf4d5dba5a42d45b63f1c8550dafa317d3ef68cbadcf8374ac09200969bc17
-  content_hash: sha256:1a472c7c85269f504f5c22209a6df558c2a074510fe54846adbbab781f486653
+  content_hash: sha256:0b89cad745ec5beaedeb44b71935351bed05cb4709eef0ddeb6c9a47003e1b0b
 - repo_url: boykush/adr
   name: ade-rule-dsl
   host: github.com
@@ -203,7 +203,7 @@ deployments:
   owners:
   - boykush/scraps/plugins/pkm
   active_owner: boykush/scraps/plugins/pkm
-  content_hash: sha256:9e13d519e66221f0f71d4cb4b8f95353234bcf1cf896b8c1a7ef855369db6c78
+  content_hash: sha256:bebd3d345be6fc0f860b7469c983a13040a16005fea565cfbede7c75138de075
 - kind: project-relative
   target: claude
   value: .claude/skills/learn
@@ -311,7 +311,7 @@ deployments:
   owners:
   - boykush/scraps/plugins/pkm
   active_owner: boykush/scraps/plugins/pkm
-  content_hash: sha256:9e13d519e66221f0f71d4cb4b8f95353234bcf1cf896b8c1a7ef855369db6c78
+  content_hash: sha256:bebd3d345be6fc0f860b7469c983a13040a16005fea565cfbede7c75138de075
 - kind: project-relative
   target: codex
   value: .agents/skills/learn
