@@ -24,8 +24,8 @@ dependencies:
 - repo_url: boykush/scraps
   name: pkm
   host: github.com
-  resolved_commit: 89b81187c27e4cbcb1a4e24b3183cad5405cd6d3
-  resolved_ref: 89b81187c27e4cbcb1a4e24b3183cad5405cd6d3
+  resolved_commit: fbd5f2c73e906ee5015fc9698e6ec6c92242e50b
+  resolved_ref: fbd5f2c73e906ee5015fc9698e6ec6c92242e50b
   version: 0.3.4
   virtual_path: plugins/pkm
   is_virtual: true
@@ -48,8 +48,8 @@ dependencies:
 - repo_url: boykush/adr
   name: ade-rule-dsl
   host: github.com
-  resolved_commit: a3191f20bd8bd51504416917cdf324df84a9dd22
-  resolved_ref: a3191f20bd8bd51504416917cdf324df84a9dd22
+  resolved_commit: 7b2c97596cb0f5aa9c3b51c863cff6e1db7f76c0
+  resolved_ref: 7b2c97596cb0f5aa9c3b51c863cff6e1db7f76c0
   version: unknown
   virtual_path: plugins/adr-remote-mcp/skills/ade-rule-dsl
   is_virtual: true
@@ -76,8 +76,8 @@ dependencies:
 - repo_url: boykush/adr
   name: adr-check
   host: github.com
-  resolved_commit: a3191f20bd8bd51504416917cdf324df84a9dd22
-  resolved_ref: a3191f20bd8bd51504416917cdf324df84a9dd22
+  resolved_commit: 7b2c97596cb0f5aa9c3b51c863cff6e1db7f76c0
+  resolved_ref: 7b2c97596cb0f5aa9c3b51c863cff6e1db7f76c0
   version: unknown
   virtual_path: plugins/adr-remote-mcp/skills/adr-check
   is_virtual: true
@@ -96,8 +96,8 @@ dependencies:
 - repo_url: boykush/adr
   name: adr-review
   host: github.com
-  resolved_commit: a3191f20bd8bd51504416917cdf324df84a9dd22
-  resolved_ref: a3191f20bd8bd51504416917cdf324df84a9dd22
+  resolved_commit: 7b2c97596cb0f5aa9c3b51c863cff6e1db7f76c0
+  resolved_ref: 7b2c97596cb0f5aa9c3b51c863cff6e1db7f76c0
   version: unknown
   virtual_path: plugins/adr-remote-mcp/skills/adr-review
   is_virtual: true
