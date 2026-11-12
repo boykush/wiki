@@ -24,9 +24,9 @@ dependencies:
 - repo_url: boykush/scraps
   name: pkm
   host: github.com
-  resolved_commit: 6ea375f4fab87544747369901955d51391f388f0
-  resolved_ref: 6ea375f4fab87544747369901955d51391f388f0
-  version: 0.3.4
+  resolved_commit: 67839c467fe2979108f848fdcb1ec99e517a6c24
+  resolved_ref: 67839c467fe2979108f848fdcb1ec99e517a6c24
+  version: 0.3.5
   virtual_path: plugins/pkm
   is_virtual: true
   package_type: marketplace_plugin
@@ -41,10 +41,10 @@ dependencies:
   - .claude/skills/learn/SKILL.md
   deployed_file_hashes:
     .agents/skills/digest/SKILL.md: sha256:bebd3d345be6fc0f860b7469c983a13040a16005fea565cfbede7c75138de075
-    .agents/skills/learn/SKILL.md: sha256:0bbf4d5dba5a42d45b63f1c8550dafa317d3ef68cbadcf8374ac09200969bc17
+    .agents/skills/learn/SKILL.md: sha256:34b1836fcf8a4a72f89f39d8c608385e49c0a178144e6aa66234eee506097177
     .claude/skills/digest/SKILL.md: sha256:bebd3d345be6fc0f860b7469c983a13040a16005fea565cfbede7c75138de075
-    .claude/skills/learn/SKILL.md: sha256:0bbf4d5dba5a42d45b63f1c8550dafa317d3ef68cbadcf8374ac09200969bc17
-  content_hash: sha256:0b89cad745ec5beaedeb44b71935351bed05cb4709eef0ddeb6c9a47003e1b0b
+    .claude/skills/learn/SKILL.md: sha256:34b1836fcf8a4a72f89f39d8c608385e49c0a178144e6aa66234eee506097177
+  content_hash: sha256:5607eada9667d1764f0764e6ecd5a46dddcf13f2d3a6e5223bdaadfe64db9cfa
 - repo_url: boykush/adr
   name: ade-rule-dsl
   host: github.com
@@ -221,7 +221,7 @@ deployments:
   owners:
   - boykush/scraps/plugins/pkm
   active_owner: boykush/scraps/plugins/pkm
-  content_hash: sha256:0bbf4d5dba5a42d45b63f1c8550dafa317d3ef68cbadcf8374ac09200969bc17
+  content_hash: sha256:34b1836fcf8a4a72f89f39d8c608385e49c0a178144e6aa66234eee506097177
 - kind: project-relative
   target: codex
   value: .agents/skills/ade-rule-dsl
@@ -329,7 +329,7 @@ deployments:
   owners:
   - boykush/scraps/plugins/pkm
   active_owner: boykush/scraps/plugins/pkm
-  content_hash: sha256:0bbf4d5dba5a42d45b63f1c8550dafa317d3ef68cbadcf8374ac09200969bc17
+  content_hash: sha256:34b1836fcf8a4a72f89f39d8c608385e49c0a178144e6aa66234eee506097177
 - kind: uri
   target: mcp
   value: adr
