@@ -24,9 +24,9 @@ dependencies:
 - repo_url: boykush/scraps
   name: pkm
   host: github.com
-  resolved_commit: ab1632370010db7c08468bea5f2b09c313429462
-  resolved_ref: ab1632370010db7c08468bea5f2b09c313429462
-  version: 0.3.5
+  resolved_commit: 0990f9f7e9e780bd24f4f387c5d29eb5d4b7b073
+  resolved_ref: 0990f9f7e9e780bd24f4f387c5d29eb5d4b7b073
+  version: 0.4.1
   virtual_path: plugins/pkm
   is_virtual: true
   package_type: marketplace_plugin
@@ -35,21 +35,27 @@ dependencies:
   - .agents/skills/digest/SKILL.md
   - .agents/skills/learn
   - .agents/skills/learn/SKILL.md
+  - .agents/skills/verify
+  - .agents/skills/verify/SKILL.md
   - .claude/skills/digest
   - .claude/skills/digest/SKILL.md
   - .claude/skills/learn
   - .claude/skills/learn/SKILL.md
+  - .claude/skills/verify
+  - .claude/skills/verify/SKILL.md
   deployed_file_hashes:
     .agents/skills/digest/SKILL.md: sha256:bebd3d345be6fc0f860b7469c983a13040a16005fea565cfbede7c75138de075
     .agents/skills/learn/SKILL.md: sha256:34b1836fcf8a4a72f89f39d8c608385e49c0a178144e6aa66234eee506097177
+    .agents/skills/verify/SKILL.md: sha256:5e50e537c2f159db674c3bfdaf0b950ba0baf70be136e4c3a3622a2afebc3635
     .claude/skills/digest/SKILL.md: sha256:bebd3d345be6fc0f860b7469c983a13040a16005fea565cfbede7c75138de075
     .claude/skills/learn/SKILL.md: sha256:34b1836fcf8a4a72f89f39d8c608385e49c0a178144e6aa66234eee506097177
-  content_hash: sha256:5607eada9667d1764f0764e6ecd5a46dddcf13f2d3a6e5223bdaadfe64db9cfa
+    .claude/skills/verify/SKILL.md: sha256:5e50e537c2f159db674c3bfdaf0b950ba0baf70be136e4c3a3622a2afebc3635
+  content_hash: sha256:6ccafc4aefade4a64fda8cdfa8df1112cb213da1391e708830b2bc491f5cd8aa
 - repo_url: boykush/adr
   name: ade-rule-dsl
   host: github.com
-  resolved_commit: c5cac3dd412360b3cc0b17b6bde61e512d16cf35
-  resolved_ref: c5cac3dd412360b3cc0b17b6bde61e512d16cf35
+  resolved_commit: ddcfcde82f15fcd6bbe066436d66d28d20bcaef3
+  resolved_ref: ddcfcde82f15fcd6bbe066436d66d28d20bcaef3
   version: unknown
   virtual_path: plugins/adr-remote-mcp/skills/ade-rule-dsl
   is_virtual: true
@@ -76,8 +82,8 @@ dependencies:
 - repo_url: boykush/adr
   name: adr-check
   host: github.com
-  resolved_commit: c5cac3dd412360b3cc0b17b6bde61e512d16cf35
-  resolved_ref: c5cac3dd412360b3cc0b17b6bde61e512d16cf35
+  resolved_commit: ddcfcde82f15fcd6bbe066436d66d28d20bcaef3
+  resolved_ref: ddcfcde82f15fcd6bbe066436d66d28d20bcaef3
   version: unknown
   virtual_path: plugins/adr-remote-mcp/skills/adr-check
   is_virtual: true
@@ -96,8 +102,8 @@ dependencies:
 - repo_url: boykush/adr
   name: adr-review
   host: github.com
-  resolved_commit: c5cac3dd412360b3cc0b17b6bde61e512d16cf35
-  resolved_ref: c5cac3dd412360b3cc0b17b6bde61e512d16cf35
+  resolved_commit: ddcfcde82f15fcd6bbe066436d66d28d20bcaef3
+  resolved_ref: ddcfcde82f15fcd6bbe066436d66d28d20bcaef3
   version: unknown
   virtual_path: plugins/adr-remote-mcp/skills/adr-review
   is_virtual: true
@@ -223,6 +229,24 @@ deployments:
   active_owner: boykush/scraps/plugins/pkm
   content_hash: sha256:34b1836fcf8a4a72f89f39d8c608385e49c0a178144e6aa66234eee506097177
 - kind: project-relative
+  target: claude
+  value: .claude/skills/verify
+  runtime: null
+  scope: project
+  owners:
+  - boykush/scraps/plugins/pkm
+  active_owner: boykush/scraps/plugins/pkm
+  content_hash: null
+- kind: project-relative
+  target: claude
+  value: .claude/skills/verify/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - boykush/scraps/plugins/pkm
+  active_owner: boykush/scraps/plugins/pkm
+  content_hash: sha256:5e50e537c2f159db674c3bfdaf0b950ba0baf70be136e4c3a3622a2afebc3635
+- kind: project-relative
   target: codex
   value: .agents/skills/ade-rule-dsl
   runtime: null
@@ -330,6 +354,24 @@ deployments:
   - boykush/scraps/plugins/pkm
   active_owner: boykush/scraps/plugins/pkm
   content_hash: sha256:34b1836fcf8a4a72f89f39d8c608385e49c0a178144e6aa66234eee506097177
+- kind: project-relative
+  target: codex
+  value: .agents/skills/verify
+  runtime: null
+  scope: project
+  owners:
+  - boykush/scraps/plugins/pkm
+  active_owner: boykush/scraps/plugins/pkm
+  content_hash: null
+- kind: project-relative
+  target: codex
+  value: .agents/skills/verify/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - boykush/scraps/plugins/pkm
+  active_owner: boykush/scraps/plugins/pkm
+  content_hash: sha256:5e50e537c2f159db674c3bfdaf0b950ba0baf70be136e4c3a3622a2afebc3635
 - kind: uri
   target: mcp
   value: adr
