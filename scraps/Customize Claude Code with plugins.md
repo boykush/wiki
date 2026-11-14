@@ -3,7 +3,7 @@ type: Blog
 resource: "https://claude.com/blog/claude-code-plugins"
 ---
 
-#[[LLM]]
+#[[Agentic Engineering]]
 
 [[Claude Code]]の[[Claude Code/Plugins]]機能が2025/10/10にパブリックベータとして公開されたブログ
 

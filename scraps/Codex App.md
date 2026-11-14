@@ -1,4 +1,4 @@
-#[[Programming]] #[[LLM]]
+#[[Programming]] #[[Agentic Engineering]]
 
 [[OpenAI]]が提供するコーディングエージェントのデスクトップ/Webアプリケーション
 

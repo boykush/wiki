@@ -1,4 +1,4 @@
-#[[LLM]]
+#[[Agentic Engineering]]
 
 [[Cognition]]社によるソフトウェアエンジニアを模した自律型[[会話型エージェント]]
 

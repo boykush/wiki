@@ -1,6 +1,6 @@
 ## AI-Driven Development Life Cycle
 
-#[[Product Management]]
+#[[Product Management]] #[[Agentic Engineering]]
 
 AWSが提唱するAI駆動の開発ライフサイクル手法。従来のSDLCをAIファーストで再設計し、AIがワークフローを主導し人間が検証する
 

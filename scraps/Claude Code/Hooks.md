@@ -1,4 +1,4 @@
-#[[LLM]]
+#[[Agentic Engineering]]
 
 [[Claude Code]]の動作をフックとし、シェルコマンドを実行することができる設定
 

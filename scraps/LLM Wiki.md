@@ -1,6 +1,6 @@
 ## Large Language Model Wiki
 
-#[[LLM]] #[[Documentation]]
+#[[Agentic Engineering]] #[[Documentation]]
 
 [[Andrej Karpathy]]が提唱した、LLMが構造化されたmarkdown wikiを継続的に構築・保守する個人ナレッジベースのパターン。
 

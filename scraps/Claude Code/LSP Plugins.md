@@ -1,4 +1,4 @@
-#[[Programming]] #[[LLM]]
+#[[Programming]] #[[Agentic Engineering]]
 
 [[Claude Code]]において[[anthropics/claude-plugins-official]]が公開している、[[LSP]]（Language Server Protocol）[[Claude Code/Plugins|プラグイン]]を追加しリアルタイムコード知能を提供する機能
 

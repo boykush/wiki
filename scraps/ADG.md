@@ -4,7 +4,7 @@ type: Tool
 
 ## Architectural Decision Guidance
 
-#[[Documentation]] #[[LLM]]
+#[[Documentation]] #[[Agentic Engineering]]
 
 [[ADR]]の公式orgが公開する[[Go]]製のCLI。決定を`Accepted`で確定させる記録としてではなく`open`から始まる決定点として持ち、その集まりをモデルとしてコピー・マージし、繰り返し現れる決定に使い回す
 

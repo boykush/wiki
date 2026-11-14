@@ -3,7 +3,7 @@ type: Blog
 resource: "https://weaveintelligence.io/blog/what-is-an-agentic-development-platform"
 ---
 
-[[Agentic Engineering Platform]] #[[LLM]]
+[[Agentic Engineering Platform]] #[[Agentic Engineering]]
 
 [[Kaspar von Gruenberg]]が [[Weave Intelligence]] のブログで Agentic Engineering Platform を定義し、参照アーキテクチャを示した記事（2026-09-17。前の版では Agentic Development Platform と呼んでいた）。[[Internal Developer Platform|IDP]]の発展形として、業務領域ごとに入れ替わる[[Agentic Engineering Platform/Tooling|Tooling]]と[[Agentic Engineering Platform/Path specifications|Path specifications]]の下に、変わらない[[Agentic Engineering Platform/Agent Infrastructure|Agent Infrastructure]]を置く3層で組み立てる
 

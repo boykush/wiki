@@ -1,4 +1,4 @@
-#[[LLM]]
+#[[Agentic Engineering]]
 
 [[Claude Code]]の機能。多数の[[Claude Code/サブエージェント]]を大規模にオーケストレーションする[[JavaScript]]スクリプトをClaudeが実行時に生成し、ランタイムがバックグラウンドで実行する（セッションは応答可能なまま、同一セッション内でresume可能）
 

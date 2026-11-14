@@ -1,4 +1,4 @@
-#[[Programming]] #[[LLM]]
+#[[Programming]] #[[Agentic Engineering]]
 
 [[Claude Code]]のメインタスク実行中でも使えるサイドチャットコマンド
 

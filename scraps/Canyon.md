@@ -1,4 +1,4 @@
-[[Platform Engineering]] #[[LLM]]
+[[Platform Engineering]] #[[Agentic Engineering]]
 
 社内で作られるAIアプリとエージェントを、自社のクラウド・データ・ルールの下でデプロイし統制するコントロールプレーン。運用は[[プラットフォームチーム]]が担う
 

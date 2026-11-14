@@ -2,7 +2,7 @@
 type: Tool
 ---
 
-#[[LLM]]
+#[[Agentic Engineering]]
 
 Block が公開したオープンソースの[[会話型エージェント]]。デスクトップアプリと[[CLI]]があり、モデルの提供元を選ばない
 

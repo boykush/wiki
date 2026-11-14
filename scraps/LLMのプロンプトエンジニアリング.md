@@ -10,7 +10,7 @@ resource: "https://www.oreilly.co.jp/books/9784814401130/"
 John Berryman, Albert Ziegler
 服部佑樹, 佐藤直生
 
-#[[LLM]]
+#[[Agentic Engineering]]
 
 ![LLMのプロンプトエンジニアリング](https://www.oreilly.co.jp/books/images/picture_large978-4-8144-0113-0.jpeg)
 

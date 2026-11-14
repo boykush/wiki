@@ -1,4 +1,4 @@
-#[[LLM]]
+#[[Agentic Engineering]]
 
 [[Devin]]と連携されたリポジトリに対して回答を得るAsk特化の[[AIアシスタント]]
 

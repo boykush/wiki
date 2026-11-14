@@ -1,4 +1,4 @@
-#[[LLM]] #[[Testing]] #[[Continuous Integration]]
+#[[Agentic Engineering]] #[[Testing]] #[[Continuous Integration]]
 
 [[Claude Code]]のシェルコマンドで、v2.1.269（2026年9月11日）で追加された。[[Claude Code/Plugins|プラグイン]]を、現実的な依頼と合否の検査を組にしたケースの一式で走らせて採点し、プラグインを読み込まない場合の点数との差を出す
 

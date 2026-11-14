@@ -1,3 +1,3 @@
-#[[LLM]]
+#[[Agentic Engineering]]
 
 [[Claude Code]]において、コード編集を行わず計画を出力してユーザーへの承認をリクエストするモード

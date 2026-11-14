@@ -5,7 +5,7 @@ sources:
   - resource: "https://support.claude.com/en/articles/17457950"
 ---
 
-#[[LLM]]
+#[[Agentic Engineering]]
 
 [[Anthropic]]がClaudeのArtifactのテンプレートの1つとして提供する、人間同士の協働が可能なボード機能。AIエージェントとしてのClaudeの協働への参加や、docやdeckへの出力機能を備える
 

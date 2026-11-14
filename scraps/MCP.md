@@ -1,5 +1,7 @@
 ## Model Context Protocol
 
+#[[Agentic Engineering]]
+
 [[LLM]]が様々なリソースにアクセスするための[[Anthropic]]社による標準化プロトコル
 
 MCPサーバーがローカルまたはリモートのリソースにアクセスし、それをMCPクライアントが利用する

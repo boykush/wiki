@@ -5,7 +5,7 @@ verified:
   - by: human:boykush
     at: 2026-11-12T23:03:22+09:00
 ---
-#[[LLM]]
+#[[Agentic Engineering]]
 
 [[会話型エージェント]]へ手続き的知識（ワークフロー・スクリプト・参照資料）をパッケージして与える[[Anthropic]]社発のオープン標準
 

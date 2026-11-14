@@ -5,7 +5,7 @@ sources:
   - resource: "https://help.openai.com/en/articles/20001529-dots-privacy-security-and-safety-faqs"
 ---
 
-#[[LLM]]
+#[[Agentic Engineering]]
 
 [[OpenAI]]のChatGPTのアカウントに1つ紐づくクラウド上のAIエージェント。独立したメモリとタスク管理を持ち、秘書のように動く
 

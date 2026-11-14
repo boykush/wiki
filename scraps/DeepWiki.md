@@ -1,4 +1,4 @@
-#[[LLM]] #[[Documentation]]
+#[[Agentic Engineering]] #[[Documentation]]
 
 [[Devin]]の一つの機能である[[Devin Wiki]]をPublicなリポジトリに絞って利用できるOSS
 

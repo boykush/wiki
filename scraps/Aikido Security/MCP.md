@@ -5,6 +5,6 @@ sources:
   - resource: "https://help.aikido.dev/ai-and-dev-tools/aikido-mcp"
 ---
 
-#[[Security]] #[[LLM]]
+#[[Security]] #[[Agentic Engineering]]
 
 [[Aikido Security/Platform]] 向けの [[MCP]] サーバー。stdio の MCP サーバーとして立ち上げ、ブラウザ認証によって得た資格情報を用いて Aikido Platform のリソースへアクセスできる
