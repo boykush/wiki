@@ -1,4 +1,4 @@
-#[[Documentation]] #[[LLM]]
+#[[Documentation]] #[[Agentic Engineering]]
 
 [[Devin]]と連携されたリポジトリの内容を説明するWikiを生成する機能
 

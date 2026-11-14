@@ -1,4 +1,4 @@
-#[[LLM]]
+#[[Agentic Engineering]]
 
 [[Claude Code]]の複数インスタンスをチームとして協調動作させる実験的機能
 

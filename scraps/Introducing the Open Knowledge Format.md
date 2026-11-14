@@ -3,7 +3,7 @@ type: Blog
 resource: "https://cloud.google.com/blog/ja/products/data-analytics/how-the-open-knowledge-format-can-improve-data-sharing/"
 ---
 
-#[[LLM]] #[[Documentation]]
+#[[Agentic Engineering]] #[[Documentation]]
 
 [[Google Cloud]] の Sam McVeety と Amir Hormati による公式ブログ記事（2026年6月22日、米国時間6月13日の英語版の抄訳）。[[OKF]] の v0.1 を発表している
 

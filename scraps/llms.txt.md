@@ -1,4 +1,4 @@
-#[[Documentation]]
+#[[Documentation]] #[[Agentic Engineering]]
 
 Webサイトのコンテンツを[[LLM]]が効率的に利用するための提案標準。Jeremy Howard（Answer.AI）が2024年に提案
 

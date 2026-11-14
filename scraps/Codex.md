@@ -2,7 +2,7 @@
 type: Tool
 ---
 
-#[[Programming]] #[[LLM]]
+#[[Programming]] #[[Agentic Engineering]]
 
 [[OpenAI]]が提供するオープンソースの[[CLI]]コーディングエージェント
 

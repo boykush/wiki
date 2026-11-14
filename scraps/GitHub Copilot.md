@@ -1,4 +1,4 @@
-#[[Programming]]
+#[[Programming]] #[[Agentic Engineering]]
 
 [[VS Code]]にビルトインで搭載されている[[AIアシスタント]]
 

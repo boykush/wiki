@@ -4,7 +4,7 @@ sources:
   - resource: "https://kasparvongruenberg.substack.com/p/welcome-to-the-age-of-agentic-platforms"
 ---
 
-#[[LLM]]
+#[[Agentic Engineering]]
 
 [[Agentic Engineering Platform]]の3層のうち中間層で、エージェントに何をどう進めるかを示すパスの定義。パスは、LLMが担い評価と人間が検証する確率的なもの、入出力の決まったパイプラインである決定的なもの、その混合の3種類からなる
 

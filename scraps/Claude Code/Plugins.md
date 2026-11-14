@@ -1,4 +1,4 @@
-#[[LLM]]
+#[[Agentic Engineering]]
 
 [[Claude Code]]において、以下のようなカスタム設定を共有、配布するような仕組み
 

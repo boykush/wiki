@@ -2,7 +2,7 @@
 type: Tool
 ---
 
-#[[Observability]] #[[Cloud Native]]
+#[[Observability]] #[[Cloud Native]] #[[Agentic Engineering]]
 
 本番障害の調査と根本原因の特定を行う、[[SRE]]向けのオープンソースな[[会話型エージェント]]。[[CNCF]] sandbox project
 

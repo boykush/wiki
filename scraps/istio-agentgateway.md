@@ -1,4 +1,4 @@
-#[[Network]] #[[Cloud Native]]
+#[[Network]] #[[Cloud Native]] #[[Agentic Engineering]]
 
 [[Istio]]のGatewayClassで、指定した[[Kubernetes/Gateway API|Gateway]]だけが[[Envoy]]の代わりに[[agentgateway]]で動く
 

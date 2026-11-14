@@ -3,7 +3,7 @@ type: Blog
 resource: "https://simonwillison.net/2026/Jul/16/kimi-k3/"
 ---
 
-#[[LLM]]
+#[[Agentic Engineering]]
 
 Moonshot AI が2026年7月16日に発表した2.8兆パラメーター推論モデル Kimi K3 のレポートと、Simon Willison によるペリカンベンチマークの有効性と限界の考察。
 

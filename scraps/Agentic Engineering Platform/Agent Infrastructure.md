@@ -3,7 +3,7 @@ sources:
   - resource: "/What is an Agentic Engineering Platform?.md"
 ---
 
-#[[LLM]]
+#[[Agentic Engineering]]
 
 [[Agentic Engineering Platform]]の3層のうち最下層で、エージェントを動かし、文脈と記憶を与え、ガードレールを定め、人間とエージェントのやり取りを統べる基盤。ツール群とパスは業務領域ごとに入れ替わるが、この層だけは変わらない
 

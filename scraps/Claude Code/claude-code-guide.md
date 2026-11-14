@@ -1,4 +1,4 @@
-#[[LLM]]
+#[[Agentic Engineering]]
 
 [[Claude Code]]に標準搭載される[[Claude Code/サブエージェント]]の一つ
 

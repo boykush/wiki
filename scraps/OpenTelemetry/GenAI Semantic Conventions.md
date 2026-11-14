@@ -1,4 +1,4 @@
-#[[Observability]] #[[LLM]]
+#[[Observability]] #[[Agentic Engineering]]
 
 生成AIの操作（LLM呼び出し、エージェント、ツール実行など）を[[OpenTelemetry]]で計装する際、spanに何を割り当てどのtrace単位でまとめるかといったルールのOpenTelemetry公式標準
 

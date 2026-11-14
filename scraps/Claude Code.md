@@ -2,7 +2,7 @@
 type: Tool
 ---
 
-#[[Programming]] #[[LLM]]
+#[[Programming]] #[[Agentic Engineering]]
 
 [[CLI]]で直接動作する[[会話型エージェント]]型コーディングツール
 

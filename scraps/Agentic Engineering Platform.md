@@ -5,7 +5,7 @@ sources:
 
 ## AEP
 
-[[Platform Engineering]] #[[LLM]]
+[[Platform Engineering]] #[[Agentic Engineering]]
 
 [[プラットフォームチーム]]が作り運用する、エンジニアとAIエージェントが協働して開発するためのプラットフォーム。人間とエージェントの両方が確実に働けるよう、道筋とガードレールを提供する
 

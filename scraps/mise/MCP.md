@@ -1,4 +1,4 @@
-#[[LLM]]
+#[[Agentic Engineering]]
 
 [[mise]] 自身を [[MCP]] サーバーとして起動する `mise mcp`。MCP クライアントへ開発環境の情報を公開する
 

@@ -2,7 +2,7 @@
 type: Tool
 ---
 
-#[[LLM]]
+#[[Agentic Engineering]]
 
 [[Agent Plugins]]、またはその内の [[Agent Skills]] を依存として定義し、バージョン込みで静的に管理するパッケージマネージャ。
 

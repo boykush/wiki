@@ -2,7 +2,7 @@
 type: Tool
 ---
 
-#[[Cloud Native]]
+#[[Cloud Native]] #[[Agentic Engineering]]
 
 [[Kubernetes]] Nativeな[[Dapr]]プロジェクト上で[[LLM]]を利用した[[会話型エージェント]]を開発できる
 

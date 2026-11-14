@@ -1,4 +1,4 @@
-#[[LLM]]
+#[[Agentic Engineering]]
 
 Pull Requestのコードレビューを自動化する[[Anthropic]]公式の[[Claude Code/Plugins]]。[[anthropics/claude-plugins-official]]で配布される
 

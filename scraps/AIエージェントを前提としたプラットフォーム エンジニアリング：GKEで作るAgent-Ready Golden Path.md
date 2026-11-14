@@ -3,7 +3,7 @@ type: Slide
 resource: "https://speakerdeck.com/legalontechnologies/agent-ready-golden-path-with-gke"
 ---
 
-[[Platform Engineering]] #[[LLM]]
+[[Platform Engineering]] #[[Agentic Engineering]]
 
 LegalOn Technologies による Google Cloud Next Tokyo 2026 の登壇資料。AI エージェントが実装主体になる前提で、[[Google Cloud/GKE|GKE]] 上に Agent-Ready な [[Golden Path]] を敷き直す実践報告
 

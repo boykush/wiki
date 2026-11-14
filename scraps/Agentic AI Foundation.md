@@ -1,6 +1,6 @@
 ## AAIF
 
-#[[LLM]]
+#[[Agentic Engineering]]
 
 Agentic AI 分野のオープン標準・OSS プロジェクトを中立的にホストするため [[Linux Foundation]] 傘下に設立された財団。2025年12月に設立発表
 
