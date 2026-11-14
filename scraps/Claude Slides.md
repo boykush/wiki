@@ -1,6 +1,7 @@
 ---
 sources:
-  - resource: "https://support.claude.com/en/articles/17153992-what-are-artifacts-and-how-do-i-use-them"---
+  - resource: "https://support.claude.com/en/articles/17153992-what-are-artifacts-and-how-do-i-use-them"
+---
 
 #[[Agentic Engineering]]
 
