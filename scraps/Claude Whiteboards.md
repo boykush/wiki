@@ -9,4 +9,4 @@ sources:
 
 [[Anthropic]]がClaudeのArtifactのテンプレートの1つとして提供する、人間同士の協働が可能なボード機能。AIエージェントとしてのClaudeの協働への参加や、docやdeckへの出力機能を備える
 
-- [[Claude Code/Artifacts]]と同じArtifactの仕組みに乗るが、コメントでClaudeに修正を頼む仕組みは型ごとに異なり、DocsやSlides・Designにはあるが、Whiteboardの文書には無い
+- [[Claude Code/Artifacts]]と同じArtifactの仕組みに乗るが、コメントでClaudeに修正を頼む仕組みは型ごとに異なり、Docsや[[Claude Slides|Slides]]・Designにはあるが、Whiteboardの文書には無い
