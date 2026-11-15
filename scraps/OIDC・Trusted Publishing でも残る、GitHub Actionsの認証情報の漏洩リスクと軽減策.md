@@ -5,7 +5,7 @@ resource: "https://blog.flatt.tech/entry/2026-github-actions-security-part3"
 
 #[[Security]] #[[Continuous Integration]]
 
-[[GitHub Actions]] で OIDC や Trusted Publishing を導入しても runner 上の認証情報漏洩リスクは構造的に残る、という限界を解説した Flatt Security ブログ記事（Part 3）
+[[GitHub Actions]] で [[OIDC]] や Trusted Publishing を導入しても runner 上の認証情報漏洩リスクは構造的に残る、という限界を解説した Flatt Security ブログ記事（Part 3）
 
 - **漏洩経路**: `Runner.Worker` プロセスのメモリダンプで [[GITHUB_TOKEN]] や環境変数の secrets・OIDC 派生クレデンシャルを取得可能（GitHub-hosted runner は sudo がパスワードなしで実行可能）
 - **軽減策**: クラウド側でクレーム完全一致検証・数値 ID 優先・インラインセッションポリシーで権限を多層絞り込み；認証 step と任意コード実行 job を分離
