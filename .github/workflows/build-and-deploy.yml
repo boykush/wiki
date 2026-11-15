@@ -23,7 +23,7 @@ jobs:
           fetch-depth: 0 # For scraps git committed date
           persist-credentials: false
       - name: Setup Scraps
-        uses: boykush/scraps@95c9d75bf5e6d68c17bb0d92a508a43464f2ed39 # v5.1.1
+        uses: boykush/scraps@27cc624d5f51b5292c1b477ca4ef72c253366642 # v5.2.0
       - name: Build
         run: scraps build -C scraps --git
       - name: Configure Pages
