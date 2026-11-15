@@ -6,7 +6,7 @@ type: Tool
 
 [[CNCF]] sandboxプロジェクトの[[Kubernetes]]インフラ自動化ツールチェーン
 
-- KRM (Kubernetes Resource Model) ファイル（YAMLマニフェスト）をパッケージとして管理する[[Infrastructure as Code]]ツール
+- KRM (Kubernetes Resource Model) ファイル（[[YAML]]マニフェスト）をパッケージとして管理する[[Infrastructure as Code]]ツール
 - **Configuration as Data**: 設定をコードではなく純粋なデータとして扱い、バージョン管理・diff・レビューを分離
 - **WYSIWYG原則**: パッケージの内容がそのままクラスタにデプロイされる（テンプレート展開等の out-of-band 変換なし）
 - validator・mutator によるパイプラインで設定の変換・検証を自動化

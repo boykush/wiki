@@ -22,7 +22,7 @@ InfoQが2025年の技術トレンドを[[キャズム理論]]による分類で�
 
 ## Late Majority
 
-- FinOps
+- [[FinOps]]
 - Enterprise [[DevOps]] Toolchain
 - #[[Observability]]
 

@@ -49,7 +49,7 @@ Nicole Forsgren, Jez Humble, Gene Kim
 ### 第6章　デリバリライフサイクルに情報セキュリティを組み込む
 
 - [[DevOps capabilities/Pervasive security|情報セキュリティのシフトレフト]]
-- DevSecOps/Rugged DevOps/Rugged Manifesto
+- [[DevSecOps]]/Rugged DevOps/Rugged Manifesto
 
 ### 第7章　ソフトウェア管理のプラクティス
 
