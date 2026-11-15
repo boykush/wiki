@@ -5,6 +5,6 @@ sources:
 
 #[[Agentic Engineering]]
 
-Claudeの[[Claude Code/Artifacts|Artifact]]の型の1つ。[[Claude Design]]のデザインを作る基になったり、資料としての[[Claude Slides]]に反映したりできる
+[[Claude Artifacts]]の型の1つで、色や部品のまとまりを扱う。[[Claude Artifacts/Design|Design]]のデザインや[[Claude Artifacts/Slides|Slides]]の資料に反映する
 
 - コードで実装されたデザインシステムは、[[Claude Code]]の`/design-sync`でコードベースから取り込める
