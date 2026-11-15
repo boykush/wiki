@@ -5,7 +5,7 @@ resource: "https://blog.flatt.tech/entry/bitwarden_compromise"
 
 #[[Security]]
 
-npmパッケージ`@bitwarden/cli@2026.4.0`がマルウェア混入により侵害された[[サプライチェーン攻撃]]事例
+[[npm]]パッケージ`@bitwarden/cli@2026.4.0`がマルウェア混入により侵害された[[サプライチェーン攻撃]]事例
 
 - 多段ペイロード構成
   - Stage1: `bw_setup.js`がBunランタイムをDL

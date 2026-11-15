@@ -2,7 +2,7 @@
 
 [[Google Cloud]]が提供するフルマネージドな[[コンテナ]]イメージおよび言語パッケージのレジストリサービス
 
-[[Docker]]/OCIイメージに加え、Maven・npm・Python・Go・apt・yum・Helmなど複数の形式に対応する
+[[Docker]]/OCIイメージに加え、Maven・[[npm]]・[[Python]]・Go・apt・yum・[[Helm]]など複数の形式に対応する
 
 旧サービスのContainer Registryの後継として位置付けられている
 

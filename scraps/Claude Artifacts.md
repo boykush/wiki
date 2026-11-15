@@ -5,7 +5,7 @@ sources:
 
 #[[Agentic Engineering]]
 
-[[Anthropic]]のClaudeが作り、claude.aiのArtifactsタブに保存・共有される成果物。テンプレートの型から作ると、その型の画面で人とClaudeが直接編集できる
+[[Anthropic]]の[[Claude]]が作り、claude.aiのArtifactsタブに保存・共有される成果物。テンプレートの型から作ると、その型の画面で人とClaudeが直接編集できる
 
 型の一覧
 

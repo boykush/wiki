@@ -7,4 +7,4 @@ sources:
 
 [[Claude Artifacts]]の型の1つで、Wordのような文書を扱う
 
-- 頼めばClaudeがdocを[[Claude Artifacts/Slides|Slides]]のプレゼンにする
+- 頼めば[[Claude]]がdocを[[Claude Artifacts/Slides|Slides]]のプレゼンにする

@@ -7,4 +7,4 @@ sources:
 
 [[Claude Artifacts]]の型の1つで、外部のデータ基盤に接続した、表やグラフでのデータ分析を扱う
 
-- グラフごとにClaudeがSQLを書き、[[BigQuery]]などのデータ基盤に実行して数字を得る
+- グラフごとに[[Claude]]がSQLを書き、[[BigQuery]]などのデータ基盤に実行して数字を得る
