@@ -5,4 +5,4 @@ sources:
 
 #[[Agentic Engineering]]
 
-[[Claude Artifacts]]の型の1つで、短いアニメーションを扱う。[[Claude]]が動かすコードを書き、MP4に書き出せる
+[[Claude Artifacts]]の型の1つで、短いアニメーションを扱う。Claudeが動かすコードを書き、MP4に書き出せる

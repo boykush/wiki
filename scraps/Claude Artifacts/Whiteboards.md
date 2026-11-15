@@ -7,6 +7,6 @@ sources:
 
 #[[Agentic Engineering]]
 
-[[Claude Artifacts]]の型の1つで、人と[[Claude]]が協働できるボードを扱う。docやdeckへの出力機能を備える
+[[Claude Artifacts]]の型の1つで、人とClaudeが協働できるボードを扱う。docやdeckへの出力機能を備える
 
 - コメントでClaudeに修正を頼む仕組みは型ごとに異なり、[[Claude Artifacts/Docs|Docs]]や[[Claude Artifacts/Slides|Slides]]・[[Claude Artifacts/Design|Design]]にはあるが、Whiteboardの文書には無い
