@@ -58,7 +58,7 @@ John Berryman, Albert Ziegler
 - ベクトルストレージ
 - コンテキスト内学習/中間部の喪失/[[無関心の谷]]
 - [[Markdown]]
-- Anthropic/Artifacts
+- [[Anthropic]]/Artifacts
 - XML/[[YAML]]
 - 加算的貪欲法/減算的貪欲法
 

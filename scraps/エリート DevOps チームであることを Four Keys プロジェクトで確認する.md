@@ -6,7 +6,7 @@ sources:
     title: "英語"
 ---
 
-[[Four Keys]]の計測方法についてGoogle Cloudブログ上で説明されている
+[[Four Keys]]の計測方法について[[Google Cloud]]ブログ上で説明されている
 
 指標の計算方法を以下のように定義している
 
