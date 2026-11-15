@@ -5,6 +5,6 @@ sources:
 
 #[[Agentic Engineering]]
 
-Claudeの[[Claude Code/Artifacts|Artifact]]の1つ。Webサイトや画面のモックアップなどを作るデザインキャンバスで、アートボードとレイヤーをClaudeで扱うことができる
+[[Claude Artifacts]]の型の1つで、Webサイトや画面のモックアップを作るデザインキャンバスを扱う。アートボードとレイヤーで組む
 
 - できたデザインは[[Claude Code]]に引き渡してソフトウェアにできる
