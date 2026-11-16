@@ -1,5 +1,5 @@
 [tools]
-"github:boykush/scraps" = "v5.2.0"
+"github:boykush/scraps" = "v5.3.0"
 uv = "0.13.8"
 # Scans the MCP server image in CI (.github/workflows/wiki-mcp-server-image.yml).
 trivy = "0.76.2"
