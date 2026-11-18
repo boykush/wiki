@@ -59,7 +59,7 @@ kind: AiResource
 metadata:
   name: wiki-remote-mcp
   description: >-
-    wiki-mcp への参照を1つ持つだけの plugin（Agent Plugins の形）。apm の package にして配るのは ai-plugins
+    wiki-mcp への参照を1つ持つだけの plugin（Agent Plugins の形）。apm が読む `apm.yml` を隣に生成して持つ
   links:
     - url: https://backstage.boykush.com/catalog/default/api/wiki-mcp
       title: MCP サーバー（wiki-mcp）
