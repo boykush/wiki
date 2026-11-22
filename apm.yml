@@ -9,5 +9,5 @@ dependencies:
   apm:
     - boykush/adr/plugins/adr-remote-mcp#0ace14215204963afc46838a03502819e705c4c4 # adr-remote-mcp--v0.1.0
     - boykush/backstage-app/agent-plugins/catalog-remote-mcp#6c54c07ff81a2034cac9676f359af06df3a22cb7 # catalog-remote-mcp--v0.1.0
-    - boykush/scraps/plugins/pkm#b2d48afd72ac056edac9715921f48a0419b2a2c4
+    - boykush/scraps/plugins/pkm#83ef014d5e06fb41ba0d1e3bce4f06bc6ef65897
   mcp: []
